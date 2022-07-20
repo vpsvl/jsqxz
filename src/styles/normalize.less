@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    font-family: var(--font);
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    color: var(--color-content);
+    font-size: 14px;
+    overflow-y: hidden;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+a:active,
+a:hover{
+    outline-width: 0;
+}
+
+img{
+    border-style: none;
+}
+
+svg:not(:root){
+    overflow: hidden;
+}
+
+[contenteditable],
+button,
+input,
+optgroup,
+select,
+textarea{
+    font: inherit;
+    margin: 0;
+    outline: none;
+    &:focus{
+        outline: none;
+    }
+}
+
+[type="checkbox"],
+[type="radio"]{
+    display: none;
+}
+
+::-webkit-input-placeholder{
+    color: inherit;
+    opacity: 0.54;
+}
+
+li{
+    list-style: none;
+}

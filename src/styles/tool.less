@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-success {
+  color: var(--color-success);
+}
+
+.color-error {
+  color: var(--color-error);
+}
+
+.color-warn {
+  color: var(--color-warn);
+}
+
+.level-1 {
+  color: var(--color-content);
+}
+
+.level-2 {
+  color: var(--color-success);
+}
+
+.level-3 {
+  color: var(--color-error);
+}
+
+.level-4 {
+  color: var(--color-warn);
+}
+
+.internal-0 {
+  background: var(--color-primary-light);
+}
+
+.internal-1 {
+  background: var(--color-warn-lighter);
+}
+
+.internal-2 {
+  background: var(--color-info-light);
+}
+
+.v-table {
+  border-top: 1px solid var(--color-border);
+  box-sizing: border-box;
+  .tr,
+  .thead {
+    display: flex;
+    width: 100%;
+  }
+  .thead {
+    background: #f3f3f3;
+    border-bottom: 1px solid var(--color-border);
+    font-weight: bold;
+  }
+  .tbody {
+    height: calc(100vh - var(--header-height) - var(--bread-height) - 90px);
+  }
+  .tr {
+    background: #fff;
+    border-bottom: 1px solid var(--color-border);
+
+    &:hover {
+      background-color: var(--color-bg-hover);
+    }
+  }
+  .td {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 1 0 0;
+    align-content: center;
+    min-height: 40px;
+    padding: 5px 10px;
+    border-left: 1px solid var(--color-border);
+    line-height: 1.5em;
+    &:first-child {
+      border-left: 0;
+    }
+    .td-block {
+      flex: 1 0 100%;
+      padding: 5px 0;
+    }
+  }
+  .no-data .td {
+    flex-grow: 1 !important;
+  }
+  .td-effect-item {
+    position: relative;
+    padding: 5px 0 5px 25px;
+    line-height: 1.5em;
+    &::before {
+      content: '☯';
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      font-size: 14px;
+    }
+    &:nth-child(4n + 1)::before {
+      color: var(--color-success-light);
+    }
+    &:nth-child(4n + 2)::before {
+      color: var(--color-primary-light);
+    }
+    &:nth-child(4n + 3)::before {
+      color: var(--color-error-light);
+    }
+    &:nth-child(4n)::before {
+      color: var(--color-warn-light);
+    }
+    &.effect-icon-star::before {
+      content: '★';
+    }
+    &.effect-icon-heart::before {
+      content: '♥';
+    }
+    &.effect-icon-rhombus::before {
+      content: '◆';
+    }
+  }
+
+  &.v-table-vertical {
+    .td:first-child {
+      flex: 0 0 150px;
+    }
+  }
+}
