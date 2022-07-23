@@ -47,10 +47,6 @@ const thead = [
     name: '范围',
   },
   {
-    key: 'martial',
-    name: '武功',
-  },
-  {
     key: 'condition',
     name: '条件',
   },
@@ -75,6 +71,7 @@ watchEffect(async () => {
   try {
     const data = await import(`../../data/cheat/${type}.js`);
     tbody.value = data.default.list;
+    console.log(tbody.value)
   } catch (e) {
     tbody.value = [];
   }

@@ -7,7 +7,7 @@
       <div class="tr" v-for="(tr, index) of data" @click="clickTr(tr, index)" :key="index">
         <div class="td" v-for="td of cols" :key="td.key">
           <slot :name="`td-${td.key}`" :row="tr" :index="index">
-            <p v-if="typeof tr[td.key] === 'string'">{{ tr[td.key] }}</p>
+            <p v-if="typeof tr[td.key] !== 'object'">{{ tr[td.key] }}</p>
           </slot>
         </div>
       </div>

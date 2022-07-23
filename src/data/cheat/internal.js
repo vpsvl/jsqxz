@@ -1317,7 +1317,7 @@ export default {
       power: '',
       attack: {},
       condition: '',
-      addition: '初阶内功对应门派高级内功一脉相承',
+      addition: '初阶内功对应门派高阶内功一脉相承',
       sect: '',
       internal: '',
       initiative: [],

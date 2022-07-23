@@ -64,7 +64,7 @@ export default {
       component: () => import('@/views/cheat/stunt.vue'),
       name: 'cheatStunt',
       meta: {
-        title: '组合技',
+        title: '秘技',
         type: 'stunt',
       },
     },

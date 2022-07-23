@@ -43,9 +43,9 @@ export const internalTypeMap = {
 };
 // 等级
 export const levelMap = {
-  1: '初级',
-  2: '中级',
-  3: '高级',
+  1: '初阶',
+  2: '中阶',
+  3: '高阶',
   4: '绝学',
 };
 // 商店
