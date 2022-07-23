@@ -1,1 +1,0 @@
-import o from"./drug.57f8348e.js";import{e as n,r,o as l,c as s}from"./index.e55bfb45.js";const p={__name:"drug",setup(_){const e=[{key:"name",name:"\u540D\u79F0"},{key:"effect",name:"\u6548\u679C"},{key:"get",name:"\u83B7\u53D6"}],t=n(o.list);return(c,d)=>{const a=r("v-table");return l(),s(a,{class:"v-table-drug",cols:e,data:t.value},null,8,["data"])}}};export{p as default};
