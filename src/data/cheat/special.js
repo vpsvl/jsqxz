@@ -36,7 +36,7 @@ export default {
     },
     {
       name: '三蜈五蟆烟',
-      get: '扬州客栈出售',
+      get: '',
       power: 300,
       gasPower: 500,
       range: '■ 10格',

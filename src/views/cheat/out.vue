@@ -5,6 +5,9 @@
         {{ row.name }}
       </span>
     </template>
+    <template #td-condition="{row}">
+      <p>{{row.condition}} {{internalTypeMap[parseInt(row.internal)]}}</p>
+    </template>
     <template #td-peculiar="{row}">
       <div class="td-block" v-for="(item, index) of row.peculiar" :key="index">
         <div v-if="item.name">
@@ -22,6 +25,7 @@
 <script setup>
 import {ref, watchEffect} from 'vue';
 import {useRoute} from 'vue-router';
+import {internalTypeMap} from '@/data/map/index'
 
 const route = useRoute();
 
@@ -71,7 +75,6 @@ watchEffect(async () => {
   try {
     const data = await import(`../../data/cheat/${type}.js`);
     tbody.value = data.default.list;
-    console.log(tbody.value)
   } catch (e) {
     tbody.value = [];
   }
@@ -81,26 +84,15 @@ watchEffect(async () => {
 <style lang="less">
 .v-table-cheat-out {
   .td {
-    &:nth-child(1) {
-      flex: 0 0 120px;
-    }
-    &:nth-child(2) {
-      flex: 0 0 150px;
-    }
-    &:nth-child(3) {
-      flex: 0 0 80px;
-    }
+    &:nth-child(3),
     &:nth-child(4) {
-      flex: 0 0 80px;
+      flex: 0.3 0 0;
     }
     &:nth-child(5) {
-      flex: 0 0 100px;
+      flex: 0.5 0 0;
     }
-    &:nth-child(6) {
-      flex: 0 0 100px;
-    }
-    &:nth-child(7) {
-      flex: 0 0 130px;
+    &:nth-child(8) {
+      flex: 2 0 0;
     }
   }
 }
