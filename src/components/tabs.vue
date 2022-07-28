@@ -76,6 +76,7 @@ watch(
       height: 100%;
       line-height: 24px;
       text-align: center;
+      transition: background .2s;
 
       &:hover {
         background: var(--color-bg-hover);

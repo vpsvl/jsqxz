@@ -111,7 +111,7 @@ export default {
         },
         {
           name: '绝处逢生',
-          effect: ['自身范围内一格25%概率免收攻击'],
+          effect: ['自身范围内一格25%概率免受攻击'],
         },
       ],
       fortune: [],
