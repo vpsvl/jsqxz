@@ -29,7 +29,8 @@
     <div class="tr">
       <div class="td">
         <div class="td-block">武功</div>
-        <div class="td-block">（NPC处初阶中阶高阶可以一脉相承，绝学除轻功外都不能一脉相承）</div>
+        <div class="td-block color-success">*NPC处学习武功：中阶200贡献，高级400贡献，绝学600贡献</div>
+        <div class="td-block color-success">*NPC处初阶中阶高阶可以一脉相承，绝学除轻功外都不能一脉相承</div>
       </div>
       <div class="td">
         <div class="td-block" v-for="(item, index) of tbody.martial" :key="index">
