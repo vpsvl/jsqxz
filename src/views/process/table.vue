@@ -39,10 +39,11 @@ import {onBeforeRouteLeave, useRoute} from 'vue-router';
 import VTbodyProcess from './tbody.vue';
 
 const route = useRoute();
+const loading = inject('loading');
+
 const branch = ref('good');
 const hasBranch = ref(false);
 const tbody = ref({});
-const loading = ref(false);
 watchEffect(async () => {
   const {
     name,

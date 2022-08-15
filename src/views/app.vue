@@ -2,11 +2,17 @@
   <div class="app">
     <header-nav></header-nav>
     <router-view class="app-view"></router-view>
+    <v-loading :loading="loading"></v-loading>
   </div>
 </template>
 
 <script setup>
+import {provide, ref} from 'vue';
 import HeaderNav from '@/views/layout/header.vue';
+import VLoading from '@/components/loading.vue';
+
+const loading = ref(false);
+provide('loading', loading);
 
 // function toArr(str) {
 //   let arr = str

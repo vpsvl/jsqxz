@@ -5,7 +5,7 @@ export default {
     {
       name: '杨家枪法',
       level: '1',
-      get: '',
+      get: '开局宝箱获得',
       power: 250,
       gasPower: 500,
       range: '田 6格',

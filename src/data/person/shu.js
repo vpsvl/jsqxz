@@ -169,7 +169,7 @@ export default {
       talent: [
         {
           name: '总舵主',
-          effect: ['我方没存货一个人，攻击+5%'],
+          effect: ['我方每存活一个人，攻击+5%'],
         },
         {
           name: '血海魅影',
