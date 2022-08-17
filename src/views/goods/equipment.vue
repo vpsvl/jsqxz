@@ -7,10 +7,11 @@
 </template>
 
 <script setup>
-import {ref, watchEffect} from 'vue';
+import {ref, inject, watchEffect} from 'vue';
 import {useRoute} from 'vue-router';
 
 const route = useRoute();
+const loading = inject('loading');
 
 const thead = [
   {
@@ -44,10 +45,13 @@ watchEffect(async () => {
     return;
   }
   try {
+    loading.value = true;
     const data = await import(`../../data/goods/${type}.js`);
     tbody.value = data.default.list;
+    loading.value = false;
   } catch (e) {
     tbody.value = [];
+    loading.value = false;
   }
 });
 </script>

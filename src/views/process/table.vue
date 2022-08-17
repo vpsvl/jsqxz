@@ -27,14 +27,14 @@
         <v-tbody-process :tbody="tbody.branch" v-if="branch === 'branch'"></v-tbody-process>
       </template>
     </v-scroll>
-    <!-- <div class="tr no-data" v-if="tbody.normal?.length < 1">
+    <div class="tr no-data" v-if="tbody.normal?.length < 1">
       <div class="td">{{ loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script setup>
-import {ref, watchEffect} from 'vue';
+import {ref, watchEffect, inject} from 'vue';
 import {onBeforeRouteLeave, useRoute} from 'vue-router';
 import VTbodyProcess from './tbody.vue';
 
