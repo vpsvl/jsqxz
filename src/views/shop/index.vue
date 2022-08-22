@@ -33,7 +33,7 @@ const thead = [
 ];
 const tbody = ref([]);
 watchEffect(() => {
-   tbody.value = [];
+  tbody.value = [];
   const {type} = route.meta;
   const data = shopData[type] ? shopData[type] : {list: []};
   tbody.value = data.list;
