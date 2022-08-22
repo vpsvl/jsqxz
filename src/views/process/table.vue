@@ -22,14 +22,14 @@
             <span>支线</span>
           </label>
         </div>
-        <v-tbody-process :tbody="tbody.good" v-show="branch === 'good'"></v-tbody-process>
-        <v-tbody-process :tbody="tbody.evil" v-show="branch === 'evil'"></v-tbody-process>
-        <v-tbody-process :tbody="tbody.branch" v-show="branch === 'branch'"></v-tbody-process>
+        <v-tbody-process :tbody="tbody.good" v-if="branch === 'good'"></v-tbody-process>
+        <v-tbody-process :tbody="tbody.evil" v-if="branch === 'evil'"></v-tbody-process>
+        <v-tbody-process :tbody="tbody.branch" v-if="branch === 'branch'"></v-tbody-process>
       </template>
+      <div class="tr no-data" v-if="tbody.normal?.length < 1">
+        <div class="td">{{ loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
+      </div>
     </v-scroll>
-    <div class="tr no-data" v-if="tbody.normal?.length < 1">
-      <div class="td">{{ loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
-    </div>
   </div>
 </template>
 
