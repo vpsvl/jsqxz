@@ -3,7 +3,7 @@
     <div class="thead">
       <div class="td" v-for="th of cols" v-text="th.name" :key="th.key"></div>
     </div>
-    <v-scroll class="tbody" :y="y0" v-if="data.length > 0">
+    <v-scroll class="tbody" v-if="data.length > 0">
       <div class="tr" v-for="(tr, index) of data" @click="clickTr(tr, index)" :key="index">
         <div class="td" v-for="td of cols" :key="td.key">
           <slot :name="`td-${td.key}`" :row="tr" :index="index">
@@ -50,11 +50,6 @@ const loading = inject('loading');
 function clickTr(row, index) {
   emit('tr-click', row, index);
 }
-
-const y0 = ref(0);
-onBeforeRouteLeave(() => {
-  y0.value = y0.value === 0 ? 1 : 0;
-});
 </script>
 
 <style lang="less"></style>

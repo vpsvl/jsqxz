@@ -45,6 +45,7 @@ watchEffect(async () => {
     return;
   }
   try {
+    tbody.value = [];
     loading.value = true;
     const data = await import(`../../data/goods/${type}.js`);
     tbody.value = data.default.list;

@@ -31,8 +31,9 @@ const thead = [
     name: '备注',
   },
 ];
-const tbody = ref({});
+const tbody = ref([]);
 watchEffect(() => {
+   tbody.value = [];
   const {type} = route.meta;
   const data = shopData[type] ? shopData[type] : {list: []};
   tbody.value = data.list;

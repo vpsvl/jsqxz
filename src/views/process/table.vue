@@ -5,7 +5,7 @@
       <div class="td">流程</div>
       <div class="td">奖励</div>
     </div>
-    <v-scroll :y="y0" class="tbody">
+    <v-scroll class="tbody">
       <v-tbody-process :tbody="tbody.normal"></v-tbody-process>
       <template v-if="hasBranch">
         <div class="tr-branch">
@@ -22,9 +22,9 @@
             <span>支线</span>
           </label>
         </div>
-        <v-tbody-process :tbody="tbody.good" v-if="branch === 'good'"></v-tbody-process>
-        <v-tbody-process :tbody="tbody.evil" v-if="branch === 'evil'"></v-tbody-process>
-        <v-tbody-process :tbody="tbody.branch" v-if="branch === 'branch'"></v-tbody-process>
+        <v-tbody-process :tbody="tbody.good" v-show="branch === 'good'"></v-tbody-process>
+        <v-tbody-process :tbody="tbody.evil" v-show="branch === 'evil'"></v-tbody-process>
+        <v-tbody-process :tbody="tbody.branch" v-show="branch === 'branch'"></v-tbody-process>
       </template>
     </v-scroll>
     <div class="tr no-data" v-if="tbody.normal?.length < 1">
@@ -54,6 +54,7 @@ watchEffect(async () => {
   }
   try {
     loading.value = true;
+    tbody.value = {normal: []};
     const data = await import(`../../data/process/${type}.js`);
     tbody.value = data.default;
     loading.value = false;
@@ -63,11 +64,6 @@ watchEffect(async () => {
   }
   hasBranch.value = tbody.value.good?.length || tbody.value.evil?.length || tbody.value.branch?.length;
   branch.value = 'good';
-});
-
-const y0 = ref(0);
-onBeforeRouteLeave(() => {
-  y0.value = y0.value === 0 ? 1 : 0;
 });
 </script>
 

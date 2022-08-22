@@ -60,6 +60,7 @@ const thead = {
 };
 const cheat = ref({});
 watchEffect(() => {
+  cheat.value = {list: []};
   const {type} = route.meta;
   const data = all[type] ? all[type] : {list: []};
   cheat.value = data;
