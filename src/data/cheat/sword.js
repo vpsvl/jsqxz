@@ -4,6 +4,7 @@ export default {
   list: [
     {
       name: '松风剑法',
+      cheat: '',
       level: '1',
       get: '开局宝箱获得',
       power: 250,
@@ -17,6 +18,7 @@ export default {
     },
     {
       name: '雷震剑法',
+      cheat: '',
       level: '1',
       get: '收温青青获得',
       power: 220,
@@ -30,6 +32,7 @@ export default {
     },
     {
       name: '辟邪剑法',
+      cheat: '',
       level: '4',
       get: '笑邪收林平之',
       power: 1600,
@@ -53,6 +56,7 @@ export default {
     },
     {
       name: '雪山剑法',
+      cheat: '',
       level: '1',
       get: '凌霄城宝箱',
       power: 330,
@@ -72,6 +76,7 @@ export default {
     },
     {
       name: '三分剑法',
+      cheat: '',
       level: '2',
       get: '1.书剑六合塔战后获得 2.书剑收霍青桐获得',
       power: 770,
@@ -91,6 +96,7 @@ export default {
     },
     {
       name: '一字电剑',
+      cheat: '',
       level: '1',
       get: '恒山山麓战卓不凡后获得',
       power: 350,
@@ -110,6 +116,7 @@ export default {
     },
     {
       name: '绕指柔剑',
+      cheat: '',
       level: '2',
       get: '武当张三丰赠予',
       power: 550,
@@ -123,6 +130,7 @@ export default {
     },
     {
       name: '太岳三青峰',
+      cheat: '',
       level: '2',
       get: '笑傲衡阳救林平之，岳不群送',
       power: 760,
@@ -145,6 +153,7 @@ export default {
     },
     {
       name: '泰山十八盘',
+      cheat: '',
       level: '2',
       get: '五岳大会前击败天门',
       power: 760,
@@ -167,6 +176,7 @@ export default {
     },
     {
       name: '万花剑法',
+      cheat: '',
       level: '2',
       get: '五岳大会前击败定闲',
       power: 760,
@@ -189,6 +199,7 @@ export default {
     },
     {
       name: '云雾十三式',
+      cheat: '',
       level: '2',
       get: '五岳大会之前击败莫大',
       power: 760,
@@ -211,6 +222,7 @@ export default {
     },
     {
       name: '万岳朝宗',
+      cheat: '',
       level: '2',
       get: '五岳大会前击败左冷禅',
       power: 870,
@@ -233,6 +245,7 @@ export default {
     },
     {
       name: '北斗剑法',
+      cheat: '',
       level: '1',
       get: '龙门客栈商店出售',
       power: 440,
@@ -252,6 +265,7 @@ export default {
     },
     {
       name: '两仪剑法',
+      cheat: '',
       level: '3',
       get: '倚天邪灭昆仑派',
       power: 1100,
@@ -271,6 +285,7 @@ export default {
     },
     {
       name: '全真剑法',
+      cheat: '',
       level: '2',
       get: '重阳宫宝箱，需战斗和减道德',
       power: 770,
@@ -296,6 +311,7 @@ export default {
     },
     {
       name: '玉女剑法',
+      cheat: '',
       level: '2',
       get: '神雕蜘蛛洞周伯通给',
       power: 880,
@@ -326,6 +342,7 @@ export default {
     },
     {
       name: '柔云剑术',
+      cheat: '',
       level: '2',
       get: '书剑清兵大营战胜张召重',
       power: 770,
@@ -345,6 +362,7 @@ export default {
     },
     {
       name: '玉箫剑法',
+      cheat: '',
       level: '3',
       get: '神雕收程英后获得',
       power: 990,
@@ -369,6 +387,7 @@ export default {
     },
     {
       name: '金蛇剑法',
+      cheat: '',
       level: '2',
       get: '金蛇山洞拔出金蛇剑后获得',
       power: 880,
@@ -382,6 +401,7 @@ export default {
     },
     {
       name: '宁氏一剑',
+      cheat: '',
       level: '2',
       get: '沧州商店出售',
       power: 770,
@@ -401,6 +421,7 @@ export default {
     },
     {
       name: '玄女剑法',
+      cheat: '',
       level: '2',
       get: '碧正不救温青青获得',
       power: 880,
@@ -420,6 +441,7 @@ export default {
     },
     {
       name: '周公剑法 ',
+      cheat: '',
       level: '3',
       get: '灵鹫宫战卓不凡后获得',
       power: 990,
@@ -438,6 +460,7 @@ export default {
     },
     {
       name: '铁剑诀',
+      cheat: '',
       level: '3',
       get: '碧邪灭华山派获得',
       power: 1320,
@@ -457,6 +480,7 @@ export default {
     },
     {
       name: '猿公剑法',
+      cheat: '',
       level: '3',
       get: '倚天正线昆仑仙境战胜金轮众人，邪线昆仑仙境挖坟战胜阿青+白猿',
       power: 1320,
@@ -470,6 +494,7 @@ export default {
     },
     {
       name: '神门十三剑',
+      cheat: '',
       level: '3',
       get: '武当山宝箱',
       power: 1100,
@@ -489,6 +514,7 @@ export default {
     },
     {
       name: '倚天剑谱',
+      cheat: '',
       level: '3',
       get: '倚天邪线收周芷若后获得',
       power: 1100,
@@ -502,6 +528,7 @@ export default {
     },
     {
       name: '连城剑法',
+      cheat: '',
       level: '3',
       get: '连城雪山用水浸唐诗选辑',
       power: 1100,
@@ -521,6 +548,7 @@ export default {
     },
     {
       name: '达摩剑法',
+      cheat: '',
       level: '3',
       get: '南少林战胜大痴和尚',
       power: 1100,
@@ -534,6 +562,7 @@ export default {
     },
     {
       name: '苗家剑法',
+      cheat: '',
       level: '3',
       get: '飞狐程灵素线沧州胡一刀坟对话苗人凤送和天书战打败苗人凤',
       power: 1210,
@@ -553,6 +582,7 @@ export default {
     },
     {
       name: '太极剑法',
+      cheat: '',
       level: '4',
       get: '道德≥85张三丰送',
       power: 1540,
@@ -587,6 +617,7 @@ export default {
     },
     {
       name: '玄铁剑法',
+      cheat: '',
       level: '4',
       get: '独孤剑冢调查神雕旁边的墙壁',
       power: 1200,
@@ -621,6 +652,7 @@ export default {
     },
     {
       name: '追魂夺命剑',
+      cheat: '',
       level: '4',
       get: '书剑双线最终战获得',
       power: 1540,
@@ -634,6 +666,7 @@ export default {
     },
     {
       name: '玉女素心剑',
+      cheat: '',
       level: '4',
       get: '神正获得天书时获得',
       power: 1300,
@@ -653,6 +686,7 @@ export default {
     },
     {
       name: '独孤九剑',
+      cheat: '',
       level: '4',
       get: '笑正少林大战后令狐冲给',
       power: 1540,
@@ -688,6 +722,7 @@ export default {
     },
     {
       name: '参合剑气',
+      cheat: '',
       level: '4',
       get: '天邪燕子坞还施水阁书架获得',
       power: 1400,
@@ -712,6 +747,7 @@ export default {
     },
     {
       name: '斩流剑术',
+      cheat: '',
       level: '4',
       get: '西门吹雪华山后山战胜谢云流后获得',
       power: 1400,
@@ -725,6 +761,7 @@ export default {
     },
     {
       name: '越女剑法',
+      cheat: '',
       level: '4',
       get: '昆仑仙境战胜阿青',
       power: 1400,

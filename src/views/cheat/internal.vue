@@ -12,6 +12,12 @@
     </template>
     <template #default="{info}">
       <div class="v-table v-table-vertical">
+        <div class="tr">
+          <div class="td">秘籍</div>
+          <div class="td">
+            <span>{{ info.cheat ? info.cheat : info.name }}</span>
+          </div>
+        </div>
         <div class="tr" v-for="(name, val) in thead" :key="val">
           <div class="td">{{ name }}</div>
           <div class="td">{{ info[val] }}</div>

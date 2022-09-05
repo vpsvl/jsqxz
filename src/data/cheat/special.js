@@ -4,6 +4,7 @@ export default {
   list: [
     {
       name: '杨家枪法',
+      cheat: '',
       level: '1',
       get: '开局宝箱获得',
       power: 250,
@@ -23,6 +24,7 @@ export default {
     },
     {
       name: '毒龙鞭法',
+      cheat: '',
       level: '1',
       get: '龙门客栈帮叮当',
       power: 300,
@@ -36,7 +38,8 @@ export default {
     },
     {
       name: '三蜈五蟆烟',
-      get: '',
+      cheat: '',
+      get: '暂无',
       power: 300,
       gasPower: 500,
       range: '■ 10格',
@@ -49,6 +52,7 @@ export default {
     },
     {
       name: '海叟钓法',
+      cheat: '',
       get: '冲霄洞不让谭婆与赵钱孙相见',
       power: 300,
       gasPower: 0,
@@ -68,6 +72,7 @@ export default {
     },
     {
       name: '中平枪法 ',
+      cheat: '',
       get: '连邪偷花铁干/收花铁干',
       power: 330,
       gasPower: 600,
@@ -81,6 +86,7 @@ export default {
     },
     {
       name: '呼延枪法',
+      cheat: '',
       get: '洛阳客栈出售',
       power: 440,
       gasPower: 0,
@@ -100,6 +106,7 @@ export default {
     },
     {
       name: '呼延十八鞭',
+      cheat: '呼延鞭法',
       get: '鸳鸯刀乌鞘岭战胜周威信',
       power: 440,
       gasPower: 0,
@@ -119,6 +126,7 @@ export default {
     },
     {
       name: '鹤蛇八打 ',
+      cheat: '',
       get: '无量山击败四大恶人',
       power: 550,
       gasPower: 700,
@@ -132,6 +140,7 @@ export default {
     },
     {
       name: '大剪刀',
+      cheat: '',
       get: '天龙偷岳老三',
       power: 660,
       gasPower: 800,
@@ -145,6 +154,7 @@ export default {
     },
     {
       name: '五虎棍法',
+      cheat: '',
       get: '龙门客栈商店出售',
       power: 660,
       gasPower: 600,
@@ -170,6 +180,7 @@ export default {
     },
     {
       name: '白蟒鞭法',
+      cheat: '',
       get: '倚天邪线少林寺剧情，正线带袁紫衣战胜灭绝获得',
       power: 1100,
       gasPower: 0,
@@ -183,6 +194,7 @@ export default {
     },
     {
       name: '疯魔棍法',
+      cheat: '',
       get: '',
       power: 1210,
       gasPower: 1100,
@@ -196,6 +208,7 @@ export default {
     },
     {
       name: '持摇琴',
+      cheat: '',
       get: '洛阳城令狐冲再次入队获得（简易线令狐冲入队后获得）',
       power: 732,
       gasPower: 0,
@@ -224,6 +237,7 @@ export default {
     },
     {
       name: '裴将军帖 ',
+      cheat: '',
       get: '梅庄击败秃笔翁',
       power: 770,
       gasPower: 700,
@@ -237,6 +251,7 @@ export default {
     },
     {
       name: '棋盘招式',
+      cheat: '',
       get: '擂鼓山苏星河给予',
       power: 777,
       gasPower: 800,
@@ -256,6 +271,7 @@ export default {
     },
     {
       name: '妙笔丹青',
+      cheat: '',
       get: '射正带程英找朱子柳，邪一灯居战斗偷朱子柳',
       power: 976,
       gasPower: 1200,
@@ -275,6 +291,7 @@ export default {
     },
     {
       name: '阴阳倒乱刃',
+      cheat: '',
       get: '神雕绝情谷战胜公孙止获',
       power: 1100,
       gasPower: 600,
@@ -288,6 +305,7 @@ export default {
     },
     {
       name: '黄沙万里鞭',
+      cheat: '',
       get: '1.白马邪破庙打败陈达海后获得 2.笑正收蓝凤凰',
       power: 990,
       gasPower: 600,
@@ -301,6 +319,7 @@ export default {
     },
     {
       name: '银索金铃',
+      cheat: '',
       get: '程英居击败李莫愁获得',
       power: 1100,
       gasPower: 900,
@@ -320,6 +339,7 @@ export default {
     },
     {
       name: '无上大力杵',
+      cheat: '',
       get: '神雕邪线重阳宫达尔巴送',
       power: 1210,
       gasPower: 1200,
@@ -339,6 +359,7 @@ export default {
     },
     {
       name: '伏魔杖法',
+      cheat: '',
       get: '少林寺佛堂宝箱，需战斗和减道德',
       power: 1510,
       gasPower: 1100,
@@ -358,6 +379,7 @@ export default {
     },
     {
       name: '释迦掷象功',
+      cheat: '',
       get: '沧州商店出售',
       power: 770,
       gasPower: 700,
@@ -371,6 +393,7 @@ export default {
     },
     {
       name: '岳家枪法',
+      cheat: '',
       get: '铁掌山拿玉玺处山洞中，调查书架战胜岳云和上官剑南后获得',
       power: 1650,
       gasPower: 700,
@@ -398,6 +421,7 @@ export default {
     },
     {
       name: '流云飞袖',
+      cheat: '',
       get: '',
       power: 1200,
       gasPower: 1200,
@@ -411,6 +435,7 @@ export default {
     },
     {
       name: '阳春白雪曲',
+      cheat: '',
       get: '不老长春谷战胜逍遥子获得',
       power: 1430,
       gasPower: 1100,
@@ -424,6 +449,7 @@ export default {
     },
     {
       name: '倚天屠龙功',
+      cheat: '',
       get: '倚天正武当山击退蒙古众人后获得',
       power: 1500,
       gasPower: 1100,
@@ -443,6 +469,7 @@ export default {
     },
     {
       name: '金刚伏魔圈',
+      cheat: '',
       get: '倚天邪线打三渡后获得',
       power: 1490,
       gasPower: 1100,
@@ -467,6 +494,7 @@ export default {
     },
     {
       name: '袈裟伏魔功',
+      cheat: '',
       get: '书剑南少林调查书架',
       power: 1200,
       gasPower: 1200,
@@ -480,6 +508,7 @@ export default {
     },
     {
       name: '五轮大转',
+      cheat: '',
       get: '神雕邪线金轮法王送',
       power: 1430,
       gasPower: 1300,
@@ -493,6 +522,7 @@ export default {
     },
     {
       name: '灵蛇杖法',
+      cheat: '',
       get: '华山绝顶帮欧阳锋获得',
       power: 1540,
       gasPower: 1400,
@@ -506,6 +536,7 @@ export default {
     },
     {
       name: '打狗棒法',
+      cheat: '',
       get: '华山绝顶帮洪七公获得',
       ower: 1540,
       gasPower: 1400,

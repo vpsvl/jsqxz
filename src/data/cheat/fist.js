@@ -4,6 +4,7 @@ export default {
   list: [
     {
       name: '罗汉拳',
+      cheat: '',
       get: '开局宝箱获得',
       power: 250,
       gasPower: 0,
@@ -28,6 +29,7 @@ export default {
     },
     {
       name: '美女拳法',
+      cheat: '',
       get: '开局搜刮获得',
       power: 300,
       gasPower: 700,
@@ -41,6 +43,7 @@ export default {
     },
     {
       name: '混元掌',
+      cheat: '',
       get: '碧正救温青青获得',
       power: 750,
       gasPower: 800,
@@ -60,6 +63,7 @@ export default {
     },
     {
       name: '五毒神掌',
+      cheat: '五毒秘传',
       get: '收祖千秋后获得',
       power: 350,
       gasPower: 700,
@@ -79,6 +83,7 @@ export default {
     },
     {
       name: '绵掌',
+      cheat: '',
       get: '倚天邪收宋青书获得',
       power: 400,
       gasPower: 700,
@@ -111,6 +116,7 @@ export default {
     },
     {
       name: '摧心掌',
+      cheat: '',
       get: '对余沧海使用介绍信获得',
       power: 600,
       gasPower: 600,
@@ -152,6 +158,7 @@ export default {
     },
     {
       name: '百花错拳',
+      cheat: '',
       get: '书剑六和塔胜后获得',
       power: 600,
       gasPower: 800,
@@ -165,6 +172,7 @@ export default {
     },
     {
       name: '七伤拳',
+      cheat: '',
       get: '倚天正万安寺解救崆峒派后获得，邪昆仑之战',
       power: 1077,
       gasPower: 1000,
@@ -184,6 +192,7 @@ export default {
     },
     {
       name: '大慈大悲手',
+      cheat: '',
       get: '沧州商店出售',
       power: 800,
       gasPower: 800,
@@ -203,6 +212,7 @@ export default {
     },
     {
       name: '五行六合拳',
+      cheat: '',
       get: '扬州商店出售',
       power: 900,
       gasPower: 900,
@@ -216,6 +226,7 @@ export default {
     },
     {
       name: '无极玄功拳',
+      cheat: '',
       get: '书剑李沅芷线龙门客栈击败张召重后获得',
       power: 800,
       gasPower: 800,
@@ -229,6 +240,7 @@ export default {
     },
     {
       name: '三花聚顶掌',
+      cheat: '',
       get: '全真派宝箱，需战斗和减道德',
       power: 700,
       gasPower: 700,
@@ -246,6 +258,7 @@ export default {
     },
     {
       name: '落英神剑掌',
+      cheat: '',
       get: '射雕桃花岛剧情',
       power: 700,
       gasPower: 900,
@@ -270,6 +283,7 @@ export default {
     },
     {
       name: '寒冰绵掌',
+      cheat: '',
       get: '倚天正龙门客栈收殷离',
       power: 700,
       gasPower: 700,
@@ -293,6 +307,7 @@ export default {
     },
     {
       name: '空明拳',
+      cheat: '',
       get: '蜘蛛山洞救周伯通',
       power: 900,
       gasPower: 1200,
@@ -312,6 +327,7 @@ export default {
     },
     {
       name: '铁掌',
+      cheat: '',
       get: '射雕邪线裘千仞给',
       power: 900,
       gasPower: 900,
@@ -336,6 +352,7 @@ export default {
     },
     {
       name: '太极拳',
+      cheat: '',
       get: '道德≥65 对话张三丰获得',
       power: 1099,
       gasPower: 1000,
@@ -375,6 +392,7 @@ export default {
     },
     {
       name: '大力金刚掌',
+      cheat: '',
       get: '南少林挑战天虹半血即可获得',
       power: 1000,
       gasPower: 1000,
@@ -404,6 +422,7 @@ export default {
     },
     {
       name: '天山六阳掌',
+      cheat: '',
       get: '带虚竹去擂鼓山获得',
       power: 1000,
       gasPower: 900,
@@ -417,6 +436,7 @@ export default {
     },
     {
       name: '玄冥神掌',
+      cheat: '',
       get: '万安寺顶左边房间左边书架',
       power: 1400,
       gasPower: 1100,
@@ -445,6 +465,7 @@ export default {
     },
     {
       name: '化骨绵掌',
+      cheat: '',
       get: '沧州客栈赢海大富后获得',
       power: 700,
       gasPower: 0,
@@ -468,6 +489,7 @@ export default {
     },
     {
       name: '须弥山神掌',
+      cheat: '',
       get: '少林寺木人巷胜十八木人',
       power: 1400,
       gasPower: 1200,
@@ -487,6 +509,7 @@ export default {
     },
     {
       name: '冰蚕毒掌',
+      cheat: '',
       get: '1.云岭洞战胜游坦之 2.天龙邪丐帮战胜游坦之',
       power: 1100,
       gasPower: 1100,
@@ -506,6 +529,7 @@ export default {
     },
     {
       name: '奔雷手',
+      cheat: '',
       get: '书剑霍青桐线收文泰来获得',
       power: 1100,
       gasPower: 1100,
@@ -525,6 +549,7 @@ export default {
     },
     {
       name: '白虹掌力',
+      cheat: '',
       get: '',
       power: 1100,
       gasPower: 1300,
@@ -538,6 +563,7 @@ export default {
     },
     {
       name: '大伏魔拳',
+      cheat: '',
       get: '百花谷战老顽童后获得',
       power: 1100,
       gasPower: 1200,
@@ -557,6 +583,7 @@ export default {
     },
     {
       name: '般若掌',
+      cheat: '',
       get: '挑战少林铜人巷战胜方证',
       power: 1300,
       gasPower: 1300,
@@ -576,6 +603,7 @@ export default {
     },
     {
       name: '黯然销魂掌',
+      cheat: '',
       get: '神雕正线百花谷杨过击败周伯通后获得',
       power: 1500,
       gasPower: 1300,
@@ -595,6 +623,7 @@ export default {
     },
     {
       name: '降龙十八掌',
+      cheat: '',
       get: '天龙正少林五连后乔峰送',
       power: 1500,
       gasPower: 1500,

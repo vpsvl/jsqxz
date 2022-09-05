@@ -5,6 +5,10 @@
         {{ row.name }}
       </span>
     </template>
+    <template #td-get="{row}">
+      <span class="color-success" v-if="row.cheat !== row.name">修炼【{{row.cheat}}】</span>
+      <span>{{row.get}}</span>
+    </template>
     <template #td-condition="{row}">
       <p>{{ row.condition }} {{ internalTypeMap[parseInt(row.internal)] }}</p>
     </template>

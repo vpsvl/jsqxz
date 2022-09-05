@@ -4,6 +4,7 @@ export default {
   list: [
     {
       name: '天竺佛指',
+      cheat: '',
       level: '1',
       get: '开局搜刮获得',
       power: 300,
@@ -23,6 +24,7 @@ export default {
     },
     {
       name: '夺魄指',
+      cheat: '',
       level: '1',
       get: '台湾开箱子或直接开局全搜刮获得',
       power: 350,
@@ -36,6 +38,7 @@ export default {
     },
     {
       name: '去烦恼指',
+      cheat: '',
       level: '2',
       get: '冲霄洞选择“不知道”获得',
       power: 400,
@@ -49,6 +52,7 @@ export default {
     },
     {
       name: '袖中指',
+      cheat: '',
       level: '2',
       get: '大理商店出',
       power: 400,
@@ -62,6 +66,7 @@ export default {
     },
     {
       name: '兰花拂穴手',
+      cheat: '',
       level: '2',
       get: '射雕正线北京打败欧阳克后获得',
       power: 500,
@@ -75,6 +80,7 @@ export default {
     },
     {
       name: '透骨打穴 ',
+      cheat: '',
       level: '2',
       get: '射雕邪线北京不与欧阳克过招获得',
       power: 600,
@@ -88,6 +94,7 @@ export default {
     },
     {
       name: '金蛇缠丝手',
+      cheat: '',
       level: '3',
       get: '',
       power: 1100,
@@ -101,6 +108,7 @@ export default {
     },
     {
       name: '迷踪连环腿',
+      cheat: '',
       level: '3',
       get: '书剑凤阳战斗胜利后获得',
       power: 800,
@@ -114,6 +122,7 @@ export default {
     },
     {
       name: '旋风扫叶腿',
+      cheat: '',
       level: '2',
       get: '射雕桃花岛招亲剧情',
       power: 700,
@@ -127,6 +136,7 @@ export default {
     },
     {
       name: '鹰爪功',
+      cheat: '',
       level: '2',
       get: '倚天正光明顶剧情后获得',
       power: 750,
@@ -140,6 +150,7 @@ export default {
     },
     {
       name: '玄天指',
+      cheat: '',
       level: '2',
       get: '梅庄胜黑白子后获得',
       power: 800,
@@ -153,6 +164,7 @@ export default {
     },
     {
       name: '连环腐尸毒',
+      cheat: '',
       level: '3',
       get: '星宿海战丁春秋后获得',
       power: 1000,
@@ -177,6 +189,7 @@ export default {
     },
     {
       name: '黑风指',
+      cheat: '',
       level: '2',
       get: '闯王宝藏宝箱',
       power: 800,
@@ -190,6 +203,7 @@ export default {
     },
     {
       name: '多罗叶指',
+      cheat: '',
       level: '2',
       get: '少林寺般若堂书架',
       power: 900,
@@ -215,6 +229,7 @@ export default {
     },
     {
       name: '无相劫指',
+      cheat: '',
       level: '4',
       get: '天正少林寺第四战胜后获得，天邪丐帮剧情',
       power: 1300,
@@ -245,6 +260,7 @@ export default {
     },
     {
       name: '拈花指',
+      cheat: '',
       level: '3',
       get: '天邪聚贤庄胜萧远山后获得',
       power: 1100,
@@ -270,6 +286,7 @@ export default {
     },
     {
       name: '一指禅',
+      cheat: '',
       level: '2',
       get: '韦小宝加入时获得',
       power: 700,
@@ -283,6 +300,7 @@ export default {
     },
     {
       name: '虎爪绝户手',
+      cheat: '',
       level: '3',
       get: '倚正万安寺救俞二',
       power: 900,
@@ -306,6 +324,7 @@ export default {
     },
     {
       name: '九阴白骨爪 ',
+      cheat: '',
       level: '4',
       get: '1.射雕邪收梅超风 2.倚邪周芷若洗九阴白骨爪后获得',
       power: 1500,
@@ -325,6 +344,7 @@ export default {
     },
     {
       name: '幻阴指',
+      cheat: '',
       level: '3',
       get: '倚天邪成昆给',
       power: 1000,
@@ -338,6 +358,7 @@ export default {
     },
     {
       name: '龙爪手',
+      cheat: '',
       level: '3',
       get: '倚天正光明顶胜空性后获得',
       power: 1000,
@@ -357,6 +378,7 @@ export default {
     },
     {
       name: '天山折梅手',
+      cheat: '',
       level: '4',
       get: '调查灵鹫宫右下房间书架',
       power: 1100,
@@ -380,6 +402,7 @@ export default {
     },
     {
       name: '大智无定指',
+      cheat: '',
       level: '3',
       get: '少林寺进门左侧房间宝箱（需战斗，道德-2）',
       power: 1000,
@@ -405,6 +428,7 @@ export default {
     },
     {
       name: '凝血神爪',
+      cheat: '',
       level: '3',
       get: '鹿鼎记台湾战获得',
       power: 1000,
@@ -418,6 +442,7 @@ export default {
     },
     {
       name: '弹指神通',
+      cheat: '',
       level: '3',
       get: '射雕正牛家村黄药师送',
       power: 1100,
@@ -447,6 +472,7 @@ export default {
     },
     {
       name: '葵花点穴手',
+      cheat: '',
       level: '4',
       get: '1.洛阳客栈跟白展堂花10000两购买 2.鸳鸯刀战胜萧半和',
       power: 1200,
@@ -466,6 +492,7 @@ export default {
     },
     {
       name: '大力金刚指',
+      cheat: '',
       level: '4',
       get: '倚天正线击败阿大后获得',
       power: 1350,
@@ -479,6 +506,7 @@ export default {
     },
     {
       name: '一阳指',
+      cheat: '',
       level: '3',
       get: '射雕一灯居剧情后获得',
       power: 1111,
@@ -503,6 +531,7 @@ export default {
     },
     {
       name: '岳王散手',
+      cheat: '',
       level: '3',
       get: '铁掌山宝箱后山山洞书架',
       power: 1200,
@@ -525,6 +554,7 @@ export default {
     },
     {
       name: '寒袖拂穴',
+      cheat: '',
       level: '3',
       get: '',
       power: 1100,
@@ -538,6 +568,7 @@ export default {
     },
     {
       name: '擒龙手',
+      cheat: '',
       level: '3',
       get: '天正少林连战前，少室山下乔峰赠予',
       power: 1200,
@@ -561,6 +592,7 @@ export default {
     },
     {
       name: '参合指',
+      cheat: '',
       level: '4',
       get: '天邪燕子坞还施水阁书架获得',
       power: 1400,
@@ -580,6 +612,7 @@ export default {
     },
     {
       name: '六脉神剑',
+      cheat: '',
       level: '4',
       get: '天龙获得天书后，天龙寺书架获得（需打败段思平+枯荣）',
       power: 1600,

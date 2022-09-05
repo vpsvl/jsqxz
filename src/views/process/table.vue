@@ -55,6 +55,7 @@ watchEffect(async () => {
   try {
     loading.value = true;
     tbody.value = {normal: []};
+    hasBranch.value = false;
     const data = await import(`../../data/process/${type}.js`);
     tbody.value = data.default;
     loading.value = false;

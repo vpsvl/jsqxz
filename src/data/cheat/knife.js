@@ -4,6 +4,7 @@ export default {
   list: [
     {
       name: '柴刀十八路',
+      cheat: '',
       level: '1',
       get: '开局宝箱获得',
       power: 250,
@@ -23,6 +24,7 @@ export default {
     },
     {
       name: '万劫刀法',
+      cheat: '',
       level: '1',
       get: '无量山收钟灵',
       power: 300,
@@ -36,8 +38,9 @@ export default {
     },
     {
       name: '南山刀法',
+      cheat: '',
       level: '1',
-      get: '',
+      get: '暂无',
       power: 300,
       gasPower: 600,
       range: '△ 7格',
@@ -49,6 +52,7 @@ export default {
     },
     {
       name: '血刀大法',
+      cheat: '血刀经',
       level: '3',
       get: '连城诀雪山剧情',
       power: 1089,
@@ -66,6 +70,7 @@ export default {
     },
     {
       name: '慈悲刀法',
+      cheat: '',
       level: '1',
       get: '道德≥75，天台山智光大师给',
       power: 400,
@@ -85,6 +90,7 @@ export default {
     },
     {
       name: '奇门三才刀',
+      cheat: '',
       level: '1',
       get: '收人厨子后获得',
       power: 400,
@@ -98,6 +104,7 @@ export default {
     },
     {
       name: '五虎断门刀',
+      cheat: '',
       level: '2',
       get: '洛阳城击败金刀弟子',
       power: 500,
@@ -123,6 +130,7 @@ export default {
     },
     {
       name: '降魔刀法',
+      cheat: '',
       level: '2',
       get: '拜师玄慈获得',
       power: 800,
@@ -136,6 +144,7 @@ export default {
     },
     {
       name: '狂风刀法',
+      cheat: '',
       level: '2',
       get: '收田伯光获得',
       power: 500,
@@ -149,6 +158,7 @@ export default {
     },
     {
       name: '修罗刀',
+      cheat: '',
       level: '2',
       get: '冲霄洞建议谭婆与赵钱孙相见',
       power: 800,
@@ -168,6 +178,7 @@ export default {
     },
     {
       name: '八卦刀法',
+      cheat: '',
       level: '3',
       get: '',
       power: 800,
@@ -181,6 +192,7 @@ export default {
     },
     {
       name: '鸳鸯刀法',
+      cheat: '',
       level: '2',
       get: '收萧中慧获得',
       power: 700,
@@ -200,6 +212,7 @@ export default {
     },
     {
       name: '鬼头刀法',
+      cheat: '',
       level: '2',
       get: '连正雪山胜血刀老祖后获得',
       power: 700,
@@ -213,6 +226,7 @@ export default {
     },
     {
       name: '金乌刀法',
+      cheat: '',
       level: '2',
       get: '开局搜刮获得',
       power: 744,
@@ -237,6 +251,7 @@ export default {
     },
     {
       name: '反两仪刀法',
+      cheat: '',
       level: '3',
       get: '倚正万安寺解救昆仑派后获得，邪崆峒三连后获',
       power: 900,
@@ -256,6 +271,7 @@ export default {
     },
     {
       name: '屠龙刀法',
+      cheat: '',
       level: '3',
       get: '沧州商店出售',
       power: 1100,
@@ -273,6 +289,7 @@ export default {
     },
     {
       name: '玄虚刀法',
+      cheat: '',
       level: '3',
       get: '高昌迷宫宝箱',
       power: 900,
@@ -292,6 +309,7 @@ export default {
     },
     {
       name: '百胜刀法',
+      cheat: '',
       level: '3',
       get: '鹿鼎山宝箱',
       power: 1000,
@@ -305,6 +323,7 @@ export default {
     },
     {
       name: '井月八法',
+      cheat: '',
       level: '3',
       get: '药王庙挖坟战胜寇仲获得',
       power: 1200,
@@ -318,6 +337,7 @@ export default {
     },
     {
       name: '夫妻刀法',
+      cheat: '',
       level: '3',
       get: '鸳鸯山洞带萧中慧见萧半和',
       power: 1100,
@@ -340,6 +360,7 @@ export default {
     },
     {
       name: '燃木刀法',
+      cheat: '',
       level: '3',
       get: '道德≥80，少林寺与玄慈对话',
       power: 1000,
@@ -359,6 +380,7 @@ export default {
     },
     {
       name: '阴风刀',
+      cheat: '',
       level: '3',
       get: '灵蛇岛战波斯三使后获得',
       power: 1100,
@@ -378,6 +400,7 @@ export default {
     },
     {
       name: '胡家刀法',
+      cheat: '',
       level: '4',
       get: '闯王宝藏宝箱获得',
       power: 1300,
@@ -402,6 +425,7 @@ export default {
     },
     {
       name: '火焰刀法',
+      cheat: '',
       level: '4',
       get: '天龙寺战胜鸠摩智',
       power: 1400,
@@ -426,6 +450,7 @@ export default {
     },
     {
       name: '沧溟刀法',
+      cheat: '',
       level: '4',
       get: '侠客邪天书战后获得',
       power: 1300,
@@ -450,6 +475,7 @@ export default {
     },
     {
       name: '天刀九问',
+      cheat: '',
       level: '4',
       get: '获得【井月八法】后，前往晋阳上方中条山，对话宋缺，战胜寇仲后获得',
       power: 1333,
@@ -467,6 +493,7 @@ export default {
     },
     {
       name: '庖丁解牛刀',
+      cheat: '',
       level: '3',
       get: '书剑楼兰遗迹调查尸骨',
       power: 1300,
