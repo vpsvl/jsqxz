@@ -1,13 +1,13 @@
 <template>
-  <v-table class="v-table-cheat-out" :cols="thead" :data="tbody">
+  <v-table class="v-table-cheat-out" :cols="thead" :data="tbody" @sort="sort">
     <template #td-name="{row}">
       <span :class="{[`level-${row.level}`]: row.level, [`internal-${row.internal}`]: row.internal}">
         {{ row.name }}
       </span>
     </template>
     <template #td-get="{row}">
-      <span class="color-success" v-if="row.cheat && row.cheat !== row.name">修炼【{{row.cheat}}】</span>
-      <span>{{row.get}}</span>
+      <span class="color-success" v-if="row.cheat && row.cheat !== row.name">修炼【{{ row.cheat }}】</span>
+      <span>{{ row.get }}</span>
     </template>
     <template #td-condition="{row}">
       <p>{{ row.condition }} {{ internalTypeMap[parseInt(row.internal)] }}</p>
@@ -38,6 +38,7 @@ const thead = [
   {
     key: 'name',
     name: '名称',
+    // sort: true,
   },
   {
     key: 'get',
@@ -46,10 +47,12 @@ const thead = [
   {
     key: 'power',
     name: '威力',
+    // sort: true,
   },
   {
     key: 'gasPower',
     name: '气功',
+    // sort: true,
   },
   {
     key: 'range',
@@ -58,10 +61,12 @@ const thead = [
   {
     key: 'condition',
     name: '条件',
+    // sort: true,
   },
   {
     key: 'addition',
     name: '每级加成',
+    // sort: true,
   },
   {
     key: 'peculiar',
@@ -88,6 +93,42 @@ watchEffect(async () => {
     loading.value = false;
   }
 });
+
+function sort(key, direction) {
+  switch (key) {
+    case 'name':
+      tbody.value = tbody.value.sort((a, b) => {
+        return direction > 0 ? b.level - a.level : a.level - b.level;
+      });
+      break;
+    case 'power':
+    case 'gasPower':
+      tbody.value = tbody.value.sort((a, b) => {
+        return direction > 0 ? b[key] - a[key] : a[key] - b[key];
+      });
+      break;
+    case 'condition':
+      function getNum(item) {
+        const arr = item.condition.match(/\d+(.\d+)?/g);
+        return Number(arr[0]);
+      }
+      tbody.value = tbody.value.sort((a, b) => {
+        return direction > 0 ? getNum(b) - getNum(a) : getNum(a) - getNum(b);
+      });
+      break;
+    case 'addition':
+      function getAddition(item) {
+        const str = item.addition.split(' ').find((i) => /拳|指|剑|刀|奇/i.test(i));
+        return Number(str.split('+')[1]);
+      }
+      tbody.value = tbody.value.sort((a, b) => {
+        return direction > 0 ? getAddition(b) - getAddition(a) : getAddition(a) - getAddition(b);
+      });
+      break;
+    default:
+      break;
+  }
+}
 </script>
 
 <style lang="less">

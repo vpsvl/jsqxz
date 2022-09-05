@@ -1,7 +1,11 @@
 <template>
   <div class="v-table">
     <div class="thead">
-      <div class="td" v-for="th of cols" v-text="th.name" :key="th.key"></div>
+      <div class="td" :class="{'th-sort': th.sort}" v-for="th of cols" :key="th.key">
+        <span>{{ th.name }}</span>
+        <i class="sort-arrow-up" :class="{active: sortActive === th.key + 0}" @click="sort(th.key, 0)"></i>
+        <i class="sort-arrow-down" :class="{active: sortActive === th.key + 1}" @click="sort(th.key, 1)"></i>
+      </div>
     </div>
     <v-scroll class="tbody" v-if="data.length > 0">
       <div class="tr" v-for="(tr, index) of data" @click="clickTr(tr, index)" :key="index">
@@ -20,10 +24,9 @@
 
 <script setup>
 import {ref, inject} from 'vue';
-import {onBeforeRouteLeave} from 'vue-router';
 
 const props = defineProps({
-  // 列 key, name, fixed
+  // 列 key, name, fixed, sort
   cols: {
     type: Array,
     default() {
@@ -44,8 +47,14 @@ const props = defineProps({
   // },
 });
 
-const emit = defineEmits(['tr-click']);
+const emit = defineEmits(['tr-click', 'sort']);
 const loading = inject('loading');
+const sortActive = ref('');
+
+function sort(key, direction) {
+  sortActive.value = key + direction;
+  emit('sort', key, direction);
+}
 
 function clickTr(row, index) {
   emit('tr-click', row, index);

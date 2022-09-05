@@ -11,7 +11,7 @@ module.exports = {
   // 级别: 0忽略 1警告 2错误
   rules: {
     // 2空格缩进
-    'indent': [2, 2],
+    // 'indent': [2, 2],
     // 禁止重复的 case 标签
     'no-duplicate-case': 2,
     // switch 语句强制 default 分支

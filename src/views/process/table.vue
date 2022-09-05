@@ -9,17 +9,9 @@
       <v-tbody-process :tbody="tbody.normal"></v-tbody-process>
       <template v-if="hasBranch">
         <div class="tr-branch">
-          <label class="tr-branch-td" v-if="tbody.good?.length">
-            <input type="radio" value="good" v-model="branch" />
-            <span>正线</span>
-          </label>
-          <label class="tr-branch-td" v-if="tbody.evil?.length">
-            <input type="radio" value="evil" v-model="branch" />
-            <span>邪线</span>
-          </label>
-          <label class="tr-branch-td" v-if="tbody.branch?.length">
-            <input type="radio" value="branch" v-model="branch" />
-            <span>支线</span>
+          <label v-for="(name, val) in branchMap" class="tr-branch-td" :key="val">
+            <input type="radio" :value="val" v-model="branch" />
+            <span>{{ name }}</span>
           </label>
         </div>
         <v-tbody-process :tbody="tbody.good" v-if="branch === 'good'"></v-tbody-process>
@@ -42,6 +34,19 @@ const route = useRoute();
 const loading = inject('loading');
 
 const branch = ref('good');
+const branchMap = ref({
+  good: '正线',
+  evil: '邪线',
+  branch: '支线',
+});
+const goodMap = {
+  shu: '霍青桐线',
+  fei: '袁紫衣线',
+};
+const evilMap = {
+  shu: '李沅芷线',
+  fei: '程灵素线',
+};
 const hasBranch = ref(false);
 const tbody = ref({});
 watchEffect(async () => {
@@ -52,10 +57,11 @@ watchEffect(async () => {
   if (!/process/i.test(name)) {
     return;
   }
+  hasBranch.value = false;
+  branchMap.value = {};
   try {
     loading.value = true;
     tbody.value = {normal: []};
-    hasBranch.value = false;
     const data = await import(`../../data/process/${type}.js`);
     tbody.value = data.default;
     loading.value = false;
@@ -63,7 +69,18 @@ watchEffect(async () => {
     tbody.value = {normal: []};
     loading.value = false;
   }
-  hasBranch.value = tbody.value.good?.length || tbody.value.evil?.length || tbody.value.branch?.length;
+  if (tbody.value.good?.length) {
+    branchMap.value.good = goodMap[type] ? goodMap[type] : '正线';
+    hasBranch.value = true;
+  }
+  if (tbody.value.evil?.length) {
+    branchMap.value.evil = evilMap[type] ? evilMap[type] : '邪线';
+    hasBranch.value = true;
+  }
+  if (tbody.value.branch?.length) {
+    branchMap.value.branch = '支线';
+    hasBranch.value = true;
+  }
   branch.value = 'good';
 });
 </script>

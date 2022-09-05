@@ -14,13 +14,7 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 耍刀+2',
       sect: '',
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为庖丁解牛刀'],
-        },
-      ],
+      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为庖丁解牛刀']}],
     },
     {
       name: '万劫刀法',
@@ -51,24 +45,6 @@ export default {
       peculiar: [],
     },
     {
-      name: '血刀大法',
-      cheat: '血刀经',
-      level: '3',
-      get: '连城诀雪山剧情',
-      power: 1089,
-      gasPower: 800,
-      range: '△ 6格',
-      condition: '耍刀30',
-      internal: '',
-      addition: '攻击+1 防御+1 耍刀+2',
-      sect: '',
-      peculiar: [
-        {
-          effect: ['修炼后生命上限降低200'],
-        },
-      ],
-    },
-    {
       name: '慈悲刀法',
       cheat: '',
       level: '1',
@@ -80,13 +56,7 @@ export default {
       internal: '',
       addition: '攻击+1 耍刀+2',
       sect: '',
-      peculiar: [
-        {
-          name: '慈悲为怀',
-          condition: '慈悲刀法+大慈大悲手',
-          effect: ['道德高于60时，如所受伤害大于120，减伤（道德-60）点'],
-        },
-      ],
+      peculiar: [{name: '慈悲为怀', condition: '慈悲刀法+大慈大悲手', effect: ['道德高于60时，如所受伤害大于120，减伤（道德-60）点']}],
     },
     {
       name: '奇门三才刀',
@@ -177,20 +147,6 @@ export default {
       ],
     },
     {
-      name: '八卦刀法',
-      cheat: '',
-      level: '3',
-      get: '',
-      power: 800,
-      gasPower: 800,
-      range: '△ 5格',
-      condition: '耍刀70',
-      internal: '',
-      addition: '攻击+2 防御+1 耍刀+3',
-      sect: '',
-      peculiar: [],
-    },
-    {
       name: '鸳鸯刀法',
       cheat: '',
       level: '2',
@@ -202,13 +158,7 @@ export default {
       internal: '',
       addition: '攻击+1 耍刀+3',
       sect: '',
-      peculiar: [
-        {
-          name: '天衣无缝',
-          condition: '同时修炼鸳鸯刀法+夫妻刀法到极',
-          effect: ['使用任何刀系武功增加30%连击率'],
-        },
-      ],
+      peculiar: [{name: '天衣无缝', condition: '同时修炼鸳鸯刀法+夫妻刀法到极', effect: ['使用任何刀系武功增加30%连击率']}],
     },
     {
       name: '鬼头刀法',
@@ -250,10 +200,38 @@ export default {
       ],
     },
     {
+      name: '血刀大法',
+      cheat: '血刀经',
+      level: '3',
+      get: '连城诀雪山剧情',
+      power: 1089,
+      gasPower: 800,
+      range: '△ 6格',
+      condition: '耍刀30',
+      internal: '',
+      addition: '攻击+1 防御+1 耍刀+2',
+      sect: '',
+      peculiar: [{effect: ['修炼后生命上限降低200']}],
+    },
+    {
+      name: '八卦刀法',
+      cheat: '',
+      level: '3',
+      get: '',
+      power: 800,
+      gasPower: 800,
+      range: '△ 5格',
+      condition: '耍刀70',
+      internal: '',
+      addition: '攻击+2 防御+1 耍刀+3',
+      sect: '',
+      peculiar: [],
+    },
+    {
       name: '反两仪刀法',
       cheat: '',
       level: '3',
-      get: '倚正万安寺解救昆仑派后获得，邪崆峒三连后获',
+      get: '倚天正万安寺解救昆仑派后获得，邪崆峒三连后获',
       power: 900,
       gasPower: 700,
       range: '井 7格',
@@ -281,11 +259,7 @@ export default {
       internal: '',
       addition: '攻击+2 耍刀+4',
       sect: '',
-      peculiar: [
-        {
-          effect: ['击杀小龙女不会触发复活'],
-        },
-      ],
+      peculiar: [{effect: ['击杀小龙女不会触发复活']}],
     },
     {
       name: '玄虚刀法',
@@ -348,14 +322,8 @@ export default {
       addition: '攻击+1 防御+1 耍刀+4',
       sect: '',
       peculiar: [
-        {
-          effect: ['连击时伤害、气攻不会减少'],
-        },
-        {
-          name: '天衣无缝',
-          condition: '同时修炼鸳鸯刀法+夫妻刀法到极',
-          effect: ['使用任何刀系武功增加30%连击率'],
-        },
+        {effect: ['连击时伤害、气攻不会减少']},
+        {name: '天衣无缝', condition: '同时修炼鸳鸯刀法+夫妻刀法到极', effect: ['使用任何刀系武功增加30%连击率']},
       ],
     },
     {
@@ -395,6 +363,27 @@ export default {
           name: '利刃寒锋',
           condition: '同时修炼修罗刀法+阴风刀法+沧溟刀法到极',
           effect: ['攻击时有50%几率、暴怒攻击必定触发，追加10时序的“冻结”效果', '冻结：无法集气和时序回复状态'],
+        },
+      ],
+    },
+    {
+      name: '庖丁解牛刀',
+      cheat: '',
+      level: '3',
+      get: '书剑楼兰遗迹调查尸骨',
+      power: 1300,
+      gasPower: 1300,
+      range: '井 5格',
+      condition: '耍刀160',
+      internal: '',
+      addition: '攻击+3 耍刀+5',
+      sect: '',
+      peculiar: [
+        {name: '一脉相承', condition: '', effect: ['可由柴刀十八路一脉相承']},
+        {
+          name: '良庖岁更刀',
+          condition: '使用庖丁解牛刀攻击',
+          effect: ['对生命值低于40%的目标概率附加目标最大生命值10%的伤害', '对生命值低于10%的目标概率一击必杀'],
         },
       ],
     },
@@ -461,11 +450,7 @@ export default {
       addition: '攻击+2 防御+1 耍刀+5',
       sect: '',
       peculiar: [
-        {
-          name: '颠动沧溟',
-          condition: '使用沧溟刀法攻击30%几率触发',
-          effect: ['额外杀气，且必定造成流血'],
-        },
+        {name: '颠动沧溟', condition: '使用沧溟刀法攻击30%几率触发', effect: ['额外杀气，且必定造成流血']},
         {
           name: '利刃寒锋',
           condition: '同时修炼修罗刀法+阴风刀法+沧溟刀法到极',
@@ -485,36 +470,7 @@ export default {
       internal: '',
       addition: '攻击+3 防御+1 耍刀+6',
       sect: '',
-      peculiar: [
-        {
-          effect: ['根据天书数量提升威力杀气'],
-        },
-      ],
-    },
-    {
-      name: '庖丁解牛刀',
-      cheat: '',
-      level: '3',
-      get: '书剑楼兰遗迹调查尸骨',
-      power: 1300,
-      gasPower: 1300,
-      range: '井 5格',
-      condition: '耍刀160',
-      internal: '',
-      addition: '攻击+3 耍刀+5',
-      sect: '',
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由柴刀十八路一脉相承'],
-        },
-        {
-          name: '良庖岁更刀',
-          condition: '使用庖丁解牛刀攻击',
-          effect: ['对生命值低于40%的目标概率附加目标最大生命值10%的伤害', '对生命值低于10%的目标概率一击必杀'],
-        },
-      ],
+      peculiar: [{effect: ['根据天书数量提升威力杀气']}],
     },
   ],
 };
