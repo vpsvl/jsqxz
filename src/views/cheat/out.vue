@@ -38,7 +38,7 @@ const thead = [
   {
     key: 'name',
     name: '名称',
-    // sort: true,
+    sort: true,
   },
   {
     key: 'get',

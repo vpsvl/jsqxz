@@ -17,6 +17,7 @@
     "@vitejs/plugin-vue": "^3.0.3",
     "eslint-plugin-vue": "^9.1.0",
     "less": "^4.1.2",
+    "pinyin": "^3.0.0-alpha.5",
     "vite": "^3.0.8"
   }
 }

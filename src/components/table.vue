@@ -1,20 +1,24 @@
 <template>
   <div class="v-table">
     <div class="thead">
-      <div class="td" :class="{'th-sort': th.sort}" v-for="th of cols" :key="th.key">
+      <div class="td th-sort" v-for="th of cols" :key="th.key">
         <span>{{ th.name }}</span>
-        <i class="sort-arrow-up" :class="{active: sortActive === th.key + 0}" @click="sort(th.key, 0)"></i>
-        <i class="sort-arrow-down" :class="{active: sortActive === th.key + 1}" @click="sort(th.key, 1)"></i>
+        <template v-if="th.sort">
+          <i class="sort-arrow-up" :class="{active: sortActive === th.key + '-1'}" @click="sort(th.key, -1)"></i>
+          <i class="sort-arrow-down" :class="{active: sortActive === th.key + 1}" @click="sort(th.key, 1)"></i>
+        </template>
       </div>
     </div>
     <v-scroll class="tbody" v-if="data.length > 0">
-      <div class="tr" v-for="(tr, index) of data" @click="clickTr(tr, index)" :key="index">
-        <div class="td" v-for="td of cols" :key="td.key">
-          <slot :name="`td-${td.key}`" :row="tr" :index="index">
-            <p v-if="typeof tr[td.key] !== 'object'">{{ tr[td.key] }}</p>
-          </slot>
+      <transition-group name="sort">
+        <div class="tr" v-for="(tr, index) of data" @click="clickTr(tr, index)" :key="tr.id ? tr.id : index">
+          <div class="td" v-for="td of cols" :key="td.key">
+            <slot :name="`td-${td.key}`" :row="tr" :index="index">
+              <p v-if="typeof tr[td.key] !== 'object'">{{ tr[td.key] }}</p>
+            </slot>
+          </div>
         </div>
-      </div>
+      </transition-group>
     </v-scroll>
     <div class="tr no-data" v-if="data.length <= 0">
       <div class="td">{{ loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>

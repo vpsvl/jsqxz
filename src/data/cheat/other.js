@@ -3,21 +3,19 @@ export default {
   exclusive: '',
   list: [
     {
+      id: 'zuoYouHuBoShu',
       name: '左右互搏术',
-      level: '',
+      level: 4,
       get: '蜘蛛洞救周伯通',
       condition: '资质≤30',
       addition: '激活左右互搏',
       sect: '',
-      peculiar: [
-        {
-          effect: ['左右互搏几率：25+(71-资质)/2 %', '低资（1-30）左右概率+10%', '爆怒时，如会左右互博则概率增加20%'],
-        },
-      ],
+      peculiar: [{effect: ['左右互搏几率：25+(71-资质)/2 %', '低资（1-30）左右概率+10%', '爆怒时，如会左右互博则概率增加20%']}],
     },
     {
+      id: 'douZhuanXingYi',
       name: '斗转星移',
-      level: '',
+      level: 4,
       get: '天龙邪燕子坞收慕容复',
       condition: '总兵器值≥120 资质≥80',
       addition: '攻击+1 拳掌+1 指法+1 御剑+1 耍刀+1 特殊+1',
@@ -45,8 +43,9 @@ export default {
       ],
     },
     {
+      id: 'zhongYongZhiDao',
       name: '中庸之道',
-      level: '',
+      level: 4,
       get: '鸳鸯刀战胜萧半和',
       condition: '资质31~79',
       addition: '激活中庸之道',

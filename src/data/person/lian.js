@@ -2,6 +2,7 @@ export default {
   name: '连城诀',
   list: [
     {
+      id: 'diYun',
       name: '狄云',
       talent: [
         {
@@ -23,62 +24,43 @@ export default {
       fortune: ['雪山剧情洗第二三格武功'],
     },
     {
+      id: 'shuiSheng',
       name: '水笙',
       talent: [
-        {
-          name: '铃剑侠女',
-          effect: ['使用连城剑法高连击'],
-        },
-        {
-          name: '似水柔情',
-          effect: ['误伤队友时恢复其血量'],
-        },
+        {name: '铃剑侠女', effect: ['使用连城剑法高连击']},
+        {name: '似水柔情', effect: ['误伤队友时恢复其血量']},
       ],
       fortune: [],
     },
     {
+      id: 'luTianShu',
       name: '陆天枢',
       talent: [
-        {
-          name: '仁义刀',
-          effect: ['使用刀法必定单击，刀法威力1.5倍'],
-        },
-        {
-          name: '南四奇',
-          effect: ['南四奇在场时，我方格挡和命中提升400'],
-        },
+        {name: '仁义刀', effect: ['使用刀法必定单击，刀法威力1.5倍']},
+        {name: '南四奇', effect: ['南四奇在场时，我方格挡和命中提升400']},
       ],
       fortune: [],
     },
     {
+      id: 'liuChengFeng',
       name: '刘乘风',
       talent: [
-        {
-          name: '柔云剑',
-          effect: ['被攻击时，将一半杀气转化为回血'],
-        },
-        {
-          name: '南四奇',
-          effect: ['南四奇在场时，我方格挡和命中提升400'],
-        },
+        {name: '柔云剑', effect: ['被攻击时，将一半杀气转化为回血']},
+        {name: '南四奇', effect: ['南四奇在场时，我方格挡和命中提升400']},
       ],
       fortune: [],
     },
     {
+      id: 'shuiDai',
       name: '水岱',
       talent: [
-        {
-          name: '冷月剑',
-          effect: ['增加64点防御，被攻击时降低640气攻'],
-        },
-        {
-          name: '南四奇',
-          effect: ['南四奇在场时，我方格挡和命中提升400'],
-        },
+        {name: '冷月剑', effect: ['增加64点防御，被攻击时降低640气攻']},
+        {name: '南四奇', effect: ['南四奇在场时，我方格挡和命中提升400']},
       ],
       fortune: [],
     },
     {
+      id: 'huaTieGan',
       name: '花铁干',
       talent: [
         {
@@ -89,44 +71,29 @@ export default {
       fortune: [],
     },
     {
+      id: 'xieDaoLaoZu',
       name: '血刀老祖',
       talent: [
-        {
-          name: '血刀老祖',
-          effect: ['基础暴击率大幅度提高', '初始集气位置900，且移动+3格'],
-        },
-        {
-          name: '血海魅影',
-          effect: ['击杀敌方后，被击杀者满状态复活，行动后获得魅惑状态9999时序'],
-        },
+        {name: '血刀老祖', effect: ['基础暴击率大幅度提高', '初始集气位置900，且移动+3格']},
+        {name: '血海魅影', effect: ['击杀敌方后，被击杀者满状态复活，行动后获得魅惑状态9999时序']},
       ],
       fortune: [],
     },
     {
+      id: 'qiChangFa',
       name: '戚长发',
       talent: [
-        {
-          name: '铁索横江',
-          effect: ['基础连击率大幅提高', '【闭气离墙.起死回生】，战斗中可以复活一次'],
-        },
-        {
-          name: '绝处逢生',
-          effect: ['自身范围内一格25%概率免受攻击'],
-        },
+        {name: '铁索横江', effect: ['基础连击率大幅提高', '【闭气离墙.起死回生】，战斗中可以复活一次']},
+        {name: '绝处逢生', effect: ['自身范围内一格25%概率免受攻击']},
       ],
       fortune: [],
     },
     {
+      id: 'baoXiang',
       name: '宝象',
       talent: [
-        {
-          name: '血刀高手',
-          effect: ['血刀门武功连击率+20%，暴击率+20%'],
-        },
-        {
-          name: '一龙一象',
-          effect: ['提升10%伤害，降低10%受到的伤害'],
-        },
+        {name: '血刀高手', effect: ['血刀门武功连击率+20%，暴击率+20%']},
+        {name: '一龙一象', effect: ['提升10%伤害，降低10%受到的伤害']},
       ],
       fortune: [],
     },

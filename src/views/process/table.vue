@@ -27,7 +27,7 @@
 
 <script setup>
 import {ref, watchEffect, inject} from 'vue';
-import {onBeforeRouteLeave, useRoute} from 'vue-router';
+import {useRoute} from 'vue-router';
 import VTbodyProcess from './tbody.vue';
 
 const route = useRoute();
