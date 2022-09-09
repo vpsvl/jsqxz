@@ -98,7 +98,16 @@ function sort(key, direction) {
   switch (key) {
     case 'name':
       tbody.value = tbody.value.sort((a, b) => {
-        return direction > 0 ? b.level - a.level : a.level - b.level;
+        if (direction > 0) {
+          if (a.level === b.level) {
+            return b.power - a.power;
+          }
+          return b.level - a.level;
+        }
+        if (a.level === b.level) {
+          return a.power - b.power;
+        }
+        return a.level - b.level;
       });
       break;
     case 'power':
