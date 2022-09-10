@@ -86,7 +86,7 @@ watchEffect(async () => {
     loading.value = true;
     tbody.value = [];
     const data = await import(`../../data/cheat/${type}.js`);
-    tbody.value = data.default.list;
+    tbody.value = [...data.default.list];
     loading.value = false;
   } catch (e) {
     tbody.value = [];

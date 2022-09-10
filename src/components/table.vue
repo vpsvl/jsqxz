@@ -27,7 +27,8 @@
 </template>
 
 <script setup>
-import {ref, inject} from 'vue';
+import {ref, inject, watchEffect} from 'vue';
+import {onBeforeRouteLeave} from 'vue-router';
 
 const props = defineProps({
   // 列 key, name, fixed, sort
@@ -54,6 +55,10 @@ const props = defineProps({
 const emit = defineEmits(['tr-click', 'sort']);
 const loading = inject('loading');
 const sortActive = ref('');
+
+onBeforeRouteLeave(() => {
+  sortActive.value = '';
+});
 
 function sort(key, direction) {
   sortActive.value = key + direction;
