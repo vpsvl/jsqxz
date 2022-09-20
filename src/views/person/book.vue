@@ -1,6 +1,6 @@
 <template>
   <v-table class="v-table-person" :cols="thead" :data="tbody">
-    <template #td-talent="{row}">
+    <template #talent="{row}">
       <div class="td-block" v-for="(item, index) of row.talent" :key="index">
         <div>
           [
@@ -10,7 +10,7 @@
         <div class="td-effect-item effect-icon-star" v-for="(text, i) of item.effect" :key="i">{{ text }}</div>
       </div>
     </template>
-    <template #td-fortune="{row}">
+    <template #fortune="{row}">
       <div class="td-block">
         <div class="td-effect-item effect-icon-heart" v-for="(text, i) of row.fortune" :key="i">{{ text }}</div>
       </div>

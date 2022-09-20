@@ -1,6 +1,6 @@
 <template>
   <v-table class="v-table-cheat-stunt" :cols="thead" :data="tbody">
-    <template #td-effect="{row}">
+    <template #effect="{row}">
       <div class="td-block">
         <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">{{ item }}</div>
       </div>

@@ -1,6 +1,6 @@
 <template>
   <v-table class="v-table-cheat-other" :cols="thead" :data="tbody">
-    <template #td-effect="{row}">
+    <template #effect="{row}">
       <div class="td-block" v-for="(item, index) of row.peculiar" :key="index">
         <div v-if="item.name">
           [

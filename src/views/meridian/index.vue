@@ -1,6 +1,6 @@
 <template>
   <v-table class="v-table-meridian" :cols="thead" :data="tbody">
-    <template #td-list="{row}">
+    <template #list="{row}">
       <div class="td-block" v-for="(item, index) of row.list" :key="index">
         <div v-if="item.name">
           [

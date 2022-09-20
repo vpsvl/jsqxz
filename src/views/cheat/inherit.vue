@@ -1,6 +1,6 @@
 <template>
   <v-table class="v-table-vertical" :cols="thead" :data="tbody">
-    <template #td-martial="{row}">
+    <template #martial="{row}">
       <div class="td-block">
         <div class="td-effect-item" v-for="(item, index) of row.list" :key="index">{{ item }}</div>
       </div>

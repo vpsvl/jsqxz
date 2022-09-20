@@ -1,18 +1,18 @@
 <template>
   <v-table class="v-table-cheat-out" :cols="thead" :data="tbody" @sort="sort">
-    <template #td-name="{row}">
+    <template #name="{row}">
       <span :class="{[`level-${row.level}`]: row.level, [`internal-${row.internal}`]: row.internal}">
         {{ row.name }}
       </span>
     </template>
-    <template #td-get="{row}">
+    <template #get="{row}">
       <span class="color-success" v-if="row.cheat && row.cheat !== row.name">修炼【{{ row.cheat }}】</span>
       <span>{{ row.get }}</span>
     </template>
-    <template #td-condition="{row}">
+    <template #condition="{row}">
       <p>{{ row.condition }} {{ internalTypeMap[parseInt(row.internal)] }}</p>
     </template>
-    <template #td-peculiar="{row}">
+    <template #peculiar="{row}">
       <div class="td-block" v-for="(item, index) of row.peculiar" :key="index">
         <div v-if="item.name">
           [
