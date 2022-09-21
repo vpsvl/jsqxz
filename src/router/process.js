@@ -32,6 +32,15 @@ export default {
       },
     },
     {
+      path: 'fortune',
+      component: () => import('@/views/process/table.vue'),
+      name: 'processFortune',
+      meta: {
+        title: '江湖轶事',
+        type: 'fortune',
+      },
+    },
+    {
       path: 'book',
       component: () => import('@/views/layout/router-view.vue'),
       name: 'processBook',
