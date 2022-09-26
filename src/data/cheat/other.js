@@ -68,7 +68,11 @@ export default {
       condition: '',
       addition: '习得秘技群疗',
       sect: '',
-      peculiar: ['对四格范围内己方目标进行一次治疗'],
+      peculiar: [
+        {
+          effect: ['对四格范围内己方目标进行一次治疗'],
+        },
+      ],
     },
     {
       id: 'duJing',
@@ -78,7 +82,11 @@ export default {
       condition: '',
       addition: '习得秘技施毒',
       sect: '',
-      peculiar: ['对范围内敌方目标施毒'],
+      peculiar: [
+        {
+          effect: ['对范围内敌方目标施毒'],
+        },
+      ],
     },
     {
       id: 'ziWuZhenJiuJing',
@@ -88,7 +96,11 @@ export default {
       condition: '',
       addition: '习得秘技子午针灸',
       sect: '',
-      peculiar: ['对己方目标使用刺激目标，使目标获得一回合的六层【激昂】状态'],
+      peculiar: [
+        {
+          effect: ['对己方目标使用刺激目标，使目标获得一回合的六层【激昂】状态'],
+        },
+      ],
     },
     {
       id: 'qianJinFang',
@@ -98,7 +110,11 @@ export default {
       condition: '',
       addition: '习得秘技千金术',
       sect: '',
-      peculiar: ['清除范围内己方的基础异常状态，并恢复少量气血'],
+      peculiar: [
+        {
+          effect: ['清除范围内己方的基础异常状态，并恢复少量气血'],
+        },
+      ],
     },
     {
       id: 'huangDiNeiJing',
@@ -108,7 +124,11 @@ export default {
       condition: '',
       addition: '习得秘技黄帝内经',
       sect: '',
-      peculiar: ['治疗己方单体目标，并持续恢复气血'],
+      peculiar: [
+        {
+          effect: ['治疗己方单体目标，并持续恢复气血'],
+        },
+      ],
     },
     {
       id: 'huaTuoNeiShaoTu',
