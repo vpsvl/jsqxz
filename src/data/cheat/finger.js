@@ -187,7 +187,7 @@ export default {
       get: '韦小宝加入时获得',
       power: 700,
       gasPower: 800,
-      range: '△ 7格',
+      range: '米 5格',
       condition: '指法70',
       internal: '',
       addition: '攻击+2 指法+3',
