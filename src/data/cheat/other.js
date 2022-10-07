@@ -106,7 +106,7 @@ export default {
       id: 'qianJinFang',
       name: '千金方',
       level: 4,
-      get: '飞狐偷阎基',
+      get: '飞狐胜阎基',
       condition: '',
       addition: '习得秘技千金术',
       sect: '',
