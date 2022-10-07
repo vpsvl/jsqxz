@@ -561,9 +561,9 @@ export default {
     {
       id: 'taiJiJianFa',
       name: '太极剑法',
-      cheat: '倚天正先拿太极神功，张无忌回武当剧情后获得',
+      cheat: '',
       level: 4,
-      get: '',
+      get: '倚天正先拿太极神功，张无忌回武当剧情后获得',
       power: 1540,
       gasPower: 1300,
       range: '米 5格',

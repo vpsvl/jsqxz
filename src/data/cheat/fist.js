@@ -444,9 +444,9 @@ export default {
     {
       id: 'taiJiQuan',
       name: '太极拳',
-      cheat: '倚天正先拿太极神功，张无忌回武当剧情后获得',
+      cheat: '',
       level: 4,
-      get: '',
+      get: '倚天正先拿太极神功，张无忌回武当剧情后获得',
       power: 1099,
       gasPower: 1000,
       range: '十 4格',
