@@ -1,17 +1,18 @@
 module.exports = {
   root: true,
-  plugins: ['@babel'],
   env: {
     browser: true,
   },
   extends: [
     'plugin:vue/vue3-essential',
-    // 'plugin:vue/vue3-recommended',
   ],
   // 级别: 0忽略 1警告 2错误
   rules: {
     // 2空格缩进
-    // 'indent': [2, 2],
+    'indent': [2, 2, {
+      // case缩进级别
+      SwitchCase: 1,
+    }],
     // 禁止重复的 case 标签
     'no-duplicate-case': 2,
     // switch 语句强制 default 分支
@@ -77,5 +78,7 @@ module.exports = {
     'no-eval': 2,
     // vue组件命名
     'vue/multi-word-component-names': 0,
+    // vue注册了没有使用的组件
+    'vue/no-unused-components': 1,
   },
 };

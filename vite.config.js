@@ -9,7 +9,7 @@ export default ({command, mode}) => {
       eslint({
         include: /src\/*.+(vue|js|jsx|ts|tsx)/,
         exclude: [/vue&type=/, /node_modules/],
-        enforce: 'pre',
+        throwOnError: true,
       }),
       vue(),
     ],

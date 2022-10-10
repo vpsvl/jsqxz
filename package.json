@@ -12,8 +12,7 @@
     "vue-router": "^4.0.15"
   },
   "devDependencies": {
-    "@babel/eslint-plugin": "^7.17.7",
-    "@rollup/plugin-eslint": "^8.0.2",
+    "@rollup/plugin-eslint": "^9.0.0",
     "@vitejs/plugin-vue": "^3.0.3",
     "eslint-plugin-vue": "^9.1.0",
     "less": "^4.1.2",
