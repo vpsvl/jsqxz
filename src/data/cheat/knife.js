@@ -168,7 +168,7 @@ export default {
       internal: '',
       addition: '攻击+1 耍刀+3',
       sect: '',
-      peculiar: [{name: '天衣无缝', condition: '同时修炼鸳鸯刀法+夫妻刀法到极', effect: ['使用任何刀系武功增加30%连击率']}],
+      peculiar: [{name: '天衣无缝', condition: '鸳鸯刀法+夫妻刀法', effect: ['使用任何刀系武功增加30%连击率']}],
     },
     {
       id: 'guiTouDaoFa',
@@ -206,7 +206,7 @@ export default {
         },
         {
           name: '金乌映雪',
-          condition: '同时修炼金乌刀法+雪山剑法极',
+          condition: '金乌刀法+雪山剑法',
           effect: ['金乌刀法攻击时若造成灼烧则附加同等的冰封', '雪山剑法攻击时若造成冰封则附加同等的灼烧'],
         },
       ],
@@ -293,7 +293,7 @@ export default {
       peculiar: [
         {
           name: '玄虚劲',
-          condition: '同时修炼无极玄功拳+玄虚刀法+玄天指',
+          condition: '无极玄功拳+玄虚刀法+玄天指',
           effect: ['自身破绽时受到攻击免疫伤害，且集气位置+200，减少50%受到的气攻'],
         },
         {
@@ -348,7 +348,7 @@ export default {
       sect: '',
       peculiar: [
         {effect: ['连击时伤害、气攻不会减少']},
-        {name: '天衣无缝', condition: '同时修炼鸳鸯刀法+夫妻刀法到极', effect: ['使用任何刀系武功增加30%连击率']},
+        {name: '天衣无缝', condition: '鸳鸯刀法+夫妻刀法', effect: ['使用任何刀系武功增加30%连击率']},
       ],
     },
     {
