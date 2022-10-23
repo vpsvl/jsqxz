@@ -135,7 +135,13 @@ export default {
       internal: '0',
       addition: '攻击+1 轻功+1 指法+3',
       sect: '',
-      peculiar: [],
+      peculiar: [
+        {
+          name: '玄虚劲',
+          condition: '同时修炼无极玄功拳+玄虚刀法+玄天指',
+          effect: ['自身破绽时受到攻击免疫伤害，且集气位置+200，减少50%受到的气攻'],
+        },
+      ],
     },
     {
       id: 'heiFengZhi',
@@ -508,6 +514,27 @@ export default {
             '无众生相：无视敌方武常',
             '无寿者相：恢复100点生命',
           ],
+        },
+      ],
+    },
+    {
+      id: 'lingShuLingXuanZhi',
+      name: '灵枢灵玄指',
+      cheat: '',
+      level: 4,
+      get: '调查天机宫右上房间下数第二排书架右数第三格，战胜明镜和花无媸',
+      power: 1320,
+      gasPower: 1320,
+      range: '△ 7格',
+      condition: '御剑40',
+      internal: '',
+      addition: '攻击+1 轻功+1 御剑+3',
+      sect: '',
+      peculiar: [
+        {
+          name: '定神门',
+          condition: '同时修炼神门十三剑+五行六合掌+阴阳倒乱刃+灵枢定玄指',
+          effect: ['刀剑连击概率+10，拳指暴击概率+10%', '攻击时锁足概率+100%，封穴+5点'],
         },
       ],
     },
