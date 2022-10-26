@@ -1,6 +1,11 @@
 <template>
   <div class="layout">
-    <v-menu :menu="menus"></v-menu>
+    <transition name="fade">
+      <div class="menu-mask" @click="closeMenu" v-show="state.lessWindow && state.menuVisible"></div>
+    </transition>
+    <transition name="fade">
+      <v-menu :menu="menus" v-show="state.menuVisible"></v-menu>
+    </transition>
     <div class="main">
       <bread-nav :nav="breads"></bread-nav>
       <v-scroll class="main-scroll" view-class="main-scroll-view">
@@ -11,13 +16,14 @@
 </template>
 
 <script setup>
-import {watchEffect, ref} from 'vue';
+import {watchEffect, ref, inject} from 'vue';
 import {useRoute} from 'vue-router';
 import {routes} from '@/router';
 import VMenu from './menu.vue';
 import BreadNav from './bread-nav.vue';
 
 const route = useRoute();
+const state = inject('state');
 const menus = ref([]);
 const breads = ref([]);
 watchEffect(() => {
@@ -32,21 +38,39 @@ watchEffect(() => {
     menus.value = currentRoute.children ? currentRoute.children : [];
   }
 });
+
+function closeMenu() {
+  state.menuVisible = false;
+}
 </script>
 
 <style lang="less">
 .layout {
+  position: relative;
   display: flex;
+
   .main {
     flex: 1;
     background: #fff;
   }
+
   .main-scroll {
     height: calc(100% - 50px);
     min-width: 500px;
   }
+
   .main-scroll-view {
     padding: 0 20px 20px;
+  }
+
+  .menu-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .2);
   }
 }
 </style>

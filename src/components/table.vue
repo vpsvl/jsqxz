@@ -21,7 +21,7 @@
       </transition-group>
     </v-scroll>
     <div class="tr no-data" v-if="data.length <= 0">
-      <div class="td">{{ loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
+      <div class="td">{{ state.loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
     </div>
   </div>
 </template>
@@ -53,7 +53,7 @@ const props = defineProps({
 });
 
 const emit = defineEmits(['tr-click', 'sort']);
-const loading = inject('loading');
+const state = inject('state');
 const sortActive = ref('');
 
 onBeforeRouteLeave(() => {

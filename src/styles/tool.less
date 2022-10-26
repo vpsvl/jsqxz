@@ -47,19 +47,23 @@
 .v-table {
   border-top: 1px solid var(--color-border);
   box-sizing: border-box;
+
   .tr,
   .thead {
     display: flex;
     width: 100%;
   }
+
   .thead {
     background: #f3f3f3;
     border-bottom: 1px solid var(--color-border);
     font-weight: bold;
   }
+
   .tbody {
     height: calc(100vh - var(--header-height) - var(--bread-height) - 90px);
   }
+
   .tr {
     background: #fff;
     border-bottom: 1px solid var(--color-border);
@@ -68,6 +72,7 @@
       background-color: var(--color-bg-hover);
     }
   }
+
   .td {
     position: relative;
     display: flex;
@@ -80,18 +85,22 @@
     border-left: 1px solid var(--color-border);
     line-height: 1.5em;
     word-break: break-all;
+
     &:first-child {
       border-left: 0;
     }
+
     .td-block {
       flex: 1 0 100%;
       padding: 5px 0;
     }
   }
+
   .th-sort {
     --color-arrow: var(--color-content);
 
     position: relative;
+
     i {
       position: absolute;
       right: 2px;
@@ -107,27 +116,33 @@
       &:hover {
         --color-arrow: var(--color-primary-light);
       }
+
       &.active {
         --color-arrow: var(--color-primary);
       }
     }
+
     .sort-arrow-up {
       bottom: 51%;
       border-bottom: 6px solid var(--color-arrow);
     }
+
     .sort-arrow-down {
       top: 51%;
       border-top: 6px solid var(--color-arrow);
     }
   }
+
   .no-data .td {
     flex: 1 0 0 !important;
     justify-content: flex-start !important;
   }
+
   .td-effect-item {
     position: relative;
     padding: 5px 0 5px 25px;
     line-height: 1.5em;
+
     &::before {
       content: '☯';
       position: absolute;
@@ -135,24 +150,31 @@
       left: 5px;
       font-size: 14px;
     }
+
     &:nth-child(4n + 1)::before {
       color: var(--color-success-light);
     }
+
     &:nth-child(4n + 2)::before {
       color: var(--color-primary-light);
     }
+
     &:nth-child(4n + 3)::before {
       color: var(--color-error-light);
     }
+
     &:nth-child(4n)::before {
       color: var(--color-warn-light);
     }
+
     &.effect-icon-star::before {
       content: '★';
     }
+
     &.effect-icon-heart::before {
       content: '♥';
     }
+
     &.effect-icon-rhombus::before {
       content: '◆';
     }
@@ -183,4 +205,15 @@
       以便正确地计算移动时的动画效果。 */
 .sort-leave-active {
   position: absolute;
+}
+
+// 透明动画
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }

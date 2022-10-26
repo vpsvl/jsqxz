@@ -2,19 +2,42 @@
   <div class="app">
     <header-nav></header-nav>
     <router-view class="app-view"></router-view>
-    <v-loading :loading="loading"></v-loading>
+    <v-loading :loading="state.loading"></v-loading>
   </div>
 </template>
 
 <script setup>
-import {provide, ref} from 'vue';
+import {onMounted, provide, reactive, ref, watch} from 'vue';
 import HeaderNav from '@/views/layout/header.vue';
 import VLoading from '@/components/loading.vue';
+import {useRoute} from 'vue-router';
 // import pinyin from 'pinyin';
 // import data from '@/data/person/yuan';
 
-const loading = ref(false);
-provide('loading', loading);
+const route = useRoute();
+const state = reactive({
+  loading: false,
+  menuVisible: true,
+  lessWindow: false,
+});
+
+onMounted(() => {
+  const media = window.matchMedia('screen and (max-width: 600px)');
+  state.lessWindow = media.matches;
+  state.menuVisible = !media.matches;
+  media.onchange = e => {
+    state.lessWindow = e.matches;
+    state.menuVisible = !e.matches;
+  };
+});
+
+watch(() => route.name, val => {
+  if (state.lessWindow) {
+    state.menuVisible = false;
+  }
+});
+
+provide('state', state);
 
 // function toArr(str) {
 //   let arr = str
@@ -48,8 +71,27 @@ provide('loading', loading);
 .app {
   height: 100vh;
   background: #f6f5f1;
+
   .app-view {
     height: calc(100% - var(--header-height) - 10px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .app {
+    .header {
+      .header-logo {
+        display: none;
+      }
+
+      .header-menu-switch {
+        display: flex;
+      }
+    }
+
+    .menu {
+      position: absolute;
+    }
   }
 }
 </style>

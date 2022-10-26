@@ -19,7 +19,7 @@
         <v-tbody-process :tbody="tbody.branch" v-if="branch === 'branch'"></v-tbody-process>
       </template>
       <div class="tr no-data" v-if="tbody.normal?.length < 1">
-        <div class="td">{{ loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
+        <div class="td">{{ state.loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
       </div>
     </v-scroll>
   </div>
@@ -31,7 +31,7 @@ import {useRoute} from 'vue-router';
 import VTbodyProcess from './tbody.vue';
 
 const route = useRoute();
-const loading = inject('loading');
+const state = inject('state');
 
 const branch = ref('good');
 const branchMap = ref({
@@ -60,14 +60,14 @@ watchEffect(async () => {
   hasBranch.value = false;
   branchMap.value = {};
   try {
-    loading.value = true;
+    state.loading = true;
     tbody.value = {normal: []};
     const data = await import(`../../data/process/${type}.js`);
     tbody.value = data.default;
-    loading.value = false;
+    state.loading = false;
   } catch (e) {
     tbody.value = {normal: []};
-    loading.value = false;
+    state.loading = false;
   }
   if (tbody.value.good?.length) {
     branchMap.value.good = goodMap[type] ? goodMap[type] : '正线';

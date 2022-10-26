@@ -23,7 +23,7 @@ import {ref, watchEffect, inject} from 'vue';
 import {useRoute} from 'vue-router';
 
 const route = useRoute();
-const loading = inject('loading');
+const state = inject('state');
 
 const thead = [
   {
@@ -50,13 +50,13 @@ watchEffect(async () => {
   }
   try {
     tbody.value = [];
-    loading.value = true;
+    state.loading = true;
     const data = await import(`../../data/person/${type}.js`);
     tbody.value = data.default.list;
-    loading.value = false;
+    state.loading = false;
   } catch (e) {
     tbody.value = [];
-    loading.value = false;
+    state.loading = false;
   }
 });
 </script>

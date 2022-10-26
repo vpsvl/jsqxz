@@ -32,7 +32,7 @@ import {useRoute} from 'vue-router';
 import {internalTypeMap} from '@/data/map/index';
 
 const route = useRoute();
-const loading = inject('loading');
+const state = inject('state');
 
 const thead = [
   {
@@ -83,14 +83,14 @@ watchEffect(async () => {
     return;
   }
   try {
-    loading.value = true;
+    state.loading = true;
     tbody.value = [];
     const data = await import(`../../data/cheat/${type}.js`);
     tbody.value = [...data.default.list];
-    loading.value = false;
+    state.loading = false;
   } catch (e) {
     tbody.value = [];
-    loading.value = false;
+    state.loading = false;
   }
 });
 

@@ -51,7 +51,7 @@ import {ref, watchEffect, inject} from 'vue';
 import {useRoute} from 'vue-router';
 
 const route = useRoute();
-const loading = inject('loading');
+const state = inject('state');
 
 const tbody = ref({});
 watchEffect(async () => {
@@ -64,13 +64,13 @@ watchEffect(async () => {
   }
   try {
     tbody.value = [];
-    loading.value = true;
+    state.loading = true;
     const data = await import(`../../data/sect/${type}.js`);
     tbody.value = data.default;
-    loading.value = false;
+    state.loading = false;
   } catch (e) {
     tbody.value = {};
-    loading.value = false;
+    state.loading = false;
   }
 });
 </script>
