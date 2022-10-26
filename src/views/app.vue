@@ -79,16 +79,6 @@ provide('state', state);
 
 @media screen and (max-width: 600px) {
   .app {
-    .header {
-      .header-logo {
-        display: none;
-      }
-
-      .header-menu-switch {
-        display: flex;
-      }
-    }
-
     .menu {
       position: absolute;
     }

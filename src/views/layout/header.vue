@@ -1,9 +1,14 @@
 <template>
   <header class="header">
-    <a class="header-logo" :href="homeUrl">
-      <img src="../../assets/images/logo.png" alt="logo"/>
+    <a class="header-logo" :href="homeUrl" v-if="!state.menuVisible">
+      <img src="@/assets/images/logo.png" alt="logo"/>
     </a>
-    <a class="header-menu-switch" href="javascript: void(0);" @click="toggleMenu">
+    <a
+      class="header-menu-switch"
+      href="javascript: void(0);"
+      @click="toggleMenu"
+      v-if="state.menuVisible"
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
