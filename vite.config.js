@@ -20,6 +20,7 @@ export default ({command, mode}) => {
       },
     },
     server: {
+      host: true,
       port: 4000,
     },
     build: {

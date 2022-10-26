@@ -1,13 +1,13 @@
 <template>
   <header class="header">
-    <a class="header-logo" :href="homeUrl" v-if="!state.menuVisible">
-      <img src="@/assets/images/logo.png" alt="logo"/>
+    <a class="header-logo" :href="homeUrl" v-if="!state.lessWindow">
+      <img src="../../assets/images/logo.png" alt="logo"/>
     </a>
     <a
       class="header-menu-switch"
       href="javascript: void(0);"
       @click="toggleMenu"
-      v-if="state.menuVisible"
+      v-if="state.lessWindow"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -43,8 +43,6 @@ function toggleMenu() {
 
 <style lang="less">
 .header {
-  --padding-link: 16px;
-
   position: relative;
   z-index: 9;
   display: flex;
@@ -67,7 +65,7 @@ function toggleMenu() {
   }
 
   .header-menu-switch {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: var(--header-height);
@@ -75,8 +73,8 @@ function toggleMenu() {
     background: #fff;
 
     svg {
-      width: 24px;
-      height: 24px;
+      width: 30px;
+      height: 30px;
     }
 
     path {
@@ -88,7 +86,7 @@ function toggleMenu() {
     display: flex;
 
     a {
-      padding: 0 var(--padding-link);
+      padding: 0 16px;
       font-size: 16px;
       line-height: var(--header-height);
       overflow: hidden;
