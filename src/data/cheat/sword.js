@@ -49,7 +49,7 @@ export default {
         {
           name: '金乌映雪',
           condition: '金乌刀法+雪山剑法',
-          effect: ['金乌刀法攻击时若造成灼烧则附加同等的冰封', '雪山剑法攻击时若造成冰封则附加同等的灼烧'],
+          effect: ['触发灼烧必冰封', '触发冰封必灼烧'],
         },
       ],
     },
@@ -96,7 +96,7 @@ export default {
       internal: '0',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: '',
-      peculiar: [{name: '素质三连', condition: '同时练有三分剑法+连城剑法到极', effect: ['暴怒时使用三分/连城剑法必定三连击']}],
+      peculiar: [{name: '素质三连', condition: '三分剑法+连城剑法', effect: ['攻击时概率三连击'],}],
     },
     {
       id: 'raoZhiRouJian',
@@ -249,13 +249,13 @@ export default {
       peculiar: [
         {
           name: '双剑合璧',
-          condition: '全真剑法+玉女剑法+左右互搏',
+          condition: '全真剑法+玉女素心剑法',
           effect: [
             '连击率+30%',
-            '使用全真/玉女剑法：',
-            '└攻击范围增大',
-            '└攻击时触发双剑合璧·攻：必击中对方破绽，40%概率集气停止5时序',
-            '└防御时触发双剑合璧·守：免疫破绽，免疫被杀气到-100',
+            '使用全真/玉女素心剑法：',
+            '└攻击范围+1',
+            '└攻击时触发双剑合璧·攻：必击中对方破绽',
+            '└防御时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
           ],
         },
       ],
@@ -273,20 +273,7 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+3',
       sect: '',
-      peculiar: [
-        {name: '一脉相承', condition: '', effect: ['可洗为玉女素心剑']},
-        {
-          name: '双剑合璧',
-          condition: '全真剑法+玉女剑法+左右互搏',
-          effect: [
-            '连击率+30%',
-            '使用全真/玉女剑法：',
-            '└攻击范围增大',
-            '└攻击时触发双剑合璧·攻：必击中对方破绽，40%概率集气停止5时序',
-            '└防御时触发双剑合璧·守：免疫破绽，免疫被杀气到-100',
-          ],
-        },
-      ],
+      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为玉女素心剑']}],
     },
     {
       id: 'rouYunJianShu',
@@ -500,7 +487,7 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+4',
       sect: '',
-      peculiar: [{name: '素质三连', condition: '同时练有三分剑法+连城剑法到极', effect: ['暴怒时使用三分/连城剑法必定三连击']}],
+      peculiar: [{name: '素质三连', condition: '三分剑法+连城剑法', effect: ['攻击时概率三连击'],}],
     },
     {
       id: 'daMoJianFa',
@@ -655,7 +642,20 @@ export default {
       internal: '0',
       addition: '攻击+2 轻功+2 御剑+4',
       sect: '',
-      peculiar: [{name: '一脉相承', condition: '', effect: ['可由玉女剑法一脉相承']}],
+      peculiar: [
+        {name: '一脉相承', condition: '', effect: ['可由玉女剑法一脉相承']},
+        {
+          name: '双剑合璧',
+          condition: '全真剑法+玉女素心剑法',
+          effect: [
+            '连击率+30%',
+            '使用全真/玉女素心剑法：',
+            '└攻击范围+1',
+            '└攻击时触发双剑合璧·攻：必击中对方破绽',
+            '└防御时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
+          ],
+        },
+      ],
     },
     {
       id: 'duGuJiuJian',
