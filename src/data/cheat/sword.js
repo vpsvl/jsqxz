@@ -236,7 +236,7 @@ export default {
     {
       id: 'quanZhenJianFa',
       name: '全真剑法',
-      cheat: '',
+      cheat: '七星剑谱',
       level: 2,
       get: '重阳宫宝箱，需战斗和减道德',
       power: 770,
@@ -249,10 +249,10 @@ export default {
       peculiar: [
         {
           name: '双剑合璧',
-          condition: '全真剑法+玉女素心剑法',
+          condition: '全真剑法+玉女剑法',
           effect: [
             '连击率+30%',
-            '使用全真/玉女素心剑法：',
+            '使用全真剑法/玉女剑法：',
             '└攻击范围+1',
             '└攻击时触发双剑合璧·攻：必击中对方破绽',
             '└防御时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
@@ -273,7 +273,20 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+3',
       sect: '',
-      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为玉女素心剑']}],
+      peculiar: [
+        {name: '一脉相承', condition: '', effect: ['可洗为玉女素心剑']},
+        {
+          name: '双剑合璧',
+          condition: '全真剑法+玉女剑法',
+          effect: [
+            '连击率+30%',
+            '使用全真剑法/玉女剑法：',
+            '└攻击范围+1',
+            '└攻击时触发双剑合璧·攻：必击中对方破绽',
+            '└防御时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
+          ],
+        },
+      ],
     },
     {
       id: 'rouYunJianShu',
@@ -642,20 +655,7 @@ export default {
       internal: '0',
       addition: '攻击+2 轻功+2 御剑+4',
       sect: '',
-      peculiar: [
-        {name: '一脉相承', condition: '', effect: ['可由玉女剑法一脉相承']},
-        {
-          name: '双剑合璧',
-          condition: '全真剑法+玉女素心剑法',
-          effect: [
-            '连击率+30%',
-            '使用全真/玉女素心剑法：',
-            '└攻击范围+1',
-            '└攻击时触发双剑合璧·攻：必击中对方破绽',
-            '└防御时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
-          ],
-        },
-      ],
+      peculiar: [{name: '一脉相承', condition: '', effect: ['可由玉女剑法一脉相承']}],
     },
     {
       id: 'duGuJiuJian',
