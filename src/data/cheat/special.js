@@ -394,7 +394,7 @@ export default {
       name: '伏魔杖法',
       cheat: '',
       level: 4,
-      get: '少林寺佛堂宝箱，需战斗和减道德',
+      get: '少林寺达摩院左边宝箱，需战斗和减道德',
       power: 1510,
       gasPower: 1100,
       range: '田 5格',
