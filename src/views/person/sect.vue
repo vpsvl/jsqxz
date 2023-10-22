@@ -10,6 +10,7 @@
         <div class="td-block">
           <div class="td-effect-item effect-icon-star" v-for="(item, index) of tbody.effect" :key="index">{{ item }}</div>
         </div>
+        <div class="td-block color-success">*成为掌门人有更高的门派武功连爆和威力加成，获得掌门印记，战场上敌方的本门弟子自动反水</div>
       </div>
     </div>
     <div class="tr">
