@@ -96,7 +96,7 @@ export default {
       internal: '0',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: '',
-      peculiar: [{name: '素质三连', condition: '三分剑法+连城剑法', effect: ['攻击时概率三连击']}],
+      peculiar: [{name: '素质三连', condition: '三分剑法+连城剑法', effect: ['全武功攻击时50%概率三连击，暴怒必三连']}],
     },
     {
       id: 'raoZhiRouJian',
@@ -500,7 +500,7 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+4',
       sect: '',
-      peculiar: [{name: '素质三连', condition: '三分剑法+连城剑法', effect: ['攻击时概率三连击']}],
+      peculiar: [{name: '素质三连', condition: '三分剑法+连城剑法', effect: ['全武功攻击时50%概率三连击，暴怒必三连']}],
     },
     {
       id: 'daMoJianFa',

@@ -240,7 +240,7 @@ export default {
       addition: '攻击+1 轻功+1 拳掌+3',
       internal: '',
       sect: '',
-      peculiar: [{name: '混元一气', condition: '混元掌+混元功', effect: ['攻击时追加5~15点内伤和5~15时序集气混乱']}],
+      peculiar: [],
     },
     {
       id: 'cuiXinZhang',

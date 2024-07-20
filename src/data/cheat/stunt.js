@@ -79,7 +79,6 @@ export default {
         '龙吟：被击中的目标集气位置倒退300',
       ],
     },
-    {id: 'hunYuanYiQi', name: '混元一气', condition: '混元掌+混元功', effect: ['攻击时追加5~15点内伤和5~15时序集气混乱']},
     {
       id: 'jianDanQinXin',
       name: '剑胆琴心',
@@ -177,7 +176,12 @@ export default {
         '└被攻击时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
       ],
     },
-    {id: 'suZhiSanLian', name: '素质三连', condition: '三分剑法+连城剑法', effect: ['攻击时概率三连击']},
+    {
+      id: 'suZhiSanLian',
+      name: '素质三连',
+      condition: '三分剑法+连城剑法',
+      effect: ['全武功攻击时50%概率三连击，暴怒必三连'],
+    },
     {
       id: 'taiJiAoYi',
       name: '太极奥义',
