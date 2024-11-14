@@ -112,13 +112,13 @@ export default {
         num: '2',
         remark: '',
       },
-      // {
-      //   name: '通犀地龙丸',
-      //   intro: '【丹药】毒抗+100',
-      //   price: '3000',
-      //   num: '1',
-      //   remark: '',
-      // },
+      {
+        name: '通犀地龙丸',
+        intro: '【丹药】毒抗+100',
+        price: '3000',
+        num: '1',
+        remark: '',
+      },
     ],
   },
   cangzhou: {
@@ -147,7 +147,7 @@ export default {
       },
       {
         name: '大蟠桃',
-        intro: '【丹药】增加2点武学点数',
+        intro: '【丹药】最大内力+100',
         price: '500',
         num: '1',
         remark: '',
@@ -241,7 +241,7 @@ export default {
       },
       {
         name: '天山雪莲',
-        intro: '【丹药】武学点数+2 实战点数+2',
+        intro: '【丹药】最大生命+100',
         price: '800',
         num: '3',
         remark: '',
@@ -255,7 +255,7 @@ export default {
       },
       {
         name: '地灵丹',
-        intro: '【奇珍】武常+50',
+        intro: '【奇珍】改变内力属性',
         price: '20000',
         num: '1',
         remark: '',
