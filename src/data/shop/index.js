@@ -201,7 +201,7 @@ export default {
       },
       {
         name: '天王保命丹',
-        intro: '【药品】生命+500 内力+1200 体力+50 中毒-25',
+        intro: '【丹药】生命+500 内力+1200 体力+50 中毒-25',
         price: '1000',
         num: '1000',
         remark: '',
@@ -255,7 +255,7 @@ export default {
       },
       {
         name: '地灵丹',
-        intro: '【奇珍】改变内力属性',
+        intro: '【丹药】改变内力属性',
         price: '20000',
         num: '1',
         remark: '',

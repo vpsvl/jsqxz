@@ -2,7 +2,6 @@ import {createRouter, createWebHistory, createWebHashHistory} from 'vue-router';
 import processRoute from './process';
 import goodsRoute from './goods';
 import cheatRoute from './cheat';
-import shopRoute from './shop';
 import personRoute from './person';
 import otherRoute from './other';
 
@@ -15,7 +14,6 @@ export const routes = [
   processRoute,
   goodsRoute,
   cheatRoute,
-  shopRoute,
   personRoute,
   otherRoute,
   {
@@ -33,7 +31,6 @@ export const headerNav = {
   [processRoute.name]: processRoute.meta.title,
   [cheatRoute.name]: cheatRoute.meta.title,
   [goodsRoute.name]: goodsRoute.meta.title,
-  [shopRoute.name]: shopRoute.meta.title,
   [personRoute.name]: personRoute.meta.title,
   [otherRoute.name]: otherRoute.meta.title,
 };
