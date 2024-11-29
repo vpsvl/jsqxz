@@ -31,7 +31,12 @@ export default {
       condition: '呼延枪法+呼延十八鞭',
       effect: ['使用奇门武功伤害不随距离降低，距离每远一格伤害增加1%'],
     },
-    {id: 'daMoZhang', name: '达摩掌', condition: '易筋神功+大金刚掌', effect: ['使用大力金刚掌40%概率提高100点伤害']},
+    {
+      id: 'daMoZhang',
+      name: '达摩掌',
+      condition: '易筋神功+大金刚掌',
+      effect: ['使用大力金刚掌40%概率提高100点伤害'],
+    },
     {
       id: 'daoJianGuiZhen',
       name: '刀剑归真',
@@ -62,7 +67,12 @@ export default {
       condition: '神足经+瑜伽密乘，主运神足经或瑜伽密乘',
       effect: ['受到会暴击或连击的攻击时，20%概率终止敌方行动'],
     },
-    {id: 'fuHuLuoHanQuan', name: '伏虎罗汉拳', condition: '易筋神功+罗汉拳', effect: ['使用罗汉拳60%概率伤害提高50点']},
+    {
+      id: 'fuHuLuoHanQuan',
+      name: '伏虎罗汉拳',
+      condition: '易筋神功+罗汉拳',
+      effect: ['使用罗汉拳60%概率伤害提高50点'],
+    },
     {
       id: 'gaiShiWuShuang',
       name: '盖世无双',
@@ -97,7 +107,12 @@ export default {
       condition: '易筋神功+金刚不坏体，主运易筋神功',
       effect: ['主运易筋神功，被攻击必出“金刚不坏”特效，高优先级降低30%所承受伤害与杀气'],
     },
-    {id: 'jinWuYingXue', name: '金乌映雪', condition: '金乌刀法+雪山剑法', effect: ['触发灼烧必冰封', '触发冰封必灼烧']},
+    {
+      id: 'jinWuYingXue',
+      name: '金乌映雪',
+      condition: '金乌刀法+雪山剑法',
+      effect: ['触发灼烧必冰封', '触发冰封必灼烧'],
+    },
     {
       id: 'jiuYinShenZhao',
       name: '九阴神爪',
@@ -110,7 +125,12 @@ export default {
       condition: '金乌刀法+燃木刀法+火焰刀法',
       effect: ['攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态', '引燃：每时序损失2%当前血量'],
     },
-    {id: 'jueChuFengSheng', name: '绝处逢生', condition: '海叟钓法+银锁金玲', effect: ['被攻击15%概率不受伤害']},
+    {
+      id: 'jueChuFengSheng',
+      name: '绝处逢生',
+      condition: '海叟钓法+银锁金玲',
+      effect: ['被攻击15%概率不受伤害'],
+    },
     {
       id: 'liRenHanFeng',
       name: '利刃寒锋',
@@ -153,7 +173,12 @@ export default {
         '└秉笔直书：攻击必定造成封穴，且伤害提升20%，概率发动',
       ],
     },
-    {id: 'senLuoWanXiang', name: '森罗万象', condition: '九阴神功+九阳神功', effect: ['免疫敌方暴击的额外伤害和额外气攻']},
+    {
+      id: 'senLuoWanXiang',
+      name: '森罗万象',
+      condition: '九阴神功+九阳神功',
+      effect: ['免疫敌方暴击的额外伤害和额外气攻'],
+    },
     {
       id: 'shiZunJiangMo',
       name: '世尊降魔',
@@ -204,8 +229,18 @@ export default {
         '玉箫剑法：攻击距离提升至8格，有60%概率冰封',
       ],
     },
-    {id: 'tianYiWuFeng', name: '天衣无缝', condition: '鸳鸯刀法+夫妻刀法', effect: ['使用任何刀系武功增加30%连击率']},
-    {id: 'tieJia', name: '铁甲', condition: '铁掌+铁剑+铁布衫，主运铁布衫', effect: ['护甲提升20%，被攻击时20%概率抵挡生命最大值2%伤害']},
+    {
+      id: 'tianYiWuFeng',
+      name: '天衣无缝',
+      condition: '鸳鸯刀法+夫妻刀法',
+      effect: ['使用任何刀系武功增加30%连击率'],
+    },
+    {
+      id: 'tieJia',
+      name: '铁甲',
+      condition: '铁掌+铁剑+铁布衫，主运铁布衫',
+      effect: ['护甲提升20%，被攻击时20%概率抵挡生命最大值2%伤害'],
+    },
     {
       id: 'wanXiangTianYin',
       name: '万象天引',
@@ -251,7 +286,12 @@ export default {
       condition: '无极玄功拳+玄虚刀法+玄天指',
       effect: ['自身破绽时受到攻击免疫伤害，且集气位置+200，减少50%受到的气攻'],
     },
-    {id: 'yiRouKeGang', name: '以柔克刚', condition: '太极剑法+柔云剑法', effect: ['被攻击时，有50%概率将被杀气量的一半转化为回血']},
+    {
+      id: 'yiRouKeGang',
+      name: '以柔克刚',
+      condition: '太极剑法+柔云剑法',
+      effect: ['被攻击时，有50%概率将被杀气量的一半转化为回血'],
+    },
     {
       id: 'zhenBiXieJianFa·KuiHuaCiMu',
       name: '真辟邪剑法·葵花刺目',
@@ -275,7 +315,7 @@ export default {
     {
       id: 'ziZaiXiaoYao',
       name: '自在逍遥',
-      condition: '小无相功+北冥神功+八荒六合功）',
+      condition: '小无相功+北冥神功+八荒六合功',
       effect: [
         '灵鹫宫对话石像战胜无崖子后，学会“逍遥御风”：',
         '攻击与被攻击均有概率触发特效"逍遥御风"，累积点数。',

@@ -30,7 +30,7 @@
     <div class="tr">
       <div class="td">
         <div class="td-block">武功</div>
-        <div class="td-block color-success">*NPC处学习武功：中阶200贡献，高级400贡献，绝学600贡献</div>
+        <div class="td-block color-success">*NPC处学习武功：中阶200贡献二流，高级400贡献一流，绝学600贡献豪侠</div>
         <div class="td-block color-success">*NPC处初阶中阶高阶可以一脉相承，绝学除轻功外都不能一脉相承</div>
       </div>
       <div class="td">

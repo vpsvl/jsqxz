@@ -252,10 +252,15 @@ export default {
       ],
       fortune: ['击败无崖子直接激活“逍遥御风”(不需学小无相/八荒/北冥)'],
     },
-    {id: 'xueMuHua', name: '薛慕华', talent: [{name: '阎王敌', effect: ['医疗上限500点', '战斗中满血复活自己或者同伴一次']}], fortune: []},
     {
-      id: 'xiaoLing',
-      name: '萧玲',
+      id: 'xueMuHua',
+      name: '薛慕华',
+      talent: [{name: '阎王敌', effect: ['医疗上限500点', '战斗中满血复活自己或者同伴一次']}],
+      fortune: [],
+    },
+    {
+      id: 'liQingLu',
+      name: '李清露',
       talent: [
         {name: '清露寒梦', effect: ['攻击无视敌方防御15%']},
         {name: '寒露清梦', effect: ['特色指令【云梦】，可自由切换第一格武功为寒袖拂穴/白虹掌力']},
@@ -263,7 +268,12 @@ export default {
       ],
       fortune: ['擂鼓山获得小无相功第三格洗小无相功，天内洗小无相功', '灵鹫宫获得八荒第四个洗八荒六合功，可以选择天内是否洗八荒六合功'],
     },
-    {id: 'zhuoBuFan', name: '卓不凡', talent: [{name: '十里坡剑神', effect: ['每行动一次，攻击效果提升1%']}], fortune: []},
+    {
+      id: 'zhuoBuFan',
+      name: '卓不凡',
+      talent: [{name: '十里坡剑神', effect: ['每行动一次，攻击效果提升1%']}],
+      fortune: [],
+    },
     {
       id: 'xuanCheng',
       name: '玄澄',
