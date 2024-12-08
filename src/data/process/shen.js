@@ -144,7 +144,7 @@ export default {
       map: '黑龙潭（江南）',
       event: [
         {
-          list: ['对话老顽童，触发剧情'],
+          list: ['对话周伯通，触发剧情'],
           reward: [],
         },
       ],
