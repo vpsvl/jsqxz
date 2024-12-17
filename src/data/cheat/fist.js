@@ -407,7 +407,7 @@ export default {
       name: '白虹掌力',
       cheat: '',
       level: 3,
-      get: '',
+      get: '天龙西夏皇宫收李清露入队',
       power: 1100,
       gasPower: 1300,
       range: '米 5格',

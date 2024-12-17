@@ -114,7 +114,7 @@ export default {
       name: '凤南天',
       talent: [
         {name: '佛山一霸', effect: ['被攻击概率让队友承担75%伤害']},
-        {name: '三才归元', effect: ['如果格挡，免疫伤害并进行反击']},
+        {name: '三才归元', effect: ['如果格挡，免疫伤害(减伤上限为80%)并进行反击']},
       ],
       fortune: [],
     },
