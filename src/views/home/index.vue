@@ -398,20 +398,5 @@
     white-space: pre-wrap;
     word-break: break-all;
   }
-
-  .home-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .img-box {
-    flex: 0 0 1;
-
-    img {
-      width: 100%;
-    }
-  }
 }
 </style>

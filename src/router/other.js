@@ -15,13 +15,13 @@ export default {
         title: '快捷键',
       },
     },
-    // {
-    //   path: 'meridian',
-    //   component: () => import('@/views/meridian/index.vue'),
-    //   name: 'otherMeridian',
-    //   meta: {
-    //     title: '经脉',
-    //   },
-    // },
+    {
+      path: 'meridian',
+      component: () => import('@/views/meridian/index.vue'),
+      name: 'otherMeridian',
+      meta: {
+        title: '经脉',
+      },
+    },
   ],
 };

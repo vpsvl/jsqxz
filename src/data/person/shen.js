@@ -31,7 +31,7 @@ export default {
       id: 'xiaoLongNv',
       name: '小龙女',
       talent: [{name: '冰心玉骨', effect: ['左右互搏发动概率70%', '使用玉女素心剑法高概率连击']}],
-      fortune: ['神雕选择正邪分支后学会左右互搏', '神雕正小龙女重新入队后玉女剑法洗玉女素心剑'],
+      fortune: ['神雕选择正邪分支后学会左右互搏，第一格洗玉女素心剑'],
     },
     {
       id: 'chengYing',
