@@ -53,7 +53,7 @@ export default {
     },
     {
       name: '绣花针',
-      get: '笑傲线击败东方不败/葵花尊者后获得，装备需自宫',
+      get: '笑傲线战胜东方不败/葵花尊者后获得，装备需自宫',
       condition: '东方不败',
       addition: '攻击+20，轻功+30',
       effect: [

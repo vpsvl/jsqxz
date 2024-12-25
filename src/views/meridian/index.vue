@@ -8,7 +8,7 @@
     <v-scroll class="tbody">
       <div v-for="parent of tbody" :key="parent.name">
         <div class="tr" v-for="(child, index) of parent.list" :key="child.name">
-          <div class="td" :class="{'td-merge': index < 2}">
+          <div class="td" :class="{'td-merge': index < parent.list.length - 1}">
             <span v-if="index === 1">{{ parent.name }}</span>
           </div>
           <div class="td">{{ child.name }}</div>

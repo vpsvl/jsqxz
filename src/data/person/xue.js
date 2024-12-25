@@ -14,7 +14,7 @@ export default {
       id: 'huFuRen',
       name: '胡夫人',
       talent: [
-        {name: '匪石之心', effect: ['牺牲自己的全部生命，救回已经被击败的队友']},
+        {name: '匪石之心', effect: ['牺牲自己的全部生命，救回已经被战胜的队友']},
         {name: '冰肌玉骨', effect: ['被攻击伤害减半']},
       ],
       fortune: [],

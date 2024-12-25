@@ -604,7 +604,7 @@ export default {
       name: '大力金刚指',
       cheat: '',
       level: 4,
-      get: '倚天正线击败阿大后获得',
+      get: '倚天正线战胜阿大后获得',
       power: 1350,
       gasPower: 700,
       range: '△ 7格',

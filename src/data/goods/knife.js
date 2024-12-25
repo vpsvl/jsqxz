@@ -10,7 +10,7 @@ export default {
     },
     {
       name: '金刀 ',
-      get: '洛阳击败王元霸',
+      get: '洛阳战胜王元霸',
       condition: '耍刀30',
       addition: '攻击+10',
       effect: [],
@@ -38,7 +38,7 @@ export default {
     },
     {
       name: '血刀',
-      get: '连城邪击败血刀老祖',
+      get: '连城邪战胜血刀老祖',
       condition: '耍刀60',
       addition: '攻击+30',
       effect: ['血刀大法威力+200'],

@@ -2,7 +2,7 @@ export default {
   path: '/other',
   component: () => import('@/views/layout/layout.vue'),
   name: 'other',
-  redirect: {name: 'otherKeymap'},
+  redirect: {name: 'otherMeridian'},
   meta: {
     title: '其他',
   },
