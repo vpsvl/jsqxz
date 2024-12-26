@@ -100,7 +100,7 @@ export default {
             {
               name: '拔刀',
               condition: '耍刀系数≥100，100武学点数',
-              effect: ['刀法爆击伤害+30%'],
+              effect: ['刀法暴击伤害+30%'],
             },
             {
               name: '九寒焰',

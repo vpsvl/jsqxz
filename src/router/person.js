@@ -29,7 +29,7 @@ for (let key in bookMap) {
 export default {
   path: '/person',
   component: () => import('@/views/layout/layout.vue'),
-  redirect: {name: 'personSectShaolin'},
+  redirect: {name: 'personSectJianghu'},
   name: 'person',
   meta: {
     title: '人物',
@@ -39,20 +39,12 @@ export default {
       path: 'sect',
       component: () => import('@/views/layout/router-view.vue'),
       name: 'personSect',
-      redirect: {name: 'personSectTianji'},
+      redirect: {name: 'personSectJianghu'},
       meta: {
         title: '门派',
       },
       children: sectChildren,
     },
-    // {
-    //   path: 'book',
-    //   component: () => import('@/@/views/person/book.vue'),
-    //   name: 'personBook',
-    //   meta: {
-    //     title: '畅想',
-    //   },
-    // },
     {
       path: 'book',
       component: () => import('@/views/layout/router-view.vue'),

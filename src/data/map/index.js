@@ -59,6 +59,7 @@ export const shopMap = {
 };
 // 门派
 export const sectMap = {
+  jianghu: '江湖散人',
   shaolin: '少林派',
   wudang: '武当派',
   xuedao: '血刀门',

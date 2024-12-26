@@ -91,6 +91,9 @@ watchEffect(async () => {
     background: var(--color-success-lighter);
     color: var(--color-success);
     font-weight: 600;
+    .td:last-child {
+      flex: 1 0 0;
+    }
   }
   .td {
     &:first-child {
