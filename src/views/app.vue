@@ -69,7 +69,7 @@ provide('state', state);
 
 <style lang="less">
 .app {
-  min-width: 600px;
+  min-width: 450px;
   height: 100vh;
   background: #f6f5f1;
 

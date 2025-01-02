@@ -1,13 +1,13 @@
-import {outMap} from '@/data/map/index';
-const outChildren = [];
+import {cheatMap} from '@/data/map/index';
+const children = [];
 
-for (let key in outMap) {
-  outChildren.push({
+for (let key in cheatMap) {
+  children.push({
     path: key,
-    component: () => import('@/views/cheat/out.vue'),
+    component: () => import('@/views/cheat/index.vue'),
     name: 'cheat' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
-      title: outMap[key],
+      title: cheatMap[key],
       type: key,
     },
   });
@@ -22,25 +22,7 @@ export default {
     title: '秘籍',
   },
   children: [
-    ...outChildren,
-    {
-      path: 'internal',
-      component: () => import('@/views/cheat/internal.vue'),
-      name: 'cheatInternal',
-      meta: {
-        title: '内功',
-        type: 'internal',
-      },
-    },
-    {
-      path: 'fly',
-      component: () => import('@/views/cheat/internal.vue'),
-      name: 'cheatFly',
-      meta: {
-        title: '轻功',
-        type: 'fly',
-      },
-    },
+    ...children,
     {
       path: 'other',
       component: () => import('@/views/cheat/other.vue'),

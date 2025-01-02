@@ -5,6 +5,7 @@
     </a>
     <a
       class="header-menu-switch"
+      :class="{'icon-hidden': route.name === 'index'}"
       href="javascript: void(0);"
       @click="toggleMenu"
       v-if="state.lessWindow"
@@ -32,7 +33,9 @@
 <script setup>
 import {inject} from 'vue';
 import {headerNav} from '@/router/index.js';
+import {useRoute} from 'vue-router';
 
+const route = useRoute();
 const state = inject('state');
 const homeUrl = import.meta.env.PROD ? import.meta.env.BASE_URL : '/';
 
@@ -71,6 +74,10 @@ function toggleMenu() {
     width: var(--header-height);
     height: 100%;
     background: #fff;
+
+    &.icon-hidden {
+      opacity: 0;
+    }
 
     svg {
       width: 30px;

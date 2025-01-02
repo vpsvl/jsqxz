@@ -24,13 +24,15 @@ export const equipmentMap = {
   armor: '防具',
   mount: '坐骑',
 };
-// 外功类型
-export const outMap = {
+// 秘籍类型
+export const cheatMap = {
   fist: '拳掌',
   finger: '指腿',
   sword: '剑法',
   knife: '刀法',
   special: '奇门',
+  internal: '内功',
+  fly: '轻功',
 };
 // 内力
 export const internalTypeMap = {

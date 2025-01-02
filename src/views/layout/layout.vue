@@ -56,7 +56,7 @@ function closeMenu() {
 
   .main-scroll {
     height: calc(100% - 50px);
-    min-width: 500px;
+    width: 100%;
   }
 
   .main-scroll-view {

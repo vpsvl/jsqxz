@@ -42,7 +42,7 @@
           <div class="td">威力</div>
           <div class="td">{{ info.power }}</div>
         </div>
-        <div class="tr">
+        <div class="tr" v-if="cheatType === 'in'">
           <div class="td">主运效果</div>
           <div class="td">
             <div class="td-block">
@@ -52,6 +52,16 @@
             </div>
           </div>
         </div>
+        <template v-if="cheatType === 'out'">
+          <div class="tr">
+            <div class="td">气功</div>
+            <div class="td">{{ info.gasPower }}</div>
+          </div>
+          <div class="tr">
+            <div class="td">范围</div>
+            <div class="td">{{ info.range }}</div>
+          </div>
+        </template>
         <div class="tr">
           <div class="td">其他</div>
           <div class="td">
@@ -76,21 +86,31 @@
 <script setup>
 import {ref, watchEffect} from 'vue';
 import {useRoute} from 'vue-router';
+import fist from '@/data/cheat/fist';
+import finger from '@/data/cheat/finger';
+import sword from '@/data/cheat/sword';
+import knife from '@/data/cheat/knife';
+import special from '@/data/cheat/special';
 import internal from '@/data/cheat/internal';
 import fly from '@/data/cheat/fly';
 
 const route = useRoute();
-// const thead = {
-//   get: '获取方式',
-//   power: '威力',
-//   condition: '修炼条件',
-//   addition: '每级加成',
-// };
-const all = {internal, fly};
+const all = {fist, finger, sword, knife, special, internal, fly};
+const cheatTypeMap = {
+  fist: 'out',
+  finger: 'out',
+  sword: 'out',
+  knife: 'out',
+  special: 'out',
+  internal: 'in',
+  fly: 'in',
+};
 const cheat = ref({});
+const cheatType = ref('in');
 watchEffect(() => {
   cheat.value = {list: []};
   const {type} = route.meta;
+  cheatType.value = cheatTypeMap[type];
   const data = all[type] ? all[type] : {list: []};
   cheat.value = data;
 });
