@@ -11,7 +11,7 @@
         </slot>
       </label>
     </div>
-    <h5 class="tabs-content-title">
+    <h5 class="tabs-content-title" v-if="info.name">
       <slot name="title" :info="info">
         <span>{{ info.name }}</span>
       </slot>

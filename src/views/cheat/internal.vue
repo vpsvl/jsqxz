@@ -15,18 +15,40 @@
         <div class="tr">
           <div class="td">秘籍</div>
           <div class="td">
+            <span :class="`level-icon level-icon-${info.level}`"></span>
             <span>{{ info.cheat ? info.cheat : info.name }}</span>
           </div>
         </div>
-        <div class="tr" v-for="(name, val) in thead" :key="val">
-          <div class="td">{{ name }}</div>
-          <div class="td">{{ info[val] }}</div>
+        <div class="tr">
+          <div class="td">获取方式</div>
+          <div class="td">{{ info.get }}</div>
+        </div>
+        <div class="tr">
+          <div class="td">修炼条件</div>
+          <div class="td">
+            <span>{{ info.condition }}</span>
+            <span v-if="info.internal === '0'">&nbsp;非阳内</span>
+            <span v-if="info.internal === '1'">&nbsp;非阴内</span>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td">每级加成</div>
+          <div class="td">
+            <span>{{ info.addition }}</span>
+            <span v-if="info.internal === '2'">&nbsp;调和内力属性</span>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td">威力</div>
+          <div class="td">{{ info.power }}</div>
         </div>
         <div class="tr">
           <div class="td">主运效果</div>
           <div class="td">
             <div class="td-block">
-              <div class="td-effect-item" v-for="(item, index) of info.initiative" :key="index" v-text="item"></div>
+              <div class="td-effect-item" v-for="(item, index) of info.initiative" :key="index">
+                {{ item }}
+              </div>
             </div>
           </div>
         </div>
@@ -40,7 +62,9 @@
                 ]:
                 <span class="color-success">{{ item.condition }}</span>
               </div>
-              <div class="td-effect-item" v-for="(text, i) of item.effect" :key="i" v-text="text"></div>
+              <div class="td-effect-item" v-for="(text, i) of item.effect" :key="i">
+                {{ text }}
+              </div>
             </div>
           </div>
         </div>
@@ -56,14 +80,13 @@ import internal from '@/data/cheat/internal';
 import fly from '@/data/cheat/fly';
 
 const route = useRoute();
-
+// const thead = {
+//   get: '获取方式',
+//   power: '威力',
+//   condition: '修炼条件',
+//   addition: '每级加成',
+// };
 const all = {internal, fly};
-const thead = {
-  get: '获取方式',
-  power: '威力',
-  condition: '修炼条件',
-  addition: '修炼加成',
-};
 const cheat = ref({});
 watchEffect(() => {
   cheat.value = {list: []};

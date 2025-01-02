@@ -1,158 +1,97 @@
 <template>
-  <v-table class="v-table-cheat-out" :cols="thead" :data="tbody" @sort="sort">
-    <template #name="{row}">
-      <span :class="{[`level-${row.level}`]: row.level, [`internal-${row.internal}`]: row.internal}">
-        {{ row.name }}
+  <v-tabs :list="cheat.list" :exclusive="cheat.exclusive">
+    <template #tab="{tab}">
+      <span :class="{[`level-${tab.level}`]: tab.level, [`internal-${tab.internal}`]: tab.internal}">
+        {{ tab.name }}
       </span>
     </template>
-    <template #get="{row}">
-      <span class="color-success" v-if="row.cheat && row.cheat !== row.name">修炼【{{ row.cheat }}】</span>
-      <span>{{ row.get }}</span>
+    <template #title="{info}">
+      <span :class="[`level-${info.level}`, {[`internal-${info.internal}`]: info.internal}]">
+        {{ info.name }}
+      </span>
     </template>
-    <template #condition="{row}">
-      <p>{{ row.condition }} {{ internalTypeMap[parseInt(row.internal)] }}</p>
-    </template>
-    <template #peculiar="{row}">
-      <div class="td-block" v-for="(item, index) of row.peculiar" :key="index">
-        <div v-if="item.name">
-          [
-          <span class="color-error">{{ item.name }}</span>
-          ]:
-          <span class="color-success">{{ item.condition }}</span>
+    <template #default="{info}">
+      <div class="v-table v-table-vertical">
+        <div class="tr">
+          <div class="td">秘籍</div>
+          <div class="td">
+            <span :class="`level-icon level-icon-${info.level}`"></span>
+            <span>{{ info.cheat ? info.cheat : info.name }}</span>
+          </div>
         </div>
-        <div class="td-effect-item" v-for="(text, i) of item.effect" :key="i">{{ text }}</div>
+        <div class="tr">
+          <div class="td">获取方式</div>
+          <div class="td">{{ info.get }}</div>
+        </div>
+        <div class="tr">
+          <div class="td">修炼条件</div>
+          <div class="td">
+            <span>{{ info.condition }}</span>
+            <span v-if="info.internal === '0'">&nbsp;非阳内</span>
+            <span v-if="info.internal === '1'">&nbsp;非阴内</span>
+          </div>
+        </div>
+        <div class="tr">
+          <div class="td">每级加成</div>
+          <div class="td">{{ info.addition }}</div>
+        </div>
+        <div class="tr">
+          <div class="td">威力</div>
+          <div class="td">{{ info.power }}</div>
+        </div>
+        <div class="tr">
+          <div class="td">气功</div>
+          <div class="td">{{ info.gasPower }}</div>
+        </div>
+        <div class="tr">
+          <div class="td">范围</div>
+          <div class="td">{{ info.range }}</div>
+        </div>
+        <div class="tr">
+          <div class="td">其他</div>
+          <div class="td">
+            <div class="td-block" v-for="(item, index) of info.peculiar" :key="index">
+              <div v-if="item.name">
+                [
+                <span class="color-error">{{ item.name }}</span>
+                ]:
+                <span class="color-success">{{ item.condition }}</span>
+              </div>
+              <div class="td-effect-item" v-for="(text, i) of item.effect" :key="i">
+                {{ text }}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </template>
-  </v-table>
+  </v-tabs>
 </template>
 
 <script setup>
-import {ref, watchEffect, inject} from 'vue';
+import {ref, watchEffect} from 'vue';
 import {useRoute} from 'vue-router';
-import {internalTypeMap} from '@/data/map/index';
+import fist from '@/data/cheat/fist';
+import finger from '@/data/cheat/finger';
+import sword from '@/data/cheat/sword';
+import knife from '@/data/cheat/knife';
+import special from '@/data/cheat/special';
 
 const route = useRoute();
-const state = inject('state');
-
-const thead = [
-  {
-    key: 'name',
-    name: '名称',
-    sort: true,
-  },
-  {
-    key: 'get',
-    name: '获取',
-  },
-  {
-    key: 'power',
-    name: '威力',
-    // sort: true,
-  },
-  {
-    key: 'gasPower',
-    name: '气功',
-    // sort: true,
-  },
-  {
-    key: 'range',
-    name: '范围',
-  },
-  {
-    key: 'condition',
-    name: '条件',
-    // sort: true,
-  },
-  {
-    key: 'addition',
-    name: '每级加成',
-    // sort: true,
-  },
-  {
-    key: 'peculiar',
-    name: '特性',
-  },
-];
-const tbody = ref([]);
-watchEffect(async () => {
-  const {
-    name,
-    meta: {type},
-  } = route;
-  if (!/cheat/i.test(name)) {
-    return;
-  }
-  try {
-    state.loading = true;
-    tbody.value = [];
-    const data = await import(`../../data/cheat/${type}.js`);
-    tbody.value = [...data.default.list];
-    state.loading = false;
-  } catch (e) {
-    tbody.value = [];
-    state.loading = false;
-  }
+// const thead = {
+//   get: '获取方式',
+//   condition: '修炼条件',
+//   addition: '每级加成',
+//   power: '威力',
+//   gasPower: '气功',
+//   range: '范围',
+// };
+const all = {fist, finger, sword, knife, special};
+const cheat = ref({});
+watchEffect(() => {
+  cheat.value = {list: []};
+  const {type} = route.meta;
+  const data = all[type] ? all[type] : {list: []};
+  cheat.value = data;
 });
-
-function sort(key, direction) {
-  switch (key) {
-    case 'name':
-      tbody.value = tbody.value.sort((a, b) => {
-        if (direction > 0) {
-          if (a.level === b.level) {
-            return b.power - a.power;
-          }
-          return b.level - a.level;
-        }
-        if (a.level === b.level) {
-          return a.power - b.power;
-        }
-        return a.level - b.level;
-      });
-      break;
-    case 'power':
-    case 'gasPower':
-      tbody.value = tbody.value.sort((a, b) => {
-        return direction > 0 ? b[key] - a[key] : a[key] - b[key];
-      });
-      break;
-    case 'condition':
-      function getNum(item) {
-        const arr = item.condition.match(/\d+(.\d+)?/g);
-        return Number(arr[0]);
-      }
-      tbody.value = tbody.value.sort((a, b) => {
-        return direction > 0 ? getNum(b) - getNum(a) : getNum(a) - getNum(b);
-      });
-      break;
-    case 'addition':
-      function getAddition(item) {
-        const str = item.addition.split(' ').find((i) => /拳|指|剑|刀|奇/i.test(i));
-        return Number(str.split('+')[1]);
-      }
-      tbody.value = tbody.value.sort((a, b) => {
-        return direction > 0 ? getAddition(b) - getAddition(a) : getAddition(a) - getAddition(b);
-      });
-      break;
-    default:
-      break;
-  }
-}
 </script>
-
-<style lang="less">
-.v-table-cheat-out {
-  .td {
-    &:nth-child(3),
-    &:nth-child(4) {
-      flex: 0.3 0 0;
-    }
-    &:nth-child(5) {
-      flex: 0.5 0 0;
-    }
-    &:nth-child(8) {
-      flex: 2 0 0;
-    }
-  }
-}
-</style>

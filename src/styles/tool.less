@@ -17,19 +17,39 @@
 }
 
 .level-1 {
-  color: var(--color-content);
+  color: #0e6e47;
 }
 
 .level-2 {
-  color: var(--color-success);
+  color: #0b38fa;
 }
 
 .level-3 {
-  color: var(--color-error);
+  color: #f0ab07;
 }
 
 .level-4 {
-  color: var(--color-warn);
+  color: #e40819;
+}
+
+.level-icon {
+  --bg-img: url('@/assets/images/level-1.png');
+
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  background-image: var(--bg-img);
+  background-size: 100% 100%;
+
+  &.level-icon-2 {
+    --bg-img: url('@/assets/images/level-2.png');
+  }
+  &.level-icon-3 {
+    --bg-img: url('@/assets/images/level-3.png');
+  }
+  &.level-icon-4 {
+    --bg-img: url('@/assets/images/level-4.png');
+  }
 }
 
 .internal-0 {
