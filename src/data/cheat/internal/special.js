@@ -2,5 +2,298 @@
  * 特殊效果类
  */
 
+export function wuWoWuXiang2(lv) {
+  return {
+    name: `无我无相Ⅱ Lv${lv}`,
+    effect: [`攻击与防御时${lv * 25}%概率兵器值不低于敌方`],
+  };
+}
 
-export default {}
+
+export function congHui(lv) {
+  return {
+    name: `聪慧 Lv${lv}`,
+    effect: [`修炼武功或装备武器时系数要求减少${lv * 2}`],
+  };
+}
+
+export function zaiDong(lv) {
+  return {
+    name: `再动`,
+    effect: [`攻击或移动后如有未使用完移动步数可再次移动`],
+  };
+}
+
+export function tiaoXi(lv) {
+  return {
+    name: `调息 Lv${lv}`,
+    effect: [`行动后${lv * 25}%概率获得休息效果`],
+  };
+}
+
+export function zhenQiHuDun(lv) {
+  return {
+    name: `真气护盾 Lv${lv}`,
+    effect: [`进入战场获得${lv * 125}点护盾，每${8 - lv}回合重新获得护盾`],
+  };
+}
+
+export function zhanChangChongSheng(lv) {
+  return {
+    name: `战场重生 Lv${lv}`,
+    effect: [`被击败时${lv * 25}%概率重生，并恢复${lv * 25}生命、内力和全部体力，清除所有DEBUFF`],
+  };
+}
+
+export function yuQi(lv) {
+  return {
+    name: `御气 Lv${lv}`,
+    effect: [`防御时${lv * 25}%概率无法被杀气，且反震内伤${lv * 125}点内伤`],
+  };
+}
+
+export function xuLiQiangHua(lv) {
+  return {
+    name: `蓄力强化 Lv${lv}`,
+    effect: [`蓄力时必成功，且增加蓄力${lv}回合，蓄力后的攻击效果增加${lv * 25}%`],
+  };
+}
+
+export function lingXiFenShui(lv) {
+  return {
+    name: `灵犀分水 Lv${lv}`,
+    effect: [`受到攻击时${lv * 25}%概率由全部参战人数一起分担${lv * 25}%的伤害`],
+  };
+}
+
+export function dongRuoGuanHuo(lv) {
+  return {
+    name: `洞若观火 Lv${lv}`,
+    effect: [`受到连击或暴击攻击时${lv * 25}%概率打断敌人攻击`],
+  };
+}
+
+export function kongShou(lv) {
+  return {
+    name: `空手 Lv${lv}`,
+    effect: [`未装备武器时，攻击+${lv * 5}%`],
+  };
+}
+
+export function chiBo(lv) {
+  return {
+    name: `赤膊 Lv${lv}`,
+    effect: [`未装备防具时，防御+${lv * 5}%`],
+  };
+}
+
+export function buZhan(lv) {
+  return {
+    name: `步战 Lv${lv}`,
+    effect: [`未装备坐骑时，集气+${lv * 2}`],
+  };
+}
+
+export function xianShou(lv) {
+  return {
+    name: `先手 Lv${lv}`,
+    effect: [`战斗初始集气+${lv * 400}`],
+  };
+}
+
+export function ziQiang(lv) {
+  return {
+    name: `自强 Lv${lv}`,
+    effect: [`杀气被杀到-100，清除全部内伤，并恢复${lv * 5}%生命`],
+  };
+}
+
+export function guiXi(lv) {
+  return {
+    name: `龟息 Lv${lv}`,
+    effect: [`受到第一击的伤害减少${lv * 15}%`],
+  };
+}
+
+export function xiangJi(lv) {
+  return {
+    name: `相济 Lv${lv}`,
+    effect: [`行动后消耗${lv}%内力恢复${lv}%生命`],
+  };
+}
+
+export function tianXingJianGong(lv) {
+  return {
+    name: `天行健·攻 Lv${lv}`,
+    effect: [`每次行动后增加${lv}%伤害`],
+  };
+}
+
+export function tianXingJianShou(lv) {
+  return {
+    name: `天行健·守 Lv${lv}`,
+    effect: [`每次行动后减少${lv}%受到的伤害`],
+  };
+}
+
+export function buQu(lv) {
+  return {
+    name: `不屈 Lv${lv}`,
+    effect: [`集气位置小于0时，减少受到的伤害${lv * 25}%`],
+  };
+}
+
+export function bingHuoChongRong(lv) {
+  return {
+    name: `冰火重融 Lv${lv}`,
+    effect: [`造成必封/灼烧时${lv * 25}%概率造成灼烧/冰封`],
+  };
+}
+
+export function hanSha(lv) {
+  return {
+    name: `含沙 Lv${lv}`,
+    effect: [`攻击时${lv * 25}%概率给目标附加一个DEBUFF`],
+  };
+}
+
+export function foGuangPuDu(lv) {
+  return {
+    name: `佛光普渡 Lv${lv}`,
+    effect: [`每${5 - lv}回合${lv * 25}%概率清除流血、中毒、冰封、燃烧、内伤状态`],
+  };
+}
+
+export function baoYuanShouYi(lv) {
+  return {
+    name: `抱元守一 Lv${lv}`,
+    effect: [`每${5 - lv}回合${lv * 25}%概率清除大部分异常状态`],
+  };
+}
+
+export function fuYuanJiaShen(lv) {
+  return {
+    name: `福缘加身 Lv${lv}`,
+    effect: [`增加特效${lv * 2}点(非固定概率)`],
+  };
+}
+
+export function wuShenZhiLi(lv) {
+  return {
+    name: `武神之力 Lv${lv}`,
+    effect: [`增加三围${lv * 50}`],
+  };
+}
+
+export function wuShenZhiLi2(lv) {
+  return {
+    name: `武神之力Ⅱ Lv${lv}`,
+    effect: [`增加三围${lv * 5}%`],
+  };
+}
+
+export function puDuCiHang(lv) {
+  return {
+    name: `普渡慈航 Lv${lv}`,
+    effect: [`每${6 - lv}回合恢复已经损失生命值、内力值、体力值的${lv * 5}%`],
+  };
+}
+
+export function yiNianChengMo(lv) {
+  return {
+    name: `一念成魔 Lv${lv}`,
+    effect: [`攻击时${lv * 8}%概率进入【魔神】状态：免疫杀气封穴，额外吸血20%`],
+  };
+}
+
+export function taiJiZhiXing(lv) {
+  return {
+    name: `太极之形 Lv${lv}`,
+    effect: [`被攻击时${lv * 15}%概率获得太极之形，每个太极之形增加1点集气，每5个太极之形增加一次连击`],
+  };
+}
+
+export function ziDongFangYu(lv) {
+  return {
+    name: `自动防御 Lv${lv}`,
+    effect: [`行动后${lv * 25}%概率自动防御`],
+  };
+}
+
+export function yiQiHuaXue(lv) {
+  return {
+    name: `以气化血 Lv${lv}`,
+    effect: [`受到伤害时以伤害值${lv * 25}%内力抵消${(6 - lv) * 50}%的伤害`],
+  };
+}
+
+export function liuDaoLunHui(lv) {
+  return {
+    name: `六道轮回 Lv${lv}`,
+    effect: [`进入战斗开始只有${lv * 20}%三围和五系,每回合+30%，每六个回合一轮回，轮回结束时全属性恢复到${lv * 20}%，并恢复${lv * 10}%的状态，清除所有异常状态`],
+  };
+}
+
+export function kuiHuaBaiJie(lv) {
+  return {
+    name: `葵花百劫 Lv${lv}`,
+    effect: [`每次闪避和挪移自身集气集增加${lv}点，集气位置增加${lv * 100}，并给攻击方增加虚弱状态${lv}回合，如果攻击方有肓目状态，则攻击方肓目状态增加1回合`],
+  };
+}
+
+export function zhouLiuLiuXu(lv) {
+  return {
+    name: `周流六虚 Lv${lv}`,
+    effect: [
+      `攻击时${lv * 10}%概率触发：`,
+      '└陷空力：伤害+50%一回合',
+      '└生灭道：攻击后霸体一回合',
+      '└旋涡击：增加一次连击',
+      '└阴阳流：必冰封必灼烧',
+      '└滴水劲：破防+50%',
+      '└霹雳木：附加气攻值5%的伤害',
+    ],
+  };
+}
+
+export function jiuShenZhiLi(lv) {
+  return {
+    name: `酒神之力 Lv${lv}`,
+    effect: [`Ｗ行动前${lv * 25}%概率获得即墨老酒/玉露酒/梨花酒/五宝花蜜酒之一效果，拥有任一酒效果时，伤害+20%，命中-10%，${lv * 25}%概率击中敌方破绽`],
+  };
+}
+
+export function qiGuanWuYue(lv) {
+  return {
+    name: `气贯五岳 Lv${lv}`,
+    effect: [`攻击时${lv * 25}%概率无视目标内功附加的防御力，伤害在${lv * 20}%~${lv * 40}之间浮动`],
+  };
+}
+
+export function yinDuNveYan(lv) {
+  return {
+    name: `引毒虐焰 Lv${lv}`,
+    effect: [`敌方中毒大于100，攻击${lv * 25}%概率引爆毒，造成中毒点数X5的真实伤害`],
+  };
+}
+
+export function shuShiDaiFa(lv) {
+  return {
+    name: `蓄势待发 Lv${lv}`,
+    effect: [`蓄力必成功，同时执行防御和等待指令，且蓄力效果增加到50%。${lv * 25}%概率在行动自动执行蓄力`],
+  };
+}
+
+export function qiYueRuShi(lv) {
+  return {
+    name: `气跃如逝 Lv${lv}`,
+    effect: [`集气${lv * 5}%概率向前跳跃${lv * 10}时序`],
+  };
+}
+
+export function shunXiQianLi(lv) {
+  return {
+    name: `瞬息千里 Lv${lv}`,
+    effect: [`暴怒时集气速度增加${lv * 50}%，且集气不受异常状态影响`],
+  };
+}

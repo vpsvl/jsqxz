@@ -1,19 +1,19 @@
-import affected from './affected';
-import attack from './attack';
-import debuff from './debuff';
-import decrease from './decrease';
-import immunity from './immunity';
-import increase from './increase';
-import recovery from './recovery';
-import special from './special';
+import * as affected from './affected';
+import * as attack from './attack';
+import * as debuff from './debuff';
+import * as decrease from './decrease';
+import * as immunity from './immunity';
+import * as increase from './increase';
+import * as recovery from './recovery';
+import * as special from './special';
 
 export default {
-  ...affected,
-  ...attack,
-  ...debuff,
-  ...decrease,
-  ...immunity,
-  ...increase,
-  ...recovery,
-  ...special,
+  affected,
+  attack,
+  debuff,
+  decrease,
+  immunity,
+  increase,
+  recovery,
+  special,
 };
