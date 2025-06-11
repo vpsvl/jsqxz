@@ -76,7 +76,7 @@ export function mianYiPoZhan(lv) {
 export function baTi(lv) {
   return {
     name: `霸体 Lv${lv}`,
-    effect: [`受到攻击时${lv * 25}%概率免疫伤害`],
+    effect: [`受到攻击时${lv * 5}%概率免疫伤害`],
   };
 }
 
@@ -89,7 +89,7 @@ export function buQuShaQi(lv) {
 
 export function qingXin(lv) {
   return {
-    name: `清心`,
+    name: `清心 Lv${lv}`,
     effect: [`集气不受异常状态影响`],
   };
 }

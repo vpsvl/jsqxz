@@ -26,7 +26,6 @@ export function huiNei(lv) {
 
 export function huiTi(lv) {
   return {
-    [`回体 Lv${lv}`]: `每回合恢复${lv}点体力值`,
     name: `回体 Lv${lv}`,
     effect: [`每回合恢复${lv}点体力值`],
   };
@@ -91,21 +90,21 @@ export function huiNuShiXu(lv) {
 export function huiChun(lv) {
   return {
     name: `回春 Lv${lv}`,
-    effect: [`每回合回复损失生命值的${lv * 5}%`],
+    effect: [`每回合恢复损失生命值的${lv * 5}%`],
   };
 }
 
 export function qiXueXiangSheng1(lv) {
   return {
     name: `气血相生Ⅰ Lv${lv}`,
-    effect: [`如果(生命/生命最大值)百分比大于(内力值/内力最大值)百分比，则${timeSequence[lv]}时序回复${lv}%最大内力值`],
+    effect: [`如果(生命/生命最大值)百分比大于(内力值/内力最大值)百分比，则${timeSequence[lv]}时序恢复${lv}%最大内力值`],
   };
 }
 
 export function qiXueXiangSheng2(lv) {
   return {
     name: `气血相生Ⅱ Lv${lv}`,
-    effect: [`如果(生命/生命最大值)百分比小于(内力值/内力最大值)百分比，则${timeSequence[lv]}时序回复${lv}%最大生命值`],
+    effect: [`如果(生命/生命最大值)百分比小于(内力值/内力最大值)百分比，则${timeSequence[lv]}时序恢复${lv}%最大生命值`],
   };
 }
 

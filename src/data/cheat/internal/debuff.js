@@ -94,32 +94,35 @@ export function juDu(lv) {
 }
 
 export function fengXueQiangHua(lv) {
+  let max = lv + 4;
+  let min = lv * 2;
   return {
     name: `强化封穴 Lv${lv}`,
-    effect: [`攻击追加封穴点数${lv * 4}点`],
+    effect: [`攻击追加封穴点数${min}~${max}点`],
   };
 }
 
 export function bingFengQiangHua(lv) {
+  let max = lv + 4;
+  let min = lv * 2;
   return {
     name: `强化冰封 Lv${lv}`,
-    effect: [`攻击追加冰封点数${lv * 4}点`],
+    effect: [`攻击追加冰封点数${min}~${max}点`],
   };
 }
 
 export function zhuoShaoQiangHua(lv) {
+  let max = lv + 4;
+  let min = lv * 2;
   return {
     name: `强化灼烧 Lv${lv}`,
-    effect: [`攻击追加灼烧点数${lv * 4}点`],
+    effect: [`攻击追加灼烧点数${min}~${max}点`],
   };
 }
 
 export function zhongDuQiangHua(lv) {
-  let min = lv + 4;
-  let max = lv * 2;
-  if (min > max) {
-    [min, max] = [max, min];
-  }
+  let max = lv + 4;
+  let min = lv * 2;
   return {
     name: `强化中毒 Lv${lv}`,
     effect: [`攻击追加中毒点数${min}~${max}点`],
@@ -127,16 +130,20 @@ export function zhongDuQiangHua(lv) {
 }
 
 export function liuXueQiangHua(lv) {
+  let max = lv + 4;
+  let min = lv * 2;
   return {
     name: `强化流血 Lv${lv}`,
-    effect: [`攻击追加流血点数${lv * 4}点`],
+    effect: [`攻击追加流血点数${min}~${max}点`],
   };
 }
 
 export function neiShangQiangHua(lv) {
+  let max = lv + 4;
+  let min = lv * 2;
   return {
     name: `强化内伤 Lv${lv}`,
-    effect: [`攻击追加内伤点数${lv * 4}点`],
+    effect: [`攻击追加内伤点数${min}~${max}点`],
   };
 }
 

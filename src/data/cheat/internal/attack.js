@@ -97,49 +97,49 @@ export function yaoJiaoKongBi(lv) {
 export function quanGang(lv) {
   return {
     name: `拳罡 Lv${lv}`,
-    effect: [`攻击时使用拳掌武功破防+${lv * 20}%`],
+    effect: [`攻击时使用拳掌武功破防+${lv * 10}%`],
   };
 }
 
 export function zhiJin(lv) {
   return {
     name: `指劲 Lv${lv}`,
-    effect: [`攻击时使用指腿武功破防+${lv * 20}%`],
+    effect: [`攻击时使用指腿武功破防+${lv * 10}%`],
   };
 }
 
 export function jianQi(lv) {
   return {
     name: `剑气 Lv${lv}`,
-    effect: [`攻击时使用剑法武功破防+${lv * 20}%`],
+    effect: [`攻击时使用剑法武功破防+${lv * 10}%`],
   };
 }
 
 export function daoFeng(lv) {
   return {
     name: `刀风 Lv${lv}`,
-    effect: [`攻击时使用刀法武功破防+${lv * 20}%`],
+    effect: [`攻击时使用刀法武功破防+${lv * 10}%`],
   };
 }
 
 export function qiMen(lv) {
   return {
     name: `奇门 Lv${lv}`,
-    effect: [`攻击时使用奇门武功破防+${lv * 20}%`],
+    effect: [`攻击时使用奇门武功破防+${lv * 10}%`],
   };
 }
 
 export function qiGongBo(lv) {
   return {
     name: `气功波 Lv${lv}`,
-    effect: [`攻击时使用内功破防+${lv * 20}%`],
+    effect: [`攻击时使用内功破防+${lv * 10}%`],
   };
 }
 
 export function wuJianBuCui(lv) {
   return {
     name: `无坚不摧 Lv${lv}`,
-    effect: [`攻击时使用任何武功破防+${lv * 15}%`],
+    effect: [`攻击时使用任何武功破防+${lv * 6}%`],
   };
 }
 
@@ -259,7 +259,7 @@ export function tianLuo(lv) {
 
 export function diWang(lv) {
   return {
-    name: `地网`,
+    name: `地网 Lv${lv}`,
     effect: [`武功攻击范围+1`],
   };
 }

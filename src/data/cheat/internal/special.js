@@ -18,7 +18,7 @@ export function congHui(lv) {
 
 export function zaiDong(lv) {
   return {
-    name: `再动`,
+    name: `再动 Lv${lv}`,
     effect: [`攻击或移动后如有未使用完移动步数可再次移动`],
   };
 }
@@ -68,7 +68,7 @@ export function xuLiQiangHua(lv) {
 export function lingXiFenShui(lv) {
   return {
     name: `灵犀分水 Lv${lv}`,
-    effect: [`受到攻击时${lv * 25}%概率由全部参战人数一起分担${lv * 25}%的伤害`],
+    effect: [`受到攻击时${lv * 15}%概率由全部参战人数一起分担伤害`],
   };
 }
 
@@ -82,28 +82,28 @@ export function zhiXiGanGe(lv) {
 export function kongShou(lv) {
   return {
     name: `空手 Lv${lv}`,
-    effect: [`未装备武器时，攻击+${lv * 5}%`],
+    effect: [`未装备武器时，攻击增加${lv * 50}点`],
   };
 }
 
 export function chiBo(lv) {
   return {
     name: `赤膊 Lv${lv}`,
-    effect: [`未装备防具时，防御+${lv * 5}%`],
+    effect: [`未装备防具时，防御增加${lv * 50}点`],
   };
 }
 
 export function buZhan(lv) {
   return {
     name: `步战 Lv${lv}`,
-    effect: [`未装备坐骑时，集气+${lv * 2}`],
+    effect: [`未装备坐骑时，轻功增加${lv * 50}点`],
   };
 }
 
 export function xianShou(lv) {
   return {
     name: `先手 Lv${lv}`,
-    effect: [`战斗初始集气+${lv * 400}`],
+    effect: [`战斗初始集气位置增加${lv * 100}`],
   };
 }
 
@@ -121,10 +121,10 @@ export function guiXi(lv) {
   };
 }
 
-export function xiangJi(lv) {
+export function kuRong(lv) {
   return {
-    name: `相济 Lv${lv}`,
-    effect: [`行动后消耗${lv}%内力恢复${lv}%生命`],
+    name: `枯荣 Lv${lv}`,
+    effect: [`行动后消耗${lv * 3}%内力最大值，恢复${lv * 3}%生命最大值`],
   };
 }
 
@@ -152,14 +152,14 @@ export function buQu(lv) {
 export function bingHuoChongRong(lv) {
   return {
     name: `冰火重融 Lv${lv}`,
-    effect: [`造成必封/灼烧时${lv * 25}%概率造成灼烧/冰封`],
+    effect: [`造成冰封/灼烧时${lv * 25}%概率造成灼烧/冰封`],
   };
 }
 
-export function hanSha(lv) {
+export function baoYuLiHua(lv) {
   return {
-    name: `含沙 Lv${lv}`,
-    effect: [`攻击时${lv * 25}%概率给目标附加一个DEBUFF`],
+    name: `暴雨梨花 Lv${lv}`,
+    effect: [`行动前${lv * 25}%概率给自身五格内目标附加一个随机DEBUFF`],
   };
 }
 
@@ -201,7 +201,7 @@ export function wuShenZhiLi2(lv) {
 export function puDuCiHang(lv) {
   return {
     name: `普渡慈航 Lv${lv}`,
-    effect: [`每${6 - lv}回合恢复已经损失生命值、内力值、体力值的${lv * 5}%`],
+    effect: [`每回合恢复生命值、内力值、体力值的${lv + 1}%`],
   };
 }
 
@@ -224,7 +224,7 @@ export function taiJiZhiXing(lv) {
 export function ziDongFangYu(lv) {
   return {
     name: `自动防御 Lv${lv}`,
-    effect: [`行动后${lv * 25}%概率自动防御`],
+    effect: [`行动后${lv * 25}%概率自动防御，且减少受到的伤害${lv * 10}%`],
   };
 }
 
@@ -327,5 +327,13 @@ export function shunXiQianLi(lv) {
   return {
     name: `瞬息千里 Lv${lv}`,
     effect: [`暴怒时集气速度增加${lv * 50}%，且集气不受异常状态影响`],
+  };
+}
+export function xueMoZhiDun(lv) {
+  return {
+    name: `血魔之盾 Lv${lv}`,
+    effect: [
+      `每次行动前吸取七格内敌人的流血点数转化为自身的生命恢复，如恢复满生命则溢出部分转化为护盾，护盾不会超过自身生命的10%`,
+    ],
   };
 }

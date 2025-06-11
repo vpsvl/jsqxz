@@ -40,7 +40,7 @@ export function nuoYi(lv) {
 export function guiXing(lv) {
   return {
     name: `龟形 Lv${lv}`,
-    effect: [`受到伤害时${lv * 20}%概率进入防御状态气`],
+    effect: [`受到伤害时${lv * 20}%概率进入防御状态`],
   };
 }
 
@@ -68,7 +68,7 @@ export function yaZi(lv) {
 export function duanGu(lv) {
   return {
     name: `锻骨 Lv${lv}`,
-    effect: [`受到伤害时${lv * 15}%概率减少体质百分比的伤害`],
+    effect: [`受到伤害时${lv * 25}%概率减少体质百分比的伤害`],
   };
 }
 
@@ -104,14 +104,14 @@ export function daZongShi(lv) {
 export function duanRen1(lv) {
   return {
     name: `断刃Ⅰ Lv${lv}`,
-    effect: [`受到攻击时${lv * 15}%概率无视敌方附加攻击力`],
+    effect: [`受到攻击时${lv * 15}%概率无视敌方基础攻击力`],
   };
 }
 
 export function duanRen2(lv) {
   return {
     name: `断刃Ⅱ Lv${lv}`,
-    effect: [`受到攻击时${lv * 15}%概率无视敌方基础攻击力`],
+    effect: [`受到攻击时${lv * 15}%概率无视敌方附加攻击力`],
   };
 }
 
@@ -161,7 +161,7 @@ export function tianJiMiShu(lv) {
   return {
     name: `天机秘术 Lv${lv}`,
     effect: [
-      `死亡时必复活一次，且受到攻击时${lv * 10}%概率触发天机秘术中的一种：`,
+      `受到攻击时${lv * 5}%概率触发天机秘术中的一种：`,
       '└将伤害反弹给敌方随机目标',
       '└挪移位置躲避伤害',
       '└闪避伤害',
