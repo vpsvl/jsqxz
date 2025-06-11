@@ -9,7 +9,6 @@ export function wuWoWuXiang2(lv) {
   };
 }
 
-
 export function congHui(lv) {
   return {
     name: `聪慧 Lv${lv}`,
@@ -31,17 +30,17 @@ export function tiaoXi(lv) {
   };
 }
 
-export function zhenQiHuDun(lv) {
+export function gangQiHuTi(lv) {
   return {
-    name: `真气护盾 Lv${lv}`,
+    name: `罡气护体 Lv${lv}`,
     effect: [`进入战场获得${lv * 125}点护盾，每${8 - lv}回合重新获得护盾`],
   };
 }
 
-export function zhanChangChongSheng(lv) {
+export function chongSheng(lv) {
   return {
-    name: `战场重生 Lv${lv}`,
-    effect: [`被击败时${lv * 25}%概率重生，并恢复${lv * 25}生命、内力和全部体力，清除所有DEBUFF`],
+    name: `重生 Lv${lv}`,
+    effect: [`被击败时${lv * 25}%概率重生，并恢复${lv * 25}已损失生命、内力和体力，并清除基础状态`],
   };
 }
 
@@ -52,10 +51,17 @@ export function yuQi(lv) {
   };
 }
 
+export function puTiShu(lv) {
+  return {
+    name: `菩提树 Lv${lv}`,
+    effect: [`被攻击时${lv * 15}%概率降低攻击方${lv * 10}%的命中和闪避`],
+  };
+}
+
 export function xuLiQiangHua(lv) {
   return {
     name: `蓄力强化 Lv${lv}`,
-    effect: [`蓄力时必成功，且增加蓄力${lv}回合，蓄力后的攻击效果增加${lv * 25}%`],
+    effect: [`蓄力时必成功，蓄力后的攻击效果增加${lv * 18.75}%`],
   };
 }
 
@@ -66,10 +72,10 @@ export function lingXiFenShui(lv) {
   };
 }
 
-export function dongRuoGuanHuo(lv) {
+export function zhiXiGanGe(lv) {
   return {
-    name: `洞若观火 Lv${lv}`,
-    effect: [`受到连击或暴击攻击时${lv * 25}%概率打断敌人攻击`],
+    name: `止息干戈 Lv${lv}`,
+    effect: [`受到连击或暴击攻击时${lv * 20}%概率打断敌人攻击`],
   };
 }
 
@@ -101,9 +107,9 @@ export function xianShou(lv) {
   };
 }
 
-export function ziQiang(lv) {
+export function buXi(lv) {
   return {
-    name: `自强 Lv${lv}`,
+    name: `不息 Lv${lv}`,
     effect: [`杀气被杀到-100，清除全部内伤，并恢复${lv * 5}%生命`],
   };
 }
@@ -209,7 +215,9 @@ export function yiNianChengMo(lv) {
 export function taiJiZhiXing(lv) {
   return {
     name: `太极之形 Lv${lv}`,
-    effect: [`被攻击时${lv * 15}%概率获得太极之形，每个太极之形增加1点集气，每5个太极之形增加一次连击`],
+    effect: [
+      `被攻击时${lv * 15}%概率获得太极之形，每个太极之形增加1点集气，每5个太极之形增加一次连击`,
+    ],
   };
 }
 
@@ -220,24 +228,32 @@ export function ziDongFangYu(lv) {
   };
 }
 
-export function yiQiHuaXue(lv) {
+export function weiWoDuZun(lv) {
   return {
-    name: `以气化血 Lv${lv}`,
-    effect: [`受到伤害时以伤害值${lv * 25}%内力抵消${(6 - lv) * 50}%的伤害`],
+    name: `唯我独尊 Lv${lv}`,
+    effect: [`受到伤害时以伤害值${lv * 25}%内力抵消${lv * 25}%的伤害`],
   };
 }
 
 export function liuDaoLunHui(lv) {
   return {
     name: `六道轮回 Lv${lv}`,
-    effect: [`进入战斗开始只有${lv * 20}%三围和五系,每回合+30%，每六个回合一轮回，轮回结束时全属性恢复到${lv * 20}%，并恢复${lv * 10}%的状态，清除所有异常状态`],
+    effect: [
+      `进入战斗开始只有${lv * 20}%三围和五系,每回合+30%，每六个回合一轮回，轮回结束时全属性恢复到${
+        lv * 20
+      }%，并恢复${lv * 10}%的状态，清除所有异常状态`,
+    ],
   };
 }
 
 export function kuiHuaBaiJie(lv) {
   return {
     name: `葵花百劫 Lv${lv}`,
-    effect: [`每次闪避和挪移自身集气集增加${lv}点，集气位置增加${lv * 100}，并给攻击方增加虚弱状态${lv}回合，如果攻击方有肓目状态，则攻击方肓目状态增加1回合`],
+    effect: [
+      `每次闪避和挪移自身集气增加${lv}点，集气位置增加${
+        lv * 100
+      }，并给攻击方增加虚弱状态一回合，如果攻击方有盲目状态，则攻击方盲目状态增加一回合，行动前清除`,
+    ],
   };
 }
 
@@ -259,28 +275,44 @@ export function zhouLiuLiuXu(lv) {
 export function jiuShenZhiLi(lv) {
   return {
     name: `酒神之力 Lv${lv}`,
-    effect: [`Ｗ行动前${lv * 25}%概率获得即墨老酒/玉露酒/梨花酒/五宝花蜜酒之一效果，拥有任一酒效果时，伤害+20%，命中-10%，${lv * 25}%概率击中敌方破绽`],
+    effect: [
+      `行动前${
+        lv * 25
+      }%为自己增加即墨老酒/玉露酒/梨花酒/五宝花蜜酒之一效果，每种酒状态增加2层醉意，每层醉意伤害+10%/闪避+5%/命中减-5%。拥有醉意时${
+        lv * 25
+      }%概率击中目标破绽。醉意每回合自动减少1层，不可清除`,
+    ],
   };
 }
 
 export function qiGuanWuYue(lv) {
   return {
     name: `气贯五岳 Lv${lv}`,
-    effect: [`攻击时${lv * 25}%概率无视目标内功附加的防御力，伤害在${lv * 20}%~${lv * 40}之间浮动`],
+    effect: [
+      `攻击时${lv * 25}%概率无视目标内功附加的防御力，伤害在${lv * 5 + 100}%~${
+        lv * 20 + 100
+      }%之间浮动`,
+    ],
   };
 }
 
 export function yinDuNveYan(lv) {
   return {
     name: `引毒虐焰 Lv${lv}`,
-    effect: [`敌方中毒大于100，攻击${lv * 25}%概率引爆毒，造成中毒点数X5的真实伤害`],
+    effect: [
+      `攻击时追加目标中毒程度的真实伤害，如果敌方中毒大于100引爆全部中毒，造成中毒程度${
+        lv + 1
+      }倍的真实伤害`,
+    ],
   };
 }
 
 export function shuShiDaiFa(lv) {
   return {
     name: `蓄势待发 Lv${lv}`,
-    effect: [`蓄力必成功，同时执行防御和等待指令，且蓄力效果增加到50%。${lv * 25}%概率在行动自动执行蓄力`],
+    effect: [
+      `蓄力必成功，同时执行防御和等待指令，且蓄力效果增加到50%。${lv * 25}%概率在行动自动执行蓄力`,
+    ],
   };
 }
 

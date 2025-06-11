@@ -1,7 +1,9 @@
 <template>
   <v-tabs :list="cheat.list" :exclusive="cheat.exclusive">
     <template #tab="{tab}">
-      <span :class="{[`level-${tab.level}`]: tab.level, [`internal-${tab.internal}`]: tab.internal}">
+      <span
+        :class="{[`level-${tab.level}`]: tab.level, [`internal-${tab.internal}`]: tab.internal}"
+      >
         {{ tab.name }}
       </span>
     </template>
@@ -45,9 +47,14 @@
         <div class="tr" v-if="cheatType === 'in'">
           <div class="td">主运效果</div>
           <div class="td">
-            <div class="td-block">
-              <div class="td-effect-item" v-for="(item, index) of info.initiative" :key="index">
-                {{ item }}
+            <div class="td-block" v-for="(item, index) of info.initiative" :key="index">
+              <div v-if="item.name">
+                [
+                <span :class="`level-${info.level}`">{{ item.name }}</span>
+                ]:
+              </div>
+              <div class="td-effect-item" v-for="(text, i) of item.effect" :key="i">
+                {{ text }}
               </div>
             </div>
           </div>

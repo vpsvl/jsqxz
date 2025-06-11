@@ -80,7 +80,7 @@ export function baTi(lv) {
   };
 }
 
-export function buQu(lv) {
+export function buQuShaQi(lv) {
   return {
     name: `不屈 Lv${lv}`,
     effect: [`受到攻击时${lv * 25}%杀气不会低于${(lv - 1) * 80}`],

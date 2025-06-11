@@ -240,7 +240,7 @@ export function fengShenZhiLi(lv) {
   };
 }
 
-export function shangBiZengQiang1(lv) {
+export function shanBiZengQiang1(lv) {
   return {
     name: `闪避增强Ⅰ Lv${lv}`,
     effect: [`增加闪避${lv * 8}%`],

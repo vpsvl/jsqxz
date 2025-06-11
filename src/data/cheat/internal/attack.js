@@ -2,17 +2,25 @@
  * 攻击类
  */
 
-export function xueMo(lv) {
+export function xiXue(lv) {
   return {
-    name: `血魔 Lv${lv}`,
-    effect: [`攻击时造成伤害时${lv * 25}%概率将伤害的${lv * 10}%转化为恢复自身生命，最多恢复身最大生命值的10%`],
+    name: `吸血 Lv${lv}`,
+    effect: [
+      `攻击时造成伤害时${lv * 25}%概率将伤害的${
+        lv * 10
+      }%转化为恢复自身生命，最多恢复身最大生命值的10%`,
+    ],
   };
 }
 
-export function xueMoZhiDun(lv) {
+export function xueMo(lv) {
   return {
-    name: `血魔之盾 Lv${lv}`,
-    effect: [`攻击时造成伤害时${lv * 25}%概率将伤害的${lv * 10}%转化为恢复自身生命，最多恢复身最大生命值的5%，溢出部分转化为护盾，每次行动前吸取七格内敌人的流血点数的生命值化为护盾，护盾不会超过自身生命的10%`],
+    name: `血魔 Lv${lv}`,
+    effect: [
+      `攻击时造成伤害时${lv * 25}%概率将伤害的${
+        lv * 10
+      }%转化为恢复自身生命，最多恢复身最大生命值的5%，溢出部分转化为护盾`,
+    ],
   };
 }
 
@@ -142,7 +150,6 @@ export function xieJia1(lv) {
   };
 }
 
-
 export function xieJia2(lv) {
   return {
     name: `卸甲Ⅱ Lv${lv}`,
@@ -237,7 +244,9 @@ export function huaGong(lv) {
 export function longXiangZhiLi(lv) {
   return {
     name: `龙象之力 Lv${lv}`,
-    effect: [`攻击时${lv * 25}%概率随自身怒气值增加伤害${lv * 25}%,并增加气攻${lv * 500}点`],
+    effect: [
+      `攻击时${lv * 25}%概率随自身怒气值增加伤害，最多增加${lv * 25}%，最多增加气攻${lv * 500}点`,
+    ],
   };
 }
 

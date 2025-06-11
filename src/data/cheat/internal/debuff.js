@@ -115,9 +115,14 @@ export function zhuoShaoQiangHua(lv) {
 }
 
 export function zhongDuQiangHua(lv) {
+  let min = lv + 4;
+  let max = lv * 2;
+  if (min > max) {
+    [min, max] = [max, min];
+  }
   return {
     name: `强化中毒 Lv${lv}`,
-    effect: [`攻击追加中毒点数${lv * 4}点`],
+    effect: [`攻击追加中毒点数${min}~${max}点`],
   };
 }
 

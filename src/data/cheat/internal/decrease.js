@@ -44,49 +44,49 @@ export function baoJiJianShang(lv) {
   };
 }
 
-export function jianShaoFengXue(lv) {
+export function fengXueJianShao(lv) {
   return {
     name: `减少封穴 Lv${lv}`,
     effect: [`减少受到的封穴点数${lv * 2}`],
   };
 }
 
-export function quHan(lv) {
+export function quHanJianShao(lv) {
   return {
     name: `祛寒 Lv${lv}`,
     effect: [`减少受到的冰封点数${lv * 2}`],
   };
 }
 
-export function yuHe(lv) {
+export function yuHeJianShao(lv) {
   return {
     name: `愈合 Lv${lv}`,
     effect: [`减少受到的内伤点数${lv * 2}`],
   };
 }
 
-export function huaDu(lv) {
+export function huaDuJianShao(lv) {
   return {
     name: `化毒 Lv${lv}`,
     effect: [`减少受到的中毒点数${lv * 2}`],
   };
 }
 
-export function bingXin(lv) {
+export function bingXinJianshao(lv) {
   return {
     name: `冰心 Lv${lv}`,
     effect: [`减少受到的灼烧点数${lv * 2}`],
   };
 }
 
-export function baoZha(lv) {
+export function baoZhaJianShao(lv) {
   return {
     name: `包扎 Lv${lv}`,
     effect: [`减少受到的流血点数${lv * 2}`],
   };
 }
 
-export function huaJin(lv) {
+export function huaJinJianShao(lv) {
   return {
     name: `化劲 Lv${lv}`,
     effect: [`减少受到的气攻点数${lv * 200}`],

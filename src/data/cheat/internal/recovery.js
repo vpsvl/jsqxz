@@ -60,28 +60,28 @@ export function neiGui(lv) {
   };
 }
 
-export function shiXuHuiMing(lv) {
+export function huiMingShiXu(lv) {
   return {
     name: `时序回命 Lv${lv}`,
     effect: [`每${timeSequence[lv]}时序恢复${lv * 2}点生命值`],
   };
 }
 
-export function shiXuHuiNei(lv) {
+export function huiNeiShiXu(lv) {
   return {
     name: `时序回内 Lv${lv}`,
     effect: [`每${timeSequence[lv]}时序恢复${lv * 2}点内力值`],
   };
 }
 
-export function shiXuHuiTi(lv) {
+export function huiTiShiXu(lv) {
   return {
     name: `时序回体 Lv${lv}`,
     effect: [`每${timeSequence[lv]}时序恢复1点体力值`],
   };
 }
 
-export function shiXuHuiNu(lv) {
+export function huiNuShiXu(lv) {
   return {
     name: `时序回怒 Lv${lv}`,
     effect: [`每${timeSequence[lv]}时序恢复${lv}点怒气值`],
