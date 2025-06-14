@@ -824,7 +824,7 @@ export default {
         effect.liuXue1(4),
         effect.baiQi(4),
         effect.fuYuanJiaShen(4),
-        effect.niZhuanYinYang(4),
+        effect.yiQiSuNiSheng(4),
         effect.hunDunTaiXuan(4),
       ],
       peculiar: [],
@@ -939,8 +939,8 @@ export default {
       initiative: [
         effect.juLi(4),
         effect.mianYiNeiShang(4),
-        effect.geDangZengQiang1(4),
         effect.houFaXianZhi(4),
+        effect.xuQiShiXu(4),
         effect.zhuanYinYang(4),
         effect.ziDongFangYu(4),
         effect.jieLi(4),

@@ -12,7 +12,11 @@ export function niZhuanYinYang(lv) {
 export function hunDunTaiXuan(lv) {
   return {
     name: `混沌太玄 Lv${lv}`,
-    effect: [`受到伤害时将受到的伤害的${(lv + 1) * 6}%转化为生命恢复`],
+    effect: [
+      `受到伤害时将杀气的${(lv + 1) * 15}%转化为自身的集气。将所受伤害的${
+        (lv + 1) * 15
+      }%转化为生命回复。【需挑战解锁】`,
+    ],
   };
 }
 
@@ -100,7 +104,6 @@ export function daZongShi(lv) {
   };
 }
 
-
 export function duanRen1(lv) {
   return {
     name: `断刃Ⅰ Lv${lv}`,
@@ -125,35 +128,55 @@ export function buMieJinShen(lv) {
 export function qingQuanYangZhi(lv) {
   return {
     name: `擎拳仰止 Lv${lv}`,
-    effect: [`受到拳掌武功攻击时或使用拳掌武功主动攻击时${lv * 20}概率敌方拳掌系数为0，受到拳掌武功的伤害减少${lv * 10}%`],
+    effect: [
+      `受到拳掌武功攻击时或使用拳掌武功主动攻击时${
+        lv * 20
+      }概率敌方拳掌系数为0，受到拳掌武功的伤害减少${lv * 10}%`,
+    ],
   };
 }
 
 export function zhiYinJiangHu(lv) {
   return {
     name: `指引江湖 Lv${lv}`,
-    effect: [`受到指腿武功攻击时或使用指腿武功主动攻击时${lv * 20}概率敌方指腿系数为0，受到指腿武功的伤害减少${lv * 10}%`],
+    effect: [
+      `受到指腿武功攻击时或使用指腿武功主动攻击时${
+        lv * 20
+      }概率敌方指腿系数为0，受到指腿武功的伤害减少${lv * 10}%`,
+    ],
   };
 }
 
 export function wanJianGuiZong(lv) {
   return {
     name: `万剑归宗 Lv${lv}`,
-    effect: [`受到剑法武功攻击时或使用剑法武功主动攻击时${lv * 20}概率敌方剑法系数为0，受到剑法武功的伤害减少${lv * 10}%`],
+    effect: [
+      `受到剑法武功攻击时或使用剑法武功主动攻击时${
+        lv * 20
+      }概率敌方剑法系数为0，受到剑法武功的伤害减少${lv * 10}%`,
+    ],
   };
 }
 
 export function danShanWeiRen(lv) {
   return {
     name: `刀山为韧 Lv${lv}`,
-    effect: [`受到刀法武功攻击时或使用刀法武功主动攻击时${lv * 20}概率敌方刀法系数为0，受到刀法武功的伤害减少${lv * 10}%`],
+    effect: [
+      `受到刀法武功攻击时或使用刀法武功主动攻击时${
+        lv * 20
+      }概率敌方刀法系数为0，受到刀法武功的伤害减少${lv * 10}%`,
+    ],
   };
 }
 
 export function qiMenBaiJie(lv) {
   return {
     name: `奇门百解 Lv${lv}`,
-    effect: [`受到奇门武功攻击时或使用奇门武功主动攻击时${lv * 20}概率敌方奇门系数为0，受到奇门武功的伤害减少${lv * 10}%`],
+    effect: [
+      `受到奇门武功攻击时或使用奇门武功主动攻击时${
+        lv * 20
+      }概率敌方奇门系数为0，受到奇门武功的伤害减少${lv * 10}%`,
+    ],
   };
 }
 

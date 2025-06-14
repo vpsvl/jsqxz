@@ -40,7 +40,7 @@ export function houFaXianZhi(lv) {
 export function jiFeng(lv) {
   return {
     name: `疾风 Lv${lv}`,
-    effect: [`增加集气速度${lv * 5}`],
+    effect: [`增加集气速度${lv * 2}`],
   };
 }
 
@@ -69,6 +69,13 @@ export function gangQiQiangHua(lv) {
   return {
     name: `强化罡气 Lv${lv}`,
     effect: [`增加气攻${lv * 25}%`],
+  };
+}
+
+export function xuQiShiXu(lv) {
+  return {
+    name: `时序蓄气 Lv${lv}`,
+    effect: [`时序增加蓄气值${lv * 2}点`],
   };
 }
 

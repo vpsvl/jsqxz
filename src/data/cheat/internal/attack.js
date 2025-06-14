@@ -250,6 +250,17 @@ export function longXiangZhiLi(lv) {
   };
 }
 
+export function yiQiSuNiSheng(lv) {
+  return {
+    name: `意气素霓生 Lv${lv}`,
+    effect: [
+      `攻击时${
+        lv * 15
+      }概率判定敌方生命百分比，高于75%/50%/25%，此次伤害必附加敌方最大生命值的5%/6%/7%的伤害`,
+    ],
+  };
+}
+
 export function tianLuo(lv) {
   return {
     name: `天罗 Lv${lv}`,
