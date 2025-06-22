@@ -1015,8 +1015,8 @@ export default {
         effect.shanBiZengQiang1(4),
         effect.liuXue1(4),
         effect.shuangJi(4),
+         effect.mangMu(4),
         effect.nuoYi(4),
-        effect.mangMu(4),
         effect.kuiHuaBaiJie(4),
       ],
       peculiar: [

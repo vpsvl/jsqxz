@@ -17,7 +17,7 @@ export default {
   path: '/cheat',
   component: () => import('@/views/layout/layout.vue'),
   name: 'cheat',
-  redirect: {name: 'cheatFist'},
+  redirect: {name: 'cheatInternal'},
   meta: {
     title: '秘籍',
   },

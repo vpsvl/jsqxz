@@ -26,13 +26,13 @@ export const equipmentMap = {
 };
 // 秘籍类型
 export const cheatMap = {
+  internal: '内功',
+  fly: '轻功',
   fist: '拳掌',
   finger: '指腿',
   sword: '剑法',
   knife: '刀法',
   special: '奇门',
-  internal: '内功',
-  fly: '轻功',
 };
 // 内力
 export const internalTypeMap = {
