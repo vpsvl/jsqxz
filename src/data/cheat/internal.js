@@ -292,10 +292,7 @@ export default {
       addition: '防御+2 轻功+1 拳掌+1 御剑+1',
       sect: '',
       internal: '0',
-      initiative: [
-        effect.huiNeiShiXu(2),
-        effect.puDuCiHang(2),
-      ],
+      initiative: [effect.huiNeiShiXu(2), effect.puDuCiHang(2)],
       peculiar: [],
     },
     {
@@ -1015,7 +1012,7 @@ export default {
         effect.shanBiZengQiang1(4),
         effect.liuXue1(4),
         effect.shuangJi(4),
-         effect.mangMu(4),
+        effect.mangMu(4),
         effect.nuoYi(4),
         effect.kuiHuaBaiJie(4),
       ],
