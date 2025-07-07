@@ -27,7 +27,7 @@ export function xueMo(lv) {
 export function fengHou(lv) {
   return {
     name: `封喉 Lv${lv}`,
-    effect: [`攻击时必单击，但是造成${lv * 50 + 100}%的伤害`],
+    effect: [`攻击时必单击，但是造成${lv * 25 + 100}%的伤害`],
   };
 }
 

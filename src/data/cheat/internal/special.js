@@ -290,7 +290,7 @@ export function qiGuanWuYue(lv) {
     name: `气贯五岳 Lv${lv}`,
     effect: [
       `攻击时${lv * 25}%概率无视目标内功附加的防御力，伤害在${lv * 5 + 100}%~${
-        lv * 20 + 100
+        lv * 15 + 100
       }%之间浮动`,
     ],
   };
