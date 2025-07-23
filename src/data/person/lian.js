@@ -29,7 +29,7 @@ export default {
       name: '水笙',
       talent: [
         {name: '铃剑侠女', effect: ['使用连城剑法高连击']},
-        {name: '似水柔情', effect: ['误伤队友时恢复其血量']},
+        {name: '水润珠华', effect: ['误伤队友时恢复其血量']},
       ],
       fortune: [],
     },

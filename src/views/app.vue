@@ -12,7 +12,7 @@ import HeaderNav from '@/views/layout/header.vue';
 import VLoading from '@/components/loading.vue';
 import {useRoute} from 'vue-router';
 // import pinyin from 'pinyin';
-// import data from '@/data/person/yuan';
+// import data from '@/data/person/talent/aa';
 
 const route = useRoute();
 const state = reactive({
@@ -25,28 +25,39 @@ onMounted(() => {
   const media = window.matchMedia('screen and (max-width: 600px)');
   state.lessWindow = media.matches;
   state.menuVisible = !media.matches;
-  media.onchange = e => {
+  media.onchange = (e) => {
     state.lessWindow = e.matches;
     state.menuVisible = !e.matches;
   };
 });
 
-watch(() => route.name, val => {
-  if (state.lessWindow) {
-    state.menuVisible = false;
+watch(
+  () => route.name,
+  (val) => {
+    if (state.lessWindow) {
+      state.menuVisible = false;
+    }
   }
-});
+);
 
 provide('state', state);
 
-// function toArr(str) {
-//   let arr = str
-//     .replace(/ |◎/g, '')
-//     .replace(/^\r|\n\r|\n$/g, '')
-//     .split('\n');
+// function toArr() {
+//   let arr = {};
+//   for (let key in data) {
+//     const [name, effect, exclusive, sect, level] = data[key];
+//     arr[key] = {
+//       id: Number(key),
+//       name,
+//       effect: [effect],
+//       fortune: [],
+//       level,
+//       exclusive,
+//     };
+//   }
 //   console.log(JSON.stringify(arr));
 // }
-// toArr(``);
+// toArr();
 
 // function toPinyin(arr) {
 //   const list = arr.map((item) => {
