@@ -3,7 +3,7 @@ export default {
   exclusive: '',
   list: [
     {
-      id: 'cangMingDaoFa',
+      id: 153,
       name: '沧溟刀法',
       cheat: '',
       level: 4,
@@ -24,12 +24,15 @@ export default {
         {
           name: '利刃寒锋',
           condition: '修罗刀法+阴风刀法+沧溟刀法',
-          effect: ['攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态', '冻结：无法集气和时序恢复状态'],
+          effect: [
+            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态',
+            '冻结：无法集气和时序恢复状态',
+          ],
         },
       ],
     },
     {
-      id: 'yinFengDao',
+      id: 174,
       name: '阴风刀',
       cheat: '',
       level: 3,
@@ -45,12 +48,15 @@ export default {
         {
           name: '利刃寒锋',
           condition: '修罗刀法+阴风刀法+沧溟刀法',
-          effect: ['攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态', '冻结：无法集气和时序恢复状态'],
+          effect: [
+            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态',
+            '冻结：无法集气和时序恢复状态',
+          ],
         },
       ],
     },
     {
-      id: 'xiuLuoDao',
+      id: 58,
       name: '修罗刀',
       cheat: '',
       level: 2,
@@ -66,12 +72,15 @@ export default {
         {
           name: '利刃寒锋',
           condition: '修罗刀法+阴风刀法+沧溟刀法',
-          effect: ['攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态', '冻结：无法集气和时序恢复状态'],
+          effect: [
+            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态',
+            '冻结：无法集气和时序恢复状态',
+          ],
         },
       ],
     },
     {
-      id: 'huoYanDaoFa',
+      id: 66,
       name: '火焰刀法',
       cheat: '',
       level: 4,
@@ -92,12 +101,15 @@ export default {
         {
           name: '举火燎原',
           condition: '金乌刀法+燃木刀法+火焰刀法',
-          effect: ['攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态', '引燃：每时序损失2%当前血量'],
+          effect: [
+            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态',
+            '引燃：每时序损失2%当前血量',
+          ],
         },
       ],
     },
     {
-      id: 'huJiaDaoFa',
+      id: 67,
       name: '胡家刀法',
       cheat: '',
       level: 4,
@@ -113,7 +125,10 @@ export default {
         {
           name: '刀剑归真',
           condition: '同时修炼胡家刀法+苗家剑法到极',
-          effect: ['用其中一种武功攻击时概率触发：真气攻+1500,爆怒归真必三连,攻击伤害+50%', '学有其中之一，则学习另一武功的兵器值需求-40'],
+          effect: [
+            '用其中一种武功攻击时概率触发：真气攻+1500,爆怒归真必三连,攻击伤害+50%',
+            '学有其中之一，则学习另一武功的兵器值需求-40',
+          ],
         },
         {
           name: '胡刀极意',
@@ -123,7 +138,7 @@ export default {
       ],
     },
     {
-      id: 'ranMuDaoFa',
+      id: 65,
       name: '燃木刀法',
       cheat: '',
       level: 3,
@@ -139,12 +154,15 @@ export default {
         {
           name: '举火燎原',
           condition: '金乌刀法+燃木刀法+火焰刀法',
-          effect: ['攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态', '引燃：每时序损失2%当前血量'],
+          effect: [
+            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态',
+            '引燃：每时序损失2%当前血量',
+          ],
         },
       ],
     },
     {
-      id: 'jinWuDaoFa',
+      id: 61,
       name: '金乌刀法',
       cheat: '',
       level: 2,
@@ -160,7 +178,10 @@ export default {
         {
           name: '举火燎原',
           condition: '金乌刀法+燃木刀法+火焰刀法',
-          effect: ['攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态', '引燃：每时序损失2%当前血量'],
+          effect: [
+            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态',
+            '引燃：每时序损失2%当前血量',
+          ],
         },
         {
           name: '金乌映雪',
@@ -170,7 +191,7 @@ export default {
       ],
     },
     {
-      id: 'tianDaoJiuWen',
+      id: 335,
       name: '天刀九问',
       cheat: '',
       level: 4,
@@ -182,11 +203,7 @@ export default {
       internal: '',
       addition: '攻击+3 防御+1 耍刀+6',
       sect: '',
-      peculiar: [
-        {
-          effect: ['根据天书数量提升威力杀气'],
-        },
-      ],
+      peculiar: [{effect: ['根据天书数量提升威力杀气']}],
     },
     {
       id: 'paoDingJieNiuDao',
@@ -202,20 +219,19 @@ export default {
       addition: '攻击+3 耍刀+5',
       sect: '',
       peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由柴刀十八路一脉相承'],
-        },
+        {name: '一脉相承', condition: '', effect: ['可由柴刀十八路一脉相承']},
         {
           name: '良庖岁更刀',
           condition: '使用庖丁解牛刀攻击',
-          effect: ['对生命值低于40%的目标概率附加目标最大生命值10%的伤害', '对生命值低于10%的目标概率一击必杀'],
+          effect: [
+            '对生命值低于40%的目标概率附加目标最大生命值10%的伤害',
+            '对生命值低于10%的目标概率一击必杀',
+          ],
         },
       ],
     },
     {
-      id: 'jingYueBaFa',
+      id: 181,
       name: '井月八法',
       cheat: '',
       level: 3,
@@ -230,7 +246,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'fuQiDaoFa',
+      id: 62,
       name: '夫妻刀法',
       cheat: '',
       level: 3,
@@ -243,9 +259,7 @@ export default {
       addition: '攻击+1 防御+1 耍刀+4',
       sect: '',
       peculiar: [
-        {
-          effect: ['连击时伤害、气攻不会减少'],
-        },
+        {effect: ['连击时伤害、气攻不会减少']},
         {
           name: '天衣无缝',
           condition: '鸳鸯刀法+夫妻刀法',
@@ -254,7 +268,7 @@ export default {
       ],
     },
     {
-      id: 'tuLongDaoFa',
+      id: 382,
       name: '屠龙刀法',
       cheat: '',
       level: 3,
@@ -266,14 +280,10 @@ export default {
       internal: '',
       addition: '攻击+2 耍刀+4',
       sect: '',
-      peculiar: [
-        {
-          effect: ['击杀小龙女不会触发复活'],
-        },
-      ],
+      peculiar: [{effect: ['击杀小龙女不会触发复活']}],
     },
     {
-      id: 'xieDaoDaFa',
+      id: 63,
       name: '血刀大法',
       cheat: '血刀经',
       level: 3,
@@ -285,14 +295,10 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 耍刀+2',
       sect: '',
-      peculiar: [
-        {
-          effect: ['修炼后生命上限降低200'],
-        },
-      ],
+      peculiar: [{effect: ['修炼后生命上限降低200']}],
     },
     {
-      id: 'baiShengDaoFa',
+      id: 141,
       name: '百胜刀法',
       cheat: '',
       level: 3,
@@ -307,7 +313,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'fanLiangYiDaoFa',
+      id: 60,
       name: '反两仪刀法',
       cheat: '',
       level: 3,
@@ -323,12 +329,15 @@ export default {
         {
           name: '两仪守护',
           condition: '同时修炼两仪剑法+反两仪刀法到极',
-          effect: ['两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻', '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻'],
+          effect: [
+            '两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻',
+            '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻',
+          ],
         },
       ],
     },
     {
-      id: 'xuanXuDaoFa',
+      id: 64,
       name: '玄虚刀法',
       cheat: '',
       level: 3,
@@ -349,12 +358,15 @@ export default {
         {
           name: '洞虚玄门',
           condition: '神门十三剑+玄虚刀法',
-          effect: ['玄虚刀法必封穴，神门十三剑必冰封灼烧', '受到攻击30%概率使用双倍内力抵消一半伤害'],
+          effect: [
+            '玄虚刀法必封穴，神门十三剑必冰封灼烧',
+            '受到攻击30%概率使用双倍内力抵消一半伤害',
+          ],
         },
       ],
     },
     {
-      id: 'baGuaDaoFa',
+      id: 231,
       name: '八卦刀法',
       cheat: '',
       level: 3,
@@ -369,7 +381,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'jiangMoDaoFa',
+      id: 267,
       name: '降魔刀法',
       cheat: '',
       level: 2,
@@ -384,7 +396,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yuanYangDaoFa',
+      id: 54,
       name: '鸳鸯刀法',
       cheat: '',
       level: 2,
@@ -405,7 +417,7 @@ export default {
       ],
     },
     {
-      id: 'guiTouDaoFa',
+      id: 52,
       name: '鬼头刀法',
       cheat: '',
       level: 2,
@@ -420,7 +432,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'kuangFengDaoFa',
+      id: 55,
       name: '狂风刀法',
       cheat: '',
       level: 2,
@@ -435,7 +447,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'wuHuDuanMenDao',
+      id: 59,
       name: '五虎断门刀',
       cheat: '',
       level: 2,
@@ -462,7 +474,7 @@ export default {
       ],
     },
     {
-      id: 'qiMenSanCaiDao',
+      id: 56,
       name: '奇门三才刀',
       cheat: '',
       level: 1,
@@ -477,7 +489,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'ciBeiDaoFa',
+      id: 57,
       name: '慈悲刀法',
       cheat: '',
       level: 1,
@@ -498,7 +510,7 @@ export default {
       ],
     },
     {
-      id: 'nanShanDaoFa',
+      id: 53,
       name: '南山刀法',
       cheat: '',
       level: 1,
@@ -513,7 +525,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'wanJieDaoFa',
+      id: 51,
       name: '万劫刀法',
       cheat: '',
       level: 1,
@@ -528,7 +540,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'chaiDaoShiBaLu',
+      id: 50,
       name: '柴刀十八路',
       cheat: '',
       level: 1,
@@ -540,13 +552,7 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 耍刀+2',
       sect: '',
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为庖丁解牛刀'],
-        },
-      ],
+      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为庖丁解牛刀']}],
     },
   ],
 };

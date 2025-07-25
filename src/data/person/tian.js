@@ -245,7 +245,7 @@ export default {
       id: 'yueLaoSan',
       name: '岳老三',
       talent: [
-        {name: '南海鳄神 ', effect: ['暴怒时大剪刀附带撕裂效果']},
+        {name: '南海鳄神', effect: ['暴怒时大剪刀附带撕裂效果']},
         {name: '四大恶人', effect: ['暴击伤害提升50%']},
       ],
       fortune: [],

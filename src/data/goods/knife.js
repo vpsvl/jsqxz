@@ -9,7 +9,7 @@ export default {
       effect: [],
     },
     {
-      name: '金刀 ',
+      name: '金刀',
       get: '洛阳战胜王元霸',
       condition: '耍刀30',
       addition: '攻击+10',

@@ -3,8 +3,8 @@ export default {
   exclusive: '',
   list: [
     {
-      id: 'jiuYinBaiGuZhao ',
-      name: '九阴白骨爪 ',
+      id: 11,
+      name: '九阴白骨爪',
       cheat: '',
       level: 4,
       get: '1.射雕邪收梅超风 2.倚天邪周芷若洗九阴白骨爪后获得',
@@ -19,12 +19,15 @@ export default {
         {
           name: '九阴神爪',
           condition: '九阴神功+九阴白骨爪，主运九阴神功',
-          effect: ['主运九阴神功，使用九阴白骨爪必触发九阴神爪极意', '九阴神爪极意：必连击，增加1500点伤害杀气，范围为7*7'],
+          effect: [
+            '主运九阴神功，使用九阴白骨爪必触发九阴神爪极意',
+            '九阴神爪极意：必连击，增加1500点伤害杀气，范围为7*7',
+          ],
         },
       ],
     },
     {
-      id: 'kuiHuaDianXueShou',
+      id: 226,
       name: '葵花点穴手',
       cheat: '',
       level: 4,
@@ -36,16 +39,10 @@ export default {
       internal: '0',
       addition: '攻击+1 轻功+2 指法+4',
       sect: '',
-      peculiar: [
-        {
-          name: '',
-          condition: '',
-          effect: ['攻击必定封穴，被攻击减免10点封穴'],
-        },
-      ],
+      peculiar: [{name: '', condition: '', effect: ['攻击必定封穴，被攻击减免10点封穴']}],
     },
     {
-      id: 'lianHuanFuShiDu',
+      id: 295,
       name: '连环腐尸毒',
       cheat: '',
       level: 3,
@@ -66,12 +63,15 @@ export default {
         {
           name: '毒布武林',
           condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: ['五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500', '行动前对全场敌人用毒，并概率叠加负面状态'],
+          effect: [
+            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
+            '行动前对全场敌人用毒，并概率叠加负面状态',
+          ],
         },
       ],
     },
     {
-      id: 'huanYinZhi',
+      id: 19,
       name: '幻阴指',
       cheat: '',
       level: 3,
@@ -86,7 +86,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'xuanTianZhi',
+      id: 130,
       name: '玄天指',
       cheat: '',
       level: 2,
@@ -107,7 +107,7 @@ export default {
       ],
     },
     {
-      id: 'duoPoZhi',
+      id: 123,
       name: '夺魄指',
       cheat: '',
       level: 1,
@@ -122,7 +122,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'daLiJinGangZhi',
+      id: 135,
       name: '大力金刚指',
       cheat: '',
       level: 4,
@@ -137,7 +137,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yiYangZhi',
+      id: 17,
       name: '一阳指',
       cheat: '',
       level: 3,
@@ -150,20 +150,12 @@ export default {
       addition: '攻击+1 防御+1 指法+4',
       sect: '',
       peculiar: [
-        {
-          name: '',
-          condition: '',
-          effect: ['六脉神剑招式概率提升至60%'],
-        },
-        {
-          name: '一指破蟾',
-          condition: '使用一阳指攻击',
-          effect: ['清除目标身上50%的蛤蟆功蓄力值'],
-        },
+        {name: '', condition: '', effect: ['六脉神剑招式概率提升至60%']},
+        {name: '一指破蟾', condition: '使用一阳指攻击', effect: ['清除目标身上50%的蛤蟆功蓄力值']},
       ],
     },
     {
-      id: 'longZhaoShou',
+      id: 20,
       name: '龙爪手',
       cheat: '',
       level: 3,
@@ -175,16 +167,10 @@ export default {
       internal: '1',
       addition: '攻击+1 指法+4',
       sect: '',
-      peculiar: [
-        {
-          name: '批亢捣虚',
-          condition: '',
-          effect: ['气功增加800，必定流血'],
-        },
-      ],
+      peculiar: [{name: '批亢捣虚', condition: '', effect: ['气功增加800，必定流血']}],
     },
     {
-      id: 'liuMaiShenJian',
+      id: 49,
       name: '六脉神剑',
       cheat: '',
       level: 4,
@@ -215,7 +201,7 @@ export default {
       ],
     },
     {
-      id: 'canHeZhi',
+      id: 138,
       name: '参合指',
       cheat: '',
       level: 4,
@@ -231,7 +217,11 @@ export default {
         {
           name: '辰宿列张',
           condition: '学会参合剑气或参合指',
-          effect: ['攻击时会给敌人添加“参合”状态：', '攻击时伤害降低10%~20%', '被攻击时受到的伤害增加15%~30%'],
+          effect: [
+            '攻击时会给敌人添加“参合”状态：',
+            '攻击时伤害降低10%~20%',
+            '被攻击时受到的伤害增加15%~30%',
+          ],
         },
       ],
     },
@@ -257,7 +247,7 @@ export default {
       ],
     },
     {
-      id: 'wuXiangJieZhi',
+      id: 136,
       name: '无相劫指',
       cheat: '',
       level: 4,
@@ -270,11 +260,7 @@ export default {
       addition: '攻击+1 轻功+1 指法+4',
       sect: '',
       peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由天竺佛指一脉相承'],
-        },
+        {name: '一脉相承', condition: '', effect: ['可由天竺佛指一脉相承']},
         {
           name: '除却四相',
           condition: '同时修炼多罗叶指+大智无定指+无相劫指+拈花指到极',
@@ -289,7 +275,7 @@ export default {
       ],
     },
     {
-      id: 'tianShanZheMeiShou',
+      id: 14,
       name: '天山折梅手',
       cheat: '',
       level: 4,
@@ -314,7 +300,7 @@ export default {
       ],
     },
     {
-      id: 'yueWangSanShou',
+      id: 198,
       name: '岳王散手',
       cheat: '',
       level: 3,
@@ -338,7 +324,7 @@ export default {
       ],
     },
     {
-      id: 'qinLongShou',
+      id: 187,
       name: '擒龙手',
       cheat: '',
       level: 3,
@@ -363,7 +349,7 @@ export default {
       ],
     },
     {
-      id: 'nianHuaZhi',
+      id: 137,
       name: '拈花指',
       cheat: '',
       level: 3,
@@ -390,7 +376,7 @@ export default {
       ],
     },
     {
-      id: 'danZhiShenTong',
+      id: 18,
       name: '弹指神通',
       cheat: '',
       level: 3,
@@ -416,12 +402,15 @@ export default {
         {
           name: '无影神石',
           condition: '学会桃花绝技，使用弹指神通攻击发动',
-          effect: ['追加1000气攻，追加高概率流血，提高60%无视反击反伤', '黄药师、谢烟客发动时必定暴击'],
+          effect: [
+            '追加1000气攻，追加高概率流血，提高60%无视反击反伤',
+            '黄药师、谢烟客发动时必定暴击',
+          ],
         },
       ],
     },
     {
-      id: 'hanXiuFuXue',
+      id: 201,
       name: '寒袖拂穴',
       cheat: '',
       level: 3,
@@ -436,7 +425,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'jinSheChanSiShou',
+      id: 229,
       name: '金蛇缠丝手',
       cheat: '',
       level: 3,
@@ -451,7 +440,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'daZhiWuDingZhi',
+      id: 133,
       name: '大智无定指',
       cheat: '',
       level: 3,
@@ -478,7 +467,7 @@ export default {
       ],
     },
     {
-      id: 'ningXieShenZhao',
+      id: 134,
       name: '凝血神爪',
       cheat: '',
       level: 3,
@@ -493,7 +482,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'huZhaoJueHuShou',
+      id: 244,
       name: '虎爪绝户手',
       cheat: '',
       level: 3,
@@ -533,7 +522,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'duoLuoYeZhi',
+      id: 132,
       name: '多罗叶指',
       cheat: '',
       level: 2,
@@ -560,7 +549,7 @@ export default {
       ],
     },
     {
-      id: 'heiFengZhi',
+      id: 131,
       name: '黑风指',
       cheat: '',
       level: 2,
@@ -575,7 +564,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yingZhaoGong',
+      id: 4,
       name: '鹰爪功',
       cheat: '',
       level: 2,
@@ -590,7 +579,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yiZhiChan',
+      id: 128,
       name: '一指禅',
       cheat: '',
       level: 2,
@@ -620,8 +609,8 @@ export default {
       peculiar: [],
     },
     {
-      id: 'touGuDaXue ',
-      name: '透骨打穴 ',
+      id: 127,
+      name: '透骨打穴',
       cheat: '',
       level: 2,
       get: '射雕邪北京不与欧阳克过招获得',
@@ -650,7 +639,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'quFanNaoZhi',
+      id: 124,
       name: '去烦恼指',
       cheat: '',
       level: 2,
@@ -665,7 +654,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'xiuZhongZhi',
+      id: 125,
       name: '袖中指',
       cheat: '',
       level: 2,
@@ -680,7 +669,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'tianZhuFoZhi',
+      id: 122,
       name: '天竺佛指',
       cheat: '',
       level: 1,
@@ -692,13 +681,7 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 指法+2',
       sect: '',
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为无相劫指'],
-        },
-      ],
+      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为无相劫指']}],
     },
   ],
 };

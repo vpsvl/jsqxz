@@ -3,7 +3,7 @@ export default {
   exclusive: '',
   list: [
     {
-      id: 'biXieJianFa',
+      id: 48,
       name: '辟邪剑法',
       cheat: '',
       level: 4,
@@ -28,7 +28,7 @@ export default {
       ],
     },
     {
-      id: 'yuNvSuXinJian',
+      id: 139,
       name: '玉女素心剑',
       cheat: '',
       level: 4,
@@ -40,16 +40,10 @@ export default {
       internal: '0',
       addition: '攻击+2 轻功+2 御剑+4',
       sect: '',
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由玉女剑法一脉相承'],
-        },
-      ],
+      peculiar: [{name: '一脉相承', condition: '', effect: ['可由玉女剑法一脉相承']}],
     },
     {
-      id: 'rouYunJianShu',
+      id: 36,
       name: '柔云剑术',
       cheat: '',
       level: 2,
@@ -70,7 +64,7 @@ export default {
       ],
     },
     {
-      id: 'sanFenJianFa',
+      id: 29,
       name: '三分剑法',
       cheat: '',
       level: 2,
@@ -91,7 +85,7 @@ export default {
       ],
     },
     {
-      id: 'raoZhiRouJian',
+      id: 245,
       name: '绕指柔剑',
       cheat: '',
       level: 2,
@@ -106,7 +100,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'xueShanJianFa',
+      id: 35,
       name: '雪山剑法',
       cheat: '',
       level: 1,
@@ -127,7 +121,7 @@ export default {
       ],
     },
     {
-      id: 'xuanTieJianFa',
+      id: 45,
       name: '玄铁剑法',
       cheat: '',
       level: 4,
@@ -143,27 +137,35 @@ export default {
         {
           name: '玄铁极意',
           condition: '限定主角、杨过和神雕',
-          effect: ['玄铁极意：攻击范围变为面攻，气攻1800', '使用玄铁剑法攻击不出招式时概率发动，暴怒时必定发动'],
+          effect: [
+            '玄铁极意：攻击范围变为面攻，气攻1800',
+            '使用玄铁剑法攻击不出招式时概率发动，暴怒时必定发动',
+          ],
         },
-        {
-          name: '重剑真传.浪如山涌剑如虹',
-          condition: '暴怒',
-          effect: ['暴怒触发大范围伤害'],
-        },
+        {name: '重剑真传.浪如山涌剑如虹', condition: '暴怒', effect: ['暴怒触发大范围伤害']},
         {
           name: '破尽天下',
           condition: '需装备玄铁剑才能触发',
-          effect: ['重剑无锋.破尽天下：', '无视一切必定破气防，且追加1000气攻', '暴击概率为40+装备等级*10'],
+          effect: [
+            '重剑无锋.破尽天下：',
+            '无视一切必定破气防，且追加1000气攻',
+            '暴击概率为40+装备等级*10',
+          ],
         },
         {
           name: '剑魔再临',
-          condition: '包里有【玄铁剑法】或【独孤九剑】，且主角御剑≥320时，华山后山对话独孤求败，战胜可选择习得九剑真传或剑魔再临',
-          effect: ['剑法攻击时50%概率发动两种特效之一：', '天极剑渊：破防50%，', '破尽天下：无视气防，气攻+800'],
+          condition:
+            '包里有【玄铁剑法】或【独孤九剑】，且主角御剑≥320时，华山后山对话独孤求败，战胜可选择习得九剑真传或剑魔再临',
+          effect: [
+            '剑法攻击时50%概率发动两种特效之一：',
+            '天极剑渊：破防50%，',
+            '破尽天下：无视气防，气攻+800',
+          ],
         },
       ],
     },
     {
-      id: 'tieJianJue',
+      id: 143,
       name: '铁剑诀',
       cheat: '',
       level: 3,
@@ -173,7 +175,7 @@ export default {
       range: '« 8格',
       condition: '御剑100',
       internal: '1',
-      addition: '攻击+2 防御+2 御剑+4 ',
+      addition: '攻击+2 防御+2 御剑+4',
       sect: '',
       peculiar: [
         {
@@ -184,8 +186,8 @@ export default {
       ],
     },
     {
-      id: 'zhouGongJianFa ',
-      name: '周公剑法 ',
+      id: 271,
+      name: '周公剑法',
       cheat: '',
       level: 3,
       get: '灵鹫宫战卓不凡后获得',
@@ -196,15 +198,10 @@ export default {
       internal: '1',
       addition: '轻功+1 防御+1 御剑+4',
       sect: '',
-      peculiar: [
-        {
-          name: '一脉相承',
-          effect: ['可由一字电剑一脉相承'],
-        },
-      ],
+      peculiar: [{name: '一脉相承', effect: ['可由一字电剑一脉相承']}],
     },
     {
-      id: 'yiZiDianJian',
+      id: 321,
       name: '一字电剑',
       cheat: '',
       level: 1,
@@ -216,16 +213,10 @@ export default {
       internal: '1',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: '',
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为周公剑法'],
-        },
-      ],
+      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为周公剑法']}],
     },
     {
-      id: 'duGuJiuJian',
+      id: 47,
       name: '独孤九剑',
       cheat: '',
       level: 4,
@@ -240,7 +231,8 @@ export default {
       peculiar: [
         {
           name: '九剑真传',
-          condition: '包里有【玄铁剑法】或【独孤九剑】，且主角御剑≥320时，华山后山对话独孤求败，战胜可选择习得九剑真传或剑魔再临',
+          condition:
+            '包里有【玄铁剑法】或【独孤九剑】，且主角御剑≥320时，华山后山对话独孤求败，战胜可选择习得九剑真传或剑魔再临',
           effect: [
             '独孤九剑攻击时50%概率发动四种特效',
             '荡剑式：集气+200',
@@ -263,7 +255,7 @@ export default {
       ],
     },
     {
-      id: 'taiJiJianFa',
+      id: 46,
       name: '太极剑法',
       cheat: '',
       level: 4,
@@ -314,7 +306,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'canHeJianQi',
+      id: 265,
       name: '参合剑气',
       cheat: '',
       level: 4,
@@ -327,15 +319,15 @@ export default {
       addition: '攻击+2 轻功+1 防御+1 御剑+5',
       sect: '',
       peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由北斗剑法一脉相承'],
-        },
+        {name: '一脉相承', condition: '', effect: ['可由北斗剑法一脉相承']},
         {
           name: '辰宿列张',
           condition: '学会参合剑气或参合指',
-          effect: ['攻击时会给敌人添加“参合”状态：', '攻击时伤害降低10%~20%', '被攻击时受到的伤害增加15%~30%'],
+          effect: [
+            '攻击时会给敌人添加“参合”状态：',
+            '攻击时伤害降低10%~20%',
+            '被攻击时受到的伤害增加15%~30%',
+          ],
         },
       ],
     },
@@ -355,7 +347,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yueNvJianFa',
+      id: 156,
       name: '越女剑法',
       cheat: '',
       level: 4,
@@ -370,7 +362,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yuanGongJianFa',
+      id: 188,
       name: '猿公剑法',
       cheat: '',
       level: 3,
@@ -380,12 +372,12 @@ export default {
       range: '« 8格',
       condition: '御剑140',
       internal: '',
-      addition: '攻击+1 轻功+1 御剑+4 ',
+      addition: '攻击+1 轻功+1 御剑+4',
       sect: '',
       peculiar: [],
     },
     {
-      id: 'miaoJiaJianFa',
+      id: 44,
       name: '苗家剑法',
       cheat: '',
       level: 3,
@@ -401,12 +393,15 @@ export default {
         {
           name: '刀剑归真',
           condition: '同时修炼胡家刀法+苗家剑法到极',
-          effect: ['用其中一种武功攻击时概率触发：真气攻+1500，爆怒归真必三连,攻击伤害+50%', '学有其中之一，则学习另一武功的兵器值需求-40'],
+          effect: [
+            '用其中一种武功攻击时概率触发：真气攻+1500，爆怒归真必三连,攻击伤害+50%',
+            '学有其中之一，则学习另一武功的兵器值需求-40',
+          ],
         },
       ],
     },
     {
-      id: 'shenMenShiSanJian',
+      id: 236,
       name: '神门十三剑',
       cheat: '神门剑谱',
       level: 3,
@@ -427,7 +422,10 @@ export default {
         {
           name: '洞虚玄门',
           condition: '神门十三剑+玄虚刀法',
-          effect: ['玄虚刀法必封穴，神门十三剑必冰封灼烧', '受到攻击30%概率使用双倍内力抵消一半伤害'],
+          effect: [
+            '玄虚刀法必封穴，神门十三剑必冰封灼烧',
+            '受到攻击30%概率使用双倍内力抵消一半伤害',
+          ],
         },
       ],
     },
@@ -447,7 +445,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'daMoJianFa',
+      id: 140,
       name: '达摩剑法',
       cheat: '',
       level: 3,
@@ -462,7 +460,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'lianChengJianFa',
+      id: 114,
       name: '连城剑法',
       cheat: '',
       level: 3,
@@ -483,7 +481,7 @@ export default {
       ],
     },
     {
-      id: 'liangYiJianFa',
+      id: 37,
       name: '两仪剑法',
       cheat: '',
       level: 3,
@@ -499,12 +497,15 @@ export default {
         {
           name: '两仪守护',
           condition: '同时修炼两仪剑法+反两仪刀法到极',
-          effect: ['两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻', '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻'],
+          effect: [
+            '两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻',
+            '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻',
+          ],
         },
       ],
     },
     {
-      id: 'yuXiaoJianFa',
+      id: 38,
       name: '玉箫剑法',
       cheat: '',
       level: 3,
@@ -530,7 +531,7 @@ export default {
       ],
     },
     {
-      id: 'xuanNvJianFa',
+      id: 161,
       name: '玄女剑法',
       cheat: '',
       level: 2,
@@ -542,16 +543,10 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 轻功+1 御剑+4',
       sect: '',
-      peculiar: [
-        {
-          name: '女性专属',
-          condition: '',
-          effect: ['攻击&气攻提升20%'],
-        },
-      ],
+      peculiar: [{name: '女性专属', condition: '', effect: ['攻击&气攻提升20%']}],
     },
     {
-      id: 'jinSheJianFa',
+      id: 40,
       name: '金蛇剑法',
       cheat: '',
       level: 2,
@@ -566,7 +561,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yuNvJianFa',
+      id: 42,
       name: '玉女剑法',
       cheat: '',
       level: 2,
@@ -579,11 +574,7 @@ export default {
       addition: '攻击+1 轻功+1 御剑+3',
       sect: '',
       peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为玉女素心剑'],
-        },
+        {name: '一脉相承', condition: '', effect: ['可洗为玉女素心剑']},
         {
           name: '双剑合璧',
           condition: '全真剑法+玉女剑法',
@@ -598,7 +589,7 @@ export default {
       ],
     },
     {
-      id: 'wanYueZhaoZong',
+      id: 33,
       name: '万岳朝宗',
       cheat: '',
       level: 2,
@@ -616,13 +607,13 @@ export default {
           condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
           effect: [
             '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动 ',
+            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
           ],
         },
       ],
     },
     {
-      id: 'quanZhenJianFa',
+      id: 39,
       name: '全真剑法',
       cheat: '七星剑谱',
       level: 2,
@@ -649,7 +640,7 @@ export default {
       ],
     },
     {
-      id: 'ningShiYiJian',
+      id: 302,
       name: '宁氏一剑',
       cheat: '',
       level: 2,
@@ -662,15 +653,11 @@ export default {
       addition: '攻击+1 御剑+3',
       sect: '',
       peculiar: [
-        {
-          name: '',
-          condition: '',
-          effect: ['攻击时50%概率给敌人添加虚弱状态，暴怒必触发'],
-        },
+        {name: '', condition: '', effect: ['攻击时50%概率给敌人添加虚弱状态，暴怒必触发']},
       ],
     },
     {
-      id: 'taiYueSanQingFeng',
+      id: 34,
       name: '太岳三青峰',
       cheat: '',
       level: 2,
@@ -688,13 +675,13 @@ export default {
           condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
           effect: [
             '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动 ',
+            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
           ],
         },
       ],
     },
     {
-      id: 'yunWuShiSanShi',
+      id: 32,
       name: '云雾十三式',
       cheat: '',
       level: 2,
@@ -712,13 +699,13 @@ export default {
           condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
           effect: [
             '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动 ',
+            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
           ],
         },
       ],
     },
     {
-      id: 'taiShanShiBaPan',
+      id: 31,
       name: '泰山十八盘',
       cheat: '',
       level: 2,
@@ -736,13 +723,13 @@ export default {
           condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
           effect: [
             '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动 ',
+            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
           ],
         },
       ],
     },
     {
-      id: 'wanHuaJianFa',
+      id: 30,
       name: '万花剑法',
       cheat: '',
       level: 2,
@@ -760,13 +747,13 @@ export default {
           condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
           effect: [
             '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动 ',
+            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
           ],
         },
       ],
     },
     {
-      id: 'beiDouJianFa',
+      id: 266,
       name: '北斗剑法',
       cheat: '',
       level: 1,
@@ -778,16 +765,10 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: '',
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为参合剑气'],
-        },
-      ],
+      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为参合剑气']}],
     },
     {
-      id: 'songFengJianFa',
+      id: 27,
       name: '松风剑法',
       cheat: '',
       level: 1,
@@ -802,7 +783,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'leiZhenJianFa',
+      id: 28,
       name: '雷震剑法',
       cheat: '',
       level: 1,

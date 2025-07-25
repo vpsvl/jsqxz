@@ -3,7 +3,7 @@ export default {
   exclusive: '',
   list: [
     {
-      id: 'xuanMingShenZhang',
+      id: 21,
       name: '玄冥神掌',
       cheat: '',
       level: 4,
@@ -33,7 +33,7 @@ export default {
       ],
     },
     {
-      id: 'qiShangQuan',
+      id: 23,
       name: '七伤拳',
       cheat: '',
       level: 4,
@@ -54,7 +54,7 @@ export default {
       ],
     },
     {
-      id: 'bingCanDuZhang',
+      id: 120,
       name: '冰蚕毒掌',
       cheat: '',
       level: 3,
@@ -70,12 +70,15 @@ export default {
         {
           name: '毒布武林',
           condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: ['五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500', '行动前对全场敌人用毒，并概率叠加负面状态'],
+          effect: [
+            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
+            '行动前对全场敌人用毒，并概率叠加负面状态',
+          ],
         },
       ],
     },
     {
-      id: 'hanBingMianZhang',
+      id: 5,
       name: '寒冰绵掌',
       cheat: '',
       level: 3,
@@ -100,7 +103,7 @@ export default {
       ],
     },
     {
-      id: 'huaGuMianZhang',
+      id: 118,
       name: '化骨绵掌',
       cheat: '',
       level: 3,
@@ -125,7 +128,7 @@ export default {
       ],
     },
     {
-      id: 'cuiXinZhang',
+      id: 328,
       name: '摧心掌',
       cheat: '',
       level: 3,
@@ -137,11 +140,7 @@ export default {
       addition: '攻击+2 拳掌+2 带毒+4',
       internal: '0',
       sect: '',
-      peculiar: [
-        {
-          effect: ['学会九阴神功后威力翻倍'],
-        },
-      ],
+      peculiar: [{effect: ['学会九阴神功后威力翻倍']}],
     },
     {
       id: 'lingSheQuan',
@@ -169,7 +168,7 @@ export default {
       ],
     },
     {
-      id: 'qianZhuWanDuShou',
+      id: 334,
       name: '千蛛万毒手',
       cheat: '',
       level: 2,
@@ -185,12 +184,15 @@ export default {
         {
           name: '毒布武林',
           condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: ['五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500', '行动前对全场敌人用毒，并概率叠加负面状态'],
+          effect: [
+            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
+            '行动前对全场敌人用毒，并概率叠加负面状态',
+          ],
         },
       ],
     },
     {
-      id: 'wuDuShenZhang',
+      id: 3,
       name: '五毒神掌',
       cheat: '五毒秘传',
       level: 1,
@@ -206,12 +208,15 @@ export default {
         {
           name: '毒布武林',
           condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: ['五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500', '行动前对全场敌人用毒，并概率叠加负面状态'],
+          effect: [
+            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
+            '行动前对全场敌人用毒，并概率叠加负面状态',
+          ],
         },
       ],
     },
     {
-      id: 'xiangLongShiBaZhang',
+      id: 26,
       name: '降龙十八掌',
       cheat: '',
       level: 4,
@@ -227,7 +232,10 @@ export default {
         {
           name: '盖世无双',
           condition: '同时修炼降龙十八掌+打狗棒法到极',
-          effect: ['被攻击时50%概率触发，完全免疫杀气和内伤', '*已经学有其中之一，则学习另一个的系数需求-40点'],
+          effect: [
+            '被攻击时50%概率触发，完全免疫杀气和内伤',
+            '*已经学有其中之一，则学习另一个的系数需求-40点',
+          ],
         },
         {
           name: '降龙极意',
@@ -258,12 +266,17 @@ export default {
         {
           name: '般若金刚',
           condition: '大力金刚掌+般若掌+龙象般若功',
-          effect: ['破防目标30%', '金刚掌：必暴击', '般若掌：变为点攻，威力双倍', '十龙十象：主运龙象般若功，概率击晕目标'],
+          effect: [
+            '破防目标30%',
+            '金刚掌：必暴击',
+            '般若掌：变为点攻，威力双倍',
+            '十龙十象：主运龙象般若功，概率击晕目标',
+          ],
         },
       ],
     },
     {
-      id: 'benLeiShou',
+      id: 191,
       name: '奔雷手',
       cheat: '',
       level: 3,
@@ -276,11 +289,7 @@ export default {
       internal: '1',
       sect: '',
       peculiar: [
-        {
-          name: '雷动九天',
-          condition: '暴怒攻击',
-          effect: ['暴怒攻击时，有50%概率击晕目标1回合'],
-        },
+        {name: '雷动九天', condition: '暴怒攻击', effect: ['暴怒攻击时，有50%概率击晕目标1回合']},
       ],
     },
     {
@@ -297,11 +306,7 @@ export default {
       internal: '1',
       sect: '',
       peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由罗汉拳一脉相承'],
-        },
+        {name: '一脉相承', condition: '', effect: ['可由罗汉拳一脉相承']},
         {
           name: '达摩掌',
           condition: '易筋神功+大金刚掌',
@@ -310,12 +315,17 @@ export default {
         {
           name: '般若金刚',
           condition: '大力金刚掌+般若掌+龙象般若功',
-          effect: ['破防目标30%', '金刚掌：必暴击', '般若掌：变为点攻，威力双倍', '十龙十象：主运龙象般若功，概率击晕目标'],
+          effect: [
+            '破防目标30%',
+            '金刚掌：必暴击',
+            '般若掌：变为点攻，威力双倍',
+            '十龙十象：主运龙象般若功，概率击晕目标',
+          ],
         },
       ],
     },
     {
-      id: 'tieZhang',
+      id: 13,
       name: '铁掌',
       cheat: '',
       level: 2,
@@ -341,7 +351,7 @@ export default {
       ],
     },
     {
-      id: 'daCiDaBeiShou',
+      id: 346,
       name: '大慈大悲手',
       cheat: '',
       level: 2,
@@ -362,7 +372,7 @@ export default {
       ],
     },
     {
-      id: 'anRanXiaoHunZhang',
+      id: 25,
       name: '黯然销魂掌',
       cheat: '',
       level: 4,
@@ -377,13 +387,14 @@ export default {
       peculiar: [
         {
           name: '黯然极意',
-          condition: '血量低于70%或者内伤大于30时，概率触发（血量越低，内伤越高，概率越高），满足条件时暴怒必定触发',
+          condition:
+            '血量低于70%或者内伤大于30时，概率触发（血量越低，内伤越高，概率越高），满足条件时暴怒必定触发',
           effect: ['攻击范围变成面攻，无误伤，必破气防'],
         },
       ],
     },
     {
-      id: 'xuMiShanShenZhang',
+      id: 24,
       name: '须弥山神掌',
       cheat: '',
       level: 4,
@@ -399,12 +410,15 @@ export default {
         {
           name: '如来神掌',
           condition: '攻击时概率触发',
-          effect: ['对生命值低于50%的目标概率附加目标最大生命值8%的伤害', '对生命值低于10%的目标概率直接斩杀'],
+          effect: [
+            '对生命值低于50%的目标概率附加目标最大生命值8%的伤害',
+            '对生命值低于10%的目标概率直接斩杀',
+          ],
         },
       ],
     },
     {
-      id: 'taiJiQuan',
+      id: 16,
       name: '太极拳',
       cheat: '',
       level: 4,
@@ -420,7 +434,11 @@ export default {
         {
           name: '借力打力',
           condition: '主运太极神功，根据太极神功蓄力值提升威力与气攻，使用太极拳攻击后恢复正常',
-          effect: ['蓄力值300～600，攻击范围+2，蓄力', '蓄力值超过600，攻击范围变为可移动面攻，且必定连击', '威力和气攻最多可以提升1080点'],
+          effect: [
+            '蓄力值300～600，攻击范围+2，蓄力',
+            '蓄力值超过600，攻击范围变为可移动面攻，且必定连击',
+            '威力和气攻最多可以提升1080点',
+          ],
         },
         {
           name: '开太极',
@@ -440,7 +458,7 @@ export default {
       ],
     },
     {
-      id: 'tianShanLiuYangZhang',
+      id: 8,
       name: '天山六阳掌',
       cheat: '',
       level: 4,
@@ -455,7 +473,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'baiHongZhangLi',
+      id: 202,
       name: '白虹掌力',
       cheat: '',
       level: 3,
@@ -470,7 +488,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'daFuMoQuan',
+      id: 342,
       name: '大伏魔拳',
       cheat: '',
       level: 3,
@@ -491,7 +509,7 @@ export default {
       ],
     },
     {
-      id: 'kongMingQuan',
+      id: 15,
       name: '空明拳',
       cheat: '',
       level: 3,
@@ -527,7 +545,7 @@ export default {
       ],
     },
     {
-      id: 'hunYuanZhang',
+      id: 306,
       name: '混元掌',
       cheat: '',
       level: 3,
@@ -542,7 +560,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'wuJiXuanGongQuan',
+      id: 197,
       name: '无极玄功拳',
       cheat: '',
       level: 2,
@@ -563,7 +581,7 @@ export default {
       ],
     },
     {
-      id: 'luoYingShenJianZhang',
+      id: 12,
       name: '落英神剑掌',
       cheat: '',
       level: 2,
@@ -589,7 +607,7 @@ export default {
       ],
     },
     {
-      id: 'sanHuaJuDingZhang',
+      id: 115,
       name: '三花聚顶掌',
       cheat: '',
       level: 2,
@@ -601,14 +619,10 @@ export default {
       addition: '攻击+1 防御+1 拳掌+3',
       internal: '',
       sect: '',
-      peculiar: [
-        {
-          effect: ['必连击但不会暴击'],
-        },
-      ],
+      peculiar: [{effect: ['必连击但不会暴击']}],
     },
     {
-      id: 'baiHuaCuoQuan',
+      id: 10,
       name: '百花错拳',
       cheat: '',
       level: 2,
@@ -623,7 +637,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'mianZhang',
+      id: 7,
       name: '绵掌',
       cheat: '',
       level: 1,
@@ -638,7 +652,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'meiNvQuanFa',
+      id: 6,
       name: '美女拳法',
       cheat: '',
       level: 1,
@@ -653,7 +667,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'luoHanQuan',
+      id: 1,
       name: '罗汉拳',
       cheat: '',
       level: 1,
@@ -671,11 +685,7 @@ export default {
           condition: '易筋神功+罗汉拳',
           effect: ['使用罗汉拳60%概率伤害提高50点'],
         },
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为大力金刚掌'],
-        },
+        {name: '一脉相承', condition: '', effect: ['可洗为大力金刚掌']},
       ],
     },
   ],

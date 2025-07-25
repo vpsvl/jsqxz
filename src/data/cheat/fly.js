@@ -184,7 +184,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'xiaoYaoYou',
+      id: 2,
       name: '逍遥游',
       level: 4,
       cheat: '',

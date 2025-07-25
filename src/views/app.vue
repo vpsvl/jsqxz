@@ -37,26 +37,24 @@ watch(
     if (state.lessWindow) {
       state.menuVisible = false;
     }
-  }
+  },
 );
 
 provide('state', state);
 
+// import {nameCode} from '@/data/cheat/code';
+// import data from '@/data/cheat/sword';
+
 // function toArr() {
-//   let arr = {};
-//   for (let key in data) {
-//     const [name, effect, exclusive, sect, level] = data[key];
-//     arr[key] = {
-//       id: Number(key),
-//       name,
-//       effect: [effect],
-//       fortune: [],
-//       level,
-//       exclusive,
-//     };
-//   }
+//   let arr = data.list.map(item => {
+//     if (nameCode[item.name]) {
+//       item.id = nameCode[item.name];
+//     }
+//     return item;
+//   });
 //   console.log(JSON.stringify(arr));
 // }
+
 // toArr();
 
 // function toPinyin(arr) {
