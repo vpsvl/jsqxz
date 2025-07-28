@@ -291,7 +291,7 @@ export default {
       ],
     },
     {
-      id: 'zhuiHunDuoMingJian',
+      id: 192,
       name: '追魂夺命剑',
       cheat: '',
       level: 4,
@@ -332,7 +332,7 @@ export default {
       ],
     },
     {
-      id: 'zhanLiuJianShu',
+      id: 151,
       name: '斩流剑术',
       cheat: '',
       level: 4,
@@ -430,8 +430,8 @@ export default {
       ],
     },
     {
-      id: 'yiTianJianPu',
-      name: '倚天剑谱',
+      id: 41,
+      name: '倚天剑法',
       cheat: '',
       level: 3,
       get: '倚天邪线收周芷若后获得',

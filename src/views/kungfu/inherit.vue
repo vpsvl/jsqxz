@@ -10,7 +10,7 @@
 
 <script setup>
 import {ref} from 'vue';
-import inheritData from '@/data/cheat/inherit';
+import inheritData from '@/data/kungfu/inherit';
 
 const thead = [
   {

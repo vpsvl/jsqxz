@@ -5,7 +5,7 @@ export default {
   exclusive: '',
   list: [
     {
-      id: 'feiTianShenXing',
+      id: 145,
       name: '飞天神行',
       level: 4,
       cheat: '四象步法',
@@ -25,7 +25,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'shenXingBaiBian',
+      id: 146,
       name: '神行百变',
       level: 4,
       cheat: '',
@@ -44,7 +44,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'lingBoWeiBu',
+      id: 147,
       name: '凌波微步',
       level: 4,
       cheat: '',
@@ -64,7 +64,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'tianLuoDiWang',
+      id: 148,
       name: '天罗地网',
       level: 4,
       cheat: '天罗地网势',
@@ -84,7 +84,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'tiYunZongHeng',
+      id: 149,
       name: '梯云纵横',
       level: 4,
       cheat: '',
@@ -104,7 +104,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'shunXiQianLi',
+      id: 150,
       name: '瞬息千里',
       level: 4,
       cheat: '',
@@ -124,7 +124,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yiWeiDuJiang',
+      id: 186,
       name: '一苇渡江',
       level: 4,
       cheat: '',
@@ -144,7 +144,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'jinYanGong',
+      id: 223,
       name: '金雁功',
       level: 4,
       cheat: '',
@@ -164,7 +164,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'sheHangLiFan',
+      id: 224,
       name: '蛇行狸翻',
       level: 4,
       cheat: '',
@@ -204,7 +204,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'lingBieBu',
+      id: 237,
       name: '灵鳖步',
       level: 4,
       cheat: '',
@@ -224,7 +224,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'miZongBu',
+      id: 409,
       name: '迷踪步',
       level: 4,
       cheat: '',
@@ -244,7 +244,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'shiFangBu',
+      id: 379,
       name: '十方步',
       level: 4,
       cheat: '',
@@ -264,7 +264,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'taXueWuHen',
+      id: 394,
       name: '踏雪无痕',
       level: 4,
       cheat: '',
@@ -284,7 +284,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'longXingHuBu',
+      id: 413,
       name: '龙行虎步',
       level: 4,
       cheat: '',
@@ -304,7 +304,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'zhaiXingLanYue',
+      id: 415,
       name: '摘星揽月',
       level: 4,
       cheat: '',
@@ -324,7 +324,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'jinGangHuanXiang',
+      id: 417,
       name: '金刚幻相',
       level: 4,
       cheat: '',

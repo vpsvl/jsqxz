@@ -1,5 +1,5 @@
 <template>
-  <v-table class="v-table-cheat-other" :cols="thead" :data="tbody">
+  <v-table class="v-table-kungfu-other" :cols="thead" :data="tbody">
     <template #effect="{row}">
       <div class="td-block" v-for="(item, index) of row.peculiar" :key="index">
         <div v-if="item.name">
@@ -16,7 +16,7 @@
 
 <script setup>
 import {ref} from 'vue';
-import otherData from '@/data/cheat/other';
+import otherData from '@/data/kungfu/other';
 
 const thead = [
   {
@@ -44,7 +44,7 @@ const tbody = ref(otherData.list);
 </script>
 
 <style lang="less">
-.v-table-cheat-other {
+.v-table-kungfu-other {
   .td:last-child {
     flex-grow: 3;
   }

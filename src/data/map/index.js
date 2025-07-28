@@ -1,4 +1,6 @@
 // 书
+import kungfuRoute from '@/router/kungfu';
+
 export const bookMap = {
   fei: '飞狐外传',
   xue: '雪山飞狐',
@@ -24,8 +26,8 @@ export const equipmentMap = {
   armor: '防具',
   mount: '坐骑',
 };
-// 秘籍类型
-export const cheatMap = {
+// 武功类型
+export const kungfuMap = {
   internal: '内功',
   fly: '轻功',
   fist: '拳掌',
@@ -33,6 +35,7 @@ export const cheatMap = {
   sword: '剑法',
   knife: '刀法',
   special: '奇门',
+  other: '杂学',
 };
 // 内力
 export const internalTypeMap = {
@@ -72,4 +75,39 @@ export const sectMap = {
   mizong: '密宗',
   xiaoyao: '逍遥派',
   huashan: '华山派',
+};
+
+// 门派武功分类编码
+const kungfuSectMap = {
+  0: '江湖',
+  1: '少林',
+  2: '武当',
+  3: '逍遥',
+  4: '日月',
+  5: '明教',
+  6: '天机',
+  7: '全真',
+  8: '丐帮',
+  9: '华山',
+  10: '嵩山',
+  11: '青城',
+  12: '衡山',
+  13: '恒山',
+  14: '泰山',
+  15: '五毒',
+  16: '古墓',
+  17: '血刀',
+  18: '灵霄',
+  19: '峨眉',
+  20: '崆峒',
+  21: '昆仑',
+  22: '桃花',
+  23: '白驼',
+  24: '六扇门',
+  25: '八卦',
+  26: '慕容',
+  27: '天龙寺',
+  28: '星宿',
+  29: '密宗',
+  30: '藏剑',
 };

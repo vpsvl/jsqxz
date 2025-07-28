@@ -414,7 +414,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'chiYaoQin',
+      id: 73,
       name: '持摇琴',
       cheat: '',
       level: 2,
@@ -527,7 +527,7 @@ export default {
       ],
     },
     {
-      id: 'huYanShiBaBian',
+      id: 206,
       name: '呼延十八鞭',
       cheat: '呼延鞭法',
       level: 1,

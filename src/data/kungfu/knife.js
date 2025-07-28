@@ -206,7 +206,7 @@ export default {
       peculiar: [{effect: ['根据天书数量提升威力杀气']}],
     },
     {
-      id: 'paoDingJieNiuDao',
+      id: 193,
       name: '庖丁解牛刀',
       cheat: '',
       level: 3,

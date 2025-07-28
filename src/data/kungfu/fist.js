@@ -143,7 +143,7 @@ export default {
       peculiar: [{effect: ['学会九阴神功后威力翻倍']}],
     },
     {
-      id: 'lingSheQuan',
+      id: 9,
       name: '灵蛇拳',
       cheat: '白驼雪山掌',
       level: 2,
@@ -250,7 +250,7 @@ export default {
       ],
     },
     {
-      id: 'banRuoZhang',
+      id: 189,
       name: '般若掌',
       cheat: '',
       level: 4,
@@ -293,7 +293,7 @@ export default {
       ],
     },
     {
-      id: 'daLiJinGangZhang',
+      id: 135,
       name: '大力金刚掌',
       cheat: '',
       level: 3,
@@ -524,7 +524,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'wuHangLiuHeQuan',
+      id: 234,
       name: '五行六合拳',
       cheat: '',
       level: 3,

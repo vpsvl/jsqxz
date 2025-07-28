@@ -1,5 +1,5 @@
 <template>
-  <v-table class="v-table-cheat-stunt" :cols="thead" :data="tbody">
+  <v-table class="v-table-kungfu-stunt" :cols="thead" :data="tbody">
     <template #effect="{row}">
       <div class="td-block">
         <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">{{ item }}</div>
@@ -10,7 +10,7 @@
 
 <script setup>
 import {ref} from 'vue';
-import stuntData from '@/data/cheat/stunt';
+import stuntData from '@/data/kungfu/stunt';
 
 const thead = [
   {
@@ -29,7 +29,7 @@ const thead = [
 const tbody = ref(stuntData.list);
 </script>
 <style lang="less">
-.v-table-cheat-stunt {
+.v-table-kungfu-stunt {
   .td {
     &:nth-child(1) {
       flex: 0 0 180px;

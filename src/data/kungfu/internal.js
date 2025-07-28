@@ -5,7 +5,7 @@ export default {
   exclusive: '',
   list: [
     {
-      id: 'jiuYinShenGong',
+      id: 107,
       name: '九阴神功',
       cheat: '九阴真经',
       level: 4,
@@ -53,7 +53,7 @@ export default {
       ],
     },
     {
-      id: 'chaoXiShenGong',
+      id: 172,
       name: '潮汐神功',
       cheat: '',
       level: 4,
@@ -62,7 +62,7 @@ export default {
       attack: {},
       condition: '',
       addition: '攻击+4 轻功+1 带毒+1',
-      sect: '',
+      sect: 22,
       internal: '0',
       initiative: [
         effect.huiTi(4),
@@ -76,7 +76,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'xueHaiMoGong',
+      id: 163,
       name: '血海魔功',
       cheat: '',
       level: 4,
@@ -100,7 +100,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'fuYouGong',
+      id: 238,
       name: '浮游功',
       cheat: '',
       level: 4,
@@ -124,7 +124,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'shenZuJing',
+      id: 233,
       name: '神足经',
       cheat: '',
       level: 3,
@@ -152,7 +152,7 @@ export default {
       ],
     },
     {
-      id: 'niYunJingMai',
+      id: 104,
       name: '逆运经脉',
       cheat: '逆运真经',
       level: 3,
@@ -180,7 +180,7 @@ export default {
       ],
     },
     {
-      id: 'hanBingZhenQi',
+      id: 216,
       name: '寒冰真气',
       cheat: '',
       level: 3,
@@ -202,7 +202,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由嵩山心法一脉相承']}],
     },
     {
-      id: 'lingXiFenShuiGong',
+      id: 362,
       name: '灵犀分水功',
       cheat: '',
       level: 3,
@@ -224,7 +224,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为鲸息功']}],
     },
     {
-      id: 'wuDuShenGong',
+      id: 220,
       name: '五毒神功',
       cheat: '五毒宝典',
       level: 3,
@@ -255,7 +255,7 @@ export default {
       ],
     },
     {
-      id: 'ziXiaShenGong',
+      id: 89,
       name: '紫霞神功',
       cheat: '紫霞秘籍',
       level: 2,
@@ -281,7 +281,7 @@ export default {
       ],
     },
     {
-      id: 'guZhenChanGong',
+      id: 259,
       name: '古针禅功',
       cheat: '',
       level: 2,
@@ -296,7 +296,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'jiuYangShenGong',
+      id: 106,
       name: '九阳神功',
       cheat: '九阳真经',
       level: 4,
@@ -331,7 +331,7 @@ export default {
       ],
     },
     {
-      id: 'longXiangBanRuoGong',
+      id: 103,
       name: '龙象般若功',
       cheat: '',
       level: 4,
@@ -389,7 +389,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'qinLongGong',
+      id: 204,
       name: '擒龙功',
       cheat: '',
       level: 3,
@@ -411,7 +411,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由莲花功一脉相承']}],
     },
     {
-      id: 'tieBuShan',
+      id: 196,
       name: '铁布衫',
       cheat: '',
       level: 3,
@@ -439,7 +439,7 @@ export default {
       ],
     },
     {
-      id: 'yuQieMiCheng',
+      id: 169,
       name: '瑜伽密乘',
       cheat: '',
       level: 3,
@@ -467,7 +467,7 @@ export default {
       ],
     },
     {
-      id: 'chunYangWuJiGong',
+      id: 99,
       name: '纯阳无极功',
       cheat: '',
       level: 3,
@@ -489,7 +489,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'jinGangBuHuaiTi',
+      id: 144,
       name: '金刚不坏体',
       cheat: '',
       level: 3,
@@ -522,7 +522,7 @@ export default {
       ],
     },
     {
-      id: 'wuDangJiuYangGong',
+      id: 241,
       name: '武当九阳功',
       cheat: '',
       level: 2,
@@ -542,7 +542,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为九阳神功']}],
     },
     {
-      id: 'eMeiJiuYangGong',
+      id: 242,
       name: '峨眉九阳功',
       cheat: '',
       level: 2,
@@ -562,7 +562,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为九阳神功']}],
     },
     {
-      id: 'shaoLinJiuYangGong',
+      id: 243,
       name: '少林九阳功',
       cheat: '',
       level: 2,
@@ -582,7 +582,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为九阳神功']}],
     },
     {
-      id: 'yiJinShenGong',
+      id: 108,
       name: '易筋神功',
       cheat: '易筋经',
       level: 4,
@@ -617,7 +617,7 @@ export default {
       ],
     },
     {
-      id: 'daZhouTianGong',
+      id: 190,
       name: '大周天功',
       cheat: '庄子',
       level: 3,
@@ -638,7 +638,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由小周天功一脉相承']}],
     },
     {
-      id: 'xiXingDaFa',
+      id: 88,
       name: '吸星大法',
       cheat: '',
       level: 3,
@@ -669,7 +669,7 @@ export default {
       ],
     },
     {
-      id: 'xiaoZhouTianGong',
+      id: 225,
       name: '小周天功',
       cheat: '',
       level: 2,
@@ -684,7 +684,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为大周天功']}],
     },
     {
-      id: 'jiuXiaoXianXi',
+      id: 184,
       name: '九霄仙息',
       cheat: '',
       level: 4,
@@ -708,7 +708,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'yinYangWuJiGong',
+      id: 221,
       name: '阴阳无极功',
       cheat: '',
       level: 4,
@@ -732,7 +732,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'taiXuJianYi',
+      id: 152,
       name: '太虚剑意',
       cheat: '',
       level: 4,
@@ -756,7 +756,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'wangQingTianShu',
+      id: 177,
       name: '忘情天书',
       cheat: '',
       level: 4,
@@ -780,7 +780,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'daChangHeJue',
+      id: 253,
       name: '大长和诀',
       cheat: '',
       level: 4,
@@ -804,7 +804,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'taiXuanShenGong',
+      id: 102,
       name: '太玄神功',
       cheat: '太玄经',
       level: 4,
@@ -827,7 +827,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'douZhuanXingYi',
+      id: 43,
       name: '斗转星移',
       cheat: '',
       level: 4,
@@ -851,7 +851,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'changShengJue',
+      id: 203,
       name: '长生诀',
       cheat: '',
       level: 4,
@@ -875,7 +875,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由神照功一脉相承']}],
     },
     {
-      id: 'jingXiGong',
+      id: 180,
       name: '鲸息功',
       cheat: '',
       level: 4,
@@ -899,7 +899,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由蛤蟆功一脉相承']}],
     },
     {
-      id: 'tianMoGong',
+      id: 160,
       name: '天魔功',
       cheat: '天魔策',
       level: 4,
@@ -946,7 +946,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由武当心法一脉相承']}],
     },
     {
-      id: 'buLaoChangChunGong',
+      id: 183,
       name: '不老长春功',
       cheat: '',
       level: 4,
@@ -970,7 +970,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由龟息功一脉相承']}],
     },
     {
-      id: 'jinGangShiZiHou',
+      id: 91,
       name: '金刚狮子吼',
       cheat: '',
       level: 4,
@@ -994,7 +994,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由狮子吼一脉相承']}],
     },
     {
-      id: 'kuiHuaShenGong',
+      id: 105,
       name: '葵花神功',
       cheat: '葵花宝典',
       level: 4,
@@ -1029,8 +1029,8 @@ export default {
       ],
     },
     {
-      id: 'wuYueJianJue',
-      name: '五岳剑决',
+      id: 175,
+      name: '五岳剑诀',
       cheat: '',
       level: 4,
       get: '笑傲正华山秘洞内调查墙上文字可获得',
@@ -1053,7 +1053,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由紫霞神功一脉相承']}],
     },
     {
-      id: 'beiMingShenGong',
+      id: 85,
       name: '北冥神功',
       cheat: '',
       level: 4,
@@ -1097,7 +1097,7 @@ export default {
       ],
     },
     {
-      id: 'shengHuoShenGong',
+      id: 93,
       name: '圣火神功',
       cheat: '',
       level: 4,
@@ -1121,7 +1121,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可由地火功一脉相承']}],
     },
     {
-      id: 'wuMuYiShu',
+      id: 199,
       name: '武穆遗书',
       cheat: '',
       level: 3,
@@ -1151,7 +1151,7 @@ export default {
       ],
     },
     {
-      id: 'xianTianGong',
+      id: 100,
       name: '先天功',
       cheat: '',
       level: 3,
@@ -1186,7 +1186,7 @@ export default {
       ],
     },
     {
-      id: 'baHuangLiuHeGong',
+      id: 101,
       name: '八荒六合功',
       cheat: '',
       level: 3,
@@ -1220,7 +1220,7 @@ export default {
       ],
     },
     {
-      id: 'xiaoWuXiangGong',
+      id: 98,
       name: '小无相功',
       cheat: '',
       level: 3,
@@ -1254,7 +1254,7 @@ export default {
       ],
     },
     {
-      id: 'shiZiHou',
+      id: 92,
       name: '狮子吼',
       cheat: '',
       level: 3,
@@ -1276,7 +1276,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为金刚狮子吼']}],
     },
     {
-      id: 'hunYuanGong',
+      id: 90,
       name: '混元功',
       cheat: '',
       level: 3,
@@ -1298,7 +1298,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'huaGongDaFa',
+      id: 87,
       name: '化功大法',
       cheat: '',
       level: 3,
@@ -1320,7 +1320,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'kuRongChanGong',
+      id: 207,
       name: '枯荣禅功',
       cheat: '',
       level: 3,
@@ -1342,7 +1342,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'tongYouJue',
+      id: 354,
       name: '通幽诀',
       cheat: '',
       level: 3,
@@ -1364,7 +1364,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'luoHanFuMoGong',
+      id: 96,
       name: '罗汉伏魔功',
       cheat: '十八泥偶',
       level: 3,
@@ -1406,7 +1406,7 @@ export default {
       ],
     },
     {
-      id: 'yuNvXinJing',
+      id: 154,
       name: '玉女心经',
       cheat: '',
       level: 3,
@@ -1434,7 +1434,7 @@ export default {
       ],
     },
     {
-      id: 'haMaGong',
+      id: 95,
       name: '蛤蟆功',
       cheat: '',
       level: 3,
@@ -1455,7 +1455,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为鲸息功']}],
     },
     {
-      id: 'qianKunDaNuoYi',
+      id: 97,
       name: '乾坤大挪移',
       cheat: '',
       level: 3,
@@ -1486,7 +1486,7 @@ export default {
       ],
     },
     {
-      id: 'zhenYueJue',
+      id: 251,
       name: '镇岳诀',
       cheat: '',
       level: 3,
@@ -1508,7 +1508,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'qiMenWuZhuan',
+      id: 317,
       name: '奇门五转',
       cheat: '',
       level: 2,
@@ -1528,7 +1528,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'guiXiGong',
+      id: 227,
       name: '龟息功',
       cheat: '',
       level: 2,
@@ -1548,7 +1548,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为长春不老功']}],
     },
     {
-      id: 'shenZhaoGong',
+      id: 94,
       name: '神照功',
       cheat: '神照经',
       level: 2,
@@ -1568,7 +1568,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为长生诀']}],
     },
     {
-      id: 'haMaGong',
+      id: 95,
       name: '蛤蟆功',
       cheat: '',
       level: 3,
@@ -1589,7 +1589,7 @@ export default {
       peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为鲸息功']}],
     },
     {
-      id: 'jianHuaGuiYi',
+      id: 356,
       name: '剑华皈壹',
       cheat: '',
       level: 2,
@@ -1611,7 +1611,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'shiJiaZhiXiangGong',
+      id: 357,
       name: '释迦掷象功',
       cheat: '',
       level: 2,
@@ -1631,7 +1631,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'wuWangShenGong',
+      id: 252,
       name: '无妄神功',
       cheat: '',
       level: 2,
@@ -1679,7 +1679,7 @@ export default {
       ],
     },
     {
-      id: 'tianChiXinFa',
+      id: 166,
       name: '天池心法',
       cheat: '',
       level: 2,
@@ -1713,56 +1713,66 @@ export default {
       initiative: [],
       peculiar: [
         {
+          id: 211,
           name: '古墓心法',
           condition: '古墓收小龙女获得',
           effect: ['一脉相承 玉女心经'],
         },
         {
+          id: 210,
           name: '全真心法',
           condition: '重阳宫挑战右下角全真弟子后获得',
           effect: ['一脉相承 先天功'],
         },
         {
+          id: 208,
           name: '少林心法',
           condition: '少林寺挑战少林弟子后获得',
           effect: ['一脉相承 易筋经'],
         },
         {
+          id: 215,
           name: '莲花功',
           condition: '丐帮挑战守门弟子后获得',
           effect: ['一脉相承 擒龙功（需入丐帮）'],
         },
         {
+          id: 212,
           name: '华山心法',
           condition: '笑傲线高升客栈剧情后获得',
           effect: ['一脉相承 紫霞神功（需入华山派）'],
         },
         {
+          id: 213,
           name: '嵩山心法',
           condition: '嵩山派挑战守门弟子后获得',
           effect: ['一脉相承 寒冰真气'],
         },
         {
+          id: 214,
           name: '血刀心法',
           condition: '连城线破庙挑战宝象后获得',
           effect: ['一脉相承 血河神鉴'],
         },
         {
+          id: 217,
           name: '地火功',
           condition: '光明顶开宝箱获得',
           effect: ['一脉相承 圣火神功'],
         },
         {
+          id: 209,
           name: '武当心法',
           condition: '武当派挑战右上练武弟子后获得',
           effect: ['一脉相承 太极神功'],
         },
         {
+          id: 219,
           name: '小星罗功',
           condition: '战胜凉州客栈的日月神教弟子获得',
           effect: [],
         },
-        {name: '八卦心法', condition: '商家堡', effect: []},
+        {id: 235, name: '八卦心法', condition: '商家堡', effect: []},
       ],
     },
   ],

@@ -1,5 +1,5 @@
 <template>
-  <v-tabs :list="cheat.list" :exclusive="cheat.exclusive">
+  <v-tabs :list="kungfu.list" :exclusive="kungfu.exclusive">
     <template #tab="{tab}">
       <span
         :class="{[`level-${tab.level}`]: tab.level, [`internal-${tab.internal}`]: tab.internal}"
@@ -44,7 +44,7 @@
           <div class="td">威力</div>
           <div class="td">{{ info.power }}</div>
         </div>
-        <div class="tr" v-if="cheatType === 'in'">
+        <div class="tr" v-if="kungfuType === 'in'">
           <div class="td">主运效果</div>
           <div class="td">
             <div class="td-block" v-for="(item, index) of info.initiative" :key="index">
@@ -59,7 +59,7 @@
             </div>
           </div>
         </div>
-        <template v-if="cheatType === 'out'">
+        <template v-if="kungfuType === 'out'">
           <div class="tr">
             <div class="td">气功</div>
             <div class="td">{{ info.gasPower }}</div>
@@ -93,17 +93,17 @@
 <script setup>
 import {ref, watchEffect} from 'vue';
 import {useRoute} from 'vue-router';
-import fist from '@/data/cheat/fist';
-import finger from '@/data/cheat/finger';
-import sword from '@/data/cheat/sword';
-import knife from '@/data/cheat/knife';
-import special from '@/data/cheat/special';
-import internal from '@/data/cheat/internal';
-import fly from '@/data/cheat/fly';
+import fist from '@/data/kungfu/fist';
+import finger from '@/data/kungfu/finger';
+import sword from '@/data/kungfu/sword';
+import knife from '@/data/kungfu/knife';
+import special from '@/data/kungfu/special';
+import internal from '@/data/kungfu/internal';
+import fly from '@/data/kungfu/fly';
 
 const route = useRoute();
 const all = {fist, finger, sword, knife, special, internal, fly};
-const cheatTypeMap = {
+const kungfuTypeMap = {
   fist: 'out',
   finger: 'out',
   sword: 'out',
@@ -112,13 +112,13 @@ const cheatTypeMap = {
   internal: 'in',
   fly: 'in',
 };
-const cheat = ref({});
-const cheatType = ref('in');
+const kungfu = ref({});
+const kungfuType = ref('in');
 watchEffect(() => {
-  cheat.value = {list: []};
+  kungfu.value = {list: []};
   const {type} = route.meta;
-  cheatType.value = cheatTypeMap[type];
+  kungfuType.value = kungfuTypeMap[type];
   const data = all[type] ? all[type] : {list: []};
-  cheat.value = data;
+  kungfu.value = data;
 });
 </script>

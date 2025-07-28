@@ -42,17 +42,19 @@ watch(
 
 provide('state', state);
 
-// import {nameCode} from '@/data/cheat/code';
+// import {nameCode} from '@/data/kungfu/code';
 // import data from '@/data/cheat/sword';
-
+//
 // function toArr() {
-//   let arr = data.list.map(item => {
-//     if (nameCode[item.name]) {
-//       item.id = nameCode[item.name];
+//   const arr = {};
+//   let pre = 0;
+//   for (let key in nameCode) {
+//     if ((pre + 1) !== nameCode[key]) {
+//       console.log(key);
 //     }
-//     return item;
-//   });
-//   console.log(JSON.stringify(arr));
+//     pre = nameCode[key];
+//   }
+//   console.log(arr.toString());
 // }
 
 // toArr();

@@ -226,7 +226,7 @@ export default {
       ],
     },
     {
-      id: 'lingShuLingXuanZhi',
+      id: 377,
       name: '灵枢灵玄指',
       cheat: '',
       level: 4,
@@ -507,7 +507,7 @@ export default {
       ],
     },
     {
-      id: 'miZongLianHuanTui',
+      id: 195,
       name: '迷踪连环腿',
       cheat: '',
       level: 3,
@@ -594,7 +594,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'xuanFengSaoYeTui',
+      id: 129,
       name: '旋风扫叶腿',
       cheat: '',
       level: 2,
@@ -624,7 +624,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'lanHuaFuXueShou',
+      id: 126,
       name: '兰花拂穴手',
       cheat: '',
       level: 2,

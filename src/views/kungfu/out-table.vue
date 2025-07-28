@@ -1,5 +1,5 @@
 <template>
-  <v-table class="v-table-cheat-out" :cols="thead" :data="tbody" @sort="sort">
+  <v-table class="v-table-kungfu-out" :cols="thead" :data="tbody" @sort="sort">
     <template #name="{row}">
       <span :class="{[`level-${row.level}`]: row.level, [`internal-${row.internal}`]: row.internal}">
         {{ row.name }}
@@ -79,13 +79,13 @@ watchEffect(async () => {
     name,
     meta: {type},
   } = route;
-  if (!/cheat/i.test(name)) {
+  if (!/kungfu/i.test(name)) {
     return;
   }
   try {
     state.loading = true;
     tbody.value = [];
-    const data = await import(`../../data/cheat/${type}.js`);
+    const data = await import(`../../data/kungfu/${type}.js`);
     tbody.value = [...data.default.list];
     state.loading = false;
   } catch (e) {
@@ -141,7 +141,7 @@ function sort(key, direction) {
 </script>
 
 <style lang="less">
-.v-table-cheat-out {
+.v-table-kungfu-out {
   .td {
     &:nth-child(3),
     &:nth-child(4) {
