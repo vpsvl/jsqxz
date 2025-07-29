@@ -1,21 +1,27 @@
 import {kungfuMap} from '@/data/map/index';
+
 const children = [];
 
 for (let key in kungfuMap) {
-  children.push({
+  const item = {
     path: key,
-    component: () => {
-      if(key === 'other'){
-        return import('@/views/kungfu/other.vue');
-      }
-      return import('@/views/kungfu/index.vue')
-    },
     name: 'kungfu' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
       title: kungfuMap[key],
       type: key,
     },
-  });
+  };
+  if (key === 'other') {
+    children.push({
+      ...item,
+      component: () => import('@/views/kungfu/other.vue'),
+    });
+  } else {
+    children.push({
+      ...item,
+      component: () => import('@/views/kungfu/index.vue'),
+    });
+  }
 }
 
 export default {

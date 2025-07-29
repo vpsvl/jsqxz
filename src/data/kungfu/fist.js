@@ -14,7 +14,7 @@ export default {
       condition: '拳掌100',
       addition: '攻击+3 轻功+1 拳掌+5',
       internal: '0',
-      sect: '',
+      sect: 29,
       peculiar: [
         {
           name: '玄冥极意',
@@ -44,7 +44,7 @@ export default {
       condition: '拳掌60',
       addition: '攻击+2 拳掌+4',
       internal: '0',
-      sect: '',
+      sect: 20,
       peculiar: [
         {
           name: '一震七伤',
@@ -65,7 +65,7 @@ export default {
       condition: '拳掌100',
       addition: '攻击+3 拳掌+4 带毒+1',
       internal: '0',
-      sect: '',
+      sect: 28,
       peculiar: [
         {
           name: '毒布武林',
@@ -89,7 +89,7 @@ export default {
       condition: '拳掌70',
       addition: '攻击+1 拳掌+3 带毒+2',
       internal: '0',
-      sect: '',
+      sect: 5,
       peculiar: [
         {
           name: '紫气天罗',
@@ -114,7 +114,7 @@ export default {
       condition: '拳掌100',
       addition: '攻击+2 拳掌+4 带毒+2',
       internal: '0',
-      sect: '',
+      sect: 20,
       peculiar: [
         {
           name: '紫气天罗',
@@ -139,8 +139,12 @@ export default {
       condition: '拳掌40',
       addition: '攻击+2 拳掌+2 带毒+4',
       internal: '0',
-      sect: '',
-      peculiar: [{effect: ['学会九阴神功后威力翻倍']}],
+      sect: 11,
+      peculiar: [
+        {
+          effect: ['学会九阴神功后威力翻倍'],
+        },
+      ],
     },
     {
       id: 9,
@@ -154,7 +158,7 @@ export default {
       condition: '拳掌40',
       addition: '攻击+1 拳掌+3 带毒+1',
       internal: '0',
-      sect: '',
+      sect: 23,
       peculiar: [
         {
           name: '紫气天罗',
@@ -179,7 +183,7 @@ export default {
       condition: '拳掌40 指法20 用毒40',
       internal: '0',
       addition: '轻功+1 指法+2 用毒+1',
-      sect: '',
+      sect: 28,
       peculiar: [
         {
           name: '毒布武林',
@@ -203,7 +207,7 @@ export default {
       condition: '拳掌30',
       addition: '攻击+1 拳掌+2 带毒+1',
       internal: '0',
-      sect: '',
+      sect: 15,
       peculiar: [
         {
           name: '毒布武林',
@@ -227,7 +231,7 @@ export default {
       condition: '拳掌200',
       addition: '攻击+5 拳掌+6',
       internal: '1',
-      sect: '',
+      sect: 8,
       peculiar: [
         {
           name: '盖世无双',
@@ -261,7 +265,7 @@ export default {
       condition: '拳掌140',
       addition: '攻击+3 防御+1 拳掌+5',
       internal: '1',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '般若金刚',
@@ -287,9 +291,13 @@ export default {
       condition: '拳掌120',
       addition: '攻击+3 拳掌+4',
       internal: '1',
-      sect: '',
+      sect: 0,
       peculiar: [
-        {name: '雷动九天', condition: '暴怒攻击', effect: ['暴怒攻击时，有50%概率击晕目标1回合']},
+        {
+          name: '雷动九天',
+          condition: '暴怒攻击',
+          effect: ['暴怒攻击时，有50%概率击晕目标1回合'],
+        },
       ],
     },
     {
@@ -304,9 +312,13 @@ export default {
       condition: '拳掌100',
       addition: '攻击+2 拳掌+4',
       internal: '1',
-      sect: '',
+      sect: 1,
       peculiar: [
-        {name: '一脉相承', condition: '', effect: ['可由罗汉拳一脉相承']},
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可由罗汉拳一脉相承'],
+        },
         {
           name: '达摩掌',
           condition: '易筋神功+大金刚掌',
@@ -336,7 +348,7 @@ export default {
       condition: '拳掌70',
       addition: '攻击+1 轻功+1 拳掌+3',
       internal: '1',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '强上内伤',
@@ -362,7 +374,7 @@ export default {
       condition: '拳掌70',
       addition: '攻击+2 拳掌+3',
       internal: '1',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '慈悲为怀',
@@ -383,7 +395,7 @@ export default {
       condition: '拳掌200',
       addition: '攻击+4 拳掌+5',
       internal: '',
-      sect: '',
+      sect: 16,
       peculiar: [
         {
           name: '黯然极意',
@@ -405,7 +417,7 @@ export default {
       condition: '拳掌100',
       addition: '攻击+2 拳掌+4 暗器+3',
       internal: '',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '如来神掌',
@@ -429,7 +441,7 @@ export default {
       condition: '拳掌80',
       addition: '攻击+1 拳掌+3',
       internal: '',
-      sect: '',
+      sect: 2,
       peculiar: [
         {
           name: '借力打力',
@@ -469,7 +481,7 @@ export default {
       condition: '拳掌100',
       addition: '攻击+2 拳掌+4',
       internal: '',
-      sect: '',
+      sect: 3,
       peculiar: [],
     },
     {
@@ -484,7 +496,7 @@ export default {
       condition: '拳掌120',
       addition: '攻击+2 轻功+1 拳掌+4',
       internal: '',
-      sect: '',
+      sect: 3,
       peculiar: [],
     },
     {
@@ -499,7 +511,7 @@ export default {
       condition: '拳掌140',
       addition: '攻击+2 防御+2 拳掌+4',
       internal: '',
-      sect: '',
+      sect: 19,
       peculiar: [
         {
           name: '天之道',
@@ -520,7 +532,7 @@ export default {
       condition: '拳掌70',
       addition: '攻击+1 拳掌+3',
       internal: '',
-      sect: '',
+      sect: 7,
       peculiar: [],
     },
     {
@@ -535,7 +547,7 @@ export default {
       condition: '拳掌70',
       addition: '轻功+2 拳掌+3',
       internal: '',
-      sect: '',
+      sect: 6,
       peculiar: [
         {
           name: '定神门',
@@ -556,7 +568,7 @@ export default {
       condition: '拳掌30',
       addition: '攻击+1 轻功+1 拳掌+3',
       internal: '',
-      sect: '',
+      sect: 9,
       peculiar: [],
     },
     {
@@ -571,7 +583,7 @@ export default {
       condition: '拳掌70',
       addition: '拳掌+3',
       internal: '',
-      sect: '',
+      sect: 2,
       peculiar: [
         {
           name: '玄虚劲',
@@ -592,7 +604,7 @@ export default {
       condition: '拳掌70',
       addition: '攻击+1 拳掌+3 御剑+1',
       internal: '',
-      sect: '',
+      sect: 22,
       peculiar: [
         {
           name: '桃花绝技',
@@ -618,8 +630,12 @@ export default {
       condition: '拳掌70',
       addition: '攻击+1 防御+1 拳掌+3',
       internal: '',
-      sect: '',
-      peculiar: [{effect: ['必连击但不会暴击']}],
+      sect: 7,
+      peculiar: [
+        {
+          effect: ['必连击但不会暴击'],
+        },
+      ],
     },
     {
       id: 10,
@@ -633,7 +649,7 @@ export default {
       condition: '拳掌50',
       addition: '攻击+1 拳掌+2',
       internal: '',
-      sect: '',
+      sect: 6,
       peculiar: [],
     },
     {
@@ -648,7 +664,7 @@ export default {
       condition: '拳掌35',
       addition: '攻击+1 防御+1 拳掌+2',
       internal: '',
-      sect: '',
+      sect: 2,
       peculiar: [],
     },
     {
@@ -663,7 +679,7 @@ export default {
       condition: '拳掌20',
       addition: '攻击+1 轻功+1 拳掌+2',
       internal: '',
-      sect: '',
+      sect: 16,
       peculiar: [],
     },
     {
@@ -678,14 +694,18 @@ export default {
       condition: '拳掌20',
       addition: '攻击+1 拳掌+2',
       internal: '',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '伏虎罗汉拳',
           condition: '易筋神功+罗汉拳',
           effect: ['使用罗汉拳60%概率伤害提高50点'],
         },
-        {name: '一脉相承', condition: '', effect: ['可洗为大力金刚掌']},
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可洗为大力金刚掌'],
+        },
       ],
     },
   ],

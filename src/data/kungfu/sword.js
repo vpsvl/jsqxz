@@ -14,7 +14,7 @@ export default {
       condition: '御剑20',
       internal: '0',
       addition: '轻功+2 御剑+2',
-      sect: '',
+      sect: 4,
       peculiar: [
         {
           name: '真辟邪剑法·葵花刺目',
@@ -39,8 +39,14 @@ export default {
       condition: '御剑120',
       internal: '0',
       addition: '攻击+2 轻功+2 御剑+4',
-      sect: '',
-      peculiar: [{name: '一脉相承', condition: '', effect: ['可由玉女剑法一脉相承']}],
+      sect: 16,
+      peculiar: [
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可由玉女剑法一脉相承'],
+        },
+      ],
     },
     {
       id: 36,
@@ -54,7 +60,7 @@ export default {
       condition: '御剑70',
       internal: '0',
       addition: '攻击+1 御剑+3',
-      sect: '',
+      sect: 2,
       peculiar: [
         {
           name: '以柔克刚',
@@ -75,7 +81,7 @@ export default {
       condition: '御剑30',
       internal: '0',
       addition: '攻击+1 轻功+1 御剑+2',
-      sect: '',
+      sect: 6,
       peculiar: [
         {
           name: '素质三连',
@@ -96,7 +102,7 @@ export default {
       condition: '御剑30',
       internal: '0',
       addition: '攻击+1 防御+1 御剑+2',
-      sect: '',
+      sect: 2,
       peculiar: [],
     },
     {
@@ -111,7 +117,7 @@ export default {
       condition: '御剑30',
       internal: '0',
       addition: '攻击+1 御剑+2',
-      sect: '',
+      sect: 18,
       peculiar: [
         {
           name: '金乌映雪',
@@ -132,7 +138,7 @@ export default {
       condition: '御剑100',
       internal: '1',
       addition: '攻击+4 御剑+5',
-      sect: '',
+      sect: 16,
       peculiar: [
         {
           name: '玄铁极意',
@@ -142,7 +148,11 @@ export default {
             '使用玄铁剑法攻击不出招式时概率发动，暴怒时必定发动',
           ],
         },
-        {name: '重剑真传.浪如山涌剑如虹', condition: '暴怒', effect: ['暴怒触发大范围伤害']},
+        {
+          name: '重剑真传.浪如山涌剑如虹',
+          condition: '暴怒',
+          effect: ['暴怒触发大范围伤害'],
+        },
         {
           name: '破尽天下',
           condition: '需装备玄铁剑才能触发',
@@ -176,7 +186,7 @@ export default {
       condition: '御剑100',
       internal: '1',
       addition: '攻击+2 防御+2 御剑+4',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '铁甲',
@@ -197,8 +207,13 @@ export default {
       condition: '御剑100',
       internal: '1',
       addition: '轻功+1 防御+1 御剑+4',
-      sect: '',
-      peculiar: [{name: '一脉相承', effect: ['可由一字电剑一脉相承']}],
+      sect: 26,
+      peculiar: [
+        {
+          name: '一脉相承',
+          effect: ['可由一字电剑一脉相承'],
+        },
+      ],
     },
     {
       id: 321,
@@ -212,8 +227,14 @@ export default {
       condition: '御剑30',
       internal: '1',
       addition: '攻击+1 轻功+1 御剑+2',
-      sect: '',
-      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为周公剑法']}],
+      sect: 4,
+      peculiar: [
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可洗为周公剑法'],
+        },
+      ],
     },
     {
       id: 47,
@@ -227,7 +248,7 @@ export default {
       condition: '御剑140',
       internal: '',
       addition: '攻击+3 御剑+6',
-      sect: '',
+      sect: 9,
       peculiar: [
         {
           name: '九剑真传',
@@ -266,7 +287,7 @@ export default {
       condition: '御剑100',
       internal: '',
       addition: '攻击+2 防御+2 御剑+4',
-      sect: '',
+      sect: 2,
       peculiar: [
         {
           name: '开太极',
@@ -302,7 +323,7 @@ export default {
       condition: '御剑120',
       internal: '',
       addition: '攻击+3 御剑+5',
-      sect: '',
+      sect: 26,
       peculiar: [],
     },
     {
@@ -317,9 +338,13 @@ export default {
       condition: '御剑140',
       internal: '',
       addition: '攻击+2 轻功+1 防御+1 御剑+5',
-      sect: '',
+      sect: 26,
       peculiar: [
-        {name: '一脉相承', condition: '', effect: ['可由北斗剑法一脉相承']},
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可由北斗剑法一脉相承'],
+        },
         {
           name: '辰宿列张',
           condition: '学会参合剑气或参合指',
@@ -343,7 +368,7 @@ export default {
       condition: '御剑140',
       internal: '',
       addition: '攻击+2 轻功+2 御剑+5',
-      sect: '',
+      sect: 0,
       peculiar: [],
     },
     {
@@ -358,7 +383,7 @@ export default {
       condition: '御剑140',
       internal: '',
       addition: '攻击+2 轻功+1 御剑+5',
-      sect: '',
+      sect: 0,
       peculiar: [],
     },
     {
@@ -373,7 +398,7 @@ export default {
       condition: '御剑140',
       internal: '',
       addition: '攻击+1 轻功+1 御剑+4',
-      sect: '',
+      sect: 6,
       peculiar: [],
     },
     {
@@ -388,7 +413,7 @@ export default {
       condition: '御剑100',
       internal: '',
       addition: '攻击+2 御剑+4',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '刀剑归真',
@@ -412,7 +437,7 @@ export default {
       condition: '御剑100',
       internal: '',
       addition: '攻击+1 防御+1 御剑+4',
-      sect: '',
+      sect: 2,
       peculiar: [
         {
           name: '定神门',
@@ -441,7 +466,7 @@ export default {
       condition: '御剑100',
       internal: '',
       addition: '攻击+1 防御+1 御剑+4',
-      sect: '',
+      sect: 19,
       peculiar: [],
     },
     {
@@ -456,7 +481,7 @@ export default {
       condition: '御剑100',
       internal: '',
       addition: '攻击+2 御剑+4',
-      sect: '',
+      sect: 1,
       peculiar: [],
     },
     {
@@ -471,7 +496,7 @@ export default {
       condition: '御剑100',
       internal: '',
       addition: '攻击+1 轻功+1 御剑+4',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '素质三连',
@@ -492,7 +517,7 @@ export default {
       condition: '御剑60',
       internal: '',
       addition: '攻击+1 御剑+4',
-      sect: '',
+      sect: 21,
       peculiar: [
         {
           name: '两仪守护',
@@ -516,7 +541,7 @@ export default {
       condition: '御剑70',
       internal: '',
       addition: '攻击+1 御剑+3 拳掌+1',
-      sect: '',
+      sect: 22,
       peculiar: [
         {
           name: '桃花绝技',
@@ -542,8 +567,14 @@ export default {
       condition: '御剑100',
       internal: '',
       addition: '攻击+1 防御+1 轻功+1 御剑+4',
-      sect: '',
-      peculiar: [{name: '女性专属', condition: '', effect: ['攻击&气攻提升20%']}],
+      sect: 6,
+      peculiar: [
+        {
+          name: '女性专属',
+          condition: '',
+          effect: ['攻击&气攻提升20%'],
+        },
+      ],
     },
     {
       id: 40,
@@ -557,7 +588,7 @@ export default {
       condition: '御剑70',
       internal: '',
       addition: '攻击+1 轻功+1 御剑+3',
-      sect: '',
+      sect: 15,
       peculiar: [],
     },
     {
@@ -572,9 +603,13 @@ export default {
       condition: '御剑70',
       internal: '',
       addition: '攻击+1 轻功+1 御剑+3',
-      sect: '',
+      sect: 16,
       peculiar: [
-        {name: '一脉相承', condition: '', effect: ['可洗为玉女素心剑']},
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可洗为玉女素心剑'],
+        },
         {
           name: '双剑合璧',
           condition: '全真剑法+玉女剑法',
@@ -600,7 +635,7 @@ export default {
       condition: '御剑50',
       internal: '',
       addition: '攻击+1 御剑+2',
-      sect: '',
+      sect: 10,
       peculiar: [
         {
           name: '五岳剑法',
@@ -624,7 +659,7 @@ export default {
       condition: '御剑70',
       internal: '',
       addition: '攻击+1 防御+1 御剑+3',
-      sect: '',
+      sect: 7,
       peculiar: [
         {
           name: '双剑合璧',
@@ -651,9 +686,13 @@ export default {
       condition: '御剑70',
       internal: '',
       addition: '攻击+1 御剑+3',
-      sect: '',
+      sect: 9,
       peculiar: [
-        {name: '', condition: '', effect: ['攻击时50%概率给敌人添加虚弱状态，暴怒必触发']},
+        {
+          name: '',
+          condition: '',
+          effect: ['攻击时50%概率给敌人添加虚弱状态，暴怒必触发'],
+        },
       ],
     },
     {
@@ -668,7 +707,7 @@ export default {
       condition: '御剑30',
       internal: '',
       addition: '攻击+1 轻功+1 御剑+2',
-      sect: '',
+      sect: 9,
       peculiar: [
         {
           name: '五岳剑法',
@@ -692,7 +731,7 @@ export default {
       condition: '御剑40',
       internal: '',
       addition: '攻击+1 轻功+1 御剑+2',
-      sect: '',
+      sect: 12,
       peculiar: [
         {
           name: '五岳剑法',
@@ -716,7 +755,7 @@ export default {
       condition: '御剑30',
       internal: '',
       addition: '攻击+1 防御+1 御剑+2',
-      sect: '',
+      sect: 14,
       peculiar: [
         {
           name: '五岳剑法',
@@ -740,7 +779,7 @@ export default {
       condition: '御剑30',
       internal: '',
       addition: '攻击+1 防御+1 御剑+2',
-      sect: '',
+      sect: 13,
       peculiar: [
         {
           name: '五岳剑法',
@@ -764,8 +803,14 @@ export default {
       condition: '御剑40',
       internal: '',
       addition: '攻击+1 轻功+1 御剑+2',
-      sect: '',
-      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为参合剑气']}],
+      sect: 26,
+      peculiar: [
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可洗为参合剑气'],
+        },
+      ],
     },
     {
       id: 27,
@@ -779,7 +824,7 @@ export default {
       condition: '御剑20',
       internal: '',
       addition: '攻击+2 御剑+2',
-      sect: '',
+      sect: 11,
       peculiar: [],
     },
     {
@@ -794,7 +839,7 @@ export default {
       condition: '御剑20',
       internal: '',
       addition: '攻击+1 御剑+2',
-      sect: '',
+      sect: 0,
       peculiar: [],
     },
   ],

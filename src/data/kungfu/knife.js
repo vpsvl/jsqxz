@@ -14,7 +14,7 @@ export default {
       condition: '耍刀140',
       internal: '0',
       addition: '攻击+2 防御+1 耍刀+5',
-      sect: '',
+      sect: 5,
       peculiar: [
         {
           name: '颠动沧溟',
@@ -43,7 +43,7 @@ export default {
       condition: '耍刀100',
       internal: '0',
       addition: '攻击+1 轻功+1 耍刀+4',
-      sect: '',
+      sect: 5,
       peculiar: [
         {
           name: '利刃寒锋',
@@ -67,7 +67,7 @@ export default {
       condition: '耍刀70',
       internal: '0',
       addition: '攻击+1 轻功+1 耍刀+2',
-      sect: '',
+      sect: 5,
       peculiar: [
         {
           name: '利刃寒锋',
@@ -91,7 +91,7 @@ export default {
       condition: '耍刀140',
       internal: '1',
       addition: '攻击+2 防御+1 耍刀+6',
-      sect: '',
+      sect: 29,
       peculiar: [
         {
           name: '大轮密宗.火焰刀',
@@ -120,7 +120,7 @@ export default {
       condition: '耍刀100',
       internal: '1',
       addition: '攻击+1 轻功+1 耍刀+5',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '刀剑归真',
@@ -149,7 +149,7 @@ export default {
       condition: '耍刀100',
       internal: '1',
       addition: '攻击+1 防御+1 耍刀+4',
-      sect: '',
+      sect: 29,
       peculiar: [
         {
           name: '举火燎原',
@@ -173,7 +173,7 @@ export default {
       condition: '耍刀70',
       internal: '1',
       addition: '攻击+1 防御+1 耍刀+3',
-      sect: '',
+      sect: 18,
       peculiar: [
         {
           name: '举火燎原',
@@ -202,8 +202,12 @@ export default {
       condition: '耍刀140',
       internal: '',
       addition: '攻击+3 防御+1 耍刀+6',
-      sect: '',
-      peculiar: [{effect: ['根据天书数量提升威力杀气']}],
+      sect: 5,
+      peculiar: [
+        {
+          effect: ['根据天书数量提升威力杀气'],
+        },
+      ],
     },
     {
       id: 193,
@@ -217,9 +221,13 @@ export default {
       condition: '耍刀160',
       internal: '',
       addition: '攻击+3 耍刀+5',
-      sect: '',
+      sect: 6,
       peculiar: [
-        {name: '一脉相承', condition: '', effect: ['可由柴刀十八路一脉相承']},
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可由柴刀十八路一脉相承'],
+        },
         {
           name: '良庖岁更刀',
           condition: '使用庖丁解牛刀攻击',
@@ -242,7 +250,7 @@ export default {
       condition: '耍刀100',
       internal: '',
       addition: '攻击+2 轻功+1 耍刀+4',
-      sect: '',
+      sect: 0,
       peculiar: [],
     },
     {
@@ -257,9 +265,11 @@ export default {
       condition: '耍刀100',
       internal: '',
       addition: '攻击+1 防御+1 耍刀+4',
-      sect: '',
+      sect: 0,
       peculiar: [
-        {effect: ['连击时伤害、气攻不会减少']},
+        {
+          effect: ['连击时伤害、气攻不会减少'],
+        },
         {
           name: '天衣无缝',
           condition: '鸳鸯刀法+夫妻刀法',
@@ -279,8 +289,12 @@ export default {
       condition: '耍刀100',
       internal: '',
       addition: '攻击+2 耍刀+4',
-      sect: '',
-      peculiar: [{effect: ['击杀小龙女不会触发复活']}],
+      sect: 0,
+      peculiar: [
+        {
+          effect: ['击杀小龙女不会触发复活'],
+        },
+      ],
     },
     {
       id: 63,
@@ -294,8 +308,12 @@ export default {
       condition: '耍刀30',
       internal: '',
       addition: '攻击+1 防御+1 耍刀+2',
-      sect: '',
-      peculiar: [{effect: ['修炼后生命上限降低200']}],
+      sect: 17,
+      peculiar: [
+        {
+          effect: ['修炼后生命上限降低200'],
+        },
+      ],
     },
     {
       id: 141,
@@ -309,7 +327,7 @@ export default {
       condition: '耍刀100',
       internal: '',
       addition: '攻击+2 耍刀+4',
-      sect: '',
+      sect: 5,
       peculiar: [],
     },
     {
@@ -324,7 +342,7 @@ export default {
       condition: '耍刀70',
       internal: '',
       addition: '攻击+1 防御+1 耍刀+3',
-      sect: '',
+      sect: 20,
       peculiar: [
         {
           name: '两仪守护',
@@ -348,7 +366,7 @@ export default {
       condition: '耍刀100',
       internal: '',
       addition: '攻击+1 防御+1 耍刀+4',
-      sect: '',
+      sect: 2,
       peculiar: [
         {
           name: '玄虚劲',
@@ -377,7 +395,7 @@ export default {
       condition: '耍刀70',
       internal: '',
       addition: '攻击+2 防御+1 耍刀+3',
-      sect: '',
+      sect: 25,
       peculiar: [],
     },
     {
@@ -392,7 +410,7 @@ export default {
       condition: '耍刀60',
       internal: '',
       addition: '攻击+1 耍刀+3',
-      sect: '',
+      sect: 1,
       peculiar: [],
     },
     {
@@ -407,7 +425,7 @@ export default {
       condition: '耍刀70',
       internal: '',
       addition: '攻击+1 耍刀+3',
-      sect: '',
+      sect: 29,
       peculiar: [
         {
           name: '天衣无缝',
@@ -428,7 +446,7 @@ export default {
       condition: '耍刀70',
       internal: '',
       addition: '攻击+1 防御+1 轻功+1 耍刀+3',
-      sect: '',
+      sect: 17,
       peculiar: [],
     },
     {
@@ -443,7 +461,7 @@ export default {
       condition: '耍刀50',
       internal: '',
       addition: '攻击+1 轻功+1 耍刀+2',
-      sect: '',
+      sect: 5,
       peculiar: [],
     },
     {
@@ -458,7 +476,7 @@ export default {
       condition: '耍刀40',
       internal: '',
       addition: '攻击+1 防御+1 耍刀+2',
-      sect: '',
+      sect: 5,
       peculiar: [
         {
           name: '五虎',
@@ -485,7 +503,7 @@ export default {
       condition: '耍刀40',
       internal: '',
       addition: '攻击+1 耍刀+2',
-      sect: '',
+      sect: 2,
       peculiar: [],
     },
     {
@@ -500,7 +518,7 @@ export default {
       condition: '耍刀40',
       internal: '',
       addition: '攻击+1 耍刀+2',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '慈悲为怀',
@@ -521,7 +539,7 @@ export default {
       condition: '耍刀30',
       internal: '',
       addition: '攻击+1 耍刀+2',
-      sect: '',
+      sect: 0,
       peculiar: [],
     },
     {
@@ -536,7 +554,7 @@ export default {
       condition: '耍刀20',
       internal: '',
       addition: '攻击+1 耍刀+2',
-      sect: '',
+      sect: 17,
       peculiar: [],
     },
     {
@@ -551,8 +569,14 @@ export default {
       condition: '耍刀20',
       internal: '',
       addition: '攻击+1 防御+1 耍刀+2',
-      sect: '',
-      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为庖丁解牛刀']}],
+      sect: 0,
+      peculiar: [
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可洗为庖丁解牛刀'],
+        },
+      ],
     },
   ],
 };

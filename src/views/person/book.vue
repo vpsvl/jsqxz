@@ -4,15 +4,19 @@
       <div class="td-block" v-for="(item, index) of row.talent" :key="index">
         <div>
           [
-          <span class="color-error">{{ item.name }}</span>
+          <span :class="`level-${item.level}`">{{ item.name }}</span>
           ]:
         </div>
-        <div class="td-effect-item effect-icon-star" v-for="(text, i) of item.effect" :key="i">{{ text }}</div>
+        <div class="td-effect-item effect-icon-star" v-for="(text, i) of item.effect" :key="i">
+          {{ text }}
+        </div>
       </div>
     </template>
     <template #fortune="{row}">
       <div class="td-block">
-        <div class="td-effect-item effect-icon-heart" v-for="(text, i) of row.fortune" :key="i">{{ text }}</div>
+        <div class="td-effect-item effect-icon-heart" v-for="(text, i) of row.fortune" :key="i">
+          {{ text }}
+        </div>
       </div>
     </template>
   </v-table>
@@ -21,6 +25,7 @@
 <script setup>
 import {ref, watchEffect, inject} from 'vue';
 import {useRoute} from 'vue-router';
+import talentMap from '@/data/person/talent';
 
 const route = useRoute();
 const state = inject('state');
@@ -52,7 +57,18 @@ watchEffect(async () => {
     tbody.value = [];
     state.loading = true;
     const data = await import(`../../data/person/${type}.js`);
-    tbody.value = data.default.list;
+    tbody.value = data.default.list.map(item => {
+      const talentArr = [];
+      const fortuneArr = [];
+      for (let key of item.talent) {
+        const {id, name, effect, level, fortune} = talentMap[key];
+        talentArr.push({id, name, effect, level});
+        fortuneArr.push(...fortune);
+      }
+      item.talent = talentArr;
+      item.fortune = fortuneArr;
+      return item;
+    });
     state.loading = false;
   } catch (e) {
     tbody.value = [];
@@ -64,10 +80,11 @@ watchEffect(async () => {
 .v-table-person {
   .td {
     &:nth-child(1) {
-      flex: 0 0 120px;
+      flex: 0 0 100px;
     }
+
     &:nth-child(2) {
-      flex: 3 0 0;
+      flex: 2 0 0;
     }
   }
 }

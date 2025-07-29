@@ -5,7 +5,7 @@
     </div>
     <div class="tabs">
       <label class="tab" v-for="(item, index) of list" :key="index">
-        <input type="radio" name="cheat" :value="index" v-model="active" />
+        <input type="radio" name="cheat" :value="index" v-model="active"/>
         <slot name="tab" :tab="item">
           <span>{{ item.name }}</span>
         </slot>
@@ -22,6 +22,7 @@
 
 <script setup>
 import {computed, ref, watch} from 'vue';
+import effect from '@/data/kungfu/internal/index';
 
 const props = defineProps({
   list: {
@@ -32,13 +33,25 @@ const props = defineProps({
   },
 });
 const active = ref(0);
-const info = computed(() => props.list[active.value]);
+const info = computed(() => {
+  const item = props.list[active.value];
+  if (item.initiative?.length > 0) {
+    const arr = [];
+    for (let key of item.initiative) {
+      if (typeof effect[key] === 'function') {
+        arr.push(effect[key](item.level));
+      }
+    }
+    item.initiative = arr;
+  }
+  return item;
+});
 watch(
   () => props.list,
   () => {
     active.value = 0;
   },
-  {immediate: true}
+  {immediate: true},
 );
 </script>
 

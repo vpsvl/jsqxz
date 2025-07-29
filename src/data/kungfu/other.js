@@ -80,7 +80,7 @@ export default {
       level: 4,
       get: '收王难姑入队',
       condition: '',
-      addition: '习得秘技施毒',
+      addition: '提升用毒和解毒属性，习得秘技施毒',
       sect: '',
       peculiar: [
         {
@@ -146,7 +146,7 @@ export default {
       level: 4,
       get: '飞狐程灵素线收程灵素入队',
       condition: '',
-      addition: '提升用毒和解毒属性',
+      addition: '提升用毒和解毒属性，习得秘技药王神篇',
       sect: '',
       peculiar: [],
     },

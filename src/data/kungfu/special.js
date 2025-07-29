@@ -14,7 +14,7 @@ export default {
       condition: '奇门140',
       addition: '攻击+2 防御+1 奇门+5 带毒+2',
       internal: '0',
-      sect: '',
+      sect: 23,
       peculiar: [],
     },
     {
@@ -29,9 +29,13 @@ export default {
       condition: '奇门100',
       addition: '攻击+1 轻功+1 奇门+4',
       internal: '0',
-      sect: '',
+      sect: 16,
       peculiar: [
-        {name: '绝处逢生', condition: '海叟钓法+银锁金玲', effect: ['被攻击15%概率不受伤害']},
+        {
+          name: '绝处逢生',
+          condition: '海叟钓法+银锁金玲',
+          effect: ['被攻击15%概率不受伤害'],
+        },
       ],
     },
     {
@@ -46,7 +50,7 @@ export default {
       condition: '奇门60',
       addition: '攻击+1 轻功+1 奇门+4',
       internal: '0',
-      sect: '',
+      sect: 0,
       peculiar: [],
     },
     {
@@ -61,7 +65,7 @@ export default {
       condition: '奇门70',
       addition: '攻击+1 轻功+1 奇门+3',
       internal: '0',
-      sect: '',
+      sect: 29,
       peculiar: [],
     },
     {
@@ -76,7 +80,7 @@ export default {
       condition: '奇门40',
       addition: '攻击+1 轻功+1 奇门+2',
       internal: '0',
-      sect: '',
+      sect: 23,
       peculiar: [],
     },
     {
@@ -91,7 +95,7 @@ export default {
       condition: '奇门20',
       addition: '奇门+2 暗器+3 带毒+5',
       internal: '0',
-      sect: '',
+      sect: 15,
       peculiar: [],
     },
     {
@@ -106,7 +110,7 @@ export default {
       condition: '奇门100',
       addition: '攻击+2 轻功+1 奇门+4',
       internal: '1',
-      sect: '',
+      sect: 29,
       peculiar: [
         {
           name: '世尊降魔',
@@ -131,7 +135,7 @@ export default {
       condition: '奇门140',
       addition: '攻击+2 防御+1 奇门+5',
       internal: '1',
-      sect: '',
+      sect: 1,
       peculiar: [],
     },
     {
@@ -146,9 +150,13 @@ export default {
       condition: '奇门100',
       addition: '攻击+3 奇门+4',
       internal: '',
-      sect: '',
+      sect: 30,
       peculiar: [
-        {name: '一脉相承', condition: '', effect: ['可由杨家枪法一脉相承']},
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可由杨家枪法一脉相承'],
+        },
         {
           name: '血战沙场',
           condition: '岳家枪法+岳王散手+武穆遗书',
@@ -171,7 +179,7 @@ export default {
       condition: '奇门140',
       addition: '攻击+2 轻功+1 奇门+6',
       internal: '',
-      sect: '',
+      sect: 8,
       peculiar: [
         {
           name: '天下无狗',
@@ -200,7 +208,7 @@ export default {
       condition: '奇门100',
       addition: '攻击+1 轻功+1 奇门+4',
       internal: '',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '世尊降魔',
@@ -225,7 +233,7 @@ export default {
       condition: '奇门100',
       addition: '攻击+1 轻功+1 奇门+4',
       internal: '',
-      sect: '',
+      sect: 2,
       peculiar: [
         {
           name: '琴棋书画-书',
@@ -246,7 +254,7 @@ export default {
       condition: '奇门100',
       addition: '攻击+1 轻功+1 奇门+4',
       internal: '',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '金刚伏魔阵',
@@ -279,7 +287,7 @@ export default {
       condition: '奇门140',
       addition: '攻击+2 奇门+5',
       internal: '',
-      sect: '',
+      sect: 29,
       peculiar: [],
     },
     {
@@ -294,7 +302,7 @@ export default {
       condition: '奇门100',
       addition: '攻击+2 防御+1 奇门+5 带毒+2',
       internal: '',
-      sect: '',
+      sect: 3,
       peculiar: [],
     },
     {
@@ -309,7 +317,7 @@ export default {
       condition: '奇门70',
       addition: '攻击+2 奇门+3',
       internal: '',
-      sect: '',
+      sect: 8,
       peculiar: [],
     },
     {
@@ -324,7 +332,7 @@ export default {
       condition: '奇门100',
       addition: '攻击+1 轻功+1 防御+1 奇门+4',
       internal: '',
-      sect: '',
+      sect: 6,
       peculiar: [],
     },
     {
@@ -339,7 +347,7 @@ export default {
       condition: '奇门70',
       addition: '攻击+1 轻功+1 剑法+2 刀法+2 奇门+1',
       internal: '',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '定神门',
@@ -360,7 +368,7 @@ export default {
       condition: '奇门70',
       addition: '攻击+1 轻功+1 奇门+3',
       internal: '',
-      sect: '',
+      sect: 27,
       peculiar: [
         {
           name: '琴棋书画-画',
@@ -385,7 +393,7 @@ export default {
       condition: '奇门20',
       addition: '攻击+1 轻功+1 奇门+2',
       internal: '',
-      sect: '',
+      sect: 4,
       peculiar: [
         {
           name: '琴棋书画-棋',
@@ -410,7 +418,7 @@ export default {
       condition: '奇门70',
       addition: '攻击+2 奇门+3',
       internal: '',
-      sect: '',
+      sect: 4,
       peculiar: [],
     },
     {
@@ -425,7 +433,7 @@ export default {
       condition: '奇门20',
       addition: '攻击+1 轻功+1 奇门+3',
       internal: '',
-      sect: '',
+      sect: 4,
       peculiar: [
         {
           name: '琴棋书画-琴',
@@ -460,7 +468,7 @@ export default {
       condition: '奇门50',
       addition: '攻击+1 轻功+1 奇门+2',
       internal: '',
-      sect: '',
+      sect: 0,
       peculiar: [],
     },
     {
@@ -475,7 +483,7 @@ export default {
       condition: '奇门60',
       addition: '攻击+1 防御+1 奇门+3',
       internal: '',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '五虎',
@@ -502,7 +510,7 @@ export default {
       condition: '奇门30',
       addition: '攻击+1 防御+1 轻功+1 奇门+2',
       internal: '',
-      sect: '',
+      sect: 8,
       peculiar: [],
     },
     {
@@ -517,7 +525,7 @@ export default {
       condition: '奇门30',
       addition: '攻击+1 轻功+1 奇门+2',
       internal: '',
-      sect: '',
+      sect: 8,
       peculiar: [
         {
           name: '寸长寸强',
@@ -538,7 +546,7 @@ export default {
       condition: '奇门40',
       addition: '攻击+1 防御+1 奇门+2',
       internal: '',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '寸长寸强',
@@ -559,7 +567,7 @@ export default {
       condition: '奇门20',
       addition: '攻击+1 2奇门+2',
       internal: '',
-      sect: '',
+      sect: 23,
       peculiar: [],
     },
     {
@@ -574,9 +582,13 @@ export default {
       condition: '奇门30',
       addition: '攻击+1 轻功+1 奇门+2',
       internal: '',
-      sect: '',
+      sect: 0,
       peculiar: [
-        {name: '绝处逢生', condition: '海叟钓法+银锁金玲', effect: ['被攻击15%概率不受伤害']},
+        {
+          name: '绝处逢生',
+          condition: '海叟钓法+银锁金玲',
+          effect: ['被攻击15%概率不受伤害'],
+        },
       ],
     },
     {
@@ -591,8 +603,14 @@ export default {
       condition: '奇门20',
       addition: '攻击+1 防御+1 奇门+2',
       internal: '',
-      sect: '',
-      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为岳家枪法']}],
+      sect: 30,
+      peculiar: [
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可洗为岳家枪法'],
+        },
+      ],
     },
   ],
 };

@@ -26,6 +26,12 @@
           <div class="td">{{ info.get }}</div>
         </div>
         <div class="tr">
+          <div class="td">所属门派</div>
+          <div class="td">
+            {{ kungfuSectMap[info.sect] ?? '' }}
+          </div>
+        </div>
+        <div class="tr">
           <div class="td">修炼条件</div>
           <div class="td">
             <span>{{ info.condition }}</span>
@@ -100,6 +106,7 @@ import knife from '@/data/kungfu/knife';
 import special from '@/data/kungfu/special';
 import internal from '@/data/kungfu/internal';
 import fly from '@/data/kungfu/fly';
+import {kungfuSectMap} from '@/data/map/index'
 
 const route = useRoute();
 const all = {fist, finger, sword, knife, special, internal, fly};
@@ -118,7 +125,6 @@ watchEffect(() => {
   kungfu.value = {list: []};
   const {type} = route.meta;
   kungfuType.value = kungfuTypeMap[type];
-  const data = all[type] ? all[type] : {list: []};
-  kungfu.value = data;
+  kungfu.value = all[type] ? all[type] : {list: []};
 });
 </script>

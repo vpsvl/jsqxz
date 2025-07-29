@@ -14,7 +14,7 @@ export default {
       condition: '指法100',
       internal: '0',
       addition: '攻击+3 指法+5',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '九阴神爪',
@@ -38,8 +38,14 @@ export default {
       condition: '指法100 需自宫',
       internal: '0',
       addition: '攻击+1 轻功+2 指法+4',
-      sect: '',
-      peculiar: [{name: '', condition: '', effect: ['攻击必定封穴，被攻击减免10点封穴']}],
+      sect: 4,
+      peculiar: [
+        {
+          name: '',
+          condition: '',
+          effect: ['攻击必定封穴，被攻击减免10点封穴'],
+        },
+      ],
     },
     {
       id: 295,
@@ -53,7 +59,7 @@ export default {
       condition: '指法70',
       internal: '0',
       addition: '攻击+1 轻功+1 指法+3 带毒+1',
-      sect: '',
+      sect: 28,
       peculiar: [
         {
           name: '极意',
@@ -82,7 +88,7 @@ export default {
       condition: '指法100',
       internal: '0',
       addition: '攻击+1 轻功+1 指法+4',
-      sect: '',
+      sect: 26,
       peculiar: [],
     },
     {
@@ -97,7 +103,7 @@ export default {
       condition: '指法70',
       internal: '0',
       addition: '攻击+1 轻功+1 指法+3',
-      sect: '',
+      sect: 27,
       peculiar: [
         {
           name: '玄虚劲',
@@ -118,7 +124,7 @@ export default {
       condition: '指法30',
       internal: '0',
       addition: '攻击+1 指法+2 带毒+1',
-      sect: '',
+      sect: 3,
       peculiar: [],
     },
     {
@@ -133,7 +139,7 @@ export default {
       condition: '指法100',
       internal: '1',
       addition: '攻击+2 指法+5',
-      sect: '',
+      sect: 1,
       peculiar: [],
     },
     {
@@ -148,10 +154,18 @@ export default {
       condition: '指法100',
       internal: '1',
       addition: '攻击+1 防御+1 指法+4',
-      sect: '',
+      sect: 27,
       peculiar: [
-        {name: '', condition: '', effect: ['六脉神剑招式概率提升至60%']},
-        {name: '一指破蟾', condition: '使用一阳指攻击', effect: ['清除目标身上50%的蛤蟆功蓄力值']},
+        {
+          name: '',
+          condition: '',
+          effect: ['六脉神剑招式概率提升至60%'],
+        },
+        {
+          name: '一指破蟾',
+          condition: '使用一阳指攻击',
+          effect: ['清除目标身上50%的蛤蟆功蓄力值'],
+        },
       ],
     },
     {
@@ -166,8 +180,14 @@ export default {
       condition: '指法100',
       internal: '1',
       addition: '攻击+1 指法+4',
-      sect: '',
-      peculiar: [{name: '批亢捣虚', condition: '', effect: ['气功增加800，必定流血']}],
+      sect: 1,
+      peculiar: [
+        {
+          name: '批亢捣虚',
+          condition: '',
+          effect: ['气功增加800，必定流血'],
+        },
+      ],
     },
     {
       id: 49,
@@ -181,7 +201,7 @@ export default {
       condition: '指法200 内力≥3000',
       internal: '',
       addition: '攻击+3 指法+6 御剑+1',
-      sect: '',
+      sect: 27,
       peculiar: [
         {
           name: '剑气碧烟横',
@@ -212,7 +232,7 @@ export default {
       condition: '指法140',
       internal: '',
       addition: '攻击+2 轻功+1 指法+5',
-      sect: '',
+      sect: 26,
       peculiar: [
         {
           name: '辰宿列张',
@@ -237,7 +257,7 @@ export default {
       condition: '御剑40',
       internal: '',
       addition: '攻击+1 轻功+1 御剑+3',
-      sect: '',
+      sect: 6,
       peculiar: [
         {
           name: '定神门',
@@ -258,9 +278,13 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '攻击+1 轻功+1 指法+4',
-      sect: '',
+      sect: 1,
       peculiar: [
-        {name: '一脉相承', condition: '', effect: ['可由天竺佛指一脉相承']},
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可由天竺佛指一脉相承'],
+        },
         {
           name: '除却四相',
           condition: '同时修炼多罗叶指+大智无定指+无相劫指+拈花指到极',
@@ -286,7 +310,7 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '防御+1 轻功+1 指法+4 拳掌+2',
-      sect: '',
+      sect: 3,
       peculiar: [
         {
           name: '天山折梅',
@@ -311,7 +335,7 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '攻击+3 指法+4',
-      sect: '',
+      sect: 0,
       peculiar: [
         {
           name: '血战沙场',
@@ -335,7 +359,7 @@ export default {
       condition: '指法140',
       internal: '',
       addition: '攻击+1 指法+4',
-      sect: '',
+      sect: 8,
       peculiar: [
         {
           name: '虎啸龙吟',
@@ -360,7 +384,7 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '攻击+2 指法+4',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '除却四相',
@@ -387,7 +411,7 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '攻击+1 轻功+1 指法+4 暗器+1',
-      sect: '',
+      sect: 22,
       peculiar: [
         {
           name: '桃花绝技',
@@ -421,7 +445,7 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '攻击+2 防御+1 指法+4',
-      sect: '',
+      sect: 3,
       peculiar: [],
     },
     {
@@ -436,7 +460,7 @@ export default {
       condition: '指法60',
       internal: '',
       addition: '攻击+1 轻功+1 防御+1 指法+3',
-      sect: '',
+      sect: 8,
       peculiar: [],
     },
     {
@@ -451,7 +475,7 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '攻击+1 指法+4',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '除却四相',
@@ -478,7 +502,7 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '攻击+2 指法+4',
-      sect: '',
+      sect: 3,
       peculiar: [],
     },
     {
@@ -493,7 +517,7 @@ export default {
       condition: '指法100',
       internal: '',
       addition: '攻击+2 指法+4',
-      sect: '',
+      sect: 2,
       peculiar: [
         {
           name: '虎啸龙吟',
@@ -518,7 +542,7 @@ export default {
       condition: '指法70',
       internal: '',
       addition: '攻击+1 轻功+1 指法+3',
-      sect: '',
+      sect: 2,
       peculiar: [],
     },
     {
@@ -533,7 +557,7 @@ export default {
       condition: '指法70',
       internal: '',
       addition: '攻击+1 指法+3',
-      sect: '',
+      sect: 1,
       peculiar: [
         {
           name: '除却四相',
@@ -560,7 +584,7 @@ export default {
       condition: '指法70',
       internal: '',
       addition: '攻击+1 指法+3',
-      sect: '',
+      sect: 28,
       peculiar: [],
     },
     {
@@ -575,7 +599,7 @@ export default {
       condition: '指法70',
       internal: '',
       addition: '攻击+1 指法+3',
-      sect: '',
+      sect: 5,
       peculiar: [],
     },
     {
@@ -590,7 +614,7 @@ export default {
       condition: '指法70',
       internal: '',
       addition: '攻击+2 指法+3',
-      sect: '',
+      sect: 1,
       peculiar: [],
     },
     {
@@ -605,7 +629,7 @@ export default {
       condition: '指法70',
       internal: '',
       addition: '攻击+1 轻功+1 指法+3',
-      sect: '',
+      sect: 22,
       peculiar: [],
     },
     {
@@ -620,7 +644,7 @@ export default {
       condition: '指法40',
       internal: '',
       addition: '攻击+1 防御+1 指法+2',
-      sect: '',
+      sect: 23,
       peculiar: [],
     },
     {
@@ -635,7 +659,7 @@ export default {
       condition: '指法40',
       internal: '',
       addition: '攻击+1 轻功+1 指法+2',
-      sect: '',
+      sect: 22,
       peculiar: [],
     },
     {
@@ -650,7 +674,7 @@ export default {
       condition: '指法30',
       internal: '',
       addition: '攻击+1 指法+2',
-      sect: '',
+      sect: 1,
       peculiar: [],
     },
     {
@@ -665,7 +689,7 @@ export default {
       condition: '指法40',
       internal: '',
       addition: '攻击+1 指法+2',
-      sect: '',
+      sect: 0,
       peculiar: [],
     },
     {
@@ -680,8 +704,14 @@ export default {
       condition: '指法20',
       internal: '',
       addition: '攻击+1 轻功+1 指法+2',
-      sect: '',
-      peculiar: [{name: '一脉相承', condition: '', effect: ['可洗为无相劫指']}],
+      sect: 1,
+      peculiar: [
+        {
+          name: '一脉相承',
+          condition: '',
+          effect: ['可洗为无相劫指'],
+        },
+      ],
     },
   ],
 };

@@ -42,22 +42,33 @@ watch(
 
 provide('state', state);
 
-// import {nameCode} from '@/data/kungfu/code';
-// import data from '@/data/cheat/sword';
-//
+// import {codeSect, codeName} from '@/data/map/kungfu';
+// import data, {stuntCode} from '@/data/kungfu/stunt';
+
 // function toArr() {
-//   const arr = {};
-//   let pre = 0;
-//   for (let key in nameCode) {
-//     if ((pre + 1) !== nameCode[key]) {
-//       console.log(key);
+//   const arr = {...stuntCode};
+//
+//   for (let key in arr) {
+//     for (let item of data.list) {
+//       if (item.name === arr[key]) {
+//         item.id = Number(key);
+//         arr[key] = item;
+//         break;
+//       }
 //     }
-//     pre = nameCode[key];
+//     if(typeof arr[key] === 'string') {
+//       arr[key] = {
+//         id: key,
+//         name: arr[key],
+//         condition: '',
+//         effect: [],
+//       };
+//     }
 //   }
-//   console.log(arr.toString());
+//   console.log(arr);
 // }
 
-// toArr();
+toArr();
 
 // function toPinyin(arr) {
 //   const list = arr.map((item) => {
