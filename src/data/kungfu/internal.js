@@ -75,7 +75,7 @@ export default {
     },
     {
       id: 163,
-      name: '血海魔功',
+      name: '血河神鉴',
       cheat: '',
       level: 4,
       get: '加入血刀门可学习',
@@ -357,7 +357,7 @@ export default {
       ],
     },
     {
-      id: 'hunTianQiGong',
+      id: 264,
       name: '浑天气功',
       cheat: '',
       level: 4,
@@ -1634,7 +1634,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'xieHeShenJian',
+      id: 163,
       name: '血河神鉴',
       cheat: '',
       level: 2,

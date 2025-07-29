@@ -648,7 +648,7 @@ export default {
     sect: 9,
   },
   163: {
-    name: '血海魔功',
+    name: '血河神鉴',
     sect: 17,
   },
   164: {
@@ -1052,7 +1052,7 @@ export default {
     sect: 14,
   },
   264: {
-    name: '磐石法诀',
+    name: '浑天气功',
     sect: 8,
   },
   265: {
@@ -1376,7 +1376,7 @@ export default {
     sect: 17,
   },
   345: {
-    name: '千金术',
+    name: '血海魔功',
     sect: 17,
   },
   346: {
