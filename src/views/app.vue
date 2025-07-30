@@ -68,7 +68,7 @@ provide('state', state);
 //   console.log(arr);
 // }
 
-toArr();
+// toArr();
 
 // function toPinyin(arr) {
 //   const list = arr.map((item) => {

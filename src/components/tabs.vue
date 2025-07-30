@@ -34,7 +34,7 @@ const props = defineProps({
 });
 const active = ref(0);
 const info = computed(() => {
-  const item = props.list[active.value];
+  const item = {...props.list[active.value]};
   if (item.initiative?.length > 0) {
     const arr = [];
     for (let key of item.initiative) {
