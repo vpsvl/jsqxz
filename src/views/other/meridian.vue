@@ -27,16 +27,13 @@
           </div>
         </div>
       </div>
-      <div class="tr no-data" v-if="tbody.length < 1">
-        <div class="td">{{ state.loading ? '加载中，请稍候...' : '暂无更多数据' }}</div>
-      </div>
     </v-scroll>
   </div>
 </template>
 
 <script setup>
 import {ref} from 'vue';
-import meridianData from '@/data/meridian/index';
+import meridianData from '@/data/other/meridian';
 
 const tbody = ref(meridianData.list);
 </script>

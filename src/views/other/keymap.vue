@@ -13,7 +13,7 @@
 
 <script setup>
 import {ref} from 'vue';
-import data from '@/data/keymap/index';
+import data from '@/data/other/keymap';
 
 const thead = [
   {

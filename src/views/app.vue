@@ -11,8 +11,6 @@ import {onMounted, provide, reactive, ref, watch} from 'vue';
 import HeaderNav from '@/views/layout/header.vue';
 import VLoading from '@/components/loading.vue';
 import {useRoute} from 'vue-router';
-// import pinyin from 'pinyin';
-// import data from '@/data/person/talent/aa';
 
 const route = useRoute();
 const state = reactive({
@@ -42,34 +40,30 @@ watch(
 
 provide('state', state);
 
-// import {codeSect, codeName} from '@/data/map/kungfu';
-// import data, {stuntCode} from '@/data/kungfu/stunt';
+// import data from '@/data/person/talent/aa';
 
 // function toArr() {
-//   const arr = {...stuntCode};
+//   const arr = [];
 //
-//   for (let key in arr) {
-//     for (let item of data.list) {
-//       if (item.name === arr[key]) {
-//         item.id = Number(key);
-//         arr[key] = item;
-//         break;
-//       }
-//     }
-//     if(typeof arr[key] === 'string') {
-//       arr[key] = {
-//         id: key,
-//         name: arr[key],
-//         condition: '',
-//         effect: [],
-//       };
-//     }
+//   for (let key in data) {
+//     //--1名称，2说明，3增为1减益为2 ，4 5 效果或持续时间说明
+//     const [name, effect, type, cd, time, shortname] = data[key];
+//     arr.push({
+//       id: Number(key),
+//       name,
+//       effect,
+//       type,
+//       cd,
+//       time,
+//       shortname,
+//     });
 //   }
 //   console.log(arr);
 // }
-
+//
 // toArr();
 
+// import pinyin from 'pinyin';
 // function toPinyin(arr) {
 //   const list = arr.map((item) => {
 //     const py = pinyin(item.name, {style: 'normal'}).flat();
