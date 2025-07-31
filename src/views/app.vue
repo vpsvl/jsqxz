@@ -40,30 +40,20 @@ watch(
 
 provide('state', state);
 
-// import data from '@/data/person/talent/aa';
-
-// function toArr() {
-//   const arr = [];
+// import data from '@/data/kungfu/fly';
 //
-//   for (let key in data) {
-//     //--1名称，2说明，3增为1减益为2 ，4 5 效果或持续时间说明
-//     const [name, effect, type, cd, time, shortname] = data[key];
-//     arr.push({
-//       id: Number(key),
-//       name,
-//       effect,
-//       type,
-//       cd,
-//       time,
-//       shortname,
-//     });
-//   }
+// function toArr() {
+//   const arr = data.list.map(item => {
+//     item.inherit = [];
+//     return item;
+//   });
 //   console.log(arr);
 // }
 //
 // toArr();
 
 // import pinyin from 'pinyin';
+// import data from '@/data/kungfu/stunt';
 // function toPinyin(arr) {
 //   const list = arr.map((item) => {
 //     const py = pinyin(item.name, {style: 'normal'}).flat();
@@ -78,9 +68,30 @@ provide('state', state);
 //     itemStr = itemStr.replace(/^\{/, `{"id":"${py.join('')}",`);
 //     return JSON.parse(itemStr);
 //   });
-//   console.log(JSON.stringify(list));
+//   console.log(list);
 // }
-// toPinyin(data.list);
+// function toPinyin(obj) {
+//   try {
+//     const rst = {};
+//     for (let key in obj) {
+//       const item = obj[key];
+//       const py = pinyin(item.name, {style: 'normal'}).flat();
+//       for (let [index, pinyinItem] of py.entries()) {
+//         if (index > 0) {
+//           const pyArr = pinyinItem.split('');
+//           pyArr[0] = pyArr[0].toUpperCase();
+//           py[index] = pyArr.join('');
+//         }
+//       }
+//       rst[py.join('')] = item;
+//     }
+//     console.log(rst);
+//   } catch (e) {
+//     console.log(e);
+//   }
+// }
+//
+// toPinyin(data);
 </script>
 
 <style lang="less">

@@ -21,16 +21,9 @@ export default {
           condition: '攻击时概率触发，暴怒必触发',
           effect: ['攻击无误伤', '攻击范围变为面攻，并且追加1500气攻'],
         },
-        {
-          name: '紫气天罗',
-          condition: '灵蛇拳+寒冰绵掌+玄冥神掌+化骨绵掌',
-          effect: [
-            '灵蛇拳/寒冰绵掌/化骨绵掌/玄冥神掌威力提升300点',
-            '攻击随机附加1~3层“冰冻状态”，每层减缓1%集气速度，上限50层',
-            '被攻击时冻结敌人5时序',
-          ],
-        },
+        'ziQiTianLuo',
       ],
+      inherit: [],
     },
     {
       id: 23,
@@ -52,6 +45,7 @@ export default {
           effect: ['无视敌方气防追加17点内伤', '内力<5000时每个目标都会反伤自己内伤+7'],
         },
       ],
+      inherit: [],
     },
     {
       id: 120,
@@ -66,16 +60,8 @@ export default {
       addition: '攻击+3 拳掌+4 带毒+1',
       internal: '0',
       sect: 28,
-      peculiar: [
-        {
-          name: '毒布武林',
-          condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: [
-            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
-            '行动前对全场敌人用毒，并概率叠加负面状态',
-          ],
-        },
-      ],
+      peculiar: ['duBuWuLin'],
+      inherit: [],
     },
     {
       id: 5,
@@ -90,17 +76,8 @@ export default {
       addition: '攻击+1 拳掌+3 带毒+2',
       internal: '0',
       sect: 5,
-      peculiar: [
-        {
-          name: '紫气天罗',
-          condition: '灵蛇拳+寒冰绵掌+玄冥神掌+化骨绵掌',
-          effect: [
-            '灵蛇拳/寒冰绵掌/化骨绵掌/玄冥神掌威力提升300点',
-            '攻击随机附加1~3层“冰冻状态”，每层减缓1%集气速度，上限50层',
-            '被攻击时冻结敌人5时序',
-          ],
-        },
-      ],
+      peculiar: ['ziQiTianLuo'],
+      inherit: [],
     },
     {
       id: 118,
@@ -115,17 +92,8 @@ export default {
       addition: '攻击+2 拳掌+4 带毒+2',
       internal: '0',
       sect: 20,
-      peculiar: [
-        {
-          name: '紫气天罗',
-          condition: '灵蛇拳+寒冰绵掌+玄冥神掌+化骨绵掌',
-          effect: [
-            '灵蛇拳/寒冰绵掌/化骨绵掌/玄冥神掌威力提升300点',
-            '攻击随机附加1~3层“冰冻状态”，每层减缓1%集气速度，上限50层',
-            '被攻击时冻结敌人5时序',
-          ],
-        },
-      ],
+      peculiar: ['ziQiTianLuo'],
+      inherit: [],
     },
     {
       id: 328,
@@ -145,6 +113,7 @@ export default {
           effect: ['学会九阴神功后威力翻倍'],
         },
       ],
+      inherit: [],
     },
     {
       id: 9,
@@ -159,17 +128,8 @@ export default {
       addition: '攻击+1 拳掌+3 带毒+1',
       internal: '0',
       sect: 23,
-      peculiar: [
-        {
-          name: '紫气天罗',
-          condition: '灵蛇拳+寒冰绵掌+玄冥神掌+化骨绵掌',
-          effect: [
-            '灵蛇拳/寒冰绵掌/化骨绵掌/玄冥神掌威力提升300点',
-            '攻击随机附加1~3层“冰冻状态”，每层减缓1%集气速度，上限50层',
-            '被攻击时冻结敌人5时序',
-          ],
-        },
-      ],
+      peculiar: ['ziQiTianLuo'],
+      inherit: [],
     },
     {
       id: 334,
@@ -184,16 +144,8 @@ export default {
       internal: '0',
       addition: '轻功+1 指法+2 用毒+1',
       sect: 28,
-      peculiar: [
-        {
-          name: '毒布武林',
-          condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: [
-            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
-            '行动前对全场敌人用毒，并概率叠加负面状态',
-          ],
-        },
-      ],
+      peculiar: ['duBuWuLin'],
+      inherit: [],
     },
     {
       id: 3,
@@ -208,16 +160,8 @@ export default {
       addition: '攻击+1 拳掌+2 带毒+1',
       internal: '0',
       sect: 15,
-      peculiar: [
-        {
-          name: '毒布武林',
-          condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: [
-            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
-            '行动前对全场敌人用毒，并概率叠加负面状态',
-          ],
-        },
-      ],
+      peculiar: ['duBuWuLin'],
+      inherit: [],
     },
     {
       id: 26,
@@ -233,14 +177,7 @@ export default {
       internal: '1',
       sect: 8,
       peculiar: [
-        {
-          name: '盖世无双',
-          condition: '同时修炼降龙十八掌+打狗棒法到极',
-          effect: [
-            '被攻击时50%概率触发，完全免疫杀气和内伤',
-            '*已经学有其中之一，则学习另一个的系数需求-40点',
-          ],
-        },
+        'gaiShiWuShuang',
         {
           name: '降龙极意',
           condition: '乔峰必定触发，主角、洪七公和郭靖40%概率触发',
@@ -252,6 +189,7 @@ export default {
           effect: ['降龙十八掌三连击'],
         },
       ],
+      inherit: [],
     },
     {
       id: 189,
@@ -266,18 +204,8 @@ export default {
       addition: '攻击+3 防御+1 拳掌+5',
       internal: '1',
       sect: 1,
-      peculiar: [
-        {
-          name: '般若金刚',
-          condition: '大力金刚掌+般若掌+龙象般若功',
-          effect: [
-            '破防目标30%',
-            '金刚掌：必暴击',
-            '般若掌：变为点攻，威力双倍',
-            '十龙十象：主运龙象般若功，概率击晕目标',
-          ],
-        },
-      ],
+      peculiar: ['jinGangBanRuo'],
+      inherit: [],
     },
     {
       id: 191,
@@ -299,6 +227,7 @@ export default {
           effect: ['暴怒攻击时，有50%概率击晕目标1回合'],
         },
       ],
+      inherit: [],
     },
     {
       id: 135,
@@ -313,28 +242,8 @@ export default {
       addition: '攻击+2 拳掌+4',
       internal: '1',
       sect: 1,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由罗汉拳一脉相承'],
-        },
-        {
-          name: '达摩掌',
-          condition: '易筋神功+大金刚掌',
-          effect: ['使用大力金刚掌40%概率提高100点伤害'],
-        },
-        {
-          name: '般若金刚',
-          condition: '大力金刚掌+般若掌+龙象般若功',
-          effect: [
-            '破防目标30%',
-            '金刚掌：必暴击',
-            '般若掌：变为点攻，威力双倍',
-            '十龙十象：主运龙象般若功，概率击晕目标',
-          ],
-        },
-      ],
+      peculiar: ['daMoZhang', 'jinGangBanRuo'],
+      inherit: ['luoHanToDaLi'],
     },
     {
       id: 13,
@@ -355,12 +264,9 @@ export default {
           condition: '使用铁掌攻击，概率触发',
           effect: ['无视对方气防追加12-15点内伤'],
         },
-        {
-          name: '铁甲',
-          condition: '铁掌+铁剑+铁布衫，主运铁布衫',
-          effect: ['护甲提升20%，被攻击时20%概率抵挡生命最大值2%伤害'],
-        },
+        'tieJia',
       ],
+      inherit: [],
     },
     {
       id: 346,
@@ -375,13 +281,8 @@ export default {
       addition: '攻击+2 拳掌+3',
       internal: '1',
       sect: 1,
-      peculiar: [
-        {
-          name: '慈悲为怀',
-          condition: '慈悲刀法+大慈大悲手',
-          effect: ['道德高于60时，如所受伤害大于120，减伤（道德-60）点'],
-        },
-      ],
+      peculiar: ['ciBeiWeiHuai'],
+      inherit: [],
     },
     {
       id: 25,
@@ -404,6 +305,7 @@ export default {
           effect: ['攻击范围变成面攻，无误伤，必破气防'],
         },
       ],
+      inherit: [],
     },
     {
       id: 24,
@@ -428,6 +330,7 @@ export default {
           ],
         },
       ],
+      inherit: [],
     },
     {
       id: 16,
@@ -457,17 +360,9 @@ export default {
           condition: '主运太极神功，怒气值=100，太极蓄力值>=500，使用太极拳或太极剑法',
           effect: ['消耗自身10%体力，10%内力对九格范围目标造成大量伤害'],
         },
-        {
-          name: '太极奥义',
-          condition: '同时修炼太极拳+太极剑法到极',
-          effect: [
-            '太极奥义：',
-            '被攻击概率（资质/4+35%）触发，降低25%所受到的杀气',
-            '真·太极奥义 四两拨千斤：',
-            '触发太极奥义时有25%的概率，完全免疫杀气',
-          ],
-        },
+        'taiJiAoYi',
       ],
+      inherit: [],
     },
     {
       id: 8,
@@ -483,6 +378,7 @@ export default {
       internal: '',
       sect: 3,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 202,
@@ -498,6 +394,7 @@ export default {
       internal: '',
       sect: 3,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 342,
@@ -519,6 +416,7 @@ export default {
           effect: ['附加生命最大值5%~10%的伤害', '主运九阴真经时效果翻倍'],
         },
       ],
+      inherit: [],
     },
     {
       id: 15,
@@ -534,6 +432,7 @@ export default {
       internal: '',
       sect: 7,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 234,
@@ -548,13 +447,8 @@ export default {
       addition: '轻功+2 拳掌+3',
       internal: '',
       sect: 6,
-      peculiar: [
-        {
-          name: '定神门',
-          condition: '神门十三剑+五行六合掌+阴阳倒乱刃+灵枢定玄指',
-          effect: ['刀剑连击概率+10%，拳指暴击概率+10%', '攻击时锁足概率+100%，封穴+5点'],
-        },
-      ],
+      peculiar: ['dingShenMen'],
+      inherit: [],
     },
     {
       id: 306,
@@ -570,6 +464,7 @@ export default {
       internal: '',
       sect: 9,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 197,
@@ -584,13 +479,8 @@ export default {
       addition: '拳掌+3',
       internal: '',
       sect: 2,
-      peculiar: [
-        {
-          name: '玄虚劲',
-          condition: '无极玄功拳+玄虚刀法+玄天指',
-          effect: ['自身破绽时受到攻击免疫伤害，且集气位置+200，减少50%受到的气攻'],
-        },
-      ],
+      peculiar: ['xuanXuJin'],
+      inherit: [],
     },
     {
       id: 12,
@@ -605,18 +495,8 @@ export default {
       addition: '攻击+1 拳掌+3 御剑+1',
       internal: '',
       sect: 22,
-      peculiar: [
-        {
-          name: '桃花绝技',
-          condition: '同时修炼弹指神通+落英神剑掌+玉玉箫剑法到极',
-          effect: [
-            '三种武功威力均+200，有40%概率三连击，暴怒必出',
-            '弹指神通：必暴击，气攻+1500',
-            '落英神剑掌：攻击范围变为可移动，并根据敌方内力耗损量增加伤害',
-            '玉箫剑法：攻击距离提升至8格，有60%概率冰封',
-          ],
-        },
-      ],
+      peculiar: ['taoHuaJueJi'],
+      inherit: [],
     },
     {
       id: 115,
@@ -636,6 +516,7 @@ export default {
           effect: ['必连击但不会暴击'],
         },
       ],
+      inherit: [],
     },
     {
       id: 10,
@@ -651,6 +532,7 @@ export default {
       internal: '',
       sect: 6,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 7,
@@ -666,6 +548,7 @@ export default {
       internal: '',
       sect: 2,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 6,
@@ -681,6 +564,7 @@ export default {
       internal: '',
       sect: 16,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 1,
@@ -695,18 +579,8 @@ export default {
       addition: '攻击+1 拳掌+2',
       internal: '',
       sect: 1,
-      peculiar: [
-        {
-          name: '伏虎罗汉拳',
-          condition: '易筋神功+罗汉拳',
-          effect: ['使用罗汉拳60%概率伤害提高50点'],
-        },
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为大力金刚掌'],
-        },
-      ],
+      peculiar: ['fuHuLuoHanQuan'],
+      inherit: ['luoHanToDaLi'],
     },
   ],
 };

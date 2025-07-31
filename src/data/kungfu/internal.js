@@ -24,31 +24,8 @@ export default {
         'yaoJiaoKongBi',
         'wuWoWuXiang2',
       ],
-      peculiar: [
-        {
-          name: '九阴神爪',
-          condition: '九阴神功+九阴白骨爪，主运九阴神功',
-          effect: [
-            '主运九阴神功，使用九阴白骨爪必触发九阴神爪极意',
-            '九阴神爪极意：必连击，增加1500点伤害杀气，范围为7*7',
-          ],
-        },
-        {
-          name: '森罗万象',
-          condition: '九阴神功+九阳神功',
-          effect: ['免疫敌方暴击的额外伤害和额外气攻'],
-        },
-        {
-          name: '九阴先天',
-          condition: '九阴神功+先天功，主运九阴神功',
-          effect: ['主运九阴神功，被杀气到-500，清除全部内伤，并恢复10%最大生命值'],
-        },
-        {
-          name: '逆运九阴',
-          condition: '九阴神功+逆运经脉',
-          effect: ['被攻击时暴击伤害减少20%', '主运九阴神功逆运经脉一同视为主运'],
-        },
-      ],
+      peculiar: ['jiuYinShenZhao', 'senLuoWanXiang', 'xianTianJiuYin', 'niYunJiuYin'],
+      inherit: [],
     },
     {
       id: 172,
@@ -72,6 +49,7 @@ export default {
         'tianJiMiShu',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 163,
@@ -96,6 +74,7 @@ export default {
         'xueMo',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 238,
@@ -120,6 +99,7 @@ export default {
         'qingXin',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 233,
@@ -134,13 +114,8 @@ export default {
       sect: 1,
       internal: '0',
       initiative: ['jiBu', 'duanGu', 'zaiDong', 'kongShou', 'buZhan', 'chiBo'],
-      peculiar: [
-        {
-          name: '梵我合一',
-          condition: '神足经+瑜伽密乘，主运其中一个',
-          effect: ['受到会暴击或连击的攻击时，20%概率终止敌方行动'],
-        },
-      ],
+      peculiar: ['fanWoHeYi'],
+      inherit: [],
     },
     {
       id: 104,
@@ -162,13 +137,8 @@ export default {
         'zhongJi',
         'qiYueRuShi',
       ],
-      peculiar: [
-        {
-          name: '逆运九阴',
-          condition: '九阴神功+逆运经脉',
-          effect: ['被攻击时暴击伤害减少20%', '主运九阴神功逆运经脉一同视为主运'],
-        },
-      ],
+      peculiar: ['niYunJiuYin'],
+      inherit: [],
     },
     {
       id: 216,
@@ -190,13 +160,8 @@ export default {
         'poLi',
         'dongJie',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由嵩山心法一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['songShanToHanBing'],
     },
     {
       id: 362,
@@ -211,13 +176,8 @@ export default {
       sect: 6,
       internal: '0',
       initiative: ['huiNuShiXu', 'wenLuan', 'quanGang', 'quanZhangZhiLi', 'jieLi', 'lingXiFenShui'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为鲸息功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['haMaToJingXi'],
     },
     {
       id: 220,
@@ -239,16 +199,8 @@ export default {
         'mianYiZhongDu',
         'yinDuNveYan',
       ],
-      peculiar: [
-        {
-          name: '毒布武林',
-          condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: [
-            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
-            '行动前对全场敌人用毒，并概率叠加负面状态',
-          ],
-        },
-      ],
+      peculiar: ['duBuWuLin'],
+      inherit: [],
     },
     {
       id: 89,
@@ -263,13 +215,8 @@ export default {
       sect: 9,
       internal: '0',
       initiative: ['huiTi', 'mianYiBingFeng', 'sanJi', 'qiGuanWuYue'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由华山心法一脉相承', '可洗为五岳剑诀'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['huaShanToZiXia', 'ziXiaToWuYue'],
     },
     {
       id: 259,
@@ -285,6 +232,7 @@ export default {
       internal: '0',
       initiative: ['huiNeiShiXu(2), effect.puDuCiHang'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 106,
@@ -308,18 +256,8 @@ export default {
         'fanZhen',
         'baoYuanShouYi',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由少林九阳功、武当九阳功、峨眉九阳功一脉相承'],
-        },
-        {
-          name: '森罗万象',
-          condition: '九阴神功+九阳神功',
-          effect: ['免疫敌方暴击的额外伤害和额外气攻'],
-        },
-      ],
+      peculiar: ['senLuoWanXiang'],
+      inherit: ['shaoLinToJiuYang', 'wuDangToTaiJi', 'eMeiToJiuYang'],
     },
     {
       id: 103,
@@ -343,18 +281,8 @@ export default {
         'shenLiJiaQiang',
         'longXiangZhiLi',
       ],
-      peculiar: [
-        {
-          name: '般若金刚',
-          condition: '大力金刚掌+般若掌+龙象般若功',
-          effect: [
-            '破防目标30%',
-            '金刚掌：必暴击',
-            '般若掌：变为点攻，威力双倍',
-            '十龙十象：主运龙象般若功，概率击晕目标',
-          ],
-        },
-      ],
+      peculiar: ['jinGangBanRuo'],
+      inherit: [],
     },
     {
       id: 264,
@@ -378,6 +306,7 @@ export default {
         'jiuShenZhiLi',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 204,
@@ -399,13 +328,8 @@ export default {
         'tianXingJianGong',
         'tianXingJianShou',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由莲花功一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['lianHuaToQinLong'],
     },
     {
       id: 196,
@@ -420,13 +344,8 @@ export default {
       sect: 1,
       internal: '1',
       initiative: ['huJia', 'duanGu', 'gangTi', 'yunQiLiaoShang', 'lianTi', 'jianShangJiaQiang'],
-      peculiar: [
-        {
-          name: '铁甲',
-          condition: '铁掌+铁剑诀+铁布衫，主运铁布衫',
-          effect: ['主运铁布衫，护甲提升20%，被攻击时20%概率抵挡生命最大值2%伤害'],
-        },
-      ],
+      peculiar: ['tieJia'],
+      inherit: [],
     },
     {
       id: 169,
@@ -448,13 +367,8 @@ export default {
         'xuLiQiangHua',
         'shenLiJiaQiang',
       ],
-      peculiar: [
-        {
-          name: '梵我合一',
-          condition: '神足经+瑜伽密乘，主运其中一个',
-          effect: ['受到会暴击或连击的攻击时，20%概率终止敌方行动'],
-        },
-      ],
+      peculiar: ['fanWoHeYi'],
+      inherit: [],
     },
     {
       id: 99,
@@ -477,6 +391,7 @@ export default {
         'dianRan',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 144,
@@ -498,18 +413,8 @@ export default {
         'mianYiPoZhan',
         'jianShangJiaQiang',
       ],
-      peculiar: [
-        {
-          name: '金刚不坏',
-          condition: '金刚不坏体+易筋神功，主运易筋神功',
-          effect: ['主运易筋神功，被攻击必出“金刚不坏”特效，高优先级降低30%所承受伤害与杀气'],
-        },
-        {
-          name: '罗汉金身',
-          condition: '罗汉伏魔功+金刚不坏体，主运罗汉伏魔功、金刚不坏体或易筋神功',
-          effect: ['主运罗汉伏魔功、金刚不坏体或易筋神功，被攻击时30%概率第一击伤害降低50%'],
-        },
-      ],
+      peculiar: ['jinGangBuHuai', 'luoHanJinShen'],
+      inherit: [],
     },
     {
       id: 241,
@@ -524,13 +429,8 @@ export default {
       sect: 2,
       internal: '1',
       initiative: ['huiNeiShiXu', 'quHan', 'jianShang', 'zhuoShao1'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为九阳神功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['wuDangToJiuYang'],
     },
     {
       id: 242,
@@ -545,13 +445,8 @@ export default {
       sect: 19,
       internal: '1',
       initiative: ['jianShang', 'dianRan', 'fanZhen', 'baoYuanShouYi'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为九阳神功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['eMeiToJiuYang'],
     },
     {
       id: 243,
@@ -566,13 +461,8 @@ export default {
       sect: 1,
       internal: '1',
       initiative: ['huiNeiShiXu', 'quHan', 'jianShang', 'yunQiJieXue'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为九阳神功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['shaoLinToJiuYang'],
     },
     {
       id: 108,
@@ -595,23 +485,8 @@ export default {
         'mianYiShaQi',
         'wuShenZhiLi2',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由少林心法一脉相承'],
-        },
-        {
-          name: '罗汉伏魔',
-          condition: '罗汉伏魔功+易筋神功，主运易筋神功',
-          effect: ['主运易筋神功，攻击时必出“罗汉伏魔”特效 （加成1.1倍）'],
-        },
-        {
-          name: '金刚不坏',
-          condition: '金刚不坏体+易筋神功，主运易筋神功',
-          effect: ['主运易筋神功，被攻击必出“金刚不坏”特效，高优先级降低30%所承受伤害与杀气'],
-        },
-      ],
+      peculiar: ['luoHanFuMo', 'jinGangBuHuai', 'fuHuLuoHanQuan', 'daMoZhang'],
+      inherit: ['shaoLinToYiJin'],
     },
     {
       id: 190,
@@ -626,13 +501,8 @@ export default {
       sect: 6,
       internal: '2',
       initiative: ['jieXueShiXu', 'poNeiJue', 'juLi', 'wuJianBuCui', 'daZongShi'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由小周天功一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['xiaoZhouToDaZhou'],
     },
     {
       id: 88,
@@ -654,16 +524,8 @@ export default {
         'sanGong',
         'gangTi',
       ],
-      peculiar: [
-        {
-          name: '万象天引',
-          condition: '北冥神功+吸星大法+乾坤大挪移',
-          effect: [
-            '万象天引：反弹50%所受伤害和一切状态',
-            '神罗天征：每三回合触发一次，将自身3~10格范围的目标拉到身前三格内的一个点重叠，并锁足一回合',
-          ],
-        },
-      ],
+      peculiar: ['wanXiangTianYin'],
+      inherit: [],
     },
     {
       id: 225,
@@ -678,13 +540,8 @@ export default {
       sect: 6,
       internal: '2',
       initiative: ['jieXueShiXu(2), effect.daZongShi'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为大周天功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['xiaoZhouToDaZhou'],
     },
     {
       id: 184,
@@ -709,6 +566,7 @@ export default {
         'zhiXiGanGe',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 221,
@@ -733,6 +591,7 @@ export default {
         'bingHuoChongRong',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 152,
@@ -757,6 +616,7 @@ export default {
         'zhiYinJiangHu',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 177,
@@ -772,6 +632,7 @@ export default {
       internal: '',
       initiative: ['poJia', 'dianRan', 'xuRuo', 'sanGong', 'siLie', 'dongJie', 'poZhan', 'baTi'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 253,
@@ -796,6 +657,7 @@ export default {
         'puDuCiHang',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 102,
@@ -819,6 +681,7 @@ export default {
         'hunDunTaiXuan',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 43,
@@ -843,6 +706,7 @@ export default {
         'wuWoWuXiang2',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 203,
@@ -866,13 +730,8 @@ export default {
         'bingHuoChongRong',
         'zhouLiuLiuXu',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由神照功一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['shenZhaoToChangSheng'],
     },
     {
       id: 180,
@@ -896,13 +755,8 @@ export default {
         'lingXiFenShui',
         'kuiHuaBaiJie',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由蛤蟆功一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['haMaToJingXi'],
     },
     {
       id: 160,
@@ -925,13 +779,8 @@ export default {
         'xieJia2',
         'buMieJinShen',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由血河神鉴一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['xueHeToTianMo'],
     },
     {
       id: 171,
@@ -955,13 +804,8 @@ export default {
         'jieLi',
         'taiJiZhiXing',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由武当心法一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['wuDangToTaiJi'],
     },
     {
       id: 183,
@@ -985,13 +829,8 @@ export default {
         'wuWoWuXiang2',
         'liuDaoLunHui',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由龟息功一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['guiXiToBuLao'],
     },
     {
       id: 91,
@@ -1015,13 +854,8 @@ export default {
         'poFang',
         'hunLuan',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由狮子吼一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['shiZiToJinGang'],
     },
     {
       id: 105,
@@ -1046,17 +880,8 @@ export default {
         'nuoYi',
         'kuiHuaBaiJie',
       ],
-      peculiar: [
-        {
-          name: '真辟邪剑法·葵花刺目',
-          condition: '辟邪剑法+葵花神功',
-          effect: [
-            '主运葵花神功使用辟邪剑法攻击，概率触发特效“真辟邪剑法·葵花刺目”',
-            '被刺目的敌人，本场战斗伤害和杀气均下降15%，攻击时有50%概率落空',
-            '习得葵花神功后，辟邪剑法威力+1000',
-          ],
-        },
-      ],
+      peculiar: ['zhenBiXieJianFaKuiHuaCiMu'],
+      inherit: [],
     },
     {
       id: 175,
@@ -1080,13 +905,8 @@ export default {
         'sanJi',
         'qiGuanWuYue',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由紫霞神功一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['ziXiaToWuYue'],
     },
     {
       id: 85,
@@ -1110,27 +930,8 @@ export default {
         'xiNuZhuDong',
         'weiLiZengQiang',
       ],
-      peculiar: [
-        {
-          name: '自在逍遥',
-          condition: '小无相功+北冥神功+八荒六合功',
-          effect: [
-            '灵鹫宫对话石像战胜无崖子后，学会“逍遥御风”：',
-            '攻击与被攻击均有概率触发特效"逍遥御风"，累积点数。',
-            '当累积点数达到9点时，从下次开始受到攻击开始计算，闪避15时序并清空封穴',
-            '此状态不会被杀气或封穴，直到人物下次行动时累积归零',
-            '单次攻击累积“逍遥御风”上限为3次',
-          ],
-        },
-        {
-          name: '万象天引',
-          condition: '北冥神功+吸星大法+乾坤大挪移',
-          effect: [
-            '万象天引：反弹50%所受伤害和一切状态',
-            '神罗天征：每三回合触发一次，将自身3~10格范围的目标拉到身前三格内的一个点重叠，并锁足一回合',
-          ],
-        },
-      ],
+      peculiar: ['ziZaiXiaoYao', 'wanXiangTianYin'],
+      inherit: [],
     },
     {
       id: 93,
@@ -1154,13 +955,8 @@ export default {
         'dianRan',
         'zhiXiGanGe',
       ],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由地火功一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['diHuoToShengHuo'],
     },
     {
       id: 199,
@@ -1175,15 +971,8 @@ export default {
       sect: 30,
       internal: '',
       initiative: ['xieFang', 'guWu', 'siLie', 'dongJie', 'poZhan', 'mianYiFengXue'],
-      peculiar: [
-        {
-          name: '血战沙场',
-          condition: '岳家枪法+岳王散手+武穆遗书',
-          effect: [
-            '使用岳家枪法/岳王散手对七格范围内敌人造成10~20点伤害2次，根据击杀数和怒气值增加次数',
-          ],
-        },
-      ],
+      peculiar: ['xieZhanShaChang'],
+      inherit: [],
     },
     {
       id: 100,
@@ -1208,21 +997,13 @@ export default {
       ],
       peculiar: [
         {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由全真心法一脉相承'],
-        },
-        {
           name: '组合',
           condition: '先天功+玉女心经',
           effect: ['每时序额外恢复封穴1点'],
         },
-        {
-          name: '组合',
-          condition: '九阴神功+先天功，主运九阴神功',
-          effect: ['主运九阴神功，被杀气到-500，清除全部内伤，并恢复10%最大生命值'],
-        },
+        'xianTianJiuYin',
       ],
+      inherit: ['quanZhenToXianTian'],
     },
     {
       id: 101,
@@ -1244,19 +1025,8 @@ export default {
         'mianYiFengXue',
         'liuDaoLunHui',
       ],
-      peculiar: [
-        {
-          name: '自在逍遥',
-          condition: '小无相功+北冥神功+八荒六合功',
-          effect: [
-            '灵鹫宫对话石像战胜无崖子后，学会“逍遥御风”：',
-            '攻击与被攻击均有概率触发特效"逍遥御风"，累积点数。',
-            '当累积点数达到9点时，从下次开始受到攻击开始计算，闪避15时序并清空封穴',
-            '此状态不会被杀气或封穴，直到人物下次行动时累积归零',
-            '单次攻击累积“逍遥御风”上限为3次',
-          ],
-        },
-      ],
+      peculiar: ['ziZaiXiaoYao'],
+      inherit: [],
     },
     {
       id: 98,
@@ -1278,19 +1048,8 @@ export default {
         'weiLiZengQiang',
         'wuWoWuXiang2',
       ],
-      peculiar: [
-        {
-          name: '自在逍遥',
-          condition: '小无相功+北冥神功+八荒六合功',
-          effect: [
-            '灵鹫宫对话石像战胜无崖子后，学会“逍遥御风”：',
-            '攻击与被攻击均有概率触发特效"逍遥御风"，累积点数。',
-            '当累积点数达到9点时，从下次开始受到攻击开始计算，闪避15时序并清空封穴',
-            '此状态不会被杀气或封穴，直到人物下次行动时累积归零',
-            '单次攻击累积“逍遥御风”上限为3次',
-          ],
-        },
-      ],
+      peculiar: ['ziZaiXiaoYao'],
+      inherit: [],
     },
     {
       id: 92,
@@ -1305,13 +1064,8 @@ export default {
       sect: 1,
       internal: '',
       initiative: ['huiNeiShiXu', 'liaoShang', 'miaoZhun', 'buQuShaQi', 'xuRuo', 'shiZiHou'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为金刚狮子吼'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['shiZiToJinGang'],
     },
     {
       id: 90,
@@ -1334,6 +1088,7 @@ export default {
         'hunLuan',
       ],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 87,
@@ -1349,6 +1104,7 @@ export default {
       internal: '',
       initiative: ['quDuShiXu', 'juDu', 'zhongDuQiangHua', 'zhongDu1', 'huaGong', 'poGang'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 207,
@@ -1364,6 +1120,7 @@ export default {
       internal: '',
       initiative: ['huiNeiShiXu', 'zhiJin', 'guiXi', 'quanZhangZhiLi', 'buQu', 'puDuCiHang'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 354,
@@ -1379,6 +1136,7 @@ export default {
       internal: '',
       initiative: ['zhiXue', 'liaoShang', 'mianYiNeiShang', 'yunQiChuBing', 'sanGong', 'jianShang'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 96,
@@ -1400,27 +1158,8 @@ export default {
         'weiLiZengQiang',
         'luoHanFuMo',
       ],
-      peculiar: [
-        {
-          name: '世尊降魔',
-          condition: '伏魔杖法+无上大力杵+金刚伏魔圈+罗汉伏魔功',
-          effect: [
-            '暴击率增加50%',
-            '如果造成的伤害<300，则伤害等于300，暴怒追加一定气功伤害',
-            '如果造成的伤害>300，则追加一定气功值伤害，暴怒则追加大量气功值伤害',
-          ],
-        },
-        {
-          name: '罗汉伏魔',
-          condition: '罗汉伏魔功+易筋神功，主运易筋神功',
-          effect: ['主运易筋神功，攻击时必出“罗汉伏魔”特效 （加成1.1倍）'],
-        },
-        {
-          name: '罗汉金身',
-          condition: '罗汉伏魔功+金刚不坏体，主运罗汉伏魔功、金刚不坏体或易筋神功',
-          effect: ['主运罗汉伏魔功、金刚不坏体或易筋神功，被攻击时30%概率第一击伤害降低50%'],
-        },
-      ],
+      peculiar: ['shiZunJiangMo', 'luoHanFuMo', 'luoHanJinShen'],
+      inherit: [],
     },
     {
       id: 154,
@@ -1449,6 +1188,7 @@ export default {
           effect: ['每时序额外恢复封穴1点'],
         },
       ],
+      inherit: [],
     },
     {
       id: 95,
@@ -1463,13 +1203,8 @@ export default {
       sect: 23,
       internal: '',
       initiative: ['jieXueShiXu', 'huiNuShiXu', 'jieLi', 'qiGongBo', 'qiYueRuShi'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为鲸息功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['haMaToJingXi'],
     },
     {
       id: 97,
@@ -1484,16 +1219,8 @@ export default {
       sect: 5,
       internal: '',
       initiative: ['quHan', 'zaiDong', 'xianShou', 'mianYiZhuoShao', 'zhuoShao1', 'fanTan'],
-      peculiar: [
-        {
-          name: '万象天引',
-          condition: '北冥神功+吸星大法+乾坤大挪移',
-          effect: [
-            '万象天引：反弹50%所受伤害和一切状态',
-            '神罗天征：每三回合触发一次，将自身3~10格范围的目标拉到身前三格内的一个点重叠，并锁足一回合',
-          ],
-        },
-      ],
+      peculiar: ['wanXiangTianYin'],
+      inherit: [],
     },
     {
       id: 251,
@@ -1509,6 +1236,7 @@ export default {
       internal: '',
       initiative: ['quHan', 'juLi', 'neiShang1', 'yunQiLiaoShang', 'fengXueQiangHua', 'duanRen2'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 317,
@@ -1524,6 +1252,7 @@ export default {
       internal: '',
       initiative: ['huiTi', 'mianYiZhuoShao', 'fuYuanJiaShen', 'tianJiMiShu'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 227,
@@ -1538,13 +1267,8 @@ export default {
       sect: 2,
       internal: '',
       initiative: ['huiMingShiXu', 'jieXueShiXu', 'guiXing', 'puTiShu'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为长春不老功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['guiXiToBuLao'],
     },
     {
       id: 94,
@@ -1559,13 +1283,8 @@ export default {
       sect: 0,
       internal: '',
       initiative: ['huiMing', 'huiNei', 'fengShenZhiLi', 'chongSheng'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为长生诀'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['shenZhaoToChangSheng'],
     },
     {
       id: 95,
@@ -1580,13 +1299,8 @@ export default {
       sect: 23,
       internal: '',
       initiative: ['jieXueShiXu', 'huiNuShiXu', 'jieLi', 'qiGongBo', 'qiYueRuShi'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为鲸息功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['haMaToJingXi'],
     },
     {
       id: 356,
@@ -1602,6 +1316,7 @@ export default {
       internal: '',
       initiative: ['huiNei', 'huiMing', 'jianFaZhiLi', 'duanRen2', 'sanJi', 'wanJianGuiZong'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 357,
@@ -1617,6 +1332,7 @@ export default {
       internal: '',
       initiative: ['zhiXueShiXu', 'baoJiJianShang', 'shenLiJiaQiang', 'longXiangZhiLi'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 252,
@@ -1632,6 +1348,7 @@ export default {
       internal: '',
       initiative: ['huiQi', 'fengShenZhiLi1', 'mianYiBingFeng', 'dongJie'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 163,
@@ -1646,13 +1363,8 @@ export default {
       sect: '',
       internal: '',
       initiative: ['jieXueShiXu', 'mianYiLiuXie', 'shenDao', 'daoFeng', 'daoFaZhiLi', 'xueMo'],
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由血刀心法一脉相承', '可洗为天魔功'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['xueDaoToXueHe', 'xueHeToTianMo'],
     },
     {
       id: 166,
@@ -1668,6 +1380,7 @@ export default {
       internal: '',
       initiative: ['huiMing', 'huiNei', 'jianFaZhiLi', 'zhiYinJiangHu'],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 'chuJieNeiGong',
@@ -1750,6 +1463,7 @@ export default {
           effect: [],
         },
       ],
+      inherit: [],
     },
   ],
 };

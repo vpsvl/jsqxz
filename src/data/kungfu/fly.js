@@ -16,6 +16,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'zaiDong', 'tianLuo'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 146,
@@ -31,6 +32,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'fengShenZhiLi'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 147,
@@ -46,6 +48,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'shanBi', 'lingBo'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 148,
@@ -61,6 +64,7 @@ export default {
       initiative: ['shanBiZengQiang', 'geDangZengQiang', 'tianLuo', 'diWang'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 149,
@@ -76,6 +80,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'tianXingJianGong', 'yaoJiaoKongBi'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 150,
@@ -91,6 +96,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'jiFeng', 'shunXiQianLi'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 186,
@@ -106,6 +112,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'xianShou', 'qingXin'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 223,
@@ -126,6 +133,7 @@ export default {
       ],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 224,
@@ -141,6 +149,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'qingShen', 'qiYueRuShi'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 2,
@@ -156,6 +165,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'shanBiZengQiang1', 'fengShenZhiLi1'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 237,
@@ -171,6 +181,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'shanBiZengQiang1', 'buQu'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: '迷踪步',
@@ -186,6 +197,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'mingZhongZengQiang1', 'buMieJinShen'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 379,
@@ -201,6 +213,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'geDangZengQiang1', 'nuoYi'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 394,
@@ -216,6 +229,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'bingShang', 'mianYiPoZhan'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 413,
@@ -231,6 +245,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'lianDong', 'wenLuan'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 415,
@@ -246,6 +261,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'mingZhongZengQiang1', 'tianLuo'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
     {
       id: 417,
@@ -261,51 +277,7 @@ export default {
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'hunLuan', 'geDangZengQiang1'],
       passive: [],
       peculiar: [],
+      inherit: [],
     },
-    // {
-    //   id: 404,
-    //   name: '登萍渡水',
-    //   level: 4,
-    //   cheat: '',
-    //   get: '',
-    //   power: '命中350 闪避400',
-    //   condition: '',
-    //   addition: '轻功+4',
-    //   sect: 13,
-    //   internal: '',
-    //   initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'yunQiBiHuo', 'lianZhan'],
-    //   passive: [],
-    //   peculiar: [],
-    // },
-    // {
-    //   id: 239,
-    //   name: '扶摇九天',
-    //   level: 4,
-    //   cheat: '',
-    //   get: '',
-    //   power: '命中400 闪避400',
-    //   condition: '',
-    //   addition: '轻功+5',
-    //   sect: 12,
-    //   internal: '',
-    //   initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'jianBao', 'jianLian'],
-    //   passive: [],
-    //   peculiar: [],
-    // },
-    // {
-    //   id: '幻尘身法',
-    //   name: '幻尘身法',
-    //   level: 4,
-    //   cheat: '',
-    //   get: '',
-    //   power: '命中400 闪避400',
-    //   condition: '',
-    //   addition: '轻功+5',
-    //   sect: 12,
-    //   internal: '',
-    //   initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'guiXing', 'yiRong'],
-    //   passive: [],
-    //   peculiar: [],
-    // },
   ],
 };

@@ -21,15 +21,9 @@ export default {
           condition: '使用沧溟刀法攻击30%概率触发',
           effect: ['额外杀气，且必定造成流血'],
         },
-        {
-          name: '利刃寒锋',
-          condition: '修罗刀法+阴风刀法+沧溟刀法',
-          effect: [
-            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态',
-            '冻结：无法集气和时序恢复状态',
-          ],
-        },
+        'liRenHanFeng',
       ],
+      inherit: [],
     },
     {
       id: 174,
@@ -44,16 +38,8 @@ export default {
       internal: '0',
       addition: '攻击+1 轻功+1 耍刀+4',
       sect: 5,
-      peculiar: [
-        {
-          name: '利刃寒锋',
-          condition: '修罗刀法+阴风刀法+沧溟刀法',
-          effect: [
-            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态',
-            '冻结：无法集气和时序恢复状态',
-          ],
-        },
-      ],
+      peculiar: ['liRenHanFeng'],
+      inherit: [],
     },
     {
       id: 58,
@@ -68,16 +54,8 @@ export default {
       internal: '0',
       addition: '攻击+1 轻功+1 耍刀+2',
       sect: 5,
-      peculiar: [
-        {
-          name: '利刃寒锋',
-          condition: '修罗刀法+阴风刀法+沧溟刀法',
-          effect: [
-            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态',
-            '冻结：无法集气和时序恢复状态',
-          ],
-        },
-      ],
+      peculiar: ['liRenHanFeng'],
+      inherit: [],
     },
     {
       id: 66,
@@ -98,15 +76,9 @@ export default {
           condition: '使用火焰刀法攻击30%概率触发（鸠摩智100%触发）',
           effect: ['全场敌方受到内伤30点，且追加1000气攻'],
         },
-        {
-          name: '举火燎原',
-          condition: '金乌刀法+燃木刀法+火焰刀法',
-          effect: [
-            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态',
-            '引燃：每时序损失2%当前血量',
-          ],
-        },
+        'juHuoLiaoYuan',
       ],
+      inherit: [],
     },
     {
       id: 67,
@@ -122,20 +94,14 @@ export default {
       addition: '攻击+1 轻功+1 耍刀+5',
       sect: 0,
       peculiar: [
-        {
-          name: '刀剑归真',
-          condition: '同时修炼胡家刀法+苗家剑法到极',
-          effect: [
-            '用其中一种武功攻击时概率触发：真气攻+1500,爆怒归真必三连,攻击伤害+50%',
-            '学有其中之一，则学习另一武功的兵器值需求-40',
-          ],
-        },
+        'daoJianGuiZhen',
         {
           name: '胡刀极意',
           condition: '限主角与胡斐，用胡家刀法攻击时概率触发（暴怒必触发）',
           effect: ['攻击无误伤，攻击范围变为9*9面攻，气攻提升至1500'],
         },
       ],
+      inherit: [],
     },
     {
       id: 65,
@@ -150,16 +116,8 @@ export default {
       internal: '1',
       addition: '攻击+1 防御+1 耍刀+4',
       sect: 29,
-      peculiar: [
-        {
-          name: '举火燎原',
-          condition: '金乌刀法+燃木刀法+火焰刀法',
-          effect: [
-            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态',
-            '引燃：每时序损失2%当前血量',
-          ],
-        },
-      ],
+      peculiar: ['juHuoLiaoYuan'],
+      inherit: [],
     },
     {
       id: 61,
@@ -174,21 +132,8 @@ export default {
       internal: '1',
       addition: '攻击+1 防御+1 耍刀+3',
       sect: 18,
-      peculiar: [
-        {
-          name: '举火燎原',
-          condition: '金乌刀法+燃木刀法+火焰刀法',
-          effect: [
-            '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态',
-            '引燃：每时序损失2%当前血量',
-          ],
-        },
-        {
-          name: '金乌映雪',
-          condition: '金乌刀法+雪山剑法',
-          effect: ['触发灼烧必冰封', '触发冰封必灼烧'],
-        },
-      ],
+      peculiar: ['juHuoLiaoYuan', 'jinWuYingXue'],
+      inherit: [],
     },
     {
       id: 335,
@@ -208,6 +153,7 @@ export default {
           effect: ['根据天书数量提升威力杀气'],
         },
       ],
+      inherit: [],
     },
     {
       id: 193,
@@ -224,11 +170,6 @@ export default {
       sect: 6,
       peculiar: [
         {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由柴刀十八路一脉相承'],
-        },
-        {
           name: '良庖岁更刀',
           condition: '使用庖丁解牛刀攻击',
           effect: [
@@ -237,6 +178,7 @@ export default {
           ],
         },
       ],
+      inherit: ['chaiDaoToPaoDing'],
     },
     {
       id: 181,
@@ -252,6 +194,7 @@ export default {
       addition: '攻击+2 轻功+1 耍刀+4',
       sect: 0,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 62,
@@ -270,12 +213,9 @@ export default {
         {
           effect: ['连击时伤害、气攻不会减少'],
         },
-        {
-          name: '天衣无缝',
-          condition: '鸳鸯刀法+夫妻刀法',
-          effect: ['使用任何刀系武功增加30%连击率'],
-        },
+        'tianYiWuFeng',
       ],
+      inherit: [],
     },
     {
       id: 382,
@@ -295,6 +235,7 @@ export default {
           effect: ['击杀小龙女不会触发复活'],
         },
       ],
+      inherit: [],
     },
     {
       id: 63,
@@ -314,6 +255,7 @@ export default {
           effect: ['修炼后生命上限降低200'],
         },
       ],
+      inherit: [],
     },
     {
       id: 141,
@@ -329,6 +271,7 @@ export default {
       addition: '攻击+2 耍刀+4',
       sect: 5,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 60,
@@ -343,16 +286,8 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 耍刀+3',
       sect: 20,
-      peculiar: [
-        {
-          name: '两仪守护',
-          condition: '同时修炼两仪剑法+反两仪刀法到极',
-          effect: [
-            '两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻',
-            '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻',
-          ],
-        },
-      ],
+      peculiar: ['liangYiShouHu'],
+      inherit: [],
     },
     {
       id: 64,
@@ -367,21 +302,8 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 耍刀+4',
       sect: 2,
-      peculiar: [
-        {
-          name: '玄虚劲',
-          condition: '无极玄功拳+玄虚刀法+玄天指',
-          effect: ['自身破绽时受到攻击免疫伤害，且集气位置+200，减少50%受到的气攻'],
-        },
-        {
-          name: '洞虚玄门',
-          condition: '神门十三剑+玄虚刀法',
-          effect: [
-            '玄虚刀法必封穴，神门十三剑必冰封灼烧',
-            '受到攻击30%概率使用双倍内力抵消一半伤害',
-          ],
-        },
-      ],
+      peculiar: ['xuanXuJin', 'dongXuXuanMen'],
+      inherit: [],
     },
     {
       id: 231,
@@ -397,6 +319,7 @@ export default {
       addition: '攻击+2 防御+1 耍刀+3',
       sect: 25,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 267,
@@ -412,6 +335,7 @@ export default {
       addition: '攻击+1 耍刀+3',
       sect: 1,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 54,
@@ -426,13 +350,8 @@ export default {
       internal: '',
       addition: '攻击+1 耍刀+3',
       sect: 29,
-      peculiar: [
-        {
-          name: '天衣无缝',
-          condition: '鸳鸯刀法+夫妻刀法',
-          effect: ['使用任何刀系武功增加30%连击率'],
-        },
-      ],
+      peculiar: ['tianYiWuFeng'],
+      inherit: [],
     },
     {
       id: 52,
@@ -448,6 +367,7 @@ export default {
       addition: '攻击+1 防御+1 轻功+1 耍刀+3',
       sect: 17,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 55,
@@ -463,6 +383,7 @@ export default {
       addition: '攻击+1 轻功+1 耍刀+2',
       sect: 5,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 59,
@@ -477,19 +398,8 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 耍刀+2',
       sect: 5,
-      peculiar: [
-        {
-          name: '五虎',
-          condition: '五虎断门刀+五虎棍法',
-          effect: [
-            '赞天虎：一虎在场，攻击时30%概率提升全队100集气',
-            '彻地虎：二虎在场，被攻击时30%概率提高1000点气防',
-            '穿山虎：三虎在场，攻击时30%概率增加100点伤害',
-            '翻江虎：四虎在场，集气条30%概率跳跃10点集气速度',
-            '锦毛虎：五虎在场，被攻击时30%概率弹10%伤害',
-          ],
-        },
-      ],
+      peculiar: ['wuHu'],
+      inherit: [],
     },
     {
       id: 56,
@@ -505,6 +415,7 @@ export default {
       addition: '攻击+1 耍刀+2',
       sect: 2,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 57,
@@ -519,13 +430,8 @@ export default {
       internal: '',
       addition: '攻击+1 耍刀+2',
       sect: 1,
-      peculiar: [
-        {
-          name: '慈悲为怀',
-          condition: '慈悲刀法+大慈大悲手',
-          effect: ['道德高于60时，如所受伤害大于120，减伤（道德-60）点'],
-        },
-      ],
+      peculiar: ['ciBeiWeiHuai'],
+      inherit: [],
     },
     {
       id: 53,
@@ -541,6 +447,7 @@ export default {
       addition: '攻击+1 耍刀+2',
       sect: 0,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 51,
@@ -556,6 +463,7 @@ export default {
       addition: '攻击+1 耍刀+2',
       sect: 17,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 50,
@@ -570,13 +478,8 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 耍刀+2',
       sect: 0,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为庖丁解牛刀'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['chaiDaoToPaoDing'],
     },
   ],
 };

@@ -16,6 +16,7 @@ export default {
       internal: '0',
       sect: 23,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 79,
@@ -30,13 +31,8 @@ export default {
       addition: '攻击+1 轻功+1 奇门+4',
       internal: '0',
       sect: 16,
-      peculiar: [
-        {
-          name: '绝处逢生',
-          condition: '海叟钓法+银锁金玲',
-          effect: ['被攻击15%概率不受伤害'],
-        },
-      ],
+      peculiar: ['jueChuFengSheng'],
+      inherit: [],
     },
     {
       id: 164,
@@ -52,6 +48,7 @@ export default {
       internal: '0',
       sect: 0,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 78,
@@ -67,6 +64,7 @@ export default {
       internal: '0',
       sect: 29,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 74,
@@ -82,6 +80,7 @@ export default {
       internal: '0',
       sect: 23,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 332,
@@ -97,6 +96,7 @@ export default {
       internal: '0',
       sect: 15,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 83,
@@ -111,17 +111,8 @@ export default {
       addition: '攻击+2 轻功+1 奇门+4',
       internal: '1',
       sect: 29,
-      peculiar: [
-        {
-          name: '世尊降魔',
-          condition: '伏魔杖法+无上大力杵+金刚伏魔圈+罗汉伏魔功',
-          effect: [
-            '暴击率增加50%',
-            '如果造成的伤害<300，则伤害等于300，暴怒追加一定气功伤害',
-            '如果造成的伤害>300，则追加一定气功值伤害，暴怒则追加大量气功值伤害',
-          ],
-        },
-      ],
+      peculiar: ['shiZunJiangMo'],
+      inherit: [],
     },
     {
       id: 194,
@@ -137,6 +128,7 @@ export default {
       internal: '1',
       sect: 1,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 200,
@@ -151,21 +143,8 @@ export default {
       addition: '攻击+3 奇门+4',
       internal: '',
       sect: 30,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由杨家枪法一脉相承'],
-        },
-        {
-          name: '血战沙场',
-          condition: '岳家枪法+岳王散手+武穆遗书',
-          effect: [
-            '使用岳家枪法/岳王散手对七格范围内敌人造成10~20点伤害2次，根据击杀数和怒气值增加次数',
-            '学习岳家枪法/岳王散手，另一门需求减40',
-          ],
-        },
-      ],
+      peculiar: ['xieZhanShaChang'],
+      inherit: ['yangJiaToYueJia'],
     },
     {
       id: 80,
@@ -186,15 +165,9 @@ export default {
           condition: '使用打狗棒法(极)攻击40%概率发动，暴怒必定发动',
           effect: ['攻击无误伤，攻击范围变为面攻，气攻提升至2400'],
         },
-        {
-          name: '盖世无双',
-          condition: '同时修炼降龙十八掌+打狗棒法到极',
-          effect: [
-            '被攻击时50%概率触发，完全免疫杀气和内伤',
-            '*已经学有其中之一，则学习另一个的系数需求-40点',
-          ],
-        },
+        'gaiShiWuShuang',
       ],
+      inherit: [],
     },
     {
       id: 86,
@@ -209,17 +182,8 @@ export default {
       addition: '攻击+1 轻功+1 奇门+4',
       internal: '',
       sect: 1,
-      peculiar: [
-        {
-          name: '世尊降魔',
-          condition: '伏魔杖法+无上大力杵+金刚伏魔圈+罗汉伏魔功',
-          effect: [
-            '暴击率增加50%',
-            '如果造成的伤害<300，则伤害等于300，暴怒追加一定气功伤害',
-            '如果造成的伤害>300，则追加一定气功值伤害，暴怒则追加大量气功值伤害',
-          ],
-        },
-      ],
+      peculiar: ['shiZunJiangMo'],
+      inherit: [],
     },
     {
       id: 84,
@@ -234,13 +198,8 @@ export default {
       addition: '攻击+1 轻功+1 奇门+4',
       internal: '',
       sect: 2,
-      peculiar: [
-        {
-          name: '琴棋书画-书',
-          condition: '同时修炼琴棋书画',
-          effect: ['威力+300', '秉笔直书：攻击必定造成封穴，且伤害提升20%，概率发动'],
-        },
-      ],
+      peculiar: ['qinQiShuHua'],
+      inherit: [],
     },
     {
       id: 82,
@@ -264,16 +223,9 @@ export default {
             '真·金刚伏魔圈护体： 2+人，提升30%防御且气防+1000',
           ],
         },
-        {
-          name: '世尊降魔',
-          condition: '伏魔杖法+无上大力杵+金刚伏魔圈+罗汉伏魔功',
-          effect: [
-            '暴击率增加50%',
-            '如果造成的伤害<300，则伤害等于300，暴怒追加一定气功伤害',
-            '如果造成的伤害>300，则追加一定气功值伤害，暴怒则追加大量气功值伤害',
-          ],
-        },
+        'shiZunJiangMo',
       ],
+      inherit: [],
     },
     {
       id: 158,
@@ -289,6 +241,7 @@ export default {
       internal: '',
       sect: 29,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 185,
@@ -304,6 +257,7 @@ export default {
       internal: '',
       sect: 3,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 228,
@@ -319,6 +273,7 @@ export default {
       internal: '',
       sect: 8,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 240,
@@ -334,6 +289,7 @@ export default {
       internal: '',
       sect: 6,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 77,
@@ -348,13 +304,8 @@ export default {
       addition: '攻击+1 轻功+1 剑法+2 刀法+2 奇门+1',
       internal: '',
       sect: 0,
-      peculiar: [
-        {
-          name: '定神门',
-          condition: '神门十三剑+五行六合掌+阴阳倒乱刃+灵枢定玄指',
-          effect: ['刀剑连击概率+10%，拳指暴击概率+10%', '攻击时锁足概率+100%，封穴+5点'],
-        },
-      ],
+      peculiar: ['dingShenMen'],
+      inherit: [],
     },
     {
       id: 142,
@@ -369,17 +320,8 @@ export default {
       addition: '攻击+1 轻功+1 奇门+3',
       internal: '',
       sect: 27,
-      peculiar: [
-        {
-          name: '琴棋书画-画',
-          condition: '同时修炼琴棋书画',
-          effect: [
-            '威力+300',
-            '画地为牢：使妙笔丹青攻击附带冰封，高概率发动',
-            '江山如画：大幅提升妙笔丹青冰封效果，概率发动',
-          ],
-        },
-      ],
+      peculiar: ['qinQiShuHua'],
+      inherit: [],
     },
     {
       id: 72,
@@ -394,17 +336,8 @@ export default {
       addition: '攻击+1 轻功+1 奇门+2',
       internal: '',
       sect: 4,
-      peculiar: [
-        {
-          name: '琴棋书画-棋',
-          condition: '同时修炼琴棋书画',
-          effect: [
-            '威力+300',
-            '棋高一着：追加1200气攻，100%发动',
-            '星罗棋布：额外提升1000气攻，概率发动',
-          ],
-        },
-      ],
+      peculiar: ['qinQiShuHua'],
+      inherit: [],
     },
     {
       id: 71,
@@ -420,6 +353,7 @@ export default {
       internal: '',
       sect: 4,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 73,
@@ -434,27 +368,8 @@ export default {
       addition: '攻击+1 轻功+1 奇门+3',
       internal: '',
       sect: 4,
-      peculiar: [
-        {
-          name: '琴棋书画-琴',
-          condition: '同时修炼琴棋书画',
-          effect: [
-            '威力+300',
-            '琴音悦耳：攻击不造成怒气，100%发动',
-            '菩提清心：使敌方怒气减半，概率发动',
-          ],
-        },
-        {
-          name: '剑胆琴心',
-          condition: '独孤九剑+持瑶琴',
-          effect: [
-            '攻击时距离敌人越近，增加的命中越多',
-            '受到攻击时距离敌人越近，减少敌人的命中越多',
-            '使用持瑶琴攻击时，自身恢复5%当前血量并减少10点内伤',
-            '学有其中之一，则学习另一武功的兵器值需求-40',
-          ],
-        },
-      ],
+      peculiar: ['qinQiShuHua', 'jianDanQinXin'],
+      inherit: [],
     },
     {
       id: 75,
@@ -470,6 +385,7 @@ export default {
       internal: '',
       sect: 0,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 232,
@@ -484,19 +400,8 @@ export default {
       addition: '攻击+1 防御+1 奇门+3',
       internal: '',
       sect: 0,
-      peculiar: [
-        {
-          name: '五虎',
-          condition: '五虎断门刀+五虎棍法',
-          effect: [
-            '赞天虎：一虎在场，攻击时30%概率提升全队100集气',
-            '彻地虎：二虎在场，被攻击时30%概率提高1000点气防',
-            '穿山虎：三虎在场，攻击时30%概率增加100点伤害',
-            '翻江虎：四虎在场，集气条30%概率跳跃10点集气速度',
-            '锦毛虎：五虎在场，被攻击时30%概率弹10%伤害',
-          ],
-        },
-      ],
+      peculiar: ['wuHu'],
+      inherit: [],
     },
     {
       id: 70,
@@ -512,6 +417,7 @@ export default {
       internal: '',
       sect: 8,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 165,
@@ -526,13 +432,8 @@ export default {
       addition: '攻击+1 轻功+1 奇门+2',
       internal: '',
       sect: 8,
-      peculiar: [
-        {
-          name: '寸长寸强',
-          condition: '呼延枪法+呼延十八鞭',
-          effect: ['使用奇门武功伤害不随距离降低，距离每远一格伤害增加1%'],
-        },
-      ],
+      peculiar: ['cunChangCunQiang'],
+      inherit: [],
     },
     {
       id: 206,
@@ -547,13 +448,8 @@ export default {
       addition: '攻击+1 防御+1 奇门+2',
       internal: '',
       sect: 0,
-      peculiar: [
-        {
-          name: '寸长寸强',
-          condition: '呼延枪法+呼延十八鞭',
-          effect: ['使用奇门武功伤害不随距离降低，距离每远一格伤害增加1%'],
-        },
-      ],
+      peculiar: ['cunChangCunQiang'],
+      inherit: [],
     },
     {
       id: 69,
@@ -569,6 +465,7 @@ export default {
       internal: '',
       sect: 23,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 76,
@@ -583,13 +480,8 @@ export default {
       addition: '攻击+1 轻功+1 奇门+2',
       internal: '',
       sect: 0,
-      peculiar: [
-        {
-          name: '绝处逢生',
-          condition: '海叟钓法+银锁金玲',
-          effect: ['被攻击15%概率不受伤害'],
-        },
-      ],
+      peculiar: ['jueChuFengSheng'],
+      inherit: [],
     },
     {
       id: 68,
@@ -604,13 +496,8 @@ export default {
       addition: '攻击+1 防御+1 奇门+2',
       internal: '',
       sect: 30,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为岳家枪法'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['yangJiaToYueJia'],
     },
   ],
 };

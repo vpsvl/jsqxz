@@ -15,17 +15,8 @@ export default {
       internal: '0',
       addition: '轻功+2 御剑+2',
       sect: 4,
-      peculiar: [
-        {
-          name: '真辟邪剑法·葵花刺目',
-          condition: '辟邪剑法+葵花神功',
-          effect: [
-            '主运葵花神功使用辟邪剑法攻击，概率触发特效“真辟邪剑法·葵花刺目”',
-            '被刺目的敌人，本场战斗伤害和杀气均下降15%，攻击时有50%概率落空',
-            '习得葵花神功后，辟邪剑法威力+1000',
-          ],
-        },
-      ],
+      peculiar: ['zhenBiXieJianFaKuiHuaCiMu'],
+      inherit: [],
     },
     {
       id: 139,
@@ -40,13 +31,8 @@ export default {
       internal: '0',
       addition: '攻击+2 轻功+2 御剑+4',
       sect: 16,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由玉女剑法一脉相承'],
-        },
-      ],
+      peculiar: ['shuangJianHeBi'],
+      inherit: ['yuNvToSuXin'],
     },
     {
       id: 36,
@@ -61,13 +47,8 @@ export default {
       internal: '0',
       addition: '攻击+1 御剑+3',
       sect: 2,
-      peculiar: [
-        {
-          name: '以柔克刚',
-          condition: '太极剑法+柔云剑法',
-          effect: ['被攻击时，有50%概率将被杀气量的一半转化为回血'],
-        },
-      ],
+      peculiar: ['yiRouKeGang'],
+      inherit: [],
     },
     {
       id: 29,
@@ -82,13 +63,8 @@ export default {
       internal: '0',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: 6,
-      peculiar: [
-        {
-          name: '素质三连',
-          condition: '三分剑法+连城剑法',
-          effect: ['全武功攻击时50%概率三连击，暴怒必三连'],
-        },
-      ],
+      peculiar: ['suZhiSanLian'],
+      inherit: [],
     },
     {
       id: 245,
@@ -104,6 +80,7 @@ export default {
       addition: '攻击+1 防御+1 御剑+2',
       sect: 2,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 35,
@@ -118,13 +95,8 @@ export default {
       internal: '0',
       addition: '攻击+1 御剑+2',
       sect: 18,
-      peculiar: [
-        {
-          name: '金乌映雪',
-          condition: '金乌刀法+雪山剑法',
-          effect: ['触发灼烧必冰封', '触发冰封必灼烧'],
-        },
-      ],
+      peculiar: ['jinWuYingXue'],
+      inherit: [],
     },
     {
       id: 45,
@@ -149,7 +121,7 @@ export default {
           ],
         },
         {
-          name: '重剑真传.浪如山涌剑如虹',
+          name: '重剑真传·浪如山涌剑如虹',
           condition: '暴怒',
           effect: ['暴怒触发大范围伤害'],
         },
@@ -157,7 +129,7 @@ export default {
           name: '破尽天下',
           condition: '需装备玄铁剑才能触发',
           effect: [
-            '重剑无锋.破尽天下：',
+            '重剑无锋·破尽天下：',
             '无视一切必定破气防，且追加1000气攻',
             '暴击概率为40+装备等级*10',
           ],
@@ -173,6 +145,7 @@ export default {
           ],
         },
       ],
+      inherit: [],
     },
     {
       id: 143,
@@ -187,13 +160,8 @@ export default {
       internal: '1',
       addition: '攻击+2 防御+2 御剑+4',
       sect: 0,
-      peculiar: [
-        {
-          name: '铁甲',
-          condition: '铁掌+铁剑诀+铁布衫，主运铁布衫',
-          effect: ['主运铁布衫，护甲提升20%，被攻击时20%概率抵挡生命最大值2%伤害'],
-        },
-      ],
+      peculiar: ['tieJia'],
+      inherit: [],
     },
     {
       id: 271,
@@ -208,12 +176,8 @@ export default {
       internal: '1',
       addition: '轻功+1 防御+1 御剑+4',
       sect: 26,
-      peculiar: [
-        {
-          name: '一脉相承',
-          effect: ['可由一字电剑一脉相承'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['yiZiToZhouGong'],
     },
     {
       id: 321,
@@ -228,13 +192,8 @@ export default {
       internal: '1',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: 4,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为周公剑法'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['yiZiToZhouGong'],
     },
     {
       id: 47,
@@ -263,17 +222,9 @@ export default {
             '被攻击时发动破X式：减少受到伤害20%，攻击下回合集气位置-200',
           ],
         },
-        {
-          name: '剑胆琴心',
-          condition: '独孤九剑+持瑶琴',
-          effect: [
-            '攻击时距离敌人越近，增加的命中越多',
-            '受到攻击时距离敌人越近，减少敌人的命中越多',
-            '使用持瑶琴攻击时，自身恢复5%当前血量并减少10点内伤',
-            '学有其中之一，则学习另一武功的兵器值需求-40',
-          ],
-        },
+        'jianDanQinXin',
       ],
+      inherit: [],
     },
     {
       id: 46,
@@ -294,22 +245,10 @@ export default {
           condition: '主运太极神功，怒气值=100，太极蓄力值>=500，使用太极拳或太极剑法',
           effect: ['消耗自身10%体力，10%内力对九格范围目标造成大量伤害'],
         },
-        {
-          name: '太极奥义',
-          condition: '同时修炼太极拳+太极剑法到极',
-          effect: [
-            '太极奥义：',
-            '被攻击概率（资质/4+35%）触发，降低25%所受到的杀气',
-            '真·太极奥义 四两拨千斤：',
-            '触发太极奥义时有25%的概率，完全免疫杀气',
-          ],
-        },
-        {
-          name: '以柔克刚',
-          condition: '太极剑法+柔云剑法',
-          effect: ['被攻击时，有50%概率将被杀气量的一半转化为回血'],
-        },
+        'taiJiAoYi',
+        'yiRouKeGang',
       ],
+      inherit: [],
     },
     {
       id: 192,
@@ -325,6 +264,7 @@ export default {
       addition: '攻击+3 御剑+5',
       sect: 26,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 265,
@@ -339,22 +279,8 @@ export default {
       internal: '',
       addition: '攻击+2 轻功+1 防御+1 御剑+5',
       sect: 26,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由北斗剑法一脉相承'],
-        },
-        {
-          name: '辰宿列张',
-          condition: '学会参合剑气或参合指',
-          effect: [
-            '攻击时会给敌人添加“参合”状态：',
-            '攻击时伤害降低10%~20%',
-            '被攻击时受到的伤害增加15%~30%',
-          ],
-        },
-      ],
+      peculiar: ['chenSuLieZhang'],
+      inherit: ['beiDouToCanHe'],
     },
     {
       id: 151,
@@ -370,6 +296,7 @@ export default {
       addition: '攻击+2 轻功+2 御剑+5',
       sect: 0,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 156,
@@ -385,6 +312,7 @@ export default {
       addition: '攻击+2 轻功+1 御剑+5',
       sect: 0,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 188,
@@ -400,6 +328,7 @@ export default {
       addition: '攻击+1 轻功+1 御剑+4',
       sect: 6,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 44,
@@ -414,16 +343,8 @@ export default {
       internal: '',
       addition: '攻击+2 御剑+4',
       sect: 0,
-      peculiar: [
-        {
-          name: '刀剑归真',
-          condition: '同时修炼胡家刀法+苗家剑法到极',
-          effect: [
-            '用其中一种武功攻击时概率触发：真气攻+1500，爆怒归真必三连,攻击伤害+50%',
-            '学有其中之一，则学习另一武功的兵器值需求-40',
-          ],
-        },
-      ],
+      peculiar: ['daoJianGuiZhen'],
+      inherit: [],
     },
     {
       id: 236,
@@ -438,21 +359,8 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 御剑+4',
       sect: 2,
-      peculiar: [
-        {
-          name: '定神门',
-          condition: '神门十三剑+五行六合掌+阴阳倒乱刃+灵枢定玄指',
-          effect: ['刀剑连击概率+10%，拳指暴击概率+10%', '攻击时锁足概率+100%，封穴+5点'],
-        },
-        {
-          name: '洞虚玄门',
-          condition: '神门十三剑+玄虚刀法',
-          effect: [
-            '玄虚刀法必封穴，神门十三剑必冰封灼烧',
-            '受到攻击30%概率使用双倍内力抵消一半伤害',
-          ],
-        },
-      ],
+      peculiar: ['dingShenMen', 'dongXuXuanMen'],
+      inherit: [],
     },
     {
       id: 41,
@@ -468,6 +376,7 @@ export default {
       addition: '攻击+1 防御+1 御剑+4',
       sect: 19,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 140,
@@ -483,6 +392,7 @@ export default {
       addition: '攻击+2 御剑+4',
       sect: 1,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 114,
@@ -497,13 +407,8 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+4',
       sect: 0,
-      peculiar: [
-        {
-          name: '素质三连',
-          condition: '三分剑法+连城剑法',
-          effect: ['全武功攻击时50%概率三连击，暴怒必三连'],
-        },
-      ],
+      peculiar: ['suZhiSanLian'],
+      inherit: [],
     },
     {
       id: 37,
@@ -518,16 +423,8 @@ export default {
       internal: '',
       addition: '攻击+1 御剑+4',
       sect: 21,
-      peculiar: [
-        {
-          name: '两仪守护',
-          condition: '同时修炼两仪剑法+反两仪刀法到极',
-          effect: [
-            '两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻',
-            '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻',
-          ],
-        },
-      ],
+      peculiar: ['liangYiShouHu'],
+      inherit: [],
     },
     {
       id: 38,
@@ -542,18 +439,8 @@ export default {
       internal: '',
       addition: '攻击+1 御剑+3 拳掌+1',
       sect: 22,
-      peculiar: [
-        {
-          name: '桃花绝技',
-          condition: '同时修炼弹指神通+落英神剑掌+玉玉箫剑法到极',
-          effect: [
-            '三种武功威力均+200，有40%概率三连击，暴怒必出',
-            '弹指神通：必暴击，气攻+1500',
-            '落英神剑掌：攻击范围变为可移动，并根据敌方内力耗损量增加伤害',
-            '玉箫剑法：攻击距离提升至8格，有60%概率冰封',
-          ],
-        },
-      ],
+      peculiar: ['taoHuaJueJi'],
+      inherit: [],
     },
     {
       id: 161,
@@ -575,6 +462,7 @@ export default {
           effect: ['攻击&气攻提升20%'],
         },
       ],
+      inherit: [],
     },
     {
       id: 40,
@@ -590,6 +478,7 @@ export default {
       addition: '攻击+1 轻功+1 御剑+3',
       sect: 15,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 42,
@@ -604,24 +493,8 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+3',
       sect: 16,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为玉女素心剑'],
-        },
-        {
-          name: '双剑合璧',
-          condition: '全真剑法+玉女剑法',
-          effect: [
-            '连击率+30%',
-            '使用全真剑法/玉女剑法：',
-            '└攻击范围+1',
-            '└攻击时触发双剑合璧·攻：必击中对方破绽',
-            '└被攻击时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
-          ],
-        },
-      ],
+      peculiar: ['shuangJianHeBi'],
+      inherit: ['yuNvToSuXin'],
     },
     {
       id: 33,
@@ -636,16 +509,8 @@ export default {
       internal: '',
       addition: '攻击+1 御剑+2',
       sect: 10,
-      peculiar: [
-        {
-          name: '五岳剑法',
-          condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
-          effect: [
-            '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
-          ],
-        },
-      ],
+      peculiar: ['wuYueJianFa'],
+      inherit: [],
     },
     {
       id: 39,
@@ -660,19 +525,8 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 御剑+3',
       sect: 7,
-      peculiar: [
-        {
-          name: '双剑合璧',
-          condition: '全真剑法+玉女剑法',
-          effect: [
-            '连击率+30%',
-            '使用全真剑法/玉女剑法：',
-            '└攻击范围+1',
-            '└攻击时触发双剑合璧·攻：必击中对方破绽',
-            '└被攻击时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
-          ],
-        },
-      ],
+      peculiar: ['shuangJianHeBi'],
+      inherit: [],
     },
     {
       id: 302,
@@ -694,6 +548,7 @@ export default {
           effect: ['攻击时50%概率给敌人添加虚弱状态，暴怒必触发'],
         },
       ],
+      inherit: [],
     },
     {
       id: 34,
@@ -708,16 +563,8 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: 9,
-      peculiar: [
-        {
-          name: '五岳剑法',
-          condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
-          effect: [
-            '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
-          ],
-        },
-      ],
+      peculiar: ['wuYueJianFa'],
+      inherit: [],
     },
     {
       id: 32,
@@ -732,16 +579,8 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: 12,
-      peculiar: [
-        {
-          name: '五岳剑法',
-          condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
-          effect: [
-            '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
-          ],
-        },
-      ],
+      peculiar: ['wuYueJianFa'],
+      inherit: [],
     },
     {
       id: 31,
@@ -756,16 +595,8 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 御剑+2',
       sect: 14,
-      peculiar: [
-        {
-          name: '五岳剑法',
-          condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
-          effect: [
-            '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
-          ],
-        },
-      ],
+      peculiar: ['wuYueJianFa'],
+      inherit: [],
     },
     {
       id: 30,
@@ -780,16 +611,8 @@ export default {
       internal: '',
       addition: '攻击+1 防御+1 御剑+2',
       sect: 13,
-      peculiar: [
-        {
-          name: '五岳剑法',
-          condition: '修炼五岳剑法(太岳+云雾+泰山+万花+万岳)',
-          effect: [
-            '每修炼一门，五岳剑法武功威力+100，御剑+20 连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
-            '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
-          ],
-        },
-      ],
+      peculiar: ['wuYueJianFa'],
+      inherit: [],
     },
     {
       id: 266,
@@ -804,13 +627,8 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+2',
       sect: 26,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为参合剑气'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['beiDouToCanHe'],
     },
     {
       id: 27,
@@ -826,6 +644,7 @@ export default {
       addition: '攻击+2 御剑+2',
       sect: 11,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 28,
@@ -841,6 +660,7 @@ export default {
       addition: '攻击+1 御剑+2',
       sect: 0,
       peculiar: [],
+      inherit: [],
     },
   ],
 };

@@ -15,16 +15,8 @@ export default {
       internal: '0',
       addition: '攻击+3 指法+5',
       sect: 0,
-      peculiar: [
-        {
-          name: '九阴神爪',
-          condition: '九阴神功+九阴白骨爪，主运九阴神功',
-          effect: [
-            '主运九阴神功，使用九阴白骨爪必触发九阴神爪极意',
-            '九阴神爪极意：必连击，增加1500点伤害杀气，范围为7*7',
-          ],
-        },
-      ],
+      peculiar: ['jiuYinShenZhao'],
+      inherit: [],
     },
     {
       id: 226,
@@ -46,6 +38,7 @@ export default {
           effect: ['攻击必定封穴，被攻击减免10点封穴'],
         },
       ],
+      inherit: [],
     },
     {
       id: 295,
@@ -66,15 +59,9 @@ export default {
           condition: '攻击时有30%概率触发，暴怒必触发',
           effect: ['攻击变为面攻，追加1000气功并引爆目标身上毒素'],
         },
-        {
-          name: '毒布武林',
-          condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
-          effect: [
-            '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
-            '行动前对全场敌人用毒，并概率叠加负面状态',
-          ],
-        },
+        'duBuWuLin',
       ],
+      inherit: [],
     },
     {
       id: 19,
@@ -90,6 +77,7 @@ export default {
       addition: '攻击+1 轻功+1 指法+4',
       sect: 26,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 130,
@@ -104,13 +92,8 @@ export default {
       internal: '0',
       addition: '攻击+1 轻功+1 指法+3',
       sect: 27,
-      peculiar: [
-        {
-          name: '玄虚劲',
-          condition: '无极玄功拳+玄虚刀法+玄天指',
-          effect: ['自身破绽时受到攻击免疫伤害，且集气位置+200，减少50%受到的气攻'],
-        },
-      ],
+      peculiar: ['xuanXuJin'],
+      inherit: [],
     },
     {
       id: 123,
@@ -126,6 +109,7 @@ export default {
       addition: '攻击+1 指法+2 带毒+1',
       sect: 3,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 135,
@@ -141,6 +125,7 @@ export default {
       addition: '攻击+2 指法+5',
       sect: 1,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 17,
@@ -167,6 +152,7 @@ export default {
           effect: ['清除目标身上50%的蛤蟆功蓄力值'],
         },
       ],
+      inherit: [],
     },
     {
       id: 20,
@@ -184,10 +170,11 @@ export default {
       peculiar: [
         {
           name: '批亢捣虚',
-          condition: '',
+          condition: '使用龙爪手攻击',
           effect: ['气功增加800，必定流血'],
         },
       ],
+      inherit: [],
     },
     {
       id: 49,
@@ -219,6 +206,7 @@ export default {
           ],
         },
       ],
+      inherit: [],
     },
     {
       id: 138,
@@ -233,17 +221,8 @@ export default {
       internal: '',
       addition: '攻击+2 轻功+1 指法+5',
       sect: 26,
-      peculiar: [
-        {
-          name: '辰宿列张',
-          condition: '学会参合剑气或参合指',
-          effect: [
-            '攻击时会给敌人添加“参合”状态：',
-            '攻击时伤害降低10%~20%',
-            '被攻击时受到的伤害增加15%~30%',
-          ],
-        },
-      ],
+      peculiar: ['chenSuLieZhang'],
+      inherit: [],
     },
     {
       id: 377,
@@ -258,13 +237,8 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 御剑+3',
       sect: 6,
-      peculiar: [
-        {
-          name: '定神门',
-          condition: '神门十三剑+五行六合掌+阴阳倒乱刃+灵枢定玄指',
-          effect: ['刀剑连击概率+10%，拳指暴击概率+10%', '攻击时锁足概率+100%，封穴+5点'],
-        },
-      ],
+      peculiar: ['dingShenMen'],
+      inherit: [],
     },
     {
       id: 136,
@@ -279,24 +253,8 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 指法+4',
       sect: 1,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可由天竺佛指一脉相承'],
-        },
-        {
-          name: '除却四相',
-          condition: '同时修炼多罗叶指+大智无定指+无相劫指+拈花指到极',
-          effect: [
-            '被攻击时50%概率触发：',
-            '无我相：免疫本次攻击造成的内伤/封穴/冰封/灼烧',
-            '无人相：集气条前进100',
-            '无众生相：无视敌方武常',
-            '无寿者相：恢复100点生命',
-          ],
-        },
-      ],
+      peculiar: ['chuQueSiXiang'],
+      inherit: ['tianZhuWuXiang'],
     },
     {
       id: 14,
@@ -317,11 +275,12 @@ export default {
           condition: '天山折梅手修炼到极',
           effect: [
             '每多一个其他武功到极：',
-            '气攻增加100（对所有人有效，此处有具体提示）',
+            '气攻增加100（对所有人有效）',
             '威力增加50（仅对标准主角/虚竹/天山童姥/李秋水有效）',
           ],
         },
       ],
+      inherit: [],
     },
     {
       id: 198,
@@ -336,16 +295,8 @@ export default {
       internal: '',
       addition: '攻击+3 指法+4',
       sect: 0,
-      peculiar: [
-        {
-          name: '血战沙场',
-          condition: '岳家枪法+岳王散手+武穆遗书',
-          effect: [
-            '使用岳家枪法/岳王散手对七格范围内敌人造成10~20点伤害2次，根据击杀数和怒气值增加次数',
-            '学习岳家枪法/岳王散手，另一门需求减40',
-          ],
-        },
-      ],
+      peculiar: ['xieZhanShaChang'],
+      inherit: [],
     },
     {
       id: 187,
@@ -360,17 +311,8 @@ export default {
       internal: '',
       addition: '攻击+1 指法+4',
       sect: 8,
-      peculiar: [
-        {
-          name: '虎啸龙吟',
-          condition: '擒龙手+虎爪绝户手',
-          effect: [
-            '攻击时概率触发“虎啸”“龙吟”（擒龙手/虎爪绝户手概率+20，暴怒概率翻倍）：',
-            '虎啸：被击中的目标概率混乱',
-            '龙吟：被击中的目标集气位置倒退300',
-          ],
-        },
-      ],
+      peculiar: ['huXiaoLongYin'],
+      inherit: [],
     },
     {
       id: 137,
@@ -385,19 +327,8 @@ export default {
       internal: '',
       addition: '攻击+2 指法+4',
       sect: 1,
-      peculiar: [
-        {
-          name: '除却四相',
-          condition: '同时修炼多罗叶指+大智无定指+无相劫指+拈花指到极',
-          effect: [
-            '被攻击时50%概率触发：',
-            '无我相：免疫本次攻击造成的内伤/封穴/冰封/灼烧',
-            '无人相：集气条前进100',
-            '无众生相：无视敌方武常',
-            '无寿者相：恢复100点生命',
-          ],
-        },
-      ],
+      peculiar: ['chuQueSiXiang'],
+      inherit: [],
     },
     {
       id: 18,
@@ -413,16 +344,7 @@ export default {
       addition: '攻击+1 轻功+1 指法+4 暗器+1',
       sect: 22,
       peculiar: [
-        {
-          name: '桃花绝技',
-          condition: '同时修炼弹指神通+落英神剑掌+玉玉箫剑法到极',
-          effect: [
-            '三种武功威力均+200，有40%概率三连击，暴怒必出',
-            '弹指神通：必暴击，气攻+1500',
-            '落英神剑掌：攻击范围变为可移动，并根据敌方内力耗损量增加伤害',
-            '玉箫剑法：攻击距离提升至8格，有60%概率冰封',
-          ],
-        },
+        'taoHuaJueJi',
         {
           name: '无影神石',
           condition: '学会桃花绝技，使用弹指神通攻击发动',
@@ -432,6 +354,7 @@ export default {
           ],
         },
       ],
+      inherit: [],
     },
     {
       id: 201,
@@ -447,13 +370,14 @@ export default {
       addition: '攻击+2 防御+1 指法+4',
       sect: 3,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 229,
       name: '金蛇缠丝手',
       cheat: '',
       level: 3,
-      get: '暂无',
+      get: '加入丐帮可学习',
       power: 1100,
       gasPower: 1100,
       range: '△ 5格',
@@ -462,6 +386,7 @@ export default {
       addition: '攻击+1 轻功+1 防御+1 指法+3',
       sect: 8,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 133,
@@ -476,19 +401,8 @@ export default {
       internal: '',
       addition: '攻击+1 指法+4',
       sect: 1,
-      peculiar: [
-        {
-          name: '除却四相',
-          condition: '同时修炼多罗叶指+大智无定指+无相劫指+拈花指到极',
-          effect: [
-            '被攻击时50%概率触发：',
-            '无我相：免疫本次攻击造成的内伤/封穴/冰封/灼烧',
-            '无人相：集气条前进100',
-            '无众生相：无视敌方武常',
-            '无寿者相：恢复100点生命',
-          ],
-        },
-      ],
+      peculiar: ['chuQueSiXiang'],
+      inherit: [],
     },
     {
       id: 134,
@@ -504,6 +418,7 @@ export default {
       addition: '攻击+2 指法+4',
       sect: 3,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 244,
@@ -518,17 +433,8 @@ export default {
       internal: '',
       addition: '攻击+2 指法+4',
       sect: 2,
-      peculiar: [
-        {
-          name: '虎啸龙吟',
-          condition: '擒龙手+虎爪绝户手',
-          effect: [
-            '攻击时概率触发“虎啸”“龙吟”（擒龙手/虎爪绝户手概率+20，暴怒概率翻倍）：',
-            '虎啸：被击中的目标概率混乱',
-            '龙吟：被击中的目标集气位置倒退300',
-          ],
-        },
-      ],
+      peculiar: ['huXiaoLongYin'],
+      inherit: [],
     },
     {
       id: 195,
@@ -544,6 +450,7 @@ export default {
       addition: '攻击+1 轻功+1 指法+3',
       sect: 2,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 132,
@@ -558,19 +465,8 @@ export default {
       internal: '',
       addition: '攻击+1 指法+3',
       sect: 1,
-      peculiar: [
-        {
-          name: '除却四相',
-          condition: '同时修炼多罗叶指+大智无定指+无相劫指+拈花指到极',
-          effect: [
-            '被攻击时50%概率触发：',
-            '无我相：免疫本次攻击造成的内伤/封穴/冰封/灼烧',
-            '无人相：集气条前进100',
-            '无众生相：无视敌方武常',
-            '无寿者相：恢复100点生命',
-          ],
-        },
-      ],
+      peculiar: ['chuQueSiXiang'],
+      inherit: [],
     },
     {
       id: 131,
@@ -586,6 +482,7 @@ export default {
       addition: '攻击+1 指法+3',
       sect: 28,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 4,
@@ -601,6 +498,7 @@ export default {
       addition: '攻击+1 指法+3',
       sect: 5,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 128,
@@ -616,6 +514,7 @@ export default {
       addition: '攻击+2 指法+3',
       sect: 1,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 129,
@@ -631,6 +530,7 @@ export default {
       addition: '攻击+1 轻功+1 指法+3',
       sect: 22,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 127,
@@ -646,6 +546,7 @@ export default {
       addition: '攻击+1 防御+1 指法+2',
       sect: 23,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 126,
@@ -661,6 +562,7 @@ export default {
       addition: '攻击+1 轻功+1 指法+2',
       sect: 22,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 124,
@@ -676,6 +578,7 @@ export default {
       addition: '攻击+1 指法+2',
       sect: 1,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 125,
@@ -691,6 +594,7 @@ export default {
       addition: '攻击+1 指法+2',
       sect: 0,
       peculiar: [],
+      inherit: [],
     },
     {
       id: 122,
@@ -705,13 +609,8 @@ export default {
       internal: '',
       addition: '攻击+1 轻功+1 指法+2',
       sect: 1,
-      peculiar: [
-        {
-          name: '一脉相承',
-          condition: '',
-          effect: ['可洗为无相劫指'],
-        },
-      ],
+      peculiar: [],
+      inherit: ['tianZhuWuXiang'],
     },
   ],
 };
