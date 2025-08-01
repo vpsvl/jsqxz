@@ -1,1 +1,0 @@
-import o from"./drug-B52GR5XJ.js";import{e as n,r,c as s,o as c}from"./index-DU41R8Es.js";const d={__name:"drug",setup(l){const e=[{key:"name",name:"名称"},{key:"effect",name:"效果"},{key:"get",name:"获取"}],a=n(o.list);return(m,_)=>{const t=r("v-table");return c(),s(t,{class:"v-table-drug",cols:e,data:a.value},null,8,["data"])}}};export{d as default};
