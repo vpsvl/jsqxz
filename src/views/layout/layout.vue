@@ -8,7 +8,7 @@
     </transition>
     <div class="main">
       <bread-nav :nav="breads"></bread-nav>
-      <v-scroll class="main-scroll" view-class="main-scroll-view">
+      <v-scroll class="main-scroll" view-class="main-scroll-view" :y="y">
         <router-view></router-view>
       </v-scroll>
     </div>
@@ -17,7 +17,7 @@
 
 <script setup>
 import {watchEffect, ref, inject} from 'vue';
-import {useRoute} from 'vue-router';
+import {useRoute, onBeforeRouteUpdate} from 'vue-router';
 import {routes} from '@/router';
 import VMenu from './menu.vue';
 import BreadNav from './bread-nav.vue';
@@ -42,6 +42,11 @@ watchEffect(() => {
 function closeMenu() {
   state.menuVisible = false;
 }
+
+const y = ref(0);
+onBeforeRouteUpdate(() => {
+  y.value = y.value === 0 ? 1 : 0;
+});
 </script>
 
 <style lang="less">

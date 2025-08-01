@@ -1,20 +1,23 @@
 import {defineConfig} from 'vite';
 import vue from '@vitejs/plugin-vue';
-import eslint from '@rollup/plugin-eslint';
+import eslint from '@vpsvl/vite-plugin-eslint';
+import stylelint from 'vite-plugin-stylelint';
 import path from 'path';
 
-export default ({command, mode}) => {
+export default defineConfig(({command}) => {
   const config = {
     plugins: [
-      eslint({
-        include: /src\/*.+(vue|js|jsx|ts|tsx)/,
+      eslint(),
+      stylelint({
+        customSyntax: 'postcss-less',
+        include: /src\/.*\.(vue|less|s?css)$/,
         exclude: [/vue&type=/, /node_modules/],
-        throwOnError: true,
+        cache: false,
       }),
       vue(),
     ],
     resolve: {
-      // extensions: ['.js', '.vue'],
+      extensions: ['.js', '.vue'],
       alias: {
         '@': path.join(process.cwd(), '/src'),
       },
@@ -25,10 +28,19 @@ export default ({command, mode}) => {
     },
     build: {
       outDir: 'docs',
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return id.toString().split('node_modules/')[1].split('/')[0].toString();
+            }
+          },
+        },
+      },
     },
   };
   if (command === 'build') {
     config.base = '/jsqxz/';
   }
-  return defineConfig(config);
-};
+  return config;
+});
