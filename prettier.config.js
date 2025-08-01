@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   tabSize: 2,
   // 加分号
   semi: true,

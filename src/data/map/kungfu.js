@@ -1609,7 +1609,7 @@ export default {
   },
   404: {
     name: '登萍渡水',
-    sect: 13,
+    sect: 22,
   },
   405: {
     name: '白驼身法',

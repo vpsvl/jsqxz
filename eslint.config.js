@@ -23,6 +23,7 @@ export default defineConfig([
       }],
       // 单引号跟反引号
       '@stylistic/quotes': [2, 'single', {allowTemplateLiterals: 'always'}],
+      '@stylistic/quote-props': [2, 'as-needed'],
       // 禁止不必要的分号
       '@stylistic/no-extra-semi': 2,
       // 数组和对象键值对最后一个逗号:
@@ -37,7 +38,7 @@ export default defineConfig([
       // 箭头函数参数加括号: always, as-needed { requireForBlockBody: true }
       '@stylistic/arrow-parens': [0, 'as-needed'],
       // 驼峰命名
-      'camelcase': 0,
+      camelcase: 0,
       // 禁止var
       'no-var': 2,
       // 禁止重复的 case 标签

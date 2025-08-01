@@ -81,7 +81,9 @@ export default {
     {
       id: 9,
       name: '天王护命',
-      effect: ['根据实战时序恢复2~4点生命，使用【天王护命丹】后的10时序不会死亡'],
+      effect: [
+        '根据实战时序恢复2~4点生命，使用【天王护命丹】后的10时序不会死亡',
+      ],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -144,7 +146,7 @@ export default {
     {
       id: 16,
       name: '皆',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['免疫破绽'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -153,7 +155,7 @@ export default {
     {
       id: 17,
       name: '前',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['增加1000气攻，攻击范围扩大'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -162,7 +164,7 @@ export default {
     {
       id: 18,
       name: '在',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['必灼烧'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -171,7 +173,7 @@ export default {
     {
       id: 19,
       name: '阵',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['攻击造成目标内力损失200点'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -180,7 +182,7 @@ export default {
     {
       id: 20,
       name: '列',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['攻击造成麻痹效果'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -189,7 +191,7 @@ export default {
     {
       id: 21,
       name: '者',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['为自身增加气防800点一回合'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -198,7 +200,7 @@ export default {
     {
       id: 22,
       name: '斗',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['增加气攻800点'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -207,7 +209,7 @@ export default {
     {
       id: 23,
       name: '兵',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['攻击破防20%'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -216,7 +218,7 @@ export default {
     {
       id: 24,
       name: '临',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['增加伤害15%'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -225,7 +227,7 @@ export default {
     {
       id: 25,
       name: '西瓜刀·天人',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['免疫杀气'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -234,7 +236,7 @@ export default {
     {
       id: 26,
       name: '西瓜刀·残刀',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['触发下列特效之一：回气/点燃/冻结/攻击不加怒/造成昏迷'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -243,7 +245,9 @@ export default {
     {
       id: 27,
       name: '血战八方',
-      effect: ['每击杀一个敌人，自身伤害、气攻、攻击范围提升，每攻击一次减少一层'],
+      effect: [
+        '每击杀一个敌人，自身伤害、气攻、攻击范围提升，每攻击一次减少一层',
+      ],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -270,7 +274,9 @@ export default {
     {
       id: 30,
       name: '逆水寒CD',
-      effect: ['触发【逆寒水】后进入冷却状态，冷却状态清除，可再次触发【逆水寒】'],
+      effect: [
+        '触发【逆寒水】后进入冷却状态，冷却状态清除，可再次触发【逆水寒】',
+      ],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -297,7 +303,9 @@ export default {
     {
       id: 33,
       name: '降临',
-      effect: ['每次行动前增加一层【降临】，【降临】达到五层时，必触发【万佛朝宗】'],
+      effect: [
+        '每次行动前增加一层【降临】，【降临】达到五层时，必触发【万佛朝宗】',
+      ],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -306,7 +314,7 @@ export default {
     {
       id: 34,
       name: '曲风状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['曲风30层触发【百鸟朝凤】'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -315,7 +323,7 @@ export default {
     {
       id: 35,
       name: '无名业火',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['根据使用武功消耗的内力减少生命值'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -324,7 +332,7 @@ export default {
     {
       id: 36,
       name: '同归状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['主动攻击造成伤害时，受到100%反伤'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -333,7 +341,7 @@ export default {
     {
       id: 37,
       name: '走火入魔',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['集气增加，怒气增加，伤害增加，气攻增加'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -342,7 +350,7 @@ export default {
     {
       id: 38,
       name: '十龙十象',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['攻击时造成目标昏迷'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -351,7 +359,7 @@ export default {
     {
       id: 39,
       name: '昏迷状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['无法行动'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -360,34 +368,34 @@ export default {
     {
       id: 40,
       name: '太极蓄力',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['跟据蓄力值，攻击时可触发开太极'],
       type: 1,
       cd: 'CD:',
       time: '回合',
-      shortname: '蓄力',
+      shortname: '太极',
     },
     {
       id: 41,
       name: '蛤蟆蓄力',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['根据蓄力值增加伤害和气攻、气防'],
       type: 1,
       cd: 'CD:',
       time: '回合',
-      shortname: '蓄力',
+      shortname: '蛤蟆',
     },
     {
       id: 42,
       name: '鲸息蓄力',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['根据蓄力值增加伤害和气攻、气防'],
       type: 1,
       cd: 'CD:',
       time: '回合',
-      shortname: '蓄力',
+      shortname: '鲸息',
     },
     {
       id: 43,
       name: '金刚护盾',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['暂无效果'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -396,7 +404,7 @@ export default {
     {
       id: 44,
       name: '神足护盾',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['暂无效果'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -405,8 +413,8 @@ export default {
     {
       id: 45,
       name: '禁药状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
-      type: 2,
+      effect: ['血量越低集气越快，100%血无加成，1血99%加成'],
+      type: 1,
       cd: 'CD:',
       time: '回合',
       shortname: '禁药',
@@ -414,7 +422,7 @@ export default {
     {
       id: 46,
       name: '沉睡状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['无法行动，受到攻击会马上解除状态'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -423,7 +431,7 @@ export default {
     {
       id: 47,
       name: '玉石俱焚',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['暂无效果'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -432,7 +440,7 @@ export default {
     {
       id: 48,
       name: '混乱状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['行动混乱，不可操控'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -441,7 +449,7 @@ export default {
     {
       id: 49,
       name: '散功状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['每时序损失1%当前内力,无法触发内功和轻功特效'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -450,7 +458,7 @@ export default {
     {
       id: 50,
       name: '雷音状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['三层雷音状态时攻击将使目标昏迷'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -459,7 +467,9 @@ export default {
     {
       id: 51,
       name: '参合状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: [
+        '攻击造成的伤害在70%~90%之间浮动，受到的伤害在110%~130%之间浮动',
+      ],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -468,7 +478,7 @@ export default {
     {
       id: 52,
       name: '号令三军',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['暂无效果'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -477,7 +487,7 @@ export default {
     {
       id: 53,
       name: '偷天换日',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['【偷天换日达到】100层回复满状态'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -486,7 +496,9 @@ export default {
     {
       id: 54,
       name: '长生回天',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: [
+        '时序回复0.5%生命、5%内力、1点体力;时序恢复1点冰封、灼烧、中毒、内伤',
+      ],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -504,7 +516,7 @@ export default {
     {
       id: 56,
       name: '放下屠刀',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['无法行动一回合'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -513,7 +525,7 @@ export default {
     {
       id: 57,
       name: '金刚咒',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['暂无效果'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -522,7 +534,7 @@ export default {
     {
       id: 58,
       name: '度化状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['战场上变成敌方阵营'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -531,7 +543,7 @@ export default {
     {
       id: 59,
       name: '魅惑状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['战场上变成敌方阵营'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -540,8 +552,8 @@ export default {
     {
       id: 60,
       name: '倾国倾城',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
-      type: 2,
+      effect: ['由战场敌方承担全部伤害'],
+      type: 1,
       cd: 'CD:',
       time: '回合',
       shortname: '倾国',
@@ -549,7 +561,9 @@ export default {
     {
       id: 61,
       name: '三十二身像',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: [
+        '减伤15%，攻击或被攻击触发：*【雀母相】：强制受到的伤害为50点，*【白毫相】：免疫杀气，*【大自在相】：受到攻击集气+200，*【神鱼相】：33%增加一次攻击',
+      ],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -558,7 +572,7 @@ export default {
     {
       id: 62,
       name: '金刚法相',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['增加800点气攻，忽视绝对气防'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -567,7 +581,7 @@ export default {
     {
       id: 63,
       name: '小李飞刀',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['攻击必中，暗器攻击倍数3~10倍'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -576,7 +590,7 @@ export default {
     {
       id: 64,
       name: '天剑',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['攻击必中，追加伤害1200点'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -585,7 +599,7 @@ export default {
     {
       id: 65,
       name: '十八盘',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['30时序内闪避攻击'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -603,7 +617,7 @@ export default {
     {
       id: 67,
       name: '长生诀',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['时序回复1%生命、内力、体力'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -612,7 +626,7 @@ export default {
     {
       id: 68,
       name: '麻痹状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['减少移动步数'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -621,7 +635,7 @@ export default {
     {
       id: 69,
       name: '锁足状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['无法移动、闪避、挪移'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -630,7 +644,7 @@ export default {
     {
       id: 70,
       name: '迟缓状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['一层减少1%集气值'],
       type: 2,
       cd: 'CD:',
       time: '回合',
@@ -639,7 +653,7 @@ export default {
     {
       id: 71,
       name: '疾风劲',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['一层增加1.25%集气值'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -648,7 +662,7 @@ export default {
     {
       id: 72,
       name: '霸体',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['免疫伤害和异常状态'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -657,7 +671,7 @@ export default {
     {
       id: 73,
       name: '逍遥御风闪避',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['闪避伤害'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -675,8 +689,8 @@ export default {
     {
       id: 75,
       name: '盲目状态',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
-      type: 1,
+      effect: ['命中值减少85%'],
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '盲目',
@@ -684,7 +698,7 @@ export default {
     {
       id: 76,
       name: '刺目',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['造成目标盲目'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -693,7 +707,7 @@ export default {
     {
       id: 77,
       name: '杀破狼',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['气攻增加2000，满怒暴气不减怒气'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -702,7 +716,7 @@ export default {
     {
       id: 78,
       name: '杀破狼计时',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
+      effect: ['【杀破狼】特效的计时'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -711,8 +725,8 @@ export default {
     {
       id: 79,
       name: '内伤状态',
-      effect: ['内伤'],
-      type: 1,
+      effect: ['受到的伤害增加，并影响一些特效的触发'],
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '内伤',
@@ -720,8 +734,8 @@ export default {
     {
       id: 80,
       name: '流血',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
-      type: 1,
+      effect: ['时序减少生命值，并影响一些特效的触发'],
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '流血',
@@ -729,8 +743,8 @@ export default {
     {
       id: 81,
       name: '封穴',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
-      type: 1,
+      effect: ['封穴中无法行动'],
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '封穴',
@@ -738,8 +752,8 @@ export default {
     {
       id: 82,
       name: '冰封',
-      effect: ['伤害减少20~50%，气攻减少20~50%'],
-      type: 1,
+      effect: ['时序减少内力，减少移动步数，100点冰封会造成冻结效果'],
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '冰封',
@@ -748,7 +762,7 @@ export default {
       id: 83,
       name: '灼烧',
       effect: ['受到伤害时，追加灼烧值的伤害，灼烧值大于25追加伤害翻倍'],
-      type: 1,
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '灼烧',
@@ -757,7 +771,7 @@ export default {
       id: 84,
       name: '点燃',
       effect: ['时序减少生命'],
-      type: 1,
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '点燃',
@@ -775,7 +789,7 @@ export default {
       id: 86,
       name: '中毒',
       effect: ['时序减少生命值和内力值，减少属性'],
-      type: 1,
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '中毒',
@@ -784,7 +798,7 @@ export default {
       id: 87,
       name: '剧毒',
       effect: ['每回合损失中毒程度X2倍的生命'],
-      type: 1,
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '剧毒',
@@ -812,7 +826,9 @@ export default {
     {
       id: 90,
       name: '血魔',
-      effect: ['攻击吸血超过500点变为护盾，行动前吸收七格内敌方目标的流血化为护盾'],
+      effect: [
+        '攻击吸血超过500点变为护盾，行动前吸收七格内敌方目标的流血化为护盾',
+      ],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -822,7 +838,7 @@ export default {
       id: 91,
       name: '卸甲状态',
       effect: ['不计算当前额外附加的防御'],
-      type: 1,
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '卸甲',
@@ -866,7 +882,9 @@ export default {
     {
       id: 96,
       name: '天罡北斗阵',
-      effect: ['己方有人行动时，集气位置+50，被击败后队友行动时5%概率返回战场'],
+      effect: [
+        '己方有人行动时，集气位置+50，被击败后队友行动时5%概率返回战场',
+      ],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -930,19 +948,19 @@ export default {
       id: 103,
       name: '冻结',
       effect: ['冻结目标，停止集气'],
-      type: 1,
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '冻结',
     },
     {
       id: 104,
-      name: '点燃',
+      name: '备用',
       effect: ['点燃目标，时序失去生命值'],
       type: 1,
       cd: 'CD:',
       time: '回合',
-      shortname: '点燃',
+      shortname: '备用',
     },
     {
       id: 105,
@@ -989,7 +1007,9 @@ export default {
     {
       id: 109,
       name: '太极之形',
-      effect: ['每个“太极之形”可提高自身集气1点，每个5太极之形增加一次连击'],
+      effect: [
+        '每个“太极之形”可提高自身集气1点，每个5太极之形增加一次连击。',
+      ],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -1025,7 +1045,7 @@ export default {
     {
       id: 113,
       name: '天子观气',
-      effect: ['敌方全体集气减半,命中减少20%'],
+      effect: ['敌方全体集气减半,命中减少20%。'],
       type: 1,
       cd: 'CD:',
       time: '回合',
@@ -1053,7 +1073,7 @@ export default {
       id: 116,
       name: '紊乱状态',
       effect: ['集气不受控制前后跳跃'],
-      type: 1,
+      type: 2,
       cd: 'CD:',
       time: '回合',
       shortname: '紊乱',
@@ -1062,7 +1082,7 @@ export default {
       id: 117,
       name: '醉意',
       effect: [
-        '每层醉意伤害+10%/闪避+5%/命中减-5%。拥有醉意时概率击中目标破绽。醉意每回合自动减少1层，不可清除',
+        '每层醉意伤害+10%/闪避+5%/命中减-5%。拥有醉意时概率击中目标破绽。醉意每回合自动减少1层，不可清除。',
       ],
       type: 1,
       cd: 'CD:',
@@ -1073,7 +1093,7 @@ export default {
       id: 118,
       name: '六道轮回',
       effect: [
-        '进入战斗开始只有N%三围,每回合+30%，每六个回合一轮回，轮回结束时生命/内力/体力恢复到100%，清除所有异常状态',
+        '进入战斗开始只有N%三围,每回合+30%，每六个回合一轮回，轮回结束时生命/内力/体力恢复到100%\'，清除所有异常状态。',
       ],
       type: 1,
       cd: 'CD:',

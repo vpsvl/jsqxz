@@ -40,13 +40,22 @@ watch(
 
 provide('state', state);
 
-// import data from '@/data/kungfu/fly';
+// import data from '@/data/other/aa';
 //
 // function toArr() {
-//   const arr = data.list.map(item => {
-//     item.inherit = [];
-//     return item;
-//   });
+//   const arr = [];
+//   for (let key in data) {
+//     const [name, effect, type, cd, time, shortname] = data[key];
+//     arr.push({
+//       id: Number(key),
+//       name,
+//       effect: [effect],
+//       type,
+//       cd,
+//       time,
+//       shortname,
+//     });
+//   }
 //   console.log(arr);
 // }
 //
