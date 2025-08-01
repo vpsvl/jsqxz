@@ -22,7 +22,9 @@
 
 <script setup>
 import {computed, ref, watch} from 'vue';
-import effect from '@/data/kungfu/internal/index';
+import effectMap from '@/data/kungfu/internal/index';
+import stuntMap from '@/data/kungfu/stunt';
+import inheritMap from '@/data/kungfu/inherit';
 
 const props = defineProps({
   list: {
@@ -35,15 +37,36 @@ const props = defineProps({
 const active = ref(0);
 const info = computed(() => {
   const item = {...props.list[active.value]};
-  if (item.initiative?.length > 0) {
-    const arr = [];
-    for (let key of item.initiative) {
-      if (typeof effect[key] === 'function') {
-        arr.push(effect[key](item.level));
+  const {initiative, level, peculiar, inherit} = item;
+  if (initiative) {
+    const initiativeArr = [];
+    for (let key of initiative) {
+      if (typeof effectMap[key] === 'function') {
+        initiativeArr.push(effectMap[key](level));
       }
     }
-    item.initiative = arr;
+    item.initiative = initiativeArr;
   }
+
+  const peculiarArr = [];
+  for (let key of peculiar) {
+    if (typeof key === 'string') {
+      if (stuntMap[key]) {
+        peculiarArr.push(stuntMap[key]);
+      }
+      continue;
+    }
+    peculiarArr.push(key);
+  }
+  item.peculiar = peculiarArr;
+
+  const inheritArr = [];
+  for (let key of inherit) {
+    if (inheritMap[key]) {
+      inheritArr.push(inheritMap[key]);
+    }
+  }
+  item.inherit = inheritArr;
   return item;
 });
 watch(

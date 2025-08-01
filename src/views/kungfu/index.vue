@@ -76,9 +76,17 @@
           </div>
         </template>
         <div class="tr">
+          <div class="td">一脉相承</div>
+          <div class="td">
+            <div class="td-block" v-for="item of info.inherit" :key="item.id">
+              {{ item.name}}
+            </div>
+          </div>
+        </div>
+        <div class="tr">
           <div class="td">其他</div>
           <div class="td">
-            <div class="td-block" v-for="(item, index) of info.peculiar" :key="index">
+            <div class="td-block" v-for="item of info.peculiar" :key="item.id">
               <div v-if="item.name">
                 [
                 <span class="color-error">{{ item.name }}</span>

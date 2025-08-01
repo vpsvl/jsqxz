@@ -52,8 +52,8 @@ export default {
       inherit: [],
     },
     {
-      id: 163,
-      name: '血河神鉴',
+      id: 345,
+      name: '血海魔功',
       cheat: '',
       level: 4,
       get: '加入血刀门可学习',
