@@ -1,4 +1,4 @@
-import{_ as G}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{r as U,c as e,o,w as s,a as V}from"./index-VtOKmIr8.js";const t={};function r(a,n){const B=U("v-scroll");return o(),e(B,{class:"home-wrap"},{default:s(()=>n[0]||(n[0]=[V("h4",{class:"home-title"},"金书群侠传1.07简易攻略",-1),V("pre",{class:"change-log"},`      -------正式版V2.3-----8-1-----
+import{_ as G}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{r as U,c as e,o,w as s,a as V}from"./index-g188sar8.js";const t={};function r(a,n){const B=U("v-scroll");return o(),e(B,{class:"home-wrap"},{default:s(()=>n[0]||(n[0]=[V("h4",{class:"home-title"},"金书群侠传1.07简易攻略",-1),V("pre",{class:"change-log"},`      -------正式版V2.3-----8-1-----
       1,更新手机版一些内容，更新了按键，区别了PC版和其他平台的按键，手机版支持平版和手柄
         现在手机版的存档也可以跟PC通用了
       2，加强九阳神功，削弱九阳挑战，阳内半血可拿奖励。
