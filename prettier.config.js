@@ -1,4 +1,4 @@
-export default {
+const config = {
   tabSize: 2,
   // 加分号
   semi: true,
@@ -23,3 +23,5 @@ export default {
   // 函数名和后面的括号之间加个空格
   'javascript.format.insertSpaceBeforeFunctionParenthesis': false,
 };
+
+export default config;

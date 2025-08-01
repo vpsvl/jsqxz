@@ -323,17 +323,65 @@ export function qiYueRuShi(lv) {
   };
 }
 
+export function taiShangWangQing(lv) {
+  return {
+    name: `太上忘情 Lv${lv}`,
+    effect: [
+      `攻击时${lv * 15}%概率触发风流/火延/云翳之一：`,
+      `└风流：${lv * 5}%概率魅惑同性敌方，${lv * 15}%概率魅惑异性敌方`,
+      `└火延：给全体敌方追加灼烧值`,
+      `└云翳：攻击后10时序免疫伤害，冷却40时序`,
+      `受到攻击时${lv * 15}%概率触发君王/我无/师教之一：`,
+      `└君王：敌全体恐惧一回合`,
+      `└师教：敌全体集气-200`,
+      `└我无：免疫伤害一次。`,
+    ],
+  };
+}
+
 export function shunXiQianLi(lv) {
   return {
     name: `瞬息千里 Lv${lv}`,
     effect: [`暴怒时集气速度增加${lv * 50}%，且集气不受异常状态影响`],
   };
 }
+
+export function taiXuanFanZhen(lv) {
+  return {
+    name: `太玄反震 Lv${lv}`,
+    effect: [`让攻击方受到${lv * 15}%的伤害，并增加攻击方封穴值，${lv * 5}%概率下回合眩晕（需激活）`],
+  };
+}
+
 export function xueMoZhiDun(lv) {
   return {
     name: `血魔之盾 Lv${lv}`,
     effect: [
       `每次行动前吸取七格内敌人的流血点数转化为自身的生命恢复，如恢复满生命则溢出部分转化为护盾，护盾不会超过自身生命的10%`,
+    ],
+  };
+}
+
+export function xianRenFuDing(lv) {
+  return {
+    name: `仙人抚顶 Lv${lv}`,
+    effect: [
+      `复活后增加一个最大生命${lv * 25}%的护盾，暴击率+${lv * 10}%，连击率+${
+        lv * 10
+      }%，伤害+${lv * 7.5}%，减伤+${lv * 7.5}%，气攻+${lv * 250}，气防+${lv * 250}`,
+    ],
+  };
+}
+
+export function zhiYangZhiGang(lv) {
+  return {
+    name: `至阳至刚 Lv${lv}`,
+    effect: [
+      `受到攻击将所受伤害的${
+        lv * 5
+      }%转化为护盾，受到伤害时，用一半护盾抵消伤害，每次护盾被击碎会对攻击方造成被击碎前护盾量2倍的伤害，当护盾被击碎三次后，护盾再次被击碎会马上恢复生命上限${
+        lv * 5
+      }%的护盾（上限5000点）且获得霸体${lv + 1}时序`,
     ],
   };
 }
