@@ -22,16 +22,17 @@ export default defineConfig(({command}) => {
         '@': path.join(process.cwd(), '/src'),
       },
     },
+    define: {
+      'import.meta.env.BASE': JSON.stringify('/jsqxz/'),
+    },
     server: {
       host: true,
       port: 4000,
     },
     build: {
       outDir: 'docs',
+      target: 'esnext',
     },
   };
-  if (command === 'build') {
-    config.base = '/jsqxz/';
-  }
   return config;
 });

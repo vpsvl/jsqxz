@@ -37,7 +37,7 @@ import {useRoute} from 'vue-router';
 
 const route = useRoute();
 const state = inject('state');
-const homeUrl = import.meta.env.PROD ? import.meta.env.BASE_URL : '/';
+const homeUrl = import.meta.env.PROD ? import.meta.env.BASE : '/';
 
 function toggleMenu() {
   state.menuVisible = !state.menuVisible;
