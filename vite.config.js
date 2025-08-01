@@ -4,7 +4,7 @@ import eslint from '@vpsvl/vite-plugin-eslint';
 import stylelint from 'vite-plugin-stylelint';
 import path from 'path';
 
-export default defineConfig(({command}) => {
+export default ({command}) => {
   const config = {
     plugins: [
       eslint(),
@@ -31,8 +31,10 @@ export default defineConfig(({command}) => {
     },
     build: {
       outDir: 'docs',
-      target: 'esnext',
     },
   };
-  return config;
-});
+  if (command === 'build') {
+    config.base = '/jsqxz/';
+  }
+  return defineConfig(config);
+};
