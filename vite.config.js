@@ -4,7 +4,10 @@ import eslint from '@vpsvl/vite-plugin-eslint';
 import stylelint from 'vite-plugin-stylelint';
 import path from 'path';
 
-export default ({command}) => {
+const INVALID_CHAR_START_REGEX = /^[\x00-\x1F\x7F<>*#"{}|^[\]`;?:&=+$,]/;
+const INVALID_CHAR_REGEX = /[\x00-\x1F\x7F<>*#"{}|^[\]`;?:&=+$,]/g;
+const DRIVE_LETTER_REGEX = /^[a-z]:/i;
+export default defineConfig(({command}) => {
   const config = {
     plugins: [
       eslint(),
@@ -31,10 +34,19 @@ export default ({command}) => {
     },
     build: {
       outDir: 'docs',
+      rollupOptions: {
+        output: {
+          sanitizeFileName(name) {
+            const match = DRIVE_LETTER_REGEX.exec(name);
+            const driveLetter = match ? match[0] : '';
+            return driveLetter + name.slice(driveLetter.length).replace(INVALID_CHAR_START_REGEX, '').replace(INVALID_CHAR_REGEX, '-');
+          },
+        },
+      },
     },
   };
   if (command === 'build') {
     config.base = '/jsqxz/';
   }
-  return defineConfig(config);
-};
+  return config;
+});
