@@ -82,7 +82,7 @@ export function xuQiShiXu(lv) {
 export function siShenZhiWen(lv) {
   return {
     name: `死神之吻 Lv${lv}`,
-    effect: [`附加冰封值+燃烧值+流血+中毒值+内伤值${lv * 30}点`],
+    effect: [`追加(冰封值+燃烧值+流血+中毒值+内伤值)${lv * 50}%的伤害`],
   };
 }
 

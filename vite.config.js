@@ -26,7 +26,9 @@ export default defineConfig(({command}) => {
       },
     },
     define: {
-      'import.meta.env.BASE': JSON.stringify('/jsqxz/'),
+      __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
+      __VUE_OPTIONS_API__: true,
+      __VUE_PROD_DEVTOOLS__: false,
     },
     server: {
       host: true,
@@ -39,7 +41,13 @@ export default defineConfig(({command}) => {
           sanitizeFileName(name) {
             const match = DRIVE_LETTER_REGEX.exec(name);
             const driveLetter = match ? match[0] : '';
-            return driveLetter + name.slice(driveLetter.length).replace(INVALID_CHAR_START_REGEX, '').replace(INVALID_CHAR_REGEX, '-');
+            return (
+              driveLetter +
+              name
+                .slice(driveLetter.length)
+                .replace(INVALID_CHAR_START_REGEX, '')
+                .replace(INVALID_CHAR_REGEX, '-')
+            );
           },
         },
       },
