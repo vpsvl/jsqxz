@@ -183,9 +183,9 @@ export default {
     name: '世尊降魔',
     condition: '伏魔杖法+无上大力杵+金刚伏魔圈+罗汉伏魔功',
     effect: [
-      '暴击率增加50%',
-      '如果造成的伤害<300，则伤害等于300，暴怒追加一定气功伤害',
-      '如果造成的伤害>300，则追加一定气功值伤害，暴怒则追加大量气功值伤害',
+      '暴击率增加50%，暴怒追加20%气攻值的伤害',
+      '如果造成的伤害<300，则伤害等于300',
+      '如果造成的伤害>300，则追加10%气攻值的伤害',
     ],
     type: 1,
   },
@@ -257,43 +257,43 @@ export default {
     id: 28,
     name: '青牛医疗',
     condition: '修炼胡青牛医术',
-    effect: ['对四格范围内的已方目标进行一次治疗'],
-    type: 0,
+    effect: ['治疗范围增加3格'],
+    type: 1,
   },
   ziWuZhenJiu: {
     id: 29,
     name: '子午针灸',
     condition: '修炼子午针灸经',
     effect: ['医疗时刺激被治疗者穴道加速回血，治疗效果在1~3倍间浮动'],
-    type: 0,
+    type: 1,
   },
   qianJinShu: {
     id: 30,
     name: '千金术',
     condition: '修炼千金方',
     effect: ['行动前概率撒出金针，治疗五格内友方少量生命'],
-    type: 0,
+    type: 1,
   },
   yaoWangShenPian: {
     id: 31,
     name: '药王神篇',
     condition: '修炼药王神篇',
     effect: ['五格范围内的友方受到致命伤害时，免除此次致命伤害，并对其进行一次治疗量为2倍治疗'],
-    type: 0,
+    type: 1,
   },
   huangDiNeiJing: {
     id: 32,
     name: '黄帝内经',
     condition: '修炼黄帝内经',
     effect: ['每回合行动后回复2点体力，免疫撕裂和创伤'],
-    type: 0,
+    type: 1,
   },
   duJing: {
     id: 33,
     name: '毒经',
     condition: '修炼毒经',
     effect: ['行动后概率施毒，对五格内的敌方施毒，施毒效果减半'],
-    type: 0,
+    type: 1,
   },
   guShu: {
     id: 34,
@@ -302,14 +302,14 @@ export default {
     effect: [
       '攻击时概率在目标体内种下盅，每次敌方行动前让敌方损失生命值，并小概率干扰敌方行动，让敌方放弃攻击行为',
     ],
-    type: 0,
+    type: 1,
   },
   huaTuoYiShu: {
     id: 35,
     name: '华陀医术',
     condition: '修炼华佗内昭图',
     effect: ['治疗时清除被治疗目标基础异常状态'],
-    type: 0,
+    type: 1,
   },
   tianYiWuFeng: {
     id: 36,
@@ -356,11 +356,15 @@ export default {
     effect: ['战场双倍的闪避值'],
     type: 1,
   },
-  cuiFu: {
+  yinYangHeYi: {
     id: 41,
-    name: '催符',
-    condition: '虚竹专属',
-    effect: ['指令：催符'],
+    name: '阴阳合一',
+    condition: '九阴神功+九阳神功',
+    effect: [
+      '免疫被攻击造成的冰封/灼烧',
+      '被暴击时，免疫暴击伤害并减伤30%',
+      '被连击时，受到连击伤害减伤30%',
+    ],
     type: 1,
   },
   qinQiShuHua: {
@@ -382,11 +386,28 @@ export default {
     ],
     type: 1,
   },
+  dingShenMen: {
+    id: 72,
+    name: '定神门',
+    condition: '神门十三剑+五行六合掌+阴阳倒乱刃+灵枢定玄指',
+    effect: ['刀剑连击概率+10%，拳指暴击概率+10%', '攻击时锁足概率+100%，封穴+5点'],
+    type: 1,
+  },
   xuanXuJin: {
     id: 73,
     name: '玄虚劲',
     condition: '无极玄功拳+玄虚刀法+玄天指',
     effect: ['自身破绽时受到攻击免疫伤害，且集气位置+200，减少50%受到的气攻'],
+    type: 1,
+  },
+  gaiShiWuShuang: {
+    id: 74,
+    name: '盖世无双',
+    condition: '同时修炼降龙十八掌+打狗棒法到极',
+    effect: [
+      '被攻击时50%概率触发，完全免疫杀气和内伤',
+      '*已经学有其中之一，则学习另一个的系数需求-40点',
+    ],
     type: 1,
   },
   taiJiAoYi: {
@@ -430,29 +451,12 @@ export default {
     ],
     type: 1,
   },
-  dingShenMen: {
-    id: 'dingShenMen',
-    name: '定神门',
-    condition: '神门十三剑+五行六合掌+阴阳倒乱刃+灵枢定玄指',
-    effect: ['刀剑连击概率+10%，拳指暴击概率+10%', '攻击时锁足概率+100%，封穴+5点'],
-    type: 1,
-  },
   fanWoHeYi: {
     id: 'fanWoHeYi',
     name: '梵我合一',
     condition: '神足经+瑜伽密乘，主运神足经或瑜伽密乘',
     effect: ['受到会暴击或连击的攻击时，20%概率终止敌方行动'],
     type: 2,
-  },
-  gaiShiWuShuang: {
-    id: 'gaiShiWuShuang',
-    name: '盖世无双',
-    condition: '同时修炼降龙十八掌+打狗棒法到极',
-    effect: [
-      '被攻击时50%概率触发，完全免疫杀气和内伤',
-      '*已经学有其中之一，则学习另一个的系数需求-40点',
-    ],
-    type: 1,
   },
   jinGangBuHuai: {
     id: 'jinGangBuHuai',
@@ -488,7 +492,7 @@ export default {
   liangYiShouHu: {
     id: 'liangYiShouHu',
     name: '两仪守护',
-    condition: '同时修炼两仪剑法+反两仪刀法到极',
+    condition: '两仪剑法+反两仪刀法',
     effect: [
       '两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻',
       '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻',
@@ -501,17 +505,6 @@ export default {
     condition: '易筋神功+罗汉伏魔功，主运易筋神功',
     effect: ['主运易筋神功，攻击时必出“罗汉伏魔”特效 （加成1.1倍）'],
     type: 2,
-  },
-  senLuoWanXiang: {
-    id: 'senLuoWanXiang',
-    name: '森罗万象',
-    condition: '九阴神功+九阳神功',
-    effect: [
-      '免疫被攻击造成的冰封/灼烧',
-      '被暴击时，免疫暴击伤害并减伤30%',
-      '被连击时，受到连击伤害减伤30%',
-    ],
-    type: 1,
   },
   wuYueJianFa: {
     id: 'wuYueJianFa',

@@ -1,5 +1,6 @@
 export default {
   name: '天机宫',
+  join: '将介绍信送给天机宫里边房间的明镜',
   effect: ['25%概率免疫以自己为中心的九宫格内敌人的攻击'],
   talent: [
     {

@@ -24,7 +24,7 @@ export default {
         'yaoJiaoKongBi',
         'wuWoWuXiang2',
       ],
-      peculiar: ['jiuYinShenZhao', 'senLuoWanXiang', 'xianTianJiuYin', 'niYunJiuYin'],
+      peculiar: ['jiuYinShenZhao', 'yinYangHeYi', 'xianTianJiuYin', 'niYunJiuYin'],
       inherit: [],
     },
     {
@@ -256,7 +256,7 @@ export default {
         'baoYuanShouYi',
         'zhiYangZhiGang',
       ],
-      peculiar: ['senLuoWanXiang'],
+      peculiar: ['yinYangHeYi'],
       inherit: ['shaoLinToJiuYang', 'wuDangToJiuYang', 'eMeiToJiuYang'],
     },
     {

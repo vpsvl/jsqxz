@@ -31,7 +31,7 @@ const thead = [
 const tbody = computed(() => {
   const arr = [];
   for (let key in stuntData) {
-    if (stuntData[key].type !== 0) {
+    if (stuntData[key].type === 1) {
       arr.push(stuntData[key]);
     }
   }

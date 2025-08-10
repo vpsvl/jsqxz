@@ -4,6 +4,10 @@
       <div class="td">名称</div>
       <div class="td">{{ tbody.name }}</div>
     </div>
+     <div class="tr">
+      <div class="td">加入方式</div>
+      <div class="td">{{ tbody.join }}</div>
+    </div>
     <div class="tr">
       <div class="td">特技</div>
       <div class="td">
