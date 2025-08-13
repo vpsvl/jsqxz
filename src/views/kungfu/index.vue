@@ -1,5 +1,5 @@
 <template>
-  <v-tabs :list="kungfu.list" :exclusive="kungfu.exclusive">
+  <v-tabs :list="kungfu.list" :exclusive="kungfu.exclusive" type="kungfu">
     <template #tab="{tab}">
       <span
         :class="{[`level-${tab.level}`]: tab.level, [`internal-${tab.internal}`]: tab.internal}"
@@ -79,7 +79,7 @@
           <div class="td">一脉相承</div>
           <div class="td">
             <div class="td-block" v-for="item of info.inherit" :key="item.id">
-              {{ item.name}}
+              {{ item.name }}
             </div>
           </div>
         </div>
@@ -114,7 +114,7 @@ import knife from '@/data/kungfu/knife';
 import special from '@/data/kungfu/special';
 import internal from '@/data/kungfu/internal';
 import fly from '@/data/kungfu/fly';
-import {kungfuSectMap} from '@/data/map/index'
+import {kungfuSectMap} from '@/data/map/index';
 
 const route = useRoute();
 const all = {fist, finger, sword, knife, special, internal, fly};

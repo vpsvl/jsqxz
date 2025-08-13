@@ -5,7 +5,7 @@
     </div>
     <div class="tabs">
       <label class="tab" v-for="(item, index) of list" :key="index">
-        <input type="radio" name="cheat" :value="index" v-model="active"/>
+        <input type="radio" name="cheat" :value="index" v-model="active" />
         <slot name="tab" :tab="item">
           <span>{{ item.name }}</span>
         </slot>
@@ -33,40 +33,46 @@ const props = defineProps({
   exclusive: {
     type: String,
   },
+  type: {
+    type: String,
+    default: '',
+  },
 });
 const active = ref(0);
 const info = computed(() => {
   const item = {...props.list[active.value]};
-  const {initiative, level, peculiar, inherit} = item;
-  if (initiative) {
-    const initiativeArr = [];
-    for (let key of initiative) {
-      if (typeof effectMap[key] === 'function') {
-        initiativeArr.push(effectMap[key](level));
+  if (props.type === 'kungfu') {
+    const {initiative, level, peculiar, inherit} = item;
+    if (initiative) {
+      const initiativeArr = [];
+      for (let key of initiative) {
+        if (typeof effectMap[key] === 'function') {
+          initiativeArr.push(effectMap[key](level));
+        }
+      }
+      item.initiative = initiativeArr;
+    }
+
+    const peculiarArr = [];
+    for (let key of peculiar) {
+      if (typeof key === 'string') {
+        if (stuntMap[key]) {
+          peculiarArr.push(stuntMap[key]);
+        }
+        continue;
+      }
+      peculiarArr.push(key);
+    }
+    item.peculiar = peculiarArr;
+
+    const inheritArr = [];
+    for (let key of inherit) {
+      if (inheritMap[key]) {
+        inheritArr.push(inheritMap[key]);
       }
     }
-    item.initiative = initiativeArr;
+    item.inherit = inheritArr;
   }
-
-  const peculiarArr = [];
-  for (let key of peculiar) {
-    if (typeof key === 'string') {
-      if (stuntMap[key]) {
-        peculiarArr.push(stuntMap[key]);
-      }
-      continue;
-    }
-    peculiarArr.push(key);
-  }
-  item.peculiar = peculiarArr;
-
-  const inheritArr = [];
-  for (let key of inherit) {
-    if (inheritMap[key]) {
-      inheritArr.push(inheritMap[key]);
-    }
-  }
-  item.inherit = inheritArr;
   return item;
 });
 watch(
@@ -112,7 +118,7 @@ watch(
       height: 100%;
       line-height: 24px;
       text-align: center;
-      transition: background .2s;
+      transition: background 0.2s;
 
       &:hover {
         background: var(--color-bg-hover);
@@ -126,7 +132,7 @@ watch(
 
     span {
       display: inline-block;
-      padding: 2px 10px;
+      padding: 2px 5px;
       font-size: 18px;
     }
   }
