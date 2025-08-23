@@ -264,7 +264,7 @@ export function shiXuLiaoShang(lv) {
 
 export function chongXue(lv) {
   return {
-     id: 218,
+    id: 218,
     name: `冲穴 Lv${lv}`,
     effect: [`每${timeSequence[lv]}时序清除1点封穴`],
   };
