@@ -403,7 +403,7 @@ export default {
   gaiShiWuShuang: {
     id: 74,
     name: '盖世无双',
-    condition: '同时修炼降龙十八掌+打狗棒法到极',
+    condition: '降龙十八掌+打狗棒法',
     effect: [
       '被攻击时50%概率触发，完全免疫杀气和内伤',
       '*已经学有其中之一，则学习另一个的系数需求-40点',

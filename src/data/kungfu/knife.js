@@ -229,7 +229,7 @@ export default {
       condition: '耍刀100',
       internal: '',
       addition: '攻击+2 耍刀+4',
-      sect: 0,
+      sect: 5,
       peculiar: [
         {
           effect: ['击杀小龙女不会触发复活'],

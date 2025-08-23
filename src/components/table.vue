@@ -1,7 +1,7 @@
 <template>
   <div class="v-table">
     <div class="thead">
-      <div class="td th-sort" v-for="th of cols" :key="th.key">
+      <div class="td th-sort" v-for="th of columns" :key="th.key">
         <span>{{ th.name }}</span>
         <template v-if="th.sort">
           <i class="sort-arrow-up" :class="{active: sortActive === th.key + '-1'}" @click="sort(th.key, -1)"></i>
@@ -12,7 +12,7 @@
     <v-scroll class="tbody" v-if="data.length > 0">
       <transition-group name="sort">
         <div class="tr" v-for="(tr, index) of data" @click="clickTr(tr, index)" :key="tr.id ? tr.id : index">
-          <div class="td" v-for="td of cols" :key="td.key">
+          <div class="td" v-for="td of columns" :key="td.key">
             <slot :name="td.key" :row="tr" :index="index">
               <p v-if="typeof tr[td.key] !== 'object'">{{ tr[td.key] }}</p>
             </slot>
@@ -27,7 +27,7 @@
 </template>
 
 <script setup>
-import {ref, inject, watchEffect} from 'vue';
+import {ref, inject, watchEffect, computed} from 'vue';
 import {onBeforeRouteLeave} from 'vue-router';
 
 const props = defineProps({
@@ -55,6 +55,7 @@ const props = defineProps({
 const emit = defineEmits(['tr-click', 'sort']);
 const state = inject('state');
 const sortActive = ref('');
+const columns = computed(() => props.cols.filter(item => !item.hidden))
 
 onBeforeRouteLeave(() => {
   sortActive.value = '';

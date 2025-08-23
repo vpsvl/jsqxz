@@ -4,6 +4,7 @@
 
 export function liuXue1(lv) {
   return {
+    id: 500,
     name: `流血Ⅰ Lv${lv}`,
     effect: [`攻击${lv * 25}%概率必造成目标流血`],
   };

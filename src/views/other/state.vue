@@ -1,4 +1,13 @@
 <template>
+  <div class="v-search">
+    <div class="v-search-item">
+      <span class="item-label">名称:</span>
+      <v-input class="item-value" v-model="params.name"></v-input>
+    </div>
+    <div class="v-search-item">
+      <v-button type="primary" @click="search">查询</v-button>
+    </div>
+  </div>
   <v-table class="v-table-other-state" :cols="thead" :data="tbody">
     <template #effect="{row}">
       <div class="td-block">
@@ -14,11 +23,11 @@
 </template>
 
 <script setup>
-import {computed, inject, ref} from 'vue';
+import {inject, onBeforeMount, ref} from 'vue';
 import data from '@/data/other/state';
 
 const state = inject('state');
-const defaultCols = [
+const thead = ref([
   {
     key: 'name',
     name: '名称',
@@ -31,24 +40,33 @@ const defaultCols = [
     key: 'type',
     name: '类型',
   },
-];
-const thead = computed(() => {
-  if (state.lessWindow) {
-    return [...defaultCols];
-  }
-  return [
-    ...defaultCols,
-    {
-      key: 'shortname',
-      name: '显示名称',
-    },
-  ];
+  {
+    key: 'shortname',
+    name: '显示名称',
+    hidden: state.lessWindow,
+  },
+]);
+
+const params = ref({
+  name: '',
 });
-const tbody = ref(data.list);
+const tbody = ref([]);
+
+function search() {
+  tbody.value = data.list.filter((item) => {
+    return new RegExp(params.value.name, 'i').test(item.name);
+  });
+}
+
+onBeforeMount(() => {
+  search();
+});
 </script>
 
 <style lang="less">
 .v-table-other-state {
+  --height-slide: 130px;
+
   .td {
     &:nth-child(1) {
       flex: 0 0 130px;

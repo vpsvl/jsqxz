@@ -15,10 +15,12 @@
 </template>
 
 <script setup>
-import {ref} from 'vue';
+import {ref, inject, onBeforeMount} from 'vue';
 import otherData from '@/data/kungfu/other';
+import stuntMap from '@/data/kungfu/stunt';
 
-const thead = [
+const state = inject('state');
+const thead = ref([
   {
     key: 'name',
     name: '名称',
@@ -30,17 +32,44 @@ const thead = [
   {
     key: 'condition',
     name: '条件',
+    hidden: state.lessWindow,
   },
   {
     key: 'addition',
     name: '加成',
+    hidden: state.lessWindow,
   },
   {
     key: 'effect',
     name: '效果',
   },
-];
-const tbody = ref(otherData.list);
+]);
+
+const params = ref({
+  name: '',
+});
+const tbody = ref([]);
+
+function search() {
+  tbody.value = otherData.list.filter((item) => {
+    const peculiarArr = [];
+    for (let key of item.peculiar) {
+      if (typeof key === 'string') {
+        if (stuntMap[key]) {
+          peculiarArr.push(stuntMap[key]);
+        }
+        continue;
+      }
+      peculiarArr.push(key);
+    }
+    item.peculiar = peculiarArr;
+    return new RegExp(params.value.name, 'i').test(item.name);
+  });
+}
+
+onBeforeMount(() => {
+  search();
+});
 </script>
 
 <style lang="less">

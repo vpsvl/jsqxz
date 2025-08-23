@@ -264,7 +264,7 @@ export function yiQiSuNiSheng(lv) {
 export function tianLuo(lv) {
   return {
     name: `天罗 Lv${lv}`,
-    effect: [`攻击时${lv * 20}%概率无视敌方闪避`],
+    effect: [`攻击时${lv * 15}%概率无视敌方闪避`],
   };
 }
 
