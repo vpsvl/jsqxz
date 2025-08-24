@@ -29,12 +29,20 @@ for (let key in bookMap) {
 export default {
   path: '/person',
   component: () => import('@/views/layout/layout.vue'),
-  redirect: {name: 'personSectJianghu'},
+  redirect: {name: 'personTalent'},
   name: 'person',
   meta: {
     title: '人物',
   },
   children: [
+    {
+      path: 'talent',
+      component: () => import('@/views/person/talent.vue'),
+      name: 'personTalent',
+      meta: {
+        title: '天赋',
+      },
+    },
     {
       path: 'sect',
       component: () => import('@/views/layout/router-view.vue'),

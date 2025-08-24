@@ -14,7 +14,7 @@
     </template>
     <template #fortune="{row}">
       <div class="td-block">
-        <div class="td-effect-item effect-icon-heart" v-for="(text, i) of row.fortune" :key="i">
+        <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.fortune" :key="i">
           {{ text }}
         </div>
       </div>

@@ -50,13 +50,6 @@ export function chongSheng(lv) {
   };
 }
 
-export function yuQi(lv) {
-  return {
-    name: `御气 Lv${lv}`,
-    effect: [`防御时${lv * 25}%概率无法被杀气，且反震内伤${lv * 125}点内伤`],
-  };
-}
-
 export function puTiShu(lv) {
   return {
     id: 1006,
@@ -445,7 +438,7 @@ export function quanFaMingZhong(lv) {
   return {
     id: 1102,
     name: `拳法命中 Lv${lv}`,
-    effect: [`拳法攻击时${lv * 20}概率无视敌方闪避`],
+    effect: [`拳法攻击时${lv * 20}%概率无视敌方闪避`],
   };
 }
 
@@ -453,7 +446,7 @@ export function zhiFaMingZhong(lv) {
   return {
     id: 1103,
     name: `指法命中 Lv${lv}`,
-    effect: [`指法攻击时${lv * 20}概率无视敌方闪避`],
+    effect: [`指法攻击时${lv * 20}%概率无视敌方闪避`],
   };
 }
 
@@ -461,7 +454,7 @@ export function jianFaMingZhong(lv) {
   return {
     id: 1104,
     name: `剑法命中 Lv${lv}`,
-    effect: [`剑法攻击时${lv * 20}概率无视敌方闪避`],
+    effect: [`剑法攻击时${lv * 20}%概率无视敌方闪避`],
   };
 }
 
@@ -469,7 +462,7 @@ export function daoFaMingZhong(lv) {
   return {
     id: 1105,
     name: `刀法命中 Lv${lv}`,
-    effect: [`刀法攻击时${lv * 20}概率无视敌方闪避`],
+    effect: [`刀法攻击时${lv * 20}%概率无视敌方闪避`],
   };
 }
 
@@ -477,6 +470,6 @@ export function qiMenMingZhong(lv) {
   return {
     id: 1106,
     name: `奇门命中 Lv${lv}`,
-    effect: [`奇门攻击时${lv * 20}概率无视敌方闪避`],
+    effect: [`奇门攻击时${lv * 20}%概率无视敌方闪避`],
   };
 }

@@ -75,7 +75,7 @@ export default {
     },
     {
       id: 'fengNanTian',
-      name: '凤南天',
+      name: '凤天南',
       talent: [748, 9916],
       fortune: [],
     },

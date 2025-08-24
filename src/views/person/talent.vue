@@ -8,26 +8,29 @@
       <v-button type="primary" @click="search">查询</v-button>
     </div>
   </div>
-  <v-table class="v-table-other-state" :cols="thead" :data="tbody">
+  <v-table class="v-table-kungfu-stunt" :cols="thead" :data="tbody">
     <template #effect="{row}">
       <div class="td-block">
-        <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.effect" :key="i">
-          {{ text }}
+        <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">
+          {{ item }}
         </div>
       </div>
     </template>
-    <template #type="{row}">
-      {{ row.type === 1 ? '增益' : '减益' }}
+    <template #fortune="{row}">
+      <div class="td-block">
+        <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.fortune" :key="i">
+          {{ text }}
+        </div>
+      </div>
     </template>
   </v-table>
 </template>
 
 <script setup>
-import {inject, onBeforeMount, ref} from 'vue';
-import data from '@/data/other/state';
+import {ref, onBeforeMount} from 'vue';
+import data from '@/data/person/talent';
 
-const state = inject('state');
-const thead = ref([
+const thead = [
   {
     key: 'name',
     name: '名称',
@@ -37,27 +40,22 @@ const thead = ref([
     name: '效果',
   },
   {
-    key: 'type',
-    name: '类型',
+    key: 'fortune',
+    name: '福缘际遇',
   },
-  {
-    key: 'shortname',
-    name: '显示名称',
-    hidden: state.lessWindow,
-  },
-]);
-
+];
 const params = ref({
   name: '',
 });
+const talentList = Object.values(data);
 const tbody = ref([]);
 
 function search() {
   if (!params.value.name) {
-    tbody.value = data.list;
+    tbody.value = talentList;
     return;
   }
-  tbody.value = data.list.filter((item) => {
+  tbody.value = talentList.filter((item) => {
     return new RegExp(params.value.name, 'i').test(item.name);
   });
 }
@@ -66,21 +64,12 @@ onBeforeMount(() => {
   search();
 });
 </script>
-
 <style lang="less">
-.v-table-other-state {
+.v-table-kungfu-stunt {
   --height-slide: 130px;
 
   .td {
     &:nth-child(1) {
-      flex: 0 0 130px;
-    }
-
-    &:nth-child(3) {
-      flex: 0 0 80px;
-    }
-
-    &:nth-child(4) {
       flex: 0 0 120px;
     }
   }
