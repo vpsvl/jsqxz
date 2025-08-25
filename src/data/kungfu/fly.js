@@ -545,7 +545,7 @@ export default {
       power: '命中340 闪避360',
       condition: '',
       addition: '轻功+5',
-      sect: 4,
+      sect: 31,
       internal: '',
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'fengMei'],
       passive: [],

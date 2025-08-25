@@ -69,8 +69,12 @@ onBeforeMount(() => {
   --height-slide: 130px;
 
   .td {
-    &:nth-child(1) {
-      flex: 0 0 120px;
+     &:nth-child(1) {
+      flex: 0 0 100px;
+    }
+
+    &:nth-child(2) {
+      flex: 2 0 0;
     }
   }
 }

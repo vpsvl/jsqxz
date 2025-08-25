@@ -73,5 +73,11 @@ export default {
       talent: [163],
       fortune: [],
     },
+    {
+      id: 636,
+      name: '李白',
+      talent: [636, 9730, 9907],
+      fortune: [],
+    },
   ],
 };
