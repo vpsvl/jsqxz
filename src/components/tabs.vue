@@ -22,7 +22,7 @@
 
 <script setup>
 import {computed, ref, watch} from 'vue';
-import effectMap from '@/data/kungfu/internal/index';
+import effectMap from '@/data/kungfu/effect/internal';
 import stuntMap from '@/data/kungfu/stunt';
 import inheritMap from '@/data/kungfu/inherit';
 

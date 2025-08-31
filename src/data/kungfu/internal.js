@@ -406,7 +406,7 @@ export default {
         'mianYiPoZhan',
         'jiaQiangJianShang',
       ],
-      peculiar: ['jinGangBuHuai', 'luoHanJinShen'],
+      peculiar: ['yiJinDuanGu', 'luoHanJinShen'],
       inherit: [],
     },
     {
@@ -478,7 +478,7 @@ export default {
         'mianYiShaQi',
         'wuShenZhiLi2',
       ],
-      peculiar: ['luoHanFuMo', 'jinGangBuHuai', 'fuHuLuoHanQuan', 'daMoZhang'],
+      peculiar: ['yiJinDuanGu', 'fuHuLuoHanQuan', 'daMoZhang'],
       inherit: ['shaoLinToYiJin'],
     },
     {
@@ -1187,9 +1187,9 @@ export default {
         'yunQiZhiXue',
         'siShenZhiWen',
         'weiLiZengQiang',
-        'luoHanFuMo',
+        'yiJinDuanGu',
       ],
-      peculiar: ['shiZunJiangMo', 'luoHanFuMo', 'luoHanJinShen'],
+      peculiar: ['shiZunJiangMo', 'yiJinDuanGu', 'luoHanJinShen'],
       inherit: [],
     },
     {

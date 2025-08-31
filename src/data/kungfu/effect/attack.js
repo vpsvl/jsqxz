@@ -246,7 +246,7 @@ export function poGang(lv) {
   };
 }
 
-export function luoHanFuMo(lv) {
+export function yiJinDuanGu(lv) {
   return {
     id: 930,
     name: `罗汉伏魔 Lv${lv}`,

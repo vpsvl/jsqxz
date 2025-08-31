@@ -344,7 +344,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'jinGangBuHuaiTi',
+      id: 'yiJinDuanGuTi',
       name: '金刚不坏体',
       cheat: '',
       level: 3,
@@ -1097,7 +1097,7 @@ export default {
       peculiar: [],
     },
     {
-      id: 'luoHanFuMoGong',
+      id: 'yiJinDuanGuGong',
       name: '罗汉伏魔功',
       cheat: '十八泥偶',
       level: 3,
