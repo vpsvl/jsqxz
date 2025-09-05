@@ -546,7 +546,7 @@ export default {
       addition: '轻功+5',
       sect: 31,
       internal: '',
-      initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'fengMei'],
+      initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'fengMei', 'taYunZhuiFeng'],
       passive: [],
       peculiar: [],
       inherit: [],

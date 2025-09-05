@@ -30,7 +30,7 @@ export function jianBao(lv) {
   return {
     id: 403,
     name: `减暴 Lv${lv}`,
-    effect: [`减少受到的连击概率${lv * 10}%`],
+    effect: [`减少受到的暴击概率${lv * 10}%`],
   };
 }
 

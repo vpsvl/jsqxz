@@ -181,7 +181,7 @@ export default {
   19: {
     id: 19,
     name: '君子剑',
-    effect: ['使用剑法概率三连击', '华山觉醒后自带五岳剑诀'],
+    effect: ['使用剑法概率三连击', '五岳剑诀自动运功'],
     fortune: ['笑傲福威镖局选择正邪剧情，第一格洗为辟邪剑法，第三格洗为葵花神功'],
     level: 2,
     exclusive: 2,
@@ -1223,7 +1223,7 @@ export default {
   138: {
     id: 138,
     name: '一指镇江南',
-    effect: ['指系武功威力增加200'],
+    effect: ['指系武功威力增加50×天书数量'],
     fortune: [],
     level: 2,
     exclusive: 2,
@@ -1656,7 +1656,9 @@ export default {
     id: 189,
     name: '晋阳大侠',
     effect: [
-      '连击率与暴击率+50%，攻击时必触发“混元一气”造成敌全体内伤。增加1000气功。修炼葵花宝典没有惩罚，可以使用葵花神功攻击，笑邪击败葵花尊者，天赋内功洗为葵花神功',
+      '连击率与暴击率+50%，气攻+1000，攻击时必触发“混元一气”造成敌全体内伤',
+      '修炼葵花宝典没有惩罚，可以使用葵花神功攻击，笑邪击败葵花尊者，天赋内功洗为葵花神功',
+      '华山觉醒后主运葵花宝典，集气速度+20%',
     ],
     fortune: [],
     level: 4,
@@ -5076,7 +5078,14 @@ export default {
     level: 4,
     exclusive: 2,
   },
-  630: {id: 630, name: '灵獒王', effect: [''], fortune: [], level: 2, exclusive: 2},
+  630: {
+    id: 630,
+    name: '灵獒王',
+    effect: [''],
+    fortune: [],
+    level: 2,
+    exclusive: 2,
+  },
   631: {
     id: 631,
     name: '芷兰毓秀',
@@ -6297,7 +6306,7 @@ export default {
   9744: {
     id: 9744,
     name: '曲夕烟隙',
-    effect: ['30%概率触发“曲夕烟隙”混乱目标，使目标随机移动（实际效果为魅惑一回合）'],
+    effect: ['30%概率触发“曲夕烟隙”混乱目标一回合（不分敌我）'],
     fortune: [],
     level: 3,
     exclusive: 1,
@@ -7704,7 +7713,7 @@ export default {
   9912: {
     id: 9912,
     name: '幻阴魔相',
-    effect: ['攻击时50%概率使七格内敌人获集气混乱5时序'],
+    effect: ['攻击时50%概率使七格内敌人获集气紊乱5时序'],
     fortune: [],
     level: 3,
     exclusive: 1,
@@ -8434,7 +8443,7 @@ export default {
   9993: {
     id: 9993,
     name: '佛门无双',
-    effect: ['少林寺所有武功威力+300'],
+    effect: ['少林寺所有武功威力+500'],
     fortune: [],
     level: 3,
     exclusive: 1,
