@@ -70,6 +70,10 @@
             <div class="td">气功</div>
             <div class="td">{{ info.gasPower }}</div>
           </div>
+          <!-- <div class="tr">
+            <div class="td">招式效果</div>
+            <div class="td">{{ info.attack.join('、') }}</div>
+          </div> -->
           <div class="tr">
             <div class="td">范围</div>
             <div class="td">{{ info.range }}</div>

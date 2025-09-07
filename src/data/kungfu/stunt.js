@@ -530,15 +530,11 @@ export default {
     ],
     type: 2,
   },
-  zhenBiXieJianFaKuiHuaCiMu: {
-    id: 'zhenBiXieJianFaKuiHuaCiMu',
-    name: '真辟邪剑法·葵花刺目',
+  zhenBiXieJianFa: {
+    id: 'zhenBiXieJianFa',
+    name: '真辟邪剑法',
     condition: '辟邪剑法+葵花神功',
-    effect: [
-      '主运葵花神功使用辟邪剑法攻击，概率触发特效“真辟邪剑法·葵花刺目”',
-      '被刺目的敌人，本场战斗伤害和杀气均下降15%，攻击时有50%概率落空',
-      '习得葵花神功后，辟邪剑法威力+1000',
-    ],
+    effect: ['习得葵花神功后，辟邪剑法威力+1000'],
     type: 2,
   },
   chenSuLieZhang: {

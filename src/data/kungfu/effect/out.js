@@ -137,7 +137,7 @@ export default {
   },
   35: {
     id: 35,
-    name: '混乱',
+    name: '集气紊乱',
   },
   36: {
     id: 36,

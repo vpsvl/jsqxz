@@ -22,7 +22,8 @@
 
 <script setup>
 import {computed, ref, watch} from 'vue';
-import effectMap from '@/data/kungfu/effect/internal';
+import internalMap from '@/data/kungfu/effect/internal';
+import outMap from '@/data/kungfu/effect/out';
 import stuntMap from '@/data/kungfu/stunt';
 import inheritMap from '@/data/kungfu/inherit';
 
@@ -42,12 +43,12 @@ const active = ref(0);
 const info = computed(() => {
   const item = {...props.list[active.value]};
   if (props.type === 'kungfu') {
-    const {initiative, level, peculiar, inherit} = item;
+    const {initiative, level, peculiar, inherit, attack} = item;
     if (initiative) {
       const initiativeArr = [];
       for (let key of initiative) {
-        if (typeof effectMap[key] === 'function') {
-          initiativeArr.push(effectMap[key](level));
+        if (typeof internalMap[key] === 'function') {
+          initiativeArr.push(internalMap[key](level));
         }
       }
       item.initiative = initiativeArr;
@@ -72,6 +73,14 @@ const info = computed(() => {
       }
     }
     item.inherit = inheritArr;
+
+    const attackArr = [];
+    for (let key of attack) {
+      if (outMap[key]) {
+        attackArr.push(outMap[key].name);
+      }
+    }
+    item.attack = attackArr;
   }
   return item;
 });
