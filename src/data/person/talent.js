@@ -3743,7 +3743,7 @@ export default {
   457: {
     id: 457,
     name: '剑中剑[称号]',
-    effect: ['剑法武功增加100%'],
+    effect: ['剑法武功连击率+100%'],
     fortune: [],
     level: 2,
     exclusive: 2,
@@ -4094,7 +4094,7 @@ export default {
   500: {
     id: 500,
     name: '剑道巅峰[称号]',
-    effect: ['击败谢云流领悟“剑道巅峰 五方行尽”，概率再行动一次'],
+    effect: ['击败谢云流领悟“剑道巅峰 五方行尽”，概率再行动一次（需资质大于79）'],
     fortune: [],
     level: 4,
     exclusive: 2,

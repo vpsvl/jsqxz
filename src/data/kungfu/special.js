@@ -95,7 +95,7 @@ export default {
       get: '暂无',
       power: 300,
       gasPower: 300,
-      range: '■ 10格',
+      range: '■ 7格',
       condition: '奇门20',
       addition: '奇门+2 暗器+3 带毒+5',
       internal: '0',
