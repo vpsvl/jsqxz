@@ -1,29 +1,18 @@
 <template>
   <div class="v-scroll" ref="scrollDom">
-    <div
-      class="v-scroll-box"
-      ref="scrollBoxDom"
-      @scroll="handleScroll"
-      :style="state.scrollStyle"
-    >
+    <div class="v-scroll-box" ref="scrollBoxDom" @scroll="handleScroll" :style="state.scrollStyle">
       <div :class="['v-scroll-view', viewClass]" ref="scrollViewDom">
         <slot></slot>
       </div>
     </div>
-    <div
-      class="v-scroll-track v-scroll-track-x"
-      @mousedown="clickTrack($event, 'x')"
-    >
+    <div class="v-scroll-track v-scroll-track-x" @mousedown="clickTrack($event, 'x')">
       <div
         class="v-scroll-thumb"
         :style="state.thumbXStyle"
         @mousedown="dragThumb($event, 'x')"
       ></div>
     </div>
-    <div
-      class="v-scroll-track v-scroll-track-y"
-      @mousedown="clickTrack($event, 'y')"
-    >
+    <div class="v-scroll-track v-scroll-track-y" @mousedown="clickTrack($event, 'y')">
       <div
         class="v-scroll-thumb"
         :style="state.thumbYStyle"
@@ -34,7 +23,16 @@
 </template>
 
 <script setup>
-import {ref, reactive, computed, watch, onMounted, onBeforeUnmount, nextTick, useTemplateRef} from 'vue';
+import {
+  ref,
+  reactive,
+  computed,
+  watch,
+  onMounted,
+  onBeforeUnmount,
+  nextTick,
+  useTemplateRef,
+} from 'vue';
 import {useScrollWidth, addResizeListener, removeResizeListener} from './utils/scroll';
 
 const KEY_MAP = {
@@ -112,26 +110,26 @@ watch(
   (val) => {
     getSize('x');
     _state.left = val < 0 ? _state.maxLeft : limitRange(val, 'x');
-  },
+  }
 );
 watch(
   () => props.y,
   (val) => {
     getSize('y');
     _state.top = val < 0 ? _state.maxTop : limitRange(val, 'y');
-  },
+  }
 );
 watch(
   () => _state.left,
   (val) => {
     scrollBoxDom.value.scrollLeft = val;
-  },
+  }
 );
 watch(
   () => _state.top,
   (val) => {
     scrollBoxDom.value.scrollTop = val;
-  },
+  }
 );
 const state = reactive({
   // 出滚动条的元素的样式
@@ -244,11 +242,15 @@ function mouseMove(e) {
   e.preventDefault();
   const {x0, clientX, left, maxLeft, wrapWidth, viewWidth} = KEY_MAP[_state.moveDirection];
   const x = e[clientX];
-  if (x <= _state[x0] && _state[left] <= 0 || x >= _state[x0] && _state[left] >= _state[maxLeft]) {
+  if (
+    (x <= _state[x0] && _state[left] <= 0) ||
+    (x >= _state[x0] && _state[left] >= _state[maxLeft])
+  ) {
     return false;
   }
-  _state[left] = limitRange(_state[left] + (x - _state[x0]) * _state[viewWidth] / _state[wrapWidth],
-    _state.moveDirection,
+  _state[left] = limitRange(
+    _state[left] + (x - _state[x0]) * _state[viewWidth] / _state[wrapWidth],
+    _state.moveDirection
   );
   _state[x0] = x;
   emit('scroll', {

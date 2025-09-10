@@ -7,9 +7,7 @@ export default defineConfig([
     languageOptions: {
       ecmaVersion: 'latest',
     },
-    extends: [
-      'vue/essential',
-    ],
+    extends: ['vue/essential'],
     plugins: {
       vue: pluginVue,
       '@stylistic': stylistic,
@@ -17,10 +15,14 @@ export default defineConfig([
     // 级别: 0-忽略 1-警告 2-错误
     rules: {
       // 2个空格缩进
-      '@stylistic/indent': [2, 2, {
-        // case缩进级别
-        SwitchCase: 1,
-      }],
+      '@stylistic/indent': [
+        2,
+        2,
+        {
+          // case缩进级别
+          SwitchCase: 1,
+        },
+      ],
       // 单引号跟反引号
       '@stylistic/quotes': [2, 'single', {allowTemplateLiterals: 'always'}],
       '@stylistic/quote-props': [2, 'as-needed'],
@@ -30,7 +32,21 @@ export default defineConfig([
       // never: 不能带末尾的逗号
       // always: 必须带末尾的逗号
       // always-multiline: 多行模式必须带逗号，单行模式不能带逗号
-      '@stylistic/comma-dangle': [2, 'always-multiline'],
+      '@stylistic/comma-dangle': [
+        2,
+        {
+          arrays: 'always-multiline',
+          objects: 'always-multiline',
+          imports: 'always-multiline',
+          exports: 'always-multiline',
+          functions: 'never',
+          importAttributes: 'always-multiline',
+          dynamicImports: 'always-multiline',
+          enums: 'always-multiline',
+          generics: 'always-multiline',
+          tuples: 'always-multiline',
+        },
+      ],
       // 控制逗号前后的空格
       '@stylistic/comma-spacing': [2, {before: false, after: true}],
       // 不允许多个空行

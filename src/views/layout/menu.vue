@@ -1,7 +1,13 @@
 <template>
   <v-scroll class="menu" v-if="menus.length">
     <div class="menu-nav" v-for="route of menus" :key="route.name">
-      <input class="nav-list-toggle" :value="route.name" v-model="slideMenu" type="checkbox" :id="route.name"/>
+      <input
+        class="nav-list-toggle"
+        :value="route.name"
+        v-model="slideMenu"
+        type="checkbox"
+        :id="route.name"
+      />
       <template v-if="route.children && route.children.length">
         <label class="nav-title nav-item" :for="route.name">
           <p>{{ route.meta.title }}</p>
@@ -9,7 +15,11 @@
         </label>
         <div class="nav-list" :style="{maxHeight: getChildHeight(route)}">
           <template v-for="child of route.children" :key="child.name">
-            <router-link v-if="!child.meta || !child.meta.hidden" :to="{name: child.name}" class="nav-item">
+            <router-link
+              v-if="!child.meta || !child.meta.hidden"
+              :to="{name: child.name}"
+              class="nav-item"
+            >
               <p>{{ child.meta.title }}</p>
             </router-link>
           </template>
@@ -50,7 +60,7 @@ watch(
   () => menus.value,
   (val) => {
     getSlideDefault();
-  },
+  }
 );
 
 function getChildHeight(route) {

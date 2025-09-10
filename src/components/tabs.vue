@@ -44,7 +44,7 @@ const info = computed(() => {
   const item = {...props.list[active.value]};
   if (props.type === 'kungfu') {
     const {initiative, level, peculiar, inherit, attack} = item;
-    if (initiative) {
+    if (Array.isArray(initiative)) {
       const initiativeArr = [];
       for (let key of initiative) {
         if (typeof internalMap[key] === 'function') {
@@ -74,13 +74,15 @@ const info = computed(() => {
     }
     item.inherit = inheritArr;
 
-    const attackArr = [];
-    for (let key of attack) {
-      if (outMap[key]) {
-        attackArr.push(outMap[key].name);
+    if (Array.isArray(attack)) {
+      const attackArr = [];
+      for (let key of attack) {
+        if (outMap[key]) {
+          attackArr.push(outMap[key].name);
+        }
       }
+      item.attack = attackArr;
     }
-    item.attack = attackArr;
   }
   return item;
 });
@@ -89,7 +91,7 @@ watch(
   () => {
     active.value = 0;
   },
-  {immediate: true},
+  {immediate: true}
 );
 </script>
 
