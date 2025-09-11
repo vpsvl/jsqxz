@@ -110,26 +110,26 @@ watch(
   (val) => {
     getSize('x');
     _state.left = val < 0 ? _state.maxLeft : limitRange(val, 'x');
-  }
+  },
 );
 watch(
   () => props.y,
   (val) => {
     getSize('y');
     _state.top = val < 0 ? _state.maxTop : limitRange(val, 'y');
-  }
+  },
 );
 watch(
   () => _state.left,
   (val) => {
     scrollBoxDom.value.scrollLeft = val;
-  }
+  },
 );
 watch(
   () => _state.top,
   (val) => {
     scrollBoxDom.value.scrollTop = val;
-  }
+  },
 );
 const state = reactive({
   // 出滚动条的元素的样式
@@ -250,7 +250,7 @@ function mouseMove(e) {
   }
   _state[left] = limitRange(
     _state[left] + (x - _state[x0]) * _state[viewWidth] / _state[wrapWidth],
-    _state.moveDirection
+    _state.moveDirection,
   );
   _state[x0] = x;
   emit('scroll', {

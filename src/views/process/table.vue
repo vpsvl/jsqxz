@@ -10,7 +10,7 @@
       <template v-if="hasBranch">
         <div class="tr-branch">
           <label v-for="(name, val) in branchMap" class="tr-branch-td" :key="val">
-            <input type="radio" :value="val" v-model="branch" />
+            <input type="radio" :value="val" v-model="branch"/>
             <span>{{ name }}</span>
           </label>
         </div>
@@ -91,27 +91,33 @@ watchEffect(async () => {
     background: var(--color-success-lighter);
     color: var(--color-success);
     font-weight: 600;
+
     .td:last-child {
       flex: 1 0 0;
     }
   }
+
   .td {
     &:first-child {
       flex: 0 0 80px;
       justify-content: center;
     }
+
     &:last-child {
       flex: 0.5 0 0;
     }
   }
+
   .tr-branch {
     display: flex;
     height: 50px;
     background: var(--color-primary-lighter);
     border-bottom: 1px solid var(--color-border);
   }
+
   .tr-branch-td {
     cursor: pointer;
+
     span {
       display: block;
       height: 100%;
@@ -120,10 +126,12 @@ watchEffect(async () => {
       color: var(--color-primary);
       line-height: 50px;
       transition: all 0.2s;
+
       &:hover {
         background: var(--color-primary-light);
       }
     }
+
     input[type='radio']:checked + span {
       color: #fff;
       background: var(--color-primary);

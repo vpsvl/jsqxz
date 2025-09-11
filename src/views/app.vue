@@ -35,7 +35,7 @@ watch(
     if (state.lessWindow) {
       state.menuVisible = false;
     }
-  }
+  },
 );
 
 provide('state', state);

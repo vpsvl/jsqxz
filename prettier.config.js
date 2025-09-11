@@ -5,7 +5,7 @@ const config = {
   // 单引号
   singleQuote: true,
   // 尾行逗号
-  trailingComma: 'es5',
+  trailingComma: 'all',
   // 对象{}里前后空格
   bracketSpacing: false,
   htmlWhitespaceSensitivity: 'ignore',

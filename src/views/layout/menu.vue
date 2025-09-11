@@ -60,7 +60,7 @@ watch(
   () => menus.value,
   (val) => {
     getSlideDefault();
-  }
+  },
 );
 
 function getChildHeight(route) {
