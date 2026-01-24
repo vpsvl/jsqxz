@@ -92,7 +92,7 @@ export default {
       name: '三蜈五蟆烟',
       cheat: '',
       level: 1,
-      get: '暂无',
+      get: '扬州商店出售',
       power: 300,
       gasPower: 300,
       range: '■ 7格',

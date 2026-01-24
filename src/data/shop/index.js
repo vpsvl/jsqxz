@@ -92,6 +92,13 @@ export default {
         remark: '',
       },
       {
+        name: '三蜈五蟆烟',
+        intro: '【秘籍】奇门+2 暗器+3 带毒+5',
+        price: '1000',
+        num: '1',
+        remark: '',
+      },
+      {
         name: '黑血神针',
         intro: '【暗器】生命-80 中毒+80 内伤+7',
         price: '150',

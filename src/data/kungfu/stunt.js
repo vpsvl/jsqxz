@@ -242,9 +242,9 @@ export default {
     ],
     type: 1,
   },
-  ziZaiXiaoYao: {
+  xiaoYaoYuFeng: {
     id: 25,
-    name: '自在逍遥',
+    name: '逍遥御风',
     condition: '小无相功+北冥神功+八荒六合功',
     effect: [
       '灵鹫宫对话石像战胜无崖子后，学会“逍遥御风”：',

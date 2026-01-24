@@ -40,25 +40,16 @@ watch(
 
 provide('state', state);
 
-// import data from '@/data/other/aa';
+// import data from '@/data/cheat/aa';
 //
 // function toArr() {
-//   const arr = [];
-//   for (let key in data) {
-//     const [name, effect, type, cd, time, shortname] = data[key];
-//     arr.push({
-//       id: Number(key),
-//       name,
-//       effect: [effect],
-//       type,
-//       cd,
-//       time,
-//       shortname,
-//     });
+//   const arr = {};
+//   for (let i = 572; i < 650; i++) {
+//     arr[i] = '';
 //   }
 //   console.log(arr);
 // }
-//
+
 // toArr();
 
 // import pinyin from 'pinyin';
@@ -101,6 +92,7 @@ provide('state', state);
 // }
 //
 // toPinyin(data);
+
 </script>
 
 <style lang="less">

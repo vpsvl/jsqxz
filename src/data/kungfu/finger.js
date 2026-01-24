@@ -263,7 +263,7 @@ export default {
       range: '△ 7格',
       condition: '御剑40',
       internal: '',
-      addition: '攻击+1 轻功+1 御剑+3',
+      addition: '攻击+3 轻功+2 指腿+4',
       sect: 6,
       peculiar: ['dingShenMen'],
       inherit: [],

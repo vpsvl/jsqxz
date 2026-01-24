@@ -952,7 +952,7 @@ export default {
         'xiNuZhuDong',
         'weiLiZengQiang',
       ],
-      peculiar: ['ziZaiXiaoYao', 'wanXiangTianYin'],
+      peculiar: ['xiaoYaoYuFeng', 'wanXiangTianYin'],
       inherit: [],
     },
     {
@@ -1063,7 +1063,7 @@ export default {
         'mianYiFengXue',
         'liuDaoLunHui',
       ],
-      peculiar: ['ziZaiXiaoYao'],
+      peculiar: ['xiaoYaoYuFeng'],
       inherit: [],
     },
     {
@@ -1086,7 +1086,7 @@ export default {
         'weiLiZengQiang',
         'wuWoWuXiang2',
       ],
-      peculiar: ['ziZaiXiaoYao'],
+      peculiar: ['xiaoYaoYuFeng'],
       inherit: [],
     },
     {
