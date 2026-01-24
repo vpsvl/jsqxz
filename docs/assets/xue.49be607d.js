@@ -1,1 +1,0 @@
-const n={name:"\u96EA\u5C71\u98DE\u72D0",list:[{id:"huYiDao",name:"\u80E1\u4E00\u5200",talent:[633,9794],fortune:[]},{id:"huFuRen",name:"\u80E1\u592B\u4EBA",talent:[738,9924],fortune:[]},{id:"miaoRuoLan",name:"\u82D7\u82E5\u5170",talent:[545],fortune:[]},{id:"shangJianMing",name:"\u5546\u5251\u9E23",talent:[722,9937],fortune:[]}]};export{n as default};

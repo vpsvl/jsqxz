@@ -1,1 +1,0 @@
-const a={name:"\u767D\u9A6C\u5578\u897F\u98CE",list:[{id:"liWenXiu",name:"\u674E\u6587\u79C0",talent:[590,9850],fortune:[]},{id:"waErLaQi",name:"\u74E6\u8033\u62C9\u9F50",talent:[138],fortune:[]},{id:"chenDaHai",name:"\u9648\u8FBE\u6D77",talent:[137],fortune:[]}]};export{a as default};
