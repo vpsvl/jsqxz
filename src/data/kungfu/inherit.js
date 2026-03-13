@@ -9,6 +9,11 @@ export default {
     name: '天竺佛指 → 无相劫指',
     kungfu: 'finger',
   },
+  yiYangZhiToLiuMai: {
+    id: 'yiYangZhiToLiuMai',
+    name: '一阳指 → 六脉神剑',
+    kungfu: 'finger',
+  },
   beiDouToCanHe: {
     id: 'beiDouToCanHe',
     name: '北斗剑法 → 参合剑气',
@@ -56,7 +61,7 @@ export default {
   },
   huaShanToZiXia: {
     id: 'huaShanToZiXia',
-    name: '华山心法 (华山派)→ 紫霞神功',
+    name: '华山心法 → 紫霞神功',
     kungfu: 'internal',
   },
   ziXiaToWuYue: {

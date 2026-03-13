@@ -32,7 +32,21 @@ export default defineConfig([
       // never: 不能带末尾的逗号
       // always: 必须带末尾的逗号
       // always-multiline: 多行模式必须带逗号，单行模式不能带逗号
-      '@stylistic/comma-dangle': [2, 'always-multiline'],
+      '@stylistic/comma-dangle': [
+        2,
+        {
+          arrays: 'always-multiline',
+          objects: 'always-multiline',
+          imports: 'always-multiline',
+          exports: 'always-multiline',
+          functions: 'always-multiline',
+          importAttributes: 'always-multiline',
+          dynamicImports: 'never',
+          enums: 'always-multiline',
+          generics: 'always-multiline',
+          tuples: 'always-multiline',
+        },
+      ],
       // 控制逗号前后的空格
       '@stylistic/comma-spacing': [2, {before: false, after: true}],
       // 不允许多个空行

@@ -159,7 +159,7 @@ export default {
           effect: ['清除目标身上50%的蛤蟆功蓄力值'],
         },
       ],
-      inherit: [],
+      inherit: ['yiYangZhiToLiuMai'],
       attack: [2],
     },
     {
@@ -232,7 +232,7 @@ export default {
           ],
         },
       ],
-      inherit: [],
+      inherit: ['yiYangZhiToLiuMai'],
       attack: [2],
     },
     {

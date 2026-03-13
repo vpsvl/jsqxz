@@ -5,7 +5,7 @@
     </div>
     <div class="tabs">
       <label class="tab" v-for="(item, index) of list" :key="index">
-        <input type="radio" name="cheat" :value="index" v-model="active"/>
+        <input type="radio" name="cheat" :value="index" v-model="active" />
         <slot name="tab" :tab="item">
           <span>{{ item.name }}</span>
         </slot>
