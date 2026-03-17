@@ -4,7 +4,10 @@
       <div class="td-block" v-for="(item, index) of row.talent" :key="index">
         <div>
           [
-          <span :class="`level-${item.level}`">{{ item.name }}</span>
+          <span :class="`level-${item.level}`">
+            {{ item.name }}
+            <template v-if="item.id < 1000">[称号]</template>
+          </span>
           ]:
         </div>
         <div class="td-effect-item effect-icon-star" v-for="(text, i) of item.effect" :key="i">
@@ -57,7 +60,7 @@ watchEffect(async () => {
     tbody.value = [];
     state.loading = true;
     const data = await import(`../../data/person/${type}.js`);
-    tbody.value = data.default.list.map(item => {
+    tbody.value = data.default.list.map((item) => {
       const talentArr = [];
       const fortuneArr = [];
       for (let key of item.talent) {

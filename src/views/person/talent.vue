@@ -9,6 +9,10 @@
     </div>
   </div>
   <v-table class="v-table-kungfu-stunt" :cols="thead" :data="tbody">
+    <template #name="{row}">
+      {{ row.name }}
+      <template v-if="row.id < 1000">[称号]</template>
+    </template>
     <template #effect="{row}">
       <div class="td-block">
         <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">
@@ -69,7 +73,7 @@ onBeforeMount(() => {
   --height-slide: 130px;
 
   .td {
-     &:nth-child(1) {
+    &:nth-child(1) {
       flex: 0 0 100px;
     }
 

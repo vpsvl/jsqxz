@@ -40,7 +40,7 @@ export default {
     {
       id: 'mieJue',
       name: '灭绝',
-      talent: [9813, 9734],
+      talent: [6, 9813, 9734],
       fortune: [],
     },
     {

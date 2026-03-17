@@ -1,7 +1,7 @@
 export default {
   1: {
     id: 1,
-    name: '雪山飞狐[称号]',
+    name: '雪山飞狐',
     effect: ['集气速度提升8点', '特色指令【飞狐】：无视障碍物移动，在战场上来去自如，消耗10点体力'],
     fortune: [
       '沧州挑战苗人凤后，第一格洗为胡家刀法',
@@ -13,7 +13,7 @@ export default {
   },
   2: {
     id: 2,
-    name: '灵枢素问[称号]',
+    name: '灵枢素问',
     effect: [
       '医疗能力上限400点',
       '用毒能力上限500点',
@@ -26,7 +26,7 @@ export default {
   },
   3: {
     id: 3,
-    name: '金面佛[称号]',
+    name: '金面佛',
     effect: [
       '攻击时高概率附带灼烧，概率给目标造成散功10时序',
       '每100点御剑系数增加苗家剑法攻击范围1格',
@@ -37,7 +37,7 @@ export default {
   },
   4: {
     id: 4,
-    name: '跌打医生[称号]',
+    name: '跌打医生',
     effect: ['医疗上限300', '用毒上限300', '让田归农的攻击中附加带毒', '击退敌方后可获得银两'],
     fortune: [],
     level: 1,
@@ -45,7 +45,7 @@ export default {
   },
   5: {
     id: 5,
-    name: '太极宗师[称号]',
+    name: '太极宗师',
     effect: [
       '连击伤害杀气借力打力不减',
       '攻击无误伤',
@@ -59,15 +59,15 @@ export default {
   },
   6: {
     id: 6,
-    name: '峨眉掌门[称号]',
-    effect: ['使用任何武功高连击，必暴击', '移动格数+3'],
+    name: '峨眉掌门',
+    effect: ['使用任何武功高连击，必暴击，移动格数+3'],
     fortune: [],
     level: 2,
     exclusive: 2,
   },
   7: {
     id: 7,
-    name: '昆仑掌门[称号]',
+    name: '昆仑掌门',
     effect: [
       '特色指令【铁琴】使全场敌人受到其身上琴音层数×50点伤害，并清除其身上的琴音状态',
       '昆仑派武学连击率+40%，暴击率+40%，昆仑派武学威力+500',
@@ -79,7 +79,7 @@ export default {
   8: {
     // 唐文亮
     id: 8,
-    name: '崆峒掌门[称号]',
+    name: '崆峒掌门',
     effect: ['崆峒派武学连击率+40%，暴击率+40%，威力+500'],
     fortune: [],
     level: 3,
@@ -87,7 +87,7 @@ export default {
   },
   9: {
     id: 9,
-    name: '九阳明尊[称号]',
+    name: '九阳明尊',
     effect: ['未触发内功加力，护体时，补偿九阳神功加力，护体'],
     fortune: [
       '朱府剧情后第一格洗为九阳神功',
@@ -102,7 +102,7 @@ export default {
   10: {
     // 范遥
     id: 10,
-    name: '光明右使[称号]',
+    name: '光明右使',
     effect: ['每次受到攻击，增加自身1%的减伤，上限20%'],
     fortune: [],
     level: 1,
@@ -111,7 +111,7 @@ export default {
   11: {
     // 杨逍
     id: 11,
-    name: '光明左使[称号]',
+    name: '光明左使',
     effect: ['每次攻击，使敌方受到的伤害提高2%，上限40%'],
     fortune: [],
     level: 1,
@@ -119,7 +119,7 @@ export default {
   },
   12: {
     id: 12,
-    name: '白眉鹰王[称号]',
+    name: '白眉鹰王',
     effect: ['鹰爪功威力增加50%'],
     fortune: [],
     level: 1,
@@ -127,7 +127,7 @@ export default {
   },
   13: {
     id: 13,
-    name: '金毛狮王[称号]',
+    name: '金毛狮王',
     effect: [
       '狮子吼发动条件放宽为敌方内力低于自身即可',
       '受到的伤害减少15%',
@@ -139,7 +139,7 @@ export default {
   },
   14: {
     id: 14,
-    name: '青翼蝠王[称号]',
+    name: '青翼蝠王',
     effect: ['集气速度提升10点', '华山觉醒后，寒冰绵掌威力增加50%'],
     fortune: [],
     level: 2,
@@ -148,7 +148,7 @@ export default {
   15: {
     // 黛绮丝
     id: 15,
-    name: '紫衫龙王[称号]',
+    name: '紫衫龙王',
     effect: ['每次行动都有20%概率魅惑敌人一回合'],
     fortune: [],
     level: 2,
@@ -156,7 +156,7 @@ export default {
   },
   16: {
     id: 16,
-    name: '蝶谷医仙[称号]',
+    name: '蝶谷医仙',
     effect: ['医疗上限500', '可向队友用药，全场友军使用药品效果上升30%'],
     fortune: [],
     level: 2,
@@ -164,7 +164,7 @@ export default {
   },
   17: {
     id: 17,
-    name: '蝶谷毒仙[称号]',
+    name: '蝶谷毒仙',
     effect: ['用毒能力上限500', '攻击时带毒10~50点'],
     fortune: [],
     level: 2,
@@ -172,7 +172,7 @@ export default {
   },
   18: {
     id: 18,
-    name: '混元霹雳手[称号]',
+    name: '混元霹雳手',
     effect: ['集气速度+10点', '使用任何武功高概率连击和高概率封穴'],
     fortune: [],
     level: 3,
@@ -180,7 +180,7 @@ export default {
   },
   19: {
     id: 19,
-    name: '君子剑[称号]',
+    name: '君子剑',
     effect: ['使用剑法概率三连击', '五岳剑诀自动运功'],
     fortune: ['笑傲福威镖局选择正邪剧情，第一格洗为辟邪剑法，第三格洗为葵花神功'],
     level: 2,
@@ -188,7 +188,7 @@ export default {
   },
   20: {
     id: 20,
-    name: '衡山掌门[称号]',
+    name: '衡山掌门',
     effect: ['衡山派武学连击率+40%，暴击率+40%，威力+500', '五岳剑诀自动运功'],
     fortune: [],
     level: 3,
@@ -196,7 +196,7 @@ export default {
   },
   21: {
     id: 21,
-    name: '恒山掌门[称号]',
+    name: '恒山掌门',
     effect: ['恒山派武学连击率+40%，暴击率+40%，威力+500', '五岳剑诀自动运功'],
     fortune: [],
     level: 3,
@@ -204,7 +204,7 @@ export default {
   },
   22: {
     id: 22,
-    name: '嵩山掌门[称号]',
+    name: '嵩山掌门',
     effect: ['攻击时高概率附带冰封', '五岳剑诀自动运功'],
     fortune: [],
     level: 2,
@@ -212,7 +212,7 @@ export default {
   },
   23: {
     id: 23,
-    name: '泰山掌门[称号]',
+    name: '泰山掌门',
     effect: ['攻击时高概率附带灼烧', '五岳剑诀自动运功'],
     fortune: [],
     level: 2,
@@ -221,7 +221,7 @@ export default {
   24: {
     // 余沧海
     id: 24,
-    name: '青城掌门[称号]',
+    name: '青城掌门',
     effect: ['松风剑法威力翻倍，华山觉醒后松风剑法威力翻倍，必连击，必暴击'],
     fortune: [],
     level: 2,
@@ -230,7 +230,7 @@ export default {
   25: {
     // 蓝凤凰
     id: 25,
-    name: '五毒教主[称号]',
+    name: '五毒教主',
     effect: ['攻击伤害提升10%，用毒能力上限400'],
     fortune: [],
     level: 2,
@@ -238,7 +238,7 @@ export default {
   },
   26: {
     id: 26,
-    name: '日月魔帝[称号]',
+    name: '日月魔帝',
     effect: ['吸星大法吸体力效果提高', '使用任何武功高暴击，攻击时高概率造成封穴'],
     fortune: [],
     level: 4,
@@ -246,7 +246,7 @@ export default {
   },
   27: {
     id: 27,
-    name: '唯我不败[称号]',
+    name: '唯我不败',
     effect: ['自带绣花针', '攻击无误伤', '暴怒时触发“唯我不败”，状态解除前不会受到伤害'],
     fortune: [],
     level: 4,
@@ -254,7 +254,7 @@ export default {
   },
   28: {
     id: 28,
-    name: '杀人名医[称号]',
+    name: '杀人名医',
     effect: ['每击退一名敌人集气速度+3点、医疗能力+50（最多5个有效）', '医疗能力上限500'],
     fortune: [],
     level: 2,
@@ -262,7 +262,7 @@ export default {
   },
   29: {
     id: 29,
-    name: '采花大盗[称号]',
+    name: '采花大盗',
     effect: ['攻击女性时吸取内力体力'],
     fortune: [],
     level: 4,
@@ -270,7 +270,7 @@ export default {
   },
   30: {
     id: 30,
-    name: '1[称号]',
+    name: '1',
     effect: ['1'],
     fortune: [],
     level: 1,
@@ -278,7 +278,7 @@ export default {
   },
   31: {
     id: 31,
-    name: '江南四友[称号]',
+    name: '江南四友',
     effect: ['华山觉醒后倚天屠龙功威力翻倍', '江南四友每多一人在场气防+500'],
     fortune: [],
     level: 1,
@@ -286,7 +286,7 @@ export default {
   },
   32: {
     id: 32,
-    name: '江南四友[称号]',
+    name: '江南四友',
     effect: ['华山觉醒后妙笔丹青威力翻倍', '江南四友每多一人在场，气防+500'],
     fortune: [],
     level: 1,
@@ -294,7 +294,7 @@ export default {
   },
   33: {
     id: 33,
-    name: '江南四友[称号]',
+    name: '江南四友',
     effect: ['华山觉醒后棋盘招式威力翻倍', '江南四友每多一人在场，气防+500'],
     fortune: [],
     level: 1,
@@ -302,7 +302,7 @@ export default {
   },
   34: {
     id: 34,
-    name: '江南四友[称号]',
+    name: '江南四友',
     effect: ['华山觉醒后持摇琴威力翻倍', '江南四友每多一人在场，气防+500'],
     fortune: [],
     level: 1,
@@ -310,7 +310,7 @@ export default {
   },
   35: {
     id: 35,
-    name: '九剑传人[称号]',
+    name: '九剑传人',
     effect: [
       '被风清扬指点后，进入战斗初始集气值1000，移动格数+3',
       '神雕山洞二次觉醒领悟【九剑真传】【无我无剑】',
@@ -324,7 +324,7 @@ export default {
   },
   36: {
     id: 36,
-    name: '辟邪剑客[称号]',
+    name: '辟邪剑客',
     effect: ['初始集气位置900', '使用辟邪剑法招式无需气'],
     fortune: [
       '笑傲衡阳剧情被岳不群收为徒弟后，门派变为华山派',
@@ -335,7 +335,7 @@ export default {
   },
   37: {
     id: 37,
-    name: '赤心连城[称号]',
+    name: '赤心连城',
     effect: [
       '使用连城剑法必连击，如本次攻击造成伤害低于150，则追加一次连击（一轮追加上限3次）',
       '修炼血刀大法无惩罚，不会降低生命上限，使用血刀大法必暴击',
@@ -349,7 +349,7 @@ export default {
   },
   38: {
     id: 38,
-    name: '石破天惊[称号]',
+    name: '石破天惊',
     effect: ['觉醒后太玄消耗减半', '学有罗汉伏魔功，攻击时必出【罗汉伏魔】特效且效果增强10%'],
     fortune: ['侠客行正线挑战岛主剧情，第二格和天赋内功洗为太玄神功'],
     level: 4,
@@ -358,7 +358,7 @@ export default {
   39: {
     // 龙岛主
     id: 39,
-    name: '侠客岛主[称号]',
+    name: '侠客岛主',
     effect: ['攻击效果提升20%', '使用任何武功高概率造成封穴', '主运太玄神功不会触发太玄之重'],
     fortune: [],
     level: 3,
@@ -367,7 +367,7 @@ export default {
   40: {
     // 木岛主
     id: 40,
-    name: '侠客岛主[称号]',
+    name: '侠客岛主',
     effect: ['防御效果提升20%', '使用任何武功高概率造成封穴', '主运太玄神功不会触发太玄之轻'],
     fortune: [],
     level: 3,
@@ -376,7 +376,7 @@ export default {
   41: {
     // 张三
     id: 41,
-    name: '赏善使者[称号]',
+    name: '赏善使者',
     effect: ['道德高于59，行动后对周身五格范围内队友治疗', '攻击时高概率附带灼烧'],
     fortune: [],
     level: 3,
@@ -385,7 +385,7 @@ export default {
   42: {
     // 李四
     id: 42,
-    name: '罚恶使者[称号]',
+    name: '罚恶使者',
     effect: ['道德低于61，行动后对周身五格范围内敌人施毒', '攻击时高概率附带冰封'],
     fortune: [],
     level: 3,
@@ -393,7 +393,7 @@ export default {
   },
   43: {
     id: 43,
-    name: '雪山掌门[称号]',
+    name: '雪山掌门',
     effect: ['雪山派武功连击率+40%，暴击率+40%，威力+400'],
     fortune: [],
     level: 3,
@@ -401,7 +401,7 @@ export default {
   },
   44: {
     id: 44,
-    name: '南海鳄神[称号]',
+    name: '南海鳄神',
     effect: ['暴怒时大剪刀附带撕裂效果'],
     fortune: [],
     level: 1,
@@ -409,7 +409,7 @@ export default {
   },
   45: {
     id: 45,
-    name: '阎王敌[称号]',
+    name: '阎王敌',
     effect: ['医疗上限500点', '战斗中满血复活自己或者同伴一次'],
     fortune: [],
     level: 2,
@@ -417,7 +417,7 @@ export default {
   },
   46: {
     id: 46,
-    name: '星宿老怪[称号]',
+    name: '星宿老怪',
     effect: [
       '攻击时，追加等同敌方中毒量的伤害',
       '回合结束时按中毒量扣除敌方生命',
@@ -430,7 +430,7 @@ export default {
   47: {
     // 阿紫
     id: 47,
-    name: '曼珠沙华[称号]',
+    name: '曼珠沙华',
     effect: ['每击退一个敌方，自身气攻气防提高200点'],
     fortune: [],
     level: 2,
@@ -439,7 +439,7 @@ export default {
   48: {
     // 游坦之
     id: 48,
-    name: '冰毒怪客[称号]',
+    name: '冰毒怪客',
     effect: [
       '攻击带毒340点',
       '冰蚕毒掌随机附加1~3层“冰冻状态”，每层减缓1%集气速度，上限50层',
@@ -452,7 +452,7 @@ export default {
   49: {
     // 虚竹
     id: 49,
-    name: '逍遥掌门[称号]',
+    name: '逍遥掌门',
     effect: [
       '有特色指令：【生死符】',
       '擂鼓山剧情后，自带北冥真气护体',
@@ -468,7 +468,7 @@ export default {
   },
   50: {
     id: 50,
-    name: '狂龙天征[称号]',
+    name: '狂龙天征',
     effect: [
       '使用降龙十八掌攻击无误伤，必定发动【降龙·极意】，40%概率发动【降龙·三叠浪】，暴怒时必定发动',
       '降龙十八掌耗内降低50%（与天赋外功效果叠加，降低75%内力消耗）',
@@ -479,7 +479,7 @@ export default {
   },
   51: {
     id: 51,
-    name: '姑苏慕容[称号]',
+    name: '姑苏慕容',
     effect: ['修炼斗转星移无需兵器值条件', '斗转星移触发概率+10%'],
     fortune: ['天龙八部邪线挑战扫地僧胜利后，第二格和天赋内功洗为易筋经，领悟黑级浮屠'],
     level: 3,
@@ -487,7 +487,7 @@ export default {
   },
   52: {
     id: 52,
-    name: '中平神枪[称号]',
+    name: '中平神枪',
     effect: [
       '使用中平枪法时，气攻+1000',
       '行动前随机变化一个形象，获得相应天赋和第一格武功',
@@ -499,7 +499,7 @@ export default {
   },
   53: {
     id: 53,
-    name: '磊落仁心[称号]',
+    name: '磊落仁心',
     effect: ['内力上限9999'],
     fortune: [
       '无量山洞剧情，第一格洗为北冥神功，第二格洗为凌波微步',
@@ -510,7 +510,7 @@ export default {
   },
   54: {
     id: 54,
-    name: '碧血长风[称号]',
+    name: '碧血长风',
     effect: ['击败敌人后可再次行动', '使用金蛇锥三倍暴击'],
     fortune: [],
     level: 3,
@@ -518,7 +518,7 @@ export default {
   },
   55: {
     id: 55,
-    name: '大器晚成[称号]',
+    name: '大器晚成',
     effect: ['左右互搏发动概率固定为80%', '作为队友时，最后10级的升级属性提高'],
     fortune: [
       '射雕桃花岛招亲事件，第一格洗为降龙十八掌，第二格洗为空明拳，第三格洗为九阴神功，并学会左右互搏',
@@ -529,7 +529,7 @@ export default {
   },
   56: {
     id: 56,
-    name: '奇门遁甲[称号]',
+    name: '奇门遁甲',
     effect: [
       '战斗开始前可布置奇阵，不同颜色的地面有不同效果：',
       '└红色——造成的伤害提高20%',
@@ -543,7 +543,7 @@ export default {
   },
   57: {
     id: 57,
-    name: '东邪[称号]',
+    name: '东邪',
     effect: [
       '攻击时高概率造成封穴',
       '集气速度+10',
@@ -555,7 +555,7 @@ export default {
   },
   58: {
     id: 58,
-    name: '西狂[称号]',
+    name: '西狂',
     effect: [
       '使用玄铁剑法时，有概率发动【重剑真传】',
       '攻击时附带“西狂之怒啸”，敌方全体集气倒退100点',
@@ -573,7 +573,7 @@ export default {
   },
   59: {
     id: 59,
-    name: '冰心玉骨[称号]',
+    name: '冰心玉骨',
     effect: ['左右互搏发动概率70%', '使用玉女素心剑法高概率连击'],
     fortune: [],
     level: 3,
@@ -581,7 +581,7 @@ export default {
   },
   60: {
     id: 60,
-    name: '西毒[称号]',
+    name: '西毒',
     effect: ['所有攻击无误伤', '攻击时无视敌方毒抗强制上毒30点'],
     fortune: [
       '射雕明霞岛剧情后，第二格洗为逆运经脉，天赋内功洗为逆运经脉',
@@ -592,7 +592,7 @@ export default {
   },
   61: {
     id: 61,
-    name: '白驼少主[称号]',
+    name: '白驼少主',
     effect: ['暴怒时，使用雪山白驼掌可触发灵蛇拳，击中的敌人集气进入波动状态20时序'],
     fortune: [],
     level: 3,
@@ -600,7 +600,7 @@ export default {
   },
   62: {
     id: 62,
-    name: '元蒙帝师[称号]',
+    name: '元蒙帝师',
     effect: ['任何攻击追加2000点气攻'],
     fortune: ['神雕重阳宫大战后，第二格洗为五轮大转'],
     level: 3,
@@ -608,7 +608,7 @@ export default {
   },
   63: {
     id: 63,
-    name: '青箫落瑛[称号]',
+    name: '青箫落瑛',
     effect: ['使用玉箫剑法攻击，可杀敌内力300点'],
     fortune: ['射雕正线牛家村剧情后，第二格洗为弹指神通，第三格洗为落英神剑掌'],
     level: 2,
@@ -616,7 +616,7 @@ export default {
   },
   64: {
     id: 64,
-    name: '顽童武痴[称号]',
+    name: '顽童武痴',
     effect: ['每行动一次，攻击效果提升5%，最高提升30%'],
     fortune: [],
     level: 3,
@@ -624,7 +624,7 @@ export default {
   },
   65: {
     id: 65,
-    name: '南帝[称号]',
+    name: '南帝',
     effect: [
       '使用一阳指，给敌方追加“无明业火”状态，持续30时序',
       '处于“无明业火”状态的人攻击时，会损失50%内力消耗量的生命（无法致死）',
@@ -636,7 +636,7 @@ export default {
   },
   66: {
     id: 66,
-    name: '波斯圣女[称号]',
+    name: '波斯圣女',
     effect: ['敌全体移动减三格', '无视资质学习乾坤大挪移'],
     fortune: [],
     level: 3,
@@ -644,7 +644,7 @@ export default {
   },
   67: {
     id: 67,
-    name: '铁掌水上漂[称号]',
+    name: '铁掌水上漂',
     effect: ['使用任何武功高连击，高暴击', '移动步数+5'],
     fortune: [],
     level: 3,
@@ -652,7 +652,7 @@ export default {
   },
   68: {
     id: 68,
-    name: '长春子[称号]',
+    name: '长春子',
     effect: [
       '华山觉醒后全真剑法威力翻倍',
       '主运先天功，全真剑法概率变化七星剑法，增加150点真实伤害',
@@ -663,7 +663,7 @@ export default {
   },
   69: {
     id: 69,
-    name: '北丐[称号]',
+    name: '北丐',
     effect: ['使用降龙十八掌，40%概率发动【降龙·极意】', '使用降龙十八掌攻击无误伤'],
     fortune: ['射雕支线华山绝顶剧情后，第三格和天赋内功洗为九阴神功，内力属性变为阴内'],
     level: 3,
@@ -671,7 +671,7 @@ export default {
   },
   70: {
     id: 70,
-    name: '伏虎罗汉[称号]',
+    name: '伏虎罗汉',
     effect: ['阳内时防御力增加20%，阴内时攻击力增加20%，调和内时轻功增加20%'],
     fortune: [],
     level: 3,
@@ -679,7 +679,7 @@ export default {
   },
   71: {
     id: 71,
-    name: '神龙教主[称号]',
+    name: '神龙教主',
     effect: ['使用任何武功高连击，高暴击'],
     fortune: [],
     level: 2,
@@ -687,7 +687,7 @@ export default {
   },
   72: {
     id: 72,
-    name: '天龙掌门[称号]',
+    name: '天龙掌门',
     effect: ['无视兵器值需求装备[闯王军刀]', '装备[闯王军刀]，攻击时必定附加流血效果'],
     fortune: [
       '沧州胡苗最后一次比武剧情，第一格洗为苗家剑法，第二格洗为胡家刀法，天赋外功洗为苗家剑法和胡家刀法',
@@ -697,7 +697,7 @@ export default {
   },
   73: {
     id: 73,
-    name: '日月圣姑[称号]',
+    name: '日月圣姑',
     effect: ['每时序恢复自身5点中毒'],
     fortune: [],
     level: 2,
@@ -705,7 +705,7 @@ export default {
   },
   74: {
     id: 74,
-    name: '翠羽黄衫[称号]',
+    name: '翠羽黄衫',
     effect: ['在场时，我方全体增加基础防御20%'],
     fortune: [],
     level: 2,
@@ -713,7 +713,7 @@ export default {
   },
   75: {
     id: 75,
-    name: '天池红花[称号]',
+    name: '天池红花',
     effect: ['攻击时有30%概率直接击中破绽，20%概率击中敌人后减少敌人一格气力'],
     fortune: [],
     level: 2,
@@ -721,7 +721,7 @@ export default {
   },
   76: {
     id: 76,
-    name: '琅嬛仙子[称号]',
+    name: '琅嬛仙子',
     effect: ['在场时，我方全体攻击范围增加一格'],
     fortune: ['获得凌波微步后，天赋轻功洗为凌波微步'],
     level: 4,
@@ -730,7 +730,7 @@ export default {
   77: {
     // 萧中慧
     id: 77,
-    name: '鸳鸯刀客[称号]',
+    name: '鸳鸯刀客',
     effect: ['使用夫妻刀法无误伤', '可装备专属武器鸯刀'],
     fortune: ['获得夫妻刀法后，第一格洗为夫妻刀法'],
     level: 2,
@@ -738,7 +738,7 @@ export default {
   },
   78: {
     id: 78,
-    name: '铁尸魔煞[称号]',
+    name: '铁尸魔煞',
     effect: ['华山觉醒后，九阴白骨爪威力增加50%'],
     fortune: [],
     level: 2,
@@ -746,7 +746,7 @@ export default {
   },
   79: {
     id: 79,
-    name: '小师妹[称号]',
+    name: '小师妹',
     effect: [],
     fortune: ['笑傲福威镖局选择正邪剧情，第一、二、三、四、五格洗为五岳剑法'],
     level: 2,
@@ -754,7 +754,7 @@ export default {
   },
   80: {
     id: 80,
-    name: '火手判官[称号]',
+    name: '火手判官',
     effect: ['攻击必定内伤，所造成内伤效果加倍'],
     fortune: [],
     level: 2,
@@ -762,7 +762,7 @@ export default {
   },
   81: {
     id: 81,
-    name: '雪岭双姝[称号]',
+    name: '雪岭双姝',
     effect: ['战场上可发现食材'],
     fortune: [],
     level: 1,
@@ -770,7 +770,7 @@ export default {
   },
   82: {
     id: 82,
-    name: '武当精英[称号]',
+    name: '武当精英',
     effect: ['武当派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -779,7 +779,7 @@ export default {
   83: {
     // 何铁手
     id: 83,
-    name: '五毒教主[称号]',
+    name: '五毒教主',
     effect: ['被攻击无视毒抗使攻击者中毒45~50点', '用毒能力上限500'],
     fortune: [],
     level: 3,
@@ -788,7 +788,7 @@ export default {
   84: {
     // 霍都
     id: 84,
-    name: '小王爷[称号]',
+    name: '小王爷',
     effect: ['武功练到极，减少受到的5%气攻（上限25%）'],
     fortune: [],
     level: 2,
@@ -796,7 +796,7 @@ export default {
   },
   85: {
     id: 85,
-    name: '老谋深算[称号]',
+    name: '老谋深算',
     effect: ['每过999时序，自动回满血内体并解除自身基础异常状态'],
     fortune: [],
     level: 2,
@@ -804,7 +804,7 @@ export default {
   },
   86: {
     id: 86,
-    name: '金枝玉叶[称号]',
+    name: '金枝玉叶',
     effect: ['敌方全体防御力降低15%'],
     fortune: [],
     level: 2,
@@ -812,7 +812,7 @@ export default {
   },
   87: {
     id: 87,
-    name: '媚眼如丝[称号]',
+    name: '媚眼如丝',
     effect: ['敌方全体攻击效果降低10%'],
     fortune: [],
     level: 2,
@@ -821,7 +821,7 @@ export default {
   88: {
     // 祖千秋
     id: 88,
-    name: '酒神[称号]',
+    name: '酒神',
     effect: ['被攻击时有30%概率发动【酒神秘踪步】闪避'],
     fortune: [],
     level: 2,
@@ -830,7 +830,7 @@ export default {
   89: {
     // 人厨子
     id: 89,
-    name: '食神[称号]',
+    name: '食神',
     effect: ['攻击不消耗体力'],
     fortune: [],
     level: 2,
@@ -838,7 +838,7 @@ export default {
   },
   90: {
     id: 90,
-    name: '毓秀灵姝[称号]',
+    name: '毓秀灵姝',
     effect: ['攻击时必定造成流血', '闪电貂攻击时概率偷窃敌方携带的物品，并对其强制上毒50点'],
     fortune: [
       '找到闪电貂后可第一格洗为闪电貂',
@@ -849,7 +849,7 @@ export default {
   },
   91: {
     id: 91,
-    name: '青青子衿[称号]',
+    name: '青青子衿',
     effect: [],
     fortune: ['金蛇山洞拔出金蛇剑，第一格洗为金蛇剑法'],
     level: 1,
@@ -857,7 +857,7 @@ export default {
   },
   92: {
     id: 92,
-    name: '喵仙人[称号]',
+    name: '喵仙人',
     effect: [
       '攻击无误伤',
       '在队伍中时，可以在战斗开始前布阵',
@@ -869,7 +869,7 @@ export default {
   },
   93: {
     id: 93,
-    name: '忠仆[称号]',
+    name: '忠仆',
     effect: ['已方中毒抗性+20'],
     fortune: [],
     level: 2,
@@ -877,7 +877,7 @@ export default {
   },
   94: {
     id: 94,
-    name: '仁义刀[称号]',
+    name: '仁义刀',
     effect: ['使用刀法必定单击，刀法威力1.5倍'],
     fortune: [],
     level: 2,
@@ -885,7 +885,7 @@ export default {
   },
   95: {
     id: 95,
-    name: '柔云剑[称号]',
+    name: '柔云剑',
     effect: ['被攻击时，将一半杀气转化为回血'],
     fortune: [],
     level: 2,
@@ -893,7 +893,7 @@ export default {
   },
   96: {
     id: 96,
-    name: '冷月剑[称号]',
+    name: '冷月剑',
     effect: ['增加64点防御，被攻击时降低640点气攻'],
     fortune: [],
     level: 2,
@@ -901,7 +901,7 @@ export default {
   },
   97: {
     id: 97,
-    name: '血刀老祖[称号]',
+    name: '血刀老祖',
     effect: ['基础暴击率大幅度提高', '初始集气位置900，且移动+3格'],
     fortune: [],
     level: 3,
@@ -909,7 +909,7 @@ export default {
   },
   98: {
     id: 98,
-    name: '恶贯满盈[称号]',
+    name: '恶贯满盈',
     effect: ['加力/护体/出招概率大幅提高，无法休息'],
     fortune: [],
     level: 3,
@@ -917,7 +917,7 @@ export default {
   },
   99: {
     id: 99,
-    name: '无恶不作[称号]',
+    name: '无恶不作',
     effect: ['使用黄沙万里鞭必双击'],
     fortune: [],
     level: 1,
@@ -925,7 +925,7 @@ export default {
   },
   100: {
     id: 100,
-    name: '穷凶极恶[称号]',
+    name: '穷凶极恶',
     effect: ['攻击女性时，恢复造成伤害10%的血量（单次攻击吸血上限100点）'],
     fortune: [],
     level: 2,
@@ -933,7 +933,7 @@ export default {
   },
   101: {
     id: 101,
-    name: '笔砚生[称号]',
+    name: '笔砚生',
     effect: ['装备判官笔时，额外增加封穴点数'],
     fortune: [],
     level: 2,
@@ -941,7 +941,7 @@ export default {
   },
   102: {
     id: 102,
-    name: '天龙禅师[称号]',
+    name: '天龙禅师',
     effect: ['使用一阳指高概率连击', '灼烧恢复能力加倍（时序恢复2点灼烧）'],
     fortune: [],
     level: 2,
@@ -949,7 +949,7 @@ export default {
   },
   103: {
     id: 103,
-    name: '大轮明王[称号]',
+    name: '大轮明王',
     effect: [
       '学会小无相功后，再学习任何武功系数需求降低20',
       '特色指令【幻化】使用小无相功模拟天下武学，必须要拥有对应的秘籍',
@@ -960,7 +960,7 @@ export default {
   },
   104: {
     id: 104,
-    name: '千面玲珑[称号]',
+    name: '千面玲珑',
     effect: ['特色指令【易容】50时序只受到误伤'],
     fortune: [],
     level: 2,
@@ -968,7 +968,7 @@ export default {
   },
   105: {
     id: 105,
-    name: '碧落情天[称号]',
+    name: '碧落情天',
     effect: ['与慕容复同队，替慕容复承担所有伤害'],
     fortune: [],
     level: 2,
@@ -976,7 +976,7 @@ export default {
   },
   106: {
     id: 106,
-    name: '五虎断魂[称号]',
+    name: '五虎断魂',
     effect: ['五虎断门刀威力+200'],
     fortune: [],
     level: 2,
@@ -984,7 +984,7 @@ export default {
   },
   107: {
     id: 107,
-    name: '华山长老[称号]',
+    name: '华山长老',
     effect: ['反两仪刀法威力+300'],
     fortune: [],
     level: 1,
@@ -992,7 +992,7 @@ export default {
   },
   108: {
     id: 108,
-    name: '华山长老[称号]',
+    name: '华山长老',
     effect: ['反两仪刀法威力+300'],
     fortune: [],
     level: 1,
@@ -1000,7 +1000,7 @@ export default {
   },
   109: {
     id: 109,
-    name: '神算子[称号]',
+    name: '神算子',
     effect: ['两仪剑法威力+200'],
     fortune: [],
     level: 1,
@@ -1008,7 +1008,7 @@ export default {
   },
   110: {
     id: 110,
-    name: '聚贤庄主[称号]',
+    name: '聚贤庄主',
     effect: ['奇门武功威力+150'],
     fortune: [],
     level: 1,
@@ -1016,7 +1016,7 @@ export default {
   },
   111: {
     id: 111,
-    name: '聚贤庄主[称号]',
+    name: '聚贤庄主',
     effect: ['奇门武功威力+150'],
     fortune: [],
     level: 1,
@@ -1024,7 +1024,7 @@ export default {
   },
   112: {
     id: 112,
-    name: '杀破狼[称号]',
+    name: '杀破狼',
     effect: ['开场进入杀破狼状态，三回合内保持满怒，杀气提高2000'],
     fortune: [],
     level: 4,
@@ -1032,7 +1032,7 @@ export default {
   },
   113: {
     id: 113,
-    name: '龙城血脉[称号]',
+    name: '龙城血脉',
     effect: ['斗转必命中'],
     fortune: [],
     level: 3,
@@ -1040,7 +1040,7 @@ export default {
   },
   114: {
     id: 114,
-    name: '天佛化生[称号]',
+    name: '天佛化生',
     effect: ['内力上限9999', '攻击无误伤', '被攻击100%触发【天地独尊】，完全免疫杀气'],
     fortune: [],
     level: 4,
@@ -1048,7 +1048,7 @@ export default {
   },
   115: {
     id: 115,
-    name: '聪辩先生[称号]',
+    name: '聪辩先生',
     effect: ['命中提升20%'],
     fortune: [],
     level: 3,
@@ -1057,7 +1057,7 @@ export default {
   116: {
     // 无崖子
     id: 116,
-    name: '逍遥掌门[称号]',
+    name: '逍遥掌门',
     effect: ['内力上限9999', '被攻击时必定发动北冥真气护体'],
     fortune: [],
     level: 4,
@@ -1065,7 +1065,7 @@ export default {
   },
   117: {
     id: 117,
-    name: '唯我独尊[称号]',
+    name: '唯我独尊',
     effect: ['八荒六合功特效必触发'],
     fortune: [],
     level: 2,
@@ -1073,7 +1073,7 @@ export default {
   },
   118: {
     id: 118,
-    name: '秋水无尘[称号]',
+    name: '秋水无尘',
     effect: ['自身集气速度不受基础异常状态影响'],
     fortune: [],
     level: 2,
@@ -1081,7 +1081,7 @@ export default {
   },
   119: {
     id: 119,
-    name: '点苍渔隐[称号]',
+    name: '点苍渔隐',
     effect: ['海叟钓法威力+300'],
     fortune: [],
     level: 1,
@@ -1089,7 +1089,7 @@ export default {
   },
   120: {
     id: 120,
-    name: '樵夫[称号]',
+    name: '樵夫',
     effect: ['力大无穷，攻击力提升100点'],
     fortune: [],
     level: 2,
@@ -1097,7 +1097,7 @@ export default {
   },
   121: {
     id: 121,
-    name: '儒玄双通[称号]',
+    name: '儒玄双通',
     effect: ['获取武学点数和修为点数的能力增加'],
     fortune: [],
     level: 1,
@@ -1105,7 +1105,7 @@ export default {
   },
   122: {
     id: 122,
-    name: '苍山书生[称号]',
+    name: '苍山书生',
     effect: ['轻功减少10%，攻击和防御增加10%'],
     fortune: [],
     level: 2,
@@ -1113,7 +1113,7 @@ export default {
   },
   123: {
     id: 123,
-    name: '丹阳子[称号]',
+    name: '丹阳子',
     effect: ['全真剑法威力翻倍，先天功气血、内力恢复翻倍'],
     fortune: [],
     level: 3,
@@ -1121,7 +1121,7 @@ export default {
   },
   124: {
     id: 124,
-    name: '长真子[称号]',
+    name: '长真子',
     effect: ['全真剑法威力翻倍'],
     fortune: [],
     level: 2,
@@ -1129,7 +1129,7 @@ export default {
   },
   125: {
     id: 125,
-    name: '长生子[称号]',
+    name: '长生子',
     effect: ['全真剑法威力翻倍'],
     fortune: [],
     level: 2,
@@ -1137,7 +1137,7 @@ export default {
   },
   126: {
     id: 126,
-    name: '玉阳子[称号]',
+    name: '玉阳子',
     effect: ['全真剑法威力翻倍'],
     fortune: [],
     level: 2,
@@ -1145,7 +1145,7 @@ export default {
   },
   127: {
     id: 127,
-    name: '广宁子[称号]',
+    name: '广宁子',
     effect: ['全真剑法威力翻倍'],
     fortune: [],
     level: 2,
@@ -1153,7 +1153,7 @@ export default {
   },
   128: {
     id: 128,
-    name: '清净散人[称号]',
+    name: '清净散人',
     effect: ['全真剑法威力翻倍'],
     fortune: [],
     level: 2,
@@ -1161,7 +1161,7 @@ export default {
   },
   129: {
     id: 129,
-    name: '中神通[称号]',
+    name: '中神通',
     effect: [
       '全真武学威力翻倍，使用全真剑法，60%概率发动重阳剑气，追加777气攻',
       '攻击时高概率造成封穴，概率给目标添加【同归】状态',
@@ -1172,7 +1172,7 @@ export default {
   },
   130: {
     id: 130,
-    name: '飞天蝙蝠[称号]',
+    name: '飞天蝙蝠',
     effect: ['自动主运飞天神行'],
     fortune: [],
     level: 2,
@@ -1180,7 +1180,7 @@ export default {
   },
   131: {
     id: 131,
-    name: '妙手书生[称号]',
+    name: '妙手书生',
     effect: ['妙笔丹青威力+200'],
     fortune: [],
     level: 2,
@@ -1188,7 +1188,7 @@ export default {
   },
   132: {
     id: 132,
-    name: '马王神[称号]',
+    name: '马王神',
     effect: ['坐骑增加双倍属性（集气和三围）'],
     fortune: [],
     level: 2,
@@ -1196,7 +1196,7 @@ export default {
   },
   133: {
     id: 133,
-    name: '南山樵子[称号]',
+    name: '南山樵子',
     effect: ['攻击力增加100'],
     fortune: [],
     level: 2,
@@ -1204,7 +1204,7 @@ export default {
   },
   134: {
     id: 134,
-    name: '笑弥陀[称号]',
+    name: '笑弥陀',
     effect: ['防御力增加100'],
     fortune: [],
     level: 2,
@@ -1212,7 +1212,7 @@ export default {
   },
   135: {
     id: 135,
-    name: '闹市侠隐[称号]',
+    name: '闹市侠隐',
     effect: ['轻功增加100'],
     fortune: [],
     level: 2,
@@ -1220,7 +1220,7 @@ export default {
   },
   136: {
     id: 136,
-    name: '越女剑[称号]',
+    name: '越女剑',
     effect: ['使用剑法时命中+100'],
     fortune: [],
     level: 2,
@@ -1228,7 +1228,7 @@ export default {
   },
   137: {
     id: 137,
-    name: '青蟒剑[称号]',
+    name: '青蟒剑',
     effect: ['金蛇剑法威力+200'],
     fortune: [],
     level: 2,
@@ -1236,7 +1236,7 @@ export default {
   },
   138: {
     id: 138,
-    name: '一指镇江南[称号]',
+    name: '一指镇江南',
     effect: ['指系武功威力增加50×天书数量'],
     fortune: [],
     level: 2,
@@ -1244,7 +1244,7 @@ export default {
   },
   139: {
     id: 139,
-    name: '延平郡王[称号]',
+    name: '延平郡王',
     effect: ['受到女性攻击的伤害减少5%，对女性造成伤害增加5%'],
     fortune: [],
     level: 2,
@@ -1252,7 +1252,7 @@ export default {
   },
   140: {
     id: 140,
-    name: '剑道通神[称号]',
+    name: '剑道通神',
     effect: [
       '初始集气位置+990',
       '暴怒时，使用独孤九剑攻击，追加1000点气攻，和10时序的静止状态，可叠加',
@@ -1264,7 +1264,7 @@ export default {
   141: {
     // 成不忧
     id: 141,
-    name: '夺命三仙[称号]',
+    name: '夺命三仙',
     effect: ['使用剑法连击时变为三连击'],
     fortune: [],
     level: 2,
@@ -1273,7 +1273,7 @@ export default {
   142: {
     // 封不平
     id: 142,
-    name: '狂风快剑[称号]',
+    name: '狂风快剑',
     effect: ['使用剑法攻击，下回合集气+100'],
     fortune: [],
     level: 2,
@@ -1281,7 +1281,7 @@ export default {
   },
   143: {
     id: 143,
-    name: '桃谷六仙[称号]',
+    name: '桃谷六仙',
     effect: ['指法攻击封穴翻倍，且概率锁足'],
     fortune: [],
     level: 2,
@@ -1289,7 +1289,7 @@ export default {
   },
   144: {
     id: 144,
-    name: '桃谷六仙[称号]',
+    name: '桃谷六仙',
     effect: ['指法攻击封穴翻倍，且概率锁足'],
     fortune: [],
     level: 2,
@@ -1297,7 +1297,7 @@ export default {
   },
   145: {
     id: 145,
-    name: '桃谷六仙[称号]',
+    name: '桃谷六仙',
     effect: ['指法攻击封穴翻倍，且概率锁足'],
     fortune: [],
     level: 2,
@@ -1305,7 +1305,7 @@ export default {
   },
   146: {
     id: 146,
-    name: '桃谷六仙[称号]',
+    name: '桃谷六仙',
     effect: ['指法攻击封穴翻倍，且概率锁足'],
     fortune: [],
     level: 2,
@@ -1313,7 +1313,7 @@ export default {
   },
   147: {
     id: 147,
-    name: '桃谷六仙[称号]',
+    name: '桃谷六仙',
     effect: ['指法攻击封穴翻倍，且概率锁足'],
     fortune: [],
     level: 2,
@@ -1321,7 +1321,7 @@ export default {
   },
   148: {
     id: 148,
-    name: '桃谷六仙[称号]',
+    name: '桃谷六仙',
     effect: ['指法攻击封穴翻倍，且概率锁足'],
     fortune: [],
     level: 2,
@@ -1329,7 +1329,7 @@ export default {
   },
   149: {
     id: 149,
-    name: '千手如来[称号]',
+    name: '千手如来',
     effect: ['使用拳法攻击时，攻击范围增加一格', '自动运行易筋经', '免疫敌方三大吸功的吸内效果'],
     fortune: [],
     level: 3,
@@ -1337,7 +1337,7 @@ export default {
   },
   150: {
     id: 150,
-    name: '一剑无血[称号]',
+    name: '一剑无血',
     effect: [
       '攻击时对方必流血且造成双倍流血效果，如果敌方敌方有流血状态，直接结算伤害，且恢复自身同等血量',
     ],
@@ -1347,7 +1347,7 @@ export default {
   },
   151: {
     id: 151,
-    name: '奔雷手[称号]',
+    name: '奔雷手',
     effect: [
       '时序增加1怒气，半血时序增加2怒气',
       '暴怒攻击概率触发雷动九天，为目标添加一层雷音BUFF，对大于等三层雷音BUFF的目标击晕一回合',
@@ -1358,7 +1358,7 @@ export default {
   },
   152: {
     id: 152,
-    name: '追魂夺命剑[称号]',
+    name: '追魂夺命剑',
     effect: ['生命值低于50%时连击率两倍，生命值低于25%时连击率三倍'],
     fortune: [],
     level: 3,
@@ -1366,7 +1366,7 @@ export default {
   },
   153: {
     id: 153,
-    name: '千臂如来[称号]',
+    name: '千臂如来',
     effect: ['初始暗器值200点，战斗胜利后随机获得暗器'],
     fortune: [],
     level: 3,
@@ -1375,7 +1375,7 @@ export default {
   154: {
     // 骆冰
     id: 154,
-    name: '鸳鸯刀客[称号]',
+    name: '鸳鸯刀客',
     effect: ['使用夫妻刀法无误伤，我方全体命中+200'],
     fortune: [],
     level: 2,
@@ -1384,7 +1384,7 @@ export default {
   155: {
     // 常赫志
     id: 155,
-    name: '黑无常[称号]',
+    name: '黑无常',
     effect: ['敌方格档-200，命中-100'],
     fortune: [],
     level: 2,
@@ -1393,7 +1393,7 @@ export default {
   156: {
     // 常伯志
     id: 156,
-    name: '白无常[称号]',
+    name: '白无常',
     effect: ['我方格档+200，命中+100'],
     fortune: [],
     level: 2,
@@ -1401,15 +1401,18 @@ export default {
   },
   157: {
     id: 157,
-    name: '湘西尸王[称号]',
-    effect: ['战场上每一个死亡的成员都将恢复尸王200点气血'],
+    name: '湘西尸王',
+    effect: [
+      '战场上每一个死亡的成员都将恢复尸王200点气血',
+      '死亡时如果之前有触发过尸王回血，有20%概率借尸还魂（每触发一次回血+10%概率，共用复活次数）',
+    ],
     fortune: [],
     level: 2,
     exclusive: 2,
   },
   158: {
     id: 158,
-    name: '波斯大贾[称号]',
+    name: '波斯大贾',
     effect: ['作为畅想主角时开局获得一万银两', '行动时概率放出金钱镖对随机敌人造成伤害'],
     fortune: [],
     level: 3,
@@ -1417,7 +1420,7 @@ export default {
   },
   159: {
     id: 159,
-    name: '大力尊者[称号]',
+    name: '大力尊者',
     effect: ['必定单击，伤害永久提高1.5倍（天赋外功与如雷的额外连击有效）'],
     fortune: [],
     level: 2,
@@ -1425,7 +1428,7 @@ export default {
   },
   160: {
     id: 160,
-    name: '蒙古力士[称号]',
+    name: '蒙古力士',
     effect: [
       '特色指令：【死战】，锁定一名敌人，至其死亡之前，达尔巴对其的攻击效果提高50%，且必定命中，在目标死亡之前无法更换目标',
     ],
@@ -1435,7 +1438,7 @@ export default {
   },
   161: {
     id: 161,
-    name: '赤练仙子[称号]',
+    name: '赤练仙子',
     effect: ['五毒神掌变为赤练神掌，追加70点伤害，并强制上毒20点，引爆目标身上毒素'],
     fortune: ['神雕邪线古墓密道剧情，第二格和天赋内功洗为玉女心经，第三格洗为九阴神功'],
     level: 3,
@@ -1443,7 +1446,7 @@ export default {
   },
   162: {
     id: 162,
-    name: '一日不过三[称号]',
+    name: '一日不过三',
     effect: ['敌方全体集气-3，与丁不四同时在场，敌方全体集气-4'],
     fortune: [],
     level: 3,
@@ -1451,7 +1454,7 @@ export default {
   },
   163: {
     id: 163,
-    name: '一日不过四[称号]',
+    name: '一日不过四',
     effect: ['敌方全体集气-3，与丁不四同时在场，敌方全体集气-4'],
     fortune: [],
     level: 3,
@@ -1459,7 +1462,7 @@ export default {
   },
   164: {
     id: 164,
-    name: '摩天居士[称号]',
+    name: '摩天居士',
     effect: [
       '自带三枚玄铁令：',
       '└令一：天下人负我，自身受到的伤害增加20%',
@@ -1473,7 +1476,7 @@ export default {
   },
   165: {
     id: 165,
-    name: '贪得无厌[称号]',
+    name: '贪得无厌',
     effect: ['每过五十时序，恢复生命10%', '每过一百时序，失去生命20%'],
     fortune: [],
     level: 2,
@@ -1481,7 +1484,7 @@ export default {
   },
   166: {
     id: 166,
-    name: '太上掌门[称号]',
+    name: '太上掌门',
     effect: ['两仪剑法威力+200'],
     fortune: [],
     level: 2,
@@ -1489,7 +1492,7 @@ export default {
   },
   167: {
     id: 167,
-    name: '崆峒长老[称号]',
+    name: '崆峒长老',
     effect: ['崆峒派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -1497,7 +1500,7 @@ export default {
   },
   168: {
     id: 168,
-    name: '崆峒长老[称号]',
+    name: '崆峒长老',
     effect: ['崆峒派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -1506,7 +1509,7 @@ export default {
   169: {
     // 空闻
     id: 169,
-    name: '四大神僧[称号]',
+    name: '四大神僧',
     effect: ['使用大力金刚掌时自动进入蓄力状态'],
     fortune: [],
     level: 2,
@@ -1515,7 +1518,7 @@ export default {
   170: {
     // 空性
     id: 170,
-    name: '四大神僧[称号]',
+    name: '四大神僧',
     effect: ['使用龙爪手时自动进入等待状态'],
     fortune: [],
     level: 2,
@@ -1523,7 +1526,7 @@ export default {
   },
   171: {
     id: 171,
-    name: '苍龙之血[称号]',
+    name: '苍龙之血',
     effect: ['战斗中概率领悟出苍龙六如功'],
     fortune: [],
     level: 4,
@@ -1531,7 +1534,7 @@ export default {
   },
   172: {
     id: 172,
-    name: '苍龙之血[称号]',
+    name: '苍龙之血',
     effect: ['战斗中概率领悟出苍龙六如功'],
     fortune: [],
     level: 4,
@@ -1540,7 +1543,7 @@ export default {
   173: {
     // 妙风使
     id: 173,
-    name: '圣火三使[称号]',
+    name: '圣火三使',
     effect: ['40%概率集气位置向前跳跃20~40'],
     fortune: [],
     level: 3,
@@ -1549,7 +1552,7 @@ export default {
   174: {
     // 流云使
     id: 174,
-    name: '圣火三使[称号]',
+    name: '圣火三使',
     effect: ['40%概率集气位置向前跳跃20~40'],
     fortune: [],
     level: 3,
@@ -1558,7 +1561,7 @@ export default {
   175: {
     // 辉月使
     id: 175,
-    name: '圣火三使[称号]',
+    name: '圣火三使',
     effect: ['40%概率集气位置向前跳跃20~40'],
     fortune: [],
     level: 3,
@@ -1566,7 +1569,7 @@ export default {
   },
   176: {
     id: 176,
-    name: '五毒圣姑[称号]',
+    name: '五毒圣姑',
     effect: ['被攻击使攻击者中毒20点，降低攻击者5点体力，200点内力'],
     fortune: [],
     level: 2,
@@ -1574,7 +1577,7 @@ export default {
   },
   177: {
     id: 177,
-    name: '太白三英[称号]',
+    name: '太白三英',
     effect: ['休息时恢复双倍'],
     fortune: [],
     level: 2,
@@ -1582,7 +1585,7 @@ export default {
   },
   178: {
     id: 178,
-    name: '太白三英[称号]',
+    name: '太白三英',
     effect: ['休息时恢复双倍'],
     fortune: [],
     level: 2,
@@ -1590,7 +1593,7 @@ export default {
   },
   179: {
     id: 179,
-    name: '太白三英[称号]',
+    name: '太白三英',
     effect: ['休息时恢复双倍'],
     fortune: [],
     level: 2,
@@ -1598,7 +1601,7 @@ export default {
   },
   180: {
     id: 180,
-    name: '仙都传人[称号]',
+    name: '仙都传人',
     effect: ['两仪剑法连击率+20%'],
     fortune: [],
     level: 2,
@@ -1606,7 +1609,7 @@ export default {
   },
   181: {
     id: 181,
-    name: '仙都传人[称号]',
+    name: '仙都传人',
     effect: ['两仪剑法连击率+20%'],
     fortune: [],
     level: 2,
@@ -1614,16 +1617,16 @@ export default {
   },
   182: {
     id: 182,
-    name: '五丁手[称号]',
+    name: '五丁手',
     effect: ['指法和拳法连击率+20%'],
     fortune: [],
     level: 2,
     exclusive: 2,
   },
-  183: {id: 183, name: '没影子[称号]', effect: ['轻功+50'], fortune: [], level: 2, exclusive: 2},
+  183: {id: 183, name: '没影子', effect: ['轻功+50'], fortune: [], level: 2, exclusive: 2},
   184: {
     id: 184,
-    name: '护国真人[称号]',
+    name: '护国真人',
     effect: ['命中和格档提高20%，轻功增加20%'],
     fortune: [],
     level: 4,
@@ -1632,7 +1635,7 @@ export default {
   185: {
     // 穆人清
     id: 185,
-    name: '仙剑神猿[称号]',
+    name: '仙剑神猿',
     effect: [
       '等待时自动蓄力（无法触发龙象蓄力等效果）',
       '使用剑系武功攻击时，必连击',
@@ -1644,7 +1647,7 @@ export default {
   },
   186: {
     id: 186,
-    name: '横行无忌[称号]',
+    name: '横行无忌',
     effect: ['使用拳法攻击追加100点真实伤害，如未装备武器，则此加成翻倍'],
     fortune: [],
     level: 3,
@@ -1652,7 +1655,7 @@ export default {
   },
   187: {
     id: 187,
-    name: '八面威风[称号]',
+    name: '八面威风',
     effect: ['所受气攻和伤害降低10%，防御+10%'],
     fortune: [],
     level: 3,
@@ -1660,7 +1663,7 @@ export default {
   },
   188: {
     id: 188,
-    name: '铜笔铁算盘[称号]',
+    name: '铜笔铁算盘',
     effect: ['装备判官笔增加伤害5%', '每超过一万两银子，受到的伤害减少10%，最多减少20%'],
     fortune: [],
     level: 3,
@@ -1668,7 +1671,7 @@ export default {
   },
   189: {
     id: 189,
-    name: '晋阳大侠[称号]',
+    name: '晋阳大侠',
     effect: [
       '连击率与暴击率+50%，气攻+1000，攻击时必触发“混元一气”造成敌全体内伤',
       '修炼葵花宝典没有惩罚，可以使用葵花神功攻击，笑邪击败葵花尊者，天赋内功洗为葵花神功',
@@ -1680,7 +1683,7 @@ export default {
   },
   190: {
     id: 190,
-    name: '万毒之王[称号]',
+    name: '万毒之王',
     effect: ['免疫中毒，带毒200点'],
     fortune: [],
     level: 3,
@@ -1688,7 +1691,7 @@ export default {
   },
   191: {
     id: 191,
-    name: '嵩山弟子[称号]',
+    name: '嵩山弟子',
     effect: ['嵩山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1696,7 +1699,7 @@ export default {
   },
   192: {
     id: 192,
-    name: '嵩山弟子[称号]',
+    name: '嵩山弟子',
     effect: ['嵩山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1704,7 +1707,7 @@ export default {
   },
   193: {
     id: 193,
-    name: '嵩山弟子[称号]',
+    name: '嵩山弟子',
     effect: ['嵩山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1712,7 +1715,7 @@ export default {
   },
   194: {
     id: 194,
-    name: '嵩山弟子[称号]',
+    name: '嵩山弟子',
     effect: ['嵩山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1720,7 +1723,7 @@ export default {
   },
   195: {
     id: 195,
-    name: '托塔手[称号]',
+    name: '托塔手',
     effect: ['嵩山派武功连击率+20%'],
     fortune: [],
     level: 2,
@@ -1728,7 +1731,7 @@ export default {
   },
   196: {
     id: 196,
-    name: '铁阎王[称号]',
+    name: '铁阎王',
     effect: ['嵩山派武功连击率+20%'],
     fortune: [],
     level: 2,
@@ -1736,7 +1739,7 @@ export default {
   },
   197: {
     id: 197,
-    name: '托塔手[称号]',
+    name: '托塔手',
     effect: ['嵩山派武功连击率+20%'],
     fortune: [],
     level: 2,
@@ -1744,7 +1747,7 @@ export default {
   },
   198: {
     id: 198,
-    name: '大嵩阳手[称号]',
+    name: '大嵩阳手',
     effect: ['嵩山派武功连击率+20%'],
     fortune: [],
     level: 2,
@@ -1752,7 +1755,7 @@ export default {
   },
   199: {
     id: 199,
-    name: '大阴阳手[称号]',
+    name: '大阴阳手',
     effect: ['嵩山派武功连击率+20%'],
     fortune: [],
     level: 2,
@@ -1760,7 +1763,7 @@ export default {
   },
   200: {
     id: 200,
-    name: '白头仙翁[称号]',
+    name: '白头仙翁',
     effect: ['嵩山派武功连击率+20%'],
     fortune: [],
     level: 2,
@@ -1768,7 +1771,7 @@ export default {
   },
   201: {
     id: 201,
-    name: '泰山祖师[称号]',
+    name: '泰山祖师',
     effect: ['泰山派武学连击率+50%，暴击率+50%，威力+500'],
     fortune: [],
     level: 3,
@@ -1776,7 +1779,7 @@ export default {
   },
   202: {
     id: 202,
-    name: '泰山弟子[称号]',
+    name: '泰山弟子',
     effect: ['泰山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1784,7 +1787,7 @@ export default {
   },
   203: {
     id: 203,
-    name: '泰山弟子[称号]',
+    name: '泰山弟子',
     effect: ['泰山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1792,7 +1795,7 @@ export default {
   },
   204: {
     id: 204,
-    name: '泰山弟子[称号]',
+    name: '泰山弟子',
     effect: ['泰山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1800,7 +1803,7 @@ export default {
   },
   205: {
     id: 205,
-    name: '泰山弟子[称号]',
+    name: '泰山弟子',
     effect: ['泰山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1808,7 +1811,7 @@ export default {
   },
   206: {
     id: 206,
-    name: '泰山弟子[称号]',
+    name: '泰山弟子',
     effect: ['泰山派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1816,7 +1819,7 @@ export default {
   },
   207: {
     id: 207,
-    name: '泰山长老[称号]',
+    name: '泰山长老',
     effect: ['泰山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -1824,7 +1827,7 @@ export default {
   },
   208: {
     id: 208,
-    name: '泰山长老[称号]',
+    name: '泰山长老',
     effect: ['泰山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -1832,7 +1835,7 @@ export default {
   },
   209: {
     id: 209,
-    name: '泰山长老[称号]',
+    name: '泰山长老',
     effect: ['泰山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -1840,7 +1843,7 @@ export default {
   },
   210: {
     id: 210,
-    name: '泰山长老[称号]',
+    name: '泰山长老',
     effect: ['泰山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -1848,7 +1851,7 @@ export default {
   },
   211: {
     id: 211,
-    name: '青城四秀[称号]',
+    name: '青城四秀',
     effect: ['青城派武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -1856,7 +1859,7 @@ export default {
   },
   212: {
     id: 212,
-    name: '青城四秀[称号]',
+    name: '青城四秀',
     effect: ['青城派武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -1864,7 +1867,7 @@ export default {
   },
   213: {
     id: 213,
-    name: '青城四秀[称号]',
+    name: '青城四秀',
     effect: ['青城派武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -1872,7 +1875,7 @@ export default {
   },
   214: {
     id: 214,
-    name: '青城四秀[称号]',
+    name: '青城四秀',
     effect: ['青城派武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -1880,7 +1883,7 @@ export default {
   },
   215: {
     id: 215,
-    name: '青城弟子[称号]',
+    name: '青城弟子',
     effect: ['青城派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1888,7 +1891,7 @@ export default {
   },
   216: {
     id: 216,
-    name: '青城弟子[称号]',
+    name: '青城弟子',
     effect: ['青城派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1896,7 +1899,7 @@ export default {
   },
   217: {
     id: 217,
-    name: '青城弟子[称号]',
+    name: '青城弟子',
     effect: ['青城派武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1904,7 +1907,7 @@ export default {
   },
   218: {
     id: 218,
-    name: '青城长老[称号]',
+    name: '青城长老',
     effect: ['青城派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -1912,7 +1915,7 @@ export default {
   },
   219: {
     id: 219,
-    name: '青城长老[称号]',
+    name: '青城长老',
     effect: ['青城派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -1921,7 +1924,7 @@ export default {
   220: {
     // 司马卫
     id: 220,
-    name: '青城掌门[称号]',
+    name: '青城掌门',
     effect: ['青城派武学连击率+40%，暴击率+40%。武功威力+400'],
     fortune: [],
     level: 3,
@@ -1929,7 +1932,7 @@ export default {
   },
   221: {
     id: 221,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1937,7 +1940,7 @@ export default {
   },
   222: {
     id: 222,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1945,7 +1948,7 @@ export default {
   },
   223: {
     id: 223,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1953,7 +1956,7 @@ export default {
   },
   224: {
     id: 224,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1961,7 +1964,7 @@ export default {
   },
   225: {
     id: 225,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1969,7 +1972,7 @@ export default {
   },
   226: {
     id: 226,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1977,7 +1980,7 @@ export default {
   },
   227: {
     id: 227,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1985,7 +1988,7 @@ export default {
   },
   228: {
     id: 228,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -1993,7 +1996,7 @@ export default {
   },
   229: {
     id: 229,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -2001,7 +2004,7 @@ export default {
   },
   230: {
     id: 230,
-    name: '五毒教徒[称号]',
+    name: '五毒教徒',
     effect: ['五毒教武学追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -2009,7 +2012,7 @@ export default {
   },
   231: {
     id: 231,
-    name: '泼墨长老[称号]',
+    name: '泼墨长老',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2017,7 +2020,7 @@ export default {
   },
   232: {
     id: 232,
-    name: '色枪[称号]',
+    name: '色枪',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2025,7 +2028,7 @@ export default {
   },
   233: {
     id: 233,
-    name: '日月总管[称号]',
+    name: '日月总管',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2033,7 +2036,7 @@ export default {
   },
   234: {
     id: 234,
-    name: '天王老子[称号]',
+    name: '天王老子',
     effect: ['吸血10%，每时序流失3点生命'],
     fortune: [],
     level: 3,
@@ -2041,7 +2044,7 @@ export default {
   },
   235: {
     id: 235,
-    name: '蓝砂手[称号]',
+    name: '蓝砂手',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2049,7 +2052,7 @@ export default {
   },
   236: {
     id: 236,
-    name: '风雷大熊[称号]',
+    name: '风雷大熊',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2057,7 +2060,7 @@ export default {
   },
   237: {
     id: 237,
-    name: '黄面尊者[称号]',
+    name: '黄面尊者',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2065,7 +2068,7 @@ export default {
   },
   238: {
     id: 238,
-    name: '雕侠[称号]',
+    name: '雕侠',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2073,7 +2076,7 @@ export default {
   },
   239: {
     id: 239,
-    name: '三丧娘[称号]',
+    name: '三丧娘',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2081,7 +2084,7 @@ export default {
   },
   240: {
     id: 240,
-    name: '魔琴[称号]',
+    name: '魔琴',
     effect: ['日月神教武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2089,7 +2092,7 @@ export default {
   },
   241: {
     id: 241,
-    name: '雪山弟子[称号]',
+    name: '雪山弟子',
     effect: ['雪山派武功追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -2097,7 +2100,7 @@ export default {
   },
   242: {
     id: 242,
-    name: '雪山弟子[称号]',
+    name: '雪山弟子',
     effect: ['雪山派武功追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -2105,7 +2108,7 @@ export default {
   },
   243: {
     id: 243,
-    name: '寒梅女侠[称号]',
+    name: '寒梅女侠',
     effect: ['雪山派武功追加500点杀气值'],
     fortune: [],
     level: 1,
@@ -2113,7 +2116,7 @@ export default {
   },
   244: {
     id: 244,
-    name: '雪山长老[称号]',
+    name: '雪山长老',
     effect: ['雪山派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2121,7 +2124,7 @@ export default {
   },
   245: {
     id: 245,
-    name: '雪山长老[称号]',
+    name: '雪山长老',
     effect: ['雪山派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2129,7 +2132,7 @@ export default {
   },
   246: {
     id: 246,
-    name: '雪山长老[称号]',
+    name: '雪山长老',
     effect: ['雪山派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2137,7 +2140,7 @@ export default {
   },
   247: {
     id: 247,
-    name: '雪山长老[称号]',
+    name: '雪山长老',
     effect: ['雪山派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2145,7 +2148,7 @@ export default {
   },
   248: {
     id: 248,
-    name: '雪山长老[称号]',
+    name: '雪山长老',
     effect: ['雪山派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2153,7 +2156,7 @@ export default {
   },
   249: {
     id: 249,
-    name: '金乌翠鸣[称号]',
+    name: '金乌翠鸣',
     effect: ['金乌刀法连击率+30%，暴击率爆+30%，威力+400'],
     fortune: [],
     level: 3,
@@ -2162,7 +2165,7 @@ export default {
   250: {
     // 白自在
     id: 250,
-    name: '雪山掌门[称号]',
+    name: '雪山掌门',
     effect: ['雪山派武功连击率+40%，暴击率+40%，威力+400'],
     fortune: [],
     level: 3,
@@ -2170,7 +2173,7 @@ export default {
   },
   251: {
     id: 251,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2178,7 +2181,7 @@ export default {
   },
   252: {
     id: 252,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2186,7 +2189,7 @@ export default {
   },
   253: {
     id: 253,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2194,7 +2197,7 @@ export default {
   },
   254: {
     id: 254,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2202,7 +2205,7 @@ export default {
   },
   255: {
     id: 255,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2210,7 +2213,7 @@ export default {
   },
   256: {
     id: 256,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2218,7 +2221,7 @@ export default {
   },
   257: {
     id: 257,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2226,7 +2229,7 @@ export default {
   },
   258: {
     id: 258,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2234,7 +2237,7 @@ export default {
   },
   259: {
     id: 259,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2242,7 +2245,7 @@ export default {
   },
   260: {
     id: 260,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2250,7 +2253,7 @@ export default {
   },
   261: {
     id: 261,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2258,7 +2261,7 @@ export default {
   },
   262: {
     id: 262,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2266,7 +2269,7 @@ export default {
   },
   263: {
     id: 263,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2274,7 +2277,7 @@ export default {
   },
   264: {
     id: 264,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2282,7 +2285,7 @@ export default {
   },
   265: {
     id: 265,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2290,7 +2293,7 @@ export default {
   },
   266: {
     id: 266,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2298,7 +2301,7 @@ export default {
   },
   267: {
     id: 267,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2306,7 +2309,7 @@ export default {
   },
   268: {
     id: 268,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2314,7 +2317,7 @@ export default {
   },
   269: {
     id: 269,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2322,7 +2325,7 @@ export default {
   },
   270: {
     id: 270,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿武学追加500点杀气'],
     fortune: [],
     level: 1,
@@ -2330,7 +2333,7 @@ export default {
   },
   271: {
     id: 271,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2338,7 +2341,7 @@ export default {
   },
   272: {
     id: 272,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2346,7 +2349,7 @@ export default {
   },
   273: {
     id: 273,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2354,7 +2357,7 @@ export default {
   },
   274: {
     id: 274,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2362,7 +2365,7 @@ export default {
   },
   275: {
     id: 275,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2370,7 +2373,7 @@ export default {
   },
   276: {
     id: 276,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2378,7 +2381,7 @@ export default {
   },
   277: {
     id: 277,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2386,7 +2389,7 @@ export default {
   },
   278: {
     id: 278,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2394,7 +2397,7 @@ export default {
   },
   279: {
     id: 279,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2402,7 +2405,7 @@ export default {
   },
   280: {
     id: 280,
-    name: '丐帮副帮主[称号]',
+    name: '丐帮副帮主',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2410,7 +2413,7 @@ export default {
   },
   281: {
     id: 281,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2418,7 +2421,7 @@ export default {
   },
   282: {
     id: 282,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2426,7 +2429,7 @@ export default {
   },
   283: {
     id: 283,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2434,7 +2437,7 @@ export default {
   },
   284: {
     id: 284,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2442,7 +2445,7 @@ export default {
   },
   285: {
     id: 285,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2450,7 +2453,7 @@ export default {
   },
   286: {
     id: 286,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2458,7 +2461,7 @@ export default {
   },
   287: {
     id: 287,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2466,7 +2469,7 @@ export default {
   },
   288: {
     id: 288,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2474,7 +2477,7 @@ export default {
   },
   289: {
     id: 289,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2482,7 +2485,7 @@ export default {
   },
   290: {
     id: 290,
-    name: '铁掌帮众[称号]',
+    name: '铁掌帮众',
     effect: ['铁掌气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2490,7 +2493,7 @@ export default {
   },
   291: {
     id: 291,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2498,7 +2501,7 @@ export default {
   },
   292: {
     id: 292,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2506,7 +2509,7 @@ export default {
   },
   293: {
     id: 293,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2514,7 +2517,7 @@ export default {
   },
   294: {
     id: 294,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2522,7 +2525,7 @@ export default {
   },
   295: {
     id: 295,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2530,7 +2533,7 @@ export default {
   },
   296: {
     id: 296,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2538,7 +2541,7 @@ export default {
   },
   297: {
     id: 297,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2546,7 +2549,7 @@ export default {
   },
   298: {
     id: 298,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2554,7 +2557,7 @@ export default {
   },
   299: {
     id: 299,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2562,7 +2565,7 @@ export default {
   },
   300: {
     id: 300,
-    name: '全真弟子[称号]',
+    name: '全真弟子',
     effect: ['全真教武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2570,7 +2573,7 @@ export default {
   },
   301: {
     id: 301,
-    name: '厚土旗使[称号]',
+    name: '厚土旗使',
     effect: ['明教武学和江湖武学气攻追加500点，受到的伤害减少15%'],
     fortune: [],
     level: 2,
@@ -2578,7 +2581,7 @@ export default {
   },
   302: {
     id: 302,
-    name: '烈火旗使[称号]',
+    name: '烈火旗使',
     effect: ['明教武学和江湖武学气攻追加500点', '攻击必灼烧'],
     fortune: [],
     level: 2,
@@ -2586,7 +2589,7 @@ export default {
   },
   303: {
     id: 303,
-    name: '洪水旗使[称号]',
+    name: '洪水旗使',
     effect: ['明教武学和江湖武学气攻追加500点', '免疫灼烧'],
     fortune: [],
     level: 2,
@@ -2594,7 +2597,7 @@ export default {
   },
   304: {
     id: 304,
-    name: '巨木旗使[称号]',
+    name: '巨木旗使',
     effect: ['明教武学和江湖武学气攻追加500点', '免疫流血'],
     fortune: [],
     level: 2,
@@ -2602,7 +2605,7 @@ export default {
   },
   305: {
     id: 305,
-    name: '锐金旗使[称号]',
+    name: '锐金旗使',
     effect: ['明教武学和江湖武学气攻追加500点', '攻击必流血'],
     fortune: [],
     level: 2,
@@ -2611,7 +2614,7 @@ export default {
   306: {
     // 周颠
     id: 306,
-    name: '五散人[称号]',
+    name: '五散人',
     effect: ['明教武学和江湖武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2620,7 +2623,7 @@ export default {
   307: {
     // 冷谦
     id: 307,
-    name: '五散人[称号]',
+    name: '五散人',
     effect: ['明教武学和江湖武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2629,7 +2632,7 @@ export default {
   308: {
     // 张中
     id: 308,
-    name: '五散人[称号]',
+    name: '五散人',
     effect: ['明教武学和江湖武学连击率+20%，暴击率+20%。战场可使用指令【天变】改变天气'],
     fortune: [],
     level: 3,
@@ -2638,7 +2641,7 @@ export default {
   309: {
     // 彭莹玉
     id: 309,
-    name: '五散人[称号]',
+    name: '五散人',
     effect: ['明教武学和江湖武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2647,7 +2650,7 @@ export default {
   310: {
     // 说不得
     id: 310,
-    name: '五散人[称号]',
+    name: '五散人',
     effect: ['明教武学和江湖武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -2656,7 +2659,7 @@ export default {
   311: {
     // 陈正德
     id: 311,
-    name: '天山双鹰[称号]',
+    name: '天山双鹰',
     effect: ['三分剑法威力+500，必定三连，连击伤害降低15%'],
     fortune: [],
     level: 3,
@@ -2665,7 +2668,7 @@ export default {
   312: {
     // 关明梅
     id: 312,
-    name: '天山双鹰[称号]',
+    name: '天山双鹰',
     effect: ['三分剑法威力+500，必定三连，连击伤害降低15%'],
     fortune: [],
     level: 3,
@@ -2673,7 +2676,7 @@ export default {
   },
   313: {
     id: 313,
-    name: '佛笑珈蓝[称号]',
+    name: '佛笑珈蓝',
     effect: ['袈裟伏魔功攻击连击率+50%，暴击率+50%'],
     fortune: [],
     level: 2,
@@ -2681,7 +2684,7 @@ export default {
   },
   314: {
     id: 314,
-    name: '关东六魔[称号]',
+    name: '关东六魔',
     effect: ['攻击时概率直接给敌方造成撕裂效果'],
     fortune: [],
     level: 2,
@@ -2689,7 +2692,7 @@ export default {
   },
   315: {
     id: 315,
-    name: '关东六魔[称号]',
+    name: '关东六魔',
     effect: ['攻击时概率直接给敌方造成撕裂效果'],
     fortune: [],
     level: 2,
@@ -2697,7 +2700,7 @@ export default {
   },
   316: {
     id: 316,
-    name: '关东六魔[称号]',
+    name: '关东六魔',
     effect: ['攻击时概率直接给敌方造成撕裂效果'],
     fortune: [],
     level: 2,
@@ -2705,7 +2708,7 @@ export default {
   },
   317: {
     id: 317,
-    name: '关东六魔[称号]',
+    name: '关东六魔',
     effect: ['攻击时概率直接给敌方造成撕裂效果'],
     fortune: [],
     level: 2,
@@ -2713,7 +2716,7 @@ export default {
   },
   318: {
     id: 318,
-    name: '关东六魔[称号]',
+    name: '关东六魔',
     effect: ['攻击时概率直接给敌方造成撕裂效果'],
     fortune: [],
     level: 2,
@@ -2721,7 +2724,7 @@ export default {
   },
   319: {
     id: 319,
-    name: '关东六魔[称号]',
+    name: '关东六魔',
     effect: ['攻击时概率直接给敌方造成撕裂效果'],
     fortune: [],
     level: 2,
@@ -2729,7 +2732,7 @@ export default {
   },
   320: {
     id: 320,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2737,7 +2740,7 @@ export default {
   },
   321: {
     id: 321,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2745,7 +2748,7 @@ export default {
   },
   322: {
     id: 322,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2753,7 +2756,7 @@ export default {
   },
   323: {
     id: 323,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2761,7 +2764,7 @@ export default {
   },
   324: {
     id: 324,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2769,7 +2772,7 @@ export default {
   },
   325: {
     id: 325,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2777,7 +2780,7 @@ export default {
   },
   326: {
     id: 326,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2785,7 +2788,7 @@ export default {
   },
   327: {
     id: 327,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2793,7 +2796,7 @@ export default {
   },
   328: {
     id: 328,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2801,7 +2804,7 @@ export default {
   },
   329: {
     id: 329,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2809,7 +2812,7 @@ export default {
   },
   330: {
     id: 330,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2817,7 +2820,7 @@ export default {
   },
   331: {
     id: 331,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2825,7 +2828,7 @@ export default {
   },
   332: {
     id: 332,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2833,7 +2836,7 @@ export default {
   },
   333: {
     id: 333,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2841,7 +2844,7 @@ export default {
   },
   334: {
     id: 334,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2849,7 +2852,7 @@ export default {
   },
   335: {
     id: 335,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2857,7 +2860,7 @@ export default {
   },
   336: {
     id: 336,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2865,7 +2868,7 @@ export default {
   },
   337: {
     id: 337,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2873,7 +2876,7 @@ export default {
   },
   338: {
     id: 338,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2881,7 +2884,7 @@ export default {
   },
   339: {
     id: 339,
-    name: '峨眉弟子[称号]',
+    name: '峨眉弟子',
     effect: ['峨眉派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2889,7 +2892,7 @@ export default {
   },
   340: {
     id: 340,
-    name: '昆化弟子[称号]',
+    name: '昆化弟子',
     effect: ['昆化派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2897,7 +2900,7 @@ export default {
   },
   341: {
     id: 341,
-    name: '昆化弟子[称号]',
+    name: '昆化弟子',
     effect: ['昆化派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2905,7 +2908,7 @@ export default {
   },
   342: {
     id: 342,
-    name: '昆化弟子[称号]',
+    name: '昆化弟子',
     effect: ['昆化派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2913,7 +2916,7 @@ export default {
   },
   343: {
     id: 343,
-    name: '昆化弟子[称号]',
+    name: '昆化弟子',
     effect: ['昆化派武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2921,7 +2924,7 @@ export default {
   },
   344: {
     id: 344,
-    name: '昆仑高手[称号]',
+    name: '昆仑高手',
     effect: ['昆仑派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 1,
@@ -2929,7 +2932,7 @@ export default {
   },
   345: {
     id: 345,
-    name: '昆仑高手[称号]',
+    name: '昆仑高手',
     effect: ['昆仑派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 1,
@@ -2937,7 +2940,7 @@ export default {
   },
   346: {
     id: 346,
-    name: '昆仑高手[称号]',
+    name: '昆仑高手',
     effect: ['昆仑派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 1,
@@ -2945,7 +2948,7 @@ export default {
   },
   347: {
     id: 347,
-    name: '昆仑高手[称号]',
+    name: '昆仑高手',
     effect: ['昆仑派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 1,
@@ -2953,7 +2956,7 @@ export default {
   },
   348: {
     id: 348,
-    name: '昆仑高手[称号]',
+    name: '昆仑高手',
     effect: ['昆仑派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 1,
@@ -2961,7 +2964,7 @@ export default {
   },
   349: {
     id: 349,
-    name: '昆仑高手[称号]',
+    name: '昆仑高手',
     effect: ['昆仑派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 3,
@@ -2969,7 +2972,7 @@ export default {
   },
   350: {
     id: 350,
-    name: '崆峒弟子[称号]',
+    name: '崆峒弟子',
     effect: ['崆峒武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2977,7 +2980,7 @@ export default {
   },
   351: {
     id: 351,
-    name: '崆峒弟子[称号]',
+    name: '崆峒弟子',
     effect: ['崆峒武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2985,7 +2988,7 @@ export default {
   },
   352: {
     id: 352,
-    name: '崆峒弟子[称号]',
+    name: '崆峒弟子',
     effect: ['崆峒武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -2993,7 +2996,7 @@ export default {
   },
   353: {
     id: 353,
-    name: '崆峒弟子[称号]',
+    name: '崆峒弟子',
     effect: ['崆峒武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3001,7 +3004,7 @@ export default {
   },
   354: {
     id: 354,
-    name: '崆峒弟子[称号]',
+    name: '崆峒弟子',
     effect: ['崆峒武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3009,7 +3012,7 @@ export default {
   },
   355: {
     id: 355,
-    name: '崆峒弟子[称号]',
+    name: '崆峒弟子',
     effect: ['崆峒武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3017,7 +3020,7 @@ export default {
   },
   356: {
     id: 356,
-    name: '崆峒弟子[称号]',
+    name: '崆峒弟子',
     effect: ['崆峒武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3025,7 +3028,7 @@ export default {
   },
   357: {
     id: 357,
-    name: '崆峒长老[称号]',
+    name: '崆峒长老',
     effect: ['崆峒派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3033,7 +3036,7 @@ export default {
   },
   358: {
     id: 358,
-    name: '崆峒长老[称号]',
+    name: '崆峒长老',
     effect: ['崆峒派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3042,7 +3045,7 @@ export default {
   359: {
     // 木灵子
     id: 359,
-    name: '崆峒掌门[称号]',
+    name: '崆峒掌门',
     effect: ['崆峒派武学连击率+40%，暴击率+40%，威力+500'],
     fortune: [],
     level: 3,
@@ -3050,7 +3053,7 @@ export default {
   },
   360: {
     id: 360,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3058,7 +3061,7 @@ export default {
   },
   361: {
     id: 361,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3066,7 +3069,7 @@ export default {
   },
   362: {
     id: 362,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3074,7 +3077,7 @@ export default {
   },
   363: {
     id: 363,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3082,7 +3085,7 @@ export default {
   },
   364: {
     id: 364,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3090,7 +3093,7 @@ export default {
   },
   365: {
     id: 365,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3098,7 +3101,7 @@ export default {
   },
   366: {
     id: 366,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3106,7 +3109,7 @@ export default {
   },
   367: {
     id: 367,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3114,7 +3117,7 @@ export default {
   },
   368: {
     id: 368,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3122,7 +3125,7 @@ export default {
   },
   369: {
     id: 369,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3130,7 +3133,7 @@ export default {
   },
   370: {
     id: 370,
-    name: '衡山弟子[称号]',
+    name: '衡山弟子',
     effect: ['衡山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3138,7 +3141,7 @@ export default {
   },
   371: {
     id: 371,
-    name: '衡山弟子[称号]',
+    name: '衡山弟子',
     effect: ['衡山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3146,7 +3149,7 @@ export default {
   },
   372: {
     id: 372,
-    name: '衡山弟子[称号]',
+    name: '衡山弟子',
     effect: ['衡山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3154,7 +3157,7 @@ export default {
   },
   373: {
     id: 373,
-    name: '衡山弟子[称号]',
+    name: '衡山弟子',
     effect: ['衡山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3162,7 +3165,7 @@ export default {
   },
   374: {
     id: 374,
-    name: '衡山弟子[称号]',
+    name: '衡山弟子',
     effect: ['衡山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3170,7 +3173,7 @@ export default {
   },
   375: {
     id: 375,
-    name: '衡山弟子[称号]',
+    name: '衡山弟子',
     effect: ['衡山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3178,7 +3181,7 @@ export default {
   },
   376: {
     id: 376,
-    name: '衡山长老[称号]',
+    name: '衡山长老',
     effect: ['衡山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3186,7 +3189,7 @@ export default {
   },
   377: {
     id: 377,
-    name: '衡山长老[称号]',
+    name: '衡山长老',
     effect: ['衡山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3194,7 +3197,7 @@ export default {
   },
   378: {
     id: 378,
-    name: '衡山长老[称号]',
+    name: '衡山长老',
     effect: ['衡山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3202,7 +3205,7 @@ export default {
   },
   379: {
     id: 379,
-    name: '风歌气正[称号]',
+    name: '风歌气正',
     effect: ['衡山派武学连击率+40%，暴击率+40%，威力+500'],
     fortune: [],
     level: 3,
@@ -3210,7 +3213,7 @@ export default {
   },
   380: {
     id: 380,
-    name: '恒山弟子[称号]',
+    name: '恒山弟子',
     effect: ['恒山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3218,7 +3221,7 @@ export default {
   },
   381: {
     id: 381,
-    name: '恒山弟子[称号]',
+    name: '恒山弟子',
     effect: ['恒山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3226,7 +3229,7 @@ export default {
   },
   382: {
     id: 382,
-    name: '恒山弟子[称号]',
+    name: '恒山弟子',
     effect: ['恒山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3234,7 +3237,7 @@ export default {
   },
   383: {
     id: 383,
-    name: '恒山弟子[称号]',
+    name: '恒山弟子',
     effect: ['恒山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3242,7 +3245,7 @@ export default {
   },
   384: {
     id: 384,
-    name: '恒山弟子[称号]',
+    name: '恒山弟子',
     effect: ['恒山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3250,7 +3253,7 @@ export default {
   },
   385: {
     id: 385,
-    name: '恒山弟子[称号]',
+    name: '恒山弟子',
     effect: ['恒山武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3258,7 +3261,7 @@ export default {
   },
   386: {
     id: 386,
-    name: '恒山长老[称号]',
+    name: '恒山长老',
     effect: ['恒山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 1,
@@ -3266,7 +3269,7 @@ export default {
   },
   387: {
     id: 387,
-    name: '晓风残月[称号]',
+    name: '晓风残月',
     effect: ['恒山派武学连击率+40%，暴击率+40%，威力+500'],
     fortune: [],
     level: 1,
@@ -3274,7 +3277,7 @@ export default {
   },
   388: {
     id: 388,
-    name: '恒山长老[称号]',
+    name: '恒山长老',
     effect: ['恒山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 1,
@@ -3282,25 +3285,25 @@ export default {
   },
   389: {
     id: 389,
-    name: '恒山长老[称号]',
+    name: '恒山长老',
     effect: ['恒山派武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 1,
     exclusive: 2,
   },
-  390: {id: 390, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  391: {id: 391, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  392: {id: 392, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  393: {id: 393, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  394: {id: 394, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  395: {id: 395, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  396: {id: 396, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  397: {id: 397, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  398: {id: 398, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
-  399: {id: 399, name: '神龙弟子[称号]', effect: [''], fortune: [], level: 1, exclusive: 2},
+  390: {id: 390, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  391: {id: 391, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  392: {id: 392, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  393: {id: 393, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  394: {id: 394, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  395: {id: 395, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  396: {id: 396, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  397: {id: 397, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  398: {id: 398, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
+  399: {id: 399, name: '神龙弟子', effect: [''], fortune: [], level: 1, exclusive: 2},
   400: {
     id: 400,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3308,7 +3311,7 @@ export default {
   },
   401: {
     id: 401,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3316,7 +3319,7 @@ export default {
   },
   402: {
     id: 402,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3324,7 +3327,7 @@ export default {
   },
   403: {
     id: 403,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3332,7 +3335,7 @@ export default {
   },
   404: {
     id: 404,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3340,7 +3343,7 @@ export default {
   },
   405: {
     id: 405,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3348,7 +3351,7 @@ export default {
   },
   406: {
     id: 406,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3356,7 +3359,7 @@ export default {
   },
   407: {
     id: 407,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3364,7 +3367,7 @@ export default {
   },
   408: {
     id: 408,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3372,7 +3375,7 @@ export default {
   },
   409: {
     id: 409,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林武学气攻追加500点'],
     fortune: [],
     level: 1,
@@ -3380,7 +3383,7 @@ export default {
   },
   410: {
     id: 410,
-    name: '毒蛇[称号]',
+    name: '毒蛇',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3388,7 +3391,7 @@ export default {
   },
   411: {
     id: 411,
-    name: '毒蛇[称号]',
+    name: '毒蛇',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3396,7 +3399,7 @@ export default {
   },
   412: {
     id: 412,
-    name: '毒蛇[称号]',
+    name: '毒蛇',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3404,7 +3407,7 @@ export default {
   },
   413: {
     id: 413,
-    name: '毒蛇[称号]',
+    name: '毒蛇',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3412,25 +3415,25 @@ export default {
   },
   414: {
     id: 414,
-    name: '毒蛇[称号]',
+    name: '毒蛇',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
     exclusive: 2,
   },
-  415: {id: 415, name: '毒蛇[称号]', effect: ['攻击带毒+100'], fortune: [], level: 1, exclusive: 2},
+  415: {id: 415, name: '毒蛇', effect: ['攻击带毒+100'], fortune: [], level: 1, exclusive: 2},
   416: {
     id: 416,
-    name: '毒蛇[称号]',
+    name: '毒蛇',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
     exclusive: 2,
   },
-  417: {id: 417, name: '毒蛇[称号]', effect: ['攻击带毒+100'], fortune: [], level: 1, exclusive: 2},
+  417: {id: 417, name: '毒蛇', effect: ['攻击带毒+100'], fortune: [], level: 1, exclusive: 2},
   418: {
     id: 418,
-    name: '毒蛇[称号]',
+    name: '毒蛇',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3438,7 +3441,7 @@ export default {
   },
   419: {
     id: 419,
-    name: '大莽蛇[称号]',
+    name: '大莽蛇',
     effect: ['攻击带毒+200'],
     fortune: [],
     level: 1,
@@ -3446,7 +3449,7 @@ export default {
   },
   420: {
     id: 420,
-    name: '千年雪怪[称号]',
+    name: '千年雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 3,
@@ -3454,7 +3457,7 @@ export default {
   },
   421: {
     id: 421,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3462,7 +3465,7 @@ export default {
   },
   422: {
     id: 422,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3470,7 +3473,7 @@ export default {
   },
   423: {
     id: 423,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3478,7 +3481,7 @@ export default {
   },
   424: {
     id: 424,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3486,7 +3489,7 @@ export default {
   },
   425: {
     id: 425,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3494,7 +3497,7 @@ export default {
   },
   426: {
     id: 426,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3502,7 +3505,7 @@ export default {
   },
   427: {
     id: 427,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3510,7 +3513,7 @@ export default {
   },
   428: {
     id: 428,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3518,7 +3521,7 @@ export default {
   },
   429: {
     id: 429,
-    name: '大雪怪[称号]',
+    name: '大雪怪',
     effect: ['攻击必冰封，免疫冰封'],
     fortune: [],
     level: 2,
@@ -3526,7 +3529,7 @@ export default {
   },
   430: {
     id: 430,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3534,7 +3537,7 @@ export default {
   },
   431: {
     id: 431,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3542,7 +3545,7 @@ export default {
   },
   432: {
     id: 432,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3550,7 +3553,7 @@ export default {
   },
   433: {
     id: 433,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3558,7 +3561,7 @@ export default {
   },
   434: {
     id: 434,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3566,7 +3569,7 @@ export default {
   },
   435: {
     id: 435,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3574,7 +3577,7 @@ export default {
   },
   436: {
     id: 436,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3582,7 +3585,7 @@ export default {
   },
   437: {
     id: 437,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3590,7 +3593,7 @@ export default {
   },
   438: {
     id: 438,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3598,7 +3601,7 @@ export default {
   },
   439: {
     id: 439,
-    name: '采雪蛛[称号]',
+    name: '采雪蛛',
     effect: ['攻击带毒+100'],
     fortune: [],
     level: 1,
@@ -3606,7 +3609,7 @@ export default {
   },
   440: {
     id: 440,
-    name: '火蟾[称号]',
+    name: '火蟾',
     effect: ['攻击带毒+100，必灼烧'],
     fortune: [],
     level: 3,
@@ -3614,7 +3617,7 @@ export default {
   },
   441: {
     id: 441,
-    name: '御林军[称号]',
+    name: '御林军',
     effect: ['已方人数越多，攻击力和防御力越高'],
     fortune: [],
     level: 2,
@@ -3622,7 +3625,7 @@ export default {
   },
   442: {
     id: 442,
-    name: '御林军[称号]',
+    name: '御林军',
     effect: ['已方人数越多，攻击力和防御力越高'],
     fortune: [],
     level: 2,
@@ -3630,7 +3633,7 @@ export default {
   },
   443: {
     id: 443,
-    name: '御林军[称号]',
+    name: '御林军',
     effect: ['已方人数越多，攻击力和防御力越高'],
     fortune: [],
     level: 2,
@@ -3638,7 +3641,7 @@ export default {
   },
   444: {
     id: 444,
-    name: '御林军[称号]',
+    name: '御林军',
     effect: ['已方人数越多，攻击力和防御力越高'],
     fortune: [],
     level: 2,
@@ -3646,7 +3649,7 @@ export default {
   },
   445: {
     id: 445,
-    name: '御林军[称号]',
+    name: '御林军',
     effect: ['已方人数越多，攻击力和防御力越高'],
     fortune: [],
     level: 2,
@@ -3654,7 +3657,7 @@ export default {
   },
   446: {
     id: 446,
-    name: '御林军[称号]',
+    name: '御林军',
     effect: ['已方人数越多，攻击力和防御力越高'],
     fortune: [],
     level: 2,
@@ -3662,7 +3665,7 @@ export default {
   },
   447: {
     id: 447,
-    name: '一以贯之[称号]',
+    name: '一以贯之',
     effect: ['攻击范围内只有一个目标时，伤害增加50%'],
     fortune: [],
     level: 3,
@@ -3670,7 +3673,7 @@ export default {
   },
   448: {
     id: 448,
-    name: '千手神针[称号]',
+    name: '千手神针',
     effect: ['攻击必命中，距离越远伤害越高'],
     fortune: [],
     level: 3,
@@ -3678,7 +3681,7 @@ export default {
   },
   449: {
     id: 449,
-    name: '冷血人狼[称号]',
+    name: '冷血人狼',
     effect: ['不可闪避，必命中'],
     fortune: [],
     level: 3,
@@ -3686,7 +3689,7 @@ export default {
   },
   450: {
     id: 450,
-    name: '追风锁命[称号]',
+    name: '追风锁命',
     effect: ['每点轻功增加0.3点攻击力'],
     fortune: [],
     level: 3,
@@ -3694,7 +3697,7 @@ export default {
   },
   451: {
     id: 451,
-    name: '万马庄主[称号]',
+    name: '万马庄主',
     effect: ['坐骑附加的属性双倍'],
     fortune: [],
     level: 2,
@@ -3702,7 +3705,7 @@ export default {
   },
   452: {
     id: 452,
-    name: '鹤笔门掌门[称号]',
+    name: '鹤笔门掌门',
     effect: ['奇门武功气攻+500'],
     fortune: [],
     level: 2,
@@ -3710,7 +3713,7 @@ export default {
   },
   453: {
     id: 453,
-    name: '畔快刀掌门[称号]',
+    name: '畔快刀掌门',
     effect: ['使用刀法气攻+500'],
     fortune: [],
     level: 2,
@@ -3718,7 +3721,7 @@ export default {
   },
   454: {
     id: 454,
-    name: '青龙门掌门[称号]',
+    name: '青龙门掌门',
     effect: ['奇门武功气攻+500'],
     fortune: [],
     level: 2,
@@ -3726,7 +3729,7 @@ export default {
   },
   455: {
     id: 455,
-    name: '伞中剑[称号]',
+    name: '伞中剑',
     effect: ['剑法武功增加100%'],
     fortune: [],
     level: 2,
@@ -3734,7 +3737,7 @@ export default {
   },
   456: {
     id: 456,
-    name: '赛西施[称号]',
+    name: '赛西施',
     effect: ['行动概率魅惑敌人'],
     fortune: [],
     level: 2,
@@ -3742,7 +3745,7 @@ export default {
   },
   457: {
     id: 457,
-    name: '剑中剑[称号]',
+    name: '剑中剑',
     effect: ['剑法武功连击率+100%'],
     fortune: [],
     level: 2,
@@ -3750,7 +3753,7 @@ export default {
   },
   458: {
     id: 458,
-    name: '风激云扬[称号]',
+    name: '风激云扬',
     effect: ['降龙十八掌命中率+200'],
     fortune: [],
     level: 2,
@@ -3758,7 +3761,7 @@ export default {
   },
   459: {
     id: 459,
-    name: '烈火燎原[称号]',
+    name: '烈火燎原',
     effect: ['降龙十八掌格档率+200'],
     fortune: [],
     level: 2,
@@ -3766,7 +3769,7 @@ export default {
   },
   460: {
     id: 460,
-    name: '王氏门人[称号]',
+    name: '王氏门人',
     effect: ['五虎断门刀命中+100'],
     fortune: [],
     level: 2,
@@ -3774,7 +3777,7 @@ export default {
   },
   461: {
     id: 461,
-    name: '少林精英[称号]',
+    name: '少林精英',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3782,7 +3785,7 @@ export default {
   },
   462: {
     id: 462,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3790,7 +3793,7 @@ export default {
   },
   463: {
     id: 463,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3798,7 +3801,7 @@ export default {
   },
   464: {
     id: 464,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3806,7 +3809,7 @@ export default {
   },
   465: {
     id: 465,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3814,7 +3817,7 @@ export default {
   },
   466: {
     id: 466,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3822,7 +3825,7 @@ export default {
   },
   467: {
     id: 467,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3830,7 +3833,7 @@ export default {
   },
   468: {
     id: 468,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3838,7 +3841,7 @@ export default {
   },
   469: {
     id: 469,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3846,7 +3849,7 @@ export default {
   },
   470: {
     id: 470,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3854,7 +3857,7 @@ export default {
   },
   471: {
     id: 471,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3862,7 +3865,7 @@ export default {
   },
   472: {
     id: 472,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3870,7 +3873,7 @@ export default {
   },
   473: {
     id: 473,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3878,7 +3881,7 @@ export default {
   },
   474: {
     id: 474,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3886,7 +3889,7 @@ export default {
   },
   475: {
     id: 475,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3894,7 +3897,7 @@ export default {
   },
   476: {
     id: 476,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3902,7 +3905,7 @@ export default {
   },
   477: {
     id: 477,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3910,7 +3913,7 @@ export default {
   },
   478: {
     id: 478,
-    name: '少林木人[称号]',
+    name: '少林木人',
     effect: ['少林派武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -3918,7 +3921,7 @@ export default {
   },
   479: {
     id: 479,
-    name: '少林执事[称号]',
+    name: '少林执事',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3926,7 +3929,7 @@ export default {
   },
   480: {
     id: 480,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3934,7 +3937,7 @@ export default {
   },
   481: {
     id: 481,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3942,7 +3945,7 @@ export default {
   },
   482: {
     id: 482,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3950,7 +3953,7 @@ export default {
   },
   483: {
     id: 483,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3958,7 +3961,7 @@ export default {
   },
   484: {
     id: 484,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3966,7 +3969,7 @@ export default {
   },
   485: {
     id: 485,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3974,7 +3977,7 @@ export default {
   },
   486: {
     id: 486,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3982,7 +3985,7 @@ export default {
   },
   487: {
     id: 487,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3990,7 +3993,7 @@ export default {
   },
   488: {
     id: 488,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -3998,7 +4001,7 @@ export default {
   },
   489: {
     id: 489,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4006,7 +4009,7 @@ export default {
   },
   490: {
     id: 490,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4014,7 +4017,7 @@ export default {
   },
   491: {
     id: 491,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4022,7 +4025,7 @@ export default {
   },
   492: {
     id: 492,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4030,7 +4033,7 @@ export default {
   },
   493: {
     id: 493,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4038,7 +4041,7 @@ export default {
   },
   494: {
     id: 494,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4046,7 +4049,7 @@ export default {
   },
   495: {
     id: 495,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4054,7 +4057,7 @@ export default {
   },
   496: {
     id: 496,
-    name: '少林铜人[称号]',
+    name: '少林铜人',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4062,7 +4065,7 @@ export default {
   },
   497: {
     id: 497,
-    name: '金刚门人[称号]',
+    name: '金刚门人',
     effect: [
       '攻击时为自己添加一个100时序“金刚法相”增益BUFF，攻击概率触发大金刚神力，无视绝对气防+1000气攻',
     ],
@@ -4072,7 +4075,7 @@ export default {
   },
   498: {
     id: 498,
-    name: '小李探花[称号]',
+    name: '小李探花',
     effect: [
       '敌人移动-1，自身移动+2',
       '30%概率躲避攻击',
@@ -4085,7 +4088,7 @@ export default {
   },
   499: {
     id: 499,
-    name: '剑绝天南[称号]',
+    name: '剑绝天南',
     effect: ['使用六脉神剑必触发【剑气碧烟横】', '内力上限9999'],
     fortune: [],
     level: 4,
@@ -4093,7 +4096,7 @@ export default {
   },
   500: {
     id: 500,
-    name: '剑道巅峰[称号]',
+    name: '剑道巅峰',
     effect: ['击败谢云流领悟“剑道巅峰 五方行尽”，概率再行动一次（需资质大于79）'],
     fortune: [],
     level: 4,
@@ -4101,7 +4104,7 @@ export default {
   },
   501: {
     id: 501,
-    name: '东瀛剑魔[称号]',
+    name: '东瀛剑魔',
     effect: ['攻击的目标不会增加怒气'],
     fortune: [],
     level: 3,
@@ -4109,7 +4112,7 @@ export default {
   },
   502: {
     id: 502,
-    name: '天下会主[称号]',
+    name: '天下会主',
     effect: ['行动时概率会对敌方全体施加“震慑”效果，使其一回合内伤害降低25%，并有20%概率无法攻击'],
     fortune: [],
     level: 4,
@@ -4117,7 +4120,7 @@ export default {
   },
   503: {
     id: 503,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武学气攻追加500点'],
     fortune: [],
     level: 3,
@@ -4125,7 +4128,7 @@ export default {
   },
   504: {
     id: 504,
-    name: '秘剑诡姬[称号]',
+    name: '秘剑诡姬',
     effect: ['剑术攻击概率不消耗能量'],
     fortune: [],
     level: 2,
@@ -4133,7 +4136,7 @@ export default {
   },
   505: {
     id: 505,
-    name: '佛道双修[称号]',
+    name: '佛道双修',
     effect: ['武当少林的武功秘籍可无条件修炼'],
     fortune: [],
     level: 3,
@@ -4141,7 +4144,7 @@ export default {
   },
   506: {
     id: 506,
-    name: '天地双尊[称号]',
+    name: '天地双尊',
     effect: ['攻击与防御时敌方任何攻击系数都视为0', '攻击时无视目标50%防御', '（未实装）'],
     fortune: [],
     level: 4,
@@ -4150,7 +4153,7 @@ export default {
   507: {
     // 梅长苏
     id: 507,
-    name: '琅琊公子[称号]',
+    name: '琅琊公子',
     effect: ['战斗中可以自由切换林殊/梅长苏两个身份'],
     fortune: [],
     level: 3,
@@ -4159,7 +4162,7 @@ export default {
   508: {
     // 林殊
     id: 508,
-    name: '琅琊公子[称号]',
+    name: '琅琊公子',
     effect: ['战斗中可以自由切换林殊/梅长苏两个身份'],
     fortune: [],
     level: 3,
@@ -4167,7 +4170,7 @@ export default {
   },
   509: {
     id: 509,
-    name: '少林高手[称号]',
+    name: '少林高手',
     effect: ['少林武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -4175,7 +4178,7 @@ export default {
   },
   510: {
     id: 510,
-    name: '曲径通幽[称号]',
+    name: '曲径通幽',
     effect: ['持瑶琴威力翻倍', '攻击时30%概率触发“曲径通幽”必中'],
     fortune: [],
     level: 2,
@@ -4183,7 +4186,7 @@ export default {
   },
   511: {
     id: 511,
-    name: '盗圣[称号]',
+    name: '盗圣',
     effect: [
       '移动距离增加2格',
       '攻击时随机窃取敌方一项可用状态，若为通用状态则可转给自身',
@@ -4193,10 +4196,10 @@ export default {
     level: 4,
     exclusive: 2,
   },
-  512: {id: 512, name: '备用[称号]', effect: [''], fortune: [], level: 4, exclusive: 2},
+  512: {id: 512, name: '备用', effect: [''], fortune: [], level: 4, exclusive: 2},
   513: {
     id: 513,
-    name: '破剑八刀[称号]',
+    name: '破剑八刀',
     effect: ['每间隔50时序触发一次，反弹双倍伤害，持续50时序'],
     fortune: [],
     level: 4,
@@ -4204,7 +4207,7 @@ export default {
   },
   514: {
     id: 514,
-    name: '魔刀千刃[称号]',
+    name: '魔刀千刃',
     effect: [
       '战斗中首次被击退可复活一次，变身首席暗影刺客，立即行动',
       '第一格武功变为魔刀千刃，无视敌方50%防御和系数',
@@ -4216,7 +4219,7 @@ export default {
   },
   515: {
     id: 515,
-    name: '锅王之王[称号]',
+    name: '锅王之王',
     effect: [
       '被攻击时，25%概率免疫攻击',
       '被攻击时，25%概率由其他目标承受伤害',
@@ -4229,7 +4232,7 @@ export default {
   },
   516: {
     id: 516,
-    name: '少林弟子[称号]',
+    name: '少林弟子',
     effect: ['少林派武功连击率+10%，暴击率+10%', '完成师门任务可获得三个天赋'],
     fortune: [],
     level: 3,
@@ -4237,7 +4240,7 @@ export default {
   },
   517: {
     id: 517,
-    name: '武当弟子[称号]',
+    name: '武当弟子',
     effect: ['武当派武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
@@ -4245,7 +4248,7 @@ export default {
   },
   518: {
     id: 518,
-    name: '血刀弟子[称号]',
+    name: '血刀弟子',
     effect: ['血刀门武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
@@ -4253,7 +4256,7 @@ export default {
   },
   519: {
     id: 519,
-    name: '丐帮弟子[称号]',
+    name: '丐帮弟子',
     effect: ['丐帮武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
@@ -4261,7 +4264,7 @@ export default {
   },
   520: {
     id: 520,
-    name: '天龙弟子[称号]',
+    name: '天龙弟子',
     effect: ['天龙寺武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
@@ -4269,7 +4272,7 @@ export default {
   },
   521: {
     id: 521,
-    name: '星宿弟子[称号]',
+    name: '星宿弟子',
     effect: ['星宿派武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
@@ -4277,7 +4280,7 @@ export default {
   },
   522: {
     id: 522,
-    name: '天机弟子[称号]',
+    name: '天机弟子',
     effect: ['天机宫武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
@@ -4285,7 +4288,7 @@ export default {
   },
   523: {
     id: 523,
-    name: '密宗弟子[称号]',
+    name: '密宗弟子',
     effect: ['密宗武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
@@ -4293,7 +4296,7 @@ export default {
   },
   524: {
     id: 524,
-    name: '逍遥弟子[称号]',
+    name: '逍遥弟子',
     effect: ['逍遥派武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
@@ -4301,22 +4304,22 @@ export default {
   },
   525: {
     id: 525,
-    name: '华山弟子[称号]',
+    name: '华山弟子',
     effect: ['华山派武功连击率+10%，暴击率+10%。可额外选择两个天赋'],
     fortune: [],
     level: 1,
     exclusive: 2,
   },
-  526: {id: 526, name: '备用[称号]', effect: [''], fortune: [], level: 0, exclusive: 2},
-  527: {id: 527, name: '备用[称号]', effect: [''], fortune: [], level: 0, exclusive: 2},
-  528: {id: 528, name: '备用[称号]', effect: [''], fortune: [], level: 0, exclusive: 2},
-  529: {id: 529, name: '备用[称号]', effect: [''], fortune: [], level: 0, exclusive: 2},
-  530: {id: 530, name: '备用[称号]', effect: [''], fortune: [], level: 0, exclusive: 2},
-  531: {id: 531, name: '备用[称号]', effect: [''], fortune: [], level: 0, exclusive: 2},
+  526: {id: 526, name: '备用', effect: [''], fortune: [], level: 0, exclusive: 2},
+  527: {id: 527, name: '备用', effect: [''], fortune: [], level: 0, exclusive: 2},
+  528: {id: 528, name: '备用', effect: [''], fortune: [], level: 0, exclusive: 2},
+  529: {id: 529, name: '备用', effect: [''], fortune: [], level: 0, exclusive: 2},
+  530: {id: 530, name: '备用', effect: [''], fortune: [], level: 0, exclusive: 2},
+  531: {id: 531, name: '备用', effect: [''], fortune: [], level: 0, exclusive: 2},
   532: {
     // 莫声谷
     id: 532,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4325,7 +4328,7 @@ export default {
   533: {
     // 殷梨亭
     id: 533,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4334,7 +4337,7 @@ export default {
   534: {
     // 张翠山
     id: 534,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4343,7 +4346,7 @@ export default {
   535: {
     // 张溪松
     id: 535,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4352,7 +4355,7 @@ export default {
   536: {
     // 俞岱岩
     id: 536,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4361,7 +4364,7 @@ export default {
   537: {
     // 俞莲舟
     id: 537,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4370,16 +4373,16 @@ export default {
   538: {
     // 宋远桥
     id: 538,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
     exclusive: 2,
   },
-  539: {id: 539, name: '备用[称号]', effect: [''], fortune: [], level: 2, exclusive: 2},
+  539: {id: 539, name: '备用', effect: [''], fortune: [], level: 2, exclusive: 2},
   540: {
     id: 540,
-    name: '少林高手[称号]',
+    name: '少林高手',
     effect: ['少林武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -4387,7 +4390,7 @@ export default {
   },
   541: {
     id: 541,
-    name: '少林高手[称号]',
+    name: '少林高手',
     effect: ['少林武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -4395,7 +4398,7 @@ export default {
   },
   542: {
     id: 542,
-    name: '少林高手[称号]',
+    name: '少林高手',
     effect: ['少林武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -4403,7 +4406,7 @@ export default {
   },
   543: {
     id: 543,
-    name: '少林高手[称号]',
+    name: '少林高手',
     effect: ['少林武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -4411,7 +4414,7 @@ export default {
   },
   544: {
     id: 544,
-    name: '少林高手[称号]',
+    name: '少林高手',
     effect: ['少林武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -4419,7 +4422,7 @@ export default {
   },
   545: {
     id: 545,
-    name: '望雪颦愁[称号]',
+    name: '望雪颦愁',
     effect: ['被男性攻击时，免疫连击伤害，免疫暴击增加的伤害'],
     fortune: [],
     level: 3,
@@ -4428,7 +4431,7 @@ export default {
   546: {
     // 聂风
     id: 546,
-    name: '风中之神[称号]',
+    name: '风中之神',
     effect: ['轻功成长加倍，装备附加的轻功和集气加成双倍'],
     fortune: [],
     level: 4,
@@ -4436,7 +4439,7 @@ export default {
   },
   547: {
     id: 547,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4444,7 +4447,7 @@ export default {
   },
   548: {
     id: 548,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4452,7 +4455,7 @@ export default {
   },
   549: {
     id: 549,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4460,7 +4463,7 @@ export default {
   },
   550: {
     id: 550,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4468,7 +4471,7 @@ export default {
   },
   551: {
     id: 551,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4476,7 +4479,7 @@ export default {
   },
   552: {
     id: 552,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4484,7 +4487,7 @@ export default {
   },
   553: {
     id: 553,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4492,7 +4495,7 @@ export default {
   },
   554: {
     id: 554,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4500,7 +4503,7 @@ export default {
   },
   555: {
     id: 555,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4508,7 +4511,7 @@ export default {
   },
   556: {
     id: 556,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4516,7 +4519,7 @@ export default {
   },
   557: {
     id: 557,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4524,7 +4527,7 @@ export default {
   },
   558: {
     id: 558,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4532,7 +4535,7 @@ export default {
   },
   559: {
     id: 559,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4540,7 +4543,7 @@ export default {
   },
   560: {
     id: 560,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4548,7 +4551,7 @@ export default {
   },
   561: {
     id: 561,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4556,7 +4559,7 @@ export default {
   },
   562: {
     id: 562,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4564,7 +4567,7 @@ export default {
   },
   563: {
     id: 563,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4572,7 +4575,7 @@ export default {
   },
   564: {
     id: 564,
-    name: '标主占用[称号]',
+    name: '标主占用',
     effect: [''],
     fortune: [],
     level: 0,
@@ -4580,7 +4583,7 @@ export default {
   },
   565: {
     id: 565,
-    name: '十里坡剑神[称号]',
+    name: '十里坡剑神',
     effect: ['每行动一次，攻击效果提升1%'],
     fortune: [],
     level: 3,
@@ -4588,7 +4591,7 @@ export default {
   },
   566: {
     id: 566,
-    name: '白衣书生[称号]',
+    name: '白衣书生',
     effect: ['萧中慧在场，攻防提各提升100', '夫妻刀法威力增加300，闪避+300'],
     fortune: ['获得夫妻刀法后，第二格洗为夫妻刀法'],
     level: 3,
@@ -4596,7 +4599,7 @@ export default {
   },
   567: {
     id: 567,
-    name: '铁掌宗师[称号]',
+    name: '铁掌宗师',
     effect: ['铁掌威力+500'],
     fortune: [],
     level: 3,
@@ -4604,7 +4607,7 @@ export default {
   },
   568: {
     id: 568,
-    name: '岳家将[称号]',
+    name: '岳家将',
     effect: [
       '岳家枪法和岳王散手威力+300',
       '岳家枪法攻击必命中，必连击',
@@ -4616,7 +4619,7 @@ export default {
   },
   569: {
     id: 569,
-    name: '小魔女[称号]',
+    name: '小魔女',
     effect: ['敌方气攻伤害减少20%，命中减少10%'],
     fortune: ['获得柔云剑法，第一格洗为柔云剑法', '获得无极玄功拳，第二格洗为无极玄功拳'],
     level: 3,
@@ -4625,7 +4628,7 @@ export default {
   570: {
     // 陆青菲
     id: 570,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当派武功连击率+10%，连击率+10%'],
     fortune: [],
     level: 3,
@@ -4633,7 +4636,7 @@ export default {
   },
   571: {
     id: 571,
-    name: '总舵主[称号]',
+    name: '总舵主',
     effect: ['我方每存活一人，增加+5%攻击力'],
     fortune: [],
     level: 3,
@@ -4641,7 +4644,7 @@ export default {
   },
   572: {
     id: 572,
-    name: '镇远镖头[称号]',
+    name: '镇远镖头',
     effect: ['防御力提升80点'],
     fortune: [],
     level: 2,
@@ -4650,7 +4653,7 @@ export default {
   573: {
     // 觉远
     id: 573,
-    name: '少林高僧[称号]',
+    name: '少林高僧',
     effect: ['少林派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4658,7 +4661,7 @@ export default {
   },
   574: {
     id: 574,
-    name: '寒露清梦[称号]',
+    name: '寒露清梦',
     effect: ['特色指令【云梦】，可自由切换第一格武功为寒袖拂穴/白虹掌力'],
     fortune: [
       '灵鹫宫获得八荒六合功时，第三格洗为小无相功，天赋内功洗为小无相功，第四格洗为八荒六合功，可以选择天赋内功是否再洗为八荒六合功',
@@ -4669,7 +4672,7 @@ export default {
   575: {
     // 白猿
     id: 575,
-    name: '仙剑神猿[称号]',
+    name: '仙剑神猿',
     effect: [
       '等待时自动蓄力（无法触发龙象蓄力等效果）',
       '使用剑系武功攻击时必连击',
@@ -4681,7 +4684,7 @@ export default {
   },
   576: {
     id: 576,
-    name: '十三绝神僧[称号]',
+    name: '十三绝神僧',
     effect: ['少林派武功秘籍无条件修炼'],
     fortune: [],
     level: 4,
@@ -4689,7 +4692,7 @@ export default {
   },
   577: {
     id: 577,
-    name: '万佛朝宗[称号]',
+    name: '万佛朝宗',
     effect: [
       '拥有绝对气防',
       '每五回合攻击时触发万佛朝宗附加目标当前生命值10%的伤害，并减少内力20%',
@@ -4700,7 +4703,7 @@ export default {
   },
   578: {
     id: 578,
-    name: '大唐双龙[称号]',
+    name: '大唐双龙',
     effect: ['阳内攻击必灼伤，概率点燃', '无视内属修炼刀法'],
     fortune: [],
     level: 4,
@@ -4708,7 +4711,7 @@ export default {
   },
   579: {
     id: 579,
-    name: '盗王之王[称号]',
+    name: '盗王之王',
     effect: ['可偷取目标身上特品', '增加敌方存活人数x5的集气速度', '行动后可再次移动'],
     fortune: [],
     level: 4,
@@ -4716,7 +4719,7 @@ export default {
   },
   580: {
     id: 580,
-    name: '银弧刀[称号]',
+    name: '银弧刀',
     effect: ['攻击必造成流血，暴击率+30%', '程英居战胜李莫愁后免疫中毒'],
     fortune: [
       '蝴蝴谷帮胡青牛后治好腿伤，轻功+50',
@@ -4729,7 +4732,7 @@ export default {
   },
   581: {
     id: 581,
-    name: '丁丁当当[称号]',
+    name: '丁丁当当',
     effect: [
       '敌方全体集气-5',
       '攻击必灼烧',
@@ -4742,7 +4745,7 @@ export default {
   },
   582: {
     id: 582,
-    name: '冰川天女[称号]',
+    name: '冰川天女',
     effect: [
       '敌方全体集气-5',
       '攻击必冰封，冰封超过50概率冻结目标，追加冰封值的真实伤害，自身免疫冰封',
@@ -4753,7 +4756,7 @@ export default {
   },
   583: {
     id: 583,
-    name: '小尼姑[称号]',
+    name: '小尼姑',
     effect: ['被攻击伤害-15%', '自身伤害-10%'],
     fortune: ['获得万花剑法，第一格洗为万花剑法'],
     level: 3,
@@ -4761,7 +4764,7 @@ export default {
   },
   584: {
     id: 584,
-    name: '不哭死神[称号]',
+    name: '不哭死神',
     effect: [
       '排云掌：随天书数量增加领悟招式，使用拳掌时触发招式，招式气攻、伤害、破防随招式增加（最大36%），第十到第十二式无视绝对气防与大概率破防',
     ],
@@ -4771,7 +4774,7 @@ export default {
   },
   585: {
     id: 585,
-    name: '峨眉长老[称号]',
+    name: '峨眉长老',
     effect: ['峨眉派武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4779,7 +4782,7 @@ export default {
   },
   586: {
     id: 586,
-    name: '昆仑三圣[称号]',
+    name: '昆仑三圣',
     effect: [
       '琴音：攻击时为敌全体添加1~4层琴音BUFF,最多30层',
       '棋势：攻击目标附带天数书量×10的伤害',
@@ -4795,7 +4798,7 @@ export default {
   },
   587: {
     id: 587,
-    name: '紫色缁衣[称号]',
+    name: '紫色缁衣',
     effect: [],
     fortune: [
       '倚天正线光明顶胜灭绝，第一格和天赋外功洗为白蟒鞭法',
@@ -4807,7 +4810,7 @@ export default {
   },
   588: {
     id: 588,
-    name: '岛主夫人[称号]',
+    name: '岛主夫人',
     effect: ['桃花岛武学威力+200', '特效发动概率+10'],
     fortune: [
       '桃花岛招亲后，第二格和天赋内功洗为九阴神功',
@@ -4819,7 +4822,7 @@ export default {
   },
   589: {
     id: 589,
-    name: '铃剑侠女[称号]',
+    name: '铃剑侠女',
     effect: ['使用连城剑法高连击'],
     fortune: [],
     level: 2,
@@ -4827,7 +4830,7 @@ export default {
   },
   590: {
     id: 590,
-    name: '白马侠女[称号]',
+    name: '白马侠女',
     effect: ['装备白马时的集气加成效果翻倍', '每修炼一个奇门武功到极，集气速度+2（上限7个）'],
     fortune: [],
     level: 2,
@@ -4835,7 +4838,7 @@ export default {
   },
   591: {
     id: 591,
-    name: '武状元[称号]',
+    name: '武状元',
     effect: ['遗落在历史长河中的尘埃'],
     fortune: [],
     level: 2,
@@ -4843,7 +4846,7 @@ export default {
   },
   592: {
     id: 592,
-    name: '料敌先机[称号]',
+    name: '料敌先机',
     effect: [
       '先手反击必中',
       '进入战斗的初始集气位置为1000，自身移动步数锁定为10格，免疫暗器',
@@ -4855,7 +4858,7 @@ export default {
   },
   593: {
     id: 593,
-    name: '不戒和尚[称号]',
+    name: '不戒和尚',
     effect: ['特色指令：【不戒】，帮助队友自宫，每次开启消耗体力20，内力1000'],
     fortune: [],
     level: 2,
@@ -4863,7 +4866,7 @@ export default {
   },
   594: {
     id: 594,
-    name: '铁索横江[称号]',
+    name: '铁索横江',
     effect: ['基础连击率大幅度提高', '【闭气离墙·起死回生】，战斗中可以复活一次'],
     fortune: [],
     level: 3,
@@ -4871,7 +4874,7 @@ export default {
   },
   595: {
     id: 595,
-    name: '血刀高手[称号]',
+    name: '血刀高手',
     effect: ['血刀门武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -4879,7 +4882,7 @@ export default {
   },
   596: {
     id: 596,
-    name: '无悠水镜[称号]',
+    name: '无悠水镜',
     effect: ['受伤害时的一半化为自身生命、内力、体力'],
     fortune: [],
     level: 2,
@@ -4887,7 +4890,7 @@ export default {
   },
   597: {
     id: 597,
-    name: '少林护法[称号]',
+    name: '少林护法',
     effect: ['少林武学连击率+40%，暴击率+40%'],
     fortune: [],
     level: 3,
@@ -4895,7 +4898,7 @@ export default {
   },
   598: {
     id: 598,
-    name: '少林神僧[称号]',
+    name: '少林神僧',
     effect: ['少林武学连击率+40%，暴击率+40%'],
     fortune: [],
     level: 3,
@@ -4903,7 +4906,7 @@ export default {
   },
   599: {
     id: 599,
-    name: '少林神僧[称号]',
+    name: '少林神僧',
     effect: ['少林武学连击率+40%，暴击率+40%'],
     fortune: [],
     level: 3,
@@ -4911,7 +4914,7 @@ export default {
   },
   600: {
     id: 600,
-    name: '李秋水幻相[称号]',
+    name: '李秋水幻相',
     effect: ['李秋水幻相'],
     fortune: [],
     level: 3,
@@ -4919,7 +4922,7 @@ export default {
   },
   601: {
     id: 601,
-    name: '洪福齐天[称号]',
+    name: '洪福齐天',
     effect: [
       '特色指令：【口才】，使一名敌方进入沉睡状态，此状态无法集气，不会自行解除，受到攻击会醒来',
     ],
@@ -4932,7 +4935,7 @@ export default {
   },
   602: {
     id: 602,
-    name: '阴阳怪气[称号]',
+    name: '阴阳怪气',
     effect: ['使用化骨绵掌削弱敌方体力内力'],
     fortune: [],
     level: 2,
@@ -4940,7 +4943,7 @@ export default {
   },
   603: {
     id: 603,
-    name: '巴图鲁[称号]',
+    name: '巴图鲁',
     effect: ['主运金刚不坏体，必定发动"金刚不坏"特效'],
     fortune: [],
     level: 3,
@@ -4948,7 +4951,7 @@ export default {
   },
   604: {
     id: 604,
-    name: '越女剑仙[称号]',
+    name: '越女剑仙',
     effect: [
       '使用越女剑法攻击无误伤',
       '每次行动前解除自身所有异常',
@@ -4960,7 +4963,7 @@ export default {
   },
   605: {
     id: 605,
-    name: '姑射仙姿[称号]',
+    name: '姑射仙姿',
     effect: [
       '被攻击时必发动"轻云蔽月"，免疫攻击10时序，冷却时间50时序',
       '攻击时概率发动"流风回雪"，本次攻击必定造成冰封',
@@ -4971,7 +4974,7 @@ export default {
   },
   606: {
     id: 606,
-    name: '西域战神[称号]',
+    name: '西域战神',
     effect: ['拥有专属坐骑毛驴', '休息时自带蓄力兼防御效果'],
     fortune: [],
     level: 3,
@@ -4979,7 +4982,7 @@ export default {
   },
   607: {
     id: 607,
-    name: '乱世浮萍[称号]',
+    name: '乱世浮萍',
     effect: ['我方全体连击率提高10%'],
     fortune: [],
     level: 3,
@@ -4987,7 +4990,7 @@ export default {
   },
   608: {
     id: 608,
-    name: '葵花尊者[称号]',
+    name: '葵花尊者',
     effect: [
       '攻击力、防御力1.5倍',
       '攻击必发动葵花刺目，受到普通暗器攻击必定反击',
@@ -4999,7 +5002,7 @@ export default {
   },
   609: {
     id: 609,
-    name: '绍敏郡主[称号]',
+    name: '绍敏郡主',
     effect: ['被攻击时，反弹30%受到的攻击伤害'],
     fortune: ['神雕邪线襄阳剧情，第二格洗为天魔功，天赋内功洗为天魔功'],
     level: 3,
@@ -5007,7 +5010,7 @@ export default {
   },
   610: {
     id: 610,
-    name: '妙手仁心[称号]',
+    name: '妙手仁心',
     effect: ['只有暴怒状态才能攻击', '药物使用效果双倍'],
     fortune: [],
     level: 3,
@@ -5015,7 +5018,7 @@ export default {
   },
   611: {
     id: 611,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5023,7 +5026,7 @@ export default {
   },
   612: {
     id: 612,
-    name: '铁鞭震八方[称号]',
+    name: '铁鞭震八方',
     effect: ['呼延十八鞭2~5倍威力'],
     fortune: [],
     level: 3,
@@ -5031,7 +5034,7 @@ export default {
   },
   613: {
     id: 613,
-    name: '铁掌神鞭[称号]',
+    name: '铁掌神鞭',
     effect: [
       '震天铁掌威力翻倍，使用震天铁掌10%概率直接震晕目标',
       '呼延十八鞭威力三倍，使用呼延十八鞭大概率造成封穴',
@@ -5042,7 +5045,7 @@ export default {
   },
   614: {
     id: 614,
-    name: '欢喜冤家[称号]',
+    name: '欢喜冤家',
     effect: ['任飞燕在场，攻防提各提升100'],
     fortune: [],
     level: 1,
@@ -5050,7 +5053,7 @@ export default {
   },
   615: {
     id: 615,
-    name: '欢喜冤家[称号]',
+    name: '欢喜冤家',
     effect: ['与林玉龙同时在场，攻防轻增加50'],
     fortune: [],
     level: 1,
@@ -5058,7 +5061,7 @@ export default {
   },
   616: {
     id: 616,
-    name: '绝情谷主[称号]',
+    name: '绝情谷主',
     effect: ['本方每阵亡一名队友，集气速度增加2点', '受到的封穴降低50%'],
     fortune: [],
     level: 3,
@@ -5066,7 +5069,7 @@ export default {
   },
   617: {
     id: 617,
-    name: '铁掌莲花[称号]',
+    name: '铁掌莲花',
     effect: ['使用枣核钉必造成内伤', '使用铁掌概率追加一枚枣核钉'],
     fortune: [],
     level: 3,
@@ -5074,7 +5077,7 @@ export default {
   },
   618: {
     id: 618,
-    name: '绝情谷众[称号]',
+    name: '绝情谷众',
     effect: ['攻击概率锁足'],
     fortune: [],
     level: 1,
@@ -5082,7 +5085,7 @@ export default {
   },
   619: {
     id: 619,
-    name: '绝情谷众[称号]',
+    name: '绝情谷众',
     effect: ['攻击概率锁足'],
     fortune: [],
     level: 1,
@@ -5090,7 +5093,7 @@ export default {
   },
   620: {
     id: 620,
-    name: '绝情谷众[称号]',
+    name: '绝情谷众',
     effect: ['攻击概率锁足'],
     fortune: [],
     level: 1,
@@ -5098,7 +5101,7 @@ export default {
   },
   621: {
     id: 621,
-    name: '绝情谷众[称号]',
+    name: '绝情谷众',
     effect: ['攻击概率锁足'],
     fortune: [],
     level: 1,
@@ -5106,7 +5109,7 @@ export default {
   },
   622: {
     id: 622,
-    name: '绝情谷众[称号]',
+    name: '绝情谷众',
     effect: ['攻击概率锁足'],
     fortune: [],
     level: 1,
@@ -5114,7 +5117,7 @@ export default {
   },
   623: {
     id: 623,
-    name: '绝情谷众[称号]',
+    name: '绝情谷众',
     effect: ['攻击概率锁足'],
     fortune: [],
     level: 1,
@@ -5122,7 +5125,7 @@ export default {
   },
   624: {
     id: 624,
-    name: '绝情谷众[称号]',
+    name: '绝情谷众',
     effect: ['攻击概率锁足'],
     fortune: [],
     level: 1,
@@ -5130,7 +5133,7 @@ export default {
   },
   625: {
     id: 625,
-    name: '绝情谷众[称号]',
+    name: '绝情谷众',
     effect: ['攻击概率锁足'],
     fortune: [],
     level: 1,
@@ -5138,7 +5141,7 @@ export default {
   },
   626: {
     id: 626,
-    name: '小东邪[称号]',
+    name: '小东邪',
     effect: [
       '特色指令：【玲珑】，可自由切换第一格武功为弹指神通/玉萧剑法/落英神剑掌，不消耗回合',
       '峨眉金顶觉醒后，内力变为天罡',
@@ -5149,7 +5152,7 @@ export default {
   },
   627: {
     id: 627,
-    name: '漠北天狼[称号]',
+    name: '漠北天狼',
     effect: ['我方轻功+10%，命中+10%'],
     fortune: [],
     level: 3,
@@ -5157,7 +5160,7 @@ export default {
   },
   628: {
     id: 628,
-    name: '雕兄[称号]',
+    name: '雕兄',
     effect: ['使用玄铁剑法时，有概率发动重剑真传'],
     fortune: [],
     level: 2,
@@ -5165,7 +5168,7 @@ export default {
   },
   629: {
     id: 629,
-    name: '长平公主[称号]',
+    name: '长平公主',
     effect: [
       '华山战胜玉真子觉醒领悟（畅想专属）',
       '└凤鸣九霄：满怒触发范围伤害',
@@ -5178,7 +5181,7 @@ export default {
   },
   630: {
     id: 630,
-    name: '灵獒王[称号]',
+    name: '灵獒王',
     effect: [''],
     fortune: [],
     level: 2,
@@ -5186,7 +5189,7 @@ export default {
   },
   631: {
     id: 631,
-    name: '芷兰毓秀[称号]',
+    name: '芷兰毓秀',
     effect: [],
     fortune: [
       '倚天邪线少林寺刀剑互断剧情，可选择第一格和天赋外功洗为白蟒鞭法或九阴白骨爪，第二格和天赋内功洗为九阴神功',
@@ -5196,7 +5199,7 @@ export default {
   },
   632: {
     id: 632,
-    name: '尖酸伶俐[称号]',
+    name: '尖酸伶俐',
     effect: ['受到伤害时，25%概率让已方队友承担一半伤害'],
     fortune: [],
     level: 2,
@@ -5204,7 +5207,7 @@ export default {
   },
   633: {
     id: 633,
-    name: '辽东大侠[称号]',
+    name: '辽东大侠',
     effect: ['天赋轻功自运', '自身免疫冰封', '装备冷月宝刀后胡家刀法威力+300，攻击必冰封'],
     fortune: ['沧州挑战苗人凤后，第一格洗为胡家刀法，第二格洗为苗家剑法'],
     level: 4,
@@ -5212,7 +5215,7 @@ export default {
   },
   634: {
     id: 634,
-    name: '逍遥祖师[称号]',
+    name: '逍遥祖师',
     effect: [
       '必发动“梅花三弄”特效之一',
       '└梅花一弄：造成散功30时序，不可主运内功',
@@ -5225,7 +5228,7 @@ export default {
   },
   635: {
     id: 635,
-    name: '西昆仑[称号]',
+    name: '西昆仑',
     effect: [
       '灵鳖步和十方步加强',
       '主运鲸息功或使用碧海惊涛掌攻击时可以触发六大奇劲之一：',
@@ -5244,7 +5247,7 @@ export default {
   },
   636: {
     id: 636,
-    name: '青莲剑仙[称号]',
+    name: '青莲剑仙',
     effect: [
       '青莲剑法高连',
       '【谪仙之体】被攻击时防御值一定不少于对方攻击力，攻击时攻击力一定不少于对方防御值',
@@ -5256,7 +5259,7 @@ export default {
   },
   637: {
     id: 637,
-    name: '九阴至尊[称号]',
+    name: '九阴至尊',
     effect: [
       '九阴神功自动运功',
       '【易筋锻骨】”：免疫封穴，免疫暴击伤害',
@@ -5269,7 +5272,7 @@ export default {
   },
   638: {
     id: 638,
-    name: '九阳至尊[称号]',
+    name: '九阳至尊',
     effect: ['内力上限9999', '九阳神功必加力护体，可使用九阳神功攻击', '反震40%伤害'],
     fortune: [],
     level: 4,
@@ -5277,7 +5280,7 @@ export default {
   },
   639: {
     id: 639,
-    name: '金蛇郎君[称号]',
+    name: '金蛇郎君',
     effect: ['金蛇剑法威力1.5倍，暴怒使用金蛇剑法必出金蛇奥义', '金蛇锥3~5倍伤害'],
     fortune: [],
     level: 4,
@@ -5285,7 +5288,7 @@ export default {
   },
   640: {
     id: 640,
-    name: '古墓后人[称号]',
+    name: '古墓后人',
     effect: [
       '玉女心经特效概率增加，无需主运九阴神功可触发九阴白骨爪极意，华山觉醒九阴白骨爪威力+50%，7书九阴神爪极意40%三连，暴怒必三连。*【广寒清辉】华山后山觉醒后暴怒触发“广寒清辉”必冻结目标集气5时序',
       '玉女心经特效概率增加',
@@ -5299,7 +5302,7 @@ export default {
   },
   641: {
     id: 641,
-    name: '魔道祖师[称号]',
+    name: '魔道祖师',
     effect: ['明教武功连击率+40%，暴击率+40%，威力+400'],
     fortune: [],
     level: 4,
@@ -5307,7 +5310,7 @@ export default {
   },
   642: {
     id: 642,
-    name: '星河真君[称号]',
+    name: '星河真君',
     effect: ['已方除自己外还有人员存活，则不受伤害'],
     fortune: [],
     level: 4,
@@ -5315,7 +5318,7 @@ export default {
   },
   643: {
     id: 643,
-    name: '八臂神剑[称号]',
+    name: '八臂神剑',
     effect: ['使用剑法攻击概率提高威力30%'],
     fortune: [],
     level: 3,
@@ -5323,7 +5326,7 @@ export default {
   },
   644: {
     id: 644,
-    name: '密宗高手[称号]',
+    name: '密宗高手',
     effect: ['密宗武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -5331,7 +5334,7 @@ export default {
   },
   645: {
     id: 645,
-    name: '密宗高手[称号]',
+    name: '密宗高手',
     effect: ['密宗武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -5340,7 +5343,7 @@ export default {
   646: {
     // 殷离
     id: 646,
-    name: '千蛛万毒[称号]',
+    name: '千蛛万毒',
     effect: ['攻击强制上毒20点，根据目标中毒值恢复生命'],
     fortune: [],
     level: 2,
@@ -5348,7 +5351,7 @@ export default {
   },
   647: {
     id: 647,
-    name: '玄冥二老[称号]',
+    name: '玄冥二老',
     effect: ['使用玄冥神掌，必定发动极意'],
     fortune: [],
     level: 2,
@@ -5356,7 +5359,7 @@ export default {
   },
   648: {
     id: 648,
-    name: '玄冥二老[称号]',
+    name: '玄冥二老',
     effect: ['使用玄冥神掌，必定发动极意'],
     fortune: [],
     level: 2,
@@ -5364,7 +5367,7 @@ export default {
   },
   649: {
     id: 649,
-    name: '华山玉女[称号]',
+    name: '华山玉女',
     effect: ['紫霞神功必发动紫霞剑气', '剑法攻击必触发“玉女十九剑”增加自身连击率，暴怒必连'],
     fortune: ['笑傲正获得五岳剑诀，第二格洗为五岳剑诀'],
     level: 2,
@@ -5373,7 +5376,7 @@ export default {
   650: {
     // 杨康
     id: 650,
-    name: '小王爷[称号]',
+    name: '小王爷',
     effect: ['武功练到极，减少受到的5%杀气（上限25%）'],
     fortune: [],
     level: 2,
@@ -5381,7 +5384,7 @@ export default {
   },
   651: {
     id: 651,
-    name: '天地双尊[称号]',
+    name: '天地双尊',
     effect: ['攻击与防御时敌方任何攻击系数都视为0', '攻南时无视目标50%防御', '（未实装）'],
     fortune: [],
     level: 4,
@@ -5389,7 +5392,7 @@ export default {
   },
   652: {
     id: 652,
-    name: '神州大侠[称号]',
+    name: '神州大侠',
     effect: [
       '修炼辟邪剑法与葵花宝典没有惩罚，自带“忘情天书”特效',
       '绝技【惊天一剑】：战胜三名剑术名家，暴怒时可使用“天剑”绝技，剑法攻击无视敌方防御30%，无视闪避，追加200点伤害',
@@ -5401,7 +5404,7 @@ export default {
   653: {
     // 元痛
     id: 653,
-    name: '少林高僧[称号]',
+    name: '少林高僧',
     effect: ['少林武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -5409,7 +5412,7 @@ export default {
   },
   654: {
     id: 654,
-    name: '铁甲重骑[称号]',
+    name: '铁甲重骑',
     effect: ['移动固定十格，防御提升100'],
     fortune: [],
     level: 3,
@@ -5417,7 +5420,7 @@ export default {
   },
   655: {
     id: 655,
-    name: '少林堂主[称号]',
+    name: '少林堂主',
     effect: ['少林武学连击率+30%，暴击率+30%'],
     fortune: [],
     level: 2,
@@ -5426,7 +5429,7 @@ export default {
   656: {
     // 元伤
     id: 656,
-    name: '少林高僧[称号]',
+    name: '少林高僧',
     effect: ['少林武学连击率+30%，暴击率+30%'],
     fortune: [],
     level: 2,
@@ -5434,7 +5437,7 @@ export default {
   },
   657: {
     id: 657,
-    name: '少林长老[称号]',
+    name: '少林长老',
     effect: ['少林武学连击率+40%，暴击率+40%，威力+400'],
     fortune: [],
     level: 3,
@@ -5442,7 +5445,7 @@ export default {
   },
   658: {
     id: 658,
-    name: '天池怪侠[称号]',
+    name: '天池怪侠',
     effect: ['被攻击时概率转移杀气值给攻击者', '百花错拳威力+600'],
     fortune: [],
     level: 3,
@@ -5450,7 +5453,7 @@ export default {
   },
   659: {
     id: 659,
-    name: '铁甲重骑[称号]',
+    name: '铁甲重骑',
     effect: ['移动固定十格，防御提升100'],
     fortune: [],
     level: 3,
@@ -5458,7 +5461,7 @@ export default {
   },
   660: {
     id: 660,
-    name: '铁甲重骑[称号]',
+    name: '铁甲重骑',
     effect: ['移动固定十格，防御提升100'],
     fortune: [],
     level: 3,
@@ -5466,7 +5469,7 @@ export default {
   },
   661: {
     id: 661,
-    name: '铁甲重骑[称号]',
+    name: '铁甲重骑',
     effect: ['移动固定十格，防御提升100'],
     fortune: [],
     level: 3,
@@ -5474,7 +5477,7 @@ export default {
   },
   662: {
     id: 662,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5482,7 +5485,7 @@ export default {
   },
   663: {
     id: 663,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5490,7 +5493,7 @@ export default {
   },
   664: {
     id: 664,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5498,7 +5501,7 @@ export default {
   },
   665: {
     id: 665,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5506,7 +5509,7 @@ export default {
   },
   666: {
     id: 666,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5514,7 +5517,7 @@ export default {
   },
   667: {
     id: 667,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5522,7 +5525,7 @@ export default {
   },
   668: {
     id: 668,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5530,7 +5533,7 @@ export default {
   },
   669: {
     id: 669,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5538,7 +5541,7 @@ export default {
   },
   670: {
     id: 670,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5546,7 +5549,7 @@ export default {
   },
   671: {
     id: 671,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5554,7 +5557,7 @@ export default {
   },
   672: {
     id: 672,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5562,7 +5565,7 @@ export default {
   },
   673: {
     id: 673,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5570,7 +5573,7 @@ export default {
   },
   674: {
     id: 674,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5578,7 +5581,7 @@ export default {
   },
   675: {
     id: 675,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5586,7 +5589,7 @@ export default {
   },
   676: {
     id: 676,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5594,7 +5597,7 @@ export default {
   },
   677: {
     id: 677,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5602,7 +5605,7 @@ export default {
   },
   678: {
     id: 678,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5610,7 +5613,7 @@ export default {
   },
   679: {
     id: 679,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5618,7 +5621,7 @@ export default {
   },
   680: {
     id: 680,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5626,7 +5629,7 @@ export default {
   },
   681: {
     id: 681,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5634,7 +5637,7 @@ export default {
   },
   682: {
     id: 682,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5642,7 +5645,7 @@ export default {
   },
   683: {
     id: 683,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5650,7 +5653,7 @@ export default {
   },
   684: {
     id: 684,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5658,7 +5661,7 @@ export default {
   },
   685: {
     id: 685,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5666,7 +5669,7 @@ export default {
   },
   686: {
     id: 686,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5674,7 +5677,7 @@ export default {
   },
   687: {
     id: 687,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5682,7 +5685,7 @@ export default {
   },
   688: {
     id: 688,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5690,7 +5693,7 @@ export default {
   },
   689: {
     id: 689,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5698,7 +5701,7 @@ export default {
   },
   690: {
     id: 690,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5706,7 +5709,7 @@ export default {
   },
   691: {
     id: 691,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5714,7 +5717,7 @@ export default {
   },
   692: {
     id: 692,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5722,7 +5725,7 @@ export default {
   },
   693: {
     id: 693,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5730,7 +5733,7 @@ export default {
   },
   694: {
     id: 694,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5738,7 +5741,7 @@ export default {
   },
   695: {
     id: 695,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5746,7 +5749,7 @@ export default {
   },
   696: {
     id: 696,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5754,7 +5757,7 @@ export default {
   },
   697: {
     id: 697,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5762,7 +5765,7 @@ export default {
   },
   698: {
     id: 698,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5770,7 +5773,7 @@ export default {
   },
   699: {
     id: 699,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5778,7 +5781,7 @@ export default {
   },
   700: {
     id: 700,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5786,7 +5789,7 @@ export default {
   },
   701: {
     id: 701,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5794,7 +5797,7 @@ export default {
   },
   702: {
     id: 702,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5802,7 +5805,7 @@ export default {
   },
   703: {
     id: 703,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5810,7 +5813,7 @@ export default {
   },
   704: {
     id: 704,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5818,7 +5821,7 @@ export default {
   },
   705: {
     id: 705,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5826,7 +5829,7 @@ export default {
   },
   706: {
     id: 706,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5834,7 +5837,7 @@ export default {
   },
   707: {
     id: 707,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5842,7 +5845,7 @@ export default {
   },
   708: {
     id: 708,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5850,7 +5853,7 @@ export default {
   },
   709: {
     id: 709,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5858,7 +5861,7 @@ export default {
   },
   710: {
     id: 710,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5866,7 +5869,7 @@ export default {
   },
   711: {
     id: 711,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5874,7 +5877,7 @@ export default {
   },
   712: {
     id: 712,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5882,7 +5885,7 @@ export default {
   },
   713: {
     id: 713,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5890,7 +5893,7 @@ export default {
   },
   714: {
     id: 714,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5898,7 +5901,7 @@ export default {
   },
   715: {
     id: 715,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5906,7 +5909,7 @@ export default {
   },
   716: {
     id: 716,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5914,7 +5917,7 @@ export default {
   },
   717: {
     id: 717,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5922,7 +5925,7 @@ export default {
   },
   718: {
     id: 718,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5930,7 +5933,7 @@ export default {
   },
   719: {
     id: 719,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5938,7 +5941,7 @@ export default {
   },
   720: {
     id: 720,
-    name: '备用[称号]',
+    name: '备用',
     effect: [''],
     fortune: [],
     level: 3,
@@ -5947,7 +5950,7 @@ export default {
   721: {
     // 酒神
     id: 721,
-    name: '酒神[称号]',
+    name: '酒神',
     effect: ['初始暗器200，暗器必定1倍伤害', '喝酒buff有特殊攻击特效', '休息时必定蓄力防御'],
     fortune: [
       '获得辟邪剑谱，第一格洗为辟邪剑法，天赋外功洗为辟邪剑法',
@@ -5960,7 +5963,7 @@ export default {
   722: {
     // 商剑鸣
     id: 722,
-    name: '八卦高手[称号]',
+    name: '八卦高手',
     effect: ['八卦门武功连击率+20%，暴击率+20%', '八卦掌造成敌方“散功”状态20时序'],
     fortune: [],
     level: 3,
@@ -5968,7 +5971,7 @@ export default {
   },
   723: {
     id: 723,
-    name: '丐帮长老[称号]',
+    name: '丐帮长老',
     effect: ['丐帮武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -5976,17 +5979,17 @@ export default {
   },
   724: {
     id: 724,
-    name: '腾龙剑[称号]',
+    name: '腾龙剑',
     effect: ['剑法气攻+300'],
     fortune: [],
     level: 1,
     exclusive: 2,
   },
-  725: {id: 725, name: '灰鹞子[称号]', effect: ['闪避+50'], fortune: [], level: 1, exclusive: 2},
+  725: {id: 725, name: '灰鹞子', effect: ['闪避+50'], fortune: [], level: 1, exclusive: 2},
   726: {
     // 天一道长
     id: 726,
-    name: '武当高手[称号]',
+    name: '武当高手',
     effect: ['武当武学连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -5994,7 +5997,7 @@ export default {
   },
   727: {
     id: 727,
-    name: '天龙门弟子[称号]',
+    name: '天龙门弟子',
     effect: ['雷霆剑法气攻+300'],
     fortune: [],
     level: 2,
@@ -6002,7 +6005,7 @@ export default {
   },
   728: {
     id: 728,
-    name: '天龙门弟子[称号]',
+    name: '天龙门弟子',
     effect: ['雷霆剑法气攻+300'],
     fortune: [],
     level: 2,
@@ -6010,7 +6013,7 @@ export default {
   },
   729: {
     id: 729,
-    name: '天龙门弟子[称号]',
+    name: '天龙门弟子',
     effect: ['雷霆剑法气攻+300'],
     fortune: [],
     level: 2,
@@ -6018,7 +6021,7 @@ export default {
   },
   730: {
     id: 730,
-    name: '天龙门弟子[称号]',
+    name: '天龙门弟子',
     effect: ['雷霆剑法气攻+300'],
     fortune: [],
     level: 2,
@@ -6026,7 +6029,7 @@ export default {
   },
   731: {
     id: 731,
-    name: '汤大侠[称号]',
+    name: '汤大侠',
     effect: ['攻击(100-道德)%概率1.2倍伤害'],
     fortune: [],
     level: 2,
@@ -6035,7 +6038,7 @@ export default {
   732: {
     // 赛尚鄂
     id: 732,
-    name: '御林军[称号]',
+    name: '御林军',
     effect: ['已方人数越多，攻击力和防御力越高'],
     fortune: [],
     level: 2,
@@ -6043,7 +6046,7 @@ export default {
   },
   736: {
     id: 736,
-    name: '神机营[称号]',
+    name: '神机营',
     effect: ['集气速度-30%，攻击提升30%'],
     fortune: [],
     level: 2,
@@ -6052,7 +6055,7 @@ export default {
   737: {
     // 商夫人
     id: 737,
-    name: '八卦高手[称号]',
+    name: '八卦高手',
     effect: ['八卦门武功连击率+20%，暴击率+20%', '八卦刀造成敌方“虚弱”状态20时序'],
     fortune: [],
     level: 2,
@@ -6060,7 +6063,7 @@ export default {
   },
   738: {
     id: 738,
-    name: '匪石之心[称号]',
+    name: '匪石之心',
     effect: ['牺牲自己的全部生命，救回已经被击败的队友'],
     fortune: [],
     level: 3,
@@ -6069,7 +6072,7 @@ export default {
   739: {
     // 商宝震
     id: 739,
-    name: '八卦高手[称号]',
+    name: '八卦高手',
     effect: ['八卦门武功连击率+10%，暴击率+10%'],
     fortune: [],
     level: 2,
@@ -6078,7 +6081,7 @@ export default {
   740: {
     // 王剑杰
     id: 740,
-    name: '八卦高手[称号]',
+    name: '八卦高手',
     effect: ['八卦门武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -6087,7 +6090,7 @@ export default {
   741: {
     // 王剑英
     id: 741,
-    name: '八卦高手[称号]',
+    name: '八卦高手',
     effect: ['八卦门武功连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -6095,7 +6098,7 @@ export default {
   },
   742: {
     id: 742,
-    name: '韦陀派高手[称号]',
+    name: '韦陀派高手',
     effect: ['韦陀掌威力+400'],
     fortune: [],
     level: 1,
@@ -6103,7 +6106,7 @@ export default {
   },
   743: {
     id: 743,
-    name: '八仙剑[称号]',
+    name: '八仙剑',
     effect: ['八仙剑威力+400'],
     fortune: [],
     level: 1,
@@ -6111,7 +6114,7 @@ export default {
   },
   744: {
     id: 744,
-    name: '九龙拳[称号]',
+    name: '九龙拳',
     effect: ['拳法攻击概率减少目标内力值'],
     fortune: [],
     level: 1,
@@ -6119,7 +6122,7 @@ export default {
   },
   745: {
     id: 745,
-    name: '钟氏三雄[称号]',
+    name: '钟氏三雄',
     effect: ['攻击概率造成目标虚弱'],
     fortune: [],
     level: 2,
@@ -6127,7 +6130,7 @@ export default {
   },
   746: {
     id: 746,
-    name: '钟氏三雄[称号]',
+    name: '钟氏三雄',
     effect: ['攻击概率造成目标虚弱'],
     fortune: [],
     level: 2,
@@ -6135,7 +6138,7 @@ export default {
   },
   747: {
     id: 747,
-    name: '钟氏三雄[称号]',
+    name: '钟氏三雄',
     effect: ['攻击概率造成目标虚弱'],
     fortune: [],
     level: 2,
@@ -6143,7 +6146,7 @@ export default {
   },
   748: {
     id: 748,
-    name: '佛山一霸[称号]',
+    name: '佛山一霸',
     effect: ['被攻击概率让队友承担75%伤害'],
     fortune: [],
     level: 2,
@@ -6151,7 +6154,7 @@ export default {
   },
   749: {
     id: 749,
-    name: '天机宫主[称号]',
+    name: '天机宫主',
     effect: ['天机宫武学连击率+40，暴击率+40%，威力+400'],
     fortune: [],
     level: 3,
@@ -6159,7 +6162,7 @@ export default {
   },
   750: {
     id: 750,
-    name: '药师菩萨[称号]',
+    name: '药师菩萨',
     effect: ['行动后给已方队伍中血百分比少的目标恢复20%生命值'],
     fortune: [],
     level: 3,
@@ -6167,7 +6170,7 @@ export default {
   },
   751: {
     id: 751,
-    name: '天机传人[称号]',
+    name: '天机传人',
     effect: ['天机宫武学连击率+30，暴击率+30%，威力+300'],
     fortune: [],
     level: 3,
@@ -6175,7 +6178,7 @@ export default {
   },
   752: {
     id: 752,
-    name: '青云之志[称号]',
+    name: '青云之志',
     effect: ['被击败后，如果有其他参战人物被击败，有一次机会概率再次回到战场'],
     fortune: [],
     level: 4,
@@ -6183,7 +6186,7 @@ export default {
   },
   753: {
     id: 753,
-    name: '密宗高手[称号]',
+    name: '密宗高手',
     effect: ['密宗武学连击率+20%，暴击率+20%'],
     fortune: [],
     level: 2,
@@ -6191,7 +6194,7 @@ export default {
   },
   754: {
     id: 754,
-    name: '凌空一羽[称号]',
+    name: '凌空一羽',
     effect: ['免疫以自已为中心的九宫格内的敌人攻击'],
     fortune: [],
     level: 4,
@@ -6199,7 +6202,7 @@ export default {
   },
   755: {
     id: 755,
-    name: '凌空一羽[称号]',
+    name: '凌空一羽',
     effect: ['免疫以自已为中心的九宫格内的敌人攻击'],
     fortune: [],
     level: 4,
@@ -6207,7 +6210,7 @@ export default {
   },
   756: {
     id: 756,
-    name: '天刀[称号]',
+    name: '天刀',
     effect: ['天刀九问必连必暴'],
     fortune: [],
     level: 4,
@@ -6215,7 +6218,7 @@ export default {
   },
   757: {
     id: 757,
-    name: '备用[称号]',
+    name: '备用',
     effect: ['免疫以自已为中心的九宫格内的敌人攻击'],
     fortune: [],
     level: 4,
