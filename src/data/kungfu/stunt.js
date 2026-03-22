@@ -506,6 +506,13 @@ export default {
     effect: ['天山六阳掌/天山折梅手/寒袖拂穴/白虹掌力威力+250，攻击必三连'],
     type: 1,
   },
+  fengHuoLianCheng: {
+    id: 79,
+    name: '烽火连城',
+    condition: '狂风迅雷扇+疯魔棍法',
+    effect: ['奇门武功攻击时50%概率三连击，暴怒必三连'],
+    type: 1,
+  },
   daMoZhang: {
     id: 'daMoZhang',
     name: '达摩掌',
