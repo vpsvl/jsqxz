@@ -1,4 +1,4 @@
-import{C as e,O as t,T as n,g as r,h as i}from"./index-DX6lcco8.js";import{t as a}from"./plugin-vue-export-helper-ov2L1HWe.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-3-14.fix5-----
+import{C as e,O as t,T as n,g as r,h as i}from"./index-DkPeMkeB.js";import{t as a}from"./plugin-vue-export-helper-ov2L1HWe.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-3-14.fix5-----
       1，修复存取档的一个BUG
       2，修复任务菜单点开天龙八部会跳出的问题
 
