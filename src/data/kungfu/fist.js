@@ -455,7 +455,7 @@ export default {
       name: '大伏魔拳',
       cheat: '',
       level: 3,
-      get: '百花谷战老顽童后获得',
+      get: '神雕正流程百花谷战老顽童后获得',
       power: 1100,
       gasPower: 1100,
       range: '米 4格',

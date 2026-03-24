@@ -42,7 +42,7 @@ export function sanJi(lv) {
   return {
     id: 904,
     name: `三击 Lv${lv}`,
-    effect: [`攻击时${lv * 20}%概率三连击`],
+    effect: [`攻击时${lv * 10}%概率三连击`],
   };
 }
 

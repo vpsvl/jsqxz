@@ -426,6 +426,46 @@ export function sanYuanGuiYi(lv) {
   };
 }
 
+export function jiuYouXiuLuo(lv) {
+  return {
+    id: 1046,
+    name: `九幽修罗 Lv${lv}`,
+    effect: [
+      `化功同时减少敌人的生命，攻击冻结的目标伤害增加20%，概率击碎的敌人冻冻效果，造成目标最大生命值20%的伤害`,
+    ],
+  };
+}
+
+export function yinShaLianYu(lv) {
+  return {
+    id: 1047,
+    name: `阴煞炼狱 Lv${lv}`,
+    effect: [
+      `周围九格内的敌人每1时序增加2点冰封，冰封值达到100点时概率冻结一回合`,
+      `收集战场所有的冰封值转化为阴煞之力，阴煞之力转化为攻击力，防御力，集气值`,
+    ],
+  };
+}
+
+export function riZhaoYueMu(lv) {
+  return {
+    id: 1048,
+    name: `日朝月暮 Lv${lv}`,
+    effect: [`白天自身攻击力和集气大副提升，夜晚敌方防御和集气值大副降低`],
+  };
+}
+
+export function riYueTongHui(lv) {
+  return {
+    id: 1049,
+    name: `日月同辉 Lv${lv}`,
+    effect: [
+      `攻击时触发日之神威，吸取敌方的攻击力和防御力为已用`,
+      `被攻击时触发月之神威，闪避和格挡随着月之神威的触发的次数大副提升`,
+    ],
+  };
+}
+
 export function taYunZhuiFeng(lv) {
   return {
     id: 1101,

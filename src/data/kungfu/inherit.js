@@ -56,7 +56,7 @@ export default {
   },
   lianHuaToQinLong: {
     id: 'lianHuaToQinLong',
-    name: '莲花功 (丐帮)→ 擒龙功',
+    name: '莲花功 → 擒龙功',
     kungfu: 'internal',
   },
   huaShanToZiXia: {
