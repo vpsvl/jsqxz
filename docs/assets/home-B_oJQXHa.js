@@ -1,4 +1,4 @@
-import{C as e,O as t,T as n,g as r,h as i}from"./index-D__WOreG.js";import{t as a}from"./plugin-vue-export-helper-ov2L1HWe.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`    -------正式版V2.5-----2026-3-14.fix13-----
+import{C as e,O as t,T as n,g as r,h as i}from"./index-BxBn7jkM.js";import{t as a}from"./plugin-vue-export-helper-ov2L1HWe.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`    -------正式版V2.5-----2026-3-14.fix13-----
       1，学会副运的NPC也会切换合理的主运+副运
       2.,修复门派武学可以一脉相承门派所有武功
       3，修复还有NPC主运没有学会的内功
