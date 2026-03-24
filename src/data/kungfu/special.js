@@ -143,7 +143,7 @@ export default {
       name: '小李飞刀',
       cheat: '',
       level: 4,
-      get: '1.畅想李寻欢自带秘籍 2.江湖人士可在扬州武馆学习',
+      get: '畅想李寻欢自带秘籍',
       power: 2150,
       gasPower: 2150,
       range: '■ 20+7×7',
