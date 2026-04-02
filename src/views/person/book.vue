@@ -6,11 +6,16 @@
           [
           <span :class="`level-${item.level}`">
             {{ item.name }}
-            <template v-if="item.id < 1000">[称号]</template>
           </span>
           ]:
         </div>
         <div class="td-effect-item effect-icon-star" v-for="(text, i) of item.effect" :key="i">
+          {{ text }}
+        </div>
+      </div>
+      <div class="td-block" v-if="state.lessWindow && row.fortune.length > 0">
+        <div class="color-error">[福缘际遇]</div>
+        <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of row.fortune" :key="i">
           {{ text }}
         </div>
       </div>
@@ -45,6 +50,7 @@ const thead = [
   {
     key: 'fortune',
     name: '福缘际遇',
+    hidden: state.lessWindow,
   },
 ];
 const tbody = ref([]);

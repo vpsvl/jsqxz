@@ -25,6 +25,7 @@ const thead = [
   {
     key: 'condition',
     name: '装备需求',
+    hidden: state.lessWindow,
   },
   {
     key: 'addition',

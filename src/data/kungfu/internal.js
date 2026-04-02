@@ -248,7 +248,7 @@ export default {
       addition: '防御+2 轻功+1 拳掌+1 御剑+1',
       sect: 27,
       internal: '0',
-      initiative: ['shiXuHuiNei, puDuCiHang'],
+      initiative: ['shiXuHuiNei', 'puDuCiHang'],
       peculiar: [],
       inherit: [],
     },

@@ -17,7 +17,7 @@
         </template>
       </div>
     </div>
-    <v-scroll class="tbody" v-if="data.length > 0">
+    <v-scroll class="tbody" :y="y" v-if="data.length > 0">
       <div
         class="tr"
         v-for="(tr, index) of data"
@@ -55,6 +55,11 @@ const props = defineProps({
     default() {
       return [];
     },
+  },
+  // 滚动条位置
+  y: {
+    type: Number,
+    default: 0,
   },
   // 是否显示加载中
   // loading: {
