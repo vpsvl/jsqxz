@@ -61,6 +61,7 @@ const thead = [
   {
     key: 'score',
     name: '分数',
+    hidden: true,
   },
 ];
 const params = ref({
