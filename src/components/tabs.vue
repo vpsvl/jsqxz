@@ -132,7 +132,7 @@ watch(
       transition: background 0.2s;
 
       &:hover {
-        background: var(--color-bg-hover);
+        opacity: 0.6;
       }
     }
   }

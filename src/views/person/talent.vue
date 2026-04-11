@@ -60,8 +60,7 @@ const thead = [
   },
   {
     key: 'score',
-    name: '分数',
-    hidden: true,
+    name: '点数',
   },
 ];
 const params = ref({
@@ -108,9 +107,9 @@ onBeforeMount(() => {
       flex: 2 0 0;
     }
 
-    // &:last-child {
-    //   flex: 0 0 50px;
-    // }
+    &:last-child {
+      flex: 0 0 50px;
+    }
   }
 }
 </style>

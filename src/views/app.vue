@@ -40,13 +40,45 @@ watch(
 
 provide('state', state);
 
-// import data from '@/data/cheat/aa';
-//
+// import data from '@/data/kungfu/fly';
+// import {kungfuSectMap} from '@/data/map';
+
 // function toArr() {
-//   const arr = {};
-//   for (let i = 572; i < 650; i++) {
-//     arr[i] = '';
-//   }
+//   const arr = data.list.map((item) => {
+//     const {sect, level} = item;
+//     if (level > 2 && sect > 0) {
+//       item.internal = kungfuSectMap[sect].internal;
+//     } else {
+//       let internalType = Number.parseInt(item.internal);
+//       item.internal = Number.isNaN(internalType) ? '' : internalType;
+//     }
+//     return item;
+//   });
+//   arr.sort((a, b) => b.level - a.level);
+//   arr.sort((a, b) => {
+//     if (a.level === b.level) {
+//       const aitem = a.power.replace(/命中(\d+) 闪避(\d+) /, '$1,$2');
+//       const bitem = b.power.replace(/命中(\d+) 闪避(\d+) /, '$1,$2');
+//       const [ahp, aqf] = aitem.split(',');
+//       const [bhp, bqf] = bitem.split(',');
+//       return ahp === bhp ? bqf - aqf : bhp - ahp;
+//     }
+//     return 1;
+//   });
+//   console.log(arr);
+// }
+
+// toArr();
+
+// function toArr() {
+//   const arr = data.list
+//   arr.sort((a, b) => b.level - a.level);
+//   arr.sort((a, b) => {
+//     if (a.level === b.level) {
+//       return b.power - a.power;
+//     }
+//     return 1;
+//   });
 //   console.log(arr);
 // }
 
@@ -92,6 +124,7 @@ provide('state', state);
 // }
 //
 // toPinyin(data);
+
 
 </script>
 

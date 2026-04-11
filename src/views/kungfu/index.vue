@@ -2,13 +2,21 @@
   <v-tabs :list="kungfu.list" :exclusive="kungfu.exclusive" type="kungfu">
     <template #tab="{tab}">
       <span
-        :class="{[`level-${tab.level}`]: tab.level, [`internal-${tab.internal}`]: tab.internal}"
+        :class="{
+          [`level-${tab.level}`]: tab.level,
+          [`internal-${tab.internal}`]: tab.internal === 0 || tab.internal === 1,
+        }"
       >
         {{ tab.name }}
       </span>
     </template>
     <template #title="{info}">
-      <span :class="[`level-${info.level}`, {[`internal-${info.internal}`]: info.internal}]">
+      <span
+        :class="[
+          `level-${info.level}`,
+          {[`internal-${info.internal}`]: info.internal === 0 || info.internal === 1},
+        ]"
+      >
         {{ info.name }}
       </span>
     </template>
@@ -28,15 +36,15 @@
         <div class="tr">
           <div class="td">所属门派</div>
           <div class="td">
-            {{ kungfuSectMap[info.sect] ?? '' }}
+            {{ kungfuSectMap[info.sect]?.name ?? '' }}
           </div>
         </div>
         <div class="tr">
           <div class="td">修炼条件</div>
           <div class="td">
             <span>{{ info.condition }}</span>
-            <span v-if="info.internal === '0'">&nbsp;非阳内</span>
-            <span v-if="info.internal === '1'">&nbsp;非阴内</span>
+            <span v-if="info.internal === 0">&nbsp;非阳内</span>
+            <span v-if="info.internal === 1">&nbsp;非阴内</span>
           </div>
         </div>
         <div class="tr">
@@ -68,7 +76,7 @@
         <template v-if="kungfuType === 'out'">
           <div class="tr">
             <div class="td">气功</div>
-            <div class="td">{{ info.gasPower }}</div>
+            <div class="td">{{ info.power }}</div>
           </div>
           <!-- <div class="tr">
             <div class="td">招式效果</div>

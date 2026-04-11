@@ -466,6 +466,36 @@ export function riYueTongHui(lv) {
   };
 }
 
+export function tianDiDuZun(lv) {
+  return {
+    id: 1050,
+    name: `天地独尊 Lv${lv}`,
+    effect: [
+      `攻击时触发天地失色/受到攻击时触发天地独尊，让敌方的天赋不生效`,
+    ],
+  };
+}
+
+export function xuanZhiTaiYi(lv) {
+  return {
+    id: 1051,
+    name: `玄之太一 Lv${lv}`,
+    effect: [
+      `攻击时触发上玄之气/受到攻击时触发下玄之气，让敌方的奇穴不生效`,
+    ],
+  };
+}
+
+export function taiYanShiFa(lv) {
+  return {
+    id: 1052,
+    name: `太衍噬法 Lv${lv}`,
+    effect: [
+      `攻击时触发/受到攻击时触发太衍噬法，让敌方的秘技不生效`,
+    ],
+  };
+}
+
 export function taYunZhuiFeng(lv) {
   return {
     id: 1101,

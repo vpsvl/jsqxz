@@ -39,7 +39,7 @@ export const kungfuMap = {
 export const internalTypeMap = {
   0: '阴内',
   1: '阳内',
-  2: '调和',
+  2: '无',
   3: '天罡',
   '-': '-',
   '': '-',
@@ -77,36 +77,132 @@ export const sectMap = {
 
 // 门派武功分类编码
 export const kungfuSectMap = {
-  0: '江湖',
-  1: '少林派',
-  2: '武当派',
-  3: '逍遥派',
-  4: '日月神教',
-  5: '明教',
-  6: '天机宫',
-  7: '全真教',
-  8: '丐帮',
-  9: '华山派',
-  10: '嵩山派',
-  11: '青城派',
-  12: '衡山派',
-  13: '恒山派',
-  14: '泰山派',
-  15: '五毒教',
-  16: '古墓派',
-  17: '血刀门',
-  18: '凌霄城',
-  19: '峨眉派',
-  20: '崆峒派',
-  21: '昆仑派',
-  22: '桃花岛',
-  23: '白驼山庄',
-  24: '六扇门',
-  25: '八卦门',
-  26: '慕容世家',
-  27: '天龙寺',
-  28: '星宿派',
-  29: '密宗',
-  30: '藏剑山庄',
-  31: '天下会',
+  0: {
+    name: '江湖',
+    internal: 2,
+  },
+  1: {
+    name: '少林派',
+    internal: 1,
+  },
+  2: {
+    name: '武当派',
+    internal: 1,
+  },
+  3: {
+    name: '逍遥派',
+    internal: 0,
+  },
+  4: {
+    name: '日月神教',
+    internal: 0,
+  },
+  5: {
+    name: '明教',
+    internal: 1,
+  },
+  6: {
+    name: '天机宫',
+    internal: 0,
+  },
+  7: {
+    name: '全真教',
+    internal: 0,
+  },
+  8: {
+    name: '丐帮',
+    internal: 1,
+  },
+  9: {
+    name: '华山派',
+    internal: 0,
+  },
+  10: {
+    name: '嵩山派',
+    internal: 0,
+  },
+  11: {
+    name: '青城派',
+    internal: 1,
+  },
+  12: {
+    name: '衡山派',
+    internal: 0,
+  },
+  13: {
+    name: '恒山派',
+    internal: 0,
+  },
+  14: {
+    name: '泰山派',
+    internal: 1,
+  },
+  15: {
+    name: '五毒教',
+    internal: 0,
+  },
+  16: {
+    name: '古墓派',
+    internal: 0,
+  },
+  17: {
+    name: '血刀门',
+    internal: 1,
+  },
+  18: {
+    name: '凌霄城',
+    internal: 0,
+  },
+  19: {
+    name: '峨眉派',
+    internal: 1,
+  },
+  20: {
+    name: '崆峒派',
+    internal: 1,
+  },
+  21: {
+    name: '昆仑派',
+    internal: 1,
+  },
+  22: {
+    name: '桃花岛',
+    internal: 0,
+  },
+  23: {
+    name: '白驼山庄',
+    internal: 0,
+  },
+  24: {
+    name: '六扇门',
+    internal: 1,
+  },
+  25: {
+    name: '八卦门',
+    internal: 0,
+  },
+  26: {
+    name: '慕容世家',
+    internal: 1,
+  },
+  27: {
+    name: '天龙寺',
+    internal: 1,
+  },
+  28: {
+    name: '星宿派',
+    internal: 0,
+  },
+  29: {
+    name: '密宗',
+    internal: 1,
+  },
+  30: {
+    name: '藏剑山庄',
+    internal: 1,
+  },
+  31: {
+    name: '天下会',
+    internal: 1,
+  },
 };
