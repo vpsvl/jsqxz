@@ -62,7 +62,7 @@ onBeforeMount(() => {
 
   .td {
     &:nth-child(1) {
-      flex: 0 0 180px;
+      flex: 0 0 120px;
     }
 
     &:nth-child(3) {

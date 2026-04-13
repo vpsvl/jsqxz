@@ -2,11 +2,19 @@ export default {
   path: '/other',
   component: () => import('@/views/layout/layout.vue'),
   name: 'other',
-  redirect: {name: 'otherState'},
+  redirect: {name: 'otherSystem'},
   meta: {
     title: '其他',
   },
   children: [
+    {
+      path: 'system',
+      component: () => import('@/views/other/system.vue'),
+      name: 'otherSystem',
+      meta: {
+        title: '系统说明',
+      },
+    },
     {
       path: 'state',
       component: () => import('@/views/other/state.vue'),

@@ -1049,7 +1049,7 @@ export default {
     sect: 14,
   },
   262: {
-    name: '磐罡掌',
+    name: '迷踪步',
     sect: 0,
   },
   263: {

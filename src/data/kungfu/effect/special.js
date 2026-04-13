@@ -377,7 +377,9 @@ export function taiXuanFanZhen(lv) {
     id: 1041,
     name: `太玄反震 Lv${lv}`,
     effect: [
-      `免疫封穴，反震${lv * 15}%的伤害，并增加攻击方封穴值，${lv * 5}%概率下回合眩晕（需激活）`,
+      '太玄反震：（需激活）',
+      `50%几率反震${lv * 15}%的伤害，并增加攻击方封穴值，${lv * 5}%概率下回合眩晕`,
+      `免疫封穴`,
     ],
   };
 }
@@ -470,9 +472,7 @@ export function tianDiDuZun(lv) {
   return {
     id: 1050,
     name: `天地独尊 Lv${lv}`,
-    effect: [
-      `攻击时触发天地失色/受到攻击时触发天地独尊，让敌方的天赋不生效`,
-    ],
+    effect: [`攻击或受到攻击时30%概率触发【天地失色】，让敌方的天赋不生效（需激活）`],
   };
 }
 
@@ -480,9 +480,7 @@ export function xuanZhiTaiYi(lv) {
   return {
     id: 1051,
     name: `玄之太一 Lv${lv}`,
-    effect: [
-      `攻击时触发上玄之气/受到攻击时触发下玄之气，让敌方的奇穴不生效`,
-    ],
+    effect: [`攻击或受到攻击时30%概率触发【玄之太一】，让敌方的奇穴不生效`],
   };
 }
 
@@ -490,9 +488,7 @@ export function taiYanShiFa(lv) {
   return {
     id: 1052,
     name: `太衍噬法 Lv${lv}`,
-    effect: [
-      `攻击时触发/受到攻击时触发太衍噬法，让敌方的秘技不生效`,
-    ],
+    effect: [`攻击或受到攻击时30%概率触发【太衍噬法】，让敌方的秘技不生效（需激活）`],
   };
 }
 
@@ -541,5 +537,13 @@ export function qiMenMingZhong(lv) {
     id: 1106,
     name: `奇门命中 Lv${lv}`,
     effect: [`奇门攻击时${lv * 20}%概率无视敌方闪避`],
+  };
+}
+
+export function miZong(lv) {
+  return {
+    id: 1107,
+    name: `迷踪 Lv${lv}`,
+    effect: [`受到攻击时${lv * 5}%概率自动移动躲避攻击`],
   };
 }

@@ -86,7 +86,7 @@ export default {
       name: '太极剑法',
       cheat: '',
       level: 4,
-      get: '倚天正先拿太极神功，张无忌回武当剧情后获得',
+      get: '1.倚天正张无忌回武当剧情后获得 2.加入武当派可学习',
       power: 1400,
       range: '米 5格',
       condition: '御剑100',
