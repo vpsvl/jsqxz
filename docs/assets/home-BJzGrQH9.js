@@ -1,4 +1,4 @@
-import{C as e,O as t,T as n,g as r,h as i}from"./index-BsEzMQw0.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-28.fix16（需重开）-----
+import{C as e,O as t,T as n,g as r,h as i}from"./index-CE3Tjb5i.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-28.fix16（需重开）-----
       1，调整一下战斗金钱的获取
       2，调整一下战斗经验，增加剧情获得的经验
       3，随机事件的NPC不再男扮女装。恢复真身。
