@@ -17,4 +17,4 @@ var e={name:`灵药`,list:[{name:`千年灵芝`,get:`
         2.获得神木王鼎、千年冰蚕、火蟾、莽牯朱蛤后，在小村药炉处使用神木王鼎炼制
         3.天龙邪拿到天书后带黑鸡慕容天龙寺战胜三兄弟 
         4.天龙拿到天书后不带段誉调查天龙寺左上房间书架战胜段思平
-      `,effect:`改变内力属性`},{name:`无极丹`,get:`周目商店出售`,effect:`可遗忘武功`},{name:`大蟠桃`,get:``,effect:`最大内力+100`},{name:`腊八粥`,get:``,effect:`最大内力+100`},{name:`好逑汤`,get:``,effect:`最大内力+20`},{name:`天山雪莲`,get:``,effect:`最大生命+100`},{name:`玉笛谁家听落梅`,get:``,effect:`最大生命+50`},{name:`叫花鸡`,get:``,effect:`最大生命+20`}]};export{e as default};
+      `,effect:`改变内力属性`},{name:`无极丹`,get:`1.周目商店随机刷出 2.刷天下第一武道会`,effect:`可遗忘武功`},{name:`大蟠桃`,get:``,effect:`最大内力+100`},{name:`腊八粥`,get:``,effect:`最大内力+100`},{name:`好逑汤`,get:``,effect:`最大内力+20`},{name:`天山雪莲`,get:``,effect:`最大生命+100`},{name:`玉笛谁家听落梅`,get:``,effect:`最大生命+50`},{name:`叫花鸡`,get:``,effect:`最大生命+20`}]};export{e as default};

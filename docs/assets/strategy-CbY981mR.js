@@ -1,4 +1,4 @@
-import{A as e,C as t,M as n,O as r,P as i,T as a,g as o,h as s}from"./index-CE3Tjb5i.js";var c={name:`攻略`,exclusive:``,list:[{id:`shi`,name:`势`,level:4,content:`
+import{A as e,C as t,M as n,O as r,P as i,T as a,g as o,h as s}from"./index-BnqCdHhW.js";var c={name:`攻略`,exclusive:``,list:[{id:`shi`,name:`势`,level:4,content:`
 适用于100周 地狱 开局 攻略  （适合新手，低难度 按照这个开局就随便玩）
 
 开局 ：尽量选择阴内 ，前期阴内的经脉更强  ，除非是开局需要练阳内的武功
