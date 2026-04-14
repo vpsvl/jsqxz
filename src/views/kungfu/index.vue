@@ -36,7 +36,7 @@
         <div class="tr">
           <div class="td">所属门派</div>
           <div class="td">
-            {{ kungfuSectMap[info.sect]?.name ?? '' }}
+            {{ kungfuSectMap[info.sect] ?? '' }}
           </div>
         </div>
         <div class="tr">

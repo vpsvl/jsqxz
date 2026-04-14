@@ -44,16 +44,7 @@ provide('state', state);
 // import {kungfuSectMap} from '@/data/map';
 
 // function toArr() {
-//   const arr = data.list.map((item) => {
-//     const {sect, level} = item;
-//     if (level > 2 && sect > 0) {
-//       item.internal = kungfuSectMap[sect].internal;
-//     } else {
-//       let internalType = Number.parseInt(item.internal);
-//       item.internal = Number.isNaN(internalType) ? '' : internalType;
-//     }
-//     return item;
-//   });
+//   const arr = data.list;
 //   arr.sort((a, b) => b.level - a.level);
 //   arr.sort((a, b) => {
 //     if (a.level === b.level) {
@@ -124,7 +115,6 @@ provide('state', state);
 // }
 //
 // toPinyin(data);
-
 
 </script>
 

@@ -124,7 +124,7 @@ export function daZongShi(lv) {
   return {
     id: 813,
     name: `大宗师 Lv${lv}`,
-    effect: [`受到伤害时${lv * 25}%概率${lv}时序恢复生命值2点、内力值4点`],
+    effect: [`受到伤害时${lv * 6}%概率时序恢复1%生命值、1%内力值、1点体力，效果持续${lv * 2}时序`],
   };
 }
 

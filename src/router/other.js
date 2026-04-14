@@ -16,6 +16,14 @@ export default {
       },
     },
     {
+      path: 'meridian',
+      component: () => import('@/views/other/meridian.vue'),
+      name: 'otherMeridian',
+      meta: {
+        title: '经脉',
+      },
+    },
+    {
       path: 'state',
       component: () => import('@/views/other/state.vue'),
       name: 'otherState',
@@ -29,14 +37,6 @@ export default {
       name: 'otherKeymap',
       meta: {
         title: '快捷键',
-      },
-    },
-    {
-      path: 'meridian',
-      component: () => import('@/views/other/meridian.vue'),
-      name: 'otherMeridian',
-      meta: {
-        title: '经脉',
       },
     },
   ],
