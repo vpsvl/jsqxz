@@ -133,7 +133,7 @@ export default {
       name: '阴阳无极功',
       cheat: '',
       level: 4,
-      get: '',
+      get: '书剑南少林大战后获得',
       power: '生命1950 气防1550 格挡44 回气2',
       attack: [],
       condition: '',
@@ -325,7 +325,7 @@ export default {
         'wuShenZhiLi',
         'tianDiDuZun',
       ],
-      peculiar: ['yiJinDuanGu', 'fuHuLuoHanQuan', 'daMoZhang'],
+      peculiar: ['yiJinDuanGu'],
       inherit: ['shaoLinToYiJin'],
     },
     {
@@ -440,7 +440,7 @@ export default {
       condition: '',
       addition: '防御+2',
       sect: 7,
-      internal: 0,
+      internal: 1,
       initiative: [
         'mingGui',
         'zhiXue',
@@ -641,7 +641,7 @@ export default {
       condition: '总兵器值≥120 资质≥80',
       addition: '攻击+1 拳掌+1 指法+1 御剑+1 耍刀+1 特殊+1',
       sect: 26,
-      internal: 1,
+      internal: '',
       initiative: [
         'shiXuHuiNei',
         'shiXuHuiTi',
@@ -851,7 +851,7 @@ export default {
       condition: '内力≥1100',
       addition: '防御+2 内力上限+20',
       sect: 7,
-      internal: 0,
+      internal: 1,
       initiative: [
         'mingGui',
         'poLi2',

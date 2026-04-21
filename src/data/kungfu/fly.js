@@ -108,7 +108,7 @@ export default {
       condition: '',
       addition: '轻功+2',
       sect: 7,
-      internal: 0,
+      internal: 1,
       initiative: [
         'shanBiZengQiang',
         'mingZhongZengQiang',
@@ -156,7 +156,7 @@ export default {
       name: '逍遥游',
       level: 4,
       cheat: '',
-      get: '1.天龙邪丐帮剧情后触发第二次打狗阵胜利后获得 2.加入丐帮可学习',
+      get: '1.天龙邪丐帮剧情后触发第二次打狗阵胜利后获得 2.射雕正洪七公居剧情后获得 3.加入丐帮可学习',
       power: '命中360 闪避380',
       condition: '',
       addition: '攻击+1 轻功+1 暗器+1',
