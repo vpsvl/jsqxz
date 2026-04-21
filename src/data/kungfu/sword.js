@@ -94,11 +94,7 @@ export default {
       addition: '攻击+2 防御+2 御剑+4',
       sect: 2,
       peculiar: [
-        {
-          name: '开太极',
-          condition: '主运太极神功，怒气值=100，太极蓄力值>=500，使用太极拳或太极剑法',
-          effect: ['消耗自身10%体力，10%内力对九格范围目标造成大量伤害'],
-        },
+        'kaiTaiJi',
         'taiJiAoYi',
         'yiRouKeGang',
       ],

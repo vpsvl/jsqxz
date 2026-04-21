@@ -527,7 +527,7 @@ export default {
         'taiJiZhiXing',
         'taiYanShiFa',
       ],
-      peculiar: [],
+      peculiar: ['kaiTaiJi'],
       inherit: ['wuDangToTaiJi'],
     },
     {
@@ -1297,7 +1297,7 @@ export default {
       name: '峨眉九阳功',
       cheat: '',
       level: 2,
-      get: '倚天线战胜灭绝',
+      get: '倚天正战胜灭绝',
       power: '生命1100 气防900 格挡22 回气1',
       attack: [],
       condition: '非阴内',
