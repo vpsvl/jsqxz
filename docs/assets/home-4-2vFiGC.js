@@ -1,4 +1,11 @@
-import{C as e,O as t,T as n,g as r,h as i}from"./index-BYhO-Mju.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-11.fix17（要重开）-----
+import{C as e,O as t,T as n,g as r,h as i}from"./index-D1DXPzy7.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-11.fix18 -----
+      1，修复传送可以闪退的问题
+      2，修复无武功图标闪退的问题
+      3，修复五毒教何红药天赋闪退的问题
+      4，书剑南少林大战增加武功【阴阳无极功】奖励
+      5，射正洪七公居奖励【逍遥游】，射正相亲后回蒙古包触发剧情战梅超风后奖励【妙手空空】【疯魔杖法】
+
+      -------正式版V2.5-----2026-4-11.fix17（要重开）-----
       1，修复孩子抓周选择天赋会跳出的问题
       2，选择天赋时，增加天赋需要的天赋点显示
       3，调整人物生命和实战对特效概率的增减幅（低血最多+5，满怒+5，满实战最多+5，低内最多-5，低体最多-5，）
