@@ -1,4 +1,15 @@
-import{C as e,O as t,T as n,g as r,h as i}from"./index-D1DXPzy7.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-11.fix18 -----
+import{C as e,O as t,T as n,g as r,h as i}from"./index-BGmsDd5S.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-23.fix21 -----
+      1，吸星 北冥 内属变为无
+      2，取消散功时序掉内
+      4，内功跟外功内力性质不符时，减少20%伤害，天赋外功不受此影响
+      5，黯然销魂掌内力性质改为阴，调整了【黯然销魂掌】的招式效果
+      6，优化了【太极奥义】，【真太极奥义】，【太极图】（具体看秘技【太极奥义的说明】），修正【太极宗师】天赋描述的错误
+      7，修复北冥神功吸怒跳出
+      8，修复用毒上限在切换人物天赋后异常的问题
+      9，修复洗武功有时会跳出的问题，修复洗武功后武功招式领悟会错位的问题
+      10，修复剧情任务UI会跳出的问题
+
+      -------正式版V2.5-----2026-4-11.fix18 -----
       1，修复传送可以闪退的问题
       2，修复无武功图标闪退的问题
       3，修复五毒教何红药天赋闪退的问题
