@@ -40,7 +40,7 @@ export default {
       range: '米 5格',
       condition: '拳掌200',
       addition: '攻击+3 防御+1 拳掌+5',
-      internal: 1,
+      internal: 0,
       sect: 16,
       peculiar: [
         {
@@ -48,6 +48,35 @@ export default {
           condition:
             '血量低于70%或者内伤大于30时，概率触发（血量越低，内伤越高，概率越高），满足条件时暴怒必定触发',
           effect: ['攻击范围变成面攻，无误伤，必破气防'],
+        },
+      ],
+      inherit: [],
+      attack: [5],
+    },
+    {
+      id: 179,
+      name: '碧海惊涛掌',
+      cheat: '',
+      level: 4,
+      get: '加入天机宫可学习',
+      power: 1400,
+      range: '米 4格',
+      condition: '拳掌100',
+      addition: '攻击+2 轻功+2 拳掌+5',
+      internal: 0,
+      sect: 6,
+      peculiar: [
+        {
+          name: '周流六虚',
+          condition: '攻击时40%概率触发',
+          effect: [
+            '陷空力：伤害+50%一回合',
+            '生灭道：攻击后霸体一回合',
+            '旋涡击：增加一次连击',
+            '阴阳流：必冰封必灼烧',
+            '滴水劲：破防+50%',
+            '霹雳木：附加气攻值5%的伤害',
+          ],
         },
       ],
       inherit: [],
@@ -161,10 +190,7 @@ export default {
       addition: '攻击+1 拳掌+3',
       internal: 1,
       sect: 2,
-      peculiar: [
-        'kaiTaiJi',
-        'taiJiAoYi',
-      ],
+      peculiar: ['kaiTaiJi', 'taiJiAoYi'],
       inherit: [],
       attack: [5],
     },

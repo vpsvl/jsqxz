@@ -666,7 +666,7 @@ export default {
       condition: '资质≥50',
       addition: '内力硬上限+300（无法与吸星大法叠加）',
       sect: 3,
-      internal: 0,
+      internal: '',
       initiative: [
         'huiMing',
         'mieHuo',
@@ -1026,7 +1026,7 @@ export default {
       condition: '',
       addition: '内力硬上限+300（无法与北冥神功叠加）',
       sect: 4,
-      internal: 0,
+      internal: '',
       initiative: ['chongXue', 'xiNeiBeiDong', 'xiNeiZhuDong', 'xiTiZhuDong', 'sanGong', 'gangTi'],
       peculiar: ['wanXiangTianYin'],
       inherit: [],
