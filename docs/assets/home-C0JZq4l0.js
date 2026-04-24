@@ -1,4 +1,9 @@
-import{C as e,O as t,T as n,g as r,h as i}from"./index-BGmsDd5S.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-23.fix21 -----
+import{C as e,O as t,T as n,g as r,h as i}from"./index-BRPdA64Y.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-23.fix22 -----
+      1，修复一些跳出
+      2，修复人物洗武功后招式领悟错位
+      3，修复手动战斗可无限行动
+
+      -------正式版V2.5-----2026-4-23.fix21 -----
       1，吸星 北冥 内属变为无
       2，取消散功时序掉内
       4，内功跟外功内力性质不符时，减少20%伤害，天赋外功不受此影响
@@ -8,6 +13,22 @@ import{C as e,O as t,T as n,g as r,h as i}from"./index-BGmsDd5S.js";import{t as 
       8，修复用毒上限在切换人物天赋后异常的问题
       9，修复洗武功有时会跳出的问题，修复洗武功后武功招式领悟会错位的问题
       10，修复剧情任务UI会跳出的问题
+
+      -------正式版V2.5-----2026-4-22.fix20 -----
+      1，NPC不再会刷在要经过出口的空地上
+      2，修复镜像与我方共用血量的问题
+      3，修复其他门派掌门弟子在战斗不叛变的问题
+      4，增加人物修炼经验上限，不再限于60000
+      5，优化【刀剑归真】和【胡刀极意】优化触发刀剑归真
+      6，优化生孩子的天赋奖励，不再随机，改为自选（两个低级或一个高级）
+
+      -------正式版V2.5-----2026-4-21.fix19 -----
+      1，调整心魔不再自动选择最优武功装备
+      2，修复随机事件的NPC清除异常的问题
+      3，修复生孩子时选择天赋跳出的问题
+      4，居复正常对话
+      5，恢复一阳指对六脉大招的概率加成+10
+      6，限制六脉大招【剑煌镜影】的连击上限为6，倚天剑连击的上限为4
 
       -------正式版V2.5-----2026-4-11.fix18 -----
       1，修复传送可以闪退的问题
