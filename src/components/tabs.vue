@@ -44,16 +44,15 @@ const info = computed(() => {
   const item = {...props.list[active.value]};
   if (props.type === 'kungfu') {
     const {initiative, level, peculiar, inherit, attack} = item;
-    if (Array.isArray(initiative)) {
-      const initiativeArr = [];
-      for (let key of initiative) {
-        if (typeof internalMap[key] === 'function') {
-          initiativeArr.push(internalMap[key](level));
-        }
+    // 内功主运特效
+    const initiativeArr = [];
+    for (let key of initiative) {
+      if (typeof internalMap[key] === 'function') {
+        initiativeArr.push(internalMap[key](level));
       }
-      item.initiative = initiativeArr;
     }
-
+    item.initiative = initiativeArr;
+    // 秘技
     const peculiarArr = [];
     for (let key of peculiar) {
       if (typeof key === 'string') {
@@ -65,7 +64,7 @@ const info = computed(() => {
       peculiarArr.push(key);
     }
     item.peculiar = peculiarArr;
-
+    // 一脉相承
     const inheritArr = [];
     for (let key of inherit) {
       if (inheritMap[key]) {
@@ -73,7 +72,7 @@ const info = computed(() => {
       }
     }
     item.inherit = inheritArr;
-
+    // 外功攻击特效
     if (Array.isArray(attack)) {
       const attackArr = [];
       for (let key of attack) {

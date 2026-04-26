@@ -36,7 +36,7 @@ export default {
       power: '生命2250 气防1850 格挡44 回气2',
       attack: [],
       condition: '内力≥4000',
-      addition: '攻击+4 防御+4 轻功+4 武常+1',
+      addition: '攻击+4 防御+4 轻功+4',
       sect: 0,
       internal: 1,
       initiative: [
@@ -307,7 +307,7 @@ export default {
       name: '易筋神功',
       cheat: '易筋经',
       level: 4,
-      get: '1.获得一苇渡江后，查看扫地僧右侧书架，达摩半血或300时序后获得 2.加入少林派可学习',
+      get: '1.获得一苇渡江后，调查扫地僧右侧书架获得 2.加入少林派可学习',
       power: '生命1800 气防1400 格挡44 回气2',
       attack: [],
       condition: '内力≥2000',
