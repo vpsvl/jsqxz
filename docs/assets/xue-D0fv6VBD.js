@@ -1,0 +1,1 @@
+var e={name:`雪山飞狐`,list:[{id:`huYiDao`,name:`胡一刀`,talent:[633,9794]},{id:`huFuRen`,name:`胡夫人`,talent:[738,9924]},{id:`miaoRuoLan`,name:`苗若兰`,talent:[545]},{id:`shangJianMing`,name:`商剑鸣`,talent:[722,9937]}]};export{e as default};

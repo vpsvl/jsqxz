@@ -1,0 +1,1 @@
+var e={name:`白马啸西风`,list:[{id:`liWenXiu`,name:`李文秀`,talent:[590,9850]},{id:`waErLaQi`,name:`瓦耳拉齐`,talent:[138]},{id:`chenDaHai`,name:`陈达海`,talent:[137]}]};export{e as default};
