@@ -1,4 +1,4 @@
-import{C as e,O as t,T as n,g as r,h as i}from"./index-ThjefTt6.js";import{t as a}from"./plugin-vue-export-helper-C5Hm-YUl.js";var o={};function s(a,o){let s=n(`v-scroll`);return e(),r(s,{class:`home-wrap`},{default:t(()=>[...o[0]||=[i(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),i(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-23.fix23 -----
+import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-BnGPlyti.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-23.fix23 -----
       1，修复太监人物的性别
       2，恢复日月神教战东方出战人物为东方不败，新增葵花尊者挑战，在战胜东方不败后出现
       4，修复门派学武功可以跨层级一脉相承

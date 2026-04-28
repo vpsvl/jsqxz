@@ -1,4 +1,4 @@
-import{A as e,C as t,M as n,O as r,P as i,T as a,g as o,h as s}from"./index-ThjefTt6.js";var c={name:`攻略`,exclusive:``,list:[{id:`shi`,name:`势`,level:4,content:`
+import{F as e,M as t,O as n,at as r,c as i,rt as a,s as o,w as s}from"./runtime-core.esm-bundler-Cim6DsoC.js";var c={name:`攻略`,exclusive:``,list:[{id:`shi`,name:`势`,level:4,content:`
 适用于100周 地狱 开局 攻略  （适合新手，低难度 按照这个开局就随便玩）
 
 开局 ：尽量选择阴内 ，前期阴内的经脉更强  ，除非是开局需要练阳内的武功
@@ -66,5 +66,5 @@ TOP   白驹过隙（ 几乎必选）
 18. 凤阳 帮胡青牛 打金花婆婆，
 之后回家收胡青牛 王难姑  ，练毒经可以点毒经脉，毒经脉一般人物只要点100武学点的就可以了。 医书基本不考虑练，但是包里有胡青牛医书 可以在家里练出 黑玉断续膏  。 所有药材都练黑玉 。
 19.	此时 已经已初步成型，就要考虑去挑战豪侠，宗师，  目前而言此时可以考虑 刷点钱20000两龙门客栈买地灵丹转阳内，神雕邪 重阳宫 拿到龙象般若功，这是中期的神级内功。
-      `}]},l={class:`pre-log`,style:{"font-size":`16px`}},u={__name:`strategy`,setup(u){let d=e(c);return(e,c)=>{let u=a(`v-tabs`);return t(),o(u,{list:d.value.list,exclusive:d.value.exclusive},{tab:r(({tab:e})=>[s(`span`,{class:n({[`level-${e.level}`]:e.level})},i(e.name),3)]),title:r(({info:e})=>[c[0]||=s(`span`,null,`作者:`,-1),s(`span`,{class:n({[`level-${e.level}`]:e.level})},i(e.name),3)]),default:r(({info:e})=>[s(`pre`,l,`        `+i(e.content)+`
+      `}]},l={class:`pre-log`,style:{"font-size":`16px`}},u={__name:`strategy`,setup(u){let d=e(c);return(e,c)=>{let u=n(`v-tabs`);return s(),i(u,{list:d.value.list,exclusive:d.value.exclusive},{tab:t(({tab:e})=>[o(`span`,{class:a({[`level-${e.level}`]:e.level})},r(e.name),3)]),title:t(({info:e})=>[c[0]||=o(`span`,null,`作者:`,-1),o(`span`,{class:a({[`level-${e.level}`]:e.level})},r(e.name),3)]),default:t(({info:e})=>[o(`pre`,l,`        `+r(e.content)+`
       `,1)]),_:1},8,[`list`,`exclusive`])}}};export{u as default};
