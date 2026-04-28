@@ -36,7 +36,7 @@ export default defineConfig(({command}) => {
     },
     build: {
       outDir: 'docs',
-      rollupOptions: {
+      rolldownOptions: {
         output: {
           sanitizeFileName(name) {
             const match = DRIVE_LETTER_REGEX.exec(name);

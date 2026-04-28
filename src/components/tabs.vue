@@ -45,33 +45,39 @@ const info = computed(() => {
   if (props.type === 'kungfu') {
     const {initiative, level, peculiar, inherit, attack} = item;
     // 内功主运特效
-    const initiativeArr = [];
-    for (let key of initiative) {
-      if (typeof internalMap[key] === 'function') {
-        initiativeArr.push(internalMap[key](level));
-      }
-    }
-    item.initiative = initiativeArr;
-    // 秘技
-    const peculiarArr = [];
-    for (let key of peculiar) {
-      if (typeof key === 'string') {
-        if (stuntMap[key]) {
-          peculiarArr.push(stuntMap[key]);
+    if (Array.isArray(initiative)) {
+      const initiativeArr = [];
+      for (let key of initiative) {
+        if (typeof internalMap[key] === 'function') {
+          initiativeArr.push(internalMap[key](level));
         }
-        continue;
       }
-      peculiarArr.push(key);
+      item.initiative = initiativeArr;
     }
-    item.peculiar = peculiarArr;
+    // 秘技
+    if (Array.isArray(peculiar)) {
+      const peculiarArr = [];
+      for (let key of peculiar) {
+        if (typeof key === 'string') {
+          if (stuntMap[key]) {
+            peculiarArr.push(stuntMap[key]);
+          }
+          continue;
+        }
+        peculiarArr.push(key);
+      }
+      item.peculiar = peculiarArr;
+    }
     // 一脉相承
-    const inheritArr = [];
-    for (let key of inherit) {
-      if (inheritMap[key]) {
-        inheritArr.push(inheritMap[key]);
+    if (Array.isArray(inherit)) {
+      const inheritArr = [];
+      for (let key of inherit) {
+        if (inheritMap[key]) {
+          inheritArr.push(inheritMap[key]);
+        }
       }
+      item.inherit = inheritArr;
     }
-    item.inherit = inheritArr;
     // 外功攻击特效
     if (Array.isArray(attack)) {
       const attackArr = [];

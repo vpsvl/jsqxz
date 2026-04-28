@@ -1,11 +1,13 @@
 import {defineConfig} from 'eslint/config';
 import pluginVue from 'eslint-plugin-vue';
 import stylistic from '@stylistic/eslint-plugin';
+import vueParser from 'vue-eslint-parser';
 
 export default defineConfig([
   {
     languageOptions: {
       ecmaVersion: 'latest',
+      parser: vueParser,
     },
     extends: ['vue/essential'],
     plugins: {

@@ -1,7 +1,7 @@
 {
   "name": "jsqxz",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,19 +9,20 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@byeyb/vite-plugin-eslint": "^1.0.0",
-    "@stylistic/eslint-plugin": "^5.7.1",
-    "@vitejs/plugin-vue": "^6.0.3",
-    "eslint": "^9.39.2",
-    "eslint-plugin-vue": "^10.7.0",
-    "less": "^4.5.1",
+    "@byeyb/vite-plugin-eslint": "^1.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "eslint": "^10.2.1",
+    "eslint-plugin-vue": "^10.9.0",
+    "less": "^4.6.4",
     "pinyin": "^4.0.0",
     "postcss-less": "^6.0.0",
-    "prettier": "^3.8.1",
-    "stylelint": "^17.0.0",
-    "vite": "^8.0.0-beta.9",
-    "vite-plugin-stylelint": "^6.0.4",
-    "vue": "^3.5.27",
-    "vue-router": "^4.6.4"
+    "prettier": "^3.8.3",
+    "stylelint": "^17.8.0",
+    "vite": "^8.0.10",
+    "vite-plugin-stylelint": "^6.1.0",
+    "vue": "^3.5.33",
+    "vue-eslint-parser": "^10.4.0",
+    "vue-router": "^5.0.6"
   }
 }
