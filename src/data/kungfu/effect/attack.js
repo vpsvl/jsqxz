@@ -250,7 +250,7 @@ export function yiJinDuanGu(lv) {
   return {
     id: 930,
     name: `罗汉伏魔 Lv${lv}`,
-    effect: [`攻击时根据消耗的内力值${lv * 50}%增加气攻和伤害`],
+    effect: [`攻击时提高(消耗内力×2)点伤害，追加(当前内力×攻击消耗内力/2000)点气攻`],
   };
 }
 
