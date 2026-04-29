@@ -17,20 +17,20 @@ export default {
   path: '/process',
   component: () => import('@/views/layout/layout.vue'),
   name: 'process',
-  redirect: {name: 'processStrategy'},
+  redirect: {name: 'processStart'},
   meta: {
     title: '流程',
   },
   children: [
-    {
-      path: 'strategy',
-      component: () => import('@/views/process/strategy.vue'),
-      name: 'processStrategy',
-      meta: {
-        title: '群员攻略',
-        type: 'strategy',
-      },
-    },
+    // {
+    //   path: 'strategy',
+    //   component: () => import('@/views/process/strategy.vue'),
+    //   name: 'processStrategy',
+    //   meta: {
+    //     title: '群员攻略',
+    //     type: 'strategy',
+    //   },
+    // },
     {
       path: 'start',
       component: () => import('@/views/process/table.vue'),

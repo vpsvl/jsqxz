@@ -29,12 +29,20 @@ for (let key in shopMap) {
 export default {
   path: '/goods',
   component: () => import('@/views/layout/layout.vue'),
-  redirect: {name: 'goodsEquipmentFist'},
+  redirect: {name: 'goodsDrug'},
   name: 'goods',
   meta: {
     title: '物品',
   },
   children: [
+    {
+      path: 'drug',
+      component: () => import('@/views/goods/drug.vue'),
+      name: 'goodsDrug',
+      meta: {
+        title: '丹药',
+      },
+    },
     {
       path: 'equipment',
       component: () => import('@/views/layout/router-view.vue'),
@@ -44,14 +52,6 @@ export default {
         title: '装备',
       },
       children: equipmentChildren,
-    },
-    {
-      path: 'drug',
-      component: () => import('@/views/goods/drug.vue'),
-      name: 'goodsDrug',
-      meta: {
-        title: '丹药',
-      },
     },
     {
       path: 'shop',
