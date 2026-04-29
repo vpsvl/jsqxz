@@ -1,1 +1,0 @@
-import{F as e,O as t,c as n,w as r}from"./runtime-core.esm-bundler-Cim6DsoC.js";import i from"./drug-DftviCGX.js";var a={__name:`drug`,setup(a){let o=[{key:`name`,name:`名称`},{key:`effect`,name:`效果`},{key:`get`,name:`获取`}],s=e(i.list);return(e,i)=>{let a=t(`v-table`);return r(),n(a,{class:`v-table-drug`,cols:o,data:s.value},null,8,[`data`])}}};export{a as default};
