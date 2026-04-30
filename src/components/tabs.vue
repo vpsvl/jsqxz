@@ -26,7 +26,7 @@ import internalMap from '@/data/kungfu/effect/internal';
 import outMap from '@/data/kungfu/effect/out';
 import stuntMap from '@/data/kungfu/stunt';
 import inheritMap from '@/data/kungfu/inherit';
-import getAttr from '@/data/kungfu/effect/attr';
+import {getAttr} from '@/data/kungfu/effect/attr';
 import {useRoute} from 'vue-router';
 
 const props = defineProps({
@@ -51,8 +51,8 @@ const info = computed(() => {
     const {type} = route.meta;
     // 获取属性加成
     item.addition = getAttr({
-      kungfuType: type,
-      kungfuLevel: level,
+      type,
+      level,
       internal,
       other: addition,
     });

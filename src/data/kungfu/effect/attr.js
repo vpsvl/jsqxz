@@ -60,16 +60,16 @@ const kungfuTypeMap = {
 };
 
 // 获取武功修炼加成
-export default function getAttr({kungfuType, kungfuLevel, internal = '', other = ''}) {
+export function getAttr({type, level, internal = '', other = ''}) {
   // 直接设置三维
   if (/攻击|防御|轻功/.test(other)) {
     return other;
   }
   let attr = '';
-  // 获取属性基础类型
-  if (attrTypeMap[kungfuType]?.[kungfuLevel]) {
-    let {atk, def, spd} = attrTypeMap[kungfuType][kungfuLevel];
-    // 内力属性修正
+  // 获取各类型武功基础属性
+  if (attrTypeMap[type]?.[level]) {
+    let {atk, def, spd} = attrTypeMap[type][level];
+    // 内力阴阳修正属性
     if (attrInternalCorrect[internal]) {
       const {atk: atkCorrect, def: defCorrect, spd: spdCorrect} = attrInternalCorrect[internal];
       atk += atkCorrect;
@@ -87,14 +87,13 @@ export default function getAttr({kungfuType, kungfuLevel, internal = '', other =
     }
   }
   // 系数加成
-  if (kungfuTypeMap[kungfuType]) {
-    const num = kungfuLevel > 1 ? 2 * kungfuLevel - 1 : 2;
-    attr += `${kungfuTypeMap[kungfuType]}+${num} `;
+  if (kungfuTypeMap[type]) {
+    const num = Math.max(2 * level - 1, 2);
+    attr += `${kungfuTypeMap[type]}+${num} `;
   }
   // 其他属性
   if (other) {
     attr += other;
   }
-
   return attr;
 }
