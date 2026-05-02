@@ -498,6 +498,18 @@ export function taiYanShiFa(lv) {
   };
 }
 
+export function fenJingNiMai(lv) {
+  return {
+    id: 1053,
+    name: `焚经逆脉 Lv${lv}`,
+    effect: [
+      `攻击或受到攻击时触发【焚经逆脉】，免疫封经脉奇穴，怒气值>=50免疫控制`,
+      '暴怒后概率触发【疯怒不息】怒气值保留20~50点',
+      `（华山之巅帮欧阳锋战胜洪七公后可激活）`,
+    ],
+  };
+}
+
 export function taYunZhuiFeng(lv) {
   return {
     id: 1101,

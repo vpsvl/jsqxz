@@ -26,7 +26,7 @@ import internalMap from '@/data/kungfu/effect/internal';
 import outMap from '@/data/kungfu/effect/out';
 import stuntMap from '@/data/kungfu/stunt';
 import inheritMap from '@/data/kungfu/inherit';
-import {getAttr} from '@/data/kungfu/effect/attr';
+import {getAttr, getCondition} from '@/data/kungfu/effect/attr';
 import {useRoute} from 'vue-router';
 
 const props = defineProps({
@@ -47,7 +47,7 @@ const active = ref(0);
 const info = computed(() => {
   const item = {...props.list[active.value]};
   if (props.type === 'kungfu') {
-    const {initiative, level, peculiar, inherit, attack, addition, internal} = item;
+    const {initiative, level, peculiar, inherit, attack, addition, internal, condition} = item;
     const {type} = route.meta;
     // 获取属性加成
     item.addition = getAttr({
@@ -55,6 +55,13 @@ const info = computed(() => {
       level,
       internal,
       other: addition,
+    });
+    // 获取学习条件
+    item.condition = getCondition({
+      type,
+      level,
+      internal,
+      other: condition,
     });
     // 内功主运特效
     if (Array.isArray(initiative)) {

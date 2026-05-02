@@ -42,8 +42,6 @@
         <div class="tr">
           <div class="td">修炼条件</div>
           <div class="td">
-            <span v-if="info.internal === 0">非阳内&nbsp;</span>
-            <span v-if="info.internal === 1">非阴内&nbsp;</span>
             <span>{{ info.condition }}</span>
           </div>
         </div>
@@ -51,7 +49,6 @@
           <div class="td">每级加成</div>
           <div class="td">
             <span>{{ info.addition }}</span>
-            <span v-if="info.internal === '2'">&nbsp;调和内力属性</span>
           </div>
         </div>
         <div class="tr">
