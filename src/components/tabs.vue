@@ -22,11 +22,11 @@
 
 <script setup>
 import {computed, ref, watch} from 'vue';
-import internalMap from '@/data/kungfu/effect/internal';
-import outMap from '@/data/kungfu/effect/out';
+import * as internalMap from '@/data/kungfu/effect/internal';
+import * as outMap from '@/data/kungfu/effect/out';
 import stuntMap from '@/data/kungfu/stunt';
 import inheritMap from '@/data/kungfu/inherit';
-import {getAttr, getCondition} from '@/data/kungfu/effect/attr';
+import {getAttr, getCondition, getPower, getRange} from '@/data/kungfu/effect/attr';
 import {useRoute} from 'vue-router';
 
 const props = defineProps({
@@ -47,7 +47,18 @@ const active = ref(0);
 const info = computed(() => {
   const item = {...props.list[active.value]};
   if (props.type === 'kungfu') {
-    const {initiative, level, peculiar, inherit, attack, addition, internal, condition} = item;
+    const {
+      initiative,
+      level,
+      peculiar,
+      inherit,
+      attack,
+      addition,
+      internal,
+      condition,
+      power,
+      range,
+    } = item;
     const {type} = route.meta;
     // 获取属性加成
     item.addition = getAttr({
@@ -62,6 +73,19 @@ const info = computed(() => {
       level,
       internal,
       other: condition,
+    });
+    // 威力
+    item.power = getPower({
+      type,
+      level,
+      internal,
+      other: power,
+    });
+    // 攻击范围
+    item.range = getRange({
+      type,
+      level,
+      other: range,
     });
     // 内功主运特效
     if (Array.isArray(initiative)) {
@@ -100,11 +124,11 @@ const info = computed(() => {
     // 外功攻击特效
     if (Array.isArray(attack)) {
       const attackArr = [];
-      for (let key of attack) {
-        if (outMap[key]) {
-          attackArr.push(outMap[key].name);
-        }
-      }
+      // for (let key of attack) {
+      //   if (outMap[key]) {
+      //     attackArr.push(outMap[key].name);
+      //   }
+      // }
       item.attack = attackArr;
     }
   }

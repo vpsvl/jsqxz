@@ -46,8 +46,8 @@ const attrTypeMap = {
 
 // 阴/阳武功属性修正
 const attrInternalCorrect = {
-  0: {atk: 1, def: 0, spd: 0},
-  1: {atk: 0, def: 1, spd: 0},
+  0: {atk: 2, def: -1, spd: 0},
+  1: {atk: -1, def: 2, spd: 0},
 };
 
 // 外功需要加系数
@@ -119,7 +119,7 @@ const flyConditionMap = {
   1: 100,
   2: 200,
   3: 300,
-  4: 500,
+  4: 400,
 };
 
 // 获取学习秘籍条件
@@ -135,10 +135,16 @@ export function getCondition({type, level, internal = '', other = ''}) {
   }
   if (outTypeMap[type]) {
     // 外功学习系数
-    condition += `${outTypeMap[type]}${outConditionMap[level]} `;
+    const outConditionMap = {1: 20, 2: 50, 3: 100, 4: 150};
+    const outConditionGap = {1: 0, 2: 30, 3: 60, 4: 170};
+    let outCondition = 20;
+    if (level > 1) {
+      outCondition = `(${outConditionMap[level]}+${outConditionGap[level]}×周目数÷100)`;
+    }
+    condition += `${outTypeMap[type]}${outCondition} `;
   } else if (type === 'internal') {
     // 内功学习条件
-    condition += `内力≥${internalConditionMap[level]} `;
+    condition += `内力${internalConditionMap[level]} `;
   } else if (type === 'fly') {
     // 轻功学习条件
     condition += `轻功${flyConditionMap[level]} `;
@@ -151,68 +157,72 @@ export function getCondition({type, level, internal = '', other = ''}) {
 }
 
 // 外功威力
-const outPowerMap = {
-  // 初阶
-  1: {
-    1: {power: 100, moveRange: 1, hurtRange: 1},
-    2: {power: 133, moveRange: 1, hurtRange: 1},
-    3: {power: 166, moveRange: 2, hurtRange: 1},
-    4: {power: 200, moveRange: 2, hurtRange: 1},
-    5: {power: 233, moveRange: 2, hurtRange: 1},
-    6: {power: 266, moveRange: 2, hurtRange: 1},
-    7: {power: 300, moveRange: 2, hurtRange: 2},
-    8: {power: 333, moveRange: 2, hurtRange: 2},
-    9: {power: 366, moveRange: 2, hurtRange: 2},
-    10: {power: 400, moveRange: 2, hurtRange: 2},
+const outPowerMap = {1: 440, 2: 880, 3: 1320, 4: 1760};
+
+// 获取武功威力
+export function getPower({type, level, internal, other = ''}) {
+  // 内功/轻功不做处理
+  if (!outTypeMap[type]) {
+    return other;
+  }
+  other = Number.parseInt(other);
+  if (Number.isNaN(other)) {
+    other = 0;
+  }
+  if (outPowerMap[level]) {
+    return outPowerMap[level] + other;
+  }
+  return '';
+}
+
+// 攻击范围
+const rangeMap = {
+  fist: {
+    1: {shape: 'X', move: 2, width: 5, height: 5},
+    2: {shape: 'X', move: 2, width: 5, height: 5},
+    3: {shape: 'X', move: 3, width: 5, height: 5},
+    4: {shape: 'X', move: 4, width: 5, height: 5},
   },
-  // 中阶
-  2: {
-    1: {power: 200, moveRange: 1, hurtRange: 1},
-    2: {power: 266, moveRange: 1, hurtRange: 1},
-    3: {power: 333, moveRange: 2, hurtRange: 1},
-    4: {power: 400, moveRange: 2, hurtRange: 1},
-    5: {power: 466, moveRange: 2, hurtRange: 1},
-    6: {power: 533, moveRange: 2, hurtRange: 1},
-    7: {power: 600, moveRange: 2, hurtRange: 2},
-    8: {power: 666, moveRange: 2, hurtRange: 2},
-    9: {power: 733, moveRange: 2, hurtRange: 2},
-    10: {power: 800, moveRange: 2, hurtRange: 2},
+  finger: {
+    1: {shape: '«', move: 2, width: 3, height: 6},
+    2: {shape: '«', move: 2, width: 3, height: 6},
+    3: {shape: '«', move: 3, width: 3, height: 7},
+    4: {shape: '«', move: 4, width: 3, height: 8},
   },
-  // 高阶
-  3: {
-    1: {power: 300, moveRange: 1, hurtRange: 1},
-    2: {power: 400, moveRange: 1, hurtRange: 1},
-    3: {power: 500, moveRange: 2, hurtRange: 1},
-    4: {power: 600, moveRange: 2, hurtRange: 1},
-    5: {power: 700, moveRange: 2, hurtRange: 2},
-    6: {power: 800, moveRange: 3, hurtRange: 2},
-    7: {power: 900, moveRange: 3, hurtRange: 2},
-    8: {power: 1000, moveRange: 3, hurtRange: 2},
-    9: {power: 1100, moveRange: 3, hurtRange: 3},
-    10: {power: 1200, moveRange: 3, hurtRange: 3},
+  sword: {
+    1: {shape: '米', move: 2, width: 5, height: 5},
+    2: {shape: '米', move: 2, width: 5, height: 5},
+    3: {shape: '米', move: 3, width: 5, height: 5},
+    4: {shape: '米', move: 4, width: 5, height: 5},
   },
-  // 绝学
-  4: {
-    1: {power: 400, moveRange: 1, hurtRange: 1},
-    2: {power: 533, moveRange: 1, hurtRange: 1},
-    3: {power: 666, moveRange: 2, hurtRange: 1},
-    4: {power: 800, moveRange: 2, hurtRange: 1},
-    5: {power: 933, moveRange: 2, hurtRange: 2},
-    6: {power: 1066, moveRange: 3, hurtRange: 2},
-    7: {power: 1200, moveRange: 3, hurtRange: 2},
-    8: {power: 1333, moveRange: 4, hurtRange: 2},
-    9: {power: 1466, moveRange: 4, hurtRange: 3},
-    10: {power: 1600, moveRange: 4, hurtRange: 3},
+  knife: {
+    1: {shape: '△', move: 4, width: 3, height: 2},
+    2: {shape: '△', move: 4, width: 3, height: 2},
+    3: {shape: '△', move: 4, width: 5, height: 3},
+    4: {shape: '△', move: 4, width: 7, height: 4},
+  },
+  special: {
+    1: {shape: '十', move: 2, width: 9, height: 9},
+    2: {shape: '十', move: 2, width: 9, height: 9},
+    3: {shape: '十', move: 3, width: 9, height: 9},
+    4: {shape: '十', move: 4, width: 9, height: 9},
+  },
+  internal: {
+    1: {shape: '■', move: 2, width: 5, height: 5},
+    2: {shape: '■', move: 2, width: 5, height: 5},
+    3: {shape: '■', move: 3, width: 7, height: 7},
+    4: {shape: '■', move: 4, width: 7, height: 7},
   },
 };
 
-// 获取外功威力
-export function getOutPower({type, level}) {
-  if (!outTypeMap[type]) {
-    return 0;
+// 获取攻击范围
+export function getRange({type, level, other = ''}) {
+  if (other) {
+    return other;
   }
-  if (outPowerMap[level]) {
-    return outPowerMap[level][10].power;
+  if (rangeMap[type]?.[level]) {
+    const {shape, move, width, height} = rangeMap[type][level];
+    return `${shape} ${move}+${width}×${height}`;
   }
-  return 0;
+  return '';
 }

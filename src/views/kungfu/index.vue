@@ -55,7 +55,7 @@
           <div class="td">威力</div>
           <div class="td">{{ info.power }}</div>
         </div>
-        <div class="tr" v-if="kungfuType === 'in'">
+        <div class="tr" v-if="kungfuType === 'in' || kungfuType === 'fly'">
           <div class="td">主运效果</div>
           <div class="td">
             <div class="td-block" v-for="(item, index) of info.initiative" :key="index">
@@ -79,11 +79,11 @@
             <div class="td">招式效果</div>
             <div class="td">{{ info.attack.join('、') }}</div>
           </div> -->
-          <div class="tr">
-            <div class="td">范围</div>
-            <div class="td">{{ info.range }}</div>
-          </div>
         </template>
+        <div class="tr" v-if="kungfuType !== 'fly'">
+          <div class="td">范围</div>
+          <div class="td">{{ info.range }}</div>
+        </div>
         <div class="tr">
           <div class="td">一脉相承</div>
           <div class="td">
@@ -134,7 +134,7 @@ const kungfuTypeMap = {
   knife: 'out',
   special: 'out',
   internal: 'in',
-  fly: 'in',
+  fly: 'fly',
 };
 const kungfu = ref({});
 const kungfuType = ref('in');

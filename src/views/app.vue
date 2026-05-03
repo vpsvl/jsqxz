@@ -61,18 +61,25 @@ provide('state', state);
 
 // toArr();
 
+// import data from '@/data/kungfu/internal';
+//
 // function toArr() {
-//   const arr = data.list
+//   const arr = data.list;
 //   arr.sort((a, b) => b.level - a.level);
 //   arr.sort((a, b) => {
+//     let aIn = a.internal === '' ? 2 : a.internal;
+//     let bIn = b.internal === '' ? 2 : b.internal;
 //     if (a.level === b.level) {
-//       return b.power - a.power;
+//       if (aIn === bIn) {
+//         return a.sect - b.sect;
+//       }
+//       return aIn - bIn;
 //     }
 //     return 1;
 //   });
 //   console.log(arr);
 // }
-
+//
 // toArr();
 
 // import pinyin from 'pinyin';
@@ -115,7 +122,6 @@ provide('state', state);
 // }
 //
 // toPinyin(data);
-
 </script>
 
 <style lang="less">

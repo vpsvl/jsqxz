@@ -3,21 +3,21 @@ export default {
   zhongYongZhiDaoYi: {
     id: 1,
     name: '中庸之道壹',
-    condition: '',
+    condition: '修炼中庸之道，资质31~79',
     effect: ['仅中资(31-79)可触发', '每(资质-1)时序行动一次（<30时序按30时序计算）'],
     type: 1,
   },
   zhongYongZhiDaoEr: {
     id: 2,
     name: '中庸之道贰',
-    condition: '',
+    condition: '修炼中庸之道，资质31~79',
     effect: ['仅中资(31-79)可触发', '受到攻击后如果满怒，(资质-29)%概率结束对手攻击并反击'],
     type: 1,
   },
   douZhuanXingYi: {
     id: 3,
     name: '斗转星移',
-    condition: '',
+    condition: '修炼斗转星移，资质80~100',
     effect: [
       '仅高资(80-100)可触发',
       '被攻击时20+(资质-30)/2概率触发反击，并追加气攻',
@@ -39,7 +39,7 @@ export default {
   zuoYouHuBo: {
     id: 4,
     name: '左右互搏',
-    condition: '',
+    condition: '修炼左右互搏，资质1~30',
     effect: [
       '仅低资(1-30)可触发',
       '(25+(71-资质)/2)%概率进行两次攻击',
@@ -52,7 +52,7 @@ export default {
   taoHuaJueJi: {
     id: 5,
     name: '桃花绝技',
-    condition: '',
+    condition: '弹指神通+落英神剑掌+玉箫剑法',
     effect: [
       '三种武功威力均+200',
       '弹指神通：必暴击，气攻+1500',
@@ -64,7 +64,7 @@ export default {
   ziQiTianLuo: {
     id: 6,
     name: '紫气天罗',
-    condition: '',
+    condition: '灵蛇拳+寒冰绵掌+玄冥神掌+化骨绵掌',
     effect: [
       '灵蛇拳/寒冰绵掌/化骨绵掌/玄冥神掌威力提升300点',
       '灵蛇拳/寒冰绵掌/化骨绵掌/玄冥神掌攻击随机附加1~3层“冰冻状态”，每层减缓1%集气速度，上限50层',
@@ -75,7 +75,7 @@ export default {
   wanXiangTianYin: {
     id: 7,
     name: '万象天引',
-    condition: '',
+    condition: '北冥神功+吸星大法+乾坤大挪移',
     effect: [
       '神罗天征：反弹50%所受伤害和一切状态',
       '万象天引：每三回合触发一次，将自身3~10格范围的目标拉到身前三格内的一个点重叠，并锁足一回合',
@@ -85,7 +85,7 @@ export default {
   duBuWuLin: {
     id: 8,
     name: '毒布武林',
-    condition: '',
+    condition: '五毒神功+五毒神掌+千蛛万毒手+连环腐尸毒+冰蚕毒掌',
     effect: [
       '五毒神掌/五毒神功/千蛛万毒手/连环腐尸毒/冰蚕毒掌威力提升500',
       '行动前对全场敌人用毒，并概率叠加负面状态',
@@ -95,21 +95,21 @@ export default {
   ciBeiWeiHuai: {
     id: 9,
     name: '慈悲为怀',
-    condition: '',
+    condition: '慈悲刀法+大慈大悲手',
     effect: ['道德高于60时，减伤(7-境界等级)×(150-资质)点'],
     type: 1,
   },
   tieJia: {
     id: 10,
     name: '铁甲',
-    condition: '',
+    condition: '铁掌+铁剑+铁布衫，主运铁布衫',
     effect: ['护甲提升20%', '被攻击时20%概率抵挡生命最大值2%伤害'],
     type: 1,
   },
   wuHu: {
     id: 11,
     name: '五虎',
-    condition: '',
+    condition: '五虎断门刀+五虎棍法',
     effect: [
       '赞天虎：一虎在场，攻击时30%概率提升全队100集气',
       '彻地虎：二虎在场，被攻击时30%概率提高1000点气防',
@@ -122,7 +122,7 @@ export default {
   senLuoWanXiang: {
     id: 12,
     name: '森罗万象',
-    condition: '',
+    condition: '九阴白骨爪+九阴神功+蛇行狸翻',
     effect: [
       '气防增加1000，免疫破绽，免疫暴击伤害',
       '根据击杀数和怒气值(每50点怒气增加1次，暴怒额外增加2次)增加伤害次数（威力等于750+实战数值）',
@@ -132,7 +132,7 @@ export default {
   xieZhanShaChang: {
     id: 13,
     name: '血战沙场',
-    condition: '',
+    condition: '岳家枪法+岳王散手+武穆遗书',
     effect: [
       '使用岳家枪法/岳王散手对7×7范围内敌人造成10~20点伤害1次',
       '根据击杀数和怒气值（每50点怒气增加1次，暴怒额外增加2次）增加次数（威力等于750+实战数值）',
@@ -143,14 +143,14 @@ export default {
   suZhiSanLian: {
     id: 14,
     name: '素质三连',
-    condition: '',
+    condition: '三分剑法+连城剑法',
     effect: ['剑法武功攻击时25%概率三连击'],
     type: 1,
   },
   jinGangBanRuo: {
     id: 15,
     name: '金刚般若',
-    condition: '',
+    condition: '大力金刚掌+般若掌+龙象般若功',
     effect: [
       '破防目标30%',
       '金刚掌：必暴击',
@@ -162,21 +162,21 @@ export default {
   dongXuXuanMen: {
     id: 16,
     name: '洞虚玄门',
-    condition: '',
+    condition: '神门十三剑+玄虚刀法',
     effect: ['玄虚刀法必封穴，神门十三剑必冰封灼烧', '受到攻击30%概率使用双倍内力抵消一半伤害'],
     type: 1,
   },
   cunChangCunQiang: {
     id: 17,
     name: '寸长寸强',
-    condition: '',
+    condition: '呼延枪法+呼延十八鞭',
     effect: ['使用奇门武功伤害不随距离降低，距离每远一格伤害增加1%'],
     type: 1,
   },
   jianDanQinXin: {
     id: 18,
     name: '剑胆琴心',
-    condition: '',
+    condition: '独孤九剑+持瑶琴',
     effect: [
       '攻击时距离敌人越近，增加的命中越多',
       '受到攻击时距离敌人越近，减少敌人的命中越多',
@@ -188,7 +188,7 @@ export default {
   juHuoLiaoYuan: {
     id: 19,
     name: '举火燎原',
-    condition: '',
+    condition: '金乌刀法+燃木刀法+火焰刀法',
     effect: [
       '金乌刀法/燃木刀法/火焰刀法攻击时有50%概率、暴怒攻击必定触发，追加10时序的“引燃”状态',
       '引燃：每时序损失2%当前血量',
@@ -198,7 +198,7 @@ export default {
   shiZunJiangMo: {
     id: 20,
     name: '世尊降魔',
-    condition: '',
+    condition: '伏魔杖法+无上大力杵+金刚伏魔圈+罗汉伏魔功',
     effect: [
       '暴击率增加50%，暴怒追加20%气攻值的伤害',
       '如果造成的伤害<300，则伤害等于300',
@@ -209,21 +209,21 @@ export default {
   jinWuYingXue: {
     id: 21,
     name: '金乌映雪',
-    condition: '',
+    condition: '金乌刀法+雪山剑法',
     effect: ['金乌刀法/雪山剑法攻击时触发灼烧必冰封，触发冰封必灼烧'],
     type: 1,
   },
   jueChuFengSheng: {
     id: 22,
     name: '绝处逢生',
-    condition: '',
+    condition: '海叟钓法+银锁金玲',
     effect: ['被攻击15%概率不受伤害'],
     type: 1,
   },
   shuangJianHeBi: {
     id: 23,
     name: '双剑合璧',
-    condition: '',
+    condition: '全真剑法+玉女剑法/玉女素心剑+左右互搏',
     effect: [
       '剑法攻击必连击',
       '使用全真剑法/玉女剑法/玉女素心剑：',
@@ -236,7 +236,7 @@ export default {
   liRenHanFeng: {
     id: 24,
     name: '利刃寒锋',
-    condition: '',
+    condition: '修罗刀法+阴风刀法+沧溟刀法',
     effect: [
       '攻击时有50%概率、暴怒攻击必定触发，追加10时序的“冻结”状态',
       '冻结：无法集气和时序恢复状态',
@@ -246,7 +246,7 @@ export default {
   xiaoYaoYuFeng: {
     id: 25,
     name: '逍遥御风',
-    condition: '',
+    condition: '小无相功+北冥神功+八荒六合功',
     effect: [
       '攻击与被攻击均有概率触发特效"逍遥御风"，累积点数。',
       '当累积点数达到9点时，从下次开始受到攻击开始计算，闪避15时序并清空封穴',
@@ -258,63 +258,63 @@ export default {
   luoHanJinShen: {
     id: 26,
     name: '罗汉金身',
-    condition: '',
+    condition: '罗汉伏魔功+金刚不坏体，主运罗汉伏魔功、金刚不坏体或易筋神功',
     effect: ['被攻击时30%概率第一击伤害降低50%'],
     type: 1,
   },
   yiRouKeGang: {
     id: 27,
     name: '以柔克刚',
-    condition: '',
+    condition: '太极剑法+柔云剑法',
     effect: ['被攻击时，有50%概率将被杀气量的一半转化为回血'],
     type: 1,
   },
   qunLiao: {
     id: 28,
     name: '青牛医疗',
-    condition: '',
+    condition: '修炼胡青牛医术',
     effect: ['治疗范围增加3格'],
     type: 1,
   },
   ziWuZhenJiu: {
     id: 29,
     name: '子午针灸',
-    condition: '',
+    condition: '修炼子午针灸经',
     effect: ['医疗时刺激被治疗者穴道加速回血，治疗效果在1~3倍间浮动'],
     type: 1,
   },
   qianJinShu: {
     id: 30,
     name: '千金术',
-    condition: '',
+    condition: '修炼千金方',
     effect: ['行动前概率撒出金针，治疗五格内友方少量生命'],
     type: 1,
   },
   yaoWangShenPian: {
     id: 31,
     name: '药王神篇',
-    condition: '',
+    condition: '修炼药王神篇',
     effect: ['五格范围内的友方受到致命伤害时，免除此次致命伤害，并对其进行一次治疗量为2倍治疗'],
     type: 1,
   },
   huangDiNeiJing: {
     id: 32,
     name: '黄帝内经',
-    condition: '',
+    condition: '修炼黄帝内经',
     effect: ['每回合行动后回复2点体力，免疫撕裂和创伤'],
     type: 1,
   },
   duJing: {
     id: 33,
     name: '毒经',
-    condition: '',
+    condition: '修炼毒经',
     effect: ['行动后概率施毒，对五格内的敌方施毒，施毒效果减半'],
     type: 1,
   },
   guShu: {
     id: 34,
     name: '金蚕盅',
-    condition: '',
+    condition: '五毒宝典+千蛛万毒手',
     effect: [
       '攻击时概率在目标体内种下盅，每次敌方行动前让敌方损失生命值，并小概率干扰敌方行动，让敌方放弃攻击行为',
     ],
@@ -323,21 +323,21 @@ export default {
   huaTuoYiShu: {
     id: 35,
     name: '华陀医术',
-    condition: '',
+    condition: '修炼华佗内昭图',
     effect: ['治疗时清除被治疗目标基础异常状态'],
     type: 1,
   },
   tianYiWuFeng: {
     id: 36,
     name: '天衣无缝',
-    condition: '',
+    condition: '鸳鸯刀法+夫妻刀法',
     effect: ['刀法武功攻击时25%概率三连击'],
     type: 1,
   },
   chuQueSiXiang: {
     id: 37,
     name: '除却四相',
-    condition: '',
+    condition: '多罗叶指+大智无定指+无相劫指+拈花指',
     effect: [
       '被攻击时概率触发（可同时触发）：',
       '└无我相：20%概率免疫本次攻击造成的内伤、封穴、冰封和灼烧，并反弹20%造成伤害',
@@ -351,7 +351,7 @@ export default {
   huXiaoLongYin: {
     id: 38,
     name: '虎啸龙吟',
-    condition: '',
+    condition: '擒龙手+虎爪绝户手',
     effect: [
       '攻击时概率触发“虎啸”“龙吟”（擒龙手/虎爪绝户手概率+20%，暴怒概率翻倍）：',
       '└虎啸：被击中的目标概率混乱',
@@ -362,21 +362,21 @@ export default {
   kongKongRuYe: {
     id: 39,
     name: '空空如也',
-    condition: '',
+    condition: '空明拳+妙手空空',
     effect: ['拳掌武功攻击时25%概率三连击'],
     type: 1,
   },
   lingBo: {
     id: 40,
     name: '凌波',
-    condition: '',
+    condition: '段誉专属',
     effect: ['战场双倍的闪避值'],
     type: 1,
   },
   yinYangHeYi: {
     id: 41,
     name: '阴阳合一',
-    condition: '',
+    condition: '九阴神功+九阳神功',
     effect: [
       '阴内免疫被冰封，阳内免疫被灼烧',
       '被暴击时，免疫暴击伤害并减伤30%',
@@ -387,7 +387,7 @@ export default {
   wuYueJianFa: {
     id: 42,
     name: '五岳剑法',
-    condition: '',
+    condition: '学会五岳剑法(太岳+云雾+泰山+万花+万岳)',
     effect: [
       '每修炼一门，御剑系数+20，五岳剑法武功威力+100，连击率+5%（集齐五岳剑法时，该效果以7门剑法计算）',
       '使用五岳剑法攻击概率发动气贯五岳提升1000气攻，暴怒必定发动',
@@ -397,7 +397,7 @@ export default {
   daoJianGuiZhen: {
     id: 43,
     name: '刀剑归真',
-    condition: '',
+    condition: '胡家刀法+苗家剑法',
     effect: [
       '用其中一种武功攻击时概率触发：攻击效果提升40%，追加1500气攻，概率出多次连击，最多4连',
       '学有其中之一，则学习另一武功的兵器值需求-40',
@@ -407,14 +407,14 @@ export default {
   fanWoHeYi: {
     id: 44,
     name: '梵我合一',
-    condition: '',
+    condition: '神足经+瑜伽密乘',
     effect: ['受到会暴击或连击的攻击时，15%概率终止敌方行动'],
     type: 2,
   },
   yiJinDuanGu: {
     id: 45,
     name: '易筋锻骨',
-    condition: '',
+    condition: '易筋神功+金刚不坏体+罗汉伏魔，主运易筋神功',
     effect: [
       '易筋锻骨:易筋神功高优先级免疫杀气，免疫吸内、吸血、吸体、吸怒。',
       '金刚不坏：被攻击必出“金刚不坏”特效，高优先级降低30%所承受伤害与杀气，免疫封穴。',
@@ -425,7 +425,7 @@ export default {
   liangYiShouHu: {
     id: 46,
     name: '两仪守护',
-    condition: '',
+    condition: '两仪剑法+反两仪刀法',
     effect: [
       '两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻',
       '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻',
@@ -435,21 +435,21 @@ export default {
   xianTianJiuYin: {
     id: 47,
     name: '先天九阴',
-    condition: '',
+    condition: '九阴神功+先天功，主运九阴神功',
     effect: ['主运九阴神功，被杀气到-500，清除全部内伤，并恢复10%最大生命值'],
     type: 2,
   },
   niYunJiuYin: {
     id: 48,
     name: '逆运九阴',
-    condition: '',
+    condition: '九阴神功+逆运经脉',
     effect: ['被攻击时暴击伤害减少20%'],
     type: 2,
   },
   qinQiShuHua: {
     id: 63,
     name: '琴棋书画',
-    condition: '',
+    condition: '同时修炼琴棋书画',
     effect: [
       '持摇琴：威力+300',
       '└琴音悦耳：攻击不造成怒气，100%发动',
@@ -468,21 +468,21 @@ export default {
   dingShenMen: {
     id: 72,
     name: '定神门',
-    condition: '',
+    condition: '神门十三剑+五行六合掌+阴阳倒乱刃+灵枢定玄指',
     effect: ['刀剑连击概率+10%，拳指暴击概率+10%', '攻击时锁足概率+100%，封穴+5点'],
     type: 1,
   },
   xuanXuJin: {
     id: 73,
     name: '玄虚劲',
-    condition: '',
+    condition: '无极玄功拳+玄虚刀法+玄天指',
     effect: ['自身破绽时受到攻击免疫伤害，且集气位置+200，减少50%受到的气攻'],
     type: 1,
   },
   gaiShiWuShuang: {
     id: 74,
     name: '盖世无双',
-    condition: '',
+    condition: '降龙十八掌+打狗棒法',
     effect: [
       '被攻击时50%概率触发，完全免疫杀气和内伤',
       '*已经学有其中之一，则学习另一个的系数需求-40点',
@@ -492,7 +492,7 @@ export default {
   taiJiAoYi: {
     id: 75,
     name: '太极奥义',
-    condition: '',
+    condition: '太极拳+太极剑法',
     effect: [
       '太极奥义：受到攻击(资质-50)%概率触发，降低50%所受到的杀气，学有太极神功再减伤10%',
       '触发太极奥义时有50%概率触发真太极奥义或太极图：如果有开通奇穴【太极图】则触发太极图，否则触发真太极奥义',
@@ -504,21 +504,21 @@ export default {
   chuanHuaNongYing: {
     id: 76,
     name: '穿花弄影',
-    condition: '',
+    condition: '穿花蝶影手+无影脚',
     effect: ['指腿武功攻击时25%概率三连击'],
     type: 1,
   },
   woYuChengXian: {
     id: 77,
     name: '我欲成仙',
-    condition: '',
+    condition: '天山六阳掌+天山折梅手+寒袖拂穴+白虹掌力',
     effect: ['天山六阳掌/天山折梅手/寒袖拂穴/白虹掌力威力+250，攻击必三连'],
     type: 1,
   },
   kaiTaiJi: {
     id: 78,
     name: '开太极',
-    condition: '',
+    condition: '太极剑法+太极拳法+太极神功',
     effect: [
       '【太极奥义】100%概率触发',
       '主运太极神功，使用太极拳法或太极剑法，蓄力值≥500或太极之形≥5且怒气值≥50时，消耗50点怒气值，根据当前生命值跟内力值追加大范围伤害，生命越低/内力越高伤害越高',
@@ -528,14 +528,24 @@ export default {
   fengHuoLianCheng: {
     id: 79,
     name: '烽火连城',
-    condition: '',
+    condition: '狂风迅雷扇+疯魔棍法',
     effect: ['奇门武功攻击时25%概率三连击'],
+    type: 1,
+  },
+  chuanZhenYinPo: {
+    id: 'chuanZhenYinPo',
+    name: '穿针引魄',
+    condition: '辟邪剑法+葵元引魂针+魅影空蝉',
+    effect: [
+      '对刺目的目标伤害增加25%',
+      '刺目后概率跟随机一个敌方目标更换一次位置，并让自已在10时序内不可选中为攻击目标',
+    ],
     type: 1,
   },
   jiuYinShenZhao: {
     id: 'jiuYinShenZhao',
     name: '九阴神爪',
-    condition: '',
+    condition: '九阴神功+九阴白骨爪，主运九阴神功',
     effect: [
       '主运九阴神功，使用九阴白骨爪必触发九阴神爪极意',
       '九阴神爪极意：必连击，增加1500点伤害杀气，范围为7*7',
@@ -545,14 +555,14 @@ export default {
   zhenBiXieJianFa: {
     id: 'zhenBiXieJianFa',
     name: '真辟邪剑法',
-    condition: '',
+    condition: '辟邪剑法+葵花神功',
     effect: ['习得葵花神功后，辟邪剑法威力+1000'],
     type: 2,
   },
   chenSuLieZhang: {
     id: 'chenSuLieZhang',
     name: '辰宿列张',
-    condition: '',
+    condition: '学会参合剑气或参合指',
     effect: [
       '攻击时会给敌人添加“参合”状态：',
       '攻击时伤害降低10%~20%',

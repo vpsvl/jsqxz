@@ -7,12 +7,20 @@
     <div class="tr" v-for="(eventList, eventIndex) of item.event" :key="eventIndex">
       <div class="td">{{ eventIndex + 1 }}</div>
       <div class="td">
-        <p class="td-block" v-for="(eventItem, eventItemIndex) of eventList.list" :key="eventItemIndex">
+        <p
+          class="td-block"
+          v-for="(eventItem, eventItemIndex) of eventList.list"
+          :key="eventItemIndex"
+        >
           {{ eventItem }}
         </p>
       </div>
       <div class="td">
-        <p class="td-block" v-for="(eventItem, eventItemIndex) of eventList.reward" :key="eventItemIndex">
+        <p
+          class="td-block"
+          v-for="(eventItem, eventItemIndex) of eventList.reward"
+          :key="eventItemIndex"
+        >
           {{ eventItem }}
         </p>
       </div>

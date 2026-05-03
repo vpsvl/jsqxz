@@ -453,7 +453,7 @@ export default {
     sect: 0,
   },
   113: {
-    name: '闪电貂',
+    name: '闪电貂手',
     sect: 0,
   },
   114: {
@@ -477,7 +477,7 @@ export default {
     sect: 20,
   },
   119: {
-    name: '满州摔跤',
+    name: '满洲摔跤',
     sect: 0,
   },
   120: {
@@ -921,7 +921,7 @@ export default {
     sect: 8,
   },
   230: {
-    name: '八卦掌法',
+    name: '八卦掌',
     sect: 25,
   },
   231: {
@@ -1033,7 +1033,7 @@ export default {
     sect: 8,
   },
   258: {
-    name: '静心守剑',
+    name: '定神静心剑',
     sect: 13,
   },
   259: {
@@ -1217,7 +1217,7 @@ export default {
     sect: 9,
   },
   304: {
-    name: '夺命连环三仙剑',
+    name: '夺命三仙剑',
     sect: 9,
   },
   305: {
@@ -1237,7 +1237,7 @@ export default {
     sect: 9,
   },
   309: {
-    name: '泼墨披麻剑法',
+    name: '泼墨披麻剑',
     sect: 4,
   },
   310: {
@@ -1249,11 +1249,11 @@ export default {
     sect: 4,
   },
   312: {
-    name: '黑血神针',
+    name: '葵元七绝针',
     sect: 4,
   },
   313: {
-    name: '葵花神针',
+    name: '阴葵灭魂针',
     sect: 4,
   },
   314: {
@@ -1289,7 +1289,7 @@ export default {
     sect: 4,
   },
   322: {
-    name: '十八连环破',
+    name: '连环十八破',
     sect: 11,
   },
   323: {
@@ -1321,7 +1321,7 @@ export default {
     sect: 3,
   },
   330: {
-    name: '黑沙掌',
+    name: '毒龙锥',
     sect: 24,
   },
   331: {
@@ -1469,7 +1469,7 @@ export default {
     sect: 6,
   },
   368: {
-    name: '普渡棍法',
+    name: '普渡杖法',
     sect: 1,
   },
   369: {
@@ -1477,7 +1477,7 @@ export default {
     sect: 1,
   },
   370: {
-    name: '西岳神剑',
+    name: '北岳神剑',
     sect: 13,
   },
   371: {
@@ -1493,7 +1493,7 @@ export default {
     sect: 10,
   },
   374: {
-    name: '北岳神剑',
+    name: '西岳神剑',
     sect: 9,
   },
   375: {
@@ -1501,7 +1501,7 @@ export default {
     sect: 6,
   },
   376: {
-    name: '太清剑法',
+    name: '太清快剑',
     sect: 21,
   },
   377: {
@@ -1589,8 +1589,8 @@ export default {
     sect: 19,
   },
   398: {
-    name: '云龙三现',
-    sect: 19,
+    name: '青龙刀法',
+    sect: 0,
   },
   399: {
     name: '崆峒身法',
@@ -1677,8 +1677,8 @@ export default {
     sect: 30,
   },
   420: {
-    name: '全真身法',
-    sect: 7,
+    name: '绝情刀法',
+    sect: 17,
   },
   421: {
     name: '泰山身法',
@@ -1749,7 +1749,7 @@ export default {
     sect: 9,
   },
   438: {
-    name: '逍遥拳法',
+    name: '逍遥掌法',
     sect: 3,
   },
   439: {

@@ -55,6 +55,12 @@ export default defineConfig([
       '@stylistic/no-multiple-empty-lines': [2, {max: 2}],
       // 箭头函数参数加括号: always, as-needed { requireForBlockBody: true }
       '@stylistic/arrow-parens': [0, 'as-needed'],
+      // 要求或不允许在给定的 2 种语句之间有空行
+      '@stylistic/padding-line-between-statements': [
+        0,
+        {blankLine: 'always', prev: '*', next: 'function'},
+        {blankLine: 'always', prev: 'function', next: '*'},
+      ],
       // 驼峰命名
       camelcase: 0,
       // 禁止var

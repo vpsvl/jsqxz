@@ -1,146 +1,353 @@
-export default {
-  1: {
+// 拳掌基础效果
+export function fistBase(lv) {
+  return {
+    id: 'fist',
+    effect: [`造成目标内伤${lv * 5}点`],
+  };
+}
+// 指腿基础效果
+export function fingerBase(lv) {
+  return {
+    id: 'finger',
+    effect: [`对目标封穴${lv}~${lv * 2 + 2}点`],
+  };
+}
+// 剑法基础效果
+export function swordBase(lv) {
+  return {
+    id: 'sword',
+    effect: [`造成目标流血${lv * 10}点`],
+  };
+}
+// 刀法基础效果
+export function knifeBase(lv) {
+  return {
+    id: 'knife',
+    effect: [`造成目标外伤${lv * 10}点`],
+  };
+}
+// 奇门基础效果
+export function specialBase(lv) {
+  return {
+    id: 'special',
+    effect: [
+      `造成目标内伤${lv * 2}点，对目标封穴${lv}~${lv * 2 + 2}点，造成目标流血${lv * 10}点，造成目标灼烧${lv * 10}点`,
+    ],
+  };
+}
+
+export function liuXue(lv) {
+  return {
     id: 1,
-    name: '流血',
-  },
-  2: {
+    effect: [`额外造成目标流血${lv * 10}点`],
+  };
+}
+export function fengXue(lv) {
+  return {
     id: 2,
-    name: '封穴',
-  },
-  3: {
+    effect: [`额外造成目标封穴${lv}~${lv * 2 + 1}点`],
+  };
+}
+export function zhuoShao(lv) {
+  return {
     id: 3,
-    name: '灼烧',
-  },
-  4: {
+    effect: [`额外造成目标灼烧${lv * 5}点`],
+  };
+}
+export function bingFeng(lv) {
+  return {
     id: 4,
-    name: '冰封',
-  },
-  5: {
+    effect: [`额外造成目标冰封${lv * 10}点`],
+  };
+}
+export function neiShang(lv) {
+  return {
     id: 5,
-    name: '内伤',
-  },
-  6: {
+    effect: [`额外造成目标内伤${lv * 10}点`],
+  };
+}
+export function zhongDu(lv) {
+  return {
     id: 6,
-    name: '中毒',
-  },
-  7: {
+    effect: [`额外造成目标中毒${lv * 10}点`],
+  };
+}
+export function dongJie(lv) {
+  return {
     id: 7,
-    name: '冻结',
-  },
-  8: {
+    effect: [`额外造成目标冻结${lv * 5}时序`],
+  };
+}
+export function dianRan(lv) {
+  return {
     id: 8,
-    name: '点燃',
-  },
-  9: {
+    effect: [`额外造成目标点燃${lv * 2 + 3}时序`],
+  };
+}
+export function juDu(lv) {
+  return {
     id: 9,
-    name: '剧毒',
-  },
-  10: {
+    effect: [`造成目标巨毒${lv}回合，毒性发作效果双倍`],
+  };
+}
+export function xuanYun(lv) {
+  return {
     id: 10,
-    name: '眩晕',
-  },
-  11: {
+    effect: [`${lv * 10}%概率造成目标眩晕一回合`],
+  };
+}
+export function siLie(lv) {
+  return {
     id: 11,
-    name: '撕裂',
-  },
-  12: {
+    effect: [`${lv * 10}%概率造成目标撕裂10时序`],
+  };
+}
+export function xuRuo(lv) {
+  return {
     id: 12,
-    name: '虚弱',
-  },
-  13: {
+    effect: [`${lv * 10 + 10}%概率造成目标虚弱一回合，减少伤害和气攻`],
+  };
+}
+export function jianFangYu(lv) {
+  return {
     id: 13,
-    name: '破防',
-  },
-  14: {
+    effect: [`减少目标防御${lv * 10}%`],
+  };
+}
+export function jianXiShu(lv) {
+  return {
     id: 14,
-    name: '无视系数',
-  },
-  15: {
+    effect: [`减少目标本武功对应系数${lv * 10}%`],
+  };
+}
+export function eWaiShangHai(lv) {
+  return {
     id: 15,
-    name: '固定伤害',
-  },
-  16: {
+    effect: [`附加额外伤害${lv * 50}点`],
+  };
+}
+export function xiXue(lv) {
+  return {
     id: 16,
-    name: '吸血',
-  },
-  17: {
+    effect: [`附加伤害20%吸血，上限${lv * 100}点`],
+  };
+}
+export function jianFangYu3(lv) {
+  return {
     id: 17,
-    name: '减防',
-  },
-  18: {
+    effect: [`三回合内减少目标防御${lv * 5}%`],
+  };
+}
+export function jianGongJi3(lv) {
+  return {
     id: 18,
-    name: '减攻',
-  },
-  19: {
+    effect: [`三回合内减少目标攻击${lv * 5}%`],
+  };
+}
+export function wuShiQiFang(lv) {
+  return {
     id: 19,
-    name: '破气防',
-  },
-  20: {
+    effect: [`${lv * 10}%概率无视气防`],
+  };
+}
+export function daFanWei(lv) {
+  return {
     id: 20,
-    name: '范围伤害',
-  },
-  21: {
+    effect: [`${lv * 10}%概率造成大范围伤害`],
+  };
+}
+export function zaiDong(lv) {
+  return {
     id: 21,
-    name: '再次行动',
-  },
-  22: {
+    effect: [`${lv * 4}%概率再次行动`],
+  };
+}
+export function jiQiJiaSu(lv) {
+  return {
     id: 22,
-    name: '加速',
-  },
-  23: {
+    effect: [`下回合集气加速${lv * 10}%`],
+  };
+}
+export function jiaLianJi(lv) {
+  return {
     id: 23,
-    name: '加连击',
-  },
-  24: {
+    effect: [`${lv * 10}%概率增加连击1次`],
+  };
+}
+export function baoJi(lv) {
+  return {
     id: 24,
-    name: '加暴击',
-  },
-  25: {
+    effect: [`${lv * 20 + 20}%概率暴击`],
+  };
+}
+export function baojiShangHai(lv) {
+  return {
     id: 25,
-    name: '加暴伤',
-  },
-  26: {
+    effect: [`增加暴击伤害${lv * 10}%`],
+  };
+}
+export function biZhong(lv) {
+  return {
     id: 26,
-    name: '必中',
-  },
-  27: {
+    effect: [`${lv * 4}%概率必中`],
+  };
+}
+export function fangYu(lv) {
+  return {
     id: 27,
-    name: '防御',
-  },
-  28: {
+    effect: [`${lv * 20 + 20}%概率下回合防御`],
+  };
+}
+export function huiQi(lv) {
+  let qi = lv > 1 ? `${lv - 1}~${lv}` : '1';
+  return {
     id: 28,
-    name: '回气',
-  },
-  29: {
+    effect: [`回气${qi}点`],
+  };
+}
+export function suoZu(lv) {
+  return {
     id: 29,
-    name: '锁足',
-  },
-  30: {
+    effect: [`${lv * 15}%概率造成目标锁足一回合`],
+  };
+}
+export function fanJi(lv) {
+  return {
     id: 30,
-    name: '反击',
-  },
-  31: {
+    effect: [`${lv * 10}%概率反击`],
+  };
+}
+export function jiaGeDang(lv) {
+  return {
     id: 31,
-    name: '加格档',
-  },
-  32: {
+    effect: [`增加格档${lv * 100}点`],
+  };
+}
+export function jiaMingZhong(lv) {
+  return {
     id: 32,
-    name: '加命中',
-  },
-  33: {
+    effect: [`命中增加${lv * 100}点`],
+  };
+}
+export function sanGong(lv) {
+  return {
     id: 33,
-    name: '散功',
-  },
-  34: {
+    effect: [`散功${lv * 5}时序`],
+  };
+}
+export function zhongShang(lv) {
+  return {
     id: 34,
-    name: '外伤',
-  },
-  35: {
+    effect: [`重伤三回合，目标三围降低${lv * 5 + 5}%`],
+  };
+}
+export function jiQiWenLuan(lv) {
+  return {
     id: 35,
-    name: '集气紊乱',
-  },
-  36: {
+    effect: [`集气紊乱${lv * 5}时序`],
+  };
+}
+export function kongJu(lv) {
+  return {
     id: 36,
-    name: '恐惧',
-  },
-};
+    effect: [`${lv * 10 + 30}%概率造成目标恐惧一回合`],
+  };
+}
+export function zhiMingYiJi(lv) {
+  return {
+    id: 37,
+    effect: [`造成目标生命最大值${lv + 1}%伤害`],
+  };
+}
+export function mangMu(lv) {
+  return {
+    id: 38,
+    effect: [`${lv * 10}%概率造成目标盲目一回合`],
+  };
+}
+export function jianJiQi(lv) {
+  return {
+    id: 39,
+    effect: [`目标集气减少${lv * 3}点`],
+  };
+}
+export function hunLuan(lv) {
+  return {
+    id: 40,
+    effect: [`${lv * 15}%概率造成目标混乱一回合`],
+  };
+}
+export function maBi(lv) {
+  return {
+    id: 41,
+    effect: [`${lv * 3}%概率造成目标麻痹一回合`],
+  };
+}
+export function suoZu2(lv) {
+  return {
+    id: 42,
+    effect: [`${lv * 10}%概率造成目标锁足一回合`],
+  };
+}
+export function chiHuan(lv) {
+  return {
+    id: 43,
+    effect: [`造成目标虚弱${lv}回合，减少伤害和气攻`],
+  };
+}
+export function lvShuangBingZhi(lv) {
+  return {
+    id: 1,
+    name: '履霜冰至',
+    effect: [`${lv * 10}%概率造成目标冻结10时序`],
+  };
+}
+export function liSheDaChuan(lv) {
+  return {
+    id: 2,
+    name: '利涉大川',
+    effect: [`${lv * 10}%概率使目标下回合伤害降低${lv * 20}%`],
+  };
+}
+export function miYunBuYu(lv) {
+  return {
+    id: 3,
+    name: '密云布雨',
+    effect: [`${lv * 10}%概率使目标减少一半的集气20时序`],
+  };
+}
+export function hongJianYuLu(lv) {
+  return {
+    id: 4,
+    name: '鸿渐于陆',
+    effect: [`${lv * 5}%概率再次行动`],
+  };
+}
+export function jianNiTianGuang(lv) {
+  return {
+    id: 5,
+    name: '剑逆天光',
+    effect: [`无视目标气防且必破防${lv * 10}%`],
+  };
+}
+export function jianHuangJingYing(lv) {
+  return {
+    id: 6,
+    name: '剑煌镜影',
+    effect: [`必暴击，且暴击伤害增加${(lv + 1) * 10}%`],
+  };
+}
+export function huangXiJianYin(lv) {
+  return {
+    id: 7,
+    name: '皇玺剑印',
+    effect: [`${(lv + 1) * 10}%概率对目标随机造成锁足/昏迷/破甲效果`],
+  };
+}
+export function nanKeWanJian(lv) {
+  return {
+    id: 8,
+    name: '南柯万剑',
+    effect: [`${lv * 5}%概率增加一次连击，最多六连击`],
+  };
+}
