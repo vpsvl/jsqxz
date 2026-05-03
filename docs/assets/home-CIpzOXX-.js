@@ -1,4 +1,15 @@
-import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-BnGPlyti.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-4-23.fix23 -----
+import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-BnGPlyti.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-3.fix27 -----
+      1，调整NPC游历进升境界的概率
+      2，调整武功秘籍修炼的系数需求跟周目相关
+      3，接受任我行的邀请可加入日月神教
+      4，增加日月神秘秘技，（辟邪+葵元引魂针+魅影空蝉）穿针引魄：对刺目的目标伤害增加25%，刺目后概率跟随机一个敌方目标更换一次位置，并让自已在10时序内不可选中为攻击目标
+      5，增加武功日月高阶剑法阴葵剑法，调整持瑶琴为高阶奇门，调整泼墨披麻剑为中阶剑法
+      6，调整小李飞刀为阴奇门，增加小李飞刀招式，增加小李飞刀掉落，西部农村挑战李寻欢
+      7，修复战场吃药不消耗的问题
+      8，调整绝学轻功要求为400轻功，调整斗转星移五系每级+2
+      9，调整武功范围，统一重置各系的武功攻击范围和移动范围，武功页面显示攻击范围和移范围图案
+
+      -------正式版V2.5-----2026-4-23.fix23 -----
       1，修复太监人物的性别
       2，恢复日月神教战东方出战人物为东方不败，新增葵花尊者挑战，在战胜东方不败后出现
       4，修复门派学武功可以跨层级一脉相承
