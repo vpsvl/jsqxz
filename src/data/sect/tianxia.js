@@ -1,6 +1,6 @@
 export default {
   name: '天下会',
-  join: '',
+  join: '天下第一武道会获得冠军后接受雄霸的邀请可加入',
   effect: [],
   talent: [],
   martial: [

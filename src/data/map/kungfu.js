@@ -1242,7 +1242,7 @@ export default {
   },
   310: {
     name: '无影脚',
-    sect: 4,
+    sect: 1,
   },
   311: {
     name: '丹青破穴',

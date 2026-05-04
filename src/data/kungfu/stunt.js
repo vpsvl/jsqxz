@@ -570,4 +570,14 @@ export default {
     ],
     type: 0,
   },
+  jinGangFuMoZhen: {
+    id: 'jinGangFuMoZhen',
+    name: '金刚伏魔阵',
+    condition: '多人学会金刚伏魔圈',
+    effect: [
+      '金刚伏魔圈护体：2人，提升15%防御且气防+500',
+      '真·金刚伏魔圈护体： 大于2人，提升30%防御且气防+1000',
+    ],
+    type: 0,
+  },
 };

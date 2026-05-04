@@ -76,14 +76,17 @@ export const sectMap = {
   jianghu: '江湖散人',
   shaolin: '少林派',
   wudang: '武当派',
-  xuedao: '血刀门',
+  xiaoyao: '逍遥派',
+  riyue: '日月神教',
+  tianji: '天机宫',
   gaibang: '丐帮',
+  huashan: '华山派',
+  gumu: '古墓派',
+  xuedao: '血刀门',
   tianlong: '天龙寺',
   xingxiu: '星宿派',
-  tianji: '天机宫',
   mizong: '密宗',
-  xiaoyao: '逍遥派',
-  huashan: '华山派',
+  tianxia: '天下会',
 };
 
 // 门派武功分类编码

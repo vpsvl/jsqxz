@@ -226,3 +226,34 @@ export function getRange({type, level, other = ''}) {
   }
   return '';
 }
+
+const sectMap = {
+  1: '少林派',
+  2: '武当派',
+  3: '逍遥派',
+  4: '日月神教',
+  6: '天机宫',
+  8: '丐帮',
+  9: '华山派',
+  16: '古墓派',
+  17: '血刀门',
+  27: '天龙寺',
+  28: '星宿派',
+  29: '密宗',
+  31: '天下会',
+};
+// 获取学习方式
+export function getLearn({sect, level, other = []}) {
+  if (!Array.isArray(other)) {
+    return [other];
+  }
+  if(level > 2) {
+    other.push(`挑战每月随机事件中携带此秘籍的人物，战胜后可获得`);
+  }
+  if (sectMap[sect]) {
+    other.push(`加入${sectMap[sect]}可学习`);
+  } else if (sect === 0 && level < 4) {
+    other.push(`江湖散人可在扬州武馆学习`);
+  }
+  return other;
+}

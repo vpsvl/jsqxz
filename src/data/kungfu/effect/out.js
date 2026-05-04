@@ -36,6 +36,29 @@ export function specialBase(lv) {
   };
 }
 
+// 概率冰封
+export function bingFengBase(lv) {
+  return {
+    id: 'bingFeng',
+    effect: ['概率冰封'],
+  };
+}
+// 概率灼烧
+export function zhuoShaoBase(lv) {
+  return {
+    id: 'zhuoShao',
+    effect: ['概率灼烧'],
+  };
+}
+// 中毒
+export function zhongDuBase(lv) {
+  // 4: 30
+  return {
+    id: 'zhongDu',
+    effect: ['使目标中毒'],
+  };
+}
+
 export function liuXue(lv) {
   return {
     id: 1,
@@ -180,7 +203,7 @@ export function baoJi(lv) {
     effect: [`${lv * 20 + 20}%概率暴击`],
   };
 }
-export function baojiShangHai(lv) {
+export function baoJiShangHai(lv) {
   return {
     id: 25,
     effect: [`增加暴击伤害${lv * 10}%`],
@@ -268,7 +291,7 @@ export function mangMu(lv) {
 export function jianJiQi(lv) {
   return {
     id: 39,
-    effect: [`目标集气减少${lv * 3}点`],
+    effect: [`目标集气速度减少${lv * 3}点`],
   };
 }
 export function hunLuan(lv) {

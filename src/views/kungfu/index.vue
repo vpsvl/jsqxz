@@ -1,5 +1,5 @@
 <template>
-  <v-tabs :list="kungfu.list" :exclusive="kungfu.exclusive" type="kungfu">
+  <v-kungfu :list="kungfu.list" :exclusive="kungfu.exclusive">
     <template #tab="{tab}">
       <span
         :class="{
@@ -31,7 +31,15 @@
         </div>
         <div class="tr">
           <div class="td">获取方式</div>
-          <div class="td">{{ info.get }}</div>
+          <div class="td">
+            <div
+              class="is-block td-effect-item effect-icon-rhombus"
+              v-for="(item, index) of info.get"
+              :key="index"
+            >
+              {{ item }}
+            </div>
+          </div>
         </div>
         <div class="tr">
           <div class="td">所属门派</div>
@@ -58,7 +66,7 @@
         <div class="tr" v-if="kungfuType === 'in' || kungfuType === 'fly'">
           <div class="td">主运效果</div>
           <div class="td">
-            <div class="td-block" v-for="(item, index) of info.initiative" :key="index">
+            <div class="td-block" v-for="item of info.initiative" :key="item.id">
               <div v-if="item.name">
                 [
                 <span :class="`level-${info.level}`">{{ item.name }}</span>
@@ -75,10 +83,31 @@
             <div class="td">气功</div>
             <div class="td">{{ info.power }}</div>
           </div>
-          <!-- <div class="tr">
+          <div class="tr">
             <div class="td">招式效果</div>
-            <div class="td">{{ info.attack.join('、') }}</div>
-          </div> -->
+            <div class="td">
+              <template v-for="item of info.attack" :key="item.id">
+                <div class="is-block td-effect-item" v-for="(text, i) of item.effect" :key="i">
+                  {{ text }}
+                </div>
+              </template>
+            </div>
+          </div>
+          <div class="tr">
+            <div class="td">奥义效果</div>
+            <div class="td">
+              <div class="td-block" v-for="item of info.ultimate" :key="item.id">
+                <div v-if="item.name">
+                  [
+                  <span :class="`level-${info.level}`">{{ item.name }}</span>
+                  ]:
+                </div>
+                <div class="td-effect-item" v-for="(text, i) of item.effect" :key="i">
+                  {{ text }}
+                </div>
+              </div>
+            </div>
+          </div>
         </template>
         <div class="tr" v-if="kungfuType !== 'fly'">
           <div class="td">范围</div>
@@ -110,7 +139,7 @@
         </div>
       </div>
     </template>
-  </v-tabs>
+  </v-kungfu>
 </template>
 
 <script setup>
@@ -124,6 +153,7 @@ import special from '@/data/kungfu/special';
 import internal from '@/data/kungfu/internal';
 import fly from '@/data/kungfu/fly';
 import {kungfuSectMap} from '@/data/map/index';
+import VKungfu from '@/components/kungfu';
 
 const route = useRoute();
 const all = {fist, finger, sword, knife, special, internal, fly};
