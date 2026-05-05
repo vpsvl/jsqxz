@@ -422,29 +422,29 @@ export default {
     ],
     type: 1,
   },
-  liangYiShouHu: {
+  chuanZhenYinPo: {
     id: 46,
-    name: '两仪守护',
-    condition: '两仪剑法+反两仪刀法',
+    name: '穿针引魄',
+    condition: '辟邪剑法+葵元引魂针+魅影空蝉',
     effect: [
-      '两仪守护：被攻击时64%概率减伤32点，并降低敌方320气攻',
-      '两仪守护·极：被攻击时32%概率减伤64点，并降低敌方640气攻',
+      '对刺目的目标伤害增加25%',
+      '刺目后概率跟随机一个敌方目标更换一次位置，并让自已在10时序内不可选中为攻击目标',
     ],
     type: 1,
   },
   xianTianJiuYin: {
     id: 47,
     name: '先天九阴',
-    condition: '九阴神功+先天功，主运九阴神功',
+    condition: '九阴神功+先天功',
     effect: ['主运九阴神功，被杀气到-500，清除全部内伤，并恢复10%最大生命值'],
-    type: 2,
+    type: 1,
   },
   niYunJiuYin: {
     id: 48,
     name: '逆运九阴',
     condition: '九阴神功+逆运经脉',
     effect: ['被攻击时暴击伤害减少20%'],
-    type: 2,
+    type: 1,
   },
   qinQiShuHua: {
     id: 63,
@@ -530,16 +530,6 @@ export default {
     name: '烽火连城',
     condition: '狂风迅雷扇+疯魔棍法',
     effect: ['奇门武功攻击时25%概率三连击'],
-    type: 1,
-  },
-  chuanZhenYinPo: {
-    id: 'chuanZhenYinPo',
-    name: '穿针引魄',
-    condition: '辟邪剑法+葵元引魂针+魅影空蝉',
-    effect: [
-      '对刺目的目标伤害增加25%',
-      '刺目后概率跟随机一个敌方目标更换一次位置，并让自已在10时序内不可选中为攻击目标',
-    ],
     type: 1,
   },
   jiuYinShenZhao: {

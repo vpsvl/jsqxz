@@ -9,7 +9,7 @@ export function fistBase(lv) {
 export function fingerBase(lv) {
   return {
     id: 'finger',
-    effect: [`对目标封穴${lv}~${lv * 2 + 2}点`],
+    effect: [`造成目标封穴${lv}~${lv * 2 + 2}点`],
   };
 }
 // 剑法基础效果
@@ -30,9 +30,7 @@ export function knifeBase(lv) {
 export function specialBase(lv) {
   return {
     id: 'special',
-    effect: [
-      `造成目标内伤${lv * 2}点，对目标封穴${lv}~${lv * 2 + 2}点，造成目标流血${lv * 10}点，造成目标灼烧${lv * 10}点`,
-    ],
+    effect: [`造成目标内伤${lv * 2}点/封穴${lv}~${lv * 2 + 2}点/流血${lv * 10}点/灼烧${lv * 10}点`],
   };
 }
 
@@ -231,7 +229,7 @@ export function huiQi(lv) {
 export function suoZu(lv) {
   return {
     id: 29,
-    effect: [`${lv * 15}%概率造成目标锁足一回合`],
+    effect: [`${lv * 15}%概率造成目标锁足一回合，无法挪移`],
   };
 }
 export function fanJi(lv) {
@@ -303,21 +301,13 @@ export function hunLuan(lv) {
 export function maBi(lv) {
   return {
     id: 41,
-    effect: [`${lv * 3}%概率造成目标麻痹一回合`],
+    effect: [`${lv * 10}%概率造成目标麻痹一回合`],
   };
 }
-export function suoZu2(lv) {
-  return {
-    id: 42,
-    effect: [`${lv * 10}%概率造成目标锁足一回合`],
-  };
-}
-export function chiHuan(lv) {
-  return {
-    id: 43,
-    effect: [`造成目标虚弱${lv}回合，减少伤害和气攻`],
-  };
-}
+
+/**
+ * 奥义
+ */
 export function lvShuangBingZhi(lv) {
   return {
     id: 1,

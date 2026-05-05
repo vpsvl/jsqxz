@@ -45,7 +45,7 @@
         <div class="td-block color-success">*NPC处学习武功：中阶200贡献，高级400贡献+豪侠，绝学600贡献+宗师</div>
         <div class="td-block color-success">
           <span v-if="sectType === 'jianghu'">*江湖武功除秘籍本身能一脉相承的，都不能一脉相承</span>
-          <span v-else>*NPC处初阶中阶高阶可以一脉相承，绝学除轻功外都不能一脉相承</span>
+          <span v-else>*NPC处初阶中阶高阶可以一脉相承，绝学除轻功外都不能一脉相承，初阶轻功也可以使用本门的绝学轻功秘籍一脉相承</span>
         </div>
         <div class="td-block" v-for="(item, index) of tbody.martial" :key="index">
           <div v-if="item.name">

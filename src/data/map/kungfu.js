@@ -1249,7 +1249,7 @@ export default {
     sect: 4,
   },
   312: {
-    name: '葵元七绝针',
+    name: '葵元引魂针',
     sect: 4,
   },
   313: {
@@ -1501,7 +1501,7 @@ export default {
     sect: 6,
   },
   376: {
-    name: '太清快剑',
+    name: '太清剑法',
     sect: 21,
   },
   377: {
