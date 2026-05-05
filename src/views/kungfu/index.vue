@@ -139,7 +139,7 @@
 </template>
 
 <script setup>
-import {computed, ref, watch} from 'vue';
+import {computed, ref, watchEffect} from 'vue';
 import {useRoute} from 'vue-router';
 import fist from '@/data/kungfu/fist';
 import finger from '@/data/kungfu/finger';
@@ -169,19 +169,15 @@ const kungfuTypeMap = {
 const kungfu = ref([]);
 const kungfuType = ref('in');
 const active = ref(-1);
-watch(
-  () => route,
-  () => {
-    kungfu.value = [];
-    const {type} = route.meta;
-    kungfuType.value = kungfuTypeMap[type];
-    if (all[type]?.list) {
-      kungfu.value = all[type].list;
-    }
-    active.value = 0;
-  },
-  {immediate: true},
-);
+watchEffect(() => {
+  kungfu.value = [];
+  const {type} = route.meta;
+  kungfuType.value = kungfuTypeMap[type];
+  if (all[type]?.list) {
+    kungfu.value = all[type].list;
+  }
+  active.value = 0;
+});
 
 const info = computed(() => handleInfo());
 
