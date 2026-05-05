@@ -23,10 +23,9 @@
 </template>
 
 <script setup>
-import {inject, onBeforeMount, ref} from 'vue';
+import {onBeforeMount, ref} from 'vue';
 import data from '@/data/other/state';
 
-const state = inject('state');
 const thead = ref([
   {
     key: 'name',
@@ -39,11 +38,6 @@ const thead = ref([
   {
     key: 'type',
     name: '类型',
-  },
-  {
-    key: 'shortname',
-    name: '显示名称',
-    hidden: state.lessWindow,
   },
 ]);
 
@@ -73,15 +67,10 @@ onBeforeMount(() => {
 
   .td {
     &:nth-child(1) {
-      flex: 0 0 130px;
+      flex: 0 0 100px;
     }
-
     &:nth-child(3) {
-      flex: 0 0 80px;
-    }
-
-    &:nth-child(4) {
-      flex: 0 0 120px;
+      flex: 0 0 60px;
     }
   }
 }

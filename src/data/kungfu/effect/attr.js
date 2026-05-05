@@ -99,7 +99,7 @@ export function getAttr({type, level, internal = '', other = ''}) {
 }
 
 // 阴阳内力限制
-const internalTypeCondition = {0: '非阳内', 1: '非阴内'};
+const internalTypeCondition = {1: '非阳内', 2: '非阴内'};
 // 外功学习系数
 const outConditionMap = {
   1: 20,

@@ -4,7 +4,7 @@
       <span
         :class="{
           [`level-${tab.level}`]: tab.level,
-          [`internal-${tab.internal}`]: tab.internal === 0 || tab.internal === 1,
+          [`internal-${tab.internal}`]: tab.internal === 1 || tab.internal === 2,
         }"
       >
         {{ tab.name }}
@@ -14,7 +14,7 @@
       <span
         :class="[
           `level-${info.level}`,
-          {[`internal-${info.internal}`]: info.internal === 0 || info.internal === 1},
+          {[`internal-${info.internal}`]: info.internal === 1 || info.internal === 2},
         ]"
       >
         {{ info.name }}

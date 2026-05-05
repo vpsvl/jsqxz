@@ -37,9 +37,9 @@ export const kungfuMap = {
 };
 // 内力
 export const internalTypeMap = {
-  0: '阴内',
-  1: '阳内',
-  2: '无',
+  0: '-',
+  1: '阴内',
+  2: '阳内',
   3: '天罡',
   '-': '-',
   '': '-',
@@ -55,8 +55,8 @@ export const levelMap = {
 export const cheatTypeMap = {
   1: '拳掌',
   2: '指腿',
-  3: '刀法',
-  4: '剑法',
+  3: '剑法',
+  4: '刀法',
   5: '奇门',
   6: '内功',
   7: '轻功',
