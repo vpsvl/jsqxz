@@ -1,4 +1,12 @@
-import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-B6FpbXp-.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-4.fix28 -----
+import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-B6FpbXp-.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-5.fix29 -----
+      1，修复奇穴归元境被动复活失效的问题
+      2，修复李寻欢挑战人物错误和物品奖励错误
+      3，修复秘技穿针引魄秘技描述错误
+      4，修复不能加入日月神教问题（需没打东方不败）
+      5，修复斗转奇穴消耗有误
+      6，增加天下第一武道大会NPC前三名境界提升1，主角不参加大会也会如期举行
+
+      -------正式版V2.5-----2026-5-4.fix28 -----
       1，修复吃药会有双倍效果
       2，修复周伯通左右互搏会触发多次
       3，修复虚竹，狄云入等入队后清除不完整导致可无限入队的问题
