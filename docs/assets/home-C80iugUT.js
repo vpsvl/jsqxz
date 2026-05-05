@@ -1,4 +1,13 @@
-import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-B6FpbXp-.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-3.fix27 -----
+import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-B6FpbXp-.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-4.fix28 -----
+      1，修复吃药会有双倍效果
+      2，修复周伯通左右互搏会触发多次
+      3，修复虚竹，狄云入等入队后清除不完整导致可无限入队的问题
+      4，限制特效加成对概率的加成为正负10（比如20%触发的概率最低10%，最高30%）
+      5，修复小还丹异常问题（重启生效）
+      6，修复低阶内功查看或修炼会跳出的问题
+      7，修复心魔有时会跳出
+
+      -------正式版V2.5-----2026-5-3.fix27 -----
       1，调整NPC游历进升境界的概率
       2，调整武功秘籍修炼的系数需求跟周目相关
       3，接受任我行的邀请可加入日月神教
