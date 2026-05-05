@@ -1,7 +1,7 @@
 <template>
   <div class="v-tabs">
     <div class="tabs">
-      <label class="tab" v-for="(item, index) of kungfu.list" :key="index">
+      <label class="tab" v-for="(item, index) of kungfu" :key="index">
         <input type="radio" name="cheat" :value="index" v-model="active" />
         <span
           :class="{
@@ -69,6 +69,10 @@
         <div class="td">气功</div>
         <div class="td">{{ info.power }}</div>
       </div>
+      <div class="tr" v-if="kungfuType !== 'fly'">
+        <div class="td">攻击范围</div>
+        <div class="td">{{ info.range }}</div>
+      </div>
       <div class="tr" v-if="kungfuType === 'in' || kungfuType === 'fly'">
         <div class="td">主运效果</div>
         <div class="td">
@@ -83,10 +87,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="tr" v-if="kungfuType !== 'fly'">
-        <div class="td">攻击范围</div>
-        <div class="td">{{ info.range }}</div>
       </div>
       <template v-if="kungfuType === 'out'">
         <div class="tr">
@@ -139,7 +139,7 @@
 </template>
 
 <script setup>
-import {computed, ref, watchEffect} from 'vue';
+import {computed, ref, watch} from 'vue';
 import {useRoute} from 'vue-router';
 import fist from '@/data/kungfu/fist';
 import finger from '@/data/kungfu/finger';
@@ -166,22 +166,30 @@ const kungfuTypeMap = {
   internal: 'in',
   fly: 'fly',
 };
-const kungfu = ref({});
+const kungfu = ref([]);
 const kungfuType = ref('in');
-const active = ref(0);
-watchEffect(() => {
-  kungfu.value = {list: []};
-  const {type} = route.meta;
-  kungfuType.value = kungfuTypeMap[type];
-  kungfu.value = all[type] ? all[type] : {list: []};
-  active.value = 0;
-});
+const active = ref(-1);
+watch(
+  () => route,
+  () => {
+    kungfu.value = [];
+    const {type} = route.meta;
+    kungfuType.value = kungfuTypeMap[type];
+    if (all[type]?.list) {
+      kungfu.value = all[type].list;
+    }
+    active.value = 0;
+  },
+  {immediate: true},
+);
 
-const info = computed(() => {
-  if (kungfu.value.list.lenth < 1) {
+const info = computed(() => handleInfo());
+
+function handleInfo() {
+  if (kungfu.value.length < 1) {
     return {};
   }
-  const item = {...kungfu.value.list[active.value]};
+  const item = JSON.parse(JSON.stringify(kungfu.value[active.value]));
   const {
     initiative,
     level,
@@ -307,5 +315,5 @@ const info = computed(() => {
     item.attack = arr;
   }
   return item;
-});
+}
 </script>
