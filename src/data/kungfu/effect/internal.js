@@ -1942,7 +1942,7 @@ export function fuYuanJiaShen(lv) {
   return {
     id: 1024,
     name: `福缘加身 Lv${lv}`,
-    effect: [`增加特效${lv * 2}点(非固定概率)`],
+    effect: [`增加特效${lv + 1}点(非固定概率)`],
   };
 }
 

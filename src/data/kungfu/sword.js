@@ -403,8 +403,7 @@ export default {
       sect: 21,
       peculiar: [],
       inherit: [],
-      attack: [],
-      ultimate: ['eWaiShangHai', 'suoZu', 'zaiDong'],
+      attack: ['eWaiShangHai', 'suoZu', 'zaiDong'],
     },
     {
       id: 276,
@@ -420,8 +419,7 @@ export default {
       sect: 21,
       peculiar: [],
       inherit: [],
-      attack: [],
-      ultimate: ['eWaiShangHai', 'huiQi', 'jianGongJi3'],
+      attack: ['eWaiShangHai', 'huiQi', 'jianGongJi3'],
     },
     {
       id: 265,
@@ -453,8 +451,7 @@ export default {
       sect: 30,
       peculiar: [],
       inherit: [],
-      attack: [],
-      ultimate: [
+      attack: [
         ['bingFengBase', 'zhuoShaoBase'],
         'eWaiShangHai',
         'huiQi',
