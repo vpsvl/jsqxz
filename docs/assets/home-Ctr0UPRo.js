@@ -1,4 +1,4 @@
-import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-B6FpbXp-.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-5.fix29 -----
+import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-BV093Ai9.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-5.fix29 -----
       1，修复奇穴归元境被动复活失效的问题
       2，修复李寻欢挑战人物错误和物品奖励错误
       3，修复秘技穿针引魄秘技描述错误
