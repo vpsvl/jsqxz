@@ -38,14 +38,14 @@ export function specialBase(lv) {
 export function bingFengBase(lv) {
   return {
     id: 'bingFeng',
-    effect: ['概率冰封'],
+    effect: '概率冰封',
   };
 }
 // 概率灼烧
 export function zhuoShaoBase(lv) {
   return {
     id: 'zhuoShao',
-    effect: ['概率灼烧'],
+    effect: '概率灼烧',
   };
 }
 // 中毒
@@ -53,7 +53,7 @@ export function zhongDuBase(lv) {
   // 4: 30
   return {
     id: 'zhongDu',
-    effect: ['使目标中毒'],
+    effect: '使目标中毒',
   };
 }
 

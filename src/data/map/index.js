@@ -78,6 +78,7 @@ export const sectMap = {
   wudang: '武当派',
   xiaoyao: '逍遥派',
   riyue: '日月神教',
+  mingjiao: '明教',
   tianji: '天机宫',
   gaibang: '丐帮',
   huashan: '华山派',

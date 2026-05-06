@@ -227,11 +227,13 @@ export function getRange({type, level, other = ''}) {
   return '';
 }
 
+// 可学习武功的门派
 const sectMap = {
   1: '少林派',
   2: '武当派',
   3: '逍遥派',
   4: '日月神教',
+  5: '明教',
   6: '天机宫',
   8: '丐帮',
   9: '华山派',

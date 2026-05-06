@@ -1,8 +1,8 @@
 <template>
   <div class="v-tabs">
     <div class="tabs">
-      <label class="tab" v-for="(item, index) of kungfu" :key="index">
-        <input type="radio" name="cheat" :value="index" v-model="active" />
+      <label class="tab" v-for="item of kungfu" :key="item.id">
+        <input type="radio" name="cheat" :value="item.id" v-model="active" />
         <span
           :class="{
             [`level-${item.level}`]: item.level,
@@ -176,16 +176,19 @@ watchEffect(() => {
   if (all[type]?.list) {
     kungfu.value = all[type].list;
   }
-  active.value = 0;
+  active.value = kungfu.value.length > 0 ? kungfu.value[0].id : -1;
 });
 
-const info = computed(() => handleInfo());
-
-function handleInfo() {
+const info = computed(() => {
   if (kungfu.value.length < 1) {
     return {};
   }
-  const item = JSON.parse(JSON.stringify(kungfu.value[active.value]));
+  const current = kungfu.value.find((item) => item.id === active.value);
+  return handleKungfuInfo(current);
+});
+
+function handleKungfuInfo(info = {}) {
+  const item = JSON.parse(JSON.stringify(info));
   const {
     initiative,
     level,
@@ -292,7 +295,7 @@ function handleInfo() {
         const attackItem = outMap[key](level);
         item.push(attackItem.effect);
       }
-      arr.push(item);
+      arr.push([item.join('；')]);
     }
     // 外功奥义特效
     if (Array.isArray(ultimate)) {

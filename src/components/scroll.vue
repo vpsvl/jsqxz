@@ -186,7 +186,7 @@ function getSize(key = 'x') {
     _state[thumbWidth] = 0;
   } else {
     _state[maxLeft] = viewSize - wrapSize;
-    _state[thumbWidth] = Math.round(wrapSize * wrapSize / viewSize);
+    _state[thumbWidth] = Math.round((wrapSize * wrapSize) / viewSize);
   }
 }
 
@@ -219,7 +219,7 @@ function clickTrack(e, key) {
   const {clientX, left, thumbWidth, wrapWidth, viewWidth} = KEY_MAP[key];
   const offset = e[clientX] - e.target.getBoundingClientRect()[left];
   const thumbHalf = _state[thumbWidth] / 2;
-  _state[left] = limitRange((offset - thumbHalf) * _state[viewWidth] / _state[wrapWidth], key);
+  _state[left] = limitRange(((offset - thumbHalf) * _state[viewWidth]) / _state[wrapWidth], key);
   emit('scroll', {
     scrollLeft: _state.left,
     scrollTop: _state.top,
@@ -249,7 +249,7 @@ function mouseMove(e) {
     return false;
   }
   _state[left] = limitRange(
-    _state[left] + (x - _state[x0]) * _state[viewWidth] / _state[wrapWidth],
+    _state[left] + ((x - _state[x0]) * _state[viewWidth]) / _state[wrapWidth],
     _state.moveDirection,
   );
   _state[x0] = x;
