@@ -1,4 +1,15 @@
-import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-BV093Ai9.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-5.fix29 -----
+import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-BV093Ai9.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-6.fix30 -----
+      1，增加战场主运轻功通过移动增加经验到极
+      2，增加人物信息界面按F2可查看人物游历经历
+      3，修复内功攻击不满级范围问题，开太极范围问题
+      4，新建畅想主角我字的错误，修复新游戏选择模式时，选择周目后不回点模式会默认为娱乐模式
+      5，修复光明顶密道没有挑战成昆
+      6，修复逆运真经激活第九个特效的挑战为华山绝顶帮欧阳挑战洪七公，满七公洗第三格内功为浑天气功11级
+      7，修复杨过只有两个武功时，华山洗武功第四格会闪退的问题
+      8，家里宝箱打开后增加主角10000修炼点数
+      9，增加背包栏可以按F2整理背包
+
+      -------正式版V2.5-----2026-5-5.fix29 -----
       1，修复奇穴归元境被动复活失效的问题
       2，修复李寻欢挑战人物错误和物品奖励错误
       3，修复秘技穿针引魄秘技描述错误
