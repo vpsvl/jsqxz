@@ -2,7 +2,7 @@ export default {
   name: '经脉',
   list: [
     {
-      name: '手三阴经',
+      name: '手三阴经（指腿专属）',
       list: [
         {
           name: '手少阴经',
@@ -30,7 +30,7 @@ export default {
           ],
         },
         {
-          name: '手太阴经',
+          name: '手太阴经（剑法专属）',
           list: [
             {
               name: '剑气',
@@ -86,7 +86,7 @@ export default {
       ],
     },
     {
-      name: '手三阳经',
+      name: '手三阳经（拳掌专属）',
       list: [
         {
           name: '手少阳经',
@@ -114,7 +114,7 @@ export default {
           ],
         },
         {
-          name: '手太阳经',
+          name: '手太阳经（刀法专属）',
           list: [
             {
               name: '拔刀',
@@ -143,7 +143,7 @@ export default {
           ],
         },
         {
-          name: '手阳明经',
+          name: '手阳明经（阳内专属）',
           list: [
             {
               name: '浴火',
@@ -172,7 +172,7 @@ export default {
       ],
     },
     {
-      name: '足三阴经',
+      name: '足三阴经（奇门专属）',
       list: [
         {
           name: '足少阴经',
@@ -203,7 +203,7 @@ export default {
           ],
         },
         {
-          name: '足太阴经',
+          name: '足太阴经（阴内专属）',
           list: [
             {
               name: '凌冽',
