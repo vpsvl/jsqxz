@@ -1,4 +1,17 @@
-import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-BV093Ai9.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-7.fix31 -----
+import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-f1QE6cVZ.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-9.fix33 -----
+      1，修复主角初始天赋计算没有免掉血脉天赋的点数
+      2，修复绝招范围，开太极范围
+      3，修复怒气为负数，修复轻功升级经验为负数
+      4，修复太玄神功反震造成的跳出
+
+      -------正式版V2.5-----2026-5-8.fix32 -----
+      1，修复血脉天赋装备还需要天赋点
+      2，增加周目通关可选择两件物品（装备或秘籍）继承到下周目，在小村开箱子获得
+      3，调整物品栏秘籍外功的说明
+      4，重置所有外功招式，门派外功招式效果统一（测试阶段，有建议私我）
+      5，绝招范围可视化
+
+      -------正式版V2.5-----2026-5-7.fix31 -----
       1，修正拳法到极后的距离没有补偿
       2，修正锁足不触发
       3，修正闪避触发异常
