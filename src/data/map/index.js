@@ -71,27 +71,9 @@ export const shopMap = {
   longmen: '龙门客栈',
   luoyang: '洛阳',
 };
-// 门派
-export const sectMap = {
-  jianghu: '江湖散人',
-  shaolin: '少林派',
-  wudang: '武当派',
-  xiaoyao: '逍遥派',
-  riyue: '日月神教',
-  mingjiao: '明教',
-  tianji: '天机宫',
-  gaibang: '丐帮',
-  huashan: '华山派',
-  gumu: '古墓派',
-  xuedao: '血刀门',
-  tianlong: '天龙寺',
-  xingxiu: '星宿派',
-  mizong: '密宗',
-  tianxia: '天下会',
-};
 
-// 门派武功分类编码
-export const kungfuSectMap = {
+// 门派编码
+export const sectMap = {
   0: '江湖',
   1: '少林派',
   2: '武当派',

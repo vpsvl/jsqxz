@@ -16,7 +16,7 @@ export default {
       sect: 0,
       peculiar: [],
       inherit: [],
-      attack: ['', '', ''],
+      move: [],
     },
     {
       id: 67,
@@ -39,7 +39,7 @@ export default {
         },
       ],
       inherit: [],
-      attack: ['eWaiShangHai', 'jianFangYu3', 'jianGongJi3', 'liuXue', 'jiaGeDang', 'jianXiShu'],
+      move: [],
     },
     {
       id: 153,
@@ -62,7 +62,7 @@ export default {
         'liRenHanFeng',
       ],
       inherit: [],
-      attack: [['bingFengBase'], 'eWaiShangHai', 'bingFeng', 'huiQi', 'suoZu', 'siLie', ''],
+      move: [['bingFengBase']],
     },
     {
       id: 398,
@@ -78,15 +78,7 @@ export default {
       sect: 0,
       peculiar: [],
       inherit: [],
-      attack: [
-        ['bingFengBase'],
-        'eWaiShangHai',
-        'huiQi',
-        'siLie',
-        'wuShiQiFang',
-        'jiaLianJi',
-        'jiQiWenLuan',
-      ],
+      move: [['bingFengBase']],
     },
     {
       id: 335,
@@ -106,15 +98,7 @@ export default {
         },
       ],
       inherit: [],
-      attack: [
-        ['zhuoShaoBase'],
-        'eWaiShangHai',
-        'huiQi',
-        'jianFangYu3',
-        'baoJi',
-        'baoJiShangHai',
-        'zhiMingYiJi',
-      ],
+      move: [['zhuoShaoBase']],
     },
     {
       id: 343,
@@ -130,7 +114,7 @@ export default {
       sect: 17,
       peculiar: [],
       inherit: [],
-      attack: ['eWaiShangHai', 'jianFangYu3', 'bingFeng', 'jiQiJiaSu', 'siLie', 'kongJu'],
+      move: [],
     },
     {
       id: 66,
@@ -153,15 +137,7 @@ export default {
         'juHuoLiaoYuan',
       ],
       inherit: [],
-      attack: [
-        ['zhuoShaoBase'],
-        'zhuoShao',
-        'wuShiQiFang',
-        'jiQiJiaSu',
-        'huiQi',
-        'jianFangYu',
-        'dianRan',
-      ],
+      move: [['zhuoShaoBase']],
     },
     {
       id: 62,
@@ -182,7 +158,7 @@ export default {
         'tianYiWuFeng',
       ],
       inherit: [],
-      attack: ['liuXue', 'eWaiShangHai', 'jianXiShu'],
+      move: [],
     },
     {
       id: 174,
@@ -198,7 +174,7 @@ export default {
       sect: 5,
       peculiar: ['liRenHanFeng'],
       inherit: [],
-      attack: [['bingFengBase'], 'bingFeng', 'huiQi', 'jiaLianJi', 'dongJie'],
+      move: [['bingFengBase']],
     },
     {
       id: 231,
@@ -214,7 +190,7 @@ export default {
       sect: 25,
       peculiar: [],
       inherit: [],
-      attack: ['', 'liuXue', 'fangYu'],
+      move: [],
     },
     {
       id: 181,
@@ -230,7 +206,7 @@ export default {
       sect: 0,
       peculiar: [],
       inherit: [],
-      attack: [['zhuoShaoBase'], 'eWaiShangHai', 'huiQi', 'jiaGeDang', 'fanJi'],
+      move: [['zhuoShaoBase']],
     },
     {
       id: 64,
@@ -246,7 +222,7 @@ export default {
       sect: 2,
       peculiar: ['xuanXuJin', 'dongXuXuanMen'],
       inherit: [],
-      attack: ['', 'eWaiShangHai', 'biZhong', 'xuRuo'],
+      move: [],
     },
     {
       id: 358,
@@ -262,7 +238,7 @@ export default {
       sect: 4,
       peculiar: [],
       inherit: [],
-      attack: [['zhuoShaoBase'], '', 'eWaiShangHai', 'huiQi', 'jianXiShu'],
+      move: [['zhuoShaoBase']],
     },
     {
       id: 382,
@@ -278,7 +254,7 @@ export default {
       sect: 5,
       peculiar: [],
       inherit: [],
-      attack: [['bingFengBase'], '', 'eWaiShangHai', 'huiQi', 'siLie'],
+      move: [['bingFengBase']],
     },
     {
       id: 420,
@@ -294,15 +270,7 @@ export default {
       sect: 17,
       peculiar: [],
       inherit: [],
-      attack: [
-        ['bingFengBase'],
-        'eWaiShangHai',
-        'jianGongJi3',
-        'huiQi',
-        'siLie',
-        'zhiMingYiJi',
-        'fanJi',
-      ],
+      move: [['bingFengBase']],
     },
     {
       id: 63,
@@ -318,7 +286,7 @@ export default {
       sect: 17,
       peculiar: [],
       inherit: [],
-      attack: ['', 'liuXue', 'xiXue', 'zaiDong'],
+      move: [],
     },
     {
       id: 60,
@@ -334,7 +302,7 @@ export default {
       sect: 20,
       peculiar: [],
       inherit: [],
-      attack: ['', 'suoZu', 'jiaGeDang', 'fanJi'],
+      move: [],
     },
     {
       id: 65,
@@ -350,7 +318,7 @@ export default {
       sect: 29,
       peculiar: ['juHuoLiaoYuan'],
       inherit: [],
-      attack: [['zhuoShaoBase'], '', 'zhuoShao', 'jiQiWenLuan', 'dianRan'],
+      move: [['zhuoShaoBase']],
     },
     {
       id: 141,
@@ -366,7 +334,7 @@ export default {
       sect: 29,
       peculiar: [],
       inherit: [],
-      attack: ['', 'huiQi', 'baoJi', 'baoJiShangHai'],
+      move: [],
     },
     {
       id: 270,
@@ -382,7 +350,7 @@ export default {
       sect: 29,
       peculiar: [],
       inherit: [],
-      attack: ['', 'eWaiShangHai', 'jianFangYu'],
+      move: [],
     },
     {
       id: 338,
@@ -398,7 +366,7 @@ export default {
       sect: 0,
       peculiar: [],
       inherit: [],
-      attack: ['', '', ''],
+      move: [],
     },
     {
       id: 268,
@@ -414,7 +382,7 @@ export default {
       sect: 0,
       peculiar: [],
       inherit: [],
-      attack: ['', '', ''],
+      move: [],
     },
     {
       id: 267,
@@ -430,7 +398,7 @@ export default {
       sect: 1,
       peculiar: [],
       inherit: [],
-      attack: ['', '', '', ''],
+      move: [],
     },
     {
       id: 58,
@@ -446,7 +414,7 @@ export default {
       sect: 5,
       peculiar: ['liRenHanFeng'],
       inherit: [],
-      attack: [['bingFengBase'], '', 'xiXue', 'xuanYun'],
+      move: [['bingFengBase']],
     },
     {
       id: 59,
@@ -462,7 +430,7 @@ export default {
       sect: 5,
       peculiar: ['wuHu'],
       inherit: [],
-      attack: ['', 'eWaiShangHai', 'jianFangYu'],
+      move: [],
     },
     {
       id: 52,
@@ -478,7 +446,7 @@ export default {
       sect: 17,
       peculiar: [],
       inherit: [],
-      attack: ['', 'baoJi', 'baoJiShangHai'],
+      move: [],
     },
     {
       id: 193,
@@ -503,7 +471,7 @@ export default {
         },
       ],
       inherit: ['chaiDaoToPaoDing'],
-      attack: ['eWaiShangHai', 'liuXue', 'jianFangYu3', 'jianFangYu'],
+      move: [],
     },
     {
       id: 61,
@@ -519,7 +487,7 @@ export default {
       sect: 18,
       peculiar: ['juHuoLiaoYuan', 'jinWuYingXue'],
       inherit: [],
-      attack: [['zhuoShaoBase'], '', 'zhuoShao', 'baoJi'],
+      move: [['zhuoShaoBase']],
     },
     {
       id: 54,
@@ -535,7 +503,7 @@ export default {
       sect: 29,
       peculiar: ['tianYiWuFeng'],
       inherit: [],
-      attack: ['', 'jiaLianJi', 'zaiDong'],
+      move: [],
     },
     {
       id: 350,
@@ -551,7 +519,7 @@ export default {
       sect: 29,
       peculiar: [],
       inherit: [],
-      attack: ['eWaiShangHai', 'liuXue', 'jianFangYu3', 'suoZu', 'jiaGeDang'],
+      move: [],
     },
     {
       id: 55,
@@ -567,7 +535,7 @@ export default {
       sect: 29,
       peculiar: [],
       inherit: [],
-      attack: ['', 'siLie', 'jiQiJiaSu'],
+      move: [],
     },
     {
       id: 53,
@@ -583,7 +551,7 @@ export default {
       sect: 0,
       peculiar: [],
       inherit: [],
-      attack: ['', 'huiQi'],
+      move: [],
     },
     {
       id: 50,
@@ -599,7 +567,7 @@ export default {
       sect: 0,
       peculiar: [],
       inherit: ['chaiDaoToPaoDing'],
-      attack: ['', 'jianFangYu3'],
+      move: [],
     },
     {
       id: 57,
@@ -615,7 +583,7 @@ export default {
       sect: 1,
       peculiar: ['ciBeiWeiHuai'],
       inherit: [],
-      attack: ['', 'jiQiWenLuan'],
+      move: [],
     },
     {
       id: 56,
@@ -631,7 +599,7 @@ export default {
       sect: 2,
       peculiar: [],
       inherit: [],
-      attack: ['', 'fangYu'],
+      move: [],
     },
     {
       id: 337,
@@ -647,7 +615,7 @@ export default {
       sect: 5,
       peculiar: [],
       inherit: [],
-      attack: ['', '', ''],
+      move: [],
     },
     {
       id: 344,
@@ -663,7 +631,7 @@ export default {
       sect: 17,
       peculiar: [],
       inherit: [],
-      attack: ['', '', ''],
+      move: [],
     },
     {
       id: 51,
@@ -679,7 +647,7 @@ export default {
       sect: 17,
       peculiar: [],
       inherit: [],
-      attack: ['', 'jianGongJi'],
+      move: [],
     },
     {
       id: 427,
@@ -695,7 +663,7 @@ export default {
       sect: 29,
       peculiar: [],
       inherit: [],
-      attack: ['', 'liuXue'],
+      move: [],
     },
   ],
 };

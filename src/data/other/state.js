@@ -4,7 +4,7 @@ export default {
     {
       id: 82,
       name: '冰封',
-      effect: ['时序减少内力，减少移动步数，100点冰封会造成冻结效果'],
+      effect: ['时序减少内力，每25点冰封减少1格移动', '100点冰封会造成冻结效果'],
       type: 2,
     },
     {
@@ -108,7 +108,7 @@ export default {
     {
       id: 68,
       name: '麻痹',
-      effect: ['移动步数降为0'],
+      effect: ['无法移动'],
       type: 2,
     },
     {
@@ -150,7 +150,7 @@ export default {
     {
       id: 39,
       name: '眩晕/昏迷',
-      effect: ['无法行动'],
+      effect: ['无法行动、闪避、挪移'],
       type: 2,
     },
     {

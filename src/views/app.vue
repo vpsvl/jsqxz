@@ -41,7 +41,7 @@ watch(
 provide('state', state);
 
 // import data from '@/data/kungfu/fly';
-// import {kungfuSectMap} from '@/data/map';
+// import {sectMap} from '@/data/map';
 
 // function toArr() {
 //   const arr = data.list;
@@ -122,6 +122,19 @@ provide('state', state);
 // }
 //
 // toPinyin(data);
+
+// import sectAll from '@/data/person/sect';
+//
+// function toArr() {
+//   const arr = {};
+//   for (let id in sectAll) {
+//     const {move} = sectAll[id];
+//     move.splice(6, 0, 'maBi', 'suoZu');
+//   }
+//   console.log(sectAll);
+// }
+//
+// toArr();
 </script>
 
 <style lang="less">

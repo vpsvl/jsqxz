@@ -129,7 +129,7 @@ export function xuRuo(lv) {
     effect: `${lv * 10 + 10}%概率造成目标虚弱一回合，减少伤害和气攻`,
   };
 }
-export function jianFangYu(lv) {
+export function poFang(lv) {
   return {
     id: 13,
     effect: `减少目标防御${lv * 10}%`,
@@ -183,16 +183,16 @@ export function zaiDong(lv) {
     effect: `${lv * 4}%概率再次行动`,
   };
 }
-export function jiQiJiaSu(lv) {
-  return {
-    id: 22,
-    effect: `下回合集气加速${lv * 10}%`,
-  };
-}
 export function jiaLianJi(lv) {
   return {
-    id: 23,
+    id: 22,
     effect: `${lv * 10}%概率增加连击1次`,
+  };
+}
+export function jiaJiQi(lv) {
+  return {
+    id: 23,
+    effect: `下回合集气加速${lv * 10}%`,
   };
 }
 export function baoJi(lv) {

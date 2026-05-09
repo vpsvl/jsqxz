@@ -1,4 +1,4 @@
-import {kungfuSectMap} from '@/data/map';
+import {sectMap} from '@/data/map';
 
 // 属性加成类型
 const attrTypeMap = {
@@ -210,10 +210,10 @@ const rangeMap = {
     4: {shape: '十', move: 4, width: 9, height: 9},
   },
   internal: {
-    1: {shape: '■', move: 2, width: 5, height: 5},
-    2: {shape: '■', move: 2, width: 5, height: 5},
-    3: {shape: '■', move: 3, width: 7, height: 7},
-    4: {shape: '■', move: 4, width: 7, height: 7},
+    1: {shape: '■', move: 2, width: 3, height: 3},
+    2: {shape: '■', move: 2, width: 3, height: 3},
+    3: {shape: '■', move: 3, width: 5, height: 5},
+    4: {shape: '■', move: 4, width: 5, height: 5},
   },
 };
 
@@ -237,8 +237,8 @@ export function getLearn({sect, level, other = []}) {
   if(level > 2) {
     other.push(`挑战每月随机事件中携带此秘籍的人物，战胜后概率获得`);
   }
-  if (kungfuSectMap[sect]) {
-    other.push(`加入${kungfuSectMap[sect]}可学习`);
+  if (sectMap[sect]) {
+    other.push(`加入${sectMap[sect]}可学习`);
   } else if (sect === 0 && level < 4) {
     other.push(`江湖散人可在扬州武馆学习`);
   }

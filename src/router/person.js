@@ -1,17 +1,4 @@
-import {sectMap, bookMap} from '@/data/map/index';
-
-const sectChildren = [];
-for (let key in sectMap) {
-  sectChildren.push({
-    path: key,
-    component: () => import('@/views/person/sect.vue'),
-    name: 'personSect' + key.replace(key[0], key[0].toUpperCase()),
-    meta: {
-      title: sectMap[key],
-      type: key,
-    },
-  });
-}
+import {bookMap} from '@/data/map/index';
 
 const bookChildren = [];
 for (let key in bookMap) {
@@ -37,13 +24,11 @@ export default {
   children: [
     {
       path: 'sect',
-      component: () => import('@/views/layout/router-view.vue'),
+      component: () => import('@/views/person/sect.vue'),
       name: 'personSect',
-      redirect: {name: 'personSectJianghu'},
       meta: {
         title: '门派',
       },
-      children: sectChildren,
     },
     {
       path: 'book',

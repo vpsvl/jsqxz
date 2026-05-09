@@ -46,7 +46,7 @@
       <div class="tr">
         <div class="td">所属门派</div>
         <div class="td">
-          {{ kungfuSectMap[info.sect] ?? '' }}
+          {{ sectMap[info.sect]?.name ?? '' }}
         </div>
       </div>
       <div class="tr">
@@ -92,12 +92,12 @@
         <div class="tr">
           <div class="td">招式效果</div>
           <div class="td">
-            <template v-for="(item, index) of info.attack" :key="index">
+            <template v-for="(item, index) of info.move" :key="index">
               <div class="is-block td-effect-item" v-for="(text, i) of item.effect" :key="i">
                 {{ text }}
               </div>
             </template>
-            <div class="td-block" v-for="(item, index) of info.attack" :key="index">
+            <div class="td-block" v-for="(item, index) of info.move" :key="index">
               <div>
                 [
                 <span :class="`level-${info.level}`">第{{ index + 1 }}招</span>
@@ -148,8 +148,9 @@ import knife from '@/data/kungfu/knife';
 import special from '@/data/kungfu/special';
 import internal from '@/data/kungfu/internal';
 import fly from '@/data/kungfu/fly';
-import {kungfuSectMap} from '@/data/map/index';
+import sectMap from '@/data/person/sect';
 import {getAttr, getCondition, getLearn, getPower, getRange} from '@/data/kungfu/effect/attr';
+import moveMap from '@/data/kungfu/effect/move';
 import * as internalMap from '@/data/kungfu/effect/internal';
 import * as outMap from '@/data/kungfu/effect/out';
 import stuntMap from '@/data/kungfu/stunt';
@@ -190,11 +191,12 @@ const info = computed(() => {
 function handleKungfuInfo(info = {}) {
   const item = JSON.parse(JSON.stringify(info));
   const {
+    id,
     initiative,
     level,
     peculiar,
     inherit,
-    attack,
+    move,
     ultimate,
     addition,
     internal,
@@ -272,31 +274,48 @@ function handleKungfuInfo(info = {}) {
     item.inherit = arr;
   }
   // 外功招式特效
-  if (Array.isArray(attack)) {
+  if (Array.isArray(move)) {
     // 所有特效
     const arr = [];
     // 基础特效
     const arrBase = [];
     const typeKey = `${type}Base`;
     if (outMap[typeKey]) {
-      const attackItem = outMap[typeKey](level);
-      arrBase.push(attackItem.effect);
+      const moveItem = outMap[typeKey](level);
+      arrBase.push(moveItem.effect);
     }
-    if (Array.isArray(attack[0])) {
-      const base = attack.shift();
+    if (Array.isArray(move[0])) {
+      const base = move.shift();
       for (let key of base) {
-        const attackItem = outMap[key](level);
-        arrBase.push(attackItem.effect);
+        const moveItem = outMap[key](level);
+        arrBase.push(moveItem.effect);
       }
     }
-    for (let key of attack) {
+    const levelMoveLength = {1: 2, 2: 3, 3: 5, 4: 6};
+    let moveList = [];
+    // 有配招式就使用配置的
+    if (move.length > 0) {
+      moveList = move;
+    } else if (sectMap[sect]) {
+      // 没有配置招式使用门派默认的
+      const {move: sectMove} = sectMap[sect];
+      const total = sectMove.length;
+      const length = moveMap[id]?.move.length ?? levelMoveLength[level];
+      for (let i = 0; i < length - 1; i++) {
+        moveList.push(sectMove[i]);
+      }
+      // 最后一招怒气大招默认门派最后一招
+      moveList.push(sectMove[total - 1]);
+    }
+    for (let key of moveList) {
       const item = [...arrBase];
       if (typeof outMap[key] === 'function') {
-        const attackItem = outMap[key](level);
-        item.push(attackItem.effect);
+        const moveItem = outMap[key](level);
+        item.push(moveItem.effect);
       }
       arr.push([item.join('；')]);
     }
+
     // 外功奥义特效
     if (Array.isArray(ultimate)) {
       for (let [index, key] of ultimate.entries()) {
@@ -311,7 +330,7 @@ function handleKungfuInfo(info = {}) {
       }
       item.ultimate = arr;
     }
-    item.attack = arr;
+    item.move = arr;
   }
   return item;
 }

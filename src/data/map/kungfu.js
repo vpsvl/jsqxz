@@ -37,7 +37,7 @@ export default {
     sect: 3,
   },
   9: {
-    name: '白驼雪山掌',
+    name: '灵蛇拳',
     sect: 23,
   },
   10: {
@@ -89,7 +89,7 @@ export default {
     sect: 29,
   },
   22: {
-    name: '大金刚掌',
+    name: '大力金刚掌',
     sect: 1,
   },
   23: {
@@ -113,7 +113,7 @@ export default {
     sect: 11,
   },
   28: {
-    name: '雷震剑术',
+    name: '雷震剑法',
     sect: 0,
   },
   29: {
@@ -125,19 +125,19 @@ export default {
     sect: 13,
   },
   31: {
-    name: '泰山剑法',
+    name: '泰山十八盘',
     sect: 14,
   },
   32: {
-    name: '衡山剑法',
+    name: '云雾十三式',
     sect: 12,
   },
   33: {
-    name: '嵩山剑法',
+    name: '万岳朝宗',
     sect: 10,
   },
   34: {
-    name: '华山剑法',
+    name: '太岳三青峰',
     sect: 9,
   },
   35: {
@@ -145,7 +145,7 @@ export default {
     sect: 18,
   },
   36: {
-    name: '柔云剑法',
+    name: '柔云剑术',
     sect: 2,
   },
   37: {
@@ -153,7 +153,7 @@ export default {
     sect: 21,
   },
   38: {
-    name: '玉萧剑法',
+    name: '玉箫剑法',
     sect: 22,
   },
   39: {
@@ -293,7 +293,7 @@ export default {
     sect: 4,
   },
   73: {
-    name: '持瑶琴',
+    name: '持摇琴',
     sect: 4,
   },
   74: {
@@ -417,7 +417,7 @@ export default {
     sect: 29,
   },
   104: {
-    name: '逆运神功',
+    name: '逆运经脉',
     sect: 23,
   },
   105: {
@@ -505,7 +505,7 @@ export default {
     sect: 0,
   },
   126: {
-    name: '兰花拂穴',
+    name: '兰花拂穴手',
     sect: 22,
   },
   127: {
@@ -517,7 +517,7 @@ export default {
     sect: 1,
   },
   129: {
-    name: '旋风招叶腿',
+    name: '旋风扫叶腿',
     sect: 22,
   },
   130: {
@@ -573,7 +573,7 @@ export default {
     sect: 27,
   },
   143: {
-    name: '铁剑',
+    name: '铁剑诀',
     sect: 0,
   },
   144: {
@@ -597,7 +597,7 @@ export default {
     sect: 16,
   },
   149: {
-    name: '梯云纵',
+    name: '梯云纵横',
     sect: 2,
   },
   150: {
@@ -605,7 +605,7 @@ export default {
     sect: 23,
   },
   151: {
-    name: '斩流剑术招',
+    name: '斩流剑术',
     sect: 0,
   },
   152: {
@@ -737,7 +737,7 @@ export default {
     sect: 3,
   },
   184: {
-    name: '九宵仙息',
+    name: '九霄仙息',
     sect: 0,
   },
   185: {
@@ -757,23 +757,23 @@ export default {
     sect: 6,
   },
   189: {
-    name: '般若掌法',
+    name: '般若掌',
     sect: 1,
   },
   190: {
     name: '大周天功',
-    sect: 6,
+    sect: 26,
   },
   191: {
     name: '奔雷手',
     sect: 0,
   },
   192: {
-    name: '追魂夺命剑招式',
+    name: '追魂夺命剑',
     sect: 26,
   },
   193: {
-    name: '解牛刀法',
+    name: '庖丁解牛刀法',
     sect: 6,
   },
   194: {
@@ -781,7 +781,7 @@ export default {
     sect: 1,
   },
   195: {
-    name: '连环迷踪腿',
+    name: '迷踪连环腿',
     sect: 2,
   },
   196: {
@@ -902,7 +902,7 @@ export default {
   },
   225: {
     name: '小周天功',
-    sect: 6,
+    sect: 26,
   },
   226: {
     name: '葵花点穴手',
@@ -949,7 +949,7 @@ export default {
     sect: 2,
   },
   237: {
-    name: '灵鳌步',
+    name: '灵鳖步',
     sect: 22,
   },
   238: {
@@ -1009,7 +1009,7 @@ export default {
     sect: 12,
   },
   252: {
-    name: '无妄神咒',
+    name: '无妄神功',
     sect: 18,
   },
   253: {
@@ -1209,7 +1209,7 @@ export default {
     sect: 16,
   },
   302: {
-    name: '宁式一剑',
+    name: '宁氏一剑',
     sect: 9,
   },
   303: {
@@ -1397,7 +1397,7 @@ export default {
     sect: 5,
   },
   349: {
-    name: '屠龙刀法',
+    name: '幻尘身法',
     sect: 5,
   },
   350: {
@@ -1464,6 +1464,10 @@ export default {
     name: '圣火令法',
     sect: 5,
   },
+  366: {
+    name: '雁行功',
+    sect: 12,
+  },
   367: {
     name: '东鳞西爪功',
     sect: 6,
@@ -1505,7 +1509,7 @@ export default {
     sect: 21,
   },
   377: {
-    name: '灵枢定玄指',
+    name: '灵枢灵玄指',
     sect: 6,
   },
   378: {
@@ -1513,11 +1517,11 @@ export default {
     sect: 9,
   },
   379: {
-    name: '十步方',
+    name: '十方步',
     sect: 6,
   },
   380: {
-    name: '天剑',
+    name: '青城身法',
     sect: 11,
   },
   381: {
@@ -1717,7 +1721,7 @@ export default {
     sect: 4,
   },
   430: {
-    name: '天霜拳',
+    name: '踏云追风',
     sect: 31,
   },
   431: {
@@ -1786,6 +1790,10 @@ export default {
   },
   447: {
     name: '日月玄功',
+    sect: 4,
+  },
+  448: {
+    name: '阴葵剑法',
     sect: 4,
   },
 };
