@@ -128,8 +128,8 @@ provide('state', state);
 // function toArr() {
 //   const arr = {};
 //   for (let id in sectAll) {
-//     const {move} = sectAll[id];
-//     move.splice(6, 0, 'maBi', 'suoZu');
+//     sectAll[id].move[6] = 'suoZu';
+//     sectAll[id].move[7] = 'maBi';
 //   }
 //   console.log(sectAll);
 // }

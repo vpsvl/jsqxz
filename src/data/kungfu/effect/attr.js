@@ -210,10 +210,10 @@ const rangeMap = {
     4: {shape: '十', move: 4, width: 9, height: 9},
   },
   internal: {
-    1: {shape: '■', move: 2, width: 3, height: 3},
-    2: {shape: '■', move: 2, width: 3, height: 3},
-    3: {shape: '■', move: 3, width: 5, height: 5},
-    4: {shape: '■', move: 4, width: 5, height: 5},
+    1: {shape: '■', move: 2, width: 7, height: 7},
+    2: {shape: '■', move: 2, width: 7, height: 7},
+    3: {shape: '■', move: 3, width: 7, height: 7},
+    4: {shape: '■', move: 4, width: 7, height: 7},
   },
 };
 

@@ -13,7 +13,7 @@ export default {
       get: '神雕正线杨过送',
       condition: '-',
       addition: '轻功+10',
-      effect: ['血量越低，集气速度越快'],
+      effect: ['LV.6：50%血量以下集气速度加5点，血量越少集气速度越快，最大为0血10点'],
     },
     {
       name: '飞云骓',
@@ -27,7 +27,7 @@ export default {
       get: '书剑李沅芷线凉州城门口战胜阿凡提',
       condition: '-',
       addition: '轻功+50',
-      effect: ['集气速度增加10点', '血量越低，集气速度越快'],
+      effect: ['集气速度增加10点'],
     },
     {
       name: '白猿',
@@ -41,7 +41,7 @@ export default {
       get: '神雕正线江陵客栈剧情后获得，邪线收郭襄获得',
       condition: '-',
       addition: '防御+10，轻功+10',
-      effect: ['集气速度增加4点', '体力消耗减少2点'],
+      effect: ['集气速度增加5点', '体力消耗减少2点'],
     },
     {
       name: '汗血宝马',

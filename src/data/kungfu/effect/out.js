@@ -183,16 +183,16 @@ export function zaiDong(lv) {
     effect: `${lv * 4}%概率再次行动`,
   };
 }
-export function jiaLianJi(lv) {
-  return {
-    id: 22,
-    effect: `${lv * 10}%概率增加连击1次`,
-  };
-}
 export function jiaJiQi(lv) {
   return {
-    id: 23,
+    id: 22,
     effect: `下回合集气加速${lv * 10}%`,
+  };
+}
+export function jiaLianJi(lv) {
+  return {
+    id: 23,
+    effect: `${lv * 10}%概率增加连击1次`,
   };
 }
 export function baoJi(lv) {
