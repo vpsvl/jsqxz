@@ -1,4 +1,10 @@
-import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-f1QE6cVZ.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-9.fix33 -----
+import{M as e,O as t,c as n,s as r,w as i}from"./runtime-core.esm-bundler-Cim6DsoC.js";import{t as a}from"./plugin-vue-export-helper-f1QE6cVZ.js";var o={};function s(a,o){let s=t(`v-scroll`);return i(),n(s,{class:`home-wrap`},{default:e(()=>[...o[0]||=[r(`h4`,{class:`home-title`},`金书群侠传1.07简易攻略`,-1),r(`pre`,{class:`pre-log`},`      -------正式版V2.5-----2026-5-9.fix34 -----
+      1，修复畅想血脉天赋有计费的问题，补偿主角天赋点数50，门派主角天赋点数+50点，
+      2，增加天书7本和10本分别奖励无极丹1颗
+      3，豹胎易筋丸效果减半
+      4，修复阴阳合一天赋无效的问题
+
+      -------正式版V2.5-----2026-5-9.fix33 -----
       1，修复主角初始天赋计算没有免掉血脉天赋的点数
       2，修复绝招范围，开太极范围
       3，修复怒气为负数，修复轻功升级经验为负数
