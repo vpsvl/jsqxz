@@ -432,11 +432,15 @@ export default {
     ],
     type: 1,
   },
-  xianTianJiuYin: {
+  liuLiFenYing: {
     id: 47,
-    name: '先天九阴',
-    condition: '九阴神功+先天功',
-    effect: ['主运九阴神功，被杀气到-500，清除全部内伤，并恢复10%最大生命值'],
+    name: '琉璃焚影',
+    condition: '圣火神功+圣火刀法+幻尘身法',
+    effect: [
+      '自身有灼烧状态触发时序回复生命、内力、体力，自身有点燃状态掉血变回血',
+      '琉璃：自身受到连击伤害会催发内力，用圣火之力分出一个火分身承担伤害，自身则挪移到七格内的安全点，火分身存在10时序且敌人优先攻击火分身（CD30时序最多同时存在一个火分身）',
+      '焚影：火分身存在期间受到致命伤害，火分身会以灼烧自己为代介承担此次伤害',
+    ],
     type: 1,
   },
   niYunJiuYin: {
@@ -531,6 +535,13 @@ export default {
     condition: '狂风迅雷扇+疯魔棍法',
     effect: ['奇门武功攻击时25%概率三连击'],
     type: 1,
+  },
+  xianTianJiuYin: {
+    id: 'xianTianJiuYin',
+    name: '先天九阴',
+    condition: '九阴神功+先天功',
+    effect: ['主运九阴神功，被杀气到-500，清除全部内伤，并恢复10%最大生命值'],
+    type: 2,
   },
   jiuYinShenZhao: {
     id: 'jiuYinShenZhao',

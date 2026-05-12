@@ -137,7 +137,7 @@ export default {
       addition: '',
       sect: 1,
       peculiar: ['chuQueSiXiang'],
-      inherit: ['tianZhuWuXiang'],
+      inherit: ['tianZhuToWuXiang'],
       move: [],
     },
     {
@@ -785,7 +785,7 @@ export default {
       addition: '',
       sect: 1,
       peculiar: [],
-      inherit: ['tianZhuWuXiang'],
+      inherit: ['tianZhuToWuXiang'],
       move: [],
     },
     {

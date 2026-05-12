@@ -103,26 +103,13 @@ export function getAttr({type, level, internal = '', other = ''}) {
 // 阴阳内力限制
 const internalTypeCondition = {1: '非阳内', 2: '非阴内'};
 // 外功学习系数
-const outConditionMap = {
-  1: 20,
-  2: 50,
-  3: 100,
-  4: 150,
-};
+const outConditionMap = {1: 20, 2: 50, 3: 100, 4: 150};
+// 外功学习系数百周增加
+const outConditionGap = {1: 0, 2: 30, 3: 60, 4: 170};
 // 内功学习条件
-const internalConditionMap = {
-  1: 1000,
-  2: 2000,
-  3: 3000,
-  4: 5000,
-};
+const internalConditionMap = {1: 1000, 2: 2000, 3: 3000, 4: 5000};
 // 轻功学习条件
-const flyConditionMap = {
-  1: 100,
-  2: 200,
-  3: 300,
-  4: 400,
-};
+const flyConditionMap = {1: 100, 2: 200, 3: 300, 4: 400};
 
 // 获取学习秘籍条件
 export function getCondition({type, level, internal = '', other = ''}) {
@@ -137,8 +124,6 @@ export function getCondition({type, level, internal = '', other = ''}) {
   }
   if (outTypeMap[type]) {
     // 外功学习系数
-    const outConditionMap = {1: 20, 2: 50, 3: 100, 4: 150};
-    const outConditionGap = {1: 0, 2: 30, 3: 60, 4: 170};
     let outCondition = 20;
     if (level > 1) {
       outCondition = `(${outConditionMap[level]}+${outConditionGap[level]}×周目数÷100)`;
@@ -158,21 +143,22 @@ export function getCondition({type, level, internal = '', other = ''}) {
   return condition;
 }
 
-// 外功威力
-const outPowerMap = {1: 440, 2: 880, 3: 1320, 4: 1760};
-
 // 获取武功威力
 export function getPower({type, level, internal, other = ''}) {
-  // 内功/轻功不做处理
-  if (!outTypeMap[type]) {
+  if (other || typeof other === 'number') {
     return other;
   }
-  other = Number.parseInt(other);
-  if (Number.isNaN(other)) {
-    other = 0;
+  // 外功
+  if (outTypeMap[type]) {
+    return 440 * level;
   }
-  if (outPowerMap[level]) {
-    return outPowerMap[level] + other;
+  // 内功
+  if (type === 'internal') {
+    let qi = level / 2;
+    if (/\./.test(qi + '')) {
+      qi = `${qi - 0.5}~${qi + 0.5}`;
+    }
+    return `生命${540 * level} 气防${440 * level} 格挡${11 * level} 回气${qi}`;
   }
   return '';
 }
@@ -234,7 +220,7 @@ export function getLearn({sect, level, other = []}) {
   if (!Array.isArray(other)) {
     return [other];
   }
-  if(level > 2) {
+  if (level > 2) {
     other.push(`挑战每月随机事件中携带此秘籍的人物，战胜后概率获得`);
   }
   if (sectMap[sect]) {

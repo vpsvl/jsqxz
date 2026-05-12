@@ -13,8 +13,8 @@ export default {
       'liuXue',
       'poFang',
       'jianFangYu3',
-      'suoZu',
       'maBi',
+      'suoZu',
       'xuanYun',
     ],
     kungfu: [
@@ -95,8 +95,8 @@ export default {
       'neiShang',
       'xuRuo',
       'fangYu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'xuanYun',
     ],
     kungfu: [
@@ -167,8 +167,8 @@ export default {
       'neiShang',
       'jiaLianJi',
       'fangYu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'fanJi',
     ],
     kungfu: [
@@ -224,8 +224,8 @@ export default {
       'zhuoShao',
       'baoJi',
       'jiaJiQi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'zaiDong',
     ],
     kungfu: [
@@ -268,8 +268,8 @@ export default {
       'liuXue',
       'jianGongJi3',
       'mangMu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'sanGong',
     ],
     kungfu: [
@@ -303,8 +303,8 @@ export default {
   5: {
     id: 5,
     name: '明教',
-    join: '暂无',
-    effect: [],
+    join: '将介绍信送给光明顶的杨逍',
+    effect: ['攻击附带灼烧，灼烧上限提高到100'],
     talent: [],
     move: [
       'eWaiShangHai',
@@ -313,8 +313,8 @@ export default {
       'zhuoShao',
       'baoJiShangHai',
       'jiaJiQi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'dianRan',
     ],
     kungfu: [
@@ -330,22 +330,18 @@ export default {
         name: '刀法',
         list: [
           '初阶：六合刀法',
-          '中阶：修罗刀 五虎断门刀 狂风刀法',
-          '高阶：天王刀法 阴风刀 屠龙刀法',
-          '绝学：天刀九问 沧溟刀法',
+          '中阶：修罗刀 五虎断门刀',
+          '高阶：阴风刀 屠龙刀法',
+          '绝学：沧溟刀法 圣火令刀法',
         ],
-      },
-      {
-        name: '奇门',
-        list: ['绝学：圣火令法'],
       },
       {
         name: '内功',
         list: [
           '初阶：明教心法',
           '中阶：地火功 (NPC处可直接一脉圣火神功)',
-          '高阶：乾坤大挪移',
-          '绝学：圣火神功',
+          '高阶：大光明心经',
+          '绝学：乾坤大挪移 圣火神功',
         ],
       },
       {
@@ -372,8 +368,8 @@ export default {
       'bingFeng',
       'poFang',
       'jiQiWenLuan',
-      'suoZu',
       'maBi',
+      'suoZu',
       'hunLuan',
     ],
     kungfu: [
@@ -421,8 +417,8 @@ export default {
       'neiShang',
       'jianGongJi3',
       'xuRuo',
-      'suoZu',
       'maBi',
+      'suoZu',
       'sanGong',
     ],
     kungfu: [
@@ -467,8 +463,8 @@ export default {
       'neiShang',
       'poFang',
       'jiaJiQi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'xuanYun',
     ],
     kungfu: [
@@ -515,8 +511,8 @@ export default {
       'neiShang',
       'poFang',
       'jianFangYu3',
-      'suoZu',
       'maBi',
+      'suoZu',
       'zaiDong',
     ],
     kungfu: [
@@ -564,8 +560,8 @@ export default {
       'bingFeng',
       'jiaGeDang',
       'jianFangYu3',
-      'suoZu',
       'maBi',
+      'suoZu',
       'dongJie',
     ],
     kungfu: [
@@ -600,8 +596,8 @@ export default {
       'liuXue',
       'jiaGeDang',
       'jiQiWenLuan',
-      'suoZu',
       'maBi',
+      'suoZu',
       'suoZu',
     ],
     kungfu: [
@@ -640,8 +636,8 @@ export default {
       'liuXue',
       'baoJi',
       'zhiMingYiJi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'daFangWei',
     ],
     kungfu: [
@@ -672,8 +668,8 @@ export default {
       'liuXue',
       'jiaGeDang',
       'fangYu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'biZhong',
     ],
     kungfu: [
@@ -708,8 +704,8 @@ export default {
       'zhuoShao',
       'baoJiShangHai',
       'zhiMingYiJi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'kongJu',
     ],
     kungfu: [
@@ -744,8 +740,8 @@ export default {
       'zhongDu',
       'xiXue',
       'juDu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'siLie',
     ],
     kungfu: [
@@ -784,8 +780,8 @@ export default {
       'bingFeng',
       'jianGongJi3',
       'fengXue',
-      'suoZu',
       'maBi',
+      'suoZu',
       'dongJie',
     ],
     kungfu: [
@@ -837,8 +833,8 @@ export default {
       'liuXue',
       'xiXue',
       'zhiMingYiJi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'siLie',
     ],
     kungfu: [
@@ -874,8 +870,8 @@ export default {
       'bingFeng',
       'baoJiShangHai',
       'zhiMingYiJi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'dongJie',
     ],
     kungfu: [
@@ -910,8 +906,8 @@ export default {
       'zhongDu',
       'jiaGeDang',
       'fangYu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'suoZu',
     ],
     kungfu: [
@@ -950,8 +946,8 @@ export default {
       'neiShang',
       'jianGongJi3',
       'maBi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'xuanYun',
     ],
     kungfu: [
@@ -986,8 +982,8 @@ export default {
       'zhuoShao',
       'jiaLianJi',
       'jiaJiQi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'zaiDong',
     ],
     kungfu: [
@@ -1018,8 +1014,8 @@ export default {
       'liuXue',
       'jianGongJi3',
       'jianJiQi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'sanGong',
     ],
     kungfu: [
@@ -1062,8 +1058,8 @@ export default {
       'zhongDu',
       'xiXue',
       'juDu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'jiQiWenLuan',
     ],
     kungfu: [
@@ -1102,11 +1098,15 @@ export default {
       'neiShang',
       'poFang',
       'jianFangYu3',
-      'suoZu',
       'maBi',
+      'suoZu',
       'zhiMingYiJi',
     ],
     kungfu: [
+      {
+        name: '刀法',
+        list: ['中阶：狂风刀法', '高阶：天王刀法', '绝学：天刀九问'],
+      },
       {
         name: '奇门',
         list: ['中阶：毒龙锥', '高阶：袖里乾坤', '绝学：火枪 霹雳雷火弹'],
@@ -1134,8 +1134,8 @@ export default {
       'wuShiQiFang',
       'jianGongJi3',
       'maBi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'hunLuan',
     ],
     kungfu: [
@@ -1170,8 +1170,8 @@ export default {
       'zhuoShao',
       'jiaLianJi',
       'fangYu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'zaiDong',
     ],
     kungfu: [
@@ -1211,8 +1211,8 @@ export default {
       'zhuoShao',
       'baoJiShangHai',
       'zhiMingYiJi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'kongJu',
     ],
     kungfu: [
@@ -1260,8 +1260,8 @@ export default {
       'zhongDu',
       'xiXue',
       'juDu',
-      'suoZu',
       'maBi',
+      'suoZu',
       'dongJie',
     ],
     kungfu: [
@@ -1308,8 +1308,8 @@ export default {
       'zhuoShao',
       'baoJiShangHai',
       'zhiMingYiJi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'kongJu',
     ],
     kungfu: [
@@ -1349,8 +1349,8 @@ export default {
       'liuXue',
       'jiaLianJi',
       'jiaJiQi',
-      'suoZu',
       'maBi',
+      'suoZu',
       'zaiDong',
     ],
     kungfu: [
@@ -1385,8 +1385,8 @@ export default {
       'neiShang',
       'poFang',
       'fengXue',
-      'suoZu',
       'maBi',
+      'suoZu',
       'zhiMingYiJi',
     ],
     kungfu: [

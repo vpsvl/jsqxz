@@ -123,18 +123,37 @@ provide('state', state);
 //
 // toPinyin(data);
 
-// import sectAll from '@/data/person/sect';
+// import fist from '@/data/kungfu/fist';
+// import finger from '@/data/kungfu/finger';
+// import sword from '@/data/kungfu/sword';
+// import knife from '@/data/kungfu/knife';
+// import special from '@/data/kungfu/special';
+// import internal from '@/data/kungfu/internal';
+// import fly from '@/data/kungfu/fly';
+// import kungfu from '@/data/map/kungfu';
+//
+// const all = [
+//   ...fist.list,
+//   ...finger.list,
+//   ...sword.list,
+//   ...knife.list,
+//   ...special.list,
+//   ...internal.list,
+//   ...fly.list,
+// ];
 //
 // function toArr() {
-//   const arr = {};
-//   for (let id in sectAll) {
-//     sectAll[id].move[6] = 'suoZu';
-//     sectAll[id].move[7] = 'maBi';
+//   for (let item of all) {
+//     const {id, level, internal} = item;
+//     if (kungfu[id]) {
+//       kungfu[id].level = level;
+//       kungfu[id].internal = internal;
+//     }
 //   }
-//   console.log(sectAll);
+//   console.log(kungfu);
 // }
-//
-// toArr();
+
+toArr();
 </script>
 
 <style lang="less">

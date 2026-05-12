@@ -150,11 +150,11 @@ import internal from '@/data/kungfu/internal';
 import fly from '@/data/kungfu/fly';
 import sectMap from '@/data/person/sect';
 import {getAttr, getCondition, getLearn, getPower, getRange} from '@/data/kungfu/effect/attr';
-import moveMap from '@/data/kungfu/effect/move';
 import * as internalMap from '@/data/kungfu/effect/internal';
 import * as outMap from '@/data/kungfu/effect/out';
 import stuntMap from '@/data/kungfu/stunt';
 import inheritMap from '@/data/kungfu/inherit';
+import kungfuMap from '@/data/map/kungfu';
 
 const route = useRoute();
 const all = {fist, finger, sword, knife, special, internal, fly};
@@ -193,7 +193,6 @@ function handleKungfuInfo(info = {}) {
   const {
     id,
     initiative,
-    level,
     peculiar,
     inherit,
     move,
@@ -204,8 +203,9 @@ function handleKungfuInfo(info = {}) {
     power,
     range,
     get: learn,
-    sect,
   } = item;
+  const {name, level, sect} = kungfuMap[id];
+  item.name = name;
   const {type} = route.meta;
   item.get = getLearn({
     sect,
@@ -300,9 +300,13 @@ function handleKungfuInfo(info = {}) {
       // 没有配置招式使用门派默认的
       const {move: sectMove} = sectMap[sect];
       const total = sectMove.length;
-      const length = moveMap[id]?.move.length ?? levelMoveLength[level];
+      const length = kungfuMap[id]?.moveNum ?? levelMoveLength[level];
       for (let i = 0; i < length - 1; i++) {
         moveList.push(sectMove[i]);
+      }
+      // 只有8招, 第7招使用第8个效果
+      if (length === 8) {
+        moveList[6] = sectMove[7];
       }
       // 最后一招怒气大招默认门派最后一招
       moveList.push(sectMove[total - 1]);

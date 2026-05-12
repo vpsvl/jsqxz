@@ -322,7 +322,7 @@ export default {
       internal: 2,
       initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'guiXing', 'yiRong'],
       passive: [],
-      peculiar: [],
+      peculiar: ['liuLiFenYing'],
       inherit: [],
     },
     {

@@ -5,7 +5,7 @@ export default {
     kungfu: 'fist',
   },
   tianZhuToWuXiang: {
-    id: 'tianZhuWuXiang',
+    id: 'tianZhuToWuXiang',
     name: '天竺佛指 → 无相劫指',
     kungfu: 'finger',
   },
