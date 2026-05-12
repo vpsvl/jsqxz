@@ -487,7 +487,7 @@ export default {
       inherit: ['diHuoToShengHuo'],
     },
     {
-      id: 449,
+      id: 97,
       name: '乾坤大挪移',
       cheat: '',
       level: 4,
@@ -1083,7 +1083,7 @@ export default {
       inherit: [],
     },
     {
-      id: 97,
+      id: 449,
       name: '大光明心经',
       cheat: '',
       level: 3,
