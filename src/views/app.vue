@@ -152,8 +152,8 @@ provide('state', state);
 //   }
 //   console.log(kungfu);
 // }
-
-toArr();
+//
+// toArr();
 </script>
 
 <style lang="less">
