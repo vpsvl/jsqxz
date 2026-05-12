@@ -680,7 +680,7 @@ export default {
     name: '乾坤大挪移',
     sect: 5,
     moveNum: 1,
-    level: 3,
+    level: 4,
     internal: 2,
   },
   98: {
@@ -3092,7 +3092,7 @@ export default {
     name: '大光明心经',
     sect: 4,
     moveNum: 5,
-    level: 4,
+    level: 3,
     internal: 2,
   },
 };

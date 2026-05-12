@@ -48,8 +48,8 @@ const attrTypeMap = {
 
 // 阴/阳武功属性修正
 const attrInternalCorrect = {
-  0: {atk: 2, def: -1, spd: 0},
-  1: {atk: -1, def: 2, spd: 0},
+  1: {atk: 2, def: -1, spd: 0},
+  2: {atk: -1, def: 2, spd: 0},
 };
 
 // 外功需要加系数
@@ -159,6 +159,10 @@ export function getPower({type, level, internal, other = ''}) {
       qi = `${qi - 0.5}~${qi + 0.5}`;
     }
     return `生命${540 * level} 气防${440 * level} 格挡${11 * level} 回气${qi}`;
+  }
+  // 内功
+  if (type === 'fly') {
+    return `命中${110 * level} 闪避${110 * level}`;
   }
   return '';
 }

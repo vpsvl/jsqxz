@@ -40,48 +40,6 @@ watch(
 
 provide('state', state);
 
-// import data from '@/data/kungfu/fly';
-// import {sectMap} from '@/data/map';
-
-// function toArr() {
-//   const arr = data.list;
-//   arr.sort((a, b) => b.level - a.level);
-//   arr.sort((a, b) => {
-//     if (a.level === b.level) {
-//       const aitem = a.power.replace(/命中(\d+) 闪避(\d+) /, '$1,$2');
-//       const bitem = b.power.replace(/命中(\d+) 闪避(\d+) /, '$1,$2');
-//       const [ahp, aqf] = aitem.split(',');
-//       const [bhp, bqf] = bitem.split(',');
-//       return ahp === bhp ? bqf - aqf : bhp - ahp;
-//     }
-//     return 1;
-//   });
-//   console.log(arr);
-// }
-
-// toArr();
-
-// import data from '@/data/kungfu/internal';
-//
-// function toArr() {
-//   const arr = data.list;
-//   arr.sort((a, b) => b.level - a.level);
-//   arr.sort((a, b) => {
-//     let aIn = a.internal === '' ? 2 : a.internal;
-//     let bIn = b.internal === '' ? 2 : b.internal;
-//     if (a.level === b.level) {
-//       if (aIn === bIn) {
-//         return a.sect - b.sect;
-//       }
-//       return aIn - bIn;
-//     }
-//     return 1;
-//   });
-//   console.log(arr);
-// }
-//
-// toArr();
-
 // import pinyin from 'pinyin';
 // import data from '@/data/kungfu/stunt';
 // function toPinyin(arr) {
@@ -123,34 +81,29 @@ provide('state', state);
 //
 // toPinyin(data);
 
-// import fist from '@/data/kungfu/fist';
-// import finger from '@/data/kungfu/finger';
-// import sword from '@/data/kungfu/sword';
-// import knife from '@/data/kungfu/knife';
-// import special from '@/data/kungfu/special';
-// import internal from '@/data/kungfu/internal';
-// import fly from '@/data/kungfu/fly';
 // import kungfu from '@/data/map/kungfu';
-//
-// const all = [
-//   ...fist.list,
-//   ...finger.list,
-//   ...sword.list,
-//   ...knife.list,
-//   ...special.list,
-//   ...internal.list,
-//   ...fly.list,
-// ];
+// import kungfuAll from '@/data/kungfu/list';
 //
 // function toArr() {
-//   for (let item of all) {
-//     const {id, level, internal} = item;
-//     if (kungfu[id]) {
-//       kungfu[id].level = level;
-//       kungfu[id].internal = internal;
+//   const arr = {};
+//   for (let id in kungfu) {
+//     if (kungfuAll[id]) {
+//       arr[id] = kungfuAll[id];
+//     } else {
+//       const {name, sect, moveNum, level} = kungfu[id];
+//       arr[id] = {
+//         id,
+//         name,
+//         cheat: '',
+//         get: [],
+//         sect,
+//         level,
+//         internal: '',
+//         moveNum,
+//       };
 //     }
 //   }
-//   console.log(kungfu);
+//   console.log(arr);
 // }
 //
 // toArr();

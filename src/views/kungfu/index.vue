@@ -141,23 +141,15 @@
 <script setup>
 import {computed, ref, watchEffect} from 'vue';
 import {useRoute} from 'vue-router';
-import fist from '@/data/kungfu/fist';
-import finger from '@/data/kungfu/finger';
-import sword from '@/data/kungfu/sword';
-import knife from '@/data/kungfu/knife';
-import special from '@/data/kungfu/special';
-import internal from '@/data/kungfu/internal';
-import fly from '@/data/kungfu/fly';
+import kungfuAll from '@/data/kungfu/list';
 import sectMap from '@/data/person/sect';
 import {getAttr, getCondition, getLearn, getPower, getRange} from '@/data/kungfu/effect/attr';
 import * as internalMap from '@/data/kungfu/effect/internal';
 import * as outMap from '@/data/kungfu/effect/out';
 import stuntMap from '@/data/kungfu/stunt';
 import inheritMap from '@/data/kungfu/inherit';
-import kungfuMap from '@/data/map/kungfu';
 
 const route = useRoute();
-const all = {fist, finger, sword, knife, special, internal, fly};
 const kungfuTypeMap = {
   fist: 'out',
   finger: 'out',
@@ -174,10 +166,19 @@ watchEffect(() => {
   kungfu.value = [];
   const {type} = route.meta;
   kungfuType.value = kungfuTypeMap[type];
-  if (all[type]?.list) {
-    kungfu.value = all[type].list;
-  }
-  active.value = kungfu.value.length > 0 ? kungfu.value[0].id : -1;
+  kungfu.value = Object.values(kungfuAll).filter((item) => item.type === type);
+  kungfu.value.sort((a, b) => {
+    let aIn = a.internal === '' ? 9 : a.internal;
+    let bIn = b.internal === '' ? 9 : b.internal;
+    if (a.level === b.level) {
+      if (aIn === bIn) {
+        return a.sect - b.sect;
+      }
+      return aIn - bIn;
+    }
+    return b.level - a.level;
+  });
+  active.value = kungfu.value[0]?.id ?? -1;
 });
 
 const info = computed(() => {
@@ -191,21 +192,21 @@ const info = computed(() => {
 function handleKungfuInfo(info = {}) {
   const item = JSON.parse(JSON.stringify(info));
   const {
-    id,
+    level,
+    sect,
+    internal,
     initiative,
     peculiar,
     inherit,
     move,
+    moveNum,
     ultimate,
     addition,
-    internal,
     condition,
     power,
     range,
     get: learn,
   } = item;
-  const {name, level, sect} = kungfuMap[id];
-  item.name = name;
   const {type} = route.meta;
   item.get = getLearn({
     sect,
@@ -274,7 +275,7 @@ function handleKungfuInfo(info = {}) {
     item.inherit = arr;
   }
   // 外功招式特效
-  if (Array.isArray(move)) {
+  if (moveNum > 1) {
     // 所有特效
     const arr = [];
     // 基础特效
@@ -284,28 +285,26 @@ function handleKungfuInfo(info = {}) {
       const moveItem = outMap[typeKey](level);
       arrBase.push(moveItem.effect);
     }
-    if (Array.isArray(move[0])) {
+    if (move && Array.isArray(move[0])) {
       const base = move.shift();
       for (let key of base) {
         const moveItem = outMap[key](level);
         arrBase.push(moveItem.effect);
       }
     }
-    const levelMoveLength = {1: 2, 2: 3, 3: 5, 4: 6};
     let moveList = [];
     // 有配招式就使用配置的
-    if (move.length > 0) {
+    if (move && move.length > 0) {
       moveList = move;
     } else if (sectMap[sect]) {
       // 没有配置招式使用门派默认的
       const {move: sectMove} = sectMap[sect];
       const total = sectMove.length;
-      const length = kungfuMap[id]?.moveNum ?? levelMoveLength[level];
-      for (let i = 0; i < length - 1; i++) {
+      for (let i = 0; i < moveNum - 1; i++) {
         moveList.push(sectMove[i]);
       }
       // 只有8招, 第7招使用第8个效果
-      if (length === 8) {
+      if (moveNum === 8) {
         moveList[6] = sectMove[7];
       }
       // 最后一招怒气大招默认门派最后一招
@@ -332,7 +331,6 @@ function handleKungfuInfo(info = {}) {
           arr[index].push(`${name}(奥义)：${effect}`);
         }
       }
-      item.ultimate = arr;
     }
     item.move = arr;
   }

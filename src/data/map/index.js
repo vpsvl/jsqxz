@@ -37,12 +37,12 @@ export const kungfuMap = {
 };
 // 内力
 export const internalTypeMap = {
-  0: '-',
+  0: '无',
   1: '阴内',
   2: '阳内',
   3: '天罡',
-  '-': '-',
-  '': '-',
+  '-': '无',
+  '': '无',
 };
 // 等级
 export const levelMap = {
