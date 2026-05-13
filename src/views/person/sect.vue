@@ -29,6 +29,7 @@
             >
               {{ item }}
             </div>
+            <div class="td-effect-item effect-icon-star">主运本门轻功，使用本门外功时命中+200</div>
             <div class="td-effect-item effect-icon-star">修炼本门派武功大于5个，增加伤害10%</div>
             <div class="td-effect-item effect-icon-star">
               修炼本门派武功大于8个，增加伤害20%，减少受到的伤害20%
@@ -94,8 +95,5 @@ import sectAll from '@/data/person/sect';
 const list = computed(() => Object.values(sectAll));
 const active = ref(0);
 
-const info = computed(() => {
-  const current = sectAll[active.value];
-  return current;
-});
+const info = computed(() => sectAll[active.value]);
 </script>

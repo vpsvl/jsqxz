@@ -182,11 +182,10 @@ watchEffect(() => {
 });
 
 const info = computed(() => {
-  if (kungfu.value.length < 1) {
+  if (!kungfuAll[active.value]) {
     return {};
   }
-  const current = kungfu.value.find((item) => item.id === active.value);
-  return handleKungfuInfo(current);
+  return handleKungfuInfo(kungfuAll[active.value]);
 });
 
 function handleKungfuInfo(info = {}) {

@@ -81,29 +81,21 @@ provide('state', state);
 //
 // toPinyin(data);
 
-// import kungfu from '@/data/map/kungfu';
-// import kungfuAll from '@/data/kungfu/list';
+// import kungfuAll from '@/data/kungfu/effect/move';
 //
 // function toArr() {
-//   const arr = {};
-//   for (let id in kungfu) {
-//     if (kungfuAll[id]) {
-//       arr[id] = kungfuAll[id];
-//     } else {
-//       const {name, sect, moveNum, level} = kungfu[id];
-//       arr[id] = {
-//         id,
-//         name,
-//         cheat: '',
-//         get: [],
-//         sect,
-//         level,
-//         internal: '',
-//         moveNum,
-//       };
+//   const arr = [];
+//   for (let id in kungfuAll) {
+//     const {name, move} = kungfuAll[id];
+//     let moveStr = '';
+//     for (let item of move) {
+//       moveStr += `  {"${item}"},\n`;
 //     }
+//     const str = `-- ${name}
+// CC.KFMove[${id}] = {\n${moveStr}}`;
+//     arr.push(str);
 //   }
-//   console.log(arr);
+//   console.log(arr.join('\n'));
 // }
 //
 // toArr();

@@ -227,9 +227,9 @@ export function getLearn({sect, level, other = []}) {
   if (level > 2) {
     other.push(`挑战每月随机事件中携带此秘籍的人物，战胜后概率获得`);
   }
-  if (sectMap[sect]) {
+  if (sect > 0 && sectMap[sect]) {
     other.push(`加入${sectMap[sect]}可学习`);
-  } else if (sect === 0 && level < 4) {
+  } else if (level < 4) {
     other.push(`江湖散人可在扬州武馆学习`);
   }
   return other;
