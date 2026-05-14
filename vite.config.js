@@ -53,8 +53,8 @@ export default defineConfig(({command}) => {
       },
     },
   };
-  if (command === 'build') {
-    config.base = '/jsqxz/';
-  }
+  // if (command === 'build') {
+  //   config.base = '/jsqxz/';
+  // }
   return config;
 });
