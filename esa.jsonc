@@ -1,0 +1,10 @@
+{
+  "name": "jsqxz",
+  "entry": "./src/main.js",
+  "installCommand": "npm install",
+  "buildCommand": "npm run build",
+  "assets": {
+    "directory": "./docs",
+    "notFoundStrategy": "singlePageApplication"
+  }
+}

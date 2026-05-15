@@ -23,8 +23,9 @@ export const routes = [
 ];
 
 export default createRouter({
-  // history: import.meta.env.PROD ? createWebHashHistory(import.meta.env.BASE_URL) : createWebHistory(),
-  history: createWebHistory(),
+  history: import.meta.env.BUILD_ENV
+    ? createWebHashHistory(import.meta.env.BASE_URL)
+    : createWebHistory(),
   routes,
 });
 

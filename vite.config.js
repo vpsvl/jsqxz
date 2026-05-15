@@ -7,6 +7,7 @@ import path from 'path';
 const INVALID_CHAR_START_REGEX = /^[\x00-\x1F\x7F<>*#"{}|^[\]`;?:&=+$,]/;
 const INVALID_CHAR_REGEX = /[\x00-\x1F\x7F<>*#"{}|^[\]`;?:&=+$,]/g;
 const DRIVE_LETTER_REGEX = /^[a-z]:/i;
+const BUILD_ENV = process.env.BUILD_ENV;
 export default defineConfig(({command}) => {
   const config = {
     plugins: [
@@ -29,6 +30,7 @@ export default defineConfig(({command}) => {
       __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: false,
       __VUE_OPTIONS_API__: true,
       __VUE_PROD_DEVTOOLS__: false,
+      'import.meta.env.BUILD_ENV': JSON.stringify(BUILD_ENV),
     },
     server: {
       host: true,
@@ -53,8 +55,8 @@ export default defineConfig(({command}) => {
       },
     },
   };
-  // if (command === 'build') {
-  //   config.base = '/jsqxz/';
-  // }
+  if (BUILD_ENV === 'github') {
+    config.base = '/jsqxz/';
+  }
   return config;
 });

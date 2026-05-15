@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "cross-env BUILD_ENV=prod vite build",
+    "build:github": "cross-env BUILD_ENV=github vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
     "@byeyb/vite-plugin-eslint": "^1.0.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "@vitejs/plugin-vue": "^6.0.6",
+    "cross-env": "^10.1.0",
     "eslint": "^10.2.1",
     "eslint-plugin-vue": "^10.9.0",
     "less": "^4.6.4",
