@@ -90,10 +90,53 @@
 
 <script setup>
 import {computed, ref} from 'vue';
-import sectAll from '@/data/person/sect';
+import sectAll from '@/data/kungfu/sect';
+import kungfuAll from '@/data/kungfu/list';
+import {kungfuTypeMap, levelMap} from '@/data/map';
+import {sessionStorage} from '@/utils/storage';
 
 const list = computed(() => Object.values(sectAll));
 const active = ref(0);
 
-const info = computed(() => sectAll[active.value]);
+const info = computed(() => {
+  const cacheKey = `sect${active.value}`;
+  const cacheInfo = sessionStorage.get(cacheKey);
+  if (cacheInfo) {
+    return cacheInfo;
+  }
+  const current = sectAll[active.value];
+  const sectKungfu = {};
+  for (let id in kungfuAll) {
+    const item = kungfuAll[id];
+    if (item.sect !== active.value) {
+      continue;
+    }
+    const {name, type, level} = item;
+    if (!type) {
+      continue;
+    }
+    if (!Reflect.has(sectKungfu, type)) {
+      sectKungfu[type] = {};
+    }
+    if (!Reflect.has(sectKungfu[type], level)) {
+      sectKungfu[type][level] = [];
+    }
+    sectKungfu[type][level].push(name);
+  }
+  current.kungfu = [];
+  for (let type in sectKungfu) {
+    const item = {
+      name: kungfuTypeMap[type],
+      list: [],
+    };
+    for (let level in sectKungfu[type]) {
+      item.list.push(`${levelMap[level]}：${sectKungfu[type][level].join('、')}`);
+    }
+    if (item.list.length > 0) {
+      current.kungfu.push(item);
+    }
+  }
+  sessionStorage.set(cacheKey, current);
+  return current;
+});
 </script>

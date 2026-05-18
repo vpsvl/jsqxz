@@ -65,15 +65,15 @@
         <div class="td">威力</div>
         <div class="td">{{ info.power }}</div>
       </div>
-      <div class="tr" v-if="kungfuType === 'out'">
+      <div class="tr" v-if="kungfuType < 6">
         <div class="td">气功</div>
         <div class="td">{{ info.power }}</div>
       </div>
-      <div class="tr" v-if="kungfuType !== 'fly'">
+      <div class="tr" v-if="kungfuType < 7">
         <div class="td">攻击范围</div>
         <div class="td">{{ info.range }}</div>
       </div>
-      <div class="tr" v-if="kungfuType === 'in' || kungfuType === 'fly'">
+      <div class="tr" v-if="kungfuType > 5">
         <div class="td">主运效果</div>
         <div class="td">
           <div class="td-block" v-for="item of info.initiative" :key="item.id">
@@ -88,7 +88,7 @@
           </div>
         </div>
       </div>
-      <template v-if="kungfuType === 'out'">
+      <template v-if="kungfuType < 6">
         <div class="tr">
           <div class="td">招式效果</div>
           <div class="td">
@@ -141,8 +141,9 @@
 <script setup>
 import {computed, ref, watchEffect} from 'vue';
 import {useRoute} from 'vue-router';
+import {sessionStorage} from '@/utils/storage';
 import kungfuAll from '@/data/kungfu/list';
-import sectMap from '@/data/person/sect';
+import sectMap from '@/data/kungfu/sect';
 import {getAttr, getCondition, getLearn, getPower, getRange} from '@/data/kungfu/effect/attr';
 import * as internalMap from '@/data/kungfu/effect/internal';
 import * as outMap from '@/data/kungfu/effect/out';
@@ -150,22 +151,13 @@ import stuntMap from '@/data/kungfu/stunt';
 import inheritMap from '@/data/kungfu/inherit';
 
 const route = useRoute();
-const kungfuTypeMap = {
-  fist: 'out',
-  finger: 'out',
-  sword: 'out',
-  knife: 'out',
-  special: 'out',
-  internal: 'in',
-  fly: 'fly',
-};
 const kungfu = ref([]);
-const kungfuType = ref('in');
+const kungfuType = ref(6);
 const active = ref(-1);
 watchEffect(() => {
   kungfu.value = [];
   const {type} = route.meta;
-  kungfuType.value = kungfuTypeMap[type];
+  kungfuType.value = type;
   kungfu.value = Object.values(kungfuAll).filter((item) => item.type === type);
   kungfu.value.sort((a, b) => {
     let aIn = a.internal === '' ? 9 : a.internal;
@@ -178,7 +170,9 @@ watchEffect(() => {
     }
     return b.level - a.level;
   });
-  active.value = kungfu.value[0]?.id ?? -1;
+  const activeSession = sessionStorage.get('kungfuCurrentId');
+  const activeInt = Number.parseInt(activeSession);
+  active.value = isNaN(activeInt) ? kungfu.value[0].id : activeInt;
 });
 
 const info = computed(() => {
@@ -189,6 +183,11 @@ const info = computed(() => {
 });
 
 function handleKungfuInfo(info = {}) {
+  const cacheKey = `kungfu${info.id}`;
+  const cacheInfo = sessionStorage.get(cacheKey);
+  if (cacheInfo) {
+    return cacheInfo;
+  }
   const item = JSON.parse(JSON.stringify(info));
   const {
     level,
@@ -333,6 +332,7 @@ function handleKungfuInfo(info = {}) {
     }
     item.move = arr;
   }
+  sessionStorage.set(cacheKey, item);
   return item;
 }
 </script>

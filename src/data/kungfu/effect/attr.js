@@ -1,44 +1,44 @@
-import {sectMap} from '@/data/map';
+import {sectMap, kungfuTypeMap} from '@/data/map';
 
 // 属性加成类型
 const attrTypeMap = {
-  fist: {
+  1: {
     1: {atk: 2, def: 0, spd: 0},
     2: {atk: 3, def: 0, spd: 0},
     3: {atk: 3, def: 1, spd: 0},
     4: {atk: 5, def: 1, spd: 1},
   },
-  finger: {
+  2: {
     1: {atk: 1, def: 0, spd: 1},
     2: {atk: 2, def: 0, spd: 1},
     3: {atk: 3, def: 0, spd: 2},
     4: {atk: 4, def: 1, spd: 2},
   },
-  sword: {
+  3: {
     1: {atk: 1, def: 0, spd: 1},
     2: {atk: 1, def: 1, spd: 1},
     3: {atk: 2, def: 1, spd: 2},
     4: {atk: 3, def: 1, spd: 3},
   },
-  knife: {
+  4: {
     1: {atk: 1, def: 1, spd: 0},
     2: {atk: 2, def: 1, spd: 0},
     3: {atk: 3, def: 1, spd: 1},
     4: {atk: 4, def: 2, spd: 1},
   },
-  special: {
+  5: {
     1: {atk: 1, def: 1, spd: 0},
     2: {atk: 2, def: 1, spd: 0},
     3: {atk: 3, def: 1, spd: 1},
     4: {atk: 3, def: 2, spd: 2},
   },
-  internal: {
+  6: {
     1: {atk: 1, def: 1, spd: 0},
     2: {atk: 1, def: 2, spd: 0},
     3: {atk: 2, def: 2, spd: 1},
     4: {atk: 2, def: 4, spd: 1},
   },
-  fly: {
+  7: {
     1: {atk: 0, def: 0, spd: 5},
     2: {atk: 0, def: 0, spd: 0},
     3: {atk: 0, def: 0, spd: 0},
@@ -50,15 +50,6 @@ const attrTypeMap = {
 const attrInternalCorrect = {
   1: {atk: 2, def: -1, spd: 0},
   2: {atk: -1, def: 2, spd: 0},
-};
-
-// 外功需要加系数
-const outTypeMap = {
-  fist: '拳掌',
-  finger: '指腿',
-  sword: '剑法',
-  knife: '刀法',
-  special: '奇门',
 };
 
 // 获取武功修炼加成
@@ -89,9 +80,9 @@ export function getAttr({type, level, internal = '', other = ''}) {
     }
   }
   // 系数加成
-  if (outTypeMap[type]) {
+  if (type < 6) {
     const num = Math.max(2 * level - 1, 2);
-    attr += `${outTypeMap[type]}+${num} `;
+    attr += `${kungfuTypeMap[type]}+${num} `;
   }
   // 其他属性
   if (other) {
@@ -122,13 +113,13 @@ export function getCondition({type, level, internal = '', other = ''}) {
   if (internalTypeCondition[internal]) {
     condition += `${internalTypeCondition[internal]} `;
   }
-  if (outTypeMap[type]) {
+  if (type < 6) {
     // 外功学习系数
     let outCondition = 20;
     if (level > 1) {
       outCondition = `(${outConditionMap[level]}+${outConditionGap[level]}×周目数÷100)`;
     }
-    condition += `${outTypeMap[type]}${outCondition} `;
+    condition += `${kungfuTypeMap[type]}${outCondition} `;
   } else if (type === 'internal') {
     // 内功学习条件
     condition += `内力${internalConditionMap[level]} `;
@@ -149,19 +140,19 @@ export function getPower({type, level, internal, other = ''}) {
     return other;
   }
   // 外功
-  if (outTypeMap[type]) {
+  if (type < 6) {
     return 440 * level;
   }
   // 内功
-  if (type === 'internal') {
+  if (type === 6) {
     let qi = level / 2;
     if (/\./.test(qi + '')) {
       qi = `${qi - 0.5}~${qi + 0.5}`;
     }
     return `生命${540 * level} 气防${440 * level} 格挡${11 * level} 回气${qi}`;
   }
-  // 内功
-  if (type === 'fly') {
+  // 轻功
+  if (type === 7) {
     return `命中${110 * level} 闪避${110 * level}`;
   }
   return '';
@@ -169,37 +160,37 @@ export function getPower({type, level, internal, other = ''}) {
 
 // 攻击范围
 const rangeMap = {
-  fist: {
+  1: {
     1: {shape: 'X', move: 2, width: 5, height: 5},
     2: {shape: 'X', move: 2, width: 5, height: 5},
     3: {shape: 'X', move: 3, width: 5, height: 5},
     4: {shape: 'X', move: 4, width: 5, height: 5},
   },
-  finger: {
+  2: {
     1: {shape: '«', move: 2, width: 3, height: 6},
     2: {shape: '«', move: 2, width: 3, height: 6},
     3: {shape: '«', move: 3, width: 3, height: 7},
     4: {shape: '«', move: 4, width: 3, height: 8},
   },
-  sword: {
+  3: {
     1: {shape: '米', move: 2, width: 5, height: 5},
     2: {shape: '米', move: 2, width: 5, height: 5},
     3: {shape: '米', move: 3, width: 5, height: 5},
     4: {shape: '米', move: 4, width: 5, height: 5},
   },
-  knife: {
+  4: {
     1: {shape: '△', move: 4, width: 3, height: 2},
     2: {shape: '△', move: 4, width: 3, height: 2},
     3: {shape: '△', move: 4, width: 5, height: 3},
     4: {shape: '△', move: 4, width: 7, height: 4},
   },
-  special: {
+  5: {
     1: {shape: '十', move: 2, width: 9, height: 9},
     2: {shape: '十', move: 2, width: 9, height: 9},
     3: {shape: '十', move: 3, width: 9, height: 9},
     4: {shape: '十', move: 4, width: 9, height: 9},
   },
-  internal: {
+  6: {
     1: {shape: '■', move: 2, width: 7, height: 7},
     2: {shape: '■', move: 2, width: 7, height: 7},
     3: {shape: '■', move: 3, width: 7, height: 7},

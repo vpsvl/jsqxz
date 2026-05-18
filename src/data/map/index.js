@@ -25,15 +25,22 @@ export const equipmentMap = {
   mount: '坐骑',
 };
 // 武功类型
-export const kungfuMap = {
-  internal: '内功',
-  fly: '轻功',
-  fist: '拳掌',
-  finger: '指腿',
-  sword: '剑法',
-  knife: '刀法',
-  special: '奇门',
-  other: '杂学',
+export const kungfuTypeMap = {
+  1: '拳掌',
+  2: '指腿',
+  3: '剑法',
+  4: '刀法',
+  5: '奇门',
+  6: '内功',
+  7: '轻功',
+  8: '杂学',
+};
+// 等级
+export const levelMap = {
+  1: '初阶',
+  2: '中阶',
+  3: '高阶',
+  4: '绝学',
 };
 // 内力
 export const internalTypeMap = {
@@ -43,24 +50,6 @@ export const internalTypeMap = {
   3: '天罡',
   '-': '无',
   '': '无',
-};
-// 等级
-export const levelMap = {
-  1: '初阶',
-  2: '中阶',
-  3: '高阶',
-  4: '绝学',
-};
-// 秘籍类型
-export const cheatTypeMap = {
-  1: '拳掌',
-  2: '指腿',
-  3: '剑法',
-  4: '刀法',
-  5: '奇门',
-  6: '内功',
-  7: '轻功',
-  8: '杂学',
 };
 // 商店
 export const shopMap = {

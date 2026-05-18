@@ -1,24 +1,35 @@
-import {kungfuMap} from '@/data/map/index';
+import {kungfuTypeMap} from '@/data/map';
 
+const kungfuList = [
+  {id: 6, key: 'internal'},
+  {id: 7, key: 'fly'},
+  {id: 1, key: 'fist'},
+  {id: 2, key: 'finger'},
+  {id: 3, key: 'sword'},
+  {id: 4, key: 'knife'},
+  {id: 5, key: 'special'},
+  {id: 8, key: 'other'},
+];
 const children = [];
 
-for (let key in kungfuMap) {
-  const item = {
+for (let item of kungfuList) {
+  const {id, key} = item;
+  const child = {
     path: key,
     name: 'kungfu' + key.replace(key[0], key[0].toUpperCase()),
     meta: {
-      title: kungfuMap[key],
-      type: key,
+      title: kungfuTypeMap[id],
+      type: id,
     },
   };
-  if (key === 'other') {
+  if (id === 8) {
     children.push({
-      ...item,
+      ...child,
       component: () => import('@/views/kungfu/other.vue'),
     });
   } else {
     children.push({
-      ...item,
+      ...child,
       component: () => import('@/views/kungfu/index.vue'),
     });
   }

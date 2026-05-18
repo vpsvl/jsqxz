@@ -1,7 +1,7 @@
 <template>
   <v-table class="v-table-vertical" :cols="thead" :data="tbody">
     <template #kungfu="{row}">
-      {{ kungfuMap[row.kungfu] }}
+      {{ kungfuTypeMap[row.kungfu] }}
     </template>
     <template #list="{row}">
       <div class="td-block">
@@ -16,7 +16,7 @@
 <script setup>
 import {computed, ref} from 'vue';
 import inheritData from '@/data/kungfu/inherit';
-import {kungfuMap} from '@/data/map';
+import {kungfuTypeMap} from '@/data/map';
 
 const thead = [
   {
