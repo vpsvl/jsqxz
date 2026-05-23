@@ -119,7 +119,7 @@ export default {
     id: 4,
     name: '日月神教',
     join: '帮任我行打败东方不败后接受任我行的邀请可加入',
-    effect: [],
+    effect: ['集气+2', '修炼葵花宝典没有负作用'],
     talent: [],
     move: [
       'eWaiShangHai',

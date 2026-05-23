@@ -6773,7 +6773,7 @@ export default {
   9767: {
     id: 9767,
     name: '倾国倾城',
-    effect: ['被攻击时概率由战场上随机参加人物替代伤害'],
+    effect: ['被攻击时15%概率由战场上随机参加人物替代伤害'],
     fortune: [],
     level: 3,
     score: 30,
