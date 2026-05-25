@@ -1,8 +1,11 @@
 <template>
   <div class="v-search">
     <div class="v-search-item">
-      <span class="item-label">名称:</span>
-      <v-input class="item-value" v-model="params.name"></v-input>
+      <v-input
+        class="item-value"
+        v-model="params.keyword"
+        placeholder="名称/条件/效果查询"
+      ></v-input>
     </div>
     <div class="v-search-item">
       <v-button type="primary" @click="search">查询</v-button>
@@ -38,15 +41,28 @@ const thead = [
   },
 ];
 const params = ref({
-  name: '',
+  keyword: '',
 });
 const tbody = ref([]);
 
 function search() {
   tbody.value = [];
   for (let key in stuntData) {
-    const {name, type} = stuntData[key];
-    if (type === 1 && new RegExp(params.value.name, 'i').test(name)) {
+    const {name, type, condition, effect} = stuntData[key];
+    if (type !== 1) {
+      continue;
+    }
+    const reg = new RegExp(params.value.keyword, 'i');
+    let flag = reg.test(name) || reg.test(condition);
+    if (!flag) {
+      for (let item of effect) {
+        if (reg.test(item)) {
+          flag = true;
+          break;
+        }
+      }
+    }
+    if (flag) {
       tbody.value.push(stuntData[key]);
     }
   }
@@ -62,7 +78,7 @@ onBeforeMount(() => {
 
   .td {
     &:nth-child(1) {
-      flex: 0 0 120px;
+      flex: 0 0 110px;
     }
 
     &:nth-child(3) {

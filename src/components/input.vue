@@ -1,11 +1,18 @@
 <template>
-  <textarea v-if="type === 'textarea'" class="v-textarea" v-model="value" :disabled="disabled"></textarea>
+  <textarea
+    v-if="type === 'textarea'"
+    class="v-textarea"
+    v-model="value"
+    :disabled="disabled"
+    :placeholder="placeholder"
+  ></textarea>
   <div v-else class="v-input" :class="{[`is-${size}`]: sizeMap[size]}">
     <input
       class="v-input-inner"
       v-model="value"
       :type="type"
       :disabled="disabled"
+      :placeholder="placeholder"
       @click="emitEvevt('click', $event)"
       @input="emitEvevt('input', $event)"
       @focus="emitEvevt('focus', $event)"
@@ -31,6 +38,10 @@ const props = defineProps({
   disabled: {
     type: Boolean,
     default: false,
+  },
+  placeholder: {
+    type: String,
+    default: '',
   },
 });
 const emit = defineEmits(['update:modelValue', 'input', 'focus', 'blur', 'click']);

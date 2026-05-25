@@ -12,7 +12,7 @@
       </span>
     </template>
     <template #default="{info}">
-      <pre class="pre-log" style="font-size: 16px;">
+      <pre class="pre-log" style="font-size: 16px">
         {{ info.content }}
       </pre>
     </template>
@@ -21,7 +21,7 @@
 
 <script setup>
 import {ref} from 'vue';
-import strategy from '@/data/strategy/index';
+import record from '@/data/record/index';
 
-const data = ref(strategy);
+const data = ref(record);
 </script>

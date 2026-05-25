@@ -1,4 +1,4 @@
-import {bookMap} from '@/data/map/index';
+import {bookMap} from '@/data/map';
 const bookChildren = [];
 
 for (let key in bookMap) {
@@ -22,15 +22,15 @@ export default {
     title: '流程',
   },
   children: [
-    // {
-    //   path: 'strategy',
-    //   component: () => import('@/views/process/strategy.vue'),
-    //   name: 'processStrategy',
-    //   meta: {
-    //     title: '群员攻略',
-    //     type: 'strategy',
-    //   },
-    // },
+    {
+      path: 'record',
+      component: () => import('@/views/process/record.vue'),
+      name: 'processRecord',
+      meta: {
+        title: '战报',
+        type: 'record',
+      },
+    },
     {
       path: 'start',
       component: () => import('@/views/process/table.vue'),

@@ -538,8 +538,8 @@ export default {
     effect: ['主运九阴神功，被杀气到-500，清除全部内伤，并恢复10%最大生命值'],
     type: 2,
   },
-  jiuYinShenZhao: {
-    id: 'jiuYinShenZhao',
+  jiuYinShenZhua: {
+    id: 'jiuYinShenZhua',
     name: '九阴神爪',
     condition: '九阴神功+九阴白骨爪，主运九阴神功',
     effect: [
