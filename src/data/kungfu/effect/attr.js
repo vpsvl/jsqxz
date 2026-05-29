@@ -1,4 +1,6 @@
 import {sectMap, kungfuTypeMap} from '@/data/map';
+import {inheritAscMap, inheritDescMap} from '@/data/kungfu/inherit';
+import kungfuAll from '@/data/kungfu/list';
 
 // 属性加成类型
 const attrTypeMap = {
@@ -224,4 +226,33 @@ export function getLearn({sect, level, other = []}) {
     other.push(`江湖散人可在扬州武馆学习`);
   }
   return other;
+}
+// 获取一脉
+export function getInherit(id) {
+  const toId = inheritAscMap[id];
+  const {name} = kungfuAll[id];
+  let rst = [];
+  if (toId) {
+    if (Array.isArray(toId)) {
+      for (let key of toId) {
+        rst.push(`${name} → ${kungfuAll[key].name}`);
+      }
+    } else {
+      rst.push(`${name} → ${kungfuAll[toId].name}`);
+    }
+    return rst;
+  }
+  const fromId = inheritDescMap[id];
+  console.log(fromId);
+  if (fromId) {
+    if (Array.isArray(fromId)) {
+      for (let key of fromId) {
+        rst.push(`${kungfuAll[key].name} → ${name}`);
+      }
+    } else {
+      rst.push(`${kungfuAll[fromId].name} → ${name}`);
+    }
+    return rst;
+  }
+  return [];
 }

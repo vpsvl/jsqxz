@@ -14,8 +14,9 @@
 </template>
 
 <script setup>
-import {computed, ref} from 'vue';
-import inheritData from '@/data/kungfu/inherit';
+import {computed} from 'vue';
+import {inheritAscMap} from '@/data/kungfu/inherit';
+import kungfuAll from '@/data/kungfu/list';
 import {kungfuTypeMap} from '@/data/map';
 
 const thead = [
@@ -30,16 +31,24 @@ const thead = [
 ];
 const tbody = computed(() => {
   const obj = {};
-  for (let key in inheritData) {
-    const {name, kungfu} = inheritData[key];
-    if (!Reflect.has(obj, kungfu)) {
-      obj[kungfu] = {
-        id: kungfu,
-        kungfu,
+  for (let id in inheritAscMap) {
+    const fromKungfu = kungfuAll[id];
+    const {type, name} = fromKungfu;
+    if (!Reflect.has(obj, type)) {
+      obj[type] = {
+        id,
+        kungfu: type,
         list: [],
       };
     }
-    obj[kungfu].list.push(name);
+    if (Array.isArray(inheritAscMap[id])) {
+      for (let key of inheritAscMap[id]) {
+        obj[type].list.push(`${name} → ${kungfuAll[key].name}`);
+      }
+      continue;
+    }
+    const toKungfu = kungfuAll[inheritAscMap[id]];
+    obj[type].list.push(`${name} → ${toKungfu.name}`);
   }
   return Object.values(obj);
 });

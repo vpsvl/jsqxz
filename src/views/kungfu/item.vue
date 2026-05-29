@@ -99,8 +99,8 @@
     <div class="tr">
       <div class="td">一脉相承</div>
       <div class="td">
-        <div class="td-block" v-for="item of info.inherit" :key="item.id">
-          {{ item.name }}
+        <div class="td-block" v-for="(item, index) of info.inherit" :key="index">
+          {{ item }}
         </div>
       </div>
     </div>
@@ -126,11 +126,17 @@
 import {computed} from 'vue';
 import {sessionStorage} from '@/utils/storage';
 import sectMap from '@/data/kungfu/sect';
-import {getAttr, getCondition, getLearn, getPower, getRange} from '@/data/kungfu/effect/attr';
+import {
+  getAttr,
+  getCondition,
+  getInherit,
+  getLearn,
+  getPower,
+  getRange,
+} from '@/data/kungfu/effect/attr';
 import * as internalMap from '@/data/kungfu/effect/internal';
 import * as outMap from '@/data/kungfu/effect/out';
 import stuntMap from '@/data/kungfu/stunt';
-import inheritMap from '@/data/kungfu/inherit';
 
 const props = defineProps({
   item: {
@@ -149,13 +155,13 @@ function handleKungfuInfo(info = {}) {
   }
   const item = JSON.parse(JSON.stringify(info));
   const {
+    id,
     level,
     sect,
     type,
     internal,
     initiative,
     peculiar,
-    inherit,
     move,
     moveNum,
     ultimate,
@@ -197,6 +203,8 @@ function handleKungfuInfo(info = {}) {
     level,
     other: range,
   });
+  // 一脉相承
+  item.inherit = getInherit(id);
   // 内功主运特效
   if (Array.isArray(initiative)) {
     const arr = [];
@@ -220,16 +228,6 @@ function handleKungfuInfo(info = {}) {
       arr.push(key);
     }
     item.peculiar = arr;
-  }
-  // 一脉相承
-  if (Array.isArray(inherit)) {
-    const arr = [];
-    for (let key of inherit) {
-      if (inheritMap[key]) {
-        arr.push(inheritMap[key]);
-      }
-    }
-    item.inherit = arr;
   }
   // 外功招式特效
   if (moveNum > 1) {
