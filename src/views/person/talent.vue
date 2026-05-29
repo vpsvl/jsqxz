@@ -1,14 +1,17 @@
 <template>
   <div class="v-search">
     <div class="v-search-item">
-      <span class="item-label">名称:</span>
-      <v-input class="item-value" v-model="params.name"></v-input>
+      <v-input
+        class="item-value"
+        v-model="params.keyword"
+        placeholder="名称/效果/福缘际遇查询"
+      ></v-input>
     </div>
     <div class="v-search-item">
       <v-button type="primary" @click="search">查询</v-button>
     </div>
   </div>
-  <v-table class="v-table-kungfu-talent" :cols="thead" :data="totalList" :y="scrollY">
+  <v-table class="v-table-kungfu-talent" :cols="thead" :data="tbody" :y="scrollY">
     <template #effect="{row}">
       <div class="td-block">
         <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">
@@ -64,26 +67,37 @@ const thead = [
   },
 ];
 const params = ref({
-  name: '',
+  keyword: '',
 });
 const scrollY = ref(0);
-const talentList = Object.values(data);
-const totalList = ref([]);
-// const tbody = computed(() => {
-//   return totalList.value.slice(
-//     pageConfig.pageSize * (pageConfig.page - 1),
-//     pageConfig.pageSize * pageConfig.page,
-//   );
-// });
+const tbody = ref([]);
 
 function search() {
-  if (!params.value.name) {
-    totalList.value = [...talentList];
-    return;
+  tbody.value = [];
+  for (let id in data) {
+    const {name, effect, fortune} = data[id];
+    const reg = new RegExp(params.value.keyword, 'i');
+    let flag = reg.test(name);
+    if (!flag) {
+      for (let item of effect) {
+        if (reg.test(item)) {
+          flag = true;
+          break;
+        }
+      }
+    }
+    if (!flag) {
+      for (let item of fortune) {
+        if (reg.test(item)) {
+          flag = true;
+          break;
+        }
+      }
+    }
+    if (flag) {
+      tbody.value.push(data[id]);
+    }
   }
-  totalList.value = talentList.filter((item) => {
-    return new RegExp(params.value.name, 'i').test(item.name);
-  });
 }
 
 function changePage() {
