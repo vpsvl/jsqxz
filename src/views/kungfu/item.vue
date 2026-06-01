@@ -136,7 +136,7 @@ import {
 } from '@/data/kungfu/effect/attr';
 import * as internalMap from '@/data/kungfu/effect/internal';
 import * as outMap from '@/data/kungfu/effect/out';
-import stuntMap from '@/data/kungfu/stunt';
+import stuntMap, {jiaLianJiPeculiar} from '@/data/kungfu/stunt';
 
 const props = defineProps({
   item: {
@@ -229,8 +229,22 @@ function handleKungfuInfo(info = {}) {
     }
     item.peculiar = arr;
   }
-  // 外功招式特效
+  // 加连击
+  if (jiaLianJiPeculiar[id]) {
+    const effect = {
+      name: '加连击',
+      condition: '在武功面板上',
+      // effect: [`连击率增加(100-当前连击率)×${jiaLianJiPeculiar[id]}%`],
+      effect: [`连击率+${jiaLianJiPeculiar[id]}%`],
+    };
+    if (Array.isArray(item.peculiar)) {
+      item.peculiar.unshift(effect);
+    } else {
+      item.peculiar = [effect];
+    }
+  }
   if (moveNum > 1) {
+    // 外功招式特效
     // 所有特效
     const arr = [];
     // 基础特效

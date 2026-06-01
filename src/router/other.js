@@ -4,7 +4,7 @@ export default {
   name: 'other',
   redirect: {name: 'otherSystem'},
   meta: {
-    title: '其他',
+    title: '说明',
   },
   children: [
     {

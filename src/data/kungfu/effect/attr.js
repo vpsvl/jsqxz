@@ -240,10 +240,8 @@ export function getInherit(id) {
     } else {
       rst.push(`${name} → ${kungfuAll[toId].name}`);
     }
-    return rst;
   }
   const fromId = inheritDescMap[id];
-  console.log(fromId);
   if (fromId) {
     if (Array.isArray(fromId)) {
       for (let key of fromId) {
@@ -252,7 +250,6 @@ export function getInherit(id) {
     } else {
       rst.push(`${kungfuAll[fromId].name} → ${name}`);
     }
-    return rst;
   }
-  return [];
+  return rst;
 }
