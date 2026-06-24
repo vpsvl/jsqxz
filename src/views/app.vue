@@ -23,7 +23,7 @@ onMounted(() => {
   const media = window.matchMedia('screen and (max-width: 600px)');
   state.lessWindow = media.matches;
   state.menuVisible = !media.matches;
-  media.onchange = (e) => {
+  media.onchange = e => {
     state.lessWindow = e.matches;
     state.menuVisible = !e.matches;
   };
@@ -31,7 +31,7 @@ onMounted(() => {
 
 watch(
   () => route.name,
-  (val) => {
+  val => {
     if (state.lessWindow) {
       state.menuVisible = false;
     }
@@ -80,25 +80,6 @@ provide('state', state);
 // }
 //
 // toPinyin(data);
-
-// import kungfuAll from '@/data/kungfu/effect/move';
-//
-// function toArr() {
-//   const arr = [];
-//   for (let id in kungfuAll) {
-//     const {name, move} = kungfuAll[id];
-//     let moveStr = '';
-//     for (let item of move) {
-//       moveStr += `  {"${item}"},\n`;
-//     }
-//     const str = `-- ${name}
-// CC.KFMove[${id}] = {\n${moveStr}}`;
-//     arr.push(str);
-//   }
-//   console.log(arr.join('\n'));
-// }
-//
-// toArr();
 
 </script>
 

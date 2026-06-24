@@ -169,8 +169,8 @@ const rangeMap = {
     4: {shape: 'X', move: 4, width: 5, height: 5},
   },
   2: {
-    1: {shape: '«', move: 2, width: 3, height: 6},
-    2: {shape: '«', move: 2, width: 3, height: 6},
+    1: {shape: '«', move: 3, width: 3, height: 6},
+    2: {shape: '«', move: 3, width: 3, height: 6},
     3: {shape: '«', move: 3, width: 3, height: 7},
     4: {shape: '«', move: 4, width: 3, height: 8},
   },
@@ -181,10 +181,10 @@ const rangeMap = {
     4: {shape: '米', move: 4, width: 5, height: 5},
   },
   4: {
-    1: {shape: '△', move: 4, width: 3, height: 2},
-    2: {shape: '△', move: 4, width: 3, height: 2},
-    3: {shape: '△', move: 4, width: 5, height: 3},
-    4: {shape: '△', move: 4, width: 7, height: 4},
+    1: {shape: '△', move: 2, width: 5, height: 3},
+    2: {shape: '△', move: 2, width: 5, height: 3},
+    3: {shape: '△', move: 3, width: 7, height: 5},
+    4: {shape: '△', move: 4, width: 9, height: 5},
   },
   5: {
     1: {shape: '十', move: 2, width: 9, height: 9},

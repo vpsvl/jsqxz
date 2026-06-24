@@ -530,13 +530,6 @@ export default {
     effect: ['奇门武功攻击时25%概率三连击'],
     type: 1,
   },
-  xianTianJiuYin: {
-    id: 'xianTianJiuYin',
-    name: '先天九阴',
-    condition: '九阴神功+先天功',
-    effect: ['主运九阴神功，被杀气到-500，清除全部内伤，并恢复10%最大生命值'],
-    type: 2,
-  },
   jiuYinShenZhua: {
     id: 'jiuYinShenZhua',
     name: '九阴神爪',

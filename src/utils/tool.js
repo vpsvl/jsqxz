@@ -1,6 +1,6 @@
 import talentAll from '@/data/person/talent';
 import talentStr from './talent';
-import kungfuAll from '@/data/kungfu/effect/move';
+// import kungfuAll from '@/data/kungfu/effect/move';
 
 /**
  * 根据lua天赋列表字符串修改天赋列表
@@ -75,17 +75,17 @@ export function editTalentLevel() {
   console.log(arr.join('\n'));
 }
 
-function toArr() {
-  const arr = [];
-  for (let id in kungfuAll) {
-    const {name, move} = kungfuAll[id];
-    let moveStr = '';
-    for (let item of move) {
-      moveStr += `  {"${item}"},\n`;
-    }
-    const str = `-- ${name}
-CC.KFMove[${id}] = {\n${moveStr}}`;
-    arr.push(str);
-  }
-  console.log(arr.join('\n'));
-}
+// function toArr() {
+//   const arr = [];
+//   for (let id in kungfuAll) {
+//     const {name, move} = kungfuAll[id];
+//     let moveStr = '';
+//     for (let item of move) {
+//       moveStr += `  {"${item}"},\n`;
+//     }
+//     const str = `-- ${name}
+// CC.KFMove[${id}] = {\n${moveStr}}`;
+//     arr.push(str);
+//   }
+//   console.log(arr.join('\n'));
+// }
