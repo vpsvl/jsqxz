@@ -5151,10 +5151,10 @@ export default {
   611: {
     id: 611,
     name: '幻剑流光',
-    effect: [''],
+    effect: ['使用剑法连击伤害不减，且每次连击增加伤害10%', '使用剑法暴击时概率追加一次连击'],
     fortune: [],
     level: 4,
-    score: 0,
+    score: 40,
   },
   612: {
     id: 612,
@@ -5730,11 +5730,11 @@ export default {
   },
   678: {
     id: 678,
-    name: '备用',
-    effect: [''],
+    name: '明教教主',
+    effect: ['无视条件学习圣火神功和乾坤大挪移，明教武功威力+500'],
     fortune: [],
-    level: 3,
-    score: 0,
+    level: 2,
+    score: 15,
   },
   679: {
     id: 679,
@@ -6347,6 +6347,16 @@ export default {
     fortune: [],
     level: 4,
     score: 0,
+  },
+  9721: {
+    id: 9721,
+    name: '剑煌天威',
+    effect: [
+      '使用剑法攻击造成暴击或连击伤害时，30%概率触发“剑煌天威”：对攻击范围外七格内敌方其余目标造成30%伤害，并使范围外七格内的敌方攻击力降低20%、防御力降低20%，持续2回合',
+    ],
+    fortune: [],
+    level: 4,
+    score: 50,
   },
   9722: {
     id: 9722,
@@ -8619,7 +8629,7 @@ export default {
     effect: ['被攻击前先手反击，独孤求败先手反击后概率打断对方攻击'],
     fortune: [],
     level: 4,
-    score: 70,
+    score: 0,
   },
   9983: {
     id: 9983,
