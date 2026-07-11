@@ -78,7 +78,7 @@ watchEffect(async () => {
     hasBranch.value = true;
   }
   if (tbody.value.branch?.length) {
-    branchMap.value.branch = '支线';
+    branchMap.value.branch = type === 'shen'? '畅想杨过线' : '支线';
     hasBranch.value = true;
   }
   branch.value = 'good';

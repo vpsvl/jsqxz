@@ -4631,7 +4631,7 @@ export default {
     id: 341,
     name: '狂风迅雷扇',
     cheat: '',
-    get: ['程英居战胜李莫愁后获得'],
+    get: ['程英居战胜李莫愁后获得（畅想杨过无法获得）'],
     sect: 29,
     level: 2,
     internal: '',
