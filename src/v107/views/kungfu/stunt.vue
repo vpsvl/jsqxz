@@ -1,0 +1,89 @@
+<template>
+  <div class="v-search">
+    <div class="v-search-item">
+      <v-input
+        class="item-value"
+        v-model="params.keyword"
+        placeholder="名称/条件/效果查询"
+      ></v-input>
+    </div>
+    <div class="v-search-item">
+      <v-button type="primary" @click="search">查询</v-button>
+    </div>
+  </div>
+  <v-table class="v-table-kungfu-stunt" :cols="thead" :data="tbody">
+    <template #effect="{row}">
+      <div class="td-block">
+        <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">
+          {{ item }}
+        </div>
+      </div>
+    </template>
+  </v-table>
+</template>
+
+<script setup>
+import {ref, onBeforeMount} from 'vue';
+import stuntData from '@/v107/data/kungfu/stunt';
+
+const thead = [
+  {
+    key: 'name',
+    name: '名称',
+  },
+  {
+    key: 'condition',
+    name: '条件',
+  },
+  {
+    key: 'effect',
+    name: '效果',
+  },
+];
+const params = ref({
+  keyword: '',
+});
+const tbody = ref([]);
+
+function search() {
+  tbody.value = [];
+  for (let key in stuntData) {
+    const {name, type, condition, effect} = stuntData[key];
+    if (type !== 1) {
+      continue;
+    }
+    const reg = new RegExp(params.value.keyword, 'i');
+    let flag = reg.test(name) || reg.test(condition);
+    if (!flag) {
+      for (let item of effect) {
+        if (reg.test(item)) {
+          flag = true;
+          break;
+        }
+      }
+    }
+    if (flag) {
+      tbody.value.push(stuntData[key]);
+    }
+  }
+}
+
+onBeforeMount(() => {
+  search();
+});
+</script>
+<style lang="less">
+.v-table-kungfu-stunt {
+  --height-slide: 130px;
+
+  .td {
+    &:nth-child(1) {
+      flex: 0 0 110px;
+    }
+
+    &:nth-child(3) {
+      flex-grow: 2;
+    }
+  }
+}
+</style>

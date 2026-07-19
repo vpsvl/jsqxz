@@ -1,21 +1,14 @@
 import {createRouter, createWebHistory, createWebHashHistory} from 'vue-router';
-import processRoute from './process';
-import goodsRoute from './goods';
-import kungfuRoute from './kungfu';
-import personRoute from './person';
-import otherRoute from './other';
+import {routes107, nav107} from '@/v107/router';
 
 export const routes = [
   {
     path: '/',
-    component: () => import('@/views/home/index.vue'),
-    name: 'index',
+    name: 'v107',
+    meta: {title: 'v1.07'},
+    redirect: {name: 'index107'},
+    children: routes107,
   },
-  processRoute,
-  goodsRoute,
-  kungfuRoute,
-  personRoute,
-  otherRoute,
   {
     path: '/:catchAll(.*)',
     redirect: '/',
@@ -23,16 +16,12 @@ export const routes = [
 ];
 
 export default createRouter({
-  history: import.meta.env.BUILD_ENV
+  history: import.meta.env.PROD
     ? createWebHashHistory(import.meta.env.BASE_URL)
     : createWebHistory(),
   routes,
 });
 
 export const headerNav = {
-  [processRoute.name]: processRoute.meta.title,
-  [kungfuRoute.name]: kungfuRoute.meta.title,
-  [goodsRoute.name]: goodsRoute.meta.title,
-  [personRoute.name]: personRoute.meta.title,
-  [otherRoute.name]: otherRoute.meta.title,
+  107: nav107,
 };

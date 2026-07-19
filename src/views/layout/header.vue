@@ -1,12 +1,17 @@
 <template>
   <header class="header">
-    <a class="header-logo" :href="homeUrl" v-if="!state.lessWindow">
+    <a
+      v-if="!state.lessWindow"
+      class="header-logo"
+      href="javascript: void 0"
+      @click="goHome"
+    >
       <img src="../../assets/images/logo.png" alt="logo"/>
     </a>
     <a
       class="header-menu-switch"
       :class="{'icon-hidden': route.name === 'index'}"
-      href="javascript: void(0);"
+      href="javascript: void 0;"
       @click="toggleMenu"
       v-if="state.lessWindow"
     >
@@ -23,21 +28,37 @@
       </svg>
     </a>
     <nav class="header-nav">
-      <router-link v-for="(text, name) of headerNav" :key="name" :to="{name}">
+      <router-link v-for="(text, name) of navList" :key="name" :to="{name}">
         {{ text }}
       </router-link>
     </nav>
+    <div class="header-version">
+      <select v-model="state.version" class="version-select" @change="goHome">
+        <option v-for="(name, val) in state.versionAll" :key="val" :value="val">
+          {{ name }}
+        </option>
+      </select>
+    </div>
   </header>
 </template>
 
 <script setup>
-import {inject} from 'vue';
+import {inject, ref, watch} from 'vue';
 import {headerNav} from '@/router/index.js';
-import {useRoute} from 'vue-router';
+import {useRoute, useRouter} from 'vue-router';
 
 const route = useRoute();
+const router = useRouter();
 const state = inject('state');
-const homeUrl = import.meta.env.PROD ? import.meta.env.BASE_URL : '/';
+const navList = ref([]);
+
+watch(() => state.version, val => {
+  navList.value = headerNav[val] ? headerNav[val] : [];
+}, {immediate: true});
+
+function goHome() {
+  router.push({name: `index${state.version}`});
+}
 
 function toggleMenu() {
   state.menuVisible = !state.menuVisible;
@@ -45,7 +66,17 @@ function toggleMenu() {
 </script>
 
 <style lang="less">
+.is-less-window .header {
+  --nav-padding-h: 8px;
+
+  .version-select {
+    width: 70px;
+  }
+}
+
 .header {
+  --nav-padding-h: 16px;
+
   position: relative;
   z-index: 9;
   display: flex;
@@ -91,9 +122,10 @@ function toggleMenu() {
 
   .header-nav {
     display: flex;
+    flex: 1 0 0;
 
     a {
-      padding: 0 16px;
+      padding: 0 var(--nav-padding-h);
       font-size: 16px;
       line-height: var(--header-height);
       overflow: hidden;
@@ -105,6 +137,41 @@ function toggleMenu() {
       &.router-link-active {
         color: var(--color-link);
         background: var(--color-primary-lighter);
+      }
+    }
+  }
+
+  .header-version {
+    display: flex;
+    align-items: stretch;
+    margin-right: 10px;
+  }
+
+  .version-select {
+    appearance: base-select;
+    display: flex;
+    align-items: center;
+    width: 80px;
+    padding: 0 5px;
+    border: 0;
+    background: #fff;
+    cursor: pointer;
+
+    &::picker(select) {
+      appearance: base-select;
+      border-radius: 4px;
+      border-color: var(--color-border);
+    }
+
+    &:hover {
+      background: #fff;
+    }
+
+    option {
+      padding: 5px;
+
+      &:checked {
+        background: var(--color-primary-light);
       }
     }
   }

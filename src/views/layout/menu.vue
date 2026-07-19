@@ -45,7 +45,7 @@ const props = defineProps({
   },
 });
 const route = useRoute();
-const menus = computed(() => props.menu.filter((item) => !item.meta || !item.meta.hidden));
+const menus = computed(() => props.menu.filter(item => !item.meta || !item.meta.hidden));
 const slideMenu = ref([]);
 const getSlideDefault = () => {
   const {matched} = route;
@@ -58,7 +58,7 @@ onBeforeMount(() => {
 });
 watch(
   () => menus.value,
-  (val) => {
+  val => {
     getSlideDefault();
   },
 );

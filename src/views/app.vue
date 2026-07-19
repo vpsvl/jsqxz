@@ -1,5 +1,5 @@
 <template>
-  <div class="app">
+  <div class="app" :class="{'is-less-window': state.lessWindow}">
     <header-nav></header-nav>
     <router-view class="app-view"></router-view>
     <v-loading :loading="state.loading"></v-loading>
@@ -7,16 +7,22 @@
 </template>
 
 <script setup>
-import {onMounted, provide, reactive, ref, watch} from 'vue';
+import {onMounted, provide, reactive, watch} from 'vue';
 import HeaderNav from '@/views/layout/header.vue';
 import VLoading from '@/components/loading.vue';
 import {useRoute} from 'vue-router';
 
+const versionAll = {
+  107: 'v1.07',
+};
+const versionMax = 107;
 const route = useRoute();
 const state = reactive({
   loading: false,
   menuVisible: true,
   lessWindow: false,
+  version: versionMax,
+  versionAll,
 });
 
 onMounted(() => {
@@ -35,6 +41,11 @@ watch(
     if (state.lessWindow) {
       state.menuVisible = false;
     }
+    const version = Number(val.slice(-3));
+    if (version === state.version) {
+      return;
+    }
+    state.version = Number.isNaN(version) || !versionAll[version] ? versionMax : version;
   },
 );
 

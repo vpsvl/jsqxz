@@ -27,13 +27,17 @@ const state = inject('state');
 const menus = ref([]);
 const breads = ref([]);
 watchEffect(() => {
-  const {matched} = route;
-  const routeRootName = breads.value[0] ? breads.value[0].name : '';
+  const matched = [...route.matched];
+  const routeRootName = breads.value[1] ? breads.value[1].name : '';
   breads.value = matched;
-  if (routeRootName === matched[0].name) {
+  if (routeRootName === matched[1].name) {
     return;
   }
-  const currentRoute = routes.find((item) => item.name === matched[0].name);
+  const parentRoute = routes.find(item => item.name === `v${state.version}`);
+  if (!parentRoute) {
+    return;
+  }
+  const currentRoute = parentRoute.children.find(item => item.name === matched[1].name);
   if (currentRoute) {
     menus.value = currentRoute.children ? currentRoute.children : [];
   }
