@@ -29,6 +29,7 @@
 import {ref, watchEffect, inject} from 'vue';
 import {useRoute} from 'vue-router';
 import VTbodyProcess from './tbody.vue';
+import allData from '@/v107/data/process';
 
 const route = useRoute();
 const state = inject('state');
@@ -59,16 +60,9 @@ watchEffect(async () => {
   }
   hasBranch.value = false;
   branchMap.value = {};
-  try {
-    state.loading = true;
-    tbody.value = {normal: []};
-    const data = await import(`../../data/process/${type}.js`);
-    tbody.value = data.default;
-    state.loading = false;
-  } catch (e) {
-    tbody.value = {normal: []};
-    state.loading = false;
-  }
+  state.loading = true;
+  tbody.value = allData[type];
+  state.loading = false;
   if (tbody.value.good?.length) {
     branchMap.value.good = goodMap[type] ? goodMap[type] : '正线';
     hasBranch.value = true;
@@ -78,7 +72,7 @@ watchEffect(async () => {
     hasBranch.value = true;
   }
   if (tbody.value.branch?.length) {
-    branchMap.value.branch = type === 'shen'? '畅想杨过线' : '支线';
+    branchMap.value.branch = type === 'shen' ? '畅想杨过线' : '支线';
     hasBranch.value = true;
   }
   branch.value = 'good';

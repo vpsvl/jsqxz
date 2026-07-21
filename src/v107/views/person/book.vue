@@ -34,6 +34,7 @@
 import {ref, watchEffect, inject} from 'vue';
 import {useRoute} from 'vue-router';
 import talentMap from '@/v107/data/person/talent';
+import personAll from '@/v107/data/person';
 
 const route = useRoute();
 const state = inject('state');
@@ -54,7 +55,7 @@ const thead = [
   },
 ];
 const tbody = ref([]);
-watchEffect(async () => {
+watchEffect(() => {
   const {
     name,
     meta: {type},
@@ -63,10 +64,8 @@ watchEffect(async () => {
     return;
   }
   try {
-    tbody.value = [];
     state.loading = true;
-    const data = await import(`../../data/person/${type}.js`);
-    tbody.value = data.default.list.map((item) => {
+    tbody.value = personAll[type].list.map(item => {
       const talentArr = [];
       const fortuneArr = [];
       for (let key of item.talent) {

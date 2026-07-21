@@ -123,7 +123,7 @@
   </div>
 </template>
 <script setup>
-import {computed} from 'vue';
+import {computed, inject} from 'vue';
 import {sessionStorage} from '@/utils/storage';
 import sectMap from '@/v107/data/kungfu/sect';
 import {
@@ -144,11 +144,11 @@ const props = defineProps({
     required: true,
   },
 });
-
+const state = inject('state');
 const info = computed(() => handleKungfuInfo(props.item));
 
 function handleKungfuInfo(info = {}) {
-  const cacheKey = `kungfu${info.id}`;
+  const cacheKey = `${state.version}kungfu${info.id}`;
   const cacheInfo = sessionStorage.get(cacheKey);
   if (cacheInfo) {
     return cacheInfo;

@@ -901,7 +901,7 @@ export function buQuShaQi(lv) {
   return {
     id: 610,
     name: `不屈 Lv${lv}`,
-    effect: [`受到攻击时${lv * 25}%杀气不会低于${(lv - 1) * 80}`],
+    effect: [`受到攻击时${lv * 25}%概率集气值不会低于${(lv - 1) * 80}`],
   };
 }
 
@@ -2087,7 +2087,7 @@ export function qiYueRuShi(lv) {
   return {
     id: 1038,
     name: `气跃如逝 Lv${lv}`,
-    effect: [`集气0~${lv * 15}%固定概率向前跳跃${lv * 5}~${lv * 10}时序`],
+    effect: [`集气0~${lv * 15}%概率向前跳跃${lv * 5}~${lv * 10}时序`],
   };
 }
 

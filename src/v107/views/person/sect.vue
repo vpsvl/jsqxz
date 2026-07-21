@@ -91,17 +91,18 @@
 </template>
 
 <script setup>
-import {computed, ref} from 'vue';
+import {computed, inject, ref} from 'vue';
 import sectAll from '@/v107/data/kungfu/sect';
 import kungfuAll from '@/v107/data/kungfu/list';
 import {kungfuTypeMap, levelMap} from '@/v107/data/map';
 import {sessionStorage} from '@/utils/storage';
 
+const state = inject('state');
 const list = computed(() => Object.values(sectAll));
 const active = ref(0);
 
 const info = computed(() => {
-  const cacheKey = `sect${active.value}`;
+  const cacheKey = `${state.version}sect${active.value}`;
   const cacheInfo = sessionStorage.get(cacheKey);
   if (cacheInfo) {
     return cacheInfo;
