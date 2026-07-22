@@ -122,10 +122,10 @@ export function getCondition({type, level, internal = '', other = ''}) {
       outCondition = `(${outConditionMap[level]}+${outConditionGap[level]}×周目数÷100)`;
     }
     condition += `${kungfuTypeMap[type]}${outCondition} `;
-  } else if (type === 'internal') {
+  } else if (type === 6) {
     // 内功学习条件
     condition += `内力${internalConditionMap[level]} `;
-  } else if (type === 'fly') {
+  } else if (type === 7) {
     // 轻功学习条件
     condition += `轻功${flyConditionMap[level]} `;
   }

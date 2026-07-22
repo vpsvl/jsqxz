@@ -27,7 +27,7 @@ export default {
       get: '书剑李沅芷线龙门客栈战胜张召重后获得',
       condition: '御剑50',
       addition: '攻击+10，防御+10，轻功+10',
-      effect: ['剑法范围+1（面攻的+2）'],
+      effect: ['剑法范围+1'],
     },
     {
       name: '白龙剑',
