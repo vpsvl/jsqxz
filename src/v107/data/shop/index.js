@@ -209,7 +209,7 @@ export default {
       {
         name: '天王保命丹',
         intro: '【丹药】生命+500 内力+1200 体力+50 中毒-25',
-        price: '1000',
+        price: '3000',
         num: '1000',
         remark: '',
       },
