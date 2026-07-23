@@ -343,16 +343,7 @@ export default {
     level: 4,
     internal: 2,
     addition: '暗器+3',
-    peculiar: [
-      {
-        name: '如来神掌',
-        condition: '攻击时概率（主运易筋经100%）触发',
-        effect: [
-          '攻击变为面攻，附加目标最大生命值8%的伤害',
-          '对生命值低于50%的目标固定概率直接斩杀',
-        ],
-      },
-    ],
+    peculiar: ['ruLaiShenZhang'],
     move: [['zhuoShaoBase']],
     moveNum: 7,
     type: 1,
@@ -368,9 +359,8 @@ export default {
     peculiar: [
       {
         name: '黯然极意',
-        condition:
-          '血量低于70%或者内伤大于30时，概率触发（血量越低，内伤越高，概率越高），满足条件时暴怒必定触发',
-        effect: ['攻击范围变成面攻，无误伤，必破气防'],
+        condition: '血量低于70%或者内伤大于30时，概率触发（血量越低，内伤越高，概率越高，暴怒必定触发）',
+        effect: ['攻击变为7×7面攻，无误伤，必破气防'],
       },
     ],
     moveNum: 7,
@@ -389,7 +379,7 @@ export default {
       {
         name: '降龙极意',
         condition: '',
-        effect: ['攻击范围变成面攻，无误伤，气攻提升至2300'],
+        effect: ['攻击变为7×7面攻，无误伤，气攻提升至2300'],
       },
       {
         name: '降龙三叠浪',
@@ -1134,7 +1124,7 @@ export default {
       {
         name: '天下无狗',
         condition: '使用打狗棒法(极)攻击40%概率发动，暴怒必定发动',
-        effect: ['攻击无误伤，攻击范围变为面攻，气攻提升至2400'],
+        effect: ['攻击变为7×7面攻，攻击无误伤，气攻提升至2400'],
       },
       'gaiShiWuShuang',
     ],

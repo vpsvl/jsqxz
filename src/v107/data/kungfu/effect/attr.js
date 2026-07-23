@@ -124,7 +124,7 @@ export function getCondition({type, level, internal = '', other = ''}) {
     condition += `${kungfuTypeMap[type]}${outCondition} `;
   } else if (type === 6) {
     // 内功学习条件
-    condition += `内力${internalConditionMap[level]} `;
+    condition += `内力最大值${internalConditionMap[level]} `;
   } else if (type === 7) {
     // 轻功学习条件
     condition += `轻功${flyConditionMap[level]} `;
