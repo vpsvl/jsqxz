@@ -148,7 +148,7 @@ const state = inject('state');
 const info = computed(() => handleKungfuInfo(props.item));
 
 function handleKungfuInfo(info = {}) {
-  const cacheKey = `${state.version}kungfu${info.id}`;
+  const cacheKey = `${state.version}_kungfu_${info.id}`;
   const cacheInfo = sessionStorage.get(cacheKey);
   if (cacheInfo) {
     return cacheInfo;

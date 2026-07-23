@@ -102,7 +102,7 @@ const list = computed(() => Object.values(sectAll));
 const active = ref(0);
 
 const info = computed(() => {
-  const cacheKey = `${state.version}sect${active.value}`;
+  const cacheKey = `${state.version}_sect_${active.value}`;
   const cacheInfo = sessionStorage.get(cacheKey);
   if (cacheInfo) {
     return cacheInfo;

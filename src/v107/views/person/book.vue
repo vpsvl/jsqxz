@@ -8,6 +8,7 @@
             {{ item.name }}
           </span>
           ]:
+          <span class="color-error" v-if="index === 0">（血脉）</span>
         </div>
         <div class="td-effect-item effect-icon-star" v-for="(text, i) of item.effect" :key="i">
           {{ text }}
@@ -35,6 +36,7 @@ import {ref, watchEffect, inject} from 'vue';
 import {useRoute} from 'vue-router';
 import talentMap from '@/v107/data/person/talent';
 import personAll from '@/v107/data/person';
+import {sessionStorage} from '@/utils/storage';
 
 const route = useRoute();
 const state = inject('state');
@@ -63,9 +65,18 @@ watchEffect(() => {
   if (!/person/i.test(name)) {
     return;
   }
+  const cacheKey = `${state.version}_person_${type}`;
+  const cacheInfo = sessionStorage.get(cacheKey);
+  if (cacheInfo) {
+    tbody.value = cacheInfo;
+    return;
+  }
   try {
     state.loading = true;
-    tbody.value = personAll[type].list.map(item => {
+    tbody.value = personAll.filter(item => {
+      if (item.type !== type) {
+        return false;
+      }
       const talentArr = [];
       const fortuneArr = [];
       for (let key of item.talent) {
@@ -75,8 +86,9 @@ watchEffect(() => {
       }
       item.talent = talentArr;
       item.fortune = fortuneArr;
-      return item;
+      return true;
     });
+    sessionStorage.set(cacheKey, tbody.value);
     state.loading = false;
   } catch (e) {
     tbody.value = [];
