@@ -114,7 +114,7 @@ export function juDu(lv) {
 export function xuanYun(lv) {
   return {
     id: 10,
-    effect: `${lv * 10}%概率造成目标眩晕一回合`,
+    effect: `${lv * 10}%概率造成目标眩晕10时序`,
   };
 }
 export function siLie(lv) {

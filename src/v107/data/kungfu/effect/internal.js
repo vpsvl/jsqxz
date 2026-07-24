@@ -1215,10 +1215,10 @@ export function zhuanYinYang(lv) {
   };
 }
 
-export function nuoYi(lv) {
+export function yiXing(lv) {
   return {
     id: 804,
-    name: `挪移 Lv${lv}`,
+    name: `移形 Lv${lv}`,
     effect: [`受到伤害时${lv * 5}%概率挪移到${lv + 3}格内其他位置躲避伤害`],
   };
 }
@@ -2019,7 +2019,7 @@ export function kuiHuaBaiJie(lv) {
     id: 1033,
     name: `葵花百劫 Lv${lv}`,
     effect: [
-      `每次闪避和挪移自身集气增加${lv}点，集气位置增加${lv * 100}，并给攻击方增加虚弱状态一回合`,
+      `每次闪避和移形自身集气增加${lv}点，集气位置增加${lv * 100}，并给攻击方增加虚弱状态一回合`,
       `如果攻击方有盲目状态，则攻击方盲目状态增加一回合，行动前清除`,
     ],
   };

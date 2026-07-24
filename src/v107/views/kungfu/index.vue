@@ -2,7 +2,7 @@
   <div class="v-tabs">
     <div class="tabs">
       <label class="tab" v-for="item of kungfu" :key="item.id">
-        <input type="radio" name="cheat" :value="item.id" v-model="active" />
+        <input type="radio" name="cheat" :value="item.id" v-model="active"/>
         <span
           :class="{
             [`level-${item.level}`]: item.level,
@@ -29,10 +29,10 @@ const active = ref(-1);
 watchEffect(() => {
   kungfu.value = [];
   const {type} = route.meta;
-  kungfu.value = Object.values(kungfuAll).filter((item) => item.type === type);
+  kungfu.value = Object.values(kungfuAll).filter(item => item.type === type);
   kungfu.value.sort((a, b) => {
-    let aIn = a.internal === '' ? 9 : a.internal;
-    let bIn = b.internal === '' ? 9 : b.internal;
+    let aIn = a.internal ? a.internal : 9;
+    let bIn = b.internal ? b.internal : 9;
     if (a.level === b.level) {
       if (aIn === bIn) {
         return a.sect - b.sect;

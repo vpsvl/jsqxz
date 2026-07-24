@@ -44,10 +44,11 @@ export const levelMap = {
 };
 // 内力
 export const internalTypeMap = {
-  0: '无',
+  0: '调和',
   1: '阴内',
   2: '阳内',
   3: '天罡',
+  9: '无',
   '-': '无',
   '': '无',
 };

@@ -212,8 +212,32 @@ export function getRange({type, level, other = ''}) {
   return '';
 }
 
+const sectClosedMap = {
+  7: '全真教',
+  10: '嵩山派',
+  11: '青城派',
+  12: '衡山派',
+  13: '恒山派',
+  14: '泰山派',
+  15: '五毒教',
+  16: '古墓派',
+  18: '凌霄城',
+  19: '峨眉派',
+  20: '崆峒派',
+  21: '昆仑派',
+  22: '桃花岛',
+  23: '白驼山庄',
+  24: '六扇门',
+  25: '八卦门',
+  26: '慕容世家',
+  30: '藏剑山庄',
+};
+
 // 获取学习方式
 export function getLearn({sect, level, other = []}) {
+  if (!other) {
+    other = [];
+  }
   if (!Array.isArray(other)) {
     return [other];
   }
@@ -221,12 +245,13 @@ export function getLearn({sect, level, other = []}) {
     other.push(`挑战每月随机事件中携带此秘籍的人物，战胜后概率获得`);
   }
   if (sect > 0 && sectMap[sect]) {
-    other.push(`加入${sectMap[sect]}可学习`);
+    other.push(`加入${sectMap[sect]}${sectClosedMap[sect] ? '（未开放）' : ''}可学习`);
   } else if (level < 4) {
     other.push(`江湖散人可在扬州武馆学习`);
   }
   return other;
 }
+
 // 获取一脉
 export function getInherit(id) {
   const toId = inheritAscMap[id];
