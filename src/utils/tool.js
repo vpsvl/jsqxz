@@ -1,17 +1,17 @@
-import talentAll from '@/data/person/talent';
+import talentAll from '@/v107/data/person/talent';
 import talentStr from './talent';
+import stateStr from './state';
 // import kungfuAll from '@/data/kungfu/effect/move';
 
 /**
  * 根据lua天赋列表字符串修改天赋列表
- * @param {*} str
  * @returns
  */
 export function formatTalent() {
   let str = talentStr.replace(/--.*/g, '');
   // 表1天赋名称，表2天赋说明，表3 1非专属 2为专属，表4为1是非门天赋为2是门派天赋，表5为天赋等级(1蓝2紫3金4红)
-  str = str.replace(/\{([^,]+),[^,]*,[^,]*,[^,]*,([^,]+),([^,]+)\}/g, '$1,$2,$3,');
-  str = str.replace(/CC\.PTFSM\[(\d+?)\] ?\=/gi, '$1,');
+  str = str.replace(/\{([^,]+),[^,]*,[^,]*,[^,]*,([^,]+),([^,]+)}/g, '$1,$2,$3,');
+  str = str.replace(/CC\.PTFSM\[(\d+?)] ?=/gi, '$1,');
 
   const list = str.split('\n');
   const rst = {};
@@ -25,7 +25,7 @@ export function formatTalent() {
     }
     let [id, name, level, score] = info;
     rst[id] = {
-      name: name.replace(/"|'| /g, ''),
+      name: name.replace(/["' ]/g, ''),
       level: Number(level),
       score: Number(score),
     };
@@ -40,39 +40,28 @@ export function formatTalent() {
 }
 
 /**
- * 根据分数修改等级
+ * 根据lua状态列表字符串修改状态
+ * @returns
  */
-export function editTalentLevel() {
-  const talentArr = talentStr.split('\n');
-  const arr = [];
-  for (let item of talentArr) {
-    const itemArr = item.split(',');
-    let rst = '';
-    if (itemArr.length === 6) {
-      for (let i of itemArr) {
-        i = i.replace(/"/g, '');
-        let num = Number.parseInt(i);
-        if (!Number.isNaN(num)) {
-          i = num;
-        }
-      }
-      const score = itemArr[5].replace(/(\d+)\}.*/, '$1');
-      if (score >= 40) {
-        itemArr[4] = 4;
-      } else if (score == 10) {
-        itemArr[4] = 2;
-      } else if (score == 0) {
-        itemArr[4] = Number(itemArr[4]);
-      } else {
-        itemArr[4] = Math.ceil(score / 10);
-      }
-      rst = itemArr.join(',');
-    } else {
-      rst = item;
+export function formatState() {
+  let str = stateStr.replace(/--.*/g, '');
+  str = str.replace(/["' ]/g, '');
+  str = str.replace(/\{([^,]+),([^,]+),([^,]+),[^,]*,[^,]*,([^,]+)}/g, '$1,$2,$3,$4');
+  str = str.replace(/CC\.ZTSM\[(\d+?)] ?=/gi, '$1,');
+  const list = str.split('\n');
+  const rst = {};
+  for (let item of list) {
+    if (!item) {
+      continue;
     }
-    arr.push(rst);
+    const info = item.split(/, */);
+    if (info.length < 5) {
+      continue;
+    }
+    let [id, name, effect, type, shortName] = info;
+    rst[id] = {id: Number(id), name, effect: [effect], type: Number(type), shortName};
   }
-  console.log(arr.join('\n'));
+  console.log(Object.values(rst));
 }
 
 // function toArr() {

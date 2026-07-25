@@ -24,7 +24,7 @@
 
 <script setup>
 import {onBeforeMount, ref} from 'vue';
-import data from '@/v107/data/other/state';
+import data from '@/v107/data/other/state-all';
 
 const thead = ref([
   {

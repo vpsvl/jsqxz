@@ -1,36 +1,25 @@
 <template>
-  <v-table class="v-table-system" :cols="thead" :data="tbody">
-    <template #info="{row}">
-      <div class="td-block">
-        <div class="td-effect-item" v-for="(text, i) of row.info" :key="i">
+  <v-tabs :list="data.list" :exclusive="data.exclusive">
+    <template #tab="{tab}">
+      <span class="level-4">
+        {{ tab.name }}
+      </span>
+    </template>
+    <template #title="{info}">
+      <span class="level-4">
+        {{ info.name }}
+      </span>
+    </template>
+    <template #default="{info}">
+      <div class="v-table">
+        <div class="td-effect-item effect-icon-rhombus" v-for="(text, i) of info.info" :key="i">
           {{ text }}
         </div>
       </div>
     </template>
-  </v-table>
+  </v-tabs>
 </template>
 
 <script setup>
-import {ref} from 'vue';
 import data from '@/v107/data/other/system';
-
-const thead = [
-  {
-    key: 'name',
-    name: '名称',
-  },
-  {
-    key: 'info',
-    name: '说明',
-  },
-];
-const tbody = ref(data.list);
 </script>
-
-<style lang="less">
-.v-table-system {
-  .td:first-child {
-    flex: 0 0 120px;
-  }
-}
-</style>
