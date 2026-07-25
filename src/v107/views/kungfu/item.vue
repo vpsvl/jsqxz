@@ -136,7 +136,7 @@ import {
 } from '@/v107/data/kungfu/effect/attr';
 import * as internalMap from '@/v107/data/kungfu/effect/internal';
 import * as outMap from '@/v107/data/kungfu/effect/out';
-import stuntMap, {jiaLianJiPeculiar} from '@/v107/data/kungfu/stunt';
+import stuntMap, {jiaBaoJiPeculiar, jiaLianJiPeculiar} from '@/v107/data/kungfu/stunt';
 
 const props = defineProps({
   item: {
@@ -236,6 +236,20 @@ function handleKungfuInfo(info = {}) {
       condition: '在武功面板上',
       // effect: [`连击率增加(100-当前连击率)×${jiaLianJiPeculiar[id]}%`],
       effect: [`连击率+${jiaLianJiPeculiar[id]}%`],
+    };
+    if (Array.isArray(item.peculiar)) {
+      item.peculiar.unshift(effect);
+    } else {
+      item.peculiar = [effect];
+    }
+  }
+  // 加暴击
+  if (jiaBaoJiPeculiar[id]) {
+    const effect = {
+      name: '加暴击',
+      condition: '在武功面板上',
+      // effect: [`暴击率增加(100-当前暴击率)×${jiaLianJiPeculiar[id]}%`],
+      effect: [`暴击率+${jiaBaoJiPeculiar[id]}%`],
     };
     if (Array.isArray(item.peculiar)) {
       item.peculiar.unshift(effect);

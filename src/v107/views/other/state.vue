@@ -2,7 +2,7 @@
   <div class="v-search">
     <div class="v-search-item">
       <span class="item-label">名称:</span>
-      <v-input class="item-value" v-model="params.name"></v-input>
+      <v-input class="item-value" placeholder="名称/效果" v-model="params.keyword"></v-input>
     </div>
     <div class="v-search-item">
       <v-button type="primary" @click="search">查询</v-button>
@@ -42,17 +42,26 @@ const thead = ref([
 ]);
 
 const params = ref({
-  name: '',
+  keyword: '',
 });
 const tbody = ref([]);
 
 function search() {
-  if (!params.value.name) {
+  if (!params.value.keyword) {
     tbody.value = data.list;
     return;
   }
-  tbody.value = data.list.filter((item) => {
-    return new RegExp(params.value.name, 'i').test(item.name);
+  const reg = new RegExp(params.value.keyword, 'i');
+  tbody.value = data.list.filter(item => {
+    if (reg.test(item.name)) {
+      return true;
+    }
+    for (let text of item.effect) {
+      if (reg.test(text)) {
+        return true;
+      }
+    }
+    return false;
   });
 }
 
@@ -69,6 +78,7 @@ onBeforeMount(() => {
     &:nth-child(1) {
       flex: 0 0 100px;
     }
+
     &:nth-child(3) {
       flex: 0 0 60px;
     }

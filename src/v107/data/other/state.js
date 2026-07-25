@@ -165,5 +165,17 @@ export default {
       effect: ['免疫伤害和异常状态'],
       type: 1,
     },
+    {
+      id: 'zhongShang',
+      name: '重伤',
+      effect: ['三围降低一定百分比（目前是外伤的效果）'],
+      type: 2,
+    },
+    {
+      id: 'waiShang',
+      name: '外伤',
+      effect: ['直接增加流血点数（算入流血debuff）'],
+      type: 2,
+    },
   ],
 };
