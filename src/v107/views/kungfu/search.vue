@@ -31,14 +31,13 @@
     </template>
     <kungfu-item v-if="info.id" :item="info"></kungfu-item>
   </v-tabs>
-  <loading-shape v-show="state.loading"></loading-shape>
+  <v-loading :loading="state.loading"></v-loading>
 </template>
 <script setup>
-import {computed, ref, watch, inject, onBeforeMount} from 'vue';
-import {useRoute} from 'vue-router';
+import {computed, ref, inject, onBeforeMount} from 'vue';
 import kungfuMap from '@/v107/data/kungfu/list';
 import KungfuItem from './item';
-import LoadingShape from '@/components/loading-shape';
+import VLoading from '@/components/loading';
 import {sessionStorage} from '@/utils/storage';
 import {formatKungfu} from '@/v107/data/kungfu/effect/attr';
 
