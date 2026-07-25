@@ -4,8 +4,17 @@
       {{ exclusive }}
     </div>
     <div class="tabs">
-      <label class="tab" v-for="(item, index) of list" :key="index">
-        <input type="radio" name="cheat" :value="index" v-model="active" />
+      <label
+        class="tab"
+        v-for="(item, index) of list"
+        :key="keyName && item[keyName] ? item[keyName] : index"
+      >
+        <input
+          type="radio"
+          name="tab"
+          :value="keyName && item[keyName] ? item[keyName] : index"
+          v-model="active"
+        />
         <slot name="tab" :tab="item">
           <span>{{ item.name }}</span>
         </slot>
@@ -21,30 +30,28 @@
 </template>
 
 <script setup>
-import {computed, ref, watch} from 'vue';
+import {computed} from 'vue';
 
 const props = defineProps({
   list: {
     type: Array,
+    default: () => [],
   },
   exclusive: {
     type: String,
   },
-  type: {
+  keyName: {
     type: String,
     default: '',
   },
 });
 
-const active = ref(0);
+const active = defineModel({default: 0, type: Number});
 const info = computed(() => {
+  if (props.keyName) {
+    const item = props.list.find(i => i[props.keyName] === active.value);
+    return item ? item : {};
+  }
   return {...props.list[active.value]};
 });
-watch(
-  () => props.list,
-  () => {
-    active.value = 0;
-  },
-  {immediate: true},
-);
 </script>

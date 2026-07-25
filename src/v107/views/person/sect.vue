@@ -1,18 +1,15 @@
 <template>
-  <div class="v-tabs">
-    <div class="tabs">
-      <label class="tab" v-for="item of list" :key="item.id">
-        <input type="radio" name="cheat" :value="item.id" v-model="active" />
-        <span class="level-4">
-          {{ item.name }}
-        </span>
-      </label>
-    </div>
-    <h5 class="tabs-content-title" v-show="info.name">
+  <v-tabs :list="list" key-name="id" v-model="active">
+    <template #tab="{tab}">
+      <span class="level-4">
+        {{ tab.name }}
+      </span>
+    </template>
+    <template #title="{info}">
       <span class="level-4">
         {{ info.name }}
       </span>
-    </h5>
+    </template>
     <div class="v-table v-table-vertical">
       <div class="tr">
         <div class="td">加入方式</div>
@@ -87,7 +84,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </v-tabs>
 </template>
 
 <script setup>

@@ -1,6 +1,10 @@
-import {sectMap, kungfuTypeMap} from '@/v107/data/map';
+import {kungfuTypeMap} from '@/v107/data/map';
 import {inheritAscMap, inheritDescMap} from '@/v107/data/kungfu/inherit';
 import kungfuAll from '@/v107/data/kungfu/list';
+import sectAll from '@/v107/data/kungfu/sect';
+import stuntMap, {jiaBaoJiPeculiar, jiaLianJiPeculiar} from '@/v107/data/kungfu/stunt';
+import * as internalMap from '@/v107/data/kungfu/effect/internal';
+import * as outMap from '@/v107/data/kungfu/effect/out';
 
 // 属性加成类型
 const attrTypeMap = {
@@ -244,8 +248,8 @@ export function getLearn({sect, level, other = []}) {
   if (level > 2) {
     other.push(`挑战每月随机事件中携带此秘籍的人物，战胜后概率获得`);
   }
-  if (sect > 0 && sectMap[sect]) {
-    other.push(`加入${sectMap[sect]}${sectClosedMap[sect] ? '（未开放）' : ''}可学习`);
+  if (sect > 0 && sectAll[sect]) {
+    other.push(`加入${sectAll[sect].name}${sectClosedMap[sect] ? '（未开放）' : ''}可学习`);
   } else if (level < 4) {
     other.push(`江湖散人可在扬州武馆学习`);
   }
@@ -255,6 +259,9 @@ export function getLearn({sect, level, other = []}) {
 // 获取一脉
 export function getInherit(id) {
   const toId = inheritAscMap[id];
+  if (!kungfuAll[id]) {
+    return [];
+  }
   const {name} = kungfuAll[id];
   let rst = [];
   if (toId) {
@@ -277,4 +284,181 @@ export function getInherit(id) {
     }
   }
   return rst;
+}
+
+/**
+ * 格式化武功说明
+ * @param info
+ * @returns {any}
+ */
+export function formatKungfu(info = {}) {
+  const item = JSON.parse(JSON.stringify(info));
+  const {
+    id,
+    level,
+    sect,
+    type,
+    internal,
+    initiative,
+    peculiar,
+    move,
+    moveNum,
+    ultimate,
+    addition,
+    condition,
+    power,
+    range,
+    get: learn,
+  } = item;
+  if (!item.cheat) {
+    item.cheat = item.name;
+  }
+  item.sectName = sectAll[sect]?.name ?? '';
+  item.get = getLearn({
+    sect,
+    level,
+    other: learn,
+  });
+  // 获取属性加成
+  item.addition = getAttr({
+    type,
+    level,
+    internal,
+    other: addition,
+  });
+  // 获取学习条件
+  item.condition = getCondition({
+    type,
+    level,
+    internal,
+    other: condition,
+  });
+  // 威力
+  item.power = getPower({
+    type,
+    level,
+    internal,
+    other: power,
+  });
+  // 攻击范围
+  item.range = getRange({
+    type,
+    level,
+    other: range,
+  });
+  // 一脉相承
+  item.inherit = getInherit(id);
+  // 内功主运特效
+  if (Array.isArray(initiative)) {
+    const arr = [];
+    for (let key of initiative) {
+      if (typeof internalMap[key] === 'function') {
+        arr.push(internalMap[key](level));
+      }
+    }
+    item.initiative = arr;
+  }
+  // 秘技
+  if (Array.isArray(peculiar)) {
+    const arr = [];
+    for (let key of peculiar) {
+      if (typeof key === 'string') {
+        if (stuntMap[key]) {
+          arr.push(stuntMap[key]);
+        }
+        continue;
+      }
+      arr.push(key);
+    }
+    item.peculiar = arr;
+  }
+  // 加连击
+  if (jiaLianJiPeculiar[id]) {
+    const effect = {
+      name: '加连击',
+      condition: '在武功面板上',
+      // effect: [`连击率增加(100-当前连击率)×${jiaLianJiPeculiar[id]}%`],
+      effect: [`连击率+${jiaLianJiPeculiar[id]}%`],
+    };
+    if (Array.isArray(item.peculiar)) {
+      item.peculiar.unshift(effect);
+    } else {
+      item.peculiar = [effect];
+    }
+  }
+  // 加暴击
+  if (jiaBaoJiPeculiar[id]) {
+    const effect = {
+      name: '加暴击',
+      condition: '在武功面板上',
+      // effect: [`暴击率增加(100-当前暴击率)×${jiaLianJiPeculiar[id]}%`],
+      effect: [`暴击率+${jiaBaoJiPeculiar[id]}%`],
+    };
+    if (Array.isArray(item.peculiar)) {
+      item.peculiar.unshift(effect);
+    } else {
+      item.peculiar = [effect];
+    }
+  }
+  if (moveNum > 1) {
+    // 外功招式特效
+    // 所有特效
+    const arr = [];
+    // 基础特效
+    const arrBase = [];
+    const typeKey = `${type}Base`;
+    if (outMap[typeKey]) {
+      const moveItem = outMap[typeKey](level);
+      arrBase.push(moveItem.effect);
+    }
+    if (move && Array.isArray(move[0])) {
+      const base = move.shift();
+      for (let key of base) {
+        const moveItem = outMap[key](level);
+        arrBase.push(moveItem.effect);
+      }
+    }
+    let moveList = [];
+    // 有配招式就使用配置的
+    if (move && move.length > 0) {
+      moveList = move;
+    } else if (sectAll[sect]) {
+      // 没有配置招式使用门派默认的
+      const {move: sectMove} = sectAll[sect];
+      const total = sectMove.length;
+      for (let i = 0; i < moveNum - 1; i++) {
+        moveList.push(sectMove[i]);
+      }
+      // 只有8招, 第7招使用第8个效果
+      if (moveNum === 8) {
+        moveList[6] = sectMove[7];
+      }
+      // 最后一招怒气大招默认门派最后一招
+      moveList.push(sectMove[total - 1]);
+    }
+    for (let key of moveList) {
+      const item = [...arrBase];
+      if (typeof outMap[key] === 'function') {
+        const moveItem = outMap[key](level);
+        item.push(moveItem.effect);
+      }
+      arr.push([item.join('；')]);
+    }
+
+    // 外功奥义特效
+    if (Array.isArray(ultimate)) {
+      for (let [index, key] of ultimate.entries()) {
+        if (!Array.isArray(arr[index])) {
+          arr[index] = [];
+        }
+        if (typeof outMap[key] === 'function') {
+          const ultimateItem = outMap[key](level);
+          const {name, effect} = ultimateItem;
+          arr[index].push(`${name}(奥义)：${effect}`);
+        }
+      }
+    }
+    item.move = arr;
+  }
+  return item;
 }

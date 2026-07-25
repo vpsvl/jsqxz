@@ -1,5 +1,5 @@
 <template>
-  <h5 class="tabs-content-title">
+  <h5 class="tabs-content-title" v-if="titleVisible">
     <span
       :class="[
         `level-${info.level}`,
@@ -14,7 +14,7 @@
       <div class="td">秘籍</div>
       <div class="td">
         <span :class="`level-icon level-icon-${info.level}`"></span>
-        <span>{{ info.cheat ? info.cheat : info.name }}</span>
+        <span>{{ info.cheat }}</span>
       </div>
     </div>
     <div class="tr">
@@ -32,7 +32,7 @@
     <div class="tr">
       <div class="td">所属门派</div>
       <div class="td">
-        {{ sectMap[info.sect]?.name ?? '' }}
+        {{ info.sectName }}
       </div>
     </div>
     <div class="tr">
@@ -125,23 +125,16 @@
 <script setup>
 import {computed, inject} from 'vue';
 import {sessionStorage} from '@/utils/storage';
-import sectMap from '@/v107/data/kungfu/sect';
-import {
-  getAttr,
-  getCondition,
-  getInherit,
-  getLearn,
-  getPower,
-  getRange,
-} from '@/v107/data/kungfu/effect/attr';
-import * as internalMap from '@/v107/data/kungfu/effect/internal';
-import * as outMap from '@/v107/data/kungfu/effect/out';
-import stuntMap, {jiaBaoJiPeculiar, jiaLianJiPeculiar} from '@/v107/data/kungfu/stunt';
+import {formatKungfu} from '@/v107/data/kungfu/effect/attr';
 
 const props = defineProps({
   item: {
     type: Object,
     required: true,
+  },
+  titleVisible: {
+    type: Boolean,
+    default: false,
   },
 });
 const state = inject('state');
@@ -153,172 +146,8 @@ function handleKungfuInfo(info = {}) {
   if (cacheInfo) {
     return cacheInfo;
   }
-  const item = JSON.parse(JSON.stringify(info));
-  const {
-    id,
-    level,
-    sect,
-    type,
-    internal,
-    initiative,
-    peculiar,
-    move,
-    moveNum,
-    ultimate,
-    addition,
-    condition,
-    power,
-    range,
-    get: learn,
-  } = item;
-  item.get = getLearn({
-    sect,
-    level,
-    other: learn,
-  });
-  // 获取属性加成
-  item.addition = getAttr({
-    type,
-    level,
-    internal,
-    other: addition,
-  });
-  // 获取学习条件
-  item.condition = getCondition({
-    type,
-    level,
-    internal,
-    other: condition,
-  });
-  // 威力
-  item.power = getPower({
-    type,
-    level,
-    internal,
-    other: power,
-  });
-  // 攻击范围
-  item.range = getRange({
-    type,
-    level,
-    other: range,
-  });
-  // 一脉相承
-  item.inherit = getInherit(id);
-  // 内功主运特效
-  if (Array.isArray(initiative)) {
-    const arr = [];
-    for (let key of initiative) {
-      if (typeof internalMap[key] === 'function') {
-        arr.push(internalMap[key](level));
-      }
-    }
-    item.initiative = arr;
-  }
-  // 秘技
-  if (Array.isArray(peculiar)) {
-    const arr = [];
-    for (let key of peculiar) {
-      if (typeof key === 'string') {
-        if (stuntMap[key]) {
-          arr.push(stuntMap[key]);
-        }
-        continue;
-      }
-      arr.push(key);
-    }
-    item.peculiar = arr;
-  }
-  // 加连击
-  if (jiaLianJiPeculiar[id]) {
-    const effect = {
-      name: '加连击',
-      condition: '在武功面板上',
-      // effect: [`连击率增加(100-当前连击率)×${jiaLianJiPeculiar[id]}%`],
-      effect: [`连击率+${jiaLianJiPeculiar[id]}%`],
-    };
-    if (Array.isArray(item.peculiar)) {
-      item.peculiar.unshift(effect);
-    } else {
-      item.peculiar = [effect];
-    }
-  }
-  // 加暴击
-  if (jiaBaoJiPeculiar[id]) {
-    const effect = {
-      name: '加暴击',
-      condition: '在武功面板上',
-      // effect: [`暴击率增加(100-当前暴击率)×${jiaLianJiPeculiar[id]}%`],
-      effect: [`暴击率+${jiaBaoJiPeculiar[id]}%`],
-    };
-    if (Array.isArray(item.peculiar)) {
-      item.peculiar.unshift(effect);
-    } else {
-      item.peculiar = [effect];
-    }
-  }
-  if (moveNum > 1) {
-    // 外功招式特效
-    // 所有特效
-    const arr = [];
-    // 基础特效
-    const arrBase = [];
-    const typeKey = `${type}Base`;
-    if (outMap[typeKey]) {
-      const moveItem = outMap[typeKey](level);
-      arrBase.push(moveItem.effect);
-    }
-    if (move && Array.isArray(move[0])) {
-      const base = move.shift();
-      for (let key of base) {
-        const moveItem = outMap[key](level);
-        arrBase.push(moveItem.effect);
-      }
-    }
-    let moveList = [];
-    // 有配招式就使用配置的
-    if (move && move.length > 0) {
-      moveList = move;
-    } else if (sectMap[sect]) {
-      // 没有配置招式使用门派默认的
-      const {move: sectMove} = sectMap[sect];
-      const total = sectMove.length;
-      for (let i = 0; i < moveNum - 1; i++) {
-        moveList.push(sectMove[i]);
-      }
-      // 只有8招, 第7招使用第8个效果
-      if (moveNum === 8) {
-        moveList[6] = sectMove[7];
-      }
-      // 最后一招怒气大招默认门派最后一招
-      moveList.push(sectMove[total - 1]);
-    }
-    for (let key of moveList) {
-      const item = [...arrBase];
-      if (typeof outMap[key] === 'function') {
-        const moveItem = outMap[key](level);
-        item.push(moveItem.effect);
-      }
-      arr.push([item.join('；')]);
-    }
-
-    // 外功奥义特效
-    if (Array.isArray(ultimate)) {
-      for (let [index, key] of ultimate.entries()) {
-        if (!Array.isArray(arr[index])) {
-          arr[index] = [];
-        }
-        if (typeof outMap[key] === 'function') {
-          const ultimateItem = outMap[key](level);
-          const {name, effect} = ultimateItem;
-          arr[index].push(`${name}(奥义)：${effect}`);
-        }
-      }
-    }
-    item.move = arr;
-  }
+  const item = formatKungfu(info);
   sessionStorage.set(cacheKey, item);
   return item;
 }
 </script>
-<style lang="less"></style>

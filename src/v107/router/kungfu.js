@@ -44,6 +44,15 @@ export default {
     title: '武功',
   },
   children: [
+    {
+      path: 'search',
+      component: () => import('@/v107/views/kungfu/search.vue'),
+      name: 'kungfuSearch107',
+      meta: {
+        title: '武功查询',
+        type: 'search',
+      },
+    },
     ...children,
     {
       path: 'inherit',

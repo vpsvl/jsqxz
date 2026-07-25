@@ -1,24 +1,31 @@
 <template>
-  <div class="v-tabs">
-    <div class="tabs">
-      <label class="tab" v-for="item of kungfu" :key="item.id">
-        <input type="radio" name="cheat" :value="item.id" v-model="active"/>
-        <span
-          :class="{
-            [`level-${item.level}`]: item.level,
-            [`internal-${item.internal}`]: item.internal === 1 || item.internal === 2,
+  <v-tabs :list="kungfu" key-name="id" v-model="active">
+    <template #tab="{tab}">
+      <span
+        :class="{
+            [`level-${tab.level}`]: tab.level,
+            [`internal-${tab.internal}`]: tab.internal === 1 || tab.internal === 2,
           }"
-        >
-          {{ item.name }}
+      >
+          {{ tab.name }}
         </span>
-      </label>
-    </div>
+    </template>
+    <template #title="{info}">
+      <span
+        :class="[
+          `level-${info.level}`,
+          {[`internal-${info.internal}`]: info.internal === 1 || info.internal === 2},
+        ]"
+      >
+        {{ info.name }}
+      </span>
+    </template>
     <kungfu-item :item="info"></kungfu-item>
-  </div>
+  </v-tabs>
 </template>
 
 <script setup>
-import {computed, ref, watchEffect} from 'vue';
+import {computed, ref, watch} from 'vue';
 import {useRoute} from 'vue-router';
 import kungfuAll from '@/v107/data/kungfu/list';
 import KungfuItem from './item';
@@ -26,7 +33,7 @@ import KungfuItem from './item';
 const route = useRoute();
 const kungfu = ref([]);
 const active = ref(-1);
-watchEffect(() => {
+watch(() => route.name, () => {
   kungfu.value = [];
   const {type} = route.meta;
   kungfu.value = Object.values(kungfuAll).filter(item => item.type === type);
@@ -42,7 +49,7 @@ watchEffect(() => {
     return b.level - a.level;
   });
   active.value = kungfu.value[0]?.id ?? -1;
-});
+}, {immediate: true});
 
 const info = computed(() => {
   if (kungfuAll[active.value]) {

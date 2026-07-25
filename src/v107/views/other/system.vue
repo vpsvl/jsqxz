@@ -1,5 +1,5 @@
 <template>
-  <v-tabs :list="data.list" :exclusive="data.exclusive">
+  <v-tabs :list="data.list">
     <template #tab="{tab}">
       <span class="level-4">
         {{ tab.name }}

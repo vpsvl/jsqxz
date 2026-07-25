@@ -1,7 +1,6 @@
 import talentAll from '@/v107/data/person/talent';
 import talentStr from './talent';
 import stateStr from './state';
-// import kungfuAll from '@/data/kungfu/effect/move';
 
 /**
  * 根据lua天赋列表字符串修改天赋列表
