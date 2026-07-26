@@ -342,7 +342,7 @@ export default [
   {
     id: 'duanSiPing',
     name: '段思平',
-    talent: [9893, 9913],
+    talent: [499, 9893, 9913],
     type: 'tian',
   },
   // 射雕英雄传,

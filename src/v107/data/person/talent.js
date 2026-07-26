@@ -1,4 +1,12 @@
 export default {
+  0: {
+    id: 0,
+    name: '苍龙再现',
+    effect: ['获得六本天书之后挑战苍龙七宿可以获得苍龙之力中的一种'],
+    fortune: [],
+    level: 4,
+    score: 0,
+  },
   1: {
     id: 1,
     name: '雪山飞狐',
@@ -351,7 +359,10 @@ export default {
     id: 38,
     name: '石破天惊',
     effect: ['觉醒后太玄消耗减半', '学有罗汉伏魔功，攻击时必出【罗汉伏魔】特效且效果增强10%'],
-    fortune: ['侠客行长乐帮给贝海石玄冰碧火酒后内力变为天罡内力', '侠客行正线挑战岛主剧情，第二格和天赋内功洗为太玄神功'],
+    fortune: [
+      '侠客行长乐帮给贝海石玄冰碧火酒后内力变为天罡内力',
+      '侠客行正线挑战岛主剧情，第二格和天赋内功洗为太玄神功',
+    ],
     level: 2,
     score: 10,
   },
@@ -522,7 +533,7 @@ export default {
   55: {
     id: 55,
     name: '大器晚成',
-    effect: ['左右互搏发动概率固定为80%', '作为队友时，最后10级的升级属性提高'],
+    effect: ['左右互搏发动概率固定为80%'],
     fortune: [
       '射雕桃花岛招亲事件，第一格洗为降龙十八掌，第二格洗为空明拳，第三格洗为九阴神功，并学会左右互搏',
       '射雕正线桃花岛收郭靖时，可以重新选择内力属性',
@@ -573,7 +584,7 @@ export default {
       '华山绝顶西毒北丐支线，可选择洗第五格武功',
     ],
     level: 4,
-    score: 35,
+    score: 50,
   },
   59: {
     id: 59,
@@ -710,10 +721,10 @@ export default {
   73: {
     id: 73,
     name: '日月圣姑',
-    effect: ['每时序恢复自身5点中毒'],
+    effect: ['每时序恢复自身5点中毒', '使用持瑶琴攻击时发动“魔音搜魂”，对敌方全体造成100点伤害'],
     fortune: [],
-    level: 2,
-    score: 15,
+    level: 3,
+    score: 30,
   },
   74: {
     id: 74,
@@ -802,7 +813,7 @@ export default {
   },
   84: {
     id: 84,
-    name: '小王爷',
+    name: '蒙古小王爷',
     effect: ['武功练到极，减少受到的5%气攻（上限25%）'],
     fortune: [],
     level: 2,
@@ -1079,10 +1090,10 @@ export default {
   117: {
     id: 117,
     name: '唯我独尊',
-    effect: ['八荒六合功特效必触发'],
+    effect: ['内功的【六道轮回】CD减1回合'],
     fortune: [],
     level: 2,
-    score: 0,
+    score: 20,
   },
   118: {
     id: 118,
@@ -3293,7 +3304,7 @@ export default {
   390: {
     id: 390,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3301,7 +3312,7 @@ export default {
   391: {
     id: 391,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3309,7 +3320,7 @@ export default {
   392: {
     id: 392,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3317,7 +3328,7 @@ export default {
   393: {
     id: 393,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3325,7 +3336,7 @@ export default {
   394: {
     id: 394,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3333,7 +3344,7 @@ export default {
   395: {
     id: 395,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3341,7 +3352,7 @@ export default {
   396: {
     id: 396,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3349,7 +3360,7 @@ export default {
   397: {
     id: 397,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3357,7 +3368,7 @@ export default {
   398: {
     id: 398,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -3365,7 +3376,7 @@ export default {
   399: {
     id: 399,
     name: '神龙弟子',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 1,
     score: 0,
@@ -4172,7 +4183,7 @@ export default {
   499: {
     id: 499,
     name: '剑绝天南',
-    effect: ['使用六脉神剑必触发【剑气碧烟横】', '内力上限9999'],
+    effect: ['使用六脉神剑30%概率触发【剑气碧烟横】', '内力上限9999'],
     fortune: [],
     level: 2,
     score: 10,
@@ -4275,12 +4286,12 @@ export default {
     ],
     fortune: [],
     level: 4,
-    score: 40,
+    score: 35,
   },
   512: {
     id: 512,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 4,
     score: 0,
@@ -4401,7 +4412,7 @@ export default {
   526: {
     id: 526,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4409,7 +4420,7 @@ export default {
   527: {
     id: 527,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4417,7 +4428,7 @@ export default {
   528: {
     id: 528,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4425,7 +4436,7 @@ export default {
   529: {
     id: 529,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4433,7 +4444,7 @@ export default {
   530: {
     id: 530,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4441,7 +4452,7 @@ export default {
   531: {
     id: 531,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4505,7 +4516,7 @@ export default {
   539: {
     id: 539,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 2,
     score: 0,
@@ -4569,7 +4580,7 @@ export default {
   547: {
     id: 547,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4577,7 +4588,7 @@ export default {
   548: {
     id: 548,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4585,7 +4596,7 @@ export default {
   549: {
     id: 549,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4593,7 +4604,7 @@ export default {
   550: {
     id: 550,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4601,7 +4612,7 @@ export default {
   551: {
     id: 551,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4609,7 +4620,7 @@ export default {
   552: {
     id: 552,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4617,7 +4628,7 @@ export default {
   553: {
     id: 553,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4625,7 +4636,7 @@ export default {
   554: {
     id: 554,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4633,7 +4644,7 @@ export default {
   555: {
     id: 555,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4641,7 +4652,7 @@ export default {
   556: {
     id: 556,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4649,7 +4660,7 @@ export default {
   557: {
     id: 557,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4657,7 +4668,7 @@ export default {
   558: {
     id: 558,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4665,7 +4676,7 @@ export default {
   559: {
     id: 559,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4673,7 +4684,7 @@ export default {
   560: {
     id: 560,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4681,7 +4692,7 @@ export default {
   561: {
     id: 561,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4689,7 +4700,7 @@ export default {
   562: {
     id: 562,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4697,7 +4708,7 @@ export default {
   563: {
     id: 563,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4705,7 +4716,7 @@ export default {
   564: {
     id: 564,
     name: '标主占用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 0,
     score: 0,
@@ -4949,7 +4960,7 @@ export default {
       '射雕邪线云岭山洞收梅超风，第三格和天赋外功洗为九阴白骨爪',
     ],
     level: 2,
-    score: 20,
+    score: 25,
   },
   589: {
     id: 589,
@@ -5305,13 +5316,13 @@ export default {
       '└浴火重生：概率复活一次',
     ],
     fortune: ['鹿鼎记鳌拜府密室获得神行百变，第三格和天赋轻功洗为神行百变'],
-    level: 4,
-    score: 0,
+    level: 2,
+    score: 20,
   },
   630: {
     id: 630,
     name: '灵獒王',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 2,
     score: 0,
@@ -5418,7 +5429,7 @@ export default {
     ],
     fortune: [],
     level: 2,
-    score: 20,
+    score: 10,
   },
   640: {
     id: 640,
@@ -5447,7 +5458,7 @@ export default {
     effect: ['已方除自己外还有人员存活，则不受伤害'],
     fortune: [],
     level: 4,
-    score: 0,
+    score: 70,
   },
   643: {
     id: 643,
@@ -5507,7 +5518,7 @@ export default {
   },
   650: {
     id: 650,
-    name: '小王爷',
+    name: '金国小王爷',
     effect: ['武功练到极，减少受到的5%杀气（上限25%）'],
     fortune: [],
     level: 2,
@@ -5519,7 +5530,7 @@ export default {
     effect: ['攻击与防御时敌方任何攻击系数都视为0', '攻南时无视目标50%防御', '（未实装）'],
     fortune: [],
     level: 4,
-    score: 0,
+    score: 60,
   },
   652: {
     id: 652,
@@ -5607,7 +5618,7 @@ export default {
   662: {
     id: 662,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5615,7 +5626,7 @@ export default {
   663: {
     id: 663,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5623,7 +5634,7 @@ export default {
   664: {
     id: 664,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5631,7 +5642,7 @@ export default {
   665: {
     id: 665,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5639,7 +5650,7 @@ export default {
   666: {
     id: 666,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5647,7 +5658,7 @@ export default {
   667: {
     id: 667,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5655,7 +5666,7 @@ export default {
   668: {
     id: 668,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5663,7 +5674,7 @@ export default {
   669: {
     id: 669,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5671,7 +5682,7 @@ export default {
   670: {
     id: 670,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5679,7 +5690,7 @@ export default {
   671: {
     id: 671,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5687,7 +5698,7 @@ export default {
   672: {
     id: 672,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5695,7 +5706,7 @@ export default {
   673: {
     id: 673,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5703,7 +5714,7 @@ export default {
   674: {
     id: 674,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5711,7 +5722,7 @@ export default {
   675: {
     id: 675,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5719,7 +5730,7 @@ export default {
   676: {
     id: 676,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5727,7 +5738,7 @@ export default {
   677: {
     id: 677,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5743,7 +5754,7 @@ export default {
   679: {
     id: 679,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5751,7 +5762,7 @@ export default {
   680: {
     id: 680,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5759,7 +5770,7 @@ export default {
   681: {
     id: 681,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5767,7 +5778,7 @@ export default {
   682: {
     id: 682,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5775,7 +5786,7 @@ export default {
   683: {
     id: 683,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5783,7 +5794,7 @@ export default {
   684: {
     id: 684,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5791,7 +5802,7 @@ export default {
   685: {
     id: 685,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5799,7 +5810,7 @@ export default {
   686: {
     id: 686,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5807,7 +5818,7 @@ export default {
   687: {
     id: 687,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5815,7 +5826,7 @@ export default {
   688: {
     id: 688,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5823,7 +5834,7 @@ export default {
   689: {
     id: 689,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5831,7 +5842,7 @@ export default {
   690: {
     id: 690,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5839,7 +5850,7 @@ export default {
   691: {
     id: 691,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5847,7 +5858,7 @@ export default {
   692: {
     id: 692,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5855,7 +5866,7 @@ export default {
   693: {
     id: 693,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5863,7 +5874,7 @@ export default {
   694: {
     id: 694,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5871,7 +5882,7 @@ export default {
   695: {
     id: 695,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5879,7 +5890,7 @@ export default {
   696: {
     id: 696,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5887,7 +5898,7 @@ export default {
   697: {
     id: 697,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5895,7 +5906,7 @@ export default {
   698: {
     id: 698,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5903,7 +5914,7 @@ export default {
   699: {
     id: 699,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5911,7 +5922,7 @@ export default {
   700: {
     id: 700,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5919,7 +5930,7 @@ export default {
   701: {
     id: 701,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5927,7 +5938,7 @@ export default {
   702: {
     id: 702,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5935,7 +5946,7 @@ export default {
   703: {
     id: 703,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5943,7 +5954,7 @@ export default {
   704: {
     id: 704,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5951,7 +5962,7 @@ export default {
   705: {
     id: 705,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5959,7 +5970,7 @@ export default {
   706: {
     id: 706,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5967,7 +5978,7 @@ export default {
   707: {
     id: 707,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5975,7 +5986,7 @@ export default {
   708: {
     id: 708,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5983,7 +5994,7 @@ export default {
   709: {
     id: 709,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5991,7 +6002,7 @@ export default {
   710: {
     id: 710,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -5999,7 +6010,7 @@ export default {
   711: {
     id: 711,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6007,7 +6018,7 @@ export default {
   712: {
     id: 712,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6015,7 +6026,7 @@ export default {
   713: {
     id: 713,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6023,7 +6034,7 @@ export default {
   714: {
     id: 714,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6031,7 +6042,7 @@ export default {
   715: {
     id: 715,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6039,7 +6050,7 @@ export default {
   716: {
     id: 716,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6047,7 +6058,7 @@ export default {
   717: {
     id: 717,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6055,7 +6066,7 @@ export default {
   718: {
     id: 718,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6063,7 +6074,7 @@ export default {
   719: {
     id: 719,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6071,7 +6082,7 @@ export default {
   720: {
     id: 720,
     name: '备用',
-    effect: [''],
+    effect: [],
     fortune: [],
     level: 3,
     score: 0,
@@ -6094,7 +6105,7 @@ export default {
     effect: ['八卦门武功连击率+20%，暴击率+20%', '八卦掌造成敌方“散功”状态20时序'],
     fortune: [],
     level: 2,
-    score: 10,
+    score: 20,
   },
   723: {
     id: 723,
@@ -6175,6 +6186,30 @@ export default {
     fortune: [],
     level: 2,
     score: 10,
+  },
+  733: {
+    id: 733,
+    name: '神机营',
+    effect: ['集气速度-30%，攻击提升30%'],
+    fortune: [],
+    level: 1,
+    score: 5,
+  },
+  734: {
+    id: 734,
+    name: '神机营',
+    effect: ['集气速度-30%，攻击提升30%'],
+    fortune: [],
+    level: 1,
+    score: 5,
+  },
+  735: {
+    id: 735,
+    name: '神机营',
+    effect: ['集气速度-30%，攻击提升30%'],
+    fortune: [],
+    level: 1,
+    score: 5,
   },
   736: {
     id: 736,
@@ -6326,15 +6361,15 @@ export default {
     effect: ['被攻击35%概率免受攻击伤害'],
     fortune: [],
     level: 4,
-    score: 40,
+    score: 45,
   },
   755: {
     id: 755,
     name: '凌空一羽',
     effect: ['被攻击35%概率免受攻击伤害'],
     fortune: [],
-    level: 4,
-    score: 40,
+    level: 2,
+    score: 20,
   },
   756: {
     id: 756,
@@ -6348,6 +6383,64 @@ export default {
     id: 757,
     name: '备用',
     effect: ['免疫以自已为中心的九宫格内的敌人攻击'],
+    fortune: [],
+    level: 4,
+    score: 0,
+  },
+  9714: {
+    id: 9714,
+    name: '箕水扬波',
+    effect: [
+      '20%概率只受误伤的伤害，对友方造成伤害时伤害变为治疗，如果自己在攻击范围内，回复5%生命',
+    ],
+    fortune: [],
+    level: 4,
+    score: 0,
+  },
+  9715: {
+    id: 9715,
+    name: '尾火缠影',
+    effect: ['攻击必带迟缓效果，对迟缓目标伤害+15%，伤害30%溅射到2格内敌人'],
+    fortune: [],
+    level: 4,
+    score: 0,
+  },
+  9716: {
+    id: 9716,
+    name: '心月撼魂',
+    effect: ['友方攻防轻+12%、武功威力+15%'],
+    fortune: [],
+    level: 4,
+    score: 0,
+  },
+  9717: {
+    id: 9717,
+    name: '房日奔霆',
+    effect: ['集气+15%、闪避+10%；每移动1格防御力+2%（上限30%）'],
+    fortune: [],
+    level: 4,
+    score: 0,
+  },
+  9718: {
+    id: 9718,
+    name: '氐土固元',
+    effect: ['每3时序回血 1% 最大生命值，友方减伤+10%'],
+    fortune: [],
+    level: 4,
+    score: 0,
+  },
+  9719: {
+    id: 9719,
+    name: '亢龙破岳',
+    effect: ['目前生命越高暴击率越高、暴击伤害越高；击杀目标后五回合伤害+20%'],
+    fortune: [],
+    level: 4,
+    score: 0,
+  },
+  9720: {
+    id: 9720,
+    name: '苍角御天',
+    effect: ['受到攻击时30%概率吸收20%最大生命值和20%伤害生成护盾，护盾期间集气+15%、破防+20%'],
     fortune: [],
     level: 4,
     score: 0,
@@ -6569,7 +6662,7 @@ export default {
     effect: ['30%概率触发“曲夕烟隙”混乱目标一回合（不分敌我）'],
     fortune: [],
     level: 4,
-    score: 40,
+    score: 35,
   },
   9745: {
     id: 9745,
@@ -6635,8 +6728,8 @@ export default {
     name: '江南七怪',
     effect: ['江南七怪每在场一人，我方攻击+50，防御+50，轻功+50，且彼此分摊伤害'],
     fortune: [],
-    level: 3,
-    score: 0,
+    level: 2,
+    score: 10,
   },
   9752: {
     id: 9752,
@@ -6657,10 +6750,7 @@ export default {
   9754: {
     id: 9754,
     name: '独臂孤刃',
-    effect: [
-      '独臂之人可装备，无法修炼和触发左右互搏',
-      '剑法伤害+20%，黯然销魂掌威力+1000',
-    ],
+    effect: ['独臂之人可装备，无法修炼和触发左右互搏', '剑法伤害+20%，黯然销魂掌威力+1000'],
     fortune: [],
     level: 2,
     score: 0,
@@ -6716,7 +6806,7 @@ export default {
     effect: ['内力上限9999', '特效概率二次判定'],
     fortune: [],
     level: 2,
-    score: 20,
+    score: 25,
   },
   9761: {
     id: 9761,
@@ -6803,7 +6893,7 @@ export default {
   },
   9769: {
     id: 9769,
-    name: '运转乾坤',
+    name: '乾坤自移',
     effect: ['乾坤大挪移反弹效果强化至反弹40%伤害（无需运功）'],
     fortune: [],
     level: 2,
@@ -6835,7 +6925,7 @@ export default {
     effect: ['胡家刀法到极增加10点耍刀技巧，胡家刀法极意概率增加40%'],
     fortune: [],
     level: 2,
-    score: 10,
+    score: 15,
   },
   9773: {
     id: 9773,
@@ -6871,7 +6961,7 @@ export default {
     effect: ['内力9999，无视内属修炼武功，可副运易水寒诀'],
     fortune: [],
     level: 4,
-    score: 40,
+    score: 0,
   },
   9777: {
     id: 9777,
@@ -6985,15 +7075,15 @@ export default {
     effect: ['攻击强制上毒20点，根据目标中毒值恢复生命'],
     fortune: [],
     level: 2,
-    score: 15,
+    score: 10,
   },
   9791: {
     id: 9791,
-    name: '备用',
+    name: '逆流勇进',
     effect: ['备用'],
     fortune: [],
-    level: 2,
-    score: 0,
+    level: 4,
+    score: 50,
   },
   9792: {
     id: 9792,
@@ -7097,7 +7187,7 @@ export default {
     effect: ['特效触发概率+8点', '被攻击集气不会少于300'],
     fortune: [],
     level: 2,
-    score: 20,
+    score: 25,
   },
   9805: {
     id: 9805,
@@ -7181,7 +7271,7 @@ export default {
   },
   9815: {
     id: 9815,
-    name: '折梅手',
+    name: '禅心折梅',
     effect: ['面板上每多一个武功到极，天山折梅手威力+50'],
     fortune: [],
     level: 2,
@@ -7595,12 +7685,11 @@ export default {
     id: 9865,
     name: '侠之大者',
     effect: [
-      '使用降龙十八掌，增加40%概率发动【降龙·极意】',
-      '使用降龙十八掌发动连击时附加随机多重后劲，额外增加伤害和杀气（NPC固定10重）',
+      '使用降龙十八掌攻击时附加10~13重后劲，每道后劲增加10%伤害和150气攻，后劲超过11道时，无视敌方绝对气防',
     ],
     fortune: [],
-    level: 3,
-    score: 30,
+    level: 4,
+    score: 50,
   },
   9866: {
     id: 9866,
@@ -7725,10 +7814,7 @@ export default {
   9881: {
     id: 9881,
     name: '六脉真传',
-    effect: [
-      '使用六脉神剑时概率出绝招概率+20%',
-      '六脉神剑耗内降低50%（与天赋外功效果叠加，降低75%内力消耗）',
-    ],
+    effect: ['六脉神剑耗内降低50%（与天赋外功效果叠加，降低75%内力消耗）'],
     fortune: [],
     level: 2,
     score: 20,
@@ -7881,7 +7967,7 @@ export default {
     effect: ['在场时，敌方非必触发特效触发概率下降5点，我方特效概率提升5点'],
     fortune: [],
     level: 2,
-    score: 20,
+    score: 25,
   },
   9900: {
     id: 9900,
@@ -8038,8 +8124,8 @@ export default {
     name: '以气运剪',
     effect: ['使用大剪刀对目标追加部分气攻值的伤害'],
     fortune: [],
-    level: 2,
-    score: 10,
+    level: 1,
+    score: 5,
   },
   9919: {
     id: 9919,
@@ -8111,7 +8197,7 @@ export default {
     effect: ['人物升级时按100点资质获得属性', '太玄经主运时攻击防御敌我护甲都按30%计算'],
     fortune: [],
     level: 2,
-    score: 10,
+    score: 0,
   },
   9928: {
     id: 9928,
@@ -8122,8 +8208,8 @@ export default {
       '主运易筋经提升武功威力，效果为250+天书数量X50',
     ],
     fortune: [],
-    level: 4,
-    score: 40,
+    level: 3,
+    score: 30,
   },
   9929: {
     id: 9929,
@@ -8151,7 +8237,7 @@ export default {
     effect: ['行劝前概率触发十龙十象，并使下一次的攻击附加昏迷效果'],
     fortune: [],
     level: 3,
-    score: 30,
+    score: 20,
   },
   9932: {
     id: 9932,
@@ -8262,7 +8348,7 @@ export default {
     effect: [
       '攻击附带轻功值2倍的杀气值',
       '被攻击附带轻功值2倍的气防值',
-      '使用夫妻刀法攻击附加（轻功值/2）的固定伤害',
+      '使用夫妻刀法攻击附加(轻功值/2)的固定伤害（上限500）',
     ],
     fortune: [],
     level: 2,
@@ -8421,7 +8507,7 @@ export default {
     ],
     fortune: [],
     level: 2,
-    score: 15,
+    score: 20,
   },
   9962: {
     id: 9962,
@@ -8480,8 +8566,8 @@ export default {
     name: '绵里针',
     effect: ['被攻击时20%固定概率通过四两拨千斤化解，并用暗器反击敌人'],
     fortune: [],
-    level: 2,
-    score: 20,
+    level: 3,
+    score: 25,
   },
   9968: {
     id: 9968,
@@ -8636,7 +8722,10 @@ export default {
   9983: {
     id: 9983,
     name: '悲天佛怜',
-    effect: ['般若掌攻击范围变为点，威力翻倍（与秘技金刚般若不叠加）', '生命值低于50%时拥有绝对气防'],
+    effect: [
+      '般若掌攻击范围变为点，威力翻倍（与秘技金刚般若不叠加）',
+      '生命值低于50%时拥有绝对气防',
+    ],
     fortune: [],
     level: 2,
     score: 20,
@@ -8691,7 +8780,7 @@ export default {
   },
   9990: {
     id: 9990,
-    name: '运转乾坤',
+    name: '逆转乾坤',
     effect: [
       '乾坤大挪移反弹效果强化至反弹40%伤害',
       '乾坤大挪移可同时反弹给两个人',

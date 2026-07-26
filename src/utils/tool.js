@@ -9,7 +9,7 @@ import stateStr from './state';
 export function formatTalent() {
   let str = talentStr.replace(/--.*/g, '');
   // 表1天赋名称，表2天赋说明，表3 1非专属 2为专属，表4为1是非门天赋为2是门派天赋，表5为天赋等级(1蓝2紫3金4红)
-  str = str.replace(/\{([^,]+),[^,]*,[^,]*,[^,]*,([^,]+),([^,]+)}/g, '$1,$2,$3,');
+  str = str.replace(/\{([^,]+),([^,]+),[^,]*,[^,]*,([^,]+),([^,]+)}/g, '$1,$2,$3,$4');
   str = str.replace(/CC\.PTFSM\[(\d+?)] ?=/gi, '$1,');
 
   const list = str.split('\n');
@@ -22,18 +22,30 @@ export function formatTalent() {
     if (info.length < 4) {
       continue;
     }
-    let [id, name, level, score] = info;
+    let [id, name, effect, level, score] = info;
     rst[id] = {
       name: name.replace(/["' ]/g, ''),
       level: Number(level),
       score: Number(score),
+      effect: effect.replace(/["' ]/g, ''),
     };
   }
-  for (let id in talentAll) {
+  for (let id in rst) {
     const item = talentAll[id];
-    item.name = rst[id].name;
-    item.level = rst[id].level;
-    item.score = rst[id].score;
+    if (item) {
+      item.name = rst[id].name;
+      item.level = rst[id].level;
+      item.score = rst[id].score;
+      continue;
+    }
+    talentAll[id] = {
+      id: Number(id),
+      name: rst[id].name,
+      effect: [rst[id].effect],
+      fortune: [],
+      level: rst[id].level,
+      score: rst[id].score,
+    };
   }
   console.log(talentAll);
 }
