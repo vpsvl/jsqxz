@@ -473,7 +473,7 @@ export default {
     sect: 2,
     level: 2,
     internal: 9,
-    peculiar: ['yiRouKeGang'],
+    peculiar: ['yinYangShuangJi'],
     moveNum: 3,
     type: 3,
   },
@@ -569,7 +569,11 @@ export default {
   44: {
     id: 44,
     name: '苗家剑法',
-    get: ['飞狐程灵素线沧州胡一刀坟对话苗人凤送', '飞狐程灵素线天书战打败苗人凤'],
+    get: [
+      '飞狐程灵素线沧州胡一刀坟对话苗人凤送',
+      '飞狐程灵素线天书战打败苗人凤',
+      '飞狐袁紫衣线北京掌门人大会后回苗家庄收苗若兰入队',
+    ],
     sect: 0,
     level: 3,
     internal: 2,
@@ -628,7 +632,7 @@ export default {
     sect: 2,
     level: 4,
     internal: 2,
-    peculiar: ['kaiTaiJi', 'taiJiAoYi', 'yiRouKeGang'],
+    peculiar: ['kaiTaiJi', 'taiJiAoYi', 'yinYangShuangJi'],
     moveNum: 7,
     type: 3,
   },
@@ -2970,7 +2974,7 @@ export default {
   223: {
     id: 223,
     name: '金雁功',
-    get: ['介绍信交给丘处机赠与', '神雕邪带李莫愁到古墓密室'],
+    get: ['打开主角房间中的宝箱之前对丘处机使用介绍信获得', '神雕邪带李莫愁到古墓密室'],
     sect: 7,
     level: 4,
     internal: 2,
@@ -4154,7 +4158,7 @@ export default {
   328: {
     id: 328,
     name: '摧心掌',
-    get: ['对余沧海使用介绍信获得'],
+    get: ['打开主角房间中的宝箱之前对余沧海使用介绍信获得'],
     sect: 11,
     level: 3,
     internal: 9,
@@ -4387,7 +4391,7 @@ export default {
   347: {
     id: 347,
     name: '韦陀掌',
-    get: [],
+    get: ['飞狐袁紫衣线战胜韦陀门的刘鹤真'],
     sect: 1,
     level: 2,
     internal: 9,
