@@ -26,11 +26,6 @@
             >
               {{ item }}
             </div>
-            <div class="td-effect-item effect-icon-star">主运本门轻功，使用本门外功时命中+200</div>
-            <div class="td-effect-item effect-icon-star">修炼本门派武功大于5个，增加伤害10%</div>
-            <div class="td-effect-item effect-icon-star">
-              修炼本门派武功大于8个，增加伤害20%，减少受到的伤害20%
-            </div>
           </div>
           <div class="td-block color-success" v-if="active !== 0">
             *成为掌门人有更高的门派武功连爆和威力加成，获得掌门印记，战场上敌方的本门弟子自动反水
@@ -70,7 +65,7 @@
               *江湖武功不能学习绝学，除秘籍本身能一脉相承的，都不能一脉相承
             </span>
             <span v-else>
-              *NPC处初阶中阶高阶可以一脉相承，绝学除轻功外都不能一脉相承，初阶轻功也可以使用本门的绝学轻功秘籍一脉相承
+              *NPC处初阶中阶高阶可以一脉相承，绝学除秘籍本身能一脉相承的，都不能一脉相承
             </span>
           </div>
           <div class="td-block" v-for="(item, index) of info.kungfu" :key="index">
@@ -104,7 +99,7 @@ const info = computed(() => {
   if (cacheInfo) {
     return cacheInfo;
   }
-  const current = sectAll[active.value];
+  const current = JSON.parse(JSON.stringify(sectAll[active.value]));
   const sectKungfu = {};
   for (let id in kungfuAll) {
     const item = kungfuAll[id];
@@ -136,6 +131,11 @@ const info = computed(() => {
       current.kungfu.push(item);
     }
   }
+  current.effect.push(...[
+    '主运本门轻功，使用本门外功时命中+200',
+    '本门武功威力增加50，每200门派贡献额外增加50；主运本门内功，本门武功威力增加：初阶内功50，中阶内功100，高阶内功150，绝学内功200，主运非本门内功威力加成减半',
+    '修炼本门派武功，增加伤害5%；修炼本门派武功大于3个，增加伤害10%；修炼本门派武功大于7个，增加伤害20%，减少受到的伤害20%（取最大值）',
+  ]);
   sessionStorage.set(cacheKey, current);
   return current;
 });
