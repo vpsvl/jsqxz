@@ -457,7 +457,7 @@ export default {
   35: {
     id: 35,
     name: '雪山剑法',
-    get: ['凌霄城宝箱'],
+    get: ['凌霄城右下房间宝箱'],
     sect: 18,
     level: 1,
     internal: 9,
