@@ -1340,6 +1340,7 @@ export default {
       'xuRuo',
       'dianRan',
     ],
+    peculiar: ['yinYangShuangJi'],
     moveNum: 1,
     type: 6,
   },
