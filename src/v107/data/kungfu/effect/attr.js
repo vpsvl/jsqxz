@@ -5,6 +5,8 @@ import sectAll from '@/v107/data/kungfu/sect';
 import stuntMap, {jiaBaoJiPeculiar, jiaLianJiPeculiar} from '@/v107/data/kungfu/stunt';
 import * as internalMap from '@/v107/data/kungfu/effect/internal';
 import * as outMap from '@/v107/data/kungfu/effect/out';
+import stuntData from '@/v107/data/kungfu/stunt';
+import goodsAll from '@/v107/data/map/goods';
 
 // 属性加成类型
 const attrTypeMap = {
@@ -359,19 +361,66 @@ export function formatKungfu(info = {}) {
     item.initiative = arr;
   }
   // 秘技
-  if (Array.isArray(peculiar)) {
-    const arr = [];
-    for (let key of peculiar) {
-      if (typeof key === 'string') {
-        if (stuntMap[key]) {
-          arr.push(stuntMap[key]);
+  let peculiarArr = [];
+  for (let key in stuntData) {
+    let {name, condition, effect, kungfu, type} = stuntData[key];
+    if (!kungfu) {
+      continue;
+    }
+    if (!kungfu[id]) {
+      let flag = false;
+      for (let k in kungfu) {
+        if (Array.isArray(kungfu[k])) {
+          if (kungfu[k].includes(id)) {
+            flag = true;
+            break;
+          }
         }
+      }
+      if (!flag) {
         continue;
       }
-      arr.push(key);
     }
-    item.peculiar = arr;
+    const arr = [];
+    let other = '';
+    for (let k in kungfu) {
+      if (k === 'other') {
+        other = kungfu[k];
+        continue;
+      }
+      if (Array.isArray(kungfu[k])) {
+        let item = kungfuAll[k].name;
+        for (let j of kungfu[k]) {
+          item += `/${kungfuAll[j].name}`;
+        }
+        arr.push(item);
+      } else {
+        arr.push(kungfuAll[k].name);
+      }
+    }
+    condition = (arr.length > 1 ? '' : '修炼') + arr.join('+');
+    if (type === 2) {
+      other += '（需都在武功面板）';
+    }
+    if (other) {
+      condition += (arr.length > 0 ? '，' : '') + other;
+    }
+    peculiarArr.push({
+      id,
+      name,
+      condition,
+      effect,
+    });
   }
+  if (Array.isArray(peculiar)) {
+    for (let key of peculiar) {
+      if (typeof key === 'string') {
+        continue;
+      }
+      peculiarArr.push(key);
+    }
+  }
+  item.peculiar = peculiarArr;
   // 加连击
   if (jiaLianJiPeculiar[id]) {
     const effect = {

@@ -1,4 +1,4 @@
-const goods = {
+export default {
   0: '小还丹',
   1: '天香续命膏',
   2: '黑玉断续膏',

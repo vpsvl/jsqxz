@@ -25,6 +25,8 @@
 <script setup>
 import {ref, onBeforeMount} from 'vue';
 import stuntData from '@/v107/data/kungfu/stunt';
+import kungfuAll from '@/v107/data/kungfu/list';
+import goodsAll from '@/v107/data/map/goods';
 
 const thead = [
   {
@@ -43,15 +45,75 @@ const thead = [
 const params = ref({
   keyword: '',
 });
+const data = ref([]);
 const tbody = ref([]);
 
-function search() {
-  tbody.value = [];
+function init() {
+  data.value = [];
   for (let key in stuntData) {
-    const {name, type, condition, effect} = stuntData[key];
-    if (type !== 1) {
+    let {id, name, type, condition, effect, kungfu, cheat} = stuntData[key];
+    if (type === 0) {
       continue;
     }
+    if (!condition) {
+      const kungfuLength = Object.keys(kungfu).length;
+      const arr = [];
+      let other = '';
+      if (kungfuLength > 0) {
+        for (let id in kungfu) {
+          if (id === 'other') {
+            other = kungfu[id];
+            continue;
+          }
+          if (Array.isArray(kungfu[id])) {
+            let item = kungfuAll[id].name;
+            for (let j of kungfu[id]) {
+              item += `/${kungfuAll[j].name}`;
+            }
+            arr.push(item);
+          } else {
+            arr.push(kungfuAll[id].name);
+          }
+        }
+      } else {
+        for (let id in cheat) {
+          if (id === 'other') {
+            other = cheat[id];
+            continue;
+          }
+          if (Array.isArray(cheat[id])) {
+            let item = goodsAll[id];
+            for (let j of cheat[id]) {
+              item += `/${goodsAll[j]}`;
+            }
+            arr.push(item);
+          } else {
+            arr.push(goodsAll[id]);
+          }
+        }
+      }
+      condition = (arr.length > 1 ? '' : '修炼') + arr.join('+');
+      if (other) {
+        condition += (arr.length > 0 ? '，' : '') + other;
+      }
+      if (type === 2) {
+        condition += '（非秘技，需都在武功面板）';
+      }
+      data.value.push({
+        id,
+        name,
+        condition,
+        effect,
+        type,
+      });
+    }
+  }
+  tbody.value = [...data.value];
+}
+
+function search() {
+  tbody.value = data.value.filter(item => {
+    const {name, condition, effect} = item;
     const reg = new RegExp(params.value.keyword, 'i');
     let flag = reg.test(name) || reg.test(condition);
     if (!flag) {
@@ -65,11 +127,11 @@ function search() {
     if (flag) {
       tbody.value.push(stuntData[key]);
     }
-  }
+  });
 }
 
 onBeforeMount(() => {
-  search();
+  init();
 });
 </script>
 <style lang="less">

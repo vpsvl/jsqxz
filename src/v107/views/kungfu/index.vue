@@ -20,7 +20,7 @@
         {{ info.name }}
       </span>
     </template>
-    <kungfu-item :item="info"></kungfu-item>
+    <kungfu-item :item="info" :key="info.id"></kungfu-item>
   </v-tabs>
 </template>
 

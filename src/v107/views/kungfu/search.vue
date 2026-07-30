@@ -29,7 +29,7 @@
         {{ info.name }}
       </span>
     </template>
-    <kungfu-item v-if="info.id" :item="info"></kungfu-item>
+    <kungfu-item v-if="info.id" :item="info" :key="info.id"></kungfu-item>
   </v-tabs>
   <v-loading :loading="state.loading"></v-loading>
 </template>
