@@ -8106,7 +8106,7 @@ export default {
   9916: {
     id: 9916,
     name: '三才归元',
-    effect: ['如果格档，减伤100%（受减伤上限80%影响）并进行反击'],
+    effect: ['如果格档，减伤80%并进行反击'],
     fortune: [],
     level: 4,
     score: 50,
