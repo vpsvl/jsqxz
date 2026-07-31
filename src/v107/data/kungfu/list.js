@@ -6,7 +6,6 @@ export default {
     sect: 1,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   2: {
@@ -17,7 +16,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'qiMenMingZhong', 'quanFaMingZhong'],
-    moveNum: 1,
     type: 7,
   },
   3: {
@@ -26,11 +24,10 @@ export default {
     cheat: '五毒秘传',
     get: ['收祖千秋后获得'],
     sect: 15,
-    level: 1,
+    level: 2,
     internal: 9,
     addition: '带毒+1',
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 2,
     type: 1,
   },
   4: {
@@ -40,19 +37,17 @@ export default {
     sect: 5,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   5: {
     id: 5,
     name: '寒冰绵掌',
     get: ['倚天正龙门客栈收殷离'],
-    sect: 5,
-    level: 3,
-    internal: 1,
+    sect: 28,
+    level: 2,
+    internal: 9,
     addition: '带毒+2',
     move: [['bingFengBase']],
-    moveNum: 5,
     type: 1,
   },
   6: {
@@ -62,7 +57,6 @@ export default {
     sect: 16,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   7: {
@@ -72,7 +66,6 @@ export default {
     sect: 2,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   8: {
@@ -83,20 +76,17 @@ export default {
     level: 4,
     internal: 1,
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 1,
   },
   9: {
     id: 9,
-    name: '灵蛇拳',
-    cheat: '白驼雪山掌',
+    name: '白驼雪山掌',
     get: ['射雕邪明霞岛获得'],
     sect: 23,
     level: 2,
     internal: 9,
     addition: '带毒+1',
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 3,
     type: 1,
   },
   10: {
@@ -106,7 +96,6 @@ export default {
     sect: 6,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   11: {
@@ -117,7 +106,6 @@ export default {
     level: 4,
     internal: 1,
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 7,
     type: 2,
   },
   12: {
@@ -127,7 +115,6 @@ export default {
     sect: 22,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 1,
   },
   13: {
@@ -145,7 +132,6 @@ export default {
       },
     ],
     move: [['zhuoShaoBase']],
-    moveNum: 3,
     type: 1,
   },
   14: {
@@ -162,7 +148,6 @@ export default {
         effect: ['每多一个其他武功到极，气攻增加100'],
       },
     ],
-    moveNum: 7,
     type: 2,
   },
   15: {
@@ -172,7 +157,6 @@ export default {
     sect: 7,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 1,
   },
   16: {
@@ -182,7 +166,6 @@ export default {
     sect: 2,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 1,
   },
   17: {
@@ -205,7 +188,6 @@ export default {
       },
     ],
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 2,
   },
   18: {
@@ -226,7 +208,6 @@ export default {
         ],
       },
     ],
-    moveNum: 7,
     type: 2,
   },
   19: {
@@ -237,7 +218,6 @@ export default {
     level: 3,
     internal: 1,
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 5,
     type: 2,
   },
   20: {
@@ -254,14 +234,13 @@ export default {
         effect: ['气功增加800，必定流血'],
       },
     ],
-    moveNum: 5,
     type: 2,
   },
   21: {
     id: 21,
     name: '玄冥神掌',
     get: ['万安寺顶左边房间左边书架'],
-    sect: 15,
+    sect: 28,
     level: 4,
     internal: 1,
     peculiar: [
@@ -272,7 +251,6 @@ export default {
       },
     ],
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 7,
     type: 1,
   },
   22: {
@@ -283,7 +261,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 1,
   },
   23: {
@@ -300,7 +277,6 @@ export default {
         effect: ['无视敌方气防追加17点内伤', '内力<5000时每个目标都会反伤自己内伤+7'],
       },
     ],
-    moveNum: 7,
     type: 1,
   },
   24: {
@@ -312,7 +288,6 @@ export default {
     internal: 2,
     addition: '暗器+3',
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 1,
   },
   25: {
@@ -329,7 +304,6 @@ export default {
         effect: ['攻击变为7×7面攻，无误伤，必破气防'],
       },
     ],
-    moveNum: 7,
     type: 1,
   },
   26: {
@@ -362,7 +336,6 @@ export default {
     sect: 11,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 3,
   },
   28: {
@@ -372,7 +345,6 @@ export default {
     sect: 0,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 3,
   },
   29: {
@@ -382,7 +354,6 @@ export default {
     sect: 6,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   30: {
@@ -392,7 +363,6 @@ export default {
     sect: 13,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   31: {
@@ -402,7 +372,6 @@ export default {
     sect: 14,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   32: {
@@ -412,7 +381,6 @@ export default {
     sect: 12,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   33: {
@@ -423,7 +391,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['bingFengBase']],
-    moveNum: 3,
     type: 3,
   },
   34: {
@@ -433,7 +400,6 @@ export default {
     sect: 9,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   35: {
@@ -444,7 +410,6 @@ export default {
     level: 1,
     internal: 9,
     move: [['bingFengBase']],
-    moveNum: 2,
     type: 3,
   },
   36: {
@@ -454,7 +419,6 @@ export default {
     sect: 2,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   37: {
@@ -464,7 +428,6 @@ export default {
     sect: 21,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   38: {
@@ -474,7 +437,6 @@ export default {
     sect: 22,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 3,
   },
   39: {
@@ -485,7 +447,6 @@ export default {
     sect: 7,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   40: {
@@ -496,7 +457,6 @@ export default {
     level: 3,
     internal: 1,
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 3,
   },
   41: {
@@ -507,7 +467,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 3,
   },
   42: {
@@ -517,7 +476,6 @@ export default {
     sect: 16,
     level: 2,
     internal: 1,
-    moveNum: 3,
     type: 3,
   },
   43: {
@@ -539,7 +497,6 @@ export default {
       'yiQiSuNiSheng',
       'wuWoWuXiang2',
     ],
-    moveNum: 1,
     type: 6,
   },
   44: {
@@ -553,7 +510,6 @@ export default {
     sect: 0,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   45: {
@@ -587,7 +543,6 @@ export default {
         ],
       },
     ],
-    moveNum: 7,
     type: 3,
   },
   46: {
@@ -597,7 +552,6 @@ export default {
     sect: 2,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   47: {
@@ -619,7 +573,6 @@ export default {
     internal: 1,
     condition:
       '限男性需自宫（自宫惩罚：攻击-20，防御-30，进入战斗后初始集气从-200处开始）或黑木崖左上房间挑战葵花尊者后可无视条件修炼',
-    moveNum: 7,
     type: 3,
   },
   49: {
@@ -639,7 +592,6 @@ export default {
         effect: ['使用六脉神剑攻击，连击的攻击和气攻不减少，10%（面板有一阳指增加30%）概率触发气攻+1000'],
       },
     ],
-    moveNum: 7,
     type: 2,
   },
   50: {
@@ -649,7 +601,6 @@ export default {
     sect: 0,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 4,
   },
   51: {
@@ -659,7 +610,6 @@ export default {
     sect: 17,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 4,
   },
   52: {
@@ -669,7 +619,6 @@ export default {
     sect: 17,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 4,
   },
   53: {
@@ -679,7 +628,6 @@ export default {
     sect: 0,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 4,
   },
   54: {
@@ -689,7 +637,6 @@ export default {
     sect: 0,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 4,
   },
   55: {
@@ -699,7 +646,6 @@ export default {
     sect: 24,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 4,
   },
   56: {
@@ -709,7 +655,6 @@ export default {
     sect: 2,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 4,
   },
   57: {
@@ -719,7 +664,6 @@ export default {
     sect: 1,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 4,
   },
   58: {
@@ -730,7 +674,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['bingFengBase']],
-    moveNum: 3,
     type: 4,
   },
   59: {
@@ -740,7 +683,6 @@ export default {
     sect: 5,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 4,
   },
   60: {
@@ -750,7 +692,6 @@ export default {
     sect: 20,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 4,
   },
   61: {
@@ -761,7 +702,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['zhuoShaoBase']],
-    moveNum: 3,
     type: 4,
   },
   62: {
@@ -776,7 +716,6 @@ export default {
         effect: ['连击时伤害、气攻不会减少'],
       },
     ],
-    moveNum: 5,
     type: 4,
   },
   63: {
@@ -787,7 +726,6 @@ export default {
     sect: 17,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 4,
   },
   64: {
@@ -797,7 +735,6 @@ export default {
     sect: 2,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 4,
   },
   65: {
@@ -808,7 +745,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 4,
   },
   66: {
@@ -826,7 +762,6 @@ export default {
       },
     ],
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 4,
   },
   67: {
@@ -843,7 +778,6 @@ export default {
         effect: ['攻击无误伤，攻击范围变为9*9面攻'],
       },
     ],
-    moveNum: 7,
     type: 4,
   },
   68: {
@@ -853,7 +787,6 @@ export default {
     sect: 30,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 5,
   },
   69: {
@@ -864,7 +797,6 @@ export default {
     level: 1,
     internal: 9,
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 2,
     type: 5,
   },
   70: {
@@ -875,7 +807,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['zhuoShaoBase']],
-    moveNum: 3,
     type: 5,
   },
   71: {
@@ -886,7 +817,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['bingFengBase']],
-    moveNum: 3,
     type: 5,
   },
   72: {
@@ -897,7 +827,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['zhuoShaoBase']],
-    moveNum: 3,
     type: 5,
   },
   73: {
@@ -907,7 +836,6 @@ export default {
     sect: 4,
     level: 3,
     internal: 9,
-    moveNum: 5,
     type: 5,
   },
   74: {
@@ -918,7 +846,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 3,
     type: 5,
   },
   75: {
@@ -928,7 +855,6 @@ export default {
     sect: 0,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 5,
   },
   76: {
@@ -938,7 +864,6 @@ export default {
     sect: 0,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 5,
   },
   77: {
@@ -949,7 +874,6 @@ export default {
     level: 3,
     internal: 1,
     condition: '剑法/刀法/奇门任一70',
-    moveNum: 5,
     type: 5,
   },
   78: {
@@ -960,7 +884,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['zhuoShaoBase']],
-    moveNum: 3,
     type: 5,
   },
   79: {
@@ -970,7 +893,6 @@ export default {
     sect: 16,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 5,
   },
   80: {
@@ -987,7 +909,6 @@ export default {
         effect: ['攻击变为7×7面攻，攻击无误伤，气攻提升至2400'],
       },
     ],
-    moveNum: 7,
     type: 5,
   },
   81: {
@@ -998,7 +919,6 @@ export default {
     level: 4,
     internal: 1,
     addition: '带毒+2',
-    moveNum: 7,
     type: 5,
   },
   82: {
@@ -1009,7 +929,6 @@ export default {
     level: 4,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 5,
   },
   83: {
@@ -1019,7 +938,6 @@ export default {
     sect: 29,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 5,
   },
   84: {
@@ -1029,7 +947,6 @@ export default {
     sect: 2,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 5,
   },
   85: {
@@ -1054,7 +971,6 @@ export default {
       'xiNuZhuDong',
       'weiLiZengQiang',
     ],
-    moveNum: 1,
     type: 6,
   },
   86: {
@@ -1064,7 +980,6 @@ export default {
     sect: 1,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 5,
   },
   87: {
@@ -1075,7 +990,6 @@ export default {
     level: 3,
     internal: 1,
     initiative: ['shiXuQuDu', 'juDu', 'qiangHuaZhongDu', 'zhongDu1', 'huaGong', 'poGang'],
-    moveNum: 1,
     type: 6,
   },
   88: {
@@ -1086,7 +1000,6 @@ export default {
     level: 3,
     internal: 9,
     initiative: ['chongXue', 'xiNeiBeiDong', 'xiNeiZhuDong', 'xiTiZhuDong', 'sanGong', 'gangTi'],
-    moveNum: 1,
     type: 6,
   },
   89: {
@@ -1098,7 +1011,6 @@ export default {
     level: 2,
     internal: 1,
     initiative: ['huiTi', 'mianYiBingFeng', 'sanJi', 'qiGuanWuYue'],
-    moveNum: 1,
     type: 6,
   },
   90: {
@@ -1109,7 +1021,6 @@ export default {
     level: 3,
     internal: 1,
     initiative: ['huiTi', 'mianYiBingFeng', 'poLi2', 'yaoJiaoKongBi', 'qiangLianLi', 'hunLuan'],
-    moveNum: 1,
     type: 6,
   },
   91: {
@@ -1129,7 +1040,6 @@ export default {
       'poFang',
       'hunLuan',
     ],
-    moveNum: 1,
     type: 6,
   },
   92: {
@@ -1140,7 +1050,6 @@ export default {
     level: 3,
     internal: 2,
     initiative: ['shiXuHuiNei', 'liaoShang', 'miaoZhun', 'buQuShaQi', 'xuRuo', 'shiZiHou'],
-    moveNum: 1,
     type: 6,
   },
   93: {
@@ -1162,7 +1071,6 @@ export default {
       'zhiXiGanGe',
       'guangMingJingShi',
     ],
-    moveNum: 1,
     type: 6,
   },
   94: {
@@ -1174,7 +1082,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['huiMing', 'huiNei', 'fengShenZhiLi', 'chongSheng'],
-    moveNum: 1,
     type: 6,
   },
   95: {
@@ -1192,7 +1099,6 @@ export default {
       'qiGongBo',
       'qiYueRuShi',
     ],
-    moveNum: 1,
     type: 6,
   },
   96: {
@@ -1211,7 +1117,6 @@ export default {
       'weiLiZengQiang',
       'yiJinDuanGu',
     ],
-    moveNum: 1,
     type: 6,
   },
   97: {
@@ -1232,7 +1137,6 @@ export default {
       'fanTanZengQiang',
       'yunZhuanQianKun',
     ],
-    moveNum: 1,
     type: 6,
   },
   98: {
@@ -1250,7 +1154,6 @@ export default {
       'weiLiZengQiang',
       'wuWoWuXiang2',
     ],
-    moveNum: 1,
     type: 6,
   },
   99: {
@@ -1268,7 +1171,6 @@ export default {
       'xuRuo',
       'dianRan',
     ],
-    moveNum: 1,
     type: 6,
   },
   100: {
@@ -1287,7 +1189,6 @@ export default {
       'mianYiNeiShang',
       'buXi',
     ],
-    moveNum: 1,
     type: 6,
   },
   101: {
@@ -1305,7 +1206,6 @@ export default {
       'mianYiFengXue',
       'liuDaoLunHui',
     ],
-    moveNum: 1,
     type: 6,
   },
   102: {
@@ -1328,7 +1228,6 @@ export default {
       'taiXuanFanZhen',
       'xuanZhiTaiYi',
     ],
-    moveNum: 1,
     type: 6,
   },
   103: {
@@ -1348,7 +1247,6 @@ export default {
       'qiangShenLi',
       'longXiangZhiLi',
     ],
-    moveNum: 1,
     type: 6,
   },
   104: {
@@ -1369,7 +1267,6 @@ export default {
       'qiYueRuShi',
       'fenJingNiMai',
     ],
-    moveNum: 1,
     type: 6,
   },
   105: {
@@ -1392,7 +1289,6 @@ export default {
       'yiXing',
       'kuiHuaBaiJie',
     ],
-    moveNum: 1,
     type: 6,
   },
   106: {
@@ -1414,7 +1310,6 @@ export default {
       'zhiYangZhiGang',
       'jiuYangGuiYi',
     ],
-    moveNum: 1,
     type: 6,
   },
   107: {
@@ -1436,7 +1331,6 @@ export default {
       'wuWoWuXiang2',
       'jiuYinGuiYi',
     ],
-    moveNum: 1,
     type: 6,
   },
   108: {
@@ -1458,7 +1352,6 @@ export default {
       'wuShenZhiLi',
       'tianDiDuZun',
     ],
-    moveNum: 1,
     type: 6,
   },
   109: {
@@ -1468,7 +1361,6 @@ export default {
     sect: 0,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 1,
   },
   110: {
@@ -1478,7 +1370,6 @@ export default {
     sect: 0,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   111: {
@@ -1488,7 +1379,6 @@ export default {
     sect: 0,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 4,
   },
   112: {
@@ -1498,7 +1388,6 @@ export default {
     sect: 0,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 5,
   },
   113: {
@@ -1509,7 +1398,6 @@ export default {
     level: 1,
     internal: 9,
     move: [['zhongDuBase']],
-    moveNum: 2,
     type: 1,
   },
   114: {
@@ -1519,7 +1407,6 @@ export default {
     sect: 0,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   115: {
@@ -1534,7 +1421,6 @@ export default {
         effect: ['必连击但不会暴击'],
       },
     ],
-    moveNum: 3,
     type: 1,
   },
   116: {
@@ -1544,7 +1430,6 @@ export default {
     sect: 8,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   117: {
@@ -1554,19 +1439,17 @@ export default {
     sect: 3,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   118: {
     id: 118,
     name: '化骨绵掌',
     get: ['沧州客栈赢海大富后获得'],
-    sect: 20,
+    sect: 28,
     level: 3,
     internal: 1,
     addition: '带毒+2',
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 5,
     type: 1,
   },
   119: {
@@ -1576,19 +1459,17 @@ export default {
     sect: 0,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   120: {
     id: 120,
     name: '冰蚕毒掌',
     get: ['云岭洞战胜游坦之', '天龙邪丐帮战胜游坦之'],
-    sect: 28,
-    level: 3,
+    sect: 15,
+    level: 4,
     internal: 1,
     addition: '带毒+1',
     move: [['bingFengBase']],
-    moveNum: 5,
     type: 1,
   },
   121: {
@@ -1598,7 +1479,6 @@ export default {
     sect: 27,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 2,
   },
   122: {
@@ -1608,7 +1488,6 @@ export default {
     sect: 1,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 2,
   },
   123: {
@@ -1619,7 +1498,6 @@ export default {
     level: 1,
     internal: 9,
     addition: '带毒+1',
-    moveNum: 2,
     type: 2,
   },
   124: {
@@ -1629,7 +1507,6 @@ export default {
     sect: 1,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   125: {
@@ -1639,7 +1516,6 @@ export default {
     sect: 0,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   126: {
@@ -1649,7 +1525,6 @@ export default {
     sect: 22,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   127: {
@@ -1659,7 +1534,6 @@ export default {
     sect: 23,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   128: {
@@ -1669,7 +1543,6 @@ export default {
     sect: 1,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   129: {
@@ -1679,7 +1552,6 @@ export default {
     sect: 22,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 2,
   },
   130: {
@@ -1690,7 +1562,6 @@ export default {
     level: 2,
     internal: 9,
     move: [['bingFengBase']],
-    moveNum: 3,
     type: 2,
   },
   131: {
@@ -1700,7 +1571,6 @@ export default {
     sect: 28,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   132: {
@@ -1710,7 +1580,6 @@ export default {
     sect: 1,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   133: {
@@ -1720,7 +1589,6 @@ export default {
     sect: 1,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 2,
   },
   134: {
@@ -1730,7 +1598,6 @@ export default {
     sect: 3,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 2,
   },
   135: {
@@ -1740,7 +1607,6 @@ export default {
     sect: 1,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 2,
   },
   136: {
@@ -1750,7 +1616,6 @@ export default {
     sect: 1,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 2,
   },
   137: {
@@ -1760,7 +1625,6 @@ export default {
     sect: 1,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 2,
   },
   138: {
@@ -1770,7 +1634,6 @@ export default {
     sect: 26,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 2,
   },
   139: {
@@ -1780,7 +1643,6 @@ export default {
     sect: 16,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 3,
   },
   140: {
@@ -1790,7 +1652,6 @@ export default {
     sect: 1,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   141: {
@@ -1800,7 +1661,6 @@ export default {
     sect: 29,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 4,
   },
   142: {
@@ -1810,7 +1670,6 @@ export default {
     sect: 27,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 5,
   },
   143: {
@@ -1820,7 +1679,6 @@ export default {
     sect: 0,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   144: {
@@ -1838,7 +1696,6 @@ export default {
       'mianYiPoZhan',
       'jiaQiangJianShang',
     ],
-    moveNum: 1,
     type: 6,
   },
   145: {
@@ -1850,7 +1707,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'zaiDong', 'tianLuo'],
-    moveNum: 1,
     type: 7,
   },
   146: {
@@ -1862,7 +1718,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'fengShenZhiLi'],
-    moveNum: 1,
     type: 7,
   },
   147: {
@@ -1873,7 +1728,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'wuWang', 'lingBo'],
-    moveNum: 1,
     type: 7,
   },
   148: {
@@ -1885,7 +1739,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'geDangZengQiang', 'tianLuo', 'diWang'],
-    moveNum: 1,
     type: 7,
   },
   149: {
@@ -1896,7 +1749,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'tianXingJianGong', 'yaoJiaoKongBi'],
-    moveNum: 1,
     type: 7,
   },
   150: {
@@ -1908,7 +1760,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'jiFeng', 'shunXiQianLi'],
-    moveNum: 1,
     type: 7,
   },
   151: {
@@ -1918,7 +1769,6 @@ export default {
     sect: 0,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   152: {
@@ -1938,7 +1788,6 @@ export default {
       'sanJi',
       'tianDiDuZun',
     ],
-    moveNum: 1,
     type: 6,
   },
   153: {
@@ -1956,7 +1805,6 @@ export default {
       },
     ],
     move: [['bingFengBase']],
-    moveNum: 7,
     type: 4,
   },
   154: {
@@ -1974,7 +1822,6 @@ export default {
       'yaoJiaoKongBi',
       'hongXiuShanWu',
     ],
-    moveNum: 1,
     type: 6,
   },
   155: {
@@ -1985,7 +1832,6 @@ export default {
     level: 4,
     internal: 2,
     range: '« 1+1×20',
-    moveNum: 7,
     type: 5,
   },
   156: {
@@ -1995,7 +1841,6 @@ export default {
     sect: 0,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 3,
   },
   157: {
@@ -2005,7 +1850,6 @@ export default {
     sect: 0,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 5,
   },
   158: {
@@ -2015,7 +1859,6 @@ export default {
     sect: 29,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 5,
   },
   159: {
@@ -2025,7 +1868,6 @@ export default {
     sect: 29,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 5,
   },
   160: {
@@ -2046,7 +1888,6 @@ export default {
       'buMieJinShen',
       'yiNianChengMo',
     ],
-    moveNum: 1,
     type: 6,
   },
   161: {
@@ -2064,7 +1905,6 @@ export default {
       },
     ],
     move: [['bingFengBase']],
-    moveNum: 3,
     type: 3,
   },
   162: {
@@ -2074,7 +1914,6 @@ export default {
     sect: 9,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 3,
   },
   163: {
@@ -2085,7 +1924,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['chongXue', 'mianYiLiuXie', 'shenDao', 'daoFeng', 'daoFaZhiLi', 'xueMo'],
-    moveNum: 1,
     type: 6,
   },
   164: {
@@ -2095,7 +1933,6 @@ export default {
     sect: 0,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 5,
   },
   165: {
@@ -2105,7 +1942,6 @@ export default {
     sect: 8,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 5,
   },
   166: {
@@ -2116,7 +1952,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['huiMing', 'huiNei', 'jianFaZhiLi', 'zhiYinJiangHu'],
-    moveNum: 1,
     type: 6,
   },
   167: {
@@ -2126,7 +1961,6 @@ export default {
     sect: 0,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   168: {
@@ -2155,7 +1989,6 @@ export default {
       'xuLiQiangHua',
       'qiangShenLi',
     ],
-    moveNum: 1,
     type: 6,
   },
   170: {
@@ -2163,12 +1996,11 @@ export default {
     name: '三阴腐尸掌',
     get: [],
     sect: 28,
-    level: 4,
+    level: 3,
     internal: 1,
     condition: '用毒40',
     addition: '带毒+1',
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 7,
     type: 1,
   },
   171: {
@@ -2190,7 +2022,6 @@ export default {
       'taiJiZhiXing',
       'taiYanShiFa',
     ],
-    moveNum: 1,
     type: 6,
   },
   172: {
@@ -2210,7 +2041,6 @@ export default {
       'fuYuanJiaShen',
       'tianJiMiShu',
     ],
-    moveNum: 1,
     type: 6,
   },
   173: {
@@ -2220,7 +2050,6 @@ export default {
     sect: 1,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 1,
   },
   174: {
@@ -2231,7 +2060,6 @@ export default {
     level: 3,
     internal: 1,
     move: [['bingFengBase']],
-    moveNum: 5,
     type: 4,
   },
   175: {
@@ -2251,7 +2079,6 @@ export default {
       'sanJi',
       'qiGuanWuYue',
     ],
-    moveNum: 1,
     type: 6,
   },
   176: {
@@ -2282,7 +2109,6 @@ export default {
       'poZhan',
       'tianJiMiShu',
     ],
-    moveNum: 1,
     type: 6,
   },
   178: {
@@ -2293,7 +2119,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['bingFengBase']],
-    moveNum: 5,
     type: 3,
   },
   179: {
@@ -2318,7 +2143,6 @@ export default {
       },
     ],
     move: [['bingFengBase']],
-    moveNum: 7,
     type: 1,
   },
   180: {
@@ -2338,7 +2162,6 @@ export default {
       'lingXiFenShui',
       'zhouLiuLiuXu',
     ],
-    moveNum: 1,
     type: 6,
   },
   181: {
@@ -2349,7 +2172,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 4,
   },
   182: {
@@ -2361,7 +2183,6 @@ export default {
     internal: 1,
     range: '« 1+1×20',
     addition: '暗器+10',
-    moveNum: 7,
     type: 5,
   },
   183: {
@@ -2381,7 +2202,6 @@ export default {
       'wuWoWuXiang2',
       'liuDaoLunHui',
     ],
-    moveNum: 1,
     type: 6,
   },
   184: {
@@ -2401,7 +2221,6 @@ export default {
       'mianYiFanShang',
       'zhiXiGanGe',
     ],
-    moveNum: 1,
     type: 6,
   },
   185: {
@@ -2413,7 +2232,6 @@ export default {
     internal: 1,
     addition: '带毒+2',
     move: [['bingFengBase']],
-    moveNum: 7,
     type: 5,
   },
   186: {
@@ -2424,7 +2242,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'xianShou', 'qingXin'],
-    moveNum: 1,
     type: 7,
   },
   187: {
@@ -2435,7 +2252,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 2,
   },
   188: {
@@ -2445,7 +2261,6 @@ export default {
     sect: 6,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 3,
   },
   189: {
@@ -2456,7 +2271,6 @@ export default {
     level: 4,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 1,
   },
   190: {
@@ -2468,7 +2282,6 @@ export default {
     level: 3,
     internal: 2,
     initiative: ['chongXue', 'poQiJue1', 'juLi', 'wuJianBuCui', 'daZongShi'],
-    moveNum: 1,
     type: 6,
   },
   191: {
@@ -2485,7 +2298,6 @@ export default {
         effect: ['暴怒攻击时，有50%概率击晕目标1回合'],
       },
     ],
-    moveNum: 5,
     type: 1,
   },
   192: {
@@ -2495,7 +2307,6 @@ export default {
     sect: 26,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 3,
   },
   193: {
@@ -2515,7 +2326,6 @@ export default {
         ],
       },
     ],
-    moveNum: 3,
     type: 4,
   },
   194: {
@@ -2526,7 +2336,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 5,
   },
   195: {
@@ -2536,7 +2345,6 @@ export default {
     sect: 2,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 2,
   },
   196: {
@@ -2547,7 +2355,6 @@ export default {
     level: 3,
     internal: 2,
     initiative: ['huJia', 'duanGu', 'gangTi', 'yunQiLiaoShang', 'lianTi', 'jiaQiangJianShang'],
-    moveNum: 1,
     type: 6,
   },
   197: {
@@ -2557,7 +2364,6 @@ export default {
     sect: 2,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   198: {
@@ -2567,7 +2373,6 @@ export default {
     sect: 0,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 2,
   },
   199: {
@@ -2578,7 +2383,6 @@ export default {
     level: 3,
     internal: 2,
     initiative: ['xieFang', 'guWu', 'siLie', 'dongJie', 'poZhan', 'mianYiFengXue'],
-    moveNum: 1,
     type: 6,
   },
   200: {
@@ -2589,7 +2393,6 @@ export default {
     level: 4,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 5,
   },
   201: {
@@ -2599,7 +2402,6 @@ export default {
     sect: 3,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 2,
   },
   202: {
@@ -2609,7 +2411,6 @@ export default {
     sect: 3,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 1,
   },
   203: {
@@ -2629,7 +2430,6 @@ export default {
       'bingHuoChongRong',
       'xianRenFuDing',
     ],
-    moveNum: 1,
     type: 6,
   },
   204: {
@@ -2647,7 +2447,6 @@ export default {
       'tianXingJianGong',
       'tianXingJianShou',
     ],
-    moveNum: 1,
     type: 6,
   },
   205: {
@@ -2657,7 +2456,6 @@ export default {
     sect: 2,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 1,
   },
   206: {
@@ -2668,7 +2466,6 @@ export default {
     sect: 0,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 5,
   },
   207: {
@@ -2679,7 +2476,6 @@ export default {
     level: 3,
     internal: 2,
     initiative: ['shiXuHuiNei', 'zhiJin', 'guiXi', 'quanZhangZhiLi', 'buQu', 'puDuCiHang'],
-    moveNum: 1,
     type: 6,
   },
   208: {
@@ -2690,7 +2486,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shiXuQuDu', 'wuShenZhiLi2'],
-    moveNum: 1,
     type: 6,
   },
   209: {
@@ -2701,7 +2496,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['juLi', 'taiJiZhiXing'],
-    moveNum: 1,
     type: 6,
   },
   210: {
@@ -2712,7 +2506,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['mingGui', 'buXi'],
-    moveNum: 1,
     type: 6,
   },
   211: {
@@ -2723,7 +2516,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['mianYiLiuXie', 'hongXiuShanWu'],
-    moveNum: 1,
     type: 6,
   },
   212: {
@@ -2734,7 +2526,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['huiTi', 'qiGuanWuYue'],
-    moveNum: 1,
     type: 6,
   },
   213: {
@@ -2745,7 +2536,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shiXuHuiNei', 'dongJie'],
-    moveNum: 1,
     type: 6,
   },
   214: {
@@ -2756,7 +2546,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['mianYiLiuXie', 'xiXue'],
-    moveNum: 1,
     type: 6,
   },
   215: {
@@ -2768,7 +2557,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['mingGui', 'mingZhongZengQiang1', 'juLi', 'jiuShenZhiLi'],
-    moveNum: 1,
     type: 6,
   },
   216: {
@@ -2779,7 +2567,6 @@ export default {
     level: 3,
     internal: 1,
     initiative: ['shiXuHuiNei', 'qiangHuaGangTi', 'bingFeng1', 'mianYiBingFeng', 'poLi', 'dongJie'],
-    moveNum: 1,
     type: 6,
   },
   217: {
@@ -2790,7 +2577,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['zaiDong', 'xianShou', 'mianYiZhuoShao', 'zhuoShao1'],
-    moveNum: 1,
     type: 6,
   },
   218: {
@@ -2801,7 +2587,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['jianShang', 'hongXiuShanWu'],
-    moveNum: 1,
     type: 6,
   },
   219: {
@@ -2812,7 +2597,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['shiXuHuiTi', 'fengMei', 'shanBiZengQiang1', 'mangMu'],
-    moveNum: 1,
     type: 6,
   },
   220: {
@@ -2831,7 +2615,6 @@ export default {
       'mianYiZhongDu',
       'yinDuNveYan',
     ],
-    moveNum: 1,
     type: 6,
   },
   221: {
@@ -2851,7 +2634,6 @@ export default {
       'tianXingJianShou',
       'bingHuoChongRong',
     ],
-    moveNum: 1,
     type: 6,
   },
   222: {
@@ -2862,7 +2644,6 @@ export default {
     level: 4,
     internal: 2,
     move: [['bingFengBase', 'zhuoShaoBase']],
-    moveNum: 7,
     type: 3,
   },
   223: {
@@ -2873,7 +2654,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'mingZhongZengQiang1', 'baoJiJianShang'],
-    moveNum: 1,
     type: 7,
   },
   224: {
@@ -2887,7 +2667,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'qingShen', 'qiYueRuShi'],
-    moveNum: 1,
     type: 7,
   },
   225: {
@@ -2898,7 +2677,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['shiXuLiaoShang', 'daZongShi'],
-    moveNum: 1,
     type: 6,
   },
   226: {
@@ -2915,7 +2693,6 @@ export default {
         effect: ['攻击必定封穴，被攻击减免10点封穴'],
       },
     ],
-    moveNum: 7,
     type: 2,
   },
   227: {
@@ -2930,7 +2707,6 @@ export default {
     internal: 9,
     condition: '资质≤50',
     initiative: ['shiXuHuiMing', 'chongXue', 'guiXing', 'puTiShu'],
-    moveNum: 1,
     type: 6,
   },
   228: {
@@ -2941,17 +2717,15 @@ export default {
     sect: 8,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 5,
   },
   229: {
     id: 229,
     name: '金蛇缠丝手',
     get: [],
-    sect: 8,
+    sect: 15,
     level: 3,
-    internal: 2,
-    moveNum: 5,
+    internal: 1,
     type: 2,
   },
   230: {
@@ -2961,7 +2735,6 @@ export default {
     sect: 25,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   231: {
@@ -2971,7 +2744,6 @@ export default {
     sect: 25,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 4,
   },
   232: {
@@ -2981,7 +2753,6 @@ export default {
     sect: 0,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 5,
   },
   233: {
@@ -2993,7 +2764,6 @@ export default {
     internal: 1,
     condition: '资质≤50',
     initiative: ['jiBu', 'duanGu', 'zaiDong', 'kongShou', 'buZhan', 'chiBo'],
-    moveNum: 1,
     type: 6,
   },
   234: {
@@ -3004,7 +2774,6 @@ export default {
     level: 3,
     internal: 1,
     move: [['bingFengBase', 'zhuoShaoBase']],
-    moveNum: 5,
     type: 1,
   },
   235: {
@@ -3015,7 +2784,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['quanZhangZhiLi', 'daoFaZhiLi'],
-    moveNum: 1,
     type: 6,
   },
   236: {
@@ -3026,7 +2794,6 @@ export default {
     sect: 2,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   237: {
@@ -3037,7 +2804,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'shanBiZengQiang1', 'buQu'],
-    moveNum: 1,
     type: 7,
   },
   238: {
@@ -3057,7 +2823,6 @@ export default {
       'buQu',
       'qingXin',
     ],
-    moveNum: 1,
     type: 6,
   },
   239: {
@@ -3068,7 +2833,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'jianBao', 'jianLian'],
-    moveNum: 1,
     type: 7,
   },
   240: {
@@ -3078,7 +2842,6 @@ export default {
     sect: 6,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 2,
   },
   241: {
@@ -3089,7 +2852,6 @@ export default {
     level: 2,
     internal: 2,
     initiative: ['shiXuHuiNei', 'quHan', 'jianShang', 'zhuoShao1'],
-    moveNum: 1,
     type: 6,
   },
   242: {
@@ -3100,7 +2862,6 @@ export default {
     level: 2,
     internal: 2,
     initiative: ['jianShang', 'dianRan', 'fanZhen', 'baoYuanShouYi'],
-    moveNum: 1,
     type: 6,
   },
   243: {
@@ -3111,7 +2872,6 @@ export default {
     level: 2,
     internal: 2,
     initiative: ['shiXuHuiNei', 'quHan', 'jianShang', 'yunQiJieXue'],
-    moveNum: 1,
     type: 6,
   },
   244: {
@@ -3121,7 +2881,6 @@ export default {
     sect: 2,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 2,
   },
   245: {
@@ -3131,7 +2890,6 @@ export default {
     sect: 2,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   246: {
@@ -3143,7 +2901,6 @@ export default {
     internal: 2,
     condition: '暗器60',
     addition: '暗器+3',
-    moveNum: 5,
     type: 5,
   },
   247: {
@@ -3153,7 +2910,6 @@ export default {
     sect: 8,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   248: {
@@ -3164,7 +2920,6 @@ export default {
     level: 3,
     internal: 2,
     addition: '医疗+1',
-    moveNum: 5,
     type: 1,
   },
   249: {
@@ -3174,7 +2929,6 @@ export default {
     sect: 12,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   250: {
@@ -3184,7 +2938,6 @@ export default {
     sect: 12,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   251: {
@@ -3195,7 +2948,6 @@ export default {
     level: 3,
     internal: 1,
     initiative: ['quHan', 'juLi', 'neiShang1', 'yunQiLiaoShang', 'qiangHuaFengXue', 'duanRen2'],
-    moveNum: 1,
     type: 6,
   },
   252: {
@@ -3206,7 +2958,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['huiQi', 'fengShenZhiLi1', 'mianYiBingFeng', 'dongJie'],
-    moveNum: 1,
     type: 6,
   },
   253: {
@@ -3226,7 +2977,6 @@ export default {
       'buQu',
       'puDuCiHang',
     ],
-    moveNum: 1,
     type: 6,
   },
   254: {
@@ -3236,7 +2986,6 @@ export default {
     sect: 19,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   255: {
@@ -3246,7 +2995,6 @@ export default {
     sect: 13,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   256: {
@@ -3257,7 +3005,6 @@ export default {
     level: 2,
     internal: 9,
     addition: '医疗+1',
-    moveNum: 3,
     type: 1,
   },
   257: {
@@ -3268,7 +3015,6 @@ export default {
     level: 1,
     internal: 9,
     addition: '暗器+1',
-    moveNum: 2,
     type: 1,
   },
   258: {
@@ -3278,7 +3024,6 @@ export default {
     sect: 13,
     level: 3,
     internal: 9,
-    moveNum: 5,
     type: 3,
   },
   259: {
@@ -3289,7 +3034,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['shiXuHuiNei', 'puDuCiHang'],
-    moveNum: 1,
     type: 6,
   },
   260: {
@@ -3299,7 +3043,6 @@ export default {
     sect: 14,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   261: {
@@ -3309,7 +3052,6 @@ export default {
     sect: 14,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   262: {
@@ -3320,7 +3062,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'shanBiZengQiang1', 'miZong'],
-    moveNum: 1,
     type: 7,
   },
   263: {
@@ -3330,7 +3071,6 @@ export default {
     sect: 14,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   264: {
@@ -3349,7 +3089,6 @@ export default {
       'tianXingJianShou',
       'jiuShenZhiLi',
     ],
-    moveNum: 1,
     type: 6,
   },
   265: {
@@ -3359,7 +3098,6 @@ export default {
     sect: 26,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   266: {
@@ -3369,7 +3107,6 @@ export default {
     sect: 26,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 3,
   },
   267: {
@@ -3379,7 +3116,6 @@ export default {
     sect: 1,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 4,
   },
   268: {
@@ -3389,7 +3125,6 @@ export default {
     sect: 0,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 4,
   },
   269: {
@@ -3399,7 +3134,6 @@ export default {
     sect: 25,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   270: {
@@ -3409,7 +3143,6 @@ export default {
     sect: 29,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 4,
   },
   271: {
@@ -3419,7 +3152,6 @@ export default {
     sect: 26,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   272: {
@@ -3429,7 +3161,6 @@ export default {
     sect: 10,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 1,
   },
   273: {
@@ -3440,7 +3171,6 @@ export default {
     level: 2,
     internal: 9,
     addition: '解毒+1',
-    moveNum: 3,
     type: 1,
   },
   274: {
@@ -3450,7 +3180,6 @@ export default {
     sect: 10,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   275: {
@@ -3460,7 +3189,6 @@ export default {
     sect: 10,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   276: {
@@ -3470,7 +3198,6 @@ export default {
     sect: 21,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   277: {
@@ -3481,7 +3208,6 @@ export default {
     level: 2,
     internal: 9,
     addition: '暗器+1',
-    moveNum: 3,
     type: 3,
   },
   278: {
@@ -3491,17 +3217,15 @@ export default {
     sect: 15,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   279: {
     id: 279,
     name: '落雁掌',
     get: [],
-    sect: 15,
+    sect: 10,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   280: {
@@ -3509,10 +3233,9 @@ export default {
     name: '红砂掌',
     get: [],
     sect: 15,
-    level: 2,
+    level: 1,
     internal: 9,
     addition: '暗器+1',
-    moveNum: 3,
     type: 1,
   },
   281: {
@@ -3525,7 +3248,6 @@ export default {
     condition: '暗器50',
     addition: '暗器+2',
     move: [['zhongDuBase']],
-    moveNum: 5,
     type: 5,
   },
   282: {
@@ -3538,7 +3260,6 @@ export default {
     condition: '暗器90',
     addition: '暗器+3',
     move: [['zhongDuBase']],
-    moveNum: 3,
     type: 5,
   },
   283: {
@@ -3548,7 +3269,6 @@ export default {
     sect: 7,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   284: {
@@ -3558,7 +3278,6 @@ export default {
     sect: 7,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   285: {
@@ -3568,7 +3287,6 @@ export default {
     sect: 7,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   286: {
@@ -3578,7 +3296,6 @@ export default {
     sect: 7,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 1,
   },
   287: {
@@ -3590,7 +3307,6 @@ export default {
     internal: 2,
     condition: '指腿40',
     addition: '毒抗+1',
-    moveNum: 7,
     type: 1,
   },
   288: {
@@ -3600,7 +3316,6 @@ export default {
     sect: 19,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   289: {
@@ -3610,7 +3325,6 @@ export default {
     sect: 19,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   290: {
@@ -3620,7 +3334,6 @@ export default {
     sect: 19,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 1,
   },
   291: {
@@ -3631,7 +3344,6 @@ export default {
     level: 3,
     internal: 2,
     addition: '暗器+1',
-    moveNum: 5,
     type: 3,
   },
   292: {
@@ -3642,7 +3354,6 @@ export default {
     level: 2,
     internal: 9,
     addition: '暗器+1',
-    moveNum: 3,
     type: 2,
   },
   293: {
@@ -3654,7 +3365,6 @@ export default {
     internal: 2,
     condition: '暗器100',
     addition: '暗器+4',
-    moveNum: 7,
     type: 5,
   },
   294: {
@@ -3667,7 +3377,6 @@ export default {
     condition: '用毒50',
     addition: '解毒+1',
     move: [['zhongDuBase']],
-    moveNum: 2,
     type: 1,
   },
   295: {
@@ -3688,7 +3397,6 @@ export default {
       'duBuWuLin',
     ],
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 5,
     type: 1,
   },
   296: {
@@ -3698,7 +3406,6 @@ export default {
     sect: 28,
     level: 1,
     internal: 9,
-    moveNum: 1,
   },
   297: {
     id: 297,
@@ -3710,7 +3417,6 @@ export default {
     condition: '暗器110',
     addition: '暗器+4',
     move: [['zhongDuBase']],
-    moveNum: 5,
     type: 5,
   },
   298: {
@@ -3720,7 +3426,6 @@ export default {
     sect: 16,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 2,
   },
   299: {
@@ -3730,7 +3435,6 @@ export default {
     sect: 16,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 5,
   },
   300: {
@@ -3743,7 +3447,6 @@ export default {
     condition: '暗器60',
     addition: '暗器+3',
     move: [['zhongDuBase']],
-    moveNum: 3,
     type: 5,
   },
   301: {
@@ -3756,7 +3459,6 @@ export default {
     condition: '暗器90',
     addition: '暗器+4',
     move: [['zhongDuBase']],
-    moveNum: 5,
     type: 5,
   },
   302: {
@@ -3773,7 +3475,6 @@ export default {
         effect: ['攻击时50%概率给敌人添加虚弱状态，暴怒必触发'],
       },
     ],
-    moveNum: 3,
     type: 3,
   },
   303: {
@@ -3783,7 +3484,6 @@ export default {
     sect: 9,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   304: {
@@ -3794,7 +3494,6 @@ export default {
     sect: 9,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 3,
   },
   305: {
@@ -3804,7 +3503,6 @@ export default {
     sect: 9,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 1,
   },
   306: {
@@ -3815,7 +3513,6 @@ export default {
     level: 3,
     internal: 1,
     move: [['bingFengBase', 'zhuoShaoBase']],
-    moveNum: 5,
     type: 1,
   },
   307: {
@@ -3825,7 +3522,6 @@ export default {
     sect: 9,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   308: {
@@ -3835,7 +3531,6 @@ export default {
     sect: 9,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 2,
   },
   309: {
@@ -3845,7 +3540,6 @@ export default {
     sect: 4,
     level: 2,
     internal: 1,
-    moveNum: 3,
     type: 3,
   },
   310: {
@@ -3855,7 +3549,6 @@ export default {
     sect: 1,
     level: 3,
     internal: 9,
-    moveNum: 5,
     type: 2,
   },
   311: {
@@ -3865,7 +3558,6 @@ export default {
     sect: 4,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 5,
   },
   312: {
@@ -3878,7 +3570,6 @@ export default {
     condition: '暗器100',
     addition: '暗器+4',
     move: [['zhongDuBase']],
-    moveNum: 5,
     type: 5,
   },
   313: {
@@ -3890,7 +3581,6 @@ export default {
     internal: 1,
     condition: '暗器120',
     addition: '暗器4',
-    moveNum: 7,
     type: 5,
   },
   314: {
@@ -3900,7 +3590,6 @@ export default {
     sect: 27,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 2,
   },
   315: {
@@ -3910,7 +3599,6 @@ export default {
     sect: 27,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   316: {
@@ -3920,7 +3608,6 @@ export default {
     sect: 22,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 5,
   },
   317: {
@@ -3932,7 +3619,6 @@ export default {
     internal: 9,
     condition: '资质≥80',
     initiative: ['huiTi', 'mianYiZhuoShao', 'fuYuanJiaShen', 'tianJiMiShu'],
-    moveNum: 1,
     type: 6,
   },
   318: {
@@ -3942,7 +3628,6 @@ export default {
     sect: 22,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   319: {
@@ -3952,7 +3637,6 @@ export default {
     sect: 22,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   320: {
@@ -3962,7 +3646,6 @@ export default {
     sect: 22,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 3,
   },
   321: {
@@ -3972,7 +3655,6 @@ export default {
     sect: 4,
     level: 1,
     internal: 1,
-    moveNum: 2,
     type: 3,
   },
   322: {
@@ -3982,7 +3664,6 @@ export default {
     sect: 11,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 5,
   },
   323: {
@@ -3992,7 +3673,6 @@ export default {
     sect: 11,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 5,
   },
   324: {
@@ -4004,7 +3684,6 @@ export default {
     internal: 2,
     condition: '暗器40',
     addition: '暗器+2',
-    moveNum: 5,
     type: 5,
   },
   325: {
@@ -4016,7 +3695,6 @@ export default {
     internal: 9,
     addition: '暗器+3',
     intiative: ['huiMing', 'shiXuHuiNei'],
-    moveNum: 1,
     type: 6,
   },
   326: {
@@ -4027,7 +3705,6 @@ export default {
     level: 2,
     internal: 9,
     addition: '暗器+1',
-    moveNum: 3,
     type: 3,
   },
   327: {
@@ -4037,7 +3714,6 @@ export default {
     sect: 11,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   328: {
@@ -4054,7 +3730,6 @@ export default {
       },
     ],
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 1,
   },
   329: {
@@ -4064,7 +3739,6 @@ export default {
     sect: 3,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   330: {
@@ -4077,7 +3751,6 @@ export default {
     condition: '暗器40',
     addition: '暗器+2',
     move: [['zhongDuBase']],
-    moveNum: 3,
     type: 5,
   },
   331: {
@@ -4088,7 +3761,6 @@ export default {
     level: 1,
     internal: 9,
     move: [['zhongDuBase']],
-    moveNum: 2,
     type: 1,
   },
   332: {
@@ -4100,7 +3772,6 @@ export default {
     internal: 9,
     addition: '暗器+3 带毒+5',
     move: [['bingFengBase', 'zhongDuBase']],
-    moveNum: 2,
     type: 5,
   },
   333: {
@@ -4110,18 +3781,16 @@ export default {
     sect: 15,
     level: 4,
     internal: 9,
-    moveNum: 7,
   },
   334: {
     id: 334,
     name: '千蛛万毒手',
     get: ['倚天正收殷离获得'],
-    sect: 28,
-    level: 2,
-    internal: 9,
+    sect: 15,
+    level: 3,
+    internal: 1,
     addition: '用毒+1',
     move: [['zhongDuBase']],
-    moveNum: 3,
     type: 1,
   },
   335: {
@@ -4137,7 +3806,6 @@ export default {
       },
     ],
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 4,
   },
   336: {
@@ -4147,7 +3815,6 @@ export default {
     sect: 11,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 3,
   },
   337: {
@@ -4157,7 +3824,6 @@ export default {
     sect: 5,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 4,
   },
   338: {
@@ -4167,7 +3833,6 @@ export default {
     sect: 29,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 4,
   },
   339: {
@@ -4177,7 +3842,6 @@ export default {
     sect: 9,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 3,
   },
   340: {
@@ -4187,7 +3851,6 @@ export default {
     sect: 5,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 2,
   },
   341: {
@@ -4198,7 +3861,6 @@ export default {
     level: 2,
     internal: 9,
     addition: '暗器+1',
-    moveNum: 3,
     type: 5,
   },
   342: {
@@ -4216,7 +3878,6 @@ export default {
       },
     ],
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 1,
   },
   343: {
@@ -4226,7 +3887,6 @@ export default {
     sect: 17,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 4,
   },
   344: {
@@ -4236,7 +3896,6 @@ export default {
     sect: 17,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 4,
   },
   345: {
@@ -4256,7 +3915,6 @@ export default {
       'xueZhanBaFang',
       'xueMo',
     ],
-    moveNum: 1,
     type: 6,
   },
   346: {
@@ -4267,7 +3925,6 @@ export default {
     level: 2,
     internal: 9,
     condition: '拳掌70',
-    moveNum: 3,
     type: 2,
   },
   347: {
@@ -4277,7 +3934,6 @@ export default {
     sect: 1,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 1,
   },
   348: {
@@ -4288,7 +3944,6 @@ export default {
     level: 3,
     internal: 2,
     condition: '拳掌60',
-    moveNum: 5,
     type: 2,
   },
   349: {
@@ -4299,7 +3954,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'guiXing', 'yiRong'],
-    moveNum: 1,
     type: 7,
   },
   350: {
@@ -4309,7 +3963,6 @@ export default {
     sect: 29,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 4,
   },
   351: {
@@ -4319,7 +3972,6 @@ export default {
     sect: 30,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 5,
   },
   352: {
@@ -4330,7 +3982,6 @@ export default {
     level: 3,
     internal: 2,
     addition: '暗器+1',
-    moveNum: 5,
     type: 1,
   },
   353: {
@@ -4341,7 +3992,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shiXuHuiNu', 'lingXiFenShui'],
-    moveNum: 1,
     type: 6,
   },
   354: {
@@ -4352,7 +4002,6 @@ export default {
     level: 3,
     internal: 2,
     initiative: ['zhiXue', 'liaoShang', 'mianYiNeiShang', 'yunQiChuBing', 'sanGong', 'jianShang'],
-    moveNum: 1,
     type: 6,
   },
   355: {
@@ -4364,7 +4013,6 @@ export default {
     internal: 9,
     addition: '解毒+1 暗器+1',
     initiative: [],
-    moveNum: 1,
     type: 6,
   },
   356: {
@@ -4375,7 +4023,6 @@ export default {
     level: 2,
     internal: 2,
     initiative: ['huiNei', 'huiMing', 'jianFaZhiLi', 'duanRen2', 'sanJi', 'wanJianGuiZong'],
-    moveNum: 1,
     type: 6,
   },
   357: {
@@ -4386,7 +4033,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['shiXuZhiXue', 'baoJiJianShang', 'qiangShenLi', 'longXiangZhiLi'],
-    moveNum: 1,
     type: 6,
   },
   358: {
@@ -4397,7 +4043,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 5,
     type: 4,
   },
   359: {
@@ -4408,7 +4053,6 @@ export default {
     level: 1,
     internal: 9,
     move: [['zhongDuBase']],
-    moveNum: 2,
     type: 2,
   },
   360: {
@@ -4419,7 +4063,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'shanBiZengQiang1', 'baoYuLiHua'],
-    moveNum: 1,
     type: 7,
   },
   361: {
@@ -4430,7 +4073,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'mingZhongZengQiang1', 'poJianJue'],
-    moveNum: 1,
     type: 7,
   },
   362: {
@@ -4441,7 +4083,6 @@ export default {
     level: 3,
     internal: 1,
     initiative: ['shiXuHuiNu', 'wenLuan', 'quanGang', 'quanZhangZhiLi', 'jieLi', 'lingXiFenShui'],
-    moveNum: 1,
     type: 6,
   },
   363: {
@@ -4451,7 +4092,6 @@ export default {
     sect: 6,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 3,
   },
   364: {
@@ -4462,7 +4102,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   365: {
@@ -4473,7 +4112,6 @@ export default {
     level: 4,
     internal: 2,
     move: [['zhuoShaoBase']],
-    moveNum: 7,
     type: 4,
   },
   366: {
@@ -4484,7 +4122,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   367: {
@@ -4494,7 +4131,6 @@ export default {
     sect: 6,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 2,
   },
   368: {
@@ -4504,7 +4140,6 @@ export default {
     sect: 1,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 5,
   },
   369: {
@@ -4514,7 +4149,6 @@ export default {
     sect: 1,
     level: 2,
     internal: 9,
-    moveNum: 3,
     type: 5,
   },
   370: {
@@ -4524,7 +4158,6 @@ export default {
     sect: 13,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 3,
   },
   371: {
@@ -4535,7 +4168,6 @@ export default {
     level: 4,
     internal: 1,
     move: [['bingFengBase']],
-    moveNum: 7,
     type: 3,
   },
   372: {
@@ -4545,7 +4177,6 @@ export default {
     sect: 12,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 3,
   },
   373: {
@@ -4555,7 +4186,6 @@ export default {
     sect: 10,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   374: {
@@ -4565,7 +4195,6 @@ export default {
     sect: 9,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 3,
   },
   375: {
@@ -4576,7 +4205,6 @@ export default {
     level: 2,
     internal: 9,
     addition: '暗器+1',
-    moveNum: 3,
     type: 2,
   },
   376: {
@@ -4586,7 +4214,6 @@ export default {
     sect: 21,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 3,
   },
   377: {
@@ -4596,7 +4223,6 @@ export default {
     sect: 6,
     level: 4,
     internal: 1,
-    moveNum: 7,
     type: 2,
   },
   378: {
@@ -4607,7 +4233,6 @@ export default {
     level: 3,
     internal: 1,
     move: [['bingFengBase']],
-    moveNum: 5,
     type: 1,
   },
   379: {
@@ -4618,7 +4243,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'geDangZengQiang1', 'yiXing'],
-    moveNum: 1,
     type: 7,
   },
   380: {
@@ -4629,7 +4253,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   381: {
@@ -4639,7 +4262,6 @@ export default {
     sect: 2,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 3,
   },
   382: {
@@ -4650,7 +4272,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['bingFengBase']],
-    moveNum: 5,
     type: 4,
   },
   383: {
@@ -4661,7 +4282,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   384: {
@@ -4672,7 +4292,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   385: {
@@ -4683,7 +4302,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   386: {
@@ -4694,7 +4312,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   387: {
@@ -4705,7 +4322,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   388: {
@@ -4716,7 +4332,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   389: {
@@ -4727,7 +4342,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   390: {
@@ -4738,7 +4352,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   391: {
@@ -4749,7 +4362,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   392: {
@@ -4760,7 +4372,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'geDangZengQian1', 'lianJiJianShang'],
-    moveNum: 1,
     type: 7,
   },
   393: {
@@ -4771,7 +4382,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   394: {
@@ -4782,7 +4392,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'bingShang', 'zaiDong'],
-    moveNum: 1,
     type: 7,
   },
   395: {
@@ -4793,7 +4402,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   396: {
@@ -4804,7 +4412,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'mianYiBingFeng', 'qingShen'],
-    moveNum: 1,
     type: 7,
   },
   397: {
@@ -4815,7 +4422,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'geDangZengQiang1', 'geDang'],
-    moveNum: 1,
     type: 7,
   },
   398: {
@@ -4826,7 +4432,6 @@ export default {
     level: 4,
     internal: 2,
     move: [['bingFengBase']],
-    moveNum: 7,
     type: 4,
   },
   399: {
@@ -4837,7 +4442,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   400: {
@@ -4848,7 +4452,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'shanBiZengQiang', 'wuWang'],
-    moveNum: 1,
     type: 7,
   },
   401: {
@@ -4859,7 +4462,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   402: {
@@ -4870,7 +4472,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'jiFeng', 'shuangJi'],
-    moveNum: 1,
     type: 7,
   },
   403: {
@@ -4881,7 +4482,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   404: {
@@ -4892,7 +4492,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'yunQiBiHuo', 'lianZhan'],
-    moveNum: 1,
     type: 7,
   },
   405: {
@@ -4903,7 +4502,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   406: {
@@ -4914,7 +4512,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   407: {
@@ -4925,7 +4522,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'siShenZhiWen', 'fengHou'],
-    moveNum: 1,
     type: 7,
   },
   408: {
@@ -4936,7 +4532,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   409: {
@@ -4947,7 +4542,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'tiaoXi', 'jianBao'],
-    moveNum: 1,
     type: 7,
   },
   410: {
@@ -4958,7 +4552,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   411: {
@@ -4969,7 +4562,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'yaZi', 'fengShenZhiLi1'],
-    moveNum: 1,
     type: 7,
   },
   412: {
@@ -4980,7 +4572,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   413: {
@@ -4991,7 +4582,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'lianDong', 'wenLuan'],
-    moveNum: 1,
     type: 7,
   },
   414: {
@@ -5002,7 +4592,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   415: {
@@ -5013,7 +4602,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'mingZhongZengQiang1', 'tianLuo'],
-    moveNum: 1,
     type: 7,
   },
   416: {
@@ -5024,7 +4612,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   417: {
@@ -5035,7 +4622,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'hunLuan', 'geDangZengQiang1'],
-    moveNum: 1,
     type: 7,
   },
   418: {
@@ -5046,7 +4632,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   419: {
@@ -5057,7 +4642,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'mianYiFanShang', 'qiangHuaGangTi'],
-    moveNum: 1,
     type: 7,
   },
   420: {
@@ -5068,7 +4652,6 @@ export default {
     level: 3,
     internal: 2,
     move: [['bingFengBase']],
-    moveNum: 5,
     type: 4,
   },
   421: {
@@ -5079,7 +4662,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   422: {
@@ -5090,7 +4672,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   423: {
@@ -5101,7 +4682,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   424: {
@@ -5112,7 +4692,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'jiFeng', 'huaJin'],
-    moveNum: 1,
     type: 7,
   },
   425: {
@@ -5123,7 +4702,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   426: {
@@ -5134,7 +4712,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['longXiangZhiLi'],
-    moveNum: 1,
     type: 6,
   },
   427: {
@@ -5144,7 +4721,6 @@ export default {
     sect: 29,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 4,
   },
   428: {
@@ -5155,7 +4731,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   429: {
@@ -5166,7 +4741,6 @@ export default {
     level: 4,
     internal: 1,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'fengMei', 'sanJi'],
-    moveNum: 1,
     type: 7,
   },
   430: {
@@ -5177,7 +4751,6 @@ export default {
     level: 4,
     internal: 2,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang', 'fengMei', 'taYunZhuiFeng'],
-    moveNum: 5,
     type: 7,
   },
   431: {
@@ -5187,7 +4760,6 @@ export default {
     sect: 31,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 2,
   },
   432: {
@@ -5197,7 +4769,6 @@ export default {
     sect: 31,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 1,
   },
   433: {
@@ -5217,7 +4788,6 @@ export default {
       'rongHuiGuanTong',
       'sanYuanGuiYi',
     ],
-    moveNum: 1,
     type: 6,
   },
   434: {
@@ -5227,7 +4797,6 @@ export default {
     sect: 31,
     level: 4,
     internal: 2,
-    moveNum: 7,
     type: 2,
   },
   435: {
@@ -5237,7 +4806,6 @@ export default {
     sect: 31,
     level: 1,
     internal: 9,
-    moveNum: 1,
   },
   436: {
     id: 436,
@@ -5247,7 +4815,6 @@ export default {
     level: 3,
     internal: 2,
     initiative: ['mianYiLiuXie', 'shenDao', 'daoFeng', 'daoFaZhiLi', 'xueZhanBaFang', 'xueMo'],
-    moveNum: 1,
     type: 6,
   },
   437: {
@@ -5257,7 +4824,6 @@ export default {
     sect: 9,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   438: {
@@ -5267,7 +4833,6 @@ export default {
     sect: 3,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 1,
   },
   439: {
@@ -5278,7 +4843,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['zaiDong', 'tiaoXi'],
-    moveNum: 1,
     type: 6,
   },
   440: {
@@ -5289,7 +4853,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['huiMing', 'huiNei'],
-    moveNum: 1,
     type: 6,
   },
   441: {
@@ -5300,7 +4863,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['shanBiZengQiang', 'mingZhongZengQiang'],
-    moveNum: 1,
     type: 7,
   },
   442: {
@@ -5311,7 +4873,6 @@ export default {
     level: 2,
     internal: 9,
     initiative: ['shiXuHuiNu', 'wenLuan', 'quanGang', 'quanZhangZhiLi'],
-    moveNum: 1,
     type: 6,
   },
   443: {
@@ -5322,7 +4883,6 @@ export default {
     level: 1,
     internal: 9,
     move: [['zhongDuBase']],
-    moveNum: 2,
     type: 2,
   },
   444: {
@@ -5333,7 +4893,6 @@ export default {
     level: 1,
     internal: 9,
     intiative: ['shiXuHuiTi', 'fengMei'],
-    moveNum: 1,
     type: 6,
   },
   445: {
@@ -5353,7 +4912,6 @@ export default {
       'jiuYouXiuLuo',
       'yinShaLianYu',
     ],
-    moveNum: 1,
     type: 6,
   },
   446: {
@@ -5364,7 +4922,6 @@ export default {
     level: 1,
     internal: 9,
     initiative: ['mingGui', 'jiuShenZhiLi'],
-    moveNum: 1,
     type: 6,
   },
   447: {
@@ -5384,7 +4941,6 @@ export default {
       'riZhaoYueMu',
       'riYueTongHui',
     ],
-    moveNum: 1,
     type: 6,
   },
   448: {
@@ -5394,7 +4950,6 @@ export default {
     sect: 4,
     level: 3,
     internal: 1,
-    moveNum: 5,
     type: 3,
   },
   449: {
@@ -5405,7 +4960,6 @@ export default {
     level: 3,
     internal: 2,
     initiative: ['quHan', 'zaiDong', 'xianShou', 'mianYiZhuoShao', 'zhuoShao1', 'zhiXiGanGe'],
-    moveNum: 1,
     type: 6,
   },
   450: {
@@ -5415,7 +4969,6 @@ export default {
     sect: 5,
     level: 3,
     internal: 2,
-    moveNum: 5,
     type: 2,
   },
   451: {
@@ -5425,7 +4978,17 @@ export default {
     sect: 5,
     level: 1,
     internal: 9,
-    moveNum: 2,
     type: 2,
+  },
+  452: {
+    id: 452,
+    name: '万盅秘录',
+    get: [],
+    sect: 15,
+    level: 4,
+    internal: 1,
+    condition: '用毒300',
+    initiative: [],
+    type: 6,
   },
 };

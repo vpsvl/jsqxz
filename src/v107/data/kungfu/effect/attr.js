@@ -288,171 +288,21 @@ export function getInherit(id) {
   return rst;
 }
 
+const moveNumMap = {1: 2, 2: 3, 3: 5, 4: 7};
+
 /**
- * 格式化武功说明
- * @param info
- * @returns {any}
+ * 获取招式说明
+ * @param id
  */
-export function formatKungfu(info = {}) {
-  const item = JSON.parse(JSON.stringify(info));
-  const {
-    id,
-    level,
-    sect,
-    type,
-    internal,
-    initiative,
-    peculiar,
-    move,
-    moveNum,
-    ultimate,
-    addition,
-    condition,
-    power,
-    range,
-    get: learn,
-  } = item;
-  if (!item.cheat) {
-    item.cheat = item.name;
+function getMove(id) {
+  let {type, level, sect, move, moveNum, ultimate} = kungfuAll[id];
+  if (typeof moveNum !== 'number') {
+    moveNum = type < 6 ? moveNumMap[level] : 1;
   }
-  item.sectName = sectAll[sect]?.name ?? '';
-  item.get = getLearn({
-    sect,
-    level,
-    other: learn,
-  });
-  // 获取属性加成
-  item.addition = getAttr({
-    type,
-    level,
-    internal,
-    other: addition,
-  });
-  // 获取学习条件
-  item.condition = getCondition({
-    type,
-    level,
-    internal,
-    other: condition,
-  });
-  // 威力
-  item.power = getPower({
-    type,
-    level,
-    internal,
-    other: power,
-  });
-  // 攻击范围
-  item.range = getRange({
-    type,
-    level,
-    other: range,
-  });
-  // 一脉相承
-  item.inherit = getInherit(id);
-  // 内功主运特效
-  if (Array.isArray(initiative)) {
-    const arr = [];
-    for (let key of initiative) {
-      if (typeof internalMap[key] === 'function') {
-        arr.push(internalMap[key](level));
-      }
-    }
-    item.initiative = arr;
-  }
-  // 秘技
-  let peculiarArr = [];
-  for (let key in stuntData) {
-    let {name, condition, effect, kungfu, type} = stuntData[key];
-    if (!kungfu) {
-      continue;
-    }
-    if (!kungfu[id]) {
-      let flag = false;
-      for (let k in kungfu) {
-        if (Array.isArray(kungfu[k])) {
-          if (kungfu[k].includes(id)) {
-            flag = true;
-            break;
-          }
-        }
-      }
-      if (!flag) {
-        continue;
-      }
-    }
-    const arr = [];
-    let other = '';
-    for (let k in kungfu) {
-      if (k === 'other') {
-        other = kungfu[k];
-        continue;
-      }
-      if (Array.isArray(kungfu[k])) {
-        let item = kungfuAll[k].name;
-        for (let j of kungfu[k]) {
-          item += `/${kungfuAll[j].name}`;
-        }
-        arr.push(item);
-      } else {
-        arr.push(kungfuAll[k].name);
-      }
-    }
-    condition = (arr.length > 1 ? '' : '修炼') + arr.join('+');
-    if (type === 2) {
-      other += '（需都在武功面板）';
-    }
-    if (other) {
-      condition += (arr.length > 0 ? '，' : '') + other;
-    }
-    peculiarArr.push({
-      id,
-      name,
-      condition,
-      effect,
-    });
-  }
-  if (Array.isArray(peculiar)) {
-    for (let key of peculiar) {
-      if (typeof key === 'string') {
-        continue;
-      }
-      peculiarArr.push(key);
-    }
-  }
-  item.peculiar = peculiarArr;
-  // 加连击
-  if (jiaLianJiPeculiar[id]) {
-    const effect = {
-      name: '加连击',
-      condition: '在武功面板上',
-      // effect: [`连击率增加(100-当前连击率)×${jiaLianJiPeculiar[id]}%`],
-      effect: [`连击率+${jiaLianJiPeculiar[id]}%`],
-    };
-    if (Array.isArray(item.peculiar)) {
-      item.peculiar.unshift(effect);
-    } else {
-      item.peculiar = [effect];
-    }
-  }
-  // 加暴击
-  if (jiaBaoJiPeculiar[id]) {
-    const effect = {
-      name: '加暴击',
-      condition: '在武功面板上',
-      // effect: [`暴击率增加(100-当前暴击率)×${jiaLianJiPeculiar[id]}%`],
-      effect: [`暴击率+${jiaBaoJiPeculiar[id]}%`],
-    };
-    if (Array.isArray(item.peculiar)) {
-      item.peculiar.unshift(effect);
-    } else {
-      item.peculiar = [effect];
-    }
-  }
+  // 外功招式特效
+  // 所有特效
+  const arr = [];
   if (moveNum > 1) {
-    // 外功招式特效
-    // 所有特效
-    const arr = [];
     // 基础特效
     const arrBase = [];
     const typeKey = `${type}Base`;
@@ -507,7 +357,168 @@ export function formatKungfu(info = {}) {
         }
       }
     }
-    item.move = arr;
+  }
+  return arr;
+}
+
+/**
+ * 获取专属效果
+ * @param id
+ * @param peculiar
+ */
+function getPeculiar(id, peculiar) {
+  // 秘技
+  let peculiarArr = [];
+  for (let key in stuntData) {
+    let {name, condition, effect, kungfu, type} = stuntData[key];
+    if (!kungfu) {
+      continue;
+    }
+    if (!kungfu[id]) {
+      let flag = false;
+      for (let k in kungfu) {
+        if (Array.isArray(kungfu[k])) {
+          if (kungfu[k].includes(id)) {
+            flag = true;
+            break;
+          }
+        }
+      }
+      if (!flag) {
+        continue;
+      }
+    }
+    const arr = [];
+    let other = '';
+    for (let k in kungfu) {
+      if (k === 'other') {
+        other = kungfu[k];
+        continue;
+      }
+      if (Array.isArray(kungfu[k])) {
+        let item = kungfuAll[k].name;
+        for (let j of kungfu[k]) {
+          item += `/${kungfuAll[j].name}`;
+        }
+        arr.push(item);
+      } else {
+        arr.push(kungfuAll[k].name);
+      }
+    }
+    condition = (arr.length > 1 ? '' : '修炼') + arr.join('+');
+    if (type === 2) {
+      other += '（需都在武功面板）';
+    }
+    if (other) {
+      condition += (arr.length > 0 ? '，' : '') + other;
+    }
+    peculiarArr.push({
+      id,
+      name,
+      condition,
+      effect,
+    });
+  }
+  // 其他效果
+  if (Array.isArray(peculiar)) {
+    for (let item of peculiar) {
+      if (typeof item === 'string') {
+        continue;
+      }
+      peculiarArr.push(item);
+    }
+  }
+  // 加连击
+  if (jiaLianJiPeculiar[id]) {
+    peculiarArr.push({
+      name: '加连击',
+      condition: '在武功面板上',
+      effect: [`连击率+${jiaLianJiPeculiar[id]}%`],
+    });
+  }
+  // 加暴击
+  if (jiaBaoJiPeculiar[id]) {
+    peculiarArr.push({
+      name: '加暴击',
+      condition: '在武功面板上',
+      effect: [`暴击率+${jiaBaoJiPeculiar[id]}%`],
+    });
+  }
+  return peculiarArr;
+}
+
+/**
+ * 格式化武功说明
+ * @param info
+ * @returns {any}
+ */
+export function formatKungfu(info = {}) {
+  const item = JSON.parse(JSON.stringify(info));
+  const {
+    id,
+    level,
+    sect,
+    type,
+    internal,
+    initiative,
+    peculiar,
+    addition,
+    condition,
+    power,
+    range,
+    get: learn,
+  } = item;
+  if (!item.cheat) {
+    item.cheat = item.name;
+  }
+  item.sectName = sectAll[sect]?.name ?? '';
+  item.get = getLearn({
+    sect,
+    level,
+    other: learn,
+  });
+  // 获取属性加成
+  item.addition = getAttr({
+    type,
+    level,
+    internal,
+    other: addition,
+  });
+  // 获取学习条件
+  item.condition = getCondition({
+    type,
+    level,
+    internal,
+    other: condition,
+  });
+  // 威力
+  item.power = getPower({
+    type,
+    level,
+    internal,
+    other: power,
+  });
+  // 攻击范围
+  item.range = getRange({
+    type,
+    level,
+    other: range,
+  });
+  // 一脉相承
+  item.inherit = getInherit(id);
+  // 武功招式
+  item.move = getMove(id);
+  // 专属效果
+  item.peculiar = getPeculiar(id, peculiar);
+  // 内功主运特效
+  if (Array.isArray(initiative)) {
+    const arr = [];
+    for (let key of initiative) {
+      if (typeof internalMap[key] === 'function') {
+        arr.push(internalMap[key](level));
+      }
+    }
+    item.initiative = arr;
   }
   return item;
 }

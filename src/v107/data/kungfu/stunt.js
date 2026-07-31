@@ -349,7 +349,8 @@ export default {
   34: {
     id: 34,
     name: '金蚕盅',
-    condition: '暂无',
+    kungfu: {120: true, 229: true, 334: true, 452: true},
+    cheat: {},
     effect: [
       '攻击时概率在目标体内种下盅，每次敌方行动前让敌方损失生命值，并小概率干扰敌方行动，让敌方放弃攻击行为',
     ],
