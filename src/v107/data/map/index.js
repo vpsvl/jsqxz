@@ -15,17 +15,8 @@ export const bookMap = {
   bi: '碧血剑',
   yuan: '鸳鸯刀',
 };
-// 装备类型
-export const equipmentMap = {
-  fist: '拳指',
-  sword: '剑',
-  knife: '刀',
-  special: '奇门',
-  armor: '防具',
-  mount: '坐骑',
-};
 // 武功类型
-export const kungfuTypeMap = {
+export const artTypeMap = {
   1: '拳掌',
   2: '指腿',
   3: '剑法',
@@ -35,6 +26,24 @@ export const kungfuTypeMap = {
   7: '轻功',
   8: '杂学',
 };
+// 物品类型
+export const itmTypeMap = {
+  0: '秘籍',
+  1: '拳掌',
+  2: '指腿',
+  3: '剑法',
+  4: '刀法',
+  5: '奇门',
+  6: '内功',
+  7: '轻功',
+  8: '杂学',
+  11: '武器',
+  12: '防具',
+  13: '坐骑',
+  21: '剧情',
+  22: '丹药',
+  23: '暗器',
+};
 // 等级
 export const levelMap = {
   1: '初阶',
@@ -43,7 +52,7 @@ export const levelMap = {
   4: '绝学',
 };
 // 内力
-export const internalTypeMap = {
+export const innerTypeMap = {
   0: '调和',
   1: '阴内',
   2: '阳内',
@@ -51,15 +60,6 @@ export const internalTypeMap = {
   9: '无',
   '-': '无',
   '': '无',
-};
-// 商店
-export const shopMap = {
-  xiaocun: '小村',
-  yangzhou: '扬州',
-  cangzhou: '沧州',
-  dali: '大理',
-  longmen: '龙门客栈',
-  luoyang: '洛阳',
 };
 
 // 门派编码

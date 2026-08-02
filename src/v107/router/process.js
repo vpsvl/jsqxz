@@ -41,12 +41,12 @@ export default {
       },
     },
     {
-      path: 'fortune',
+      path: 'luk',
       component: () => import('@/v107/views/process/table.vue'),
-      name: 'processFortune107',
+      name: 'processLuk107',
       meta: {
         title: '江湖轶事',
-        type: 'fortune',
+        type: 'luk',
       },
     },
     {

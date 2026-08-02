@@ -1,7 +1,6 @@
 <template>
   <div class="v-search">
     <div class="v-search-item">
-      <span class="item-label">名称:</span>
       <v-input class="item-value" placeholder="名称/效果" v-model="params.keyword"></v-input>
     </div>
     <div class="v-search-item">

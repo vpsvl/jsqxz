@@ -1,4 +1,4 @@
-import talentAll from '@/v107/data/person/talent';
+import talentAll from '@/v107/data/chr/talent';
 import talentStr from './talent';
 import stateStr from './state';
 
@@ -77,8 +77,8 @@ export function formatState() {
 
 // function toArr() {
 //   const arr = [];
-//   for (let id in kungfuAll) {
-//     const {name, move} = kungfuAll[id];
+//   for (let id in artAll) {
+//     const {name, move} = artAll[id];
 //     let moveStr = '';
 //     for (let item of move) {
 //       moveStr += `  {"${item}"},\n`;

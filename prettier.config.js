@@ -9,7 +9,7 @@ const config = {
   // 对象{}里前后空格
   bracketSpacing: false,
   htmlWhitespaceSensitivity: 'ignore',
-  printWidth: 100,
+  printWidth: 40,
   // 保持对象key的引号 "as-needed", "consistent" or "preserve"
   quoteProps: 'as-needed',
   // tab 代码补全

@@ -1,8 +1,18 @@
 <template>
-  <div class="app" :class="{'is-less-window': state.lessWindow}">
+  <div
+    class="app"
+    :class="{
+      'is-less-window':
+        state.lessWindow,
+    }"
+  >
     <header-nav></header-nav>
-    <router-view class="app-view"></router-view>
-    <v-loading :loading="state.loading"></v-loading>
+    <router-view
+      class="app-view"
+    ></router-view>
+    <v-loading
+      :loading="state.loading"
+    ></v-loading>
   </div>
 </template>
 
@@ -26,10 +36,12 @@ const state = reactive({
 });
 
 onMounted(() => {
-  const media = window.matchMedia('screen and (max-width: 600px)');
+  const media = window.matchMedia(
+    'screen and (max-width: 600px)',
+  );
   state.lessWindow = media.matches;
   state.menuVisible = !media.matches;
-  media.onchange = e => {
+  media.onchange = (e) => {
     state.lessWindow = e.matches;
     state.menuVisible = !e.matches;
   };
@@ -37,7 +49,7 @@ onMounted(() => {
 
 watch(
   () => route.name,
-  val => {
+  (val) => {
     if (state.lessWindow) {
       state.menuVisible = false;
     }
@@ -45,14 +57,17 @@ watch(
     if (version === state.version) {
       return;
     }
-    state.version = Number.isNaN(version) || !versionAll[version] ? versionMax : version;
+    state.version =
+      Number.isNaN(version) || !versionAll[version]
+        ? versionMax
+        : version;
   },
 );
 
 provide('state', state);
 
 // import pinyin from 'pinyin';
-// import data from '@/data/kungfu/stunt';
+// import data from '@/data/art/secret';
 // function toPinyin(arr) {
 //   const list = arr.map((item) => {
 //     const py = pinyin(item.name, {style: 'normal'}).flat();
@@ -101,7 +116,9 @@ provide('state', state);
   background: #f6f5f1;
 
   .app-view {
-    height: calc(100% - var(--header-height) - 10px);
+    height: calc(
+      100% - var(--header-height) - 10px
+    );
   }
 }
 

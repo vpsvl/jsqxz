@@ -13,7 +13,7 @@ import yi from './yi';
 import bi from './bi';
 import yuan from './yuan';
 import start from './start';
-import fortune from './fortune';
+import luk from './luk';
 import huashan from './huashan';
 import wudao from './wudao';
 
@@ -33,7 +33,7 @@ export default {
   bi,
   yuan,
   start,
-  fortune,
+  luk,
   huashan,
   wudao,
 };
