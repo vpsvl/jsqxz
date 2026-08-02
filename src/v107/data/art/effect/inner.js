@@ -269,6 +269,7 @@ export function chongXue(lv) {
     effect: [`每${timeSequence[lv]}时序清除1点封穴`],
   };
 }
+
 /**
  * 增加自身效果类
  */
@@ -961,6 +962,47 @@ export function yunQiBiHuo(lv) {
   };
 }
 
+export function mianYiSuoZu(lv) {
+  return {
+    id: 618,
+    name: `免疫锁足 Lv${lv}`,
+    effect: [`受到锁足时${lv * 15}%概率免疫锁足`],
+  };
+}
+
+export function duTi(lv) {
+  return {
+    id: 619,
+    name: `毒体 Lv${lv}`,
+    effect: [`${lv * 15}%概率不受中毒状态的影响`],
+  };
+}
+
+export function bingTi(lv) {
+  return {
+    id: 620,
+    name: `冰体 Lv${lv}`,
+    effect: [`${lv * 15}%概率不受冰封状态的影响`],
+  };
+}
+
+export function huoTi(lv) {
+  return {
+    id: 621,
+    name: `火体 Lv${lv}`,
+    effect: [`${lv * 15}%概率不受灼烧状态的影响`],
+  };
+}
+
+export function xueTi(lv) {
+  return {
+    id: 622,
+    name: `血体 Lv${lv}`,
+    effect: [`${lv * 15}%概率不受流血状态的影响`],
+  };
+}
+
+
 /**
  * 增加属性类
  */
@@ -1172,6 +1214,7 @@ export function fengShenZhiLi1(lv) {
     effect: [`增加命中、格挡、闪避${lv * 5}%`],
   };
 }
+
 /**
  * 受击类
  */
@@ -1862,7 +1905,7 @@ export function buXi(lv) {
   return {
     id: 1014,
     name: `不息 Lv${lv}`,
-    effect: [`杀气被杀到-100，清除全部内伤，并恢复${lv * 5}%生命`],
+    effect: [`杀气被杀到-100，清除全部内伤，并恢复${lv * 5}%生命，每回合最多触发3次`],
   };
 }
 
@@ -2256,6 +2299,7 @@ export function fenJingNiMai(lv) {
     ],
   };
 }
+
 export function guangMingJingShi(lv) {
   return {
     id: 1054,
@@ -2274,7 +2318,7 @@ export function yunZhuanQianKun(lv) {
     id: 1055,
     name: `运转乾坤 Lv${lv}`,
     effect: [
-      '自身九格内的我方队友受到攻击时，转移攻击者的攻击落点到敌方友军处，新落点不会覆盖原范围内的我方友军，新范围内目标受全额伤害（无误伤），每次消耗400内力5体力',
+      '自身九格内的我方队友受到攻击时，12%概率转移攻击者的攻击落点到敌方友军处，新落点不会覆盖原范围内的我方友军，新范围内目标受全额伤害（无误伤），每次消耗400内力5体力',
       `（倚天邪线拿到天书后挑战摩尼可激活）`,
     ],
   };
@@ -2297,9 +2341,33 @@ export function jiuYinGuiYi(lv) {
     id: 1057,
     name: `九阴归一 Lv${lv}`,
     effect: [
-      '免疫debuff',
-      `攻击时给敌方增加3~5层迟缓状态，迟缓状态达到十层以上有${lv * 15}%概率会清空迟缓并触发【玄阴入体】：集气归0，天赋，奇穴，秘技，内功效果都不触发，需要10时序内消耗最大内力值10%（无内力则消耗生命值）来解除`,
+      '30%概率免疫debuff',
+      `攻击时给敌方增加3~5层迟缓状态，迟缓状态达到20层及以上有${lv * 15}%概率会清空迟缓并触发【玄阴入体】：集气归0，天赋，奇穴，秘技，内功效果都不触发，需要10时序内消耗最大内力值10%（无内力则消耗生命值）来解除`,
       `（射雕正线王重阳送九阴上部，邪线选化干戈为玉帛可激活）`,
+    ],
+  };
+}
+
+export function youDingSiGu(lv) {
+  return {
+    id: 1058,
+    name: `幽鼎饲蛊 Lv${lv}`,
+    effect: [
+      '以蛊虫饲养自身，以下DEBUFF触发不同的效果：',
+      '└中毒时激发【枯木蛊】，每点中毒增加自身的攻防轻各1点',
+      '└冰封时激发【玄冰蛊】，受到的伤害大于生命最大值20%时冻结自己5时序，且冻结期间免疫伤害；如果本身已经处于冻结状态则不会触发【玄冰蛊】',
+      '└灼烧时激发【火蝶蛊】，点燃五格内的所有敌方5时序（CD30时序）',
+      '└流血时激发【血魔母蛊】且在攻击者身上种下【血魔子蛊】10时序，拥有子蛊的敌人一起分担母蛊所受伤害',
+    ],
+  };
+}
+
+export function wanGuYinZhang(lv) {
+  return {
+    id: 1059,
+    name: `万蛊引瘴 Lv${lv}`,
+    effect: [
+      '受到致命伤害时概率触发【万蛊引瘴】，概率以身所激发的一种蛊毒代替此次伤害，并激活体内力的【命蛊】，【命蛊】激活期间燃烧生命最大值10%（战后恢复），回复生命最大值50%的生命点数，每回合最多触发一回合，每场战斗最多触发三次',
     ],
   };
 }

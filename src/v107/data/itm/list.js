@@ -4340,7 +4340,7 @@ export default {
   },
   641: {
     id: 641,
-    name: '万盅秘录',
+    name: '万蛊秘录',
     art: 452,
     type: 0,
   },
