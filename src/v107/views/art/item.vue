@@ -147,7 +147,7 @@ function handleArtInfo(info = {}) {
     return cacheInfo;
   }
   const item = formatArt(info);
-  sessionStorage.set(cacheKey, item);
+  sessionStorage.set(cacheKey, item, {day: 1});
   return item;
 }
 </script>

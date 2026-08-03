@@ -136,7 +136,7 @@ const info = computed(() => {
     '本门武功威力增加50，每200门派贡献额外增加50；主运本门内功，本门武功威力增加：初阶内功50，中阶内功100，高阶内功150，绝学内功200，主运非本门内功威力加成减半',
     '修炼本门派武功，增加伤害5%；修炼本门派武功大于3个，增加伤害10%；修炼本门派武功大于7个，增加伤害20%，减少受到的伤害20%（取最大值）',
   ]);
-  sessionStorage.set(cacheKey, current);
+  sessionStorage.set(cacheKey, current, {day: 1});
   return current;
 });
 </script>

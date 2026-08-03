@@ -490,7 +490,7 @@ const secret = {
   63: {
     id: 63,
     name: '琴棋书画',
-    condition: {72: true, 73: true, 84: true, 142: true},
+    cheat: {72: true, 73: true, 84: true, 142: true},
     effect: [
       '持摇琴：威力+300',
       '└琴音悦耳：攻击不造成怒气，100%发动',

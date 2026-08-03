@@ -74,9 +74,11 @@ watch(() => route.name, () => {
   }
   try {
     state.loading = true;
-    tbody.value = allData.value.filter(item => {
+    tbody.value = [];
+    for (let chr of allData.value) {
+      const item = JSON.parse(JSON.stringify(chr));
       if (item.type !== type) {
-        return false;
+        continue;
       }
       const talentArr = [];
       const fortuneArr = [];
@@ -87,9 +89,9 @@ watch(() => route.name, () => {
       }
       item.talent = talentArr;
       item.fortune = fortuneArr;
-      return true;
-    });
-    sessionStorage.set(cacheKey, tbody.value);
+      tbody.value.push(item);
+    }
+    sessionStorage.set(cacheKey, tbody.value, {day: 1});
     state.loading = false;
   } catch (e) {
     tbody.value = [];
