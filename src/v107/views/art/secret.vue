@@ -105,18 +105,15 @@ function search() {
   tbody.value = data.value.filter(item => {
     const {name, condition, effect} = item;
     const reg = new RegExp(params.value.keyword, 'i');
-    let flag = reg.test(name) || reg.test(condition);
-    if (!flag) {
-      for (let item of effect) {
-        if (reg.test(item)) {
-          flag = true;
-          break;
-        }
+    if (reg.test(name) || reg.test(condition)) {
+      return true;
+    }
+    for (let item of effect) {
+      if (reg.test(item)) {
+        return true;
       }
     }
-    if (flag) {
-      tbody.value.push(secretData[key]);
-    }
+    return false;
   });
 }
 

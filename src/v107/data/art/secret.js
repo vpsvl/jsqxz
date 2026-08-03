@@ -1,3 +1,13 @@
+import itmAll from '@/v107/data/itm/list';
+import artAll from '@/v107/data/art/list';
+
+function getArtNameByCheatId(id) {
+  if (!itmAll[id] || !artAll[itmAll[id].art]) {
+    return '';
+  }
+  return artAll[itmAll[id].art].name;
+}
+
 // type 0不显示 1秘技 2组合
 const secret = {
   1: {
@@ -56,10 +66,9 @@ const secret = {
     name: '桃花绝技',
     cheat: {95: true, 101: true, 123: true},
     effect: [
-      '弹指神通/落英神剑掌/玉箫剑法威力+200',
-      '弹指神通：必暴击，气攻+1500',
-      '落英神剑掌：攻击范围变为可移动，并根据敌方内力耗损量增加伤害',
-      '玉箫剑法：攻击距离提升至8格，有60%概率冰封',
+      `${getArtNameByCheatId(95)}：威力+200，必暴击，气攻+1500`,
+      `${getArtNameByCheatId(101)}：威力+200，攻击范围变为可移动，并根据敌方内力耗损量增加伤害`,
+      `${getArtNameByCheatId(123)}：威力+200，攻击距离提升至8格，有60%概率冰封`,
     ],
     type: 1,
   },
@@ -68,8 +77,8 @@ const secret = {
     name: '紫气天罗',
     cheat: {91: true, 104: true, 108: true, 275: true},
     effect: [
-      '寒冰绵掌/白驼雪山掌/玄冥神掌/化骨绵掌威力提升300点',
-      '寒冰绵掌/白驼雪山掌/玄冥神掌/化骨绵掌攻击随机附加1~3层“冰冻状态”，每层减缓1%集气速度，上限50层',
+      `${getArtNameByCheatId(91)}/${getArtNameByCheatId(104)}/${getArtNameByCheatId(108)}/${getArtNameByCheatId(275)}威力提升300点`,
+      `${getArtNameByCheatId(91)}/${getArtNameByCheatId(104)}/${getArtNameByCheatId(108)}/${getArtNameByCheatId(275)}攻击随机附加1~3层“冰冻状态”，每层减缓1%集气速度，上限50层`,
       '被攻击时冻结敌人5时序',
     ],
     type: 1,
@@ -95,7 +104,7 @@ const secret = {
       491: true,
     },
     effect: [
-      '五毒神掌/冰蚕毒掌/五毒神功/连环腐尸毒/千蛛万毒手威力提升500',
+      `${getArtNameByCheatId(110)}/${getArtNameByCheatId(338)}/${getArtNameByCheatId(267)}/${getArtNameByCheatId(452)}/${getArtNameByCheatId(491)}威力提升500`,
       '行动前对全场敌人用毒，并概率叠加负面状态',
     ],
     type: 1,
@@ -114,7 +123,7 @@ const secret = {
     name: '铁甲',
     cheat: {100: true, 507: true, 526: true},
     effect: [
-      '主运铁布衫，护甲提升20%，被攻击时20%概率抵挡生命最大值2%伤害',
+      `主运${getArtNameByCheatId(526)}，护甲提升20%，被攻击时20%概率抵挡生命最大值2%伤害`,
     ],
     type: 1,
   },
@@ -138,7 +147,7 @@ const secret = {
     effect: [
       '气防增加1000，免疫破绽，免疫暴击伤害',
       '每50点怒气增加1次额外连击',
-      '攻击时50%概率（暴怒必定）触发飞絮劲：攻击必中并追加100（主运九阴神功追加200）点真实伤害',
+      `攻击时50%概率（暴怒必定）触发飞絮劲：攻击必中并追加100（主运${getArtNameByCheatId(84)}追加200）点真实伤害`,
     ],
     type: 1,
   },
@@ -147,8 +156,8 @@ const secret = {
     name: '血战沙场',
     cheat: {336: true, 337: true, 386: true},
     effect: [
-      '使用岳家枪法/岳王散手攻击时对7×7范围内敌人造成10~20点伤害1次（本场战斗每击杀一人可累计1次，每50点怒气增加1次，暴怒额外增加2次）',
-      '学习岳家枪法/岳王散手，另一门需求减40',
+      `使用${getArtNameByCheatId(337)}/${getArtNameByCheatId(386)}攻击时对7×7范围内敌人造成10~20点伤害1次（本场战斗每击杀一人可累计1次，每50点怒气增加1次，暴怒额外增加2次）`,
+      `学习${getArtNameByCheatId(337)}/${getArtNameByCheatId(386)}，另一门需求减40`,
     ],
     type: 1,
   },
@@ -165,9 +174,9 @@ const secret = {
     cheat: {81: true, 90: true, 324: true},
     effect: [
       '破防目标30%',
-      '金刚掌：必暴击',
-      '般若掌：变为点攻，威力双倍（与天赋悲天佛怜不叠加）',
-      '十龙十象：主运龙象般若功，30%概率击晕目标',
+      `${getArtNameByCheatId(90)}：必暴击`,
+      `${getArtNameByCheatId(324)}：变为点攻，威力双倍（与天赋悲天佛怜不叠加）`,
+      `十龙十象：主运${getArtNameByCheatId(81)}，30%概率击晕目标`,
     ],
     type: 1,
   },
@@ -176,7 +185,7 @@ const secret = {
     name: '洞虚玄门',
     cheat: {138: true, 375: true},
     effect: [
-      '玄虚刀法必封穴，神门十三剑必冰封灼烧',
+      `玄虚刀法必封穴，${getArtNameByCheatId(375)}必冰封灼烧`,
       '受到攻击30%概率使用双倍内力抵消一半伤害',
     ],
     type: 1,
@@ -197,7 +206,7 @@ const secret = {
     effect: [
       '攻击时距离敌人越近，增加的命中越多',
       '受到攻击时距离敌人越近，减少敌人的命中越多',
-      '使用持瑶琴攻击时，自身恢复1%当前血量（最多100）和5%已损失血量，减少10点内伤',
+      `使用${getArtNameByCheatId(180)}攻击时，自身恢复1%当前血量（最多100）和5%已损失血量，减少10点内伤`,
       '学有其中之一，则学习另一武功的兵器值需求-40',
     ],
     type: 1,
@@ -207,7 +216,7 @@ const secret = {
     name: '举火燎原',
     cheat: {135: true, 137: true, 141: true},
     effect: [
-      '阳内使用金乌刀法/燃木刀法/火焰刀法攻击时有50%概率触发，追加5~10时序的“点燃”状态',
+      `阳内使用${getArtNameByCheatId(135)}/${getArtNameByCheatId(137)}/${getArtNameByCheatId(141)}攻击时有50%概率触发，追加5~10时序的“点燃”状态`,
       '*目前武功本身就可以触发上述效果，并不需要激活秘技',
     ],
     type: 1,
@@ -218,7 +227,7 @@ const secret = {
     cheat: {72: true, 168: true, 170: true, 171: true},
     effect: [
       '暴击率+50%',
-      '使用伏魔杖法/无上大力杵/金刚伏魔圈/罗汉伏魔功攻击40%概率（装备伏魔禅杖增加(伏魔禅杖等级×2)%概率）触发：',
+      `使用${getArtNameByCheatId(72)}/${getArtNameByCheatId(168)}/${getArtNameByCheatId(170)}/${getArtNameByCheatId(171)}攻击40%概率（装备伏魔禅杖增加(伏魔禅杖等级×2)%概率）触发：`,
       '└如果造成的伤害<300，则伤害增加300',
       '└追加10%气攻值的伤害（暴怒翻倍）',
     ],
@@ -229,7 +238,7 @@ const secret = {
     name: '金乌映雪',
     cheat: {126: true, 141: true},
     effect: [
-      '金乌刀法/雪山剑法攻击时触发灼烧必冰封，触发冰封必灼烧',
+      `${getArtNameByCheatId(126)}/${getArtNameByCheatId(141)}攻击时触发灼烧必冰封，触发冰封必灼烧`,
     ],
     type: 1,
   },
@@ -246,7 +255,7 @@ const secret = {
     cheat: {119: true, 122: true},
     effect: [
       '连击率+30%，剑法攻击必连击',
-      '使用全真剑法/玉女剑法/玉女素心剑：',
+      `使用${getArtNameByCheatId(119)}/${getArtNameByCheatId(122)}/${getArtNameByCheatId(350)}：`,
       '└攻击范围+1',
       '└攻击时触发双剑合璧·攻：必击中对方破绽',
       '└被攻击时触发双剑合璧·守：免疫破绽，免疫被杀气到-100以下',
@@ -258,7 +267,7 @@ const secret = {
     name: '利刃寒锋',
     cheat: {158: true, 271: true, 298: true},
     effect: [
-      '修罗刀/阴风刀/沧溟刀法攻击时有50%概率（暴怒攻击必定）触发，追加10时序的“冻结”状态',
+      `${getArtNameByCheatId(158)}/${getArtNameByCheatId(271)}/${getArtNameByCheatId(298)}攻击时有50%概率（暴怒攻击必定）触发，追加10时序的“冻结”状态`,
     ],
     type: 1,
   },
@@ -279,7 +288,7 @@ const secret = {
     name: '罗汉金身',
     cheat: {72: true, 265: true},
     effect: [
-      '主运罗汉伏魔功、金刚不坏体或易筋神功，被攻击时30%概率第一击伤害降低50%',
+      `主运${getArtNameByCheatId(72)}/${getArtNameByCheatId(85)}/${getArtNameByCheatId(265)}，被攻击时30%概率第一击伤害降低50%`,
     ],
     type: 1,
   },
@@ -384,7 +393,7 @@ const secret = {
     name: '虎啸龙吟',
     cheat: {322: true, 381: true},
     effect: [
-      '攻击时20%概率触发“虎啸”或“龙吟”（擒龙手/虎爪绝户手概率+20%，暴怒概率翻倍）：',
+      `攻击时20%概率触发“虎啸”或“龙吟”（${getArtNameByCheatId(322)}/${getArtNameByCheatId(381)}概率+20%，暴怒概率翻倍）：`,
       '└虎啸：使自身5格内的敌方混乱一回合（攻击不分敌我）',
       '└龙吟：使全体敌方集气位置倒退300',
     ],
@@ -436,7 +445,7 @@ const secret = {
     name: '刀剑归真',
     cheat: {117: true, 136: true},
     effect: [
-      '胡家刀法/苗家剑法攻击时概率触发：攻击效果提升40%，追加1500气攻，概率出多次连击，最多4连',
+      `${getArtNameByCheatId(117)}/${getArtNameByCheatId(136)}攻击时概率触发：攻击效果提升40%，追加1500气攻，概率出多次连击，最多4连`,
       '学有其中之一，则学习另一武功的兵器值需求-40',
     ],
     type: 1,
@@ -453,8 +462,8 @@ const secret = {
     name: '易筋锻骨',
     cheat: {72: true, 85: true, 265: true},
     effect: [
-      '易筋锻骨：主运易筋神功，40%概率免疫杀气，免疫吸内、吸血、吸体、吸怒。',
-      '金刚不坏：主运易筋神功，被攻击必出“金刚不坏”特效，高优先级降低30%所承受伤害与杀气，免疫封穴。',
+      `易筋锻骨：主运${getArtNameByCheatId(85)}，40%概率免疫杀气，免疫吸内、吸血、吸体、吸怒`,
+      `金刚不坏：主运${getArtNameByCheatId(85)}，被攻击必出“金刚不坏”特效，高优先级降低30%所承受伤害与杀气，免疫封穴`,
       '罗汉伏魔：攻击时必出“罗汉伏魔”特效 （加成1.5倍）',
     ],
     type: 1,
@@ -490,19 +499,19 @@ const secret = {
   63: {
     id: 63,
     name: '琴棋书画',
-    cheat: {72: true, 73: true, 84: true, 142: true},
+    cheat: {169: true, 172: true, 180: true, 181: true},
     effect: [
-      '持摇琴：威力+300',
+      `${getArtNameByCheatId(180)}：威力+300`,
       '└琴音悦耳：攻击不造成怒气，100%发动',
       '└菩提清心：使敌方怒气减半，概率发动',
-      '棋盘招式：威力+300',
+      `${getArtNameByCheatId(181)}：威力+300`,
       '└棋高一着：追加1200气攻，100%发动',
       '└星罗棋布：额外提升1000气攻，概率发动',
-      '妙笔丹青：威力+300',
-      '└画地为牢：使妙笔丹青攻击附带冰封，高概率发动',
-      '└江山如画：大幅提升妙笔丹青冰封效果，概率发动',
-      '倚天屠龙功：威力+300',
+      `${getArtNameByCheatId(169)}：威力+300`,
       '└秉笔直书：攻击必定造成封穴，且伤害提升20%，概率发动',
+      `${getArtNameByCheatId(172)}：威力+300`,
+      '└画地为牢：攻击附带冰封，高概率发动',
+      '└江山如画：大幅提升冰封效果，概率发动',
     ],
     type: 1,
   },
@@ -559,7 +568,7 @@ const secret = {
     name: '我欲成仙',
     cheat: {99: true, 105: true, 340: true, 341: true},
     effect: [
-      '天山六阳掌/天山折梅手/寒袖拂穴/白虹掌力威力+250，攻击必三连',
+      `${getArtNameByCheatId(99)}/${getArtNameByCheatId(105)}/${getArtNameByCheatId(340)}/${getArtNameByCheatId(341)}威力+250，攻击必三连`,
     ],
     type: 1,
   },
@@ -569,7 +578,7 @@ const secret = {
     cheat: {97: true, 115: true, 295: true},
     effect: [
       '【太极奥义】100%概率触发',
-      '主运太极神功，使用太极拳法或太极剑法，蓄力值≥500或太极之形≥5且怒气值≥50时，消耗50点怒气值，根据当前生命值跟内力值追加大范围伤害，生命越低/内力越高伤害越高',
+      `主运${getArtNameByCheatId(295)}，使用${getArtNameByCheatId(97)}/${getArtNameByCheatId(115)}，蓄力值≥500或太极之形≥5且怒气值≥50时，消耗50点怒气值，根据当前生命值跟内力值追加大范围伤害，生命越低/内力越高伤害越高`,
     ],
     type: 1,
   },
@@ -585,7 +594,7 @@ const secret = {
     name: '九阴神爪',
     cheat: {84: true, 102: true},
     effect: [
-      '主运九阴神功，使用九阴白骨爪必触发九阴神爪极意',
+      `主运${getArtNameByCheatId(84)}，使用${getArtNameByCheatId(107)}必触发九阴神爪极意`,
       '九阴神爪极意：攻击变为7×7面攻,必连击，追加1500气攻',
     ],
     type: 2,
@@ -595,8 +604,8 @@ const secret = {
     name: '如来神掌',
     cheat: {88: true},
     effect: [
-      '须弥山神掌攻击时概率触发（拳掌奇穴会额外增加概率）',
-      '目标生命值低于50%触发概率为30%，不低于50%触发概率为10%，主运易筋神功额外增加20%概率',
+      `${getArtNameByCheatId(88)}攻击时概率触发（拳掌奇穴会额外增加概率）`,
+      `目标生命值低于50%触发概率为30%，不低于50%触发概率为10%，主运${getArtNameByCheatId(85)}额外增加20%概率`,
       '攻击变为7×7面攻，追加1200气攻，附加目标最大生命值8%的真伤',
       '对生命值低于50%的目标有(目标损失生命值÷目标最大生命值)×30%固定概率变为如来神掌·灭，直接斩杀目标',
     ],
@@ -607,7 +616,7 @@ const secret = {
     name: '剑气碧烟横',
     cheat: {113: true, 354: true},
     effect: [
-      '使用六脉神剑攻击40%概率触发，攻击距离越远伤害越高',
+      `使用${getArtNameByCheatId(113)}攻击40%概率触发，攻击距离越远伤害越高`,
     ],
     type: 2,
   },
@@ -615,7 +624,7 @@ const secret = {
     id: 'zhenBiXieJianFa',
     name: '真辟邪剑法',
     cheat: {78: true, 93: true},
-    effect: ['习得葵花神功后，辟邪剑法威力+1000'],
+    effect: [`习得${getArtNameByCheatId(93)}后，${getArtNameByCheatId(78)}威力+1000`],
     type: 2,
   },
   chenSuLieZhang: {
@@ -634,8 +643,8 @@ const secret = {
     name: '金刚伏魔阵',
     cheat: {171: true},
     effect: [
-      '金刚伏魔圈护体：2人学会金刚伏魔圈，提升15%防御且气防+500',
-      '真·金刚伏魔圈护体： 2人以上学会金刚伏魔圈，提升30%防御且气防+1000',
+      `金刚伏魔圈护体：2人学会${getArtNameByCheatId(171)}，提升15%防御且气防+500`,
+      `真·金刚伏魔圈护体： 2人以上学会${getArtNameByCheatId(171)}，提升30%防御且气防+1000`,
     ],
     type: 0,
   },
