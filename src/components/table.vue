@@ -71,14 +71,15 @@ const props = defineProps({
 const emit = defineEmits(['tr-click', 'sort']);
 const state = inject('state');
 const sortActive = ref('');
-const columns = computed(() => props.cols.filter((item) => !item.hidden));
+const columns = computed(() => props.cols.filter(item => !item.hidden));
 
 onBeforeRouteLeave(() => {
   sortActive.value = '';
 });
 
 function sort(key, direction) {
-  sortActive.value = key + direction;
+  const dirKey = key + direction;
+  sortActive.value = sortActive.value === dirKey ? '' : dirKey;
   emit('sort', key, direction);
 }
 

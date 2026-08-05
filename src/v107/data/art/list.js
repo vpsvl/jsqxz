@@ -778,7 +778,7 @@ export default {
   65: {
     id: 65,
     name: '燃木刀法',
-    get: ['道德≥80，少林寺与玄慈对话'],
+    get: ['道德≥80，少林寺与玄慈对话（有bug无法获得）'],
     sect: 29,
     level: 3,
     inner: 2,
@@ -5174,18 +5174,12 @@ export default {
   },
   430: {
     id: 430,
-    name: '踏云追风',
-    get: [],
+    name: '天霜拳',
+    get: ['天下第一武道会第一名奖励'],
     sect: 31,
-    level: 4,
-    inner: 2,
-    initiative: [
-      'shanBiZengQiang',
-      'mingZhongZengQiang',
-      'fengMei',
-      'taYunZhuiFeng',
-    ],
-    type: 7,
+    level: 3,
+    inner: 1,
+    type: 1,
   },
   431: {
     id: 431,

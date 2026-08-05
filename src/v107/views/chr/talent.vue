@@ -12,6 +12,11 @@
     </div>
   </div>
   <v-table class="v-table-art-talent" :cols="thead" :data="tbody" :y="scrollY">
+    <template #name="{row}">
+      <span :class="`level-${row.level}`">
+        {{ row.name }}
+      </span>
+    </template>
     <template #effect="{row}">
       <div class="td-block">
         <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">
@@ -62,8 +67,13 @@ const thead = [
     hidden: state.lessWindow,
   },
   {
+    key: 'level',
+    name: '等级',
+  },
+  {
     key: 'score',
     name: '点数',
+    hidden: true,
   },
 ];
 const params = ref({
