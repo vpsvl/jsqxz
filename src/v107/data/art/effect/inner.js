@@ -2373,6 +2373,16 @@ export function wanGuYinZhang(lv) {
   };
 }
 
+export function nuShenFaXiang(lv) {
+  return {
+    id: 1060,
+    name: `怒身法相 Lv${lv}`,
+    effect: [
+      '攻击不会造成怒气，暴怒时集气速度3倍、额外减少受到的伤害20%、免疫杀气',
+    ],
+  };
+}
+
 /**
  * 轻功类
  */

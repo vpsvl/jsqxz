@@ -88,7 +88,7 @@ function init() {
       condition += (arr.length > 0 ? '，' : '') + other;
     }
     if (type === 2) {
-      condition += '（非秘技，需都在武功面板）';
+      condition += '（非秘技，需在武功面板）';
     }
     data.value.push({
       id,

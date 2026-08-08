@@ -1369,6 +1369,12 @@ export default {
     talent: [678, 9972, 9990],
     type: 'yi',
   },
+  681: {
+    id: 681,
+    name: '小虾米',
+    talent: [681],
+    type: 'special',
+  },
   721: {
     id: 721,
     name: '酒神',

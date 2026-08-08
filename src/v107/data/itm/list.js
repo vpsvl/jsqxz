@@ -4397,4 +4397,16 @@ export default {
     art: 452,
     type: 0,
   },
+  642: {
+    id: 642,
+    name: '捆魔鞭法',
+    art: 453,
+    type: 0,
+  },
+  643: {
+    id: 643,
+    name: '大金刚神力',
+    art: 454,
+    type: 0,
+  },
 };

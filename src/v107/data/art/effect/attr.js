@@ -152,13 +152,13 @@ export function getCondition({
     if (level > 1) {
       outCondition = `(${outConditionMap[level]}+${outConditionGap[level]}×周目数÷100)`;
     }
-    condition += `${artTypeMap[type]}${outCondition} `;
+    condition += `${artTypeMap[type]}≥${outCondition} `;
   } else if (type === 6) {
     // 内功学习条件
-    condition += `内力最大值${innerConditionMap[level]} `;
+    condition += `内力最大值≥${innerConditionMap[level]} `;
   } else if (type === 7) {
     // 轻功学习条件
-    condition += `轻功${flyConditionMap[level]} `;
+    condition += `轻功≥${flyConditionMap[level]} `;
   }
   // 其他条件
   if (other) {
@@ -204,10 +204,10 @@ const rangeMap = {
     4: {shape: 'X', move: 4, width: 5, height: 5},
   },
   2: {
-    1: {shape: '«', move: 3, width: 3, height: 6},
-    2: {shape: '«', move: 3, width: 3, height: 6},
-    3: {shape: '«', move: 3, width: 3, height: 7},
-    4: {shape: '«', move: 4, width: 3, height: 8},
+    1: {shape: '«', move: 1, width: 3, height: 6},
+    2: {shape: '«', move: 1, width: 3, height: 6},
+    3: {shape: '«', move: 1, width: 3, height: 7},
+    4: {shape: '«', move: 1, width: 3, height: 8},
   },
   3: {
     1: {shape: '米', move: 2, width: 5, height: 5},
@@ -222,10 +222,10 @@ const rangeMap = {
     4: {shape: '△', move: 4, width: 9, height: 5},
   },
   5: {
-    1: {shape: '十', move: 2, width: 9, height: 9},
-    2: {shape: '十', move: 2, width: 9, height: 9},
-    3: {shape: '十', move: 3, width: 9, height: 9},
-    4: {shape: '十', move: 4, width: 9, height: 9},
+    1: {shape: '十', move: 2, width: 11, height: 11},
+    2: {shape: '十', move: 2, width: 11, height: 11},
+    3: {shape: '十', move: 3, width: 11, height: 11},
+    4: {shape: '十', move: 4, width: 11, height: 11},
   },
   6: {
     1: {shape: '■', move: 2, width: 7, height: 7},
@@ -462,7 +462,7 @@ export function getTra({id, tra, isCheat = false}) {
       condition += (arr.length > 0 ? '，' : '') + other;
     }
     if (type === 2) {
-      condition += '（需都在武功面板）';
+      condition += '（需在武功面板）';
     }
     traArr.push({
       id: key,
