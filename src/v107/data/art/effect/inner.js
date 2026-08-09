@@ -878,7 +878,7 @@ export function mianYiFanShang(lv) {
   return {
     id: 607,
     name: `免疫反伤 Lv${lv}`,
-    effect: [`受到攻击时${lv * 20}%概率免疫反弹、斗转、反击`],
+    effect: [`攻击时${lv * 20}%概率免疫目标的反弹、斗转、反击`],
   };
 }
 

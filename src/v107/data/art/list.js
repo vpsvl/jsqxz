@@ -138,8 +138,8 @@ export default {
     tra: [
       {
         name: '强上内伤',
-        condition: '使用铁掌攻击，概率触发',
-        effect: ['无视对方气防追加12-15点内伤'],
+        condition: '使用铁掌攻击',
+        effect: ['60%概率追加12-15点内伤'],
       },
     ],
     type: 1,
@@ -256,16 +256,6 @@ export default {
     level: 4,
     inner: 1,
     move: [['bingFengBase', 'zhongDuBase']],
-    tra: [
-      {
-        name: '玄冥极意',
-        condition: '攻击时概率触发，暴怒必触发',
-        effect: [
-          '攻击无误伤',
-          '攻击范围变为面攻，并且追加1500气攻',
-        ],
-      },
-    ],
     type: 1,
   },
   22: {
@@ -317,14 +307,6 @@ export default {
     sect: 16,
     level: 4,
     inner: 1,
-    tra: [
-      {
-        name: '黯然极意',
-        condition:
-          '血量低于70%或者内伤大于30时，概率触发（血量越低，内伤越高，概率越高，暴怒必定触发）',
-        effect: ['攻击变为7×7面攻，无误伤，必破气防'],
-      },
-    ],
     type: 1,
   },
   26: {
@@ -345,18 +327,6 @@ export default {
       'hongJianYuLu',
     ],
     moveNum: 8,
-    tra: [
-      {
-        name: '降龙极意',
-        condition: '攻击时概率触发',
-        effect: ['攻击变为7×7面攻，无误伤，气攻提升至2300'],
-      },
-      {
-        name: '降龙三叠浪',
-        condition: '攻击时概率触发',
-        effect: ['降龙十八掌三连击'],
-      },
-    ],
     type: 1,
   },
   27: {
@@ -550,26 +520,9 @@ export default {
     inner: 2,
     tra: [
       {
-        name: '玄铁极意',
-        condition: '限定主角、杨过和神雕',
-        effect: [
-          '玄铁极意：攻击范围变为面攻，气攻1800',
-          '使用玄铁剑法攻击不出招式时概率发动，暴怒时必定发动',
-        ],
-      },
-      {
-        name: '重剑真传·浪如山涌剑如虹',
-        condition: '暴怒',
-        effect: ['暴怒触发大范围伤害'],
-      },
-      {
         name: '破尽天下',
-        condition: '需装备玄铁剑才能触发',
-        effect: [
-          '重剑无锋·破尽天下：',
-          '└无视一切必定破气防，且追加1000气攻',
-          '└暴击概率为(40+玄铁剑等级×10)%',
-        ],
+        condition: '需装备满级玄铁剑才能触发',
+        effect: ['气功+1000，必破气防，必暴击'],
       },
     ],
     type: 3,
@@ -802,13 +755,6 @@ export default {
     sect: 0,
     level: 4,
     inner: 1,
-    tra: [
-      {
-        name: '胡刀极意',
-        condition: '',
-        effect: ['攻击无误伤，攻击范围变为9*9面攻'],
-      },
-    ],
     type: 4,
   },
   68: {
@@ -935,16 +881,6 @@ export default {
     sect: 8,
     level: 4,
     inner: 2,
-    tra: [
-      {
-        name: '天下无狗',
-        condition:
-          '使用打狗棒法(极)攻击40%概率发动，暴怒必定发动',
-        effect: [
-          '攻击变为7×7面攻，攻击无误伤，气攻提升至2400',
-        ],
-      },
-    ],
     type: 5,
   },
   81: {
@@ -1932,8 +1868,8 @@ export default {
     tra: [
       {
         name: '颠动沧溟',
-        condition: '使用沧溟刀法攻击30%概率触发',
-        effect: ['额外杀气，且必定造成流血'],
+        condition: '使用沧溟刀法攻击',
+        effect: ['30%概率必定造成流血且气攻+1000'],
       },
     ],
     type: 4,
@@ -2028,13 +1964,6 @@ export default {
     level: 2,
     inner: 9,
     move: [['bingFengBase']],
-    tra: [
-      {
-        name: '女性专属',
-        condition: '',
-        effect: ['攻击&气攻提升20%'],
-      },
-    ],
     type: 3,
   },
   162: {
@@ -3676,16 +3605,6 @@ export default {
     condition: '指法70',
     addition: '带毒+1',
     move: [['bingFengBase', 'zhongDuBase']],
-    tra: [
-      {
-        name: '极意',
-        condition: '攻击时有30%概率触发，暴怒必触发',
-        effect: [
-          '攻击变为面攻，追加1000气功并引爆目标身上毒素',
-        ],
-      },
-      'duBuWuLin',
-    ],
     type: 1,
   },
   296: {
@@ -3759,10 +3678,11 @@ export default {
     inner: 9,
     tra: [
       {
-        name: '',
-        condition: '',
+        name: '宁氏一剑',
+        condition: '使用宁氏一剑攻击',
         effect: [
-          '攻击时50%概率给敌人添加虚弱状态，暴怒必触发',
+          '增加自身连击率30%，暴怒必连',
+          '60%概率（暴怒必定）附带破甲状态，减少目标25%防御力',
         ],
       },
     ],
@@ -4019,7 +3939,6 @@ export default {
     inner: 9,
     addition: '带毒+4',
     move: [['zhuoShaoBase']],
-    tra: [{effect: ['学会九阴神功后威力翻倍']}],
     type: 1,
   },
   329: {
@@ -4163,11 +4082,8 @@ export default {
     tra: [
       {
         name: '天之道',
-        condition: '攻击时概率触发',
-        effect: [
-          '附加生命最大值5%~10%的伤害',
-          '主运九阴真经时效果翻倍',
-        ],
+        condition: '攻击时(20+天书数量)%概率触发，暴怒必定触发',
+        effect: ['附加生命最大值5%的伤害，必破气防'],
       },
     ],
     type: 1,
