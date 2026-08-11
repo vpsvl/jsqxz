@@ -116,6 +116,15 @@ export default {
     level: 4,
     inner: 1,
     move: [['bingFengBase', 'zhongDuBase']],
+    ultimate: [
+      '',
+      '',
+      '',
+      'caiYunJianShui',
+      'xingLuoYunBu',
+      'yingFengHuiLang',
+      'tianRenWuShuai',
+    ],
     type: 2,
   },
   12: {
@@ -1394,6 +1403,15 @@ export default {
     sect: 0,
     level: 4,
     inner: 2,
+    ultimate: [
+      '',
+      '',
+      '',
+      'caiYunJianShui',
+      'xingLuoYunBu',
+      'yingFengHuiLang',
+      'tianRenWuShuai',
+    ],
     type: 1,
   },
   110: {
@@ -1403,6 +1421,15 @@ export default {
     sect: 0,
     level: 4,
     inner: 2,
+    ultimate: [
+      '',
+      '',
+      '',
+      'caiYunJianShui',
+      'xingLuoYunBu',
+      'yingFengHuiLang',
+      'tianRenWuShuai',
+    ],
     type: 3,
   },
   111: {
@@ -1412,6 +1439,15 @@ export default {
     sect: 0,
     level: 4,
     inner: 1,
+    ultimate: [
+      '',
+      '',
+      '',
+      'caiYunJianShui',
+      'xingLuoYunBu',
+      'yingFengHuiLang',
+      'tianRenWuShuai',
+    ],
     type: 4,
   },
   112: {
@@ -1421,6 +1457,15 @@ export default {
     sect: 0,
     level: 4,
     inner: 2,
+    ultimate: [
+      '',
+      '',
+      '',
+      'caiYunJianShui',
+      'xingLuoYunBu',
+      'yingFengHuiLang',
+      'tianRenWuShuai',
+    ],
     type: 5,
   },
   113: {
@@ -4128,7 +4173,7 @@ export default {
   346: {
     id: 346,
     name: '大慈大悲手',
-    get: ['沧州商店出售'],
+    get: ['大理商店出售'],
     sect: 1,
     level: 2,
     inner: 9,

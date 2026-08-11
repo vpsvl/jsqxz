@@ -1,4 +1,5 @@
 import itmAll from '@/v107/data/itm/list';
+// import artAll from '@/v107/data/art/list';
 
 const artCheatMap = {};
 
@@ -9,4 +10,13 @@ for (let id in itmAll) {
   }
 }
 
-export default artCheatMap;
+// const artNameId = {};
+//
+// for (let id in artAll) {
+//   artNameId[artAll[id].name] = id;
+// }
+
+export {
+  artCheatMap,
+  // artNameId,
+};

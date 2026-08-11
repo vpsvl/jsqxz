@@ -12,7 +12,7 @@ import secretData, {
 } from '@/v107/data/art/secret';
 import * as innerMap from '@/v107/data/art/effect/inner';
 import * as outMap from '@/v107/data/art/effect/out';
-import artCheatMap from '@/v107/data/itm/art';
+import {artCheatMap} from '@/v107/data/art/map';
 
 // 属性加成类型
 const attrTypeMap = {
