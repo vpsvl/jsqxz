@@ -47,7 +47,7 @@
 </template>
 
 <script setup>
-import {ref, onBeforeMount, inject} from 'vue';
+import {ref, onBeforeMount, inject, computed} from 'vue';
 import data from '@/v107/data/chr/talent';
 // import VPages from '@/components/pages.vue';
 
@@ -81,33 +81,40 @@ const params = ref({
 });
 const scrollY = ref(0);
 const tbody = ref([]);
+const allData = computed(() => {
+  const arr = [];
+  for (let id in data) {
+    const {name, effect, fortune, level} = data[id];
+    arr.push({
+      id,
+      name,
+      effect: effect.filter(i => import.meta.env.DEV || !/#hidden#$/.test(i)),
+      fortune,
+      level,
+    });
+  }
+  return arr;
+});
 
 function search() {
-  tbody.value = [];
-  for (let id in data) {
-    const {name, effect, fortune} = data[id];
-    const reg = new RegExp(params.value.keyword, 'i');
-    let flag = reg.test(name);
-    if (!flag) {
-      for (let item of effect) {
-        if (reg.test(item)) {
-          flag = true;
-          break;
-        }
-      }
-    }
-    if (!flag) {
-      for (let item of fortune) {
-        if (reg.test(item)) {
-          flag = true;
-          break;
-        }
-      }
-    }
-    if (flag) {
-      tbody.value.push(data[id]);
-    }
+  params.value.keyword = (params.value.keyword + '').replace(/[\[\]{}"', ]/g, '');
+  if (!params.value.keyword) {
+    tbody.value = [...allData.value];
+    return;
   }
+  const reg = new RegExp(params.value.keyword, 'i');
+  tbody.value = allData.value.filter(item => {
+    const keyType = {
+      name: 'string',
+      effect: 'object',
+      fortune: 'object',
+    };
+    let itemStr = '';
+    for (let key in keyType) {
+      itemStr += keyType[key] === 'object' ? JSON.stringify(item[key]) : item[key];
+    }
+    return reg.test(itemStr);
+  });
 }
 
 function changePage() {

@@ -58,14 +58,14 @@
         </div>
         <div class="td">
           <div class="td-block color-success">
-            *NPC处学习武功：中阶200贡献，高级400贡献+豪侠，绝学600贡献+宗师
+            *NPC处学习武功：中阶200贡献，高级400贡献+豪侠，绝学600贡献+宗师（需挑战门派掌门）
           </div>
           <div class="td-block color-success">
             <span v-if="active === 0">
               *江湖武功不能学习绝学，除秘籍本身能一脉相承的，都不能一脉相承
             </span>
             <span v-else>
-              *NPC处初阶中阶高阶可以一脉相承，绝学除秘籍本身能一脉相承的，都不能一脉相承
+              *NPC处可以初阶→中阶→高阶→绝学，由低到高一脉相承
             </span>
           </div>
           <div class="td-block" v-for="(item, index) of info.art" :key="index">

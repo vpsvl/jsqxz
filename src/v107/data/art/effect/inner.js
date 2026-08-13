@@ -310,7 +310,7 @@ export function houFaXianZhi(lv) {
   return {
     id: 304,
     name: `后发先至 Lv${lv}`,
-    effect: [`初始集气位置-500，每有一个人行动，则自身${lv * 10}%概率集气+${lv * 50}`],
+    effect: [`初始集气位置减少500（可被覆盖），每有一个人行动，则自身${lv * 10}%概率集气+${lv * 50}`],
   };
 }
 
@@ -1945,7 +1945,8 @@ export function buQu(lv) {
   return {
     id: 1019,
     name: `不屈 Lv${lv}`,
-    effect: [`集气位置小于0时，减少受到的伤害${lv * 25}%`],
+    // effect: [`集气位置小于0时，减少受到的伤害${lv * 25}%`],
+    effect: [`集气位置小于0时，受到伤害为0`],
   };
 }
 

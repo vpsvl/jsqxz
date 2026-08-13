@@ -84,7 +84,12 @@ watch(() => route.name, () => {
       const fortuneArr = [];
       for (let key of item.talent) {
         const {id, name, effect, level, fortune} = talentMap[key];
-        talentArr.push({id, name, effect, level});
+        talentArr.push({
+          id,
+          name,
+          effect: effect.filter(i => import.meta.env.DEV || !/#hidden#$/.test(i)),
+          level,
+        });
         fortuneArr.push(...fortune);
       }
       item.talent = talentArr;
