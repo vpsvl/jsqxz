@@ -27,7 +27,7 @@
               {{ item }}
             </div>
           </div>
-          <div class="td-block color-success" v-if="active !== 0">
+          <div class="td-block color-warn" v-if="active !== 0">
             *成为掌门人有更高的门派武功连爆和威力加成，获得掌门印记，战场上敌方的本门弟子自动反水
           </div>
         </div>
@@ -35,6 +35,7 @@
       <div class="tr">
         <div class="td">天赋</div>
         <div class="td">
+          <div class="td-block color-warn">*仅选择门派开局的可以获得</div>
           <div class="td-block" v-for="(item, index) of info.talent" :key="index">
             <div v-if="item.name">
               [
@@ -57,10 +58,10 @@
           <div class="td-block">武功</div>
         </div>
         <div class="td">
-          <div class="td-block color-success">
+          <div class="td-block color-warn">
             *NPC处学习武功：中阶200贡献，高级400贡献+豪侠，绝学600贡献+宗师（需挑战门派掌门）
           </div>
-          <div class="td-block color-success">
+          <div class="td-block color-warn">
             <span v-if="active === 0">
               *江湖武功不能学习绝学，除秘籍本身能一脉相承的，都不能一脉相承
             </span>
@@ -133,7 +134,7 @@ const info = computed(() => {
   }
   current.effect.push(...[
     '主运本门轻功，使用本门外功时命中+200',
-    '本门武功威力增加50，每200门派贡献额外增加50；主运本门内功，本门武功威力增加：初阶内功50，中阶内功100，高阶内功150，绝学内功200，主运非本门内功威力加成减半',
+    '本门武功威力增加50，每200门派贡献额外增加50；主运本门内功，本门武功威力增加：初阶内功50，中阶内功100，高阶内功150，绝学内功200，主运非本门内功此处威力加成减半',
     '修炼本门派武功，增加伤害5%；修炼本门派武功大于3个，增加伤害10%；修炼本门派武功大于7个，增加伤害20%，减少受到的伤害20%（取最大值）',
   ]);
   sessionStorage.set(cacheKey, current, {day: 1});

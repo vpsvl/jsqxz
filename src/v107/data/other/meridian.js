@@ -2,10 +2,10 @@ export default {
   name: '经脉',
   list: [
     {
-      name: '手三阴经（指腿专属）',
+      name: '手三阴经',
       list: [
         {
-          name: '手少阴经',
+          name: '手少阴经（指腿专属）',
           list: [
             {
               name: '裂石',

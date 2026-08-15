@@ -1017,7 +1017,7 @@ export default {
   90: {
     id: 90,
     name: '混元功',
-    get: ['碧血正大功坊宝箱获得'],
+    get: ['碧血大功坊宝箱获得', '碧血邪五仙教战胜何铁手'],
     sect: 9,
     level: 3,
     inner: 1,
@@ -4032,7 +4032,7 @@ export default {
     id: 333,
     name: '自创武功',
     get: [],
-    sect: 0,
+    sect: -1,
     level: 4,
     inner: 9,
     type: -1,

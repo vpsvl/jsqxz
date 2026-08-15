@@ -612,9 +612,9 @@ export function poQiJue1(lv) {
  * debuff类
  */
 
-function qiangHuaRangeNum(lv) {
+function qiangHuaRangeNum(lv, coe = 2) {
   let max = lv + 4;
-  let min = lv * 2;
+  let min = lv * coe;
   let range = `${min}~${max}`;
   if (max === min) {
     range = max;
@@ -754,7 +754,7 @@ export function qiangHuaZhongDu(lv) {
   return {
     id: 516,
     name: `强化中毒 Lv${lv}`,
-    effect: [`攻击追加中毒点数${qiangHuaRangeNum(lv)}点`],
+    effect: [`攻击${lv * 25}%概率追加中毒点数${qiangHuaRangeNum(lv, 5)}点`],
   };
 }
 
@@ -974,7 +974,7 @@ export function duTi(lv) {
   return {
     id: 619,
     name: `毒体 Lv${lv}`,
-    effect: [`${lv * 15}%概率不受中毒状态的影响`],
+    effect: [`不受中毒状态的影响`],
   };
 }
 
@@ -982,7 +982,7 @@ export function bingTi(lv) {
   return {
     id: 620,
     name: `冰体 Lv${lv}`,
-    effect: [`${lv * 15}%概率不受冰封状态的影响`],
+    effect: [`不受冰封状态的影响`],
   };
 }
 
@@ -990,7 +990,7 @@ export function huoTi(lv) {
   return {
     id: 621,
     name: `火体 Lv${lv}`,
-    effect: [`${lv * 15}%概率不受灼烧状态的影响`],
+    effect: [`不受灼烧状态的影响`],
   };
 }
 
@@ -998,10 +998,9 @@ export function xueTi(lv) {
   return {
     id: 622,
     name: `血体 Lv${lv}`,
-    effect: [`${lv * 15}%概率不受流血状态的影响`],
+    effect: [`不受流血状态的影响`],
   };
 }
-
 
 /**
  * 增加属性类
@@ -2379,7 +2378,8 @@ export function nuShenFaXiang(lv) {
     id: 1060,
     name: `怒身法相 Lv${lv}`,
     effect: [
-      '攻击不会造成怒气，暴怒时集气速度3倍、额外减少受到的伤害20%、免疫杀气',
+      // '攻击不会造成怒气，暴怒时集气速度3倍、额外减少受到的伤害20%、免疫杀气',
+      '暴怒时集气速度3倍、额外减少受到的伤害20%、免疫杀气',
     ],
   };
 }
