@@ -87,7 +87,7 @@ export default {
       {
         id: 35,
         price: '150',
-        num: '1000',
+        num: '99（无限）',
       },
       {
         id: 13,
@@ -167,7 +167,7 @@ export default {
       {
         id: 8,
         price: '3000',
-        num: '1000',
+        num: '99（无限）',
       },
       {
         id: 345,
@@ -196,8 +196,8 @@ export default {
       },
       {
         id: 17,
-        price: '800',
-        num: '3',
+        price: '5000',
+        num: '1',
       },
       {
         id: 343,
@@ -221,17 +221,17 @@ export default {
       },
       {
         id: 13,
-        name: '玉灵散',
+        price: '888',
         num: '10',
       },
       {
         id: 30,
         price: '110',
-        num: '1000',
+        num: '99（无限）',
       },
       {
         id: 16,
-        price: '600',
+        price: '3000',
         num: '1',
       },
       {

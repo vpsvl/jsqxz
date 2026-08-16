@@ -66,7 +66,7 @@
               *江湖武功不能学习绝学，除秘籍本身能一脉相承的，都不能一脉相承
             </span>
             <span v-else>
-              *NPC处可以初阶→中阶→高阶→绝学，由低到高一脉相承
+              *NPC处或者本门武功秘籍可以初阶→中阶→高阶→绝学，由低到高一脉相承，其中绝学需要挑战后才可一脉相承
             </span>
           </div>
           <div class="td-block" v-for="(item, index) of info.art" :key="index">
