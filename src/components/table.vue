@@ -38,7 +38,7 @@
 </template>
 
 <script setup>
-import {ref, inject, watchEffect, computed} from 'vue';
+import {ref, inject, computed} from 'vue';
 import {onBeforeRouteLeave} from 'vue-router';
 
 const props = defineProps({

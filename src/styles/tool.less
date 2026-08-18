@@ -228,17 +228,24 @@
 }
 
 .v-tabs {
+  position: relative;
+
   .tabs-exclusive {
     padding: 10px 0;
     color: var(--color-content);
   }
 
   .tabs {
-    position: relative;
+    top: 0;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 10px;
     background: var(--color-bg);
+
+    &.is-sticky {
+      position: sticky;
+    }
   }
 
   .tab {

@@ -1,7 +1,12 @@
 <template>
   <div class="v-search">
     <div class="v-search-item">
-      <v-input class="item-value" placeholder="名称/效果" v-model="params.keyword"></v-input>
+      <v-input
+        class="item-value"
+        placeholder="名称/效果"
+        v-model="params.keyword"
+        @keydown.enter="search"
+      ></v-input>
     </div>
     <div class="v-search-item">
       <v-button type="primary" @click="search">查询</v-button>

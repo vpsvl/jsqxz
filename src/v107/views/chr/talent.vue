@@ -3,8 +3,9 @@
     <div class="v-search-item">
       <v-input
         class="item-value"
-        v-model="params.keyword"
         placeholder="名称/效果/福缘际遇查询"
+        v-model="params.keyword"
+        @keydown.enter="search"
       ></v-input>
     </div>
     <div class="v-search-item">

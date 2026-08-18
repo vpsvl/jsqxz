@@ -3,7 +3,7 @@
     <div class="tabs-exclusive" v-if="!!exclusive">
       {{ exclusive }}
     </div>
-    <div class="tabs">
+    <div class="tabs" :class="{'is-sticky': sticky}">
       <label
         class="tab"
         v-for="(item, index) of list"
@@ -43,6 +43,10 @@ const props = defineProps({
   keyName: {
     type: String,
     default: '',
+  },
+  sticky: {
+    type: Boolean,
+    default: false,
   },
 });
 

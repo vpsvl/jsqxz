@@ -10,7 +10,7 @@
         {{ info.name }}
       </span>
     </template>
-    <div class="v-table v-table-vertical">
+    <div class="v-table v-table-vertical v-table-sect">
       <div class="tr">
         <div class="td">加入方式</div>
         <div class="td">{{ info.join }}</div>
@@ -69,30 +69,69 @@
               *NPC处或者本门武功秘籍可以初阶→中阶→高阶→绝学，由低到高一脉相承，其中绝学需要挑战后才可一脉相承
             </span>
           </div>
-          <div class="td-block" v-for="(item, index) of info.art" :key="index">
-            <div v-if="item.name">
+          <div class="td-block" v-for="(item, type) of info.art" :key="type">
+            <div v-if="type">
               [
-              <span class="color-error">{{ item.name }}</span>
+              <span class="color-error">{{ itmTypeMap[type] }}</span>
               ]:
             </div>
-            <div class="td-effect-item" v-for="(text, i) of item.list" :key="i">{{ text }}</div>
+            <div
+              class="td-effect-item"
+              v-for="(artList, level) of item"
+              :key="level"
+            >
+              <span>{{ levelMap[level] }}：</span>
+              <a
+                href="javascript: void 0;"
+                v-for="art of artList"
+                :key="art.id"
+                class="sect-art"
+                :class="`level-${level}`"
+                @click="showArt(art)"
+              >
+                {{ art.name }}
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </v-tabs>
+  <v-dialog ref="dialogRef" :width="state.lessWindow ? '80vw' : undefined">
+    <template #header>
+      <span
+        :class="[
+          `level-${activeArt.level}`,
+          {[`inner-${activeArt.inner}`]: activeArt.inner === 1 || activeArt.inner === 2},
+        ]"
+      >
+        {{ activeArt.name }}
+      </span>
+    </template>
+    <art-item v-if="activeArt.id" :item="activeArt" :key="activeArt.id"></art-item>
+  </v-dialog>
 </template>
 
 <script setup>
-import {computed, inject, ref} from 'vue';
+import {computed, inject, ref, useTemplateRef} from 'vue';
 import sectAll from '@/v107/data/art/sect';
 import artAll from '@/v107/data/art/list';
 import {itmTypeMap, levelMap} from '@/v107/data/map';
 import {sessionStorage} from '@/utils/storage';
+import ArtItem from '@/v107/views/art/item';
+import VDialog from '@/components/dialog.vue';
 
 const state = inject('state');
 const list = computed(() => Object.values(sectAll));
 const active = ref(0);
+
+const dialogRef = useTemplateRef('dialogRef');
+const activeArt = ref({});
+
+function showArt(item) {
+  activeArt.value = item;
+  dialogRef.value.show();
+}
 
 const info = computed(() => {
   const cacheKey = `${state.version}_sect_${active.value}`;
@@ -107,7 +146,7 @@ const info = computed(() => {
     if (item.sect !== active.value) {
       continue;
     }
-    const {name, type, level} = item;
+    const {type, level} = item;
     if (!type) {
       continue;
     }
@@ -117,21 +156,9 @@ const info = computed(() => {
     if (!Reflect.has(sectArt[type], level)) {
       sectArt[type][level] = [];
     }
-    sectArt[type][level].push(name);
+    sectArt[type][level].push(item);
   }
-  current.art = [];
-  for (let type in sectArt) {
-    const item = {
-      name: itmTypeMap[type],
-      list: [],
-    };
-    for (let level in sectArt[type]) {
-      item.list.push(`${levelMap[level]}：${sectArt[type][level].join('、')}`);
-    }
-    if (item.list.length > 0) {
-      current.art.push(item);
-    }
-  }
+  current.art = sectArt;
   current.effect.push(...[
     '主运本门轻功，使用本门外功时命中+200',
     '本门武功威力增加50，每200门派贡献额外增加50；主运本门内功，本门武功威力增加：初阶内功50，中阶内功100，高阶内功150，绝学内功200，主运非本门内功此处威力加成减半',
@@ -141,3 +168,10 @@ const info = computed(() => {
   return current;
 });
 </script>
+<style lang="less">
+.v-table-sect {
+  .sect-art {
+    margin-right: 8px;
+  }
+}
+</style>

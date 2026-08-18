@@ -12,6 +12,28 @@
     </div>
   </div>
   <v-table class="v-table-art-secret" :cols="thead" :data="tbody">
+    <template #condition="{row}">
+      <div class="td-block">
+        <template v-for="(item, index) of row.cheatList" :key="item.id">
+          <template v-if="row.cheatList.length === 1">修炼</template>
+          <template v-if="item.isCheat">
+            <template v-if="index > 0">{{ item.symbol }}</template>
+            <span>{{ item.name }}</span>
+          </template>
+          <template v-if="!item.isCheat">
+            <template v-if="index > 0">{{ item.symbol }}</template>
+            <a
+              href="javascript: void 0;"
+              :class="`level-${item.level}`"
+              @click="showArt(item)"
+            >
+              {{ item.name }}
+            </a>
+          </template>
+        </template>
+        <span>{{ row.condition }}</span>
+      </div>
+    </template>
     <template #effect="{row}">
       <div class="td-block">
         <div class="td-effect-item" v-for="(item, index) of row.effect" :key="index">
@@ -20,13 +42,37 @@
       </div>
     </template>
   </v-table>
+  <v-dialog ref="dialogRef" :width="state.lessWindow ? '80vw' : undefined">
+    <template #header>
+      <span
+        :class="[
+          `level-${activeArt.level}`,
+          {[`inner-${activeArt.inner}`]: activeArt.inner === 1 || activeArt.inner === 2},
+        ]"
+      >
+        {{ activeArt.name }}
+      </span>
+    </template>
+    <art-item v-if="activeArt.id" :item="activeArt" :key="activeArt.id"></art-item>
+  </v-dialog>
 </template>
 
 <script setup>
-import {ref, onBeforeMount} from 'vue';
+import {ref, onBeforeMount, useTemplateRef, inject} from 'vue';
 import secretData from '@/v107/data/art/secret';
 import artAll from '@/v107/data/art/list';
 import itmAll from '@/v107/data/itm/list';
+import VDialog from '@/components/dialog';
+import ArtItem from '@/v107/views/art/item';
+
+const state = inject('state');
+const dialogRef = useTemplateRef('dialogRef');
+const activeArt = ref({});
+
+function showArt(item) {
+  activeArt.value = item;
+  dialogRef.value.show();
+}
 
 const thead = [
   {
@@ -52,7 +98,18 @@ function init() {
   data.value = [];
   for (let key in secretData) {
     let {id, name, type, condition, effect, cheat} = secretData[key];
-    if (type === 0 || condition) {
+    if (type === 0) {
+      continue;
+    }
+    if (typeof condition === 'string') {
+      data.value.push({
+        id,
+        name,
+        condition,
+        cheatList: [],
+        effect,
+        type,
+      });
       continue;
     }
     const arr = [];
@@ -62,38 +119,52 @@ function init() {
         other = cheat[k];
         continue;
       }
-      let item = '';
       const isArrCheat = Array.isArray(cheat[k]);
       const artId = itmAll[k].art;
-      if (!artId) {
-        item += itmAll[k].name;
-        if (isArrCheat) {
-          for (let j of cheat[k]) {
-            item += `/${itmAll[j].name}`;
-          }
-        }
-      } else {
-        item += artAll[artId].name;
+      if (artId) {
+        arr.push({
+          ...artAll[artId],
+          isCheat: false,
+          symbol: '+',
+        });
         if (isArrCheat) {
           for (let j of cheat[k]) {
             const artId = itmAll[j].art;
-            item += `/${artAll[artId].name}`;
+            arr.push({
+              ...artAll[artId],
+              isCheat: false,
+              symbol: '/',
+            });
+          }
+        }
+      } else {
+        arr.push({
+          ...itmAll[k],
+          isCheat: true,
+          symbol: '+',
+        });
+        if (isArrCheat) {
+          for (let j of cheat[k]) {
+            arr.push({
+              ...itmAll[j],
+              isCheat: true,
+              symbol: '/',
+            });
           }
         }
       }
-      arr.push(item);
     }
-    condition = (arr.length > 1 ? '' : '修炼') + arr.join('+');
-    if (other) {
-      condition += (arr.length > 0 ? '，' : '') + other;
+    if (other && arr.length > 0) {
+      other = `，${other}`;
     }
     if (type === 2) {
-      condition += '（非秘技，需在武功面板）';
+      other += '（非秘技，需在武功面板）';
     }
     data.value.push({
       id,
       name,
-      condition,
+      condition: other,
+      cheatList: arr,
       effect,
       type,
     });
