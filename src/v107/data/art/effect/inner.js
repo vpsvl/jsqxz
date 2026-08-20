@@ -182,11 +182,11 @@ export function juLi(lv) {
   };
 }
 
-export function juQi(lv) {
+export function shengJi(lv) {
   return {
     id: 208,
-    name: `聚气 Lv${lv}`,
-    effect: [`每回合清除散功状态`],
+    name: `生肌 Lv${lv}`,
+    effect: [`行动前清除禁疗状态`],
   };
 }
 

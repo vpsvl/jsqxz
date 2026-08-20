@@ -5,7 +5,7 @@ export default {
     name: '江湖',
     join: '畅想默认江湖散人，可使用介绍信加入其他门派',
     effect: ['可在扬州武馆学习初阶中阶高阶的江湖武功', '可在云岭洞喵姐处学习迷踪步'],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -24,18 +24,7 @@ export default {
     name: '少林派',
     join: '需男主将介绍信送给大雄宝殿的方证，可选择入达摩院或般若堂',
     effect: ['受到攻击概率进入防御状态', '【易筋经真谛】概率固定60%'],
-    talent: [
-      {
-        name: '悲天悯佛',
-        condition: '入般若堂完成铜人巷任务',
-        effect: ['般若掌攻击范围变为点，威力翻倍', '生命值低于50%拥有绝对气防'],
-      },
-      {
-        name: '天佛降世',
-        condition: '完成南北少林任务',
-        effect: ['战斗中可以复活一次，复活后免疫内伤，免疫暴击伤害'],
-      },
-    ],
+    tal: {516: '', 9983: '入般若堂完成铜人巷任务', 9986: '完成南北少林任务'},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -58,12 +47,7 @@ export default {
       '主运太极神功时，时序增加蓄力值，太极蓄力值清除时只清除一半',
       '使用太极拳和太极剑后自动防御',
     ],
-    talent: [
-      {
-        name: '武当弟子',
-        effect: ['武当派武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {517: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -86,12 +70,7 @@ export default {
       '被生死符击中的目标攻击时，概率命中减少一半；行动时小概率直接执行休息/防御/蓄力/集中/等待',
       '畅想虚竹灵鹫宫大战后将直升逍遥派掌门',
     ],
-    talent: [
-      {
-        name: '逍遥弟子',
-        effect: ['逍遥派武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {524: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -110,7 +89,7 @@ export default {
     name: '日月神教',
     join: '帮任我行打败东方不败后接受任我行的邀请可加入',
     effect: ['集气+2', '修炼葵花宝典没有负作用'],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -129,7 +108,7 @@ export default {
     name: '明教',
     join: '在朱府剧情结束前将介绍信送给光明顶的杨逍，否则该杨逍会消失',
     effect: ['攻击附带灼烧，灼烧上限提高到100'],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -148,12 +127,7 @@ export default {
     name: '天机宫',
     join: '将介绍信送给天机宫里边房间的明镜',
     effect: ['被攻击15%概率免受攻击伤害'],
-    talent: [
-      {
-        name: '天机弟子',
-        effect: ['天机宫武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {522: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -172,7 +146,7 @@ export default {
     name: '全真教',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -196,12 +170,7 @@ export default {
       '攻击中概率偷盗目标身上的金钱和药物',
       '降龙十八掌消耗内力减少30%',
     ],
-    talent: [
-      {
-        name: '丐帮弟子',
-        effect: ['丐帮武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {519: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -223,12 +192,7 @@ export default {
       '使用剑法概率三连击，且连击伤害不减，连击时命中提升20%',
       '杀岳不群后，将直升华山派掌门',
     ],
-    talent: [
-      {
-        name: '华山弟子',
-        effect: ['华山派武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {525: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -247,7 +211,7 @@ export default {
     name: '嵩山派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -266,7 +230,7 @@ export default {
     name: '青城派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -285,7 +249,7 @@ export default {
     name: '衡山派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -304,7 +268,7 @@ export default {
     name: '恒山派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -323,7 +287,7 @@ export default {
     name: '泰山派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -342,7 +306,7 @@ export default {
     name: '五毒教',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -361,7 +325,7 @@ export default {
     name: '古墓派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -384,12 +348,7 @@ export default {
       '伤害和防御随善恶值变化',
       '杀血刀老祖后，将直升血刀门掌门',
     ],
-    talent: [
-      {
-        name: '血刀弟子',
-        effect: ['血刀门武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {518: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -408,7 +367,7 @@ export default {
     name: '凌霄城',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -427,7 +386,7 @@ export default {
     name: '峨眉派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -446,7 +405,7 @@ export default {
     name: '崆峒派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -465,7 +424,7 @@ export default {
     name: '昆仑派',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -484,7 +443,7 @@ export default {
     name: '桃花岛',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -503,7 +462,7 @@ export default {
     name: '白驼山庄',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -522,7 +481,7 @@ export default {
     name: '六扇门',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -541,7 +500,7 @@ export default {
     name: '八卦门',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -560,7 +519,7 @@ export default {
     name: '慕容世家',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -579,12 +538,7 @@ export default {
     name: '天龙寺',
     join: '在剧情推进到天龙寺看门弟子消失之前，将介绍信送给看门弟子（天龙邪拿完天书带慕容复屠寺后无法学习武功）',
     effect: ['六脉神剑可以触发六脉奥义', '皇家血脉增加体质2点', '增加耗内点数一半的真实伤害'],
-    talent: [
-      {
-        name: '天龙弟子',
-        effect: ['天龙寺武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {520: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -607,12 +561,7 @@ export default {
       '行动后概率对周围六格内目标上毒40-80点',
       '杀丁春秋后，将直升星宿派掌门',
     ],
-    talent: [
-      {
-        name: '星宿弟子',
-        effect: ['星宿派武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {521: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -635,12 +584,7 @@ export default {
       '对同一个目标不间断的攻击，伤害和命中会随着攻击次数而增加',
       '大轮密宗奥义触发概率+30%',
     ],
-    talent: [
-      {
-        name: '密宗弟子',
-        effect: ['密宗武功连击率+10%，暴击率+10%，可额外选择两个天关天赋'],
-      },
-    ],
+    tal: {523: ''},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -659,7 +603,7 @@ export default {
     name: '藏剑山庄',
     join: '暂无',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',
@@ -678,7 +622,7 @@ export default {
     name: '天下会',
     join: '天下第一武道会获得冠军后接受雄霸的邀请可加入',
     effect: [],
-    talent: [],
+    tal: {},
     move: [
       'eWaiShangHai',
       'jiaMingZhong',

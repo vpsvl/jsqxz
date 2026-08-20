@@ -14,8 +14,8 @@
   <v-table class="v-table-art-secret" :cols="thead" :data="tbody">
     <template #condition="{row}">
       <div class="td-block">
+        <template v-if="row.cheatList.length === 1">修炼</template>
         <template v-for="(item, index) of row.cheatList" :key="item.id">
-          <template v-if="row.cheatList.length === 1">修炼</template>
           <template v-if="item.isCheat">
             <template v-if="index > 0">{{ item.symbol }}</template>
             <span>{{ item.name }}</span>
@@ -173,9 +173,17 @@ function init() {
 }
 
 function search() {
+  params.value.keyword = (params.value.keyword + '').replace(/[\[\]{}"', ]/g, '');
+  if (!params.value.keyword) {
+    tbody.value = [...data.value];
+    return;
+  }
   tbody.value = data.value.filter(item => {
-    const {name, condition, effect} = item;
+    let {name, condition, cheatList, effect} = item;
     const reg = new RegExp(params.value.keyword, 'i');
+    for (let i of cheatList) {
+      condition += ` ${i.name}`;
+    }
     if (reg.test(name) || reg.test(condition)) {
       return true;
     }

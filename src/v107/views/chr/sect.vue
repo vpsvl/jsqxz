@@ -36,16 +36,16 @@
         <div class="td">天赋</div>
         <div class="td">
           <div class="td-block color-warn">*仅选择门派开局的可以获得</div>
-          <div class="td-block" v-for="(item, index) of info.talent" :key="index">
-            <div v-if="item.name">
+          <div class="td-block" v-for="(condition, id) in info.tal" :key="id">
+            <div>
               [
-              <span class="color-error">{{ item.name }}</span>
+              <span class="color-error">{{ talAll[id].name }}</span>
               ]:
-              <span class="color-success">{{ item.condition }}</span>
+              <span v-show="condition" class="color-success">{{ condition }}</span>
             </div>
             <div
               class="td-effect-item effect-icon-rhombus"
-              v-for="(text, i) of item.effect"
+              v-for="(text, i) of talAll[id].effect"
               :key="i"
             >
               {{ text }}
@@ -116,6 +116,7 @@
 import {computed, inject, ref, useTemplateRef} from 'vue';
 import sectAll from '@/v107/data/art/sect';
 import artAll from '@/v107/data/art/list';
+import talAll from '@/v107/data/chr/talent';
 import {itmTypeMap, levelMap} from '@/v107/data/map';
 import {sessionStorage} from '@/utils/storage';
 import ArtItem from '@/v107/views/art/item';

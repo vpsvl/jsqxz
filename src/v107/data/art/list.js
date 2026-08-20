@@ -553,6 +553,15 @@ export default {
     level: 4,
     inner: 1,
     moveNum: 9,
+    tra: [
+      {
+        name: '九剑破式',
+        condition: '使用的外功为独孤九剑',
+        effect: [
+          '受到拳掌、指腿、刀法、剑法、奇门武功攻击的伤害减少15%',
+        ],
+      },
+    ],
     type: 3,
   },
   48: {

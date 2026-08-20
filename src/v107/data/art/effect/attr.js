@@ -278,9 +278,9 @@ export function getLearn({sect, level, other = []}) {
     return [other];
   }
   if (level > 2) {
-    other.push(
-      `挑战每月随机传闻事件中携带此秘籍的人物，战胜后概率获得`,
-    );
+    other.push(`挑战每月随机传闻事件中携带此秘籍的人物，战胜后概率获得`);
+  } else {
+    other.push(`苏州燕子坞还施水阁处可使用秘籍残章兑换（开门需6000银两）`);
   }
   if (sect > 0 && sectAll[sect]) {
     other.push(
